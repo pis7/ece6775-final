@@ -1,7 +1,7 @@
 #==========================================================================
 # Makefile
 #==========================================================================
-# @brief: A makefile the compiles and synthesizes the digitrec program
+# @brief: A makefile the compiles and synthesizes the attention program
 #
 # @desc: 1. "make" runs csim by default
 #        2. "make csim" compiles & executes the fixed-point implementation
@@ -24,12 +24,12 @@ all: csim
 attention: attention.cpp attention_test.cpp
 	g++ ${CFLAGS} $^ -o $@ -lrt
 
-result/digitrec_csim.txt: digitrec
+result/attention_csim.txt: attention
 	@echo "Running attention sim..."
 	mkdir -p result
 	./$< | tee $@
 
-csim: result/digitrec_csim.txt
+csim: result/attention_csim.txt
 	@echo "Result reorded to $<"
 
 xillydemo.bit:

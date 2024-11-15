@@ -10,8 +10,9 @@
 
 typedef ap_uint<4> bit4_t;
 typedef ap_uint<6> bit6_t;
+typedef ap_uint<8> bit8_t;
+typedef ap_int<8> sbit8_t;
 typedef ap_uint<32> bit32_t;
 typedef ap_uint<64> bit64_t;
-typedef ap_uint<49> digit;
 
 #endif

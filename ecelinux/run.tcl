@@ -1,10 +1,10 @@
 #=============================================================================
-# run_base.tcl 
+# run.tcl 
 #=============================================================================
-# @brief: A Tcl script for synthesizing the baseline digit recongnition design.
+# @brief: A Tcl script for synthesizing the baseline attention layer.
 
 # Project name
-set hls_prj digitrec.prj
+set hls_prj attention.prj
 
 # Open/reset the project
 open_project ${hls_prj} -reset
@@ -13,8 +13,8 @@ open_project ${hls_prj} -reset
 set_top dut
 
 # Add design and testbench files
-add_files digitrec.cpp
-add_files -tb digitrec_test.cpp
+add_files attention.cpp
+add_files -tb attention_test.cpp
 add_files -tb data
 
 open_solution "solution1"
@@ -29,9 +29,9 @@ create_clock -period 10
 ############################################
 
 # Simulate the C++ design
-#csim_design
+csim_design
 # Synthesize the design
 csynth_design
 # Co-simulate the design
-#cosim_design
+cosim_design
 exit
