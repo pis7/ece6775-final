@@ -18,11 +18,8 @@ using namespace std;
 
 int main() {
   // HLS streams for communicating with the cordic block
-  hls::stream<bit32_t> digitrec_in;
-  hls::stream<bit32_t> digitrec_out;
-
-  // read test images and labels
-  bit32_t input_vector;
+  hls::stream<fixed32_t> attention_in;
+  hls::stream<fixed32_t> attention_out;
 
   // Timer
   Timer timer("attention");
@@ -30,24 +27,19 @@ int main() {
 
   // pack images to 32-bit and transmit to dut function
   for (int i = 0; i < I_WIDTH1; i++) {
-    for (int j = 0; j < I_WIDTH1; j+=4) {
-      input_vector(7, 0) = test_att_input1[i][j];
-      input_vector(15, 8) = test_att_input1[i][j+1];
-      input_vector(23, 16) = test_att_input1[i][j+2];
-      input_vector(31, 24) = test_att_input1[i][j+3];
-    }
-    digitrec_in.write(input_vector);
+    for (int j = 0; j < I_WIDTH1; j++)
+      attention_in.write(test_att_input1[i][j]);
   }
 
   // perform prediction
-  dut(digitrec_in, digitrec_out);
+  dut(attention_in, attention_out);
 
   // check results
   for (int i = 0; i < I_WIDTH1*3; i++) {
     cout << "{";
     for (int j = 0; j < O_WIDTH1; j++) {
-      bit32_t result = digitrec_out.read();
-      if (j != O_WIDTH1 - 1) cout << result << ", ";
+      fixed32_t result = attention_out.read();
+      if (j != O_WIDTH1 - 1) cout << static_cast<float>(result) << ", ";
       else cout << result;
     }
     cout << "}," << endl;

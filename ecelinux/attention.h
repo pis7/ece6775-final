@@ -10,12 +10,12 @@
 #include <hls_stream.h>
 
 // Top function for synthesis
-void dut(hls::stream<bit32_t> &strm_in, hls::stream<bit32_t> &strm_out);
+void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out);
 
 // Top function for attention layer
 void attention(
-  bit8_t att_input[I_WIDTH1][I_WIDTH1],
-  bit32_t att_output[I_WIDTH1][O_WIDTH1]
+  fixed32_t hidden_states[I_WIDTH1][I_WIDTH1],
+  fixed32_t output[I_WIDTH1*3][O_WIDTH1]
 );
 
 #endif

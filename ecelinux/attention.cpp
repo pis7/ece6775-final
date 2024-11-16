@@ -9,19 +9,14 @@
 //----------------------------------------------------------
 // dut
 //----------------------------------------------------------
-void dut(hls::stream<bit32_t> &strm_in, hls::stream<bit32_t> &strm_out) {
-  bit8_t input[I_WIDTH1][I_WIDTH1];
-  bit32_t output[I_WIDTH1*3][O_WIDTH1]; 
+void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out) {
+  fixed32_t input[I_WIDTH1][I_WIDTH1];
+  fixed32_t output[I_WIDTH1*3][O_WIDTH1]; 
 
   // input processing
   for (int i = 0; i < I_WIDTH1; i++) {
-    bit32_t strm_input = strm_in.read();
-    for (int j = 0; j < I_WIDTH1; j+=4) {
-      input[i][j]   = strm_input(7, 0);
-      input[i][j+1] = strm_input(15, 8);
-      input[i][j+2] = strm_input(23, 16);
-      input[i][j+3] = strm_input(31, 24);
-    }
+    for (int j = 0; j < I_WIDTH1; j++)
+      input[i][j] = strm_in.read();
   }
 
   // call attention
@@ -29,9 +24,8 @@ void dut(hls::stream<bit32_t> &strm_in, hls::stream<bit32_t> &strm_out) {
 
   // output processing
   for (int i = 0; i < I_WIDTH1*3; i++) {
-    for (int j = 0; j < O_WIDTH1; j++) {
+    for (int j = 0; j < O_WIDTH1; j++)
       strm_out.write(output[i][j]);
-    }
   }
 }
 
@@ -39,22 +33,61 @@ void dut(hls::stream<bit32_t> &strm_in, hls::stream<bit32_t> &strm_out) {
 // attention
 //----------------------------------------------------------
 void attention(
-  bit8_t hidden_states[I_WIDTH1][I_WIDTH1],
-  bit32_t output[I_WIDTH1*3][O_WIDTH1]
+  fixed32_t hidden_states[I_WIDTH1][I_WIDTH1],
+  fixed32_t output[I_WIDTH1*3][O_WIDTH1]
 ) {
-  bit32_t q_proj_re[I_WIDTH1][O_WIDTH1];
-  bit32_t k_proj_re[I_WIDTH1][O_WIDTH1];
-  bit32_t v_proj_re[I_WIDTH1][O_WIDTH1];
 
-  init_mem<I_WIDTH1, O_WIDTH1, 32>(q_proj_re);
-  init_mem<I_WIDTH1, O_WIDTH1, 32>(k_proj_re);
-  init_mem<I_WIDTH1, O_WIDTH1, 32>(v_proj_re);
+  // step 1: apply layer normalization
+  for (int i = 0; i < I_WIDTH1; i++) {
+    rms_norm<I_WIDTH1>(
+      hidden_states[i], 
+      ln_weights_in1,
+      norm_epsilon1
+    );
+  }
+
+  // step 2: quantize input activations
+  sbit8_t quantized_hidden_states[I_WIDTH1][I_WIDTH1];
+  fixed32_t scales[I_WIDTH1];
+
+  init_2d_mem<I_WIDTH1, I_WIDTH1, sbit8_t>(quantized_hidden_states, 0);
+  init_1d_mem<I_WIDTH1, fixed32_t>(scales, 1);
+
+  quantize_activation<I_WIDTH1>(
+    hidden_states,
+    quantized_hidden_states,
+    scales,
+    8
+  );
+
+  // step 3: linear transformation
+  fixed32_t q_proj_re[I_WIDTH1][O_WIDTH1];
+  fixed32_t k_proj_re[I_WIDTH1][O_WIDTH1];
+  fixed32_t v_proj_re[I_WIDTH1][O_WIDTH1];
+
+  init_2d_mem<I_WIDTH1, O_WIDTH1, fixed32_t>(q_proj_re, 0);
+  init_2d_mem<I_WIDTH1, O_WIDTH1, fixed32_t>(k_proj_re, 0);
+  init_2d_mem<I_WIDTH1, O_WIDTH1, fixed32_t>(v_proj_re, 0);
 
   linear_forward_no_mul<I_WIDTH1, O_WIDTH1>(
-    hidden_states,
+    quantized_hidden_states,
     q_proj_re,
-    scales1,
+    scales,
     q_weights,
+    w_scale1
+  );
+  linear_forward_no_mul<I_WIDTH1, O_WIDTH1>(
+    quantized_hidden_states,
+    k_proj_re,
+    scales,
+    k_weights,
+    w_scale1
+  );
+  linear_forward_no_mul<I_WIDTH1, O_WIDTH1>(
+    quantized_hidden_states,
+    v_proj_re,
+    scales,
+    v_weights,
     w_scale1
   );
 
@@ -63,33 +96,14 @@ void attention(
       output[i][j] = q_proj_re[i][j];
     }
   }
-
-  linear_forward_no_mul<I_WIDTH1, O_WIDTH1>(
-    hidden_states,
-    k_proj_re,
-    scales1,
-    k_weights,
-    w_scale1
-  );
-
   for (int i = 0; i < I_WIDTH1; i++) {
     for (int j = 0; j < O_WIDTH1; j++) {
-      output[I_WIDTH1 + i][j] = k_proj_re[i][j];
+      output[i+I_WIDTH1][j] = k_proj_re[i][j];
     }
   }
-
-  linear_forward_no_mul<I_WIDTH1, O_WIDTH1>(
-    hidden_states,
-    v_proj_re,
-    scales1,
-    v_weights,
-    w_scale1
-  );
-
   for (int i = 0; i < I_WIDTH1; i++) {
     for (int j = 0; j < O_WIDTH1; j++) {
-      output[I_WIDTH1*2 + i][j] = v_proj_re[i][j];
+      output[i+I_WIDTH1*2][j] = v_proj_re[i][j];
     }
   }
-
 }
