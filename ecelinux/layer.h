@@ -163,7 +163,6 @@ void rotary_embedding (
     for (int s = 0; s < P; ++s) {
       for (int d = 0; d < C / 2; ++d) {
         angle = inv_freq[d] * p_id;
-        std::cout << "angle: " << angle << std::endl;
         cos[s][d] = hls::cos(angle);
         cos[s][d + C / 2] = cos[s][d];
         sin[s][d] = hls::sin(angle);
@@ -246,9 +245,8 @@ template <
     for (int s = 0; s < R1; ++s) {
       for (int d = 0; d < C2; ++d) {
         output[h][s][d] = 0;
-        for (int k = 0; k < C1; ++k) {
+        for (int k = 0; k < C1; ++k)
           output[h][s][d] += input_1[h][s][k] * input_2[h][k][d];
-        }
       }
     }
   }
