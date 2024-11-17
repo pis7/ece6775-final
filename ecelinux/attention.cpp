@@ -144,13 +144,13 @@ template <
   transpose_last_two_dims<SEQ_LEN, NUM_HEADS, HEAD_DIM>(k_embed, k_proj_transposed);
 
   // step 6: calculate attention scores
-  fixed32_t attn_weights[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  fixed32_t attn_weights[NUM_HEADS][SEQ_LEN][SEQ_LEN];
   GEMM_3D_float<
+    NUM_HEADS,
     SEQ_LEN,
-    NUM_HEADS,
-    HEAD_DIM,
     HEAD_DIM,
     NUM_HEADS,
+    HEAD_DIM,
     SEQ_LEN
   > (
     q_embed,
@@ -161,7 +161,7 @@ template <
   fixed32_t scale_factor = hls::sqrt(HEAD_DIM);
   for (int h = 0; h < NUM_HEADS; ++h)
     for (int s = 0; s < SEQ_LEN; ++s)
-      for (int d = 0; d < HEAD_DIM; ++d)
+      for (int d = 0; d < SEQ_LEN; ++d)
         attn_weights[h][s][d] /= scale_factor;
 
   fixed32_t causal_mask[SEQ_LEN][SEQ_LEN];
@@ -172,16 +172,16 @@ template <
         attn_weights[h][s][d] += causal_mask[s][d];
 
   // step 7: apply softmax
-  softmax<SEQ_LEN, NUM_HEADS, HEAD_DIM>(attn_weights);
+  softmax<SEQ_LEN, NUM_HEADS, SEQ_LEN>(attn_weights);
 
   // step 8: multiply with V
   fixed32_t attn_output[NUM_HEADS][SEQ_LEN][HEAD_DIM];
   GEMM_3D_float<
+    NUM_HEADS,
+    SEQ_LEN,
     SEQ_LEN,
     NUM_HEADS,
-    HEAD_DIM,
     SEQ_LEN,
-    NUM_HEADS,
     HEAD_DIM
   > (
     attn_weights,

@@ -37,7 +37,7 @@ int main() {
     cout << "{";
     for (int j = 0; j < PROJ_COLS_BASIC; j++) {
       fixed32_t result = attention_out.read();
-      if (j != O_WIDTH1 - 1) cout << result << ", ";
+      if (j != PROJ_COLS_BASIC - 1) cout << result << ", ";
       else cout << result;
     }
     cout << "}," << endl;
