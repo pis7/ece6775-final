@@ -10,6 +10,8 @@
 
 const int I_WIDTH1 = 16;   // must be multiple of 4
 const int O_WIDTH1 = 16;
+const int NUM_HEADS1 = 4;
+const int HEAD_DIM1 = 4;
 
 const bit32_t w_scale1 = 1256;
 const fixed32_t norm_epsilon1 = 1e-5;

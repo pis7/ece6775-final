@@ -13,9 +13,9 @@
 void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out);
 
 // Top function for attention layer
+template <int HS_ROWS, int HS_COLS, int PROJ_COLS, int NUM_HEADS, int HEAD_DIM>
 void attention(
-  fixed32_t hidden_states[I_WIDTH1][I_WIDTH1],
-  fixed32_t output[I_WIDTH1*3][O_WIDTH1]
+  fixed32_t hidden_states[HS_ROWS][HS_COLS]
 );
 
 #endif

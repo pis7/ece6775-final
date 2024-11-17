@@ -35,11 +35,11 @@ int main() {
   dut(attention_in, attention_out);
 
   // check results
-  for (int i = 0; i < I_WIDTH1*3; i++) {
+  for (int i = 0; i < I_WIDTH1; i++) {
     cout << "{";
     for (int j = 0; j < O_WIDTH1; j++) {
       fixed32_t result = attention_out.read();
-      if (j != O_WIDTH1 - 1) cout << static_cast<float>(result) << ", ";
+      if (j != O_WIDTH1 - 1) cout << result << ", ";
       else cout << result;
     }
     cout << "}," << endl;
