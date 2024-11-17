@@ -8,7 +8,6 @@
 
 #include "typedefs.h"
 
-const int CACHE_SIZE_BASIC = 10;
 const int SEQ_LEN_DECODE = 1;   // must be multiple of 4
 const int HS_COLS_BASIC = 16;
 const int PROJ_COLS_BASIC = 16; // PROJ_COLS == NUM_HEADS * HEAD_DIM
@@ -18,29 +17,37 @@ const bit32_t W_SCALE = 1256;
 const fixed32_t NORM_EPSILON = 1e-5;
 const int P_ID = 0;
 
-const fixed32_t min_val = -32768.0;
+const fixed32_t FIXED32_MIN = -32768.0;
 
-const fixed32_t ln_weights_in1[I_WIDTH1] = {
+const fixed32_t ln_weights_in1[HS_COLS_BASIC] = {
 #include "data/ln_weights_in1"
 };
 
-const sbit8_t q_weights1[I_WIDTH1/4][O_WIDTH1] = {
+const fixed32_t ln_weights1[PROJ_COLS_BASIC] = {
+#include "data/ln_weights1"
+};
+
+const sbit8_t q_weights1[1][PROJ_COLS_BASIC] = {
 #include "data/q_weights1"
 };
 
-const sbit8_t k_weights1[I_WIDTH1/4][O_WIDTH1] = {
+const sbit8_t k_weights1[1][PROJ_COLS_BASIC] = {
 #include "data/k_weights1"
 };
 
-const sbit8_t v_weights1[I_WIDTH1/4][O_WIDTH1] = {
+const sbit8_t v_weights1[1][PROJ_COLS_BASIC] = {
 #include "data/v_weights1"
 };
 
-const fixed32_t inv_freq1[HEAD_DIM1/2] = {
+const sbit8_t o_weights1[1][PROJ_COLS_BASIC] = {
+#include "data/o_weights1"
+};
+
+const fixed32_t inv_freq1[HEAD_DIM_BASIC/2] = {
 #include "data/inv_freq1"
 };
 
-const fixed32_t test_att_input1[I_WIDTH1][I_WIDTH1] = {
+const fixed32_t test_att_input1[SEQ_LEN_DECODE][HS_COLS_BASIC] = {
 #include "data/test_att_input1"
 };
 

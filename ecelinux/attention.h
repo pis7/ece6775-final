@@ -21,11 +21,14 @@ template <
   int HEAD_DIM
 > void attention (
   fixed32_t hidden_states[SEQ_LEN][HS_COLS],
+  fixed32_t final_output[SEQ_LEN][PROJ_COLS],
   const sbit8_t q_weights[SEQ_LEN/4][PROJ_COLS],
   const sbit8_t k_weights[SEQ_LEN/4][PROJ_COLS],
   const sbit8_t v_weights[SEQ_LEN/4][PROJ_COLS],
+  const sbit8_t o_weights[SEQ_LEN/4][PROJ_COLS],
   const fixed32_t inv_freq[HEAD_DIM/2],
-  const fixed32_t ln_weight_in[HS_COLS],
+  const fixed32_t ln_weights_in[HS_COLS],
+  const fixed32_t ln_weights[PROJ_COLS],
   const fixed32_t p_id
 );
 
