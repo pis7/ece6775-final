@@ -8,7 +8,7 @@
 
 #include "model.h"
 #include "typedefs.h"
-#include <hls_math.h>
+#include "hls_math.h"
 #include <iostream>
 #include <cassert>
 typedef  ap_uint<32>  HLS_SIZE_T;
@@ -34,10 +34,9 @@ void init_2d_mem (
   T mem[R][C],
   T val
 ) {
-  for (int i = 0; i < R; i++) {
+  for (int i = 0; i < R; i++)
     for (int j = 0; j < C; j++)
       mem[i][j] = val;
-  }
 }
 
 //----------------------------------------------------------
@@ -128,10 +127,71 @@ void reshape_2D_to_3D (
   fixed32_t input [SEQ_LEN][NUM_HEADS*HEAD_DIM],
   fixed32_t output [NUM_HEADS][SEQ_LEN][HEAD_DIM]
 ) {
-  for (size_t s = 0; s < SEQ_LEN; ++s) {
-    for (size_t h = 0; h < NUM_HEADS; ++h) {
+  for (size_t s = 0; s < SEQ_LEN; ++s)
+    for (size_t h = 0; h < NUM_HEADS; ++h)
       for (size_t d = 0; d < HEAD_DIM; ++d)
         output[h][s][d] = input[s][h * HEAD_DIM + d];
+}
+
+//----------------------------------------------------------
+// rotary_embedding
+//----------------------------------------------------------
+template <int SEQ_LEN, int NUM_HEADS, int HEAD_DIM>
+void rotary_embedding (
+  const fixed32_t inv_freq[HEAD_DIM/2],
+  fixed32_t cos[SEQ_LEN][HEAD_DIM],
+  fixed32_t sin[SEQ_LEN][HEAD_DIM],
+  fixed32_t p_id
+) {
+  fixed32_t angle;
+  for (size_t h = 0; h < NUM_HEADS; ++h) {
+    for (size_t s = 0; s < SEQ_LEN; ++s) {
+      for (size_t d = 0; d < HEAD_DIM / 2; ++d) {
+        angle = inv_freq[d] * p_id;
+        std::cout << "angle: " << angle << std::endl;
+        cos[s][d] = hls::cos(angle);
+        cos[s][d + HEAD_DIM / 2] = cos[s][d];
+        sin[s][d] = hls::sin(angle);
+        sin[s][d + HEAD_DIM / 2] = sin[s][d];
+      }
+    }
+  }
+}
+
+//----------------------------------------------------------
+// apply_rotary_pos_emb
+//----------------------------------------------------------
+template <int SEQ_LEN, int NUM_HEADS, int HEAD_DIM>
+void apply_rotary_pos_emb (
+  fixed32_t input_q[NUM_HEADS][SEQ_LEN][HEAD_DIM],
+  fixed32_t input_k[NUM_HEADS][SEQ_LEN][HEAD_DIM],
+  fixed32_t output_q[NUM_HEADS][SEQ_LEN][HEAD_DIM],
+  fixed32_t output_k[NUM_HEADS][SEQ_LEN][HEAD_DIM],
+  fixed32_t cos[SEQ_LEN][HEAD_DIM],
+  fixed32_t sin[SEQ_LEN][HEAD_DIM]
+) {
+  
+  // half rotate
+  fixed32_t rotated_q[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  fixed32_t rotated_k[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  for (size_t h = 0; h < NUM_HEADS; ++h) {
+    for (size_t s = 0; s < SEQ_LEN; ++s) {
+      for (size_t d = 0; d < HEAD_DIM / 2; ++d) {
+        rotated_q[h][s][d] = - input_q[h][s][d + HEAD_DIM / 2];
+        rotated_k[h][s][d] = - input_k[h][s][d + HEAD_DIM / 2];
+        rotated_q[h][s][d + HEAD_DIM / 2] = input_q[h][s][d];
+        rotated_k[h][s][d + HEAD_DIM / 2] = input_k[h][s][d];
+      }
+    }
+  }
+  
+  // apply rotation
+  for (size_t h = 0; h < NUM_HEADS; ++h) {
+    for (size_t s = 0; s < SEQ_LEN; ++s) {
+      for (size_t d = 0; d < HEAD_DIM; ++d) {
+        output_q[h][s][d] = input_q[h][s][d] * cos[s][d] + rotated_q[h][s][d] * sin[s][d];
+        output_k[h][s][d] = input_k[h][s][d] * cos[s][d] + rotated_k[h][s][d] * sin[s][d];
+      }
     }
   }
 }
