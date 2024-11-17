@@ -18,6 +18,8 @@ const bit32_t W_SCALE = 1256;
 const fixed32_t NORM_EPSILON = 1e-5;
 const int P_ID = 0;
 
+const fixed32_t min_val = -32768.0;
+
 const fixed32_t ln_weights_in1[I_WIDTH1] = {
 #include "data/ln_weights_in1"
 };

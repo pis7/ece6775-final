@@ -60,12 +60,8 @@ template <
   const sbit8_t v_weights[SEQ_LEN/4][PROJ_COLS],
   const fixed32_t inv_freq[HEAD_DIM/2],
   const fixed32_t ln_weight_in[HS_COLS],
-  fixed32_t k_cache[]
   const fixed32_t p_id
 ) {
-
-  // initialize caches
-
 
   // step 1: apply layer normalization
   for (int i = 0; i < SEQ_LEN; i++) {
@@ -121,7 +117,6 @@ template <
     W_SCALE
   );
 
-  // step 4: reshape Q, K, V for attention calculation
   fixed32_t q_proj[NUM_HEADS][SEQ_LEN][HEAD_DIM];
   fixed32_t k_proj[NUM_HEADS][SEQ_LEN][HEAD_DIM];
   fixed32_t v_proj[NUM_HEADS][SEQ_LEN][HEAD_DIM];
@@ -130,7 +125,7 @@ template <
   reshape_2D_to_3D<SEQ_LEN, NUM_HEADS, HEAD_DIM>(k_proj_re, k_proj);
   reshape_2D_to_3D<SEQ_LEN, NUM_HEADS, HEAD_DIM>(v_proj_re, v_proj);
 
-  // step 5: apply rotary embedding
+  // step 4: apply rotary embedding
   fixed32_t cos[SEQ_LEN][HEAD_DIM];
   fixed32_t sin[SEQ_LEN][HEAD_DIM];
   fixed32_t q_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
@@ -139,6 +134,40 @@ template <
   apply_rotary_pos_emb<SEQ_LEN, NUM_HEADS, HEAD_DIM>(
     q_proj, k_proj, q_embed, k_embed, cos, sin
   );
-  
+  // TODO: add cache
 
+  // step 5: transpose K for correct multiplication
+  fixed32_t k_proj_transposed[NUM_HEADS][HEAD_DIM][SEQ_LEN];
+  transpose_last_two_dims<SEQ_LEN, NUM_HEADS, HEAD_DIM>(k_embed, k_proj_transposed);
+
+  // step 6: calculate attention scores
+  fixed32_t attn_weights[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  GEMM_3D_float<
+    SEQ_LEN,
+    NUM_HEADS,
+    HEAD_DIM,
+    HEAD_DIM,
+    NUM_HEADS,
+    SEQ_LEN
+  > (
+    q_embed,
+    k_proj_transposed,
+    attn_weights
+  );
+
+  fixed32_t scale_factor = hls::sqrt(HEAD_DIM);
+  for (int h = 0; h < NUM_HEADS; ++h)
+    for (int s = 0; s < SEQ_LEN; ++s)
+      for (int d = 0; d < HEAD_DIM; ++d)
+        attn_weights[h][s][d] /= scale_factor;
+
+  fixed32_t causal_mask[SEQ_LEN][SEQ_LEN];
+  create_causal_mask<SEQ_LEN>(causal_mask);
+  for (int h = 0; h < NUM_HEADS; ++h)
+    for (int s = 0; s < SEQ_LEN; ++s)
+      for (int d = 0; d < SEQ_LEN; ++d)
+        attn_weights[h][s][d] += causal_mask[s][d];
+
+  // step 7: apply softmax
+  softmax<SEQ_LEN, NUM_HEADS, HEAD_DIM>(attn_weights);
 }

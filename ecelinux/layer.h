@@ -40,6 +40,20 @@ void init_2d_mem (
 }
 
 //----------------------------------------------------------
+// init_3d_mem
+//----------------------------------------------------------
+template <int P, int R, int C, typename T>
+void init_2d_mem (
+  T mem[P][R][C],
+  T val
+) {
+  for (int i = 0; i < P; i++)
+    for (int j = 0; j < R; j++)
+      for (int k = 0; k < C; k++)
+        mem[i][j][k] = val;
+}
+
+//----------------------------------------------------------
 // rms_norm
 //----------------------------------------------------------
 template <int I>
@@ -127,9 +141,9 @@ void reshape_2D_to_3D (
   fixed32_t input [SEQ_LEN][NUM_HEADS*HEAD_DIM],
   fixed32_t output [NUM_HEADS][SEQ_LEN][HEAD_DIM]
 ) {
-  for (size_t s = 0; s < SEQ_LEN; ++s)
-    for (size_t h = 0; h < NUM_HEADS; ++h)
-      for (size_t d = 0; d < HEAD_DIM; ++d)
+  for (int s = 0; s < SEQ_LEN; ++s)
+    for (int h = 0; h < NUM_HEADS; ++h)
+      for (int d = 0; d < HEAD_DIM; ++d)
         output[h][s][d] = input[s][h * HEAD_DIM + d];
 }
 
@@ -144,9 +158,9 @@ void rotary_embedding (
   fixed32_t p_id
 ) {
   fixed32_t angle;
-  for (size_t h = 0; h < NUM_HEADS; ++h) {
-    for (size_t s = 0; s < SEQ_LEN; ++s) {
-      for (size_t d = 0; d < HEAD_DIM / 2; ++d) {
+  for (int h = 0; h < NUM_HEADS; ++h) {
+    for (int s = 0; s < SEQ_LEN; ++s) {
+      for (int d = 0; d < HEAD_DIM / 2; ++d) {
         angle = inv_freq[d] * p_id;
         std::cout << "angle: " << angle << std::endl;
         cos[s][d] = hls::cos(angle);
@@ -174,9 +188,9 @@ void apply_rotary_pos_emb (
   // half rotate
   fixed32_t rotated_q[NUM_HEADS][SEQ_LEN][HEAD_DIM];
   fixed32_t rotated_k[NUM_HEADS][SEQ_LEN][HEAD_DIM];
-  for (size_t h = 0; h < NUM_HEADS; ++h) {
-    for (size_t s = 0; s < SEQ_LEN; ++s) {
-      for (size_t d = 0; d < HEAD_DIM / 2; ++d) {
+  for (int h = 0; h < NUM_HEADS; ++h) {
+    for (int s = 0; s < SEQ_LEN; ++s) {
+      for (int d = 0; d < HEAD_DIM / 2; ++d) {
         rotated_q[h][s][d] = - input_q[h][s][d + HEAD_DIM / 2];
         rotated_k[h][s][d] = - input_k[h][s][d + HEAD_DIM / 2];
         rotated_q[h][s][d + HEAD_DIM / 2] = input_q[h][s][d];
@@ -186,12 +200,88 @@ void apply_rotary_pos_emb (
   }
   
   // apply rotation
-  for (size_t h = 0; h < NUM_HEADS; ++h) {
-    for (size_t s = 0; s < SEQ_LEN; ++s) {
-      for (size_t d = 0; d < HEAD_DIM; ++d) {
+  for (int h = 0; h < NUM_HEADS; ++h) {
+    for (int s = 0; s < SEQ_LEN; ++s) {
+      for (int d = 0; d < HEAD_DIM; ++d) {
         output_q[h][s][d] = input_q[h][s][d] * cos[s][d] + rotated_q[h][s][d] * sin[s][d];
         output_k[h][s][d] = input_k[h][s][d] * cos[s][d] + rotated_k[h][s][d] * sin[s][d];
       }
+    }
+  }
+}
+
+//----------------------------------------------------------
+// transpose_last_two_dims
+//----------------------------------------------------------
+template <int SEQ_LEN, int NUM_HEADS, int HEAD_DIM>
+void transpose_last_two_dims (
+  fixed32_t input[NUM_HEADS][SEQ_LEN][HEAD_DIM],
+  fixed32_t output[NUM_HEADS][HEAD_DIM][SEQ_LEN]
+) {
+  for (int h = 0; h < NUM_HEADS; ++h)
+    for (int s = 0; s < SEQ_LEN; ++s)
+      for (int d = 0; d < HEAD_DIM; ++d)
+        output[h][d][s] = input[h][s][d];
+}
+
+//----------------------------------------------------------
+// GEMM_3D_float
+//----------------------------------------------------------
+template <
+  int SEQ_LEN1,
+  int NUM_HEADS1,
+  int HEAD_DIM1,
+  int SEQ_LEN2,
+  int NUM_HEADS2,
+  int HEAD_DIM2
+> void GEMM_3D_float (
+  fixed32_t input_1[NUM_HEADS1][SEQ_LEN1][HEAD_DIM1],
+  fixed32_t input_2[NUM_HEADS2][SEQ_LEN2][HEAD_DIM2],
+  fixed32_t output[NUM_HEADS1][SEQ_LEN1][SEQ_LEN2],
+) {
+  for (int h = 0; h < NUM_HEADS; ++h) {
+    for (int s = 0; s < SEQ_LEN; ++s) {
+      for (int d = 0; d < HEAD_DIM; ++d) {
+        output[h][s][d] = 0;
+        for (int k = 0; k < HEAD_DIM1; ++k) {
+          output[h][s][d] += input_1[h][s][k] * input_2[h][k][d];
+        }
+      }
+    }
+  }
+}
+
+//----------------------------------------------------------
+// create_causal_mask
+//----------------------------------------------------------
+template <int SEQ_LEN>
+void create_causal_mask (
+  fixed32_t mask[SEQ_LEN][SEQ_LEN]
+) {
+  for (int i = 0; i < SEQ_LEN; i++)
+    for (int j = 0; j < SEQ_LEN; j++)
+      mask[i][j] = (j <= i) ? 0.0 : FIXED32_MIN;
+}
+
+//----------------------------------------------------------
+// softmax
+//----------------------------------------------------------
+template <int SEQ_LEN, int NUM_HEADS, int HEAD_DIM>
+void softmax (
+  fixed32_t input[NUM_HEADS][SEQ_LEN][HEAD_DIM]
+) {
+  for (int h = 0; h < NUM_HEADS; ++h) {
+    for (int s = 0; s < SEQ_LEN; ++s) {
+      fixed32_t max_val = input[h][s][0];
+      for (int d = 1; d < HEAD_DIM; ++d)
+        max_val = std::max(max_val, input[h][s][d]);
+      fixed32_t sum = 0.0;
+      for (int d = 0; d < HEAD_DIM; ++d) {
+        input[h][s][d] = hls::exp(input[h][s][d] - max_val);
+        sum += input[h][s][d];
+      }
+      for (int d = 0; d < HEAD_DIM; ++d)
+        input[h][s][d] /= sum;
     }
   }
 }
