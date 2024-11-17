@@ -41,7 +41,7 @@ void init_2d_mem (
 // init_3d_mem
 //----------------------------------------------------------
 template <int P, int R, int C, typename T>
-void init_2d_mem (
+void init_3d_mem (
   T mem[P][R][C],
   T val
 ) {
@@ -97,8 +97,11 @@ void quantize_activation(
 
       // Quantize each element in the row
       for (int j = 0; j < C; ++j) {
-          fixed32_t quantized_value = static_cast<fixed32_t>(hls::round(input[i][j] * scale));
-          sbit8_t quantized_value_clamped = (quantized_value < Qn) ? Qn : ((quantized_value > Qp) ? Qp : quantized_value);
+          fixed32_t quantized_value = 
+            static_cast<fixed32_t>(hls::round(input[i][j] * scale));
+          sbit8_t quantized_value_clamped = 
+            (quantized_value < Qn) ? 
+              Qn : ((quantized_value > Qp) ? Qp : quantized_value);
           output_states[i][j] = static_cast<sbit8_t>(quantized_value_clamped);
       }
   }
@@ -201,8 +204,10 @@ void apply_rotary_pos_emb (
   for (int h = 0; h < R; ++h) {
     for (int s = 0; s < P; ++s) {
       for (int d = 0; d < C; ++d) {
-        output_q[h][s][d] = input_q[h][s][d] * cos[s][d] + rotated_q[h][s][d] * sin[s][d];
-        output_k[h][s][d] = input_k[h][s][d] * cos[s][d] + rotated_k[h][s][d] * sin[s][d];
+        output_q[h][s][d] = 
+          input_q[h][s][d] * cos[s][d] + rotated_q[h][s][d] * sin[s][d];
+        output_k[h][s][d] = 
+          input_k[h][s][d] * cos[s][d] + rotated_k[h][s][d] * sin[s][d];
       }
     }
   }
