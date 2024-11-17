@@ -5,8 +5,8 @@
 
 #ifndef ATTENTION_H
 #define ATTENTION_H
+
 #include "model.h"
-#include "typedefs.h"
 #include <hls_stream.h>
 
 // Top function for synthesis

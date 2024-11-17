@@ -1,7 +1,7 @@
 //===========================================================================
 // typedefs.h
 //===========================================================================
-// @brief: This header defines the shorthand of several ap_uint data types.
+// @brief: This header defines the shorthand of several ap data types.
 
 #ifndef TYPEDEFS_H
 #define TYPEDEFS_H

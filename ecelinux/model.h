@@ -1,7 +1,7 @@
 //===========================================================================
 // model.h
 //===========================================================================
-// @brief: This header file include the parameters for BNN
+// @brief: This header file include the parameters for Attention
 
 #ifndef MODEL_CONV
 #define MODEL_CONV

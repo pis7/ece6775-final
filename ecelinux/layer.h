@@ -6,12 +6,10 @@
 #ifndef LAYER_H
 #define LAYER_H
 
+typedef  bit32_t HLS_SIZE_T;
+
 #include "model.h"
-#include "typedefs.h"
 #include "hls_math.h"
-#include <iostream>
-#include <cassert>
-typedef  ap_uint<32>  HLS_SIZE_T;
 #include "hls/hls_video_mem.h"
 
 //----------------------------------------------------------
