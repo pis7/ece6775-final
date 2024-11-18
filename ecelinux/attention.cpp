@@ -5,6 +5,14 @@
 
 #include "attention.h"
 #include "layer.h"
+#include "data/q_weights.h"
+#include "data/k_weights.h"
+#include "data/v_weights.h"
+#include "data/o_weights.h"
+#include "data/ln_weight_in.h"
+#include "data/ln_weight.h"
+#include "data/k_cache.h"
+#include "data/v_cache.h"
 
 //----------------------------------------------------------
 // dut
@@ -20,6 +28,7 @@ void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out) {
 
   // call attention
   attention<
+    CACHE_SIZE_INIT,
     SEQ_LEN_DECODE,
     HS_COLS_BASIC,
     PROJ_COLS_BASIC,
@@ -28,13 +37,18 @@ void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out) {
   > (
     input,
     output,
-    q_weights1,
-    k_weights1,
-    v_weights1,
-    o_weights1,
-    inv_freq1,
-    ln_weights_in1,
-    ln_weights1,
+    q_weights,
+    q_scale,
+    k_weights,
+    k_scale,
+    v_weights,
+    v_scale,
+    o_weights,
+    o_scale,
+    k_cache,
+    v_cache,
+    ln_weight_in,
+    ln_weight,
     P_ID
   );
 
@@ -48,6 +62,7 @@ void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out) {
 // attention
 //----------------------------------------------------------
 template <
+  int CACHE_SIZE_INIT,
   int SEQ_LEN,
   int HS_COLS,
   int PROJ_COLS,
@@ -56,13 +71,18 @@ template <
 > void attention (
   fixed32_t hidden_states[SEQ_LEN][HS_COLS],
   fixed32_t final_output[SEQ_LEN][PROJ_COLS],
-  const sbit8_t q_weights[SEQ_LEN/4][PROJ_COLS],
-  const sbit8_t k_weights[SEQ_LEN/4][PROJ_COLS],
-  const sbit8_t v_weights[SEQ_LEN/4][PROJ_COLS],
-  const sbit8_t o_weights[SEQ_LEN/4][PROJ_COLS],
-  const fixed32_t inv_freq[HEAD_DIM/2],
-  const fixed32_t ln_weights_in[HS_COLS],
-  const fixed32_t ln_weights[PROJ_COLS],
+  const bit8_t q_weights[HS_COLS/4][PROJ_COLS],
+  const fixed32_t q_scale,
+  const bit8_t k_weights[HS_COLS/4][PROJ_COLS],
+  const fixed32_t k_scale,
+  const bit8_t v_weights[HS_COLS/4][PROJ_COLS],
+  const fixed32_t v_scale,
+  const bit8_t o_weights[HS_COLS/4][PROJ_COLS],
+  const fixed32_t o_scale,
+  const fixed32_t k_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
+  const fixed32_t v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
+  const fixed32_t ln_weight_in[HS_COLS],
+  const fixed32_t ln_weight[PROJ_COLS],
   const fixed32_t p_id
 ) {
 
@@ -70,7 +90,7 @@ template <
   for (int s = 0; s < SEQ_LEN; s++) {
     rms_norm<HS_COLS>(
       hidden_states[s], 
-      ln_weights_in,
+      ln_weight_in,
       NORM_EPSILON
     );
   }
@@ -103,21 +123,21 @@ template <
     q_proj_re,
     scales,
     q_weights,
-    W_SCALE
+    q_scale
   );
   linear_forward_no_mul<SEQ_LEN, HS_COLS, PROJ_COLS>(
     quantized_hidden_states,
     k_proj_re,
     scales,
     k_weights,
-    W_SCALE
+    k_scale
   );
   linear_forward_no_mul<SEQ_LEN, HS_COLS, PROJ_COLS>(
     quantized_hidden_states,
     v_proj_re,
     scales,
     v_weights,
-    W_SCALE
+    v_scale
   );
 
   fixed32_t q_proj[NUM_HEADS][SEQ_LEN][HEAD_DIM];
@@ -129,29 +149,33 @@ template <
   reshape_2D_to_3D<SEQ_LEN, NUM_HEADS, HEAD_DIM>(v_proj_re, v_proj);
 
   // step 4: apply rotary embedding
-  fixed32_t cos[SEQ_LEN][HEAD_DIM];
-  fixed32_t sin[SEQ_LEN][HEAD_DIM];
   fixed32_t q_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
   fixed32_t k_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
-  rotary_embedding<SEQ_LEN, NUM_HEADS, HEAD_DIM>(inv_freq, cos, sin, p_id);
   apply_rotary_pos_emb<SEQ_LEN, NUM_HEADS, HEAD_DIM>(
-    q_proj, k_proj, q_embed, k_embed, cos, sin
+    q_proj, k_proj, q_embed, k_embed, cos, sin, p_id
   );
-  // TODO: add cache
+  fixed32_t k_cache_upd[NUM_HEADS][CACHE_SIZE_INIT+1][HEAD_DIM];
+  fixed32_t v_cache_upd[NUM_HEADS][CACHE_SIZE_INIT+1][HEAD_DIM];
+  cache_update<NUM_HEADS, CACHE_SIZE_INIT, HEAD_DIM>(
+    k_cache, k_cache_upd, k_embed
+  );
+  cache_update<NUM_HEADS, CACHE_SIZE_INIT, HEAD_DIM>(
+    v_cache, v_cache_upd, v_proj
+  );
 
   // step 5: transpose K for correct multiplication
-  fixed32_t k_proj_transposed[NUM_HEADS][HEAD_DIM][SEQ_LEN];
-  transpose_last_two_dims<SEQ_LEN, NUM_HEADS, HEAD_DIM>(k_embed, k_proj_transposed);
+  fixed32_t k_proj_transposed[NUM_HEADS][HEAD_DIM][CACHE_SIZE_INIT+1];
+  transpose_last_two_dims<CACHE_SIZE_INIT+1, NUM_HEADS, HEAD_DIM>(k_cache_upd, k_proj_transposed);
 
   // step 6: calculate attention scores
-  fixed32_t attn_weights[NUM_HEADS][SEQ_LEN][SEQ_LEN];
+  fixed32_t attn_weights[NUM_HEADS][SEQ_LEN][CACHE_SIZE_INIT+1];
   GEMM_3D_float<
     NUM_HEADS,
     SEQ_LEN,
     HEAD_DIM,
     NUM_HEADS,
     HEAD_DIM,
-    SEQ_LEN
+    CACHE_SIZE_INIT+1
   > (
     q_embed,
     k_proj_transposed,
@@ -179,13 +203,13 @@ template <
   GEMM_3D_float<
     NUM_HEADS,
     SEQ_LEN,
-    SEQ_LEN,
+    CACHE_SIZE_INIT+1,
     NUM_HEADS,
-    SEQ_LEN,
+    CACHE_SIZE_INIT+1,
     HEAD_DIM
   > (
     attn_weights,
-    v_proj,
+    v_cache_upd,
     attn_output
   );
 
@@ -200,7 +224,7 @@ template <
   for (int s = 0; s < SEQ_LEN; ++s)
     rms_norm<PROJ_COLS>(
       attn_output_2D[s],
-      ln_weights,
+      ln_weight,
       NORM_EPSILON
     );
   
@@ -222,7 +246,7 @@ template <
     quantized_final_output,
     final_output,
     final_scales,
-    o_weights,
-    W_SCALE
+    o_weights_in,
+    o_scale
   );
 }

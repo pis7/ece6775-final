@@ -1,5 +1,5 @@
 //===========================================================================
-// layer.h
+// layer.i
 //===========================================================================
 // @brief: This header file defines the interface for the core functions.
 
@@ -11,16 +11,18 @@ typedef bit32_t HLS_SIZE_T;
 #include "model.h"
 #include "hls_math.h"
 #include "hls/hls_video_mem.h"
+#include "data/cos_tab.h"
+#include "data/sin_tab.h"
 
 //----------------------------------------------------------
 // init_1d_mem
 //----------------------------------------------------------
-template <int I, typename T>
+template <int C, typename T>
 void init_1d_mem (
-  T mem[I],
+  T mem[C],
   T val
 ) {
-  for (int i = 0; i < I; i++)
+  for (int i = 0; i < C; i++)
     mem[i] = val;
 }
 
@@ -54,20 +56,20 @@ void init_3d_mem (
 //----------------------------------------------------------
 // rms_norm
 //----------------------------------------------------------
-template <int I>
+template <int C>
 void rms_norm(
-  fixed32_t input[I],
-  const fixed32_t weight[I],
+  fixed32_t input[C],
+  const fixed32_t weight[C],
   fixed32_t epsilon
 ) {
   fixed32_t variance = 0.0;
-  for (int i = 0; i < I; i++)
+  for (int i = 0; i < C; i++)
     variance += input[i] * input[i];
 
   variance = static_cast<fixed32_t>(1.0) / hls::sqrt(
-    variance / static_cast<fixed32_t>(I) + epsilon);
+    variance / static_cast<fixed32_t>(C) + epsilon);
 
-  for (int i = 0; i < I; i++)
+  for (int i = 0; i < C; i++)
     input[i] *= variance * weight[i];
 }
 
@@ -142,34 +144,10 @@ void reshape_2D_to_3D (
   fixed32_t input [P][R*C],
   fixed32_t output [R][P][C]
 ) {
-  for (int s = 0; s < P; ++s)
-    for (int h = 0; h < R; ++h)
-      for (int d = 0; d < C; ++d)
-        output[h][s][d] = input[s][h * C + d];
-}
-
-//----------------------------------------------------------
-// rotary_embedding
-//----------------------------------------------------------
-template <int P, int R, int C>
-void rotary_embedding (
-  const fixed32_t inv_freq[C/2],
-  fixed32_t cos[P][C],
-  fixed32_t sin[P][C],
-  fixed32_t p_id
-) {
-  fixed32_t angle;
-  for (int h = 0; h < R; ++h) {
-    for (int s = 0; s < P; ++s) {
-      for (int d = 0; d < C / 2; ++d) {
-        angle = inv_freq[d] * p_id;
-        cos[s][d] = hls::cos(angle);
-        cos[s][d + C / 2] = cos[s][d];
-        sin[s][d] = hls::sin(angle);
-        sin[s][d + C / 2] = sin[s][d];
-      }
-    }
-  }
+  for (int j = 0; j < P; ++j)
+    for (int i = 0; i < R; ++i)
+      for (int k = 0; k < C; ++k)
+        output[i][j][k] = input[j][i * C + k];
 }
 
 //----------------------------------------------------------
@@ -181,35 +159,53 @@ void apply_rotary_pos_emb (
   fixed32_t input_k[R][P][C],
   fixed32_t output_q[R][P][C],
   fixed32_t output_k[R][P][C],
-  fixed32_t cos[P][C],
-  fixed32_t sin[P][C]
+  fixed32_t p_id
 ) {
   
   // half rotate
   fixed32_t rotated_q[R][P][C];
   fixed32_t rotated_k[R][P][C];
-  for (int h = 0; h < R; ++h) {
-    for (int s = 0; s < P; ++s) {
-      for (int d = 0; d < C / 2; ++d) {
-        rotated_q[h][s][d] = - input_q[h][s][d + C / 2];
-        rotated_k[h][s][d] = - input_k[h][s][d + C / 2];
-        rotated_q[h][s][d + C / 2] = input_q[h][s][d];
-        rotated_k[h][s][d + C / 2] = input_k[h][s][d];
+  for (int i = 0; i < R; ++i) {
+    for (int j = 0; j < P; ++j) {
+      for (int k = 0; k < C / 2; ++k) {
+        rotated_q[i][j][k] = - input_q[i][j][k + C / 2];
+        rotated_k[i][j][k] = - input_k[i][j][k + C / 2];
+        rotated_q[i][j][k + C / 2] = input_q[i][j][k];
+        rotated_k[i][j][k + C / 2] = input_k[i][j][k];
       }
     }
   }
   
   // apply rotation
-  for (int h = 0; h < R; ++h) {
-    for (int s = 0; s < P; ++s) {
-      for (int d = 0; d < C; ++d) {
-        output_q[h][s][d] = 
-          input_q[h][s][d] * cos[s][d] + rotated_q[h][s][d] * sin[s][d];
-        output_k[h][s][d] = 
-          input_k[h][s][d] * cos[s][d] + rotated_k[h][s][d] * sin[s][d];
+  for (int i = 0; i < R; ++i) {
+    for (int j = 0; j < P; ++j) {
+      for (int k = 0; k < C; ++k) {
+        output_q[i][j][k] = 
+          input_q[i][j][k] * cos_tab[p_id][k] + rotated_q[i][j][k] * sin_tab[p_id][k];
+        output_k[i][j][k] = 
+          input_k[i][j][k] * cos_tab[p_id][k] + rotated_k[i][j][k] * sin_tab[p_id][k];
       }
     }
   }
+}
+
+//----------------------------------------------------------
+// cache_update
+//----------------------------------------------------------
+template <int P, int R, int C>
+void cache_update (
+  fixed32_t cache_in[P][R][C],
+  fixed32_t cache_out[P][R][C],
+  fixed32_t update[P][1][C]
+) {
+  for (int i = 0; i < P; i++)
+    for (int j = 0; j < R+1; j++)
+      if (j != R)
+        for (int k = 0; k < C; k++)
+          cache_out[i][j][k] = cache_in[i][j][k];
+      else
+        for (int k = 0; k < C; k++)
+          cache_out[i][j][k] = update[i][0][k];
 }
 
 //----------------------------------------------------------
@@ -220,10 +216,10 @@ void transpose_last_two_dims (
   fixed32_t input[R][P][C],
   fixed32_t output[R][C][P]
 ) {
-  for (int h = 0; h < R; ++h)
-    for (int s = 0; s < P; ++s)
-      for (int d = 0; d < C; ++d)
-        output[h][d][s] = input[h][s][d];
+  for (int i = 0; i < R; ++i)
+    for (int j = 0; j < P; ++j)
+      for (int k = 0; k < C; ++k)
+        output[i][k][j] = input[i][j][k];
 }
 
 //----------------------------------------------------------
@@ -241,12 +237,12 @@ template <
   fixed32_t input_2[P2][R2][C2],
   fixed32_t output[P1][R1][C2]
 ) {
-  for (int h = 0; h < P1; ++h) {
-    for (int s = 0; s < R1; ++s) {
-      for (int d = 0; d < C2; ++d) {
-        output[h][s][d] = 0;
+  for (int i = 0; i < P1; ++i) {
+    for (int j = 0; j < R1; ++j) {
+      for (int k = 0; k < C2; ++k) {
+        output[i][j][k] = 0;
         for (int k = 0; k < C1; ++k)
-          output[h][s][d] += input_1[h][s][k] * input_2[h][k][d];
+          output[i][j][k] += input_1[i][j][k] * input_2[i][k][k];
       }
     }
   }
@@ -271,18 +267,18 @@ template <int P, int R, int C>
 void softmax (
   fixed32_t input[R][P][C]
 ) {
-  for (int h = 0; h < R; ++h) {
-    for (int s = 0; s < P; ++s) {
-      fixed32_t max_val = input[h][s][0];
-      for (int d = 1; d < C; ++d)
-        max_val = std::max(max_val, input[h][s][d]);
+  for (int i = 0; i < R; ++i) {
+    for (int j = 0; j < P; ++j) {
+      fixed32_t max_val = input[i][j][0];
+      for (int k = 1; k < C; ++k)
+        max_val = std::max(max_val, input[i][j][k]);
       fixed32_t sum = 0.0;
-      for (int d = 0; d < C; ++d) {
-        input[h][s][d] = hls::exp(input[h][s][d] - max_val);
-        sum += input[h][s][d];
+      for (int k = 0; k < C; ++k) {
+        input[i][j][k] = hls::exp(input[i][j][k] - max_val);
+        sum += input[i][j][k];
       }
-      for (int d = 0; d < C; ++d)
-        input[h][s][d] /= sum;
+      for (int k = 0; k < C; ++k)
+        input[i][j][k] /= sum;
     }
   }
 }
