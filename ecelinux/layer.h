@@ -86,11 +86,11 @@ void quantize_activation(
   fixed32_t Qn = -(1 << (num_bits - 1));
   fixed32_t Qp = (1 << (num_bits - 1)) - 1;
 
-  for (int i = 0; i < R; ++i) {
+  for (int i = 0; i < R; i++) {
     
       // Calculate the scale for each row
       fixed32_t max_val = 0.0;
-      for (int j = 0; j < C; ++j) {
+      for (int j = 0; j < C; j++) {
           max_val = std::max(max_val, hls::abs(input[i][j]));
       }
       fixed32_t max_v = std::max(max_val, static_cast<fixed32_t>(1e-5));
@@ -98,7 +98,7 @@ void quantize_activation(
       output_scales[i] = scale;
 
       // Quantize each element in the row
-      for (int j = 0; j < C; ++j) {
+      for (int j = 0; j < C; j++) {
           fixed32_t quantized_value = 
             static_cast<fixed32_t>(hls::round(input[i][j] * scale));
           sbit8_t quantized_value_clamped = 
@@ -144,9 +144,9 @@ void reshape_2D_to_3D (
   fixed32_t input [P][R*C],
   fixed32_t output [R][P][C]
 ) {
-  for (int j = 0; j < P; ++j)
-    for (int i = 0; i < R; ++i)
-      for (int k = 0; k < C; ++k)
+  for (int j = 0; j < P; j++)
+    for (int i = 0; i < R; i++)
+      for (int k = 0; k < C; k++)
         output[i][j][k] = input[j][i * C + k];
 }
 
@@ -165,9 +165,9 @@ void apply_rotary_pos_emb (
   // half rotate
   fixed32_t rotated_q[R][P][C];
   fixed32_t rotated_k[R][P][C];
-  for (int i = 0; i < R; ++i) {
-    for (int j = 0; j < P; ++j) {
-      for (int k = 0; k < C / 2; ++k) {
+  for (int i = 0; i < R; i++) {
+    for (int j = 0; j < P; j++) {
+      for (int k = 0; k < C / 2; k++) {
         rotated_q[i][j][k] = - input_q[i][j][k + C / 2];
         rotated_k[i][j][k] = - input_k[i][j][k + C / 2];
         rotated_q[i][j][k + C / 2] = input_q[i][j][k];
@@ -177,9 +177,9 @@ void apply_rotary_pos_emb (
   }
   
   // apply rotation
-  for (int i = 0; i < R; ++i) {
-    for (int j = 0; j < P; ++j) {
-      for (int k = 0; k < C; ++k) {
+  for (int i = 0; i < R; i++) {
+    for (int j = 0; j < P; j++) {
+      for (int k = 0; k < C; k++) {
         output_q[i][j][k] = 
           input_q[i][j][k] * cos_tab[p_id][k] + rotated_q[i][j][k] * sin_tab[p_id][k];
         output_k[i][j][k] = 
@@ -216,9 +216,9 @@ void transpose_last_two_dims (
   fixed32_t input[R][P][C],
   fixed32_t output[R][C][P]
 ) {
-  for (int i = 0; i < R; ++i)
-    for (int j = 0; j < P; ++j)
-      for (int k = 0; k < C; ++k)
+  for (int i = 0; i < R; i++)
+    for (int j = 0; j < P; j++)
+      for (int k = 0; k < C; k++)
         output[i][k][j] = input[i][j][k];
 }
 
@@ -237,11 +237,11 @@ template <
   fixed32_t input_2[P2][R2][C2],
   fixed32_t output[P1][R1][C2]
 ) {
-  for (int i = 0; i < P1; ++i) {
-    for (int j = 0; j < R1; ++j) {
-      for (int k = 0; k < C2; ++k) {
+  for (int i = 0; i < P1; i++) {
+    for (int j = 0; j < R1; j++) {
+      for (int k = 0; k < C2; k++) {
         output[i][j][k] = 0;
-        for (int k = 0; k < C1; ++k)
+        for (int k = 0; k < C1; k++)
           output[i][j][k] += input_1[i][j][k] * input_2[i][k][k];
       }
     }
@@ -267,17 +267,17 @@ template <int P, int R, int C>
 void softmax (
   fixed32_t input[R][P][C]
 ) {
-  for (int i = 0; i < R; ++i) {
-    for (int j = 0; j < P; ++j) {
+  for (int i = 0; i < R; i++) {
+    for (int j = 0; j < P; j++) {
       fixed32_t max_val = input[i][j][0];
-      for (int k = 1; k < C; ++k)
+      for (int k = 1; k < C; k++)
         max_val = std::max(max_val, input[i][j][k]);
       fixed32_t sum = 0.0;
-      for (int k = 0; k < C; ++k) {
+      for (int k = 0; k < C; k++) {
         input[i][j][k] = hls::exp(input[i][j][k] - max_val);
         sum += input[i][j][k];
       }
-      for (int k = 0; k < C; ++k)
+      for (int k = 0; k < C; k++)
         input[i][j][k] /= sum;
     }
   }
