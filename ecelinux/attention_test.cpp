@@ -8,8 +8,8 @@
 #include <string>
 #include "attention.h"
 #include "timer.h"
-#include "data/hidden_states.h"
-#include "data/ground_truth.h"
+#include "data_short/hidden_states.h"
+#include "data_short/ground_truth.h"
 
 using namespace std;
 
@@ -31,7 +31,7 @@ int main() {
     for (int j = 0; j < HS_COLS_BASIC; j++)
       attention_in.write(hidden_states[i][j]);
 
-  // perform prediction
+  // // perform prediction
   dut(attention_in, attention_out);
 
   // check results
@@ -40,10 +40,12 @@ int main() {
     cout << "{";
     for (int j = 0; j < PROJ_COLS_BASIC; j++) {
       fixed32_t result = attention_out.read();
-      if (result != ground_truth[i][j])
-        num_incorrect++;
+      if (j != PROJ_COLS_BASIC - 1) cout << result << ", ";
+      else cout << result;
+      if (result != ground_truth[i][j]) num_incorrect++;
     }
-    cout << "}," << endl;
+    if (i != SEQ_LEN_DECODE - 1) cout << "}," << endl;
+    else cout << "}";
   }
 
   if (num_incorrect == 0)

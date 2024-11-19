@@ -1,5 +1,5 @@
 //===========================================================================
-// layer.i
+// layer.h
 //===========================================================================
 // @brief: This header file defines the interface for the core functions.
 
@@ -194,8 +194,8 @@ void apply_rotary_pos_emb (
 //----------------------------------------------------------
 template <int P, int R, int C>
 void cache_update (
-  fixed32_t cache_in[P][R][C],
-  fixed32_t cache_out[P][R][C],
+  const fixed32_t cache_in[P][R][C],
+  fixed32_t cache_out[P][R+1][C],
   fixed32_t update[P][1][C]
 ) {
   for (int i = 0; i < P; i++)

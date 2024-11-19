@@ -13,7 +13,7 @@ XILINX_VIVADO?=/opt/xilinx/Vivado/2019.2
 XIL_HLS=source $(XILINX_VIVADO)/settings64.sh; vivado_hls
 VHLS_INC=$(XILINX_VIVADO)/include
 # Specify compilation flags
-CFLAGS=-g -I${VHLS_INC}
+CFLAGS= -I${VHLS_INC}
 
 TCL_SCRIPT=run.tcl
 
@@ -22,7 +22,7 @@ TCL_SCRIPT=run.tcl
 all: csim
 
 attention: attention.cpp attention_test.cpp
-	g++ ${CFLAGS} $^ -o $@ -lrt
+	$(XIL_HLS) -f run_csim.tcl
 
 result/attention_csim.txt: attention
 	@echo "Running attention sim..."

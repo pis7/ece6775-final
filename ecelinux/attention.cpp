@@ -5,14 +5,14 @@
 
 #include "attention.h"
 #include "layer.h"
-#include "data/q_weights.h"
-#include "data/k_weights.h"
-#include "data/v_weights.h"
-#include "data/o_weights.h"
-#include "data/ln_weight_in.h"
-#include "data/ln_weight.h"
-#include "data/k_cache.h"
-#include "data/v_cache.h"
+#include "data_short/q_weights.h"
+#include "data_short/k_weights.h"
+#include "data_short/v_weights.h"
+#include "data_short/o_weights.h"
+#include "data_short/ln_weight_in.h"
+#include "data_short/ln_weight.h"
+#include "data_short/k_cache.h"
+#include "data_short/v_cache.h"
 
 //----------------------------------------------------------
 // dut
@@ -71,13 +71,13 @@ template <
 > void attention (
   fixed32_t hidden_states[SEQ_LEN][HS_COLS],
   fixed32_t final_output[SEQ_LEN][PROJ_COLS],
-  const bit8_t q_weights[HS_COLS/4][PROJ_COLS],
+  const sbit8_t q_weights[HS_COLS/4][PROJ_COLS],
   const fixed32_t q_scale,
-  const bit8_t k_weights[HS_COLS/4][PROJ_COLS],
+  const sbit8_t k_weights[HS_COLS/4][PROJ_COLS],
   const fixed32_t k_scale,
-  const bit8_t v_weights[HS_COLS/4][PROJ_COLS],
+  const sbit8_t v_weights[HS_COLS/4][PROJ_COLS],
   const fixed32_t v_scale,
-  const bit8_t o_weights[HS_COLS/4][PROJ_COLS],
+  const sbit8_t o_weights[HS_COLS/4][PROJ_COLS],
   const fixed32_t o_scale,
   const fixed32_t k_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
   const fixed32_t v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
@@ -152,7 +152,7 @@ template <
   fixed32_t q_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
   fixed32_t k_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
   apply_rotary_pos_emb<SEQ_LEN, NUM_HEADS, HEAD_DIM>(
-    q_proj, k_proj, q_embed, k_embed, cos, sin, p_id
+    q_proj, k_proj, q_embed, k_embed, p_id
   );
   fixed32_t k_cache_upd[NUM_HEADS][CACHE_SIZE_INIT+1][HEAD_DIM];
   fixed32_t v_cache_upd[NUM_HEADS][CACHE_SIZE_INIT+1][HEAD_DIM];
@@ -196,7 +196,7 @@ template <
         attn_weights[h][s][d] += causal_mask[s][d];
 
   // step 7: apply softmax
-  softmax<SEQ_LEN, NUM_HEADS, SEQ_LEN>(attn_weights);
+  softmax<SEQ_LEN, NUM_HEADS, CACHE_SIZE_INIT+1>(attn_weights);
 
   // step 8: multiply with V
   fixed32_t attn_output[NUM_HEADS][SEQ_LEN][HEAD_DIM];
@@ -246,7 +246,7 @@ template <
     quantized_final_output,
     final_output,
     final_scales,
-    o_weights_in,
+    o_weights,
     o_scale
   );
 }
