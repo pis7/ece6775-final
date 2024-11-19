@@ -8,8 +8,8 @@
 #include <string>
 #include "attention.h"
 #include "timer.h"
-#include "data_short/hidden_states.h"
-#include "data_short/ground_truth.h"
+#include "data/hidden_states.h"
+#include "data/ground_truth.h"
 
 using namespace std;
 

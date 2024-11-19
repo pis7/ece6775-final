@@ -5,14 +5,14 @@
 
 #include "attention.h"
 #include "layer.h"
-#include "data_short/q_weights.h"
-#include "data_short/k_weights.h"
-#include "data_short/v_weights.h"
-#include "data_short/o_weights.h"
-#include "data_short/ln_weight_in.h"
-#include "data_short/ln_weight.h"
-#include "data_short/k_cache.h"
-#include "data_short/v_cache.h"
+#include "data/q_weights.h"
+#include "data/k_weights.h"
+#include "data/v_weights.h"
+#include "data/o_weights.h"
+#include "data/ln_weight_in.h"
+#include "data/ln_weight.h"
+#include "data/k_cache.h"
+#include "data/v_cache.h"
 
 //----------------------------------------------------------
 // dut
