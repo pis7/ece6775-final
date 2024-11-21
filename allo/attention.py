@@ -33,7 +33,6 @@ def attention_test():
                     output[i, j, k] /= sum_exp
 
     def causal_mask(
-        seq_len: int32, 
         mask: float32[SEQ_LEN, SEQ_LEN]
         ):
         for i in allo.grid(SEQ_LEN):
@@ -106,14 +105,12 @@ def attention_test():
 
     def reshape_2D_to_3D(
         input: float32[SEQ_LEN, HS_COLS], 
-        num_heads: int32, seq_len: int32, 
-        head_dim: int32, 
         reshaped: float32[NUM_HEADS, SEQ_LEN, HEAD_DIM]
         ):
-        for s in allo.grid(seq_len):
-            for h in allo.grid(num_heads):
-                for d in allo.grid(head_dim):
-                    reshaped[h, s, d] = input[s, h * head_dim + d]
+        for s in allo.grid(SEQ_LEN):
+            for h in allo.grid(NUM_HEADS):
+                for d in allo.grid(HEAD_DIM):
+                    reshaped[h, s, d] = input[s, h * HEAD_DIM + d]
 
 
     def linear_forward_no_mul(
@@ -121,12 +118,11 @@ def attention_test():
         scales: float32[SEQ_LEN], 
         weights_packed_data: uint8[HS_COLS//4, HS_COLS], 
         weights_scale: float32, 
-        weight_cols: int32, 
         q_proj_re:float32[SEQ_LEN, HS_COLS]
         ):
 
         for i in allo.grid(SEQ_LEN):
-            for j in allo.grid(weight_cols):
+            for j in allo.grid(HS_COLS):
                 for k in allo.grid(HS_COLS // 4):
                     packed_value: uint8 = weights_packed_data[k, j]
 
@@ -203,11 +199,6 @@ def attention_test():
         inv_freq: float32[HEAD_DIM//2], 
         ln_weight_in: float32[HS_COLS], 
         ln_weight: float32[HS_COLS],
-        hidden_size: int32,
-        num_heads: int32,
-        head_dim: int32,
-        seq_len: int32,
-        p_id: int32,
         ) -> float32[SEQ_LEN, HS_COLS]:
 
         RMS_NORM_EPS: float32 = 1e-5
@@ -227,18 +218,18 @@ def attention_test():
         k_proj_re: float32[SEQ_LEN, HS_COLS] = 0
         v_proj_re: float32[SEQ_LEN, HS_COLS] = 0
 
-        linear_forward_no_mul(quantized_hidden_states, scales, q_weights_packed_data, q_weights_scale, hidden_size, q_proj_re)
-        linear_forward_no_mul(quantized_hidden_states, scales, k_weights_packed_data, k_weights_scale, hidden_size, k_proj_re)
-        linear_forward_no_mul(quantized_hidden_states, scales, v_weights_packed_data, v_weights_scale, hidden_size, v_proj_re)
+        linear_forward_no_mul(quantized_hidden_states, scales, q_weights_packed_data, q_weights_scale, q_proj_re)
+        linear_forward_no_mul(quantized_hidden_states, scales, k_weights_packed_data, k_weights_scale, k_proj_re)
+        linear_forward_no_mul(quantized_hidden_states, scales, v_weights_packed_data, v_weights_scale, v_proj_re)
 
         # Reshape Q, K, V for attention calculation
         q_proj: float32[NUM_HEADS, SEQ_LEN, HEAD_DIM] = 0
         k_proj: float32[NUM_HEADS, SEQ_LEN, HEAD_DIM] = 0
         v_proj: float32[NUM_HEADS, SEQ_LEN, HEAD_DIM] = 0
 
-        reshape_2D_to_3D(q_proj_re, num_heads, seq_len, head_dim, q_proj)
-        reshape_2D_to_3D(k_proj_re, num_heads, seq_len, head_dim, k_proj)
-        reshape_2D_to_3D(v_proj_re, num_heads, seq_len, head_dim, v_proj)
+        reshape_2D_to_3D(q_proj_re, q_proj)
+        reshape_2D_to_3D(k_proj_re, k_proj)
+        reshape_2D_to_3D(v_proj_re, v_proj)
 
         # Step 4: Apply rotary embedding
         q_embed: float32[NUM_HEADS, SEQ_LEN, HEAD_DIM] = 0
@@ -255,7 +246,7 @@ def attention_test():
         attn_weights: float32[NUM_HEADS, SEQ_LEN, SEQ_LEN] = 0
         GEMM_3D_float(q_embed, k_proj_transposed, attn_weights)
 
-        scale_factor: float32 = (head_dim) ** 0.5
+        scale_factor: float32 = (HEAD_DIM) ** 0.5
         for i in allo.grid(NUM_HEADS):
             for j in allo.grid(SEQ_LEN):
                 for k in allo.grid(SEQ_LEN):
@@ -263,7 +254,7 @@ def attention_test():
         
         # Create a causal mask and apply it to the attention weights
         causal_mask: float32[SEQ_LEN, SEQ_LEN] = -3.4028235e+38
-        causal_mask(seq_len, causal_mask)
+        causal_mask(causal_mask)
         for h in allo.grid(NUM_HEADS):
             for i in allo.grid(SEQ_LEN):
                 for j in allo.grid(SEQ_LEN):
@@ -282,7 +273,7 @@ def attention_test():
         for s in allo.grid(SEQ_LEN):
             for h in allo.grid(NUM_HEADS):
                 for d in allo.grid(HEAD_DIM):
-                    attn_output_2D[s, h * head_dim + d] = attn_output[h, s, d]
+                    attn_output_2D[s, h * HEAD_DIM + d] = attn_output[h, s, d]
 
         # Step 9: Apply RMS normalization before projection
         rms_attn_output: float32[SEQ_LEN, HS_COLS] = 0
@@ -296,7 +287,7 @@ def attention_test():
         quantize_activation(rms_attn_output, 8, quantized_final_output, final_scales)
 
         final_output: float32[SEQ_LEN, HS_COLS] = 0
-        linear_forward_no_mul(quantized_final_output, final_scales, o_weights_packed_data, o_weights_scale, hidden_size, final_output)
+        linear_forward_no_mul(quantized_final_output, final_scales, o_weights_packed_data, o_weights_scale, final_output)
         return final_output
 
     s = allo.customize(attention)
@@ -315,12 +306,7 @@ def attention_test():
         np.array(sin, dtype=np.float32),
         np.array(inv_freq, dtype=np.float32),
         np.array(ln_weight_in, dtype=np.float32),
-        np.array(ln_weight, dtype=np.float32),
-        hidden_size,
-        num_heads,
-        head_dim,
-        seq_len,
-        p_id
+        np.array(ln_weight, dtype=np.float32)
         )
 
     np.testing.assert_allclose(outs, np.array(final_output), atol=1e-3)
