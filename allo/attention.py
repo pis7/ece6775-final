@@ -196,7 +196,6 @@ def attention_test():
         o_weights_scale: float32, 
         cos: float32[SEQ_LEN, HEAD_DIM],
         sin: float32[SEQ_LEN, HEAD_DIM],
-        inv_freq: float32[HEAD_DIM//2], 
         ln_weight_in: float32[HS_COLS], 
         ln_weight: float32[HS_COLS],
         ) -> float32[SEQ_LEN, HS_COLS]:
@@ -304,7 +303,6 @@ def attention_test():
         o_weights_scale,
         np.array(cos, dtype=np.float32),
         np.array(sin, dtype=np.float32),
-        np.array(inv_freq, dtype=np.float32),
         np.array(ln_weight_in, dtype=np.float32),
         np.array(ln_weight, dtype=np.float32)
         )
