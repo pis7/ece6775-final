@@ -9,10 +9,8 @@
 typedef bit32_t HLS_SIZE_T;
 
 #include "model.h"
-#include "hls_math.h"
-#include "hls/hls_video_mem.h"
-#include "data/cos_tab.h"
-#include "data/sin_tab.h"
+#include "data_short/cos_tab.h"
+#include "data_short/sin_tab.h"
 
 //----------------------------------------------------------
 // init_1d_mem
@@ -54,6 +52,18 @@ void init_3d_mem (
 }
 
 //----------------------------------------------------------
+// attention_inv_sqrt
+//----------------------------------------------------------
+fixed32_t attention_inv_sqrt(fixed32_t in) {
+  fixed32_t xhalf = (fixed32_t)0.5 * in;
+  sbit16_t i = *(sbit16_t*)&in;
+  i = 0x5f3759df - (i >> 1);
+  in = *(fixed32_t*)&i;
+  in = in * ((fixed32_t)1.5 - xhalf * in * in);
+  return in;
+}
+
+//----------------------------------------------------------
 // rms_norm
 //----------------------------------------------------------
 template <int C>
@@ -66,11 +76,25 @@ void rms_norm(
   for (int i = 0; i < C; i++)
     variance += input[i] * input[i];
 
-  variance = static_cast<fixed32_t>(1.0) / hls::sqrt(
-    variance / static_cast<fixed32_t>(C) + epsilon);
+  variance = attention_inv_sqrt(variance / (fixed32_t)C + epsilon);
 
   for (int i = 0; i < C; i++)
     input[i] *= variance * weight[i];
+}
+
+//----------------------------------------------------------
+// attention_max
+//----------------------------------------------------------
+template <typename T>
+T attention_max(T a, T b) {
+  return (a > b) ? a : b;
+}
+
+//----------------------------------------------------------
+// attention_abs
+//----------------------------------------------------------
+fixed32_t attention_abs(fixed32_t a) {
+  return (a < (fixed32_t)0.0) ? (fixed32_t)(-a) : a;
 }
 
 //----------------------------------------------------------
@@ -91,20 +115,19 @@ void quantize_activation(
       // Calculate the scale for each row
       fixed32_t max_val = 0.0;
       for (int j = 0; j < C; j++) {
-          max_val = std::max(max_val, hls::abs(input[i][j]));
+          max_val = attention_max<fixed32_t>(max_val, attention_abs(input[i][j]));
       }
-      fixed32_t max_v = std::max(max_val, static_cast<fixed32_t>(1e-5));
+      fixed32_t max_v = attention_max<fixed32_t>(max_val, (fixed32_t)(1e-5));
       fixed32_t scale = Qp / max_v;
       output_scales[i] = scale;
 
       // Quantize each element in the row
       for (int j = 0; j < C; j++) {
-          fixed32_t quantized_value = 
-            static_cast<fixed32_t>(hls::round(input[i][j] * scale));
+          fixed32_t quantized_value = input[i][j] * scale;
           sbit8_t quantized_value_clamped = 
             (quantized_value < Qn) ? 
               Qn : ((quantized_value > Qp) ? Qp : quantized_value);
-          output_states[i][j] = static_cast<sbit8_t>(quantized_value_clamped);
+          output_states[i][j] = (sbit8_t)quantized_value_clamped;
       }
   }
 }
@@ -257,7 +280,22 @@ void create_causal_mask (
 ) {
   for (int i = 0; i < P; i++)
     for (int j = 0; j < P; j++)
-      mask[i][j] = (j <= i) ? static_cast<fixed32_t>(0.0) : FIXED32_MIN;
+      mask[i][j] = (j <= i) ? (fixed32_t)0.0 : FIXED32_MIN;
+}
+
+//----------------------------------------------------------
+// attention_exp
+//----------------------------------------------------------
+fixed32_t attention_exp(fixed32_t in) {
+  fixed32_t res = 1.0;
+  fixed32_t term = 1.0;
+  sbit16_t n = 1;
+  while (attention_abs(term) > (fixed32_t)1e-10) {
+    term *= in / n;
+    res += term;
+    n++;
+  }
+  return res;
 }
 
 //----------------------------------------------------------
@@ -271,10 +309,10 @@ void softmax (
     for (int j = 0; j < P; j++) {
       fixed32_t max_val = input[i][j][0];
       for (int k = 1; k < C; k++)
-        max_val = std::max(max_val, input[i][j][k]);
+        max_val = attention_max<fixed32_t>(max_val, input[i][j][k]);
       fixed32_t sum = 0.0;
       for (int k = 0; k < C; k++) {
-        input[i][j][k] = hls::exp(input[i][j][k] - max_val);
+        input[i][j][k] = attention_exp(input[i][j][k] - max_val);
         sum += input[i][j][k];
       }
       for (int k = 0; k < C; k++)

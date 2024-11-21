@@ -8,8 +8,8 @@
 #include <string>
 #include "attention.h"
 #include "timer.h"
-#include "data/hidden_states.h"
-#include "data/ground_truth.h"
+#include "data_short/hidden_states.h"
+#include "data_short/ground_truth.h"
 
 using namespace std;
 
@@ -18,6 +18,7 @@ using namespace std;
 //------------------------------------------------------------------------
 
 int main() {
+  
   // HLS streams for communicating with the cordic block
   hls::stream<fixed32_t> attention_in;
   hls::stream<fixed32_t> attention_out;

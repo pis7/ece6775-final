@@ -22,7 +22,8 @@ TCL_SCRIPT=run.tcl
 all: csim
 
 attention: attention.cpp attention_test.cpp
-	$(XIL_HLS) -f run_csim.tcl
+	g++ ${CFLAGS} $^ -o $@ -lrt
+	# $(XIL_HLS) -f run_csim.tcl
 
 result/attention_csim.txt: attention
 	@echo "Running attention sim..."
