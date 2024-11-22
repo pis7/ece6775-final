@@ -14,9 +14,9 @@ const int HS_COLS_BASIC      = 16;
 const int PROJ_COLS_BASIC    = 16; // PROJ_COLS == NUM_HEADS * HEAD_DIM
 const int NUM_HEADS_BASIC    = 4;
 const int HEAD_DIM_BASIC     = 4;
-const int HEAD_DIM_BASIC_SQRT= std::sqrt(HEAD_DIM_BASIC);
+const int HEAD_DIM_BASIC_SQRT= 2; // sqrt(HEAD_DIM)
 const fixed32_t NORM_EPSILON = 1e-5;
-const int P_ID               = 0; // based on Kaixin's prefill prompt
+const int P_ID               = CACHE_SIZE_INIT; // based on Kaixin's prefill prompt
 const fixed32_t FIXED32_MIN  = -32768.0;
 
 #endif

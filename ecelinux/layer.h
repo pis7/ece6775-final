@@ -55,12 +55,39 @@ void init_3d_mem (
 // attention_inv_sqrt
 //----------------------------------------------------------
 fixed32_t attention_inv_sqrt(fixed32_t in) {
-  fixed32_t xhalf = (fixed32_t)0.5 * in;
-  sbit16_t i = *(sbit16_t*)&in;
-  i = 0x5f3759df - (i >> 1);
-  in = *(fixed32_t*)&i;
-  in = in * ((fixed32_t)1.5 - xhalf * in * in);
-  return in;
+    fixed32_t xhalf = (fixed32_t)0.5 * in;
+    sbit16_t i = *(sbit16_t*)&in;
+    i = 0x5f3759df - (i >> 1);
+    in = *(fixed32_t*)&i;
+
+    // Perform more iterations for higher accuracy
+    in = in * ((fixed32_t)1.5 - xhalf * in * in); // First iteration
+    in = in * ((fixed32_t)1.5 - xhalf * in * in); // Second iteration
+    in = in * ((fixed32_t)1.5 - xhalf * in * in); // Third iteration
+
+    return in;
+}
+
+//----------------------------------------------------------
+// attention_abs
+//----------------------------------------------------------
+fixed32_t attention_abs(fixed32_t a) {
+  return (a < (fixed32_t)0.0) ? (fixed32_t)(-a) : a;
+}
+
+//----------------------------------------------------------
+// attention_sqrt
+//----------------------------------------------------------
+fixed32_t attention_sqrt(fixed32_t in) {
+    fixed32_t guess = in / (fixed32_t)2.0; // Initial guess
+    fixed32_t epsilon = 0.0001; // Convergence tolerance
+
+    for (int i = 0; i < 10; ++i) {
+        guess = (guess + in / guess) / (fixed32_t)2.0;
+        if (attention_abs(guess * guess - in) < epsilon) break;
+    }
+
+    return guess;
 }
 
 //----------------------------------------------------------
@@ -76,7 +103,8 @@ void rms_norm(
   for (int i = 0; i < C; i++)
     variance += input[i] * input[i];
 
-  variance = attention_inv_sqrt(variance / (fixed32_t)C + epsilon);
+  
+  variance = (fixed32_t)1.0 / attention_sqrt(variance / (fixed32_t)C + epsilon);
 
   for (int i = 0; i < C; i++)
     input[i] *= variance * weight[i];
@@ -91,10 +119,10 @@ T attention_max(T a, T b) {
 }
 
 //----------------------------------------------------------
-// attention_abs
+// attention_round
 //----------------------------------------------------------
-fixed32_t attention_abs(fixed32_t a) {
-  return (a < (fixed32_t)0.0) ? (fixed32_t)(-a) : a;
+fixed32_t attention_round(fixed32_t a) {
+  return (a > (fixed32_t)0.0) ? (fixed32_t)(a + (fixed32_t)0.5) : (fixed32_t)(a - (fixed32_t)0.5);
 }
 
 //----------------------------------------------------------
@@ -107,26 +135,23 @@ void quantize_activation(
   fixed32_t output_scales[R],
   sbit8_t num_bits
 ) {
-  fixed32_t Qn = -(1 << (num_bits - 1));
-  fixed32_t Qp = (1 << (num_bits - 1)) - 1;
+  sbit32_t Qn = -(1 << (num_bits - 1));
+  sbit32_t Qp = (1 << (num_bits - 1)) - 1;
 
   for (int i = 0; i < R; i++) {
     
       // Calculate the scale for each row
       fixed32_t max_val = 0.0;
-      for (int j = 0; j < C; j++) {
+      for (int j = 0; j < C; j++)
           max_val = attention_max<fixed32_t>(max_val, attention_abs(input[i][j]));
-      }
       fixed32_t max_v = attention_max<fixed32_t>(max_val, (fixed32_t)(1e-5));
-      fixed32_t scale = Qp / max_v;
+      fixed32_t scale = (fixed32_t)Qp / max_v;
       output_scales[i] = scale;
 
       // Quantize each element in the row
       for (int j = 0; j < C; j++) {
-          fixed32_t quantized_value = input[i][j] * scale;
-          sbit8_t quantized_value_clamped = 
-            (quantized_value < Qn) ? 
-              Qn : ((quantized_value > Qp) ? Qp : quantized_value);
+          sbit32_t quantized_value = attention_round(input[i][j] * scale);
+          sbit8_t quantized_value_clamped = (quantized_value < Qn) ? Qn : ((quantized_value > Qp) ? Qp : quantized_value);
           output_states[i][j] = (sbit8_t)quantized_value_clamped;
       }
   }
@@ -140,7 +165,7 @@ void linear_forward_no_mul (
   sbit8_t input[R][IN_C],
   fixed32_t output[R][OUT_C],
   const fixed32_t scales[R],
-  const sbit8_t packed_weights[R/4][OUT_C],
+  const sbit8_t packed_weights[IN_C/4][OUT_C],
   const fixed32_t w_scale
 ) {
   for (int i = 0; i < R; i++) {
@@ -264,8 +289,8 @@ template <
     for (int j = 0; j < R1; j++) {
       for (int k = 0; k < C2; k++) {
         output[i][j][k] = 0;
-        for (int k = 0; k < C1; k++)
-          output[i][j][k] += input_1[i][j][k] * input_2[i][k][k];
+        for (int l = 0; l < C1; l++)
+          output[i][j][k] += input_1[i][j][l] * input_2[i][l][k];
       }
     }
   }

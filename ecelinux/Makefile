@@ -17,21 +17,21 @@ CFLAGS= -I${VHLS_INC}
 
 TCL_SCRIPT=run.tcl
 
-.PHONY: all csim bitstream clean
+.PHONY: all csim result/attention_csim.txt bitstream clean
+.SILENT: 
 
 all: csim
 
 attention: attention.cpp attention_test.cpp
 	g++ ${CFLAGS} $^ -o $@ -lrt
-	# $(XIL_HLS) -f run_csim.tcl
 
 result/attention_csim.txt: attention
-	@echo "Running attention sim..."
+	@echo -e "Running attention sim..."
 	mkdir -p result
 	./$< | tee $@
 
 csim: result/attention_csim.txt
-	@echo "Result reorded to $<"
+	@echo "Result recorded to $<"
 
 xillydemo.bit:
 	@echo "================================================================="

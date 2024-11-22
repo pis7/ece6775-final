@@ -187,7 +187,7 @@ template <
   fixed32_t scale_factor = HEAD_DIM_SQRT;
   for (int h = 0; h < NUM_HEADS; ++h)
     for (int s = 0; s < SEQ_LEN; ++s)
-      for (int d = 0; d < SEQ_LEN; ++d)
+      for (int d = 0; d < CACHE_SIZE_INIT+1; ++d)
         attn_weights[h][s][d] /= scale_factor;
 
   fixed32_t causal_mask[SEQ_LEN][SEQ_LEN];

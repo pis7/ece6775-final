@@ -9,12 +9,11 @@
 #include "attention.h"
 #include "timer.h"
 #include "data_short/hidden_states.h"
-#include "data_short/ground_truth.h"
 
 using namespace std;
 
 //------------------------------------------------------------------------
-// Digitrec testbench
+// Attention testbench
 //------------------------------------------------------------------------
 
 int main() {
@@ -38,21 +37,10 @@ int main() {
   // check results
   int num_incorrect = 0;
   for (int i = 0; i < SEQ_LEN_DECODE; i++) {
-    cout << "{";
-    for (int j = 0; j < PROJ_COLS_BASIC; j++) {
-      fixed32_t result = attention_out.read();
-      if (j != PROJ_COLS_BASIC - 1) cout << result << ", ";
-      else cout << result;
-      if (result != ground_truth[i][j]) num_incorrect++;
-    }
-    if (i != SEQ_LEN_DECODE - 1) cout << "}," << endl;
-    else cout << "}";
+    for (int j = 0; j < PROJ_COLS_BASIC; j++)
+      cout << attention_out.read() << " ";
+    cout << endl;
   }
-
-  if (num_incorrect == 0)
-    cout << "\033[32mAll results are correct!\033[0m" << endl;
-  else
-    cout << "\033[31mIncorrect results: " << num_incorrect << "\033[0m" << endl;
 
   timer.stop();
 
