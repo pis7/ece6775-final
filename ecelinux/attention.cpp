@@ -5,14 +5,14 @@
 
 #include "attention.h"
 #include "layer.h"
-#include "data/q_weights.h"
-#include "data/k_weights.h"
-#include "data/v_weights.h"
-#include "data/o_weights.h"
-#include "data/ln_weight_in.h"
-#include "data/ln_weight.h"
-#include "data/k_cache.h"
-#include "data/v_cache.h"
+#include "data_short/q_weights.h"
+#include "data_short/k_weights.h"
+#include "data_short/v_weights.h"
+#include "data_short/o_weights.h"
+#include "data_short/ln_weight_in.h"
+#include "data_short/ln_weight.h"
+#include "data_short/k_cache.h"
+#include "data_short/v_cache.h"
 
 //----------------------------------------------------------
 // dut
@@ -33,7 +33,8 @@ void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out) {
     HS_COLS_BASIC,
     PROJ_COLS_BASIC,
     NUM_HEADS_BASIC,
-    HEAD_DIM_BASIC
+    HEAD_DIM_BASIC,
+    HEAD_DIM_BASIC_SQRT
   > (
     input,
     output,
@@ -67,7 +68,8 @@ template <
   int HS_COLS,
   int PROJ_COLS,
   int NUM_HEADS,
-  int HEAD_DIM
+  int HEAD_DIM,
+  int HEAD_DIM_SQRT
 > void attention (
   fixed32_t hidden_states[SEQ_LEN][HS_COLS],
   fixed32_t final_output[SEQ_LEN][PROJ_COLS],
@@ -182,10 +184,10 @@ template <
     attn_weights
   );
 
-  fixed32_t scale_factor = hls::sqrt(HEAD_DIM);
+  fixed32_t scale_factor = HEAD_DIM_SQRT;
   for (int h = 0; h < NUM_HEADS; ++h)
     for (int s = 0; s < SEQ_LEN; ++s)
-      for (int d = 0; d < SEQ_LEN; ++d)
+      for (int d = 0; d < CACHE_SIZE_INIT+1; ++d)
         attn_weights[h][s][d] /= scale_factor;
 
   fixed32_t causal_mask[SEQ_LEN][SEQ_LEN];
