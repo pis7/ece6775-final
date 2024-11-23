@@ -194,18 +194,19 @@ def attention_test():
                 quantized_input[i, j] = quantized_value_clamped
 
     def rms_norm(
-        hidden_states: float32[HS_COLS],
+        hidden_states: float32[SEQ_LEN, HS_COLS],
         weight: float32[HS_COLS],
         epsilon: float32,
-        output: float32[HS_COLS],
+        output: float32[SEQ_LEN, HS_COLS],
     ):
-        variance: float32 = 0.0
-        for i in allo.grid(HS_COLS):
-            variance += hidden_states[i] * hidden_states[i]
+        for index in allo.grid(SEQ_LEN):
+            variance: float32 = 0.0
+            for i in allo.grid(HS_COLS):
+                variance += hidden_states[index, i] * hidden_states[index, i]
 
-        variance = 1.0 / (variance / HS_COLS + epsilon) ** 0.5
-        for i in allo.grid(HS_COLS):
-            output[i] = hidden_states[i] * weight[i] * variance
+            variance = 1.0 / (variance / HS_COLS + epsilon) ** 0.5
+            for i in allo.grid(HS_COLS):
+                output[index, i] = hidden_states[index, i] * weight[i] * variance
 
     def attention(
         hidden_states: float32[SEQ_LEN, HS_COLS],
@@ -229,8 +230,7 @@ def attention_test():
 
         # Step 1: Apply input_layernorm
         rms_hidden_states: float32[SEQ_LEN, HS_COLS] = 0
-        for i in allo.grid(SEQ_LEN):
-            rms_norm(hidden_states[i], ln_weight_in, RMS_NORM_EPS, rms_hidden_states[i])
+        rms_norm(hidden_states, ln_weight_in, RMS_NORM_EPS, rms_hidden_states)
 
         # Step 2: Quantize the input activations for Q, K, V projections
         quantized_hidden_states: int8[SEQ_LEN, HS_COLS] = 0
@@ -304,8 +304,7 @@ def attention_test():
 
         # Step 9: Apply RMS normalization before projection
         rms_attn_output: float32[SEQ_LEN, HS_COLS] = 0
-        for i in allo.grid(SEQ_LEN):
-            rms_norm(attn_output_2D[i], ln_weight, RMS_NORM_EPS, rms_attn_output[i])
+        rms_norm(attn_output_2D, ln_weight, RMS_NORM_EPS, rms_attn_output)
 
         # Step 10: Final output projection using quantized GEMM (forward_no_mul)
         quantized_final_output: int8[SEQ_LEN, HS_COLS] = 0
@@ -317,7 +316,7 @@ def attention_test():
         return final_output
 
     s = allo.customize(attention)
-    f = s.build()
+    f = s.build(target="vivado_hls", mode="csyn", project="attn.prj")
     outs = f(
         np.array(hidden_states, dtype=np.float32),
         np.array(q_weights_packed_data, dtype=np.uint8),
