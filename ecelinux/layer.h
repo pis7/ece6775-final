@@ -20,7 +20,7 @@ void init_1d_mem (
   T mem[C],
   T val
 ) {
-  for (int i = 0; i < C; i++)
+  INIT_1D_MEM_LOOP_1: for (int i = 0; i < C; i++)
     mem[i] = val;
 }
 
@@ -32,8 +32,8 @@ void init_2d_mem (
   T mem[R][C],
   T val
 ) {
-  for (int i = 0; i < R; i++)
-    for (int j = 0; j < C; j++)
+  INIT_2D_MEM_LOOP_1: for (int i = 0; i < R; i++)
+    INIT_2D_MEM_LOOP_2: for (int j = 0; j < C; j++)
       mem[i][j] = val;
 }
 
@@ -45,27 +45,10 @@ void init_3d_mem (
   T mem[P][R][C],
   T val
 ) {
-  for (int i = 0; i < P; i++)
-    for (int j = 0; j < R; j++)
-      for (int k = 0; k < C; k++)
+  INIT_3D_MEM_LOOP_1: for (int i = 0; i < P; i++)
+    INIT_3D_MEM_LOOP_2: for (int j = 0; j < R; j++)
+      INIT_3D_MEM_LOOP_3: for (int k = 0; k < C; k++)
         mem[i][j][k] = val;
-}
-
-//----------------------------------------------------------
-// attention_inv_sqrt
-//----------------------------------------------------------
-fixed32_t attention_inv_sqrt(fixed32_t in) {
-    fixed32_t xhalf = (fixed32_t)0.5 * in;
-    sbit16_t i = *(sbit16_t*)&in;
-    i = 0x5f3759df - (i >> 1);
-    in = *(fixed32_t*)&i;
-
-    // Perform more iterations for higher accuracy
-    in = in * ((fixed32_t)1.5 - xhalf * in * in); // First iteration
-    in = in * ((fixed32_t)1.5 - xhalf * in * in); // Second iteration
-    in = in * ((fixed32_t)1.5 - xhalf * in * in); // Third iteration
-
-    return in;
 }
 
 //----------------------------------------------------------
@@ -82,7 +65,7 @@ fixed32_t attention_sqrt(fixed32_t in) {
     fixed32_t guess = in / (fixed32_t)2.0; // Initial guess
     fixed32_t epsilon = 0.0001; // Convergence tolerance
 
-    for (int i = 0; i < 10; ++i) {
+    ATTENTION_SQRT_LOOP_1: for (int i = 0; i < 10; ++i) {
         guess = (guess + in / guess) / (fixed32_t)2.0;
         if (attention_abs(guess * guess - in) < epsilon) break;
     }
@@ -100,13 +83,12 @@ void rms_norm(
   fixed32_t epsilon
 ) {
   fixed32_t variance = 0.0;
-  for (int i = 0; i < C; i++)
+  RMS_NORM_LOOP_1: for (int i = 0; i < C; i++)
     variance += input[i] * input[i];
 
-  
   variance = (fixed32_t)1.0 / attention_sqrt(variance / (fixed32_t)C + epsilon);
 
-  for (int i = 0; i < C; i++)
+  RMS_NORM_LOOP_2: for (int i = 0; i < C; i++)
     input[i] *= variance * weight[i];
 }
 
@@ -138,18 +120,18 @@ void quantize_activation(
   sbit32_t Qn = -(1 << (num_bits - 1));
   sbit32_t Qp = (1 << (num_bits - 1)) - 1;
 
-  for (int i = 0; i < R; i++) {
+  QUANTIZE_ACTIVATION_LOOP_1: for (int i = 0; i < R; i++) {
     
       // Calculate the scale for each row
       fixed32_t max_val = 0.0;
-      for (int j = 0; j < C; j++)
+      QUANTIZE_ACTIVATION_LOOP_2: for (int j = 0; j < C; j++)
           max_val = attention_max<fixed32_t>(max_val, attention_abs(input[i][j]));
       fixed32_t max_v = attention_max<fixed32_t>(max_val, (fixed32_t)(1e-5));
       fixed32_t scale = (fixed32_t)Qp / max_v;
       output_scales[i] = scale;
 
       // Quantize each element in the row
-      for (int j = 0; j < C; j++) {
+      QUANTIZE_ACTIVATION_LOOP_3: for (int j = 0; j < C; j++) {
           sbit32_t quantized_value = attention_round(input[i][j] * scale);
           sbit8_t quantized_value_clamped = (quantized_value < Qn) ? Qn : ((quantized_value > Qp) ? Qp : quantized_value);
           output_states[i][j] = (sbit8_t)quantized_value_clamped;
@@ -168,12 +150,12 @@ void linear_forward_no_mul (
   const sbit8_t packed_weights[IN_C/4][OUT_C],
   const fixed32_t w_scale
 ) {
-  for (int i = 0; i < R; i++) {
-    for (int j = 0; j < OUT_C; j++) {
-      for(int k = 0; k < IN_C; k+=4) {
+  LINEAR_FORWARD_NO_MUL_LOOP_1: for (int i = 0; i < R; i++) {
+    LINEAR_FORWARD_NO_MUL_LOOP_2: for (int j = 0; j < OUT_C; j++) {
+      LINEAR_FORWARD_NO_MUL_LOOP_3: for (int k = 0; k < IN_C; k+=4) {
         sbit8_t packed_val = packed_weights[k/4][j];
 
-        for (int l = 0; l < 4 && (k + l) < IN_C; l++) {
+        LINEAR_FORWARD_NO_MUL_LOOP_4: for (int l = 0; l < 4 && (k + l) < IN_C; l++) {
           sbit8_t extract_val = (packed_val >> (2 * l)) & 0b11;
           if (extract_val == 0b01) output[i][j] += input[i][k + l];
           else if (extract_val == 0b10) output[i][j] -= input[i][k + l];
@@ -189,12 +171,12 @@ void linear_forward_no_mul (
 //----------------------------------------------------------
 template <int P, int R, int C>
 void reshape_2D_to_3D (
-  fixed32_t input [P][R*C],
-  fixed32_t output [R][P][C]
+  fixed32_t input[P][R*C],
+  fixed32_t output[R][P][C]
 ) {
-  for (int j = 0; j < P; j++)
-    for (int i = 0; i < R; i++)
-      for (int k = 0; k < C; k++)
+  RESHAPE_2D_TO_3D_LOOP_1: for (int j = 0; j < P; j++)
+    RESHAPE_2D_TO_3D_LOOP_2: for (int i = 0; i < R; i++)
+      RESHAPE_2D_TO_3D_LOOP_3: for (int k = 0; k < C; k++)
         output[i][j][k] = input[j][i * C + k];
 }
 
@@ -213,9 +195,9 @@ void apply_rotary_pos_emb (
   // half rotate
   fixed32_t rotated_q[R][P][C];
   fixed32_t rotated_k[R][P][C];
-  for (int i = 0; i < R; i++) {
-    for (int j = 0; j < P; j++) {
-      for (int k = 0; k < C / 2; k++) {
+  APPLY_ROTARY_POS_EMB_LOOP_1: for (int i = 0; i < R; i++) {
+    APPLY_ROTARY_POS_EMB_LOOP_2: for (int j = 0; j < P; j++) {
+      APPLY_ROTARY_POS_EMB_LOOP_3: for (int k = 0; k < C / 2; k++) {
         rotated_q[i][j][k] = - input_q[i][j][k + C / 2];
         rotated_k[i][j][k] = - input_k[i][j][k + C / 2];
         rotated_q[i][j][k + C / 2] = input_q[i][j][k];
@@ -225,9 +207,9 @@ void apply_rotary_pos_emb (
   }
   
   // apply rotation
-  for (int i = 0; i < R; i++) {
-    for (int j = 0; j < P; j++) {
-      for (int k = 0; k < C; k++) {
+  APPLY_ROTARY_POS_EMB_LOOP_4: for (int i = 0; i < R; i++) {
+    APPLY_ROTARY_POS_EMB_LOOP_5: for (int j = 0; j < P; j++) {
+      APPLY_ROTARY_POS_EMB_LOOP_6: for (int k = 0; k < C; k++) {
         output_q[i][j][k] = 
           input_q[i][j][k] * cos_tab[p_id][k] + rotated_q[i][j][k] * sin_tab[p_id][k];
         output_k[i][j][k] = 
@@ -246,14 +228,11 @@ void cache_update (
   fixed32_t cache_out[P][R+1][C],
   fixed32_t update[P][1][C]
 ) {
-  for (int i = 0; i < P; i++)
-    for (int j = 0; j < R+1; j++)
-      if (j != R)
-        for (int k = 0; k < C; k++)
-          cache_out[i][j][k] = cache_in[i][j][k];
-      else
-        for (int k = 0; k < C; k++)
-          cache_out[i][j][k] = update[i][0][k];
+  CACHE_UPDATE_LOOP_1: for (int i = 0; i < P; i++)
+    CACHE_UPDATE_LOOP_2: for (int j = 0; j < R+1; j++)
+      CACHE_UPDATE_LOOP_3: for (int k = 0; k < C; k++)
+        if (j != R) cache_out[i][j][k] = cache_in[i][j][k];
+        else cache_out[i][j][k] = update[i][0][k];
 }
 
 //----------------------------------------------------------
@@ -264,9 +243,9 @@ void transpose_last_two_dims (
   fixed32_t input[R][P][C],
   fixed32_t output[R][C][P]
 ) {
-  for (int i = 0; i < R; i++)
-    for (int j = 0; j < P; j++)
-      for (int k = 0; k < C; k++)
+  TRANSPOSE_LAST_TWO_DIMS_LOOP_1: for (int i = 0; i < R; i++)
+    TRANSPOSE_LAST_TWO_DIMS_LOOP_2: for (int j = 0; j < P; j++)
+      TRANSPOSE_LAST_TWO_DIMS_LOOP_3: for (int k = 0; k < C; k++)
         output[i][k][j] = input[i][j][k];
 }
 
@@ -285,11 +264,11 @@ template <
   fixed32_t input_2[P2][R2][C2],
   fixed32_t output[P1][R1][C2]
 ) {
-  for (int i = 0; i < P1; i++) {
-    for (int j = 0; j < R1; j++) {
-      for (int k = 0; k < C2; k++) {
+  GEMM_3D_FLOAT_LOOP_1: for (int i = 0; i < P1; i++) {
+    GEMM_3D_FLOAT_LOOP_2: for (int j = 0; j < R1; j++) {
+      GEMM_3D_FLOAT_LOOP_3: for (int k = 0; k < C2; k++) {
         output[i][j][k] = 0;
-        for (int l = 0; l < C1; l++)
+        GEMM_3D_FLOAT_LOOP_4: for (int l = 0; l < C1; l++)
           output[i][j][k] += input_1[i][j][l] * input_2[i][l][k];
       }
     }
@@ -303,8 +282,8 @@ template <int P>
 void create_causal_mask (
   fixed32_t mask[P][P]
 ) {
-  for (int i = 0; i < P; i++)
-    for (int j = 0; j < P; j++)
+  CREATE_CAUSAL_MASK_LOOP_1: for (int i = 0; i < P; i++)
+    CREATE_CAUSAL_MASK_LOOP_2: for (int j = 0; j < P; j++)
       mask[i][j] = (j <= i) ? (fixed32_t)0.0 : FIXED32_MIN;
 }
 
@@ -312,16 +291,22 @@ void create_causal_mask (
 // attention_exp
 //----------------------------------------------------------
 fixed32_t attention_exp(fixed32_t in) {
-  fixed32_t res = 1.0;
-  fixed32_t term = 1.0;
-  sbit16_t n = 1;
-  while (attention_abs(term) > (fixed32_t)1e-10) {
-    term *= in / n;
-    res += term;
-    n++;
-  }
-  return res;
+    const fixed32_t tolerance = 1e-10;
+    const int MAX_TERMS = 5;  // Limit the number of terms to reduce complexity
+
+    fixed32_t res = 1.0;
+    fixed32_t term = 1.0;
+
+    for (int n = 1; n <= MAX_TERMS; ++n) {
+        term *= in / n;
+        if (attention_abs(term) < tolerance) break;  // Break if the term is too small to add
+        res += term;
+    }
+
+    return res;
 }
+
+
 
 //----------------------------------------------------------
 // softmax
@@ -330,17 +315,17 @@ template <int P, int R, int C>
 void softmax (
   fixed32_t input[R][P][C]
 ) {
-  for (int i = 0; i < R; i++) {
-    for (int j = 0; j < P; j++) {
+  SOFTMAX_LOOP_1: for (int i = 0; i < R; i++) {
+    SOFTMAX_LOOP_2: for (int j = 0; j < P; j++) {
       fixed32_t max_val = input[i][j][0];
-      for (int k = 1; k < C; k++)
+      SOFTMAX_LOOP_3: for (int k = 1; k < C; k++)
         max_val = attention_max<fixed32_t>(max_val, input[i][j][k]);
       fixed32_t sum = 0.0;
-      for (int k = 0; k < C; k++) {
+      SOFTMAX_LOOP_4: for (int k = 0; k < C; k++) {
         input[i][j][k] = attention_exp(input[i][j][k] - max_val);
         sum += input[i][j][k];
       }
-      for (int k = 0; k < C; k++)
+      SOFTMAX_LOOP_5: for (int k = 0; k < C; k++)
         input[i][j][k] /= sum;
     }
   }
