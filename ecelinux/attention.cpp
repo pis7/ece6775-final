@@ -89,7 +89,7 @@ template <
 ) {
 
   // step 1: apply layer normalization
-  for (int s = 0; s < SEQ_LEN; s++) {
+  RMS_NORM_LOOP_1: for (int s = 0; s < SEQ_LEN; s++) {
     rms_norm<HS_COLS>(
       hidden_states[s], 
       ln_weight_in,
@@ -185,16 +185,16 @@ template <
   );
 
   fixed32_t scale_factor = HEAD_DIM_SQRT;
-  for (int h = 0; h < NUM_HEADS; ++h)
-    for (int s = 0; s < SEQ_LEN; ++s)
-      for (int d = 0; d < CACHE_SIZE_INIT+1; ++d)
+  SF_LOOP_1: for (int h = 0; h < NUM_HEADS; ++h)
+    SF_LOOP_2: for (int s = 0; s < SEQ_LEN; ++s)
+      SF_LOOP_3: for (int d = 0; d < CACHE_SIZE_INIT+1; ++d)
         attn_weights[h][s][d] /= scale_factor;
 
   fixed32_t causal_mask[SEQ_LEN][SEQ_LEN];
   create_causal_mask<SEQ_LEN>(causal_mask);
-  for (int h = 0; h < NUM_HEADS; ++h)
-    for (int s = 0; s < SEQ_LEN; ++s)
-      for (int d = 0; d < SEQ_LEN; ++d)
+  CM_LOOP_1: for (int h = 0; h < NUM_HEADS; ++h)
+    CM_LOOP_2: for (int s = 0; s < SEQ_LEN; ++s)
+      CM_LOOP_3: for (int d = 0; d < SEQ_LEN; ++d)
         attn_weights[h][s][d] += causal_mask[s][d];
 
   // step 7: apply softmax
@@ -217,13 +217,13 @@ template <
 
   fixed32_t attn_output_2D[SEQ_LEN][PROJ_COLS];
   init_2d_mem<SEQ_LEN, PROJ_COLS, fixed32_t>(attn_output_2D, 0);
-  for (int s = 0; s < SEQ_LEN; ++s)
-    for (int h = 0; h < NUM_HEADS; ++h)
-      for (int d = 0; d < HEAD_DIM; ++d)
+  ATTN_2D_LOOP_1: for (int s = 0; s < SEQ_LEN; ++s)
+    ATTN_2D_LOOP_2: for (int h = 0; h < NUM_HEADS; ++h)
+      ATTN_2D_LOOP_3: for (int d = 0; d < HEAD_DIM; ++d)
         attn_output_2D[s][h * HEAD_DIM + d] = attn_output[h][s][d];
 
   // step 9: apply RMS normalization before projection
-  for (int s = 0; s < SEQ_LEN; ++s)
+  RMS_NORM_LOOP_2: for (int s = 0; s < SEQ_LEN; ++s)
     rms_norm<PROJ_COLS>(
       attn_output_2D[s],
       ln_weight,

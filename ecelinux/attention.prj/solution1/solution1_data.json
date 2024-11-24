@@ -1,0 +1,1056 @@
+{
+  "Top": "dut",
+  "RtlTop": "dut",
+  "RtlPrefix": "",
+  "SourceLanguage": "cpp",
+  "ResetStyle": "control",
+  "GenerateBdFiles": "0",
+  "HostMachineBits": "64",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z020",
+    "Package": "-clg484",
+    "Speed": "-1"
+  },
+  "HlsSolution": {
+    "DirectiveTcl": [
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_unroll init_1d_mem\/INIT_1D_MEM_LOOP_1 ",
+      "set_directive_pipeline init_2d_mem\/INIT_2D_MEM_LOOP_1 ",
+      "set_directive_pipeline init_3d_mem\/INIT_3D_MEM_LOOP_2 ",
+      "set_directive_pipeline rms_norm\/RMS_NORM_LOOP_1 ",
+      "set_directive_pipeline rms_norm\/RMS_NORM_LOOP_2 ",
+      "set_directive_unroll quantize_activation\/QUANTIZE_ACTIVATION_LOOP_2 ",
+      "set_directive_pipeline quantize_activation\/QUANTIZE_ACTIVATION_LOOP_3 ",
+      "set_directive_pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_2 ",
+      "set_directive_pipeline reshape_2D_to_3D\/RESHAPE_2D_TO_3D_LOOP_3 ",
+      "set_directive_array_partition apply_rotary_pos_emb ",
+      "set_directive_array_partition apply_rotary_pos_emb ",
+      "set_directive_pipeline apply_rotary_pos_emb\/APPLY_ROTARY_POS_EMB_LOOP_2 ",
+      "set_directive_pipeline apply_rotary_pos_emb\/APPLY_ROTARY_POS_EMB_LOOP_5 ",
+      "set_directive_pipeline transpose_last_two_dims\/TRANSPOSE_LAST_TWO_DIMS_LOOP_2 ",
+      "set_directive_pipeline GEMM_3D_float\/GEMM_3D_FLOAT_LOOP_3 ",
+      "set_directive_pipeline create_causal_mask\/CREATE_CAUSAL_MASK_LOOP_1 ",
+      "set_directive_unroll softmax\/SOFTMAX_LOOP_3 ",
+      "set_directive_pipeline softmax\/SOFTMAX_LOOP_4 ",
+      "set_directive_unroll softmax\/SOFTMAX_LOOP_5 ",
+      "set_directive_pipeline attention\/SF_LOOP_2 ",
+      "set_directive_pipeline attention\/CM_LOOP_2 ",
+      "set_directive_pipeline attention\/ATTN_2D_LOOP_2 "
+    ],
+    "DirectiveInfo": [
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredq_proj} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredk_proj} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredv_proj} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredq_embed} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredk_embed} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredk_cache_upd} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredv_cache_upd} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredk_proj_transposed} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredattn_weights} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredattn_output} {complete positionBoolean0type} {dim 3}} {}",
+      "unroll init_1d_mem\/INIT_1D_MEM_LOOP_1 {} {}",
+      "pipeline init_2d_mem\/INIT_2D_MEM_LOOP_1 {} {}",
+      "pipeline init_3d_mem\/INIT_3D_MEM_LOOP_2 {} {}",
+      "pipeline rms_norm\/RMS_NORM_LOOP_1 {} {}",
+      "pipeline rms_norm\/RMS_NORM_LOOP_2 {} {}",
+      "unroll quantize_activation\/QUANTIZE_ACTIVATION_LOOP_2 {} {}",
+      "pipeline quantize_activation\/QUANTIZE_ACTIVATION_LOOP_3 {} {}",
+      "pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_2 {} {}",
+      "pipeline reshape_2D_to_3D\/RESHAPE_2D_TO_3D_LOOP_3 {} {}",
+      "array_partition apply_rotary_pos_emb {{partition positionBooleanCmd} {variable positionBooleanTextRequiredrotated_q} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition apply_rotary_pos_emb {{partition positionBooleanCmd} {variable positionBooleanTextRequiredrotated_k} {complete positionBoolean0type} {dim 3}} {}",
+      "pipeline apply_rotary_pos_emb\/APPLY_ROTARY_POS_EMB_LOOP_2 {} {}",
+      "pipeline apply_rotary_pos_emb\/APPLY_ROTARY_POS_EMB_LOOP_5 {} {}",
+      "pipeline transpose_last_two_dims\/TRANSPOSE_LAST_TWO_DIMS_LOOP_2 {} {}",
+      "pipeline GEMM_3D_float\/GEMM_3D_FLOAT_LOOP_3 {} {}",
+      "pipeline create_causal_mask\/CREATE_CAUSAL_MASK_LOOP_1 {} {}",
+      "unroll softmax\/SOFTMAX_LOOP_3 {} {}",
+      "pipeline softmax\/SOFTMAX_LOOP_4 {} {}",
+      "unroll softmax\/SOFTMAX_LOOP_5 {} {}",
+      "pipeline attention\/SF_LOOP_2 {} {}",
+      "pipeline attention\/CM_LOOP_2 {} {}",
+      "pipeline attention\/ATTN_2D_LOOP_2 {} {}"
+    ]
+  },
+  "Args": {
+    "strm_in": {
+      "index": "0",
+      "type": {"dataType": "ap_fixed"}
+    },
+    "strm_out": {
+      "index": "1",
+      "type": {"dataType": "ap_fixed"}
+    }
+  },
+  "Return": {
+    
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "IsCombLogic": "0",
+    "II": "x",
+    "Latency": "2987",
+    "Uncertainty": "1.25"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "dut",
+    "Version": "1.0",
+    "DisplayName": "Dut",
+    "Revision": "",
+    "Description": "An IP generated by Vivado HLS",
+    "Taxonomy": "\/VIVADO_HLS_IP",
+    "AutoFamilySupport": ""
+  },
+  "Files": {
+    "CSource": ["..\/..\/attention.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/apply_rotary_pos_emb.vhd",
+      "impl\/vhdl\/apply_rotary_pos_g8j.vhd",
+      "impl\/vhdl\/apply_rotary_pos_hbi.vhd",
+      "impl\/vhdl\/attention.vhd",
+      "impl\/vhdl\/attention_exp.vhd",
+      "impl\/vhdl\/attention_k_cache_V.vhd",
+      "impl\/vhdl\/attention_k_cacheFfa.vhd",
+      "impl\/vhdl\/attention_k_weighocq.vhd",
+      "impl\/vhdl\/attention_k_weighpcA.vhd",
+      "impl\/vhdl\/attention_k_weighqcK.vhd",
+      "impl\/vhdl\/attention_k_weighrcU.vhd",
+      "impl\/vhdl\/attention_ln_weigjbC.vhd",
+      "impl\/vhdl\/attention_ln_weigwdI.vhd",
+      "impl\/vhdl\/attention_o_weighAem.vhd",
+      "impl\/vhdl\/attention_o_weighxdS.vhd",
+      "impl\/vhdl\/attention_o_weighyd2.vhd",
+      "impl\/vhdl\/attention_o_weighzec.vhd",
+      "impl\/vhdl\/attention_q_proj_CeG.vhd",
+      "impl\/vhdl\/attention_q_weighkbM.vhd",
+      "impl\/vhdl\/attention_q_weighlbW.vhd",
+      "impl\/vhdl\/attention_q_weighmb6.vhd",
+      "impl\/vhdl\/attention_q_weighncg.vhd",
+      "impl\/vhdl\/attention_quantizBew.vhd",
+      "impl\/vhdl\/attention_v_cache_V.vhd",
+      "impl\/vhdl\/attention_v_cacheJfO.vhd",
+      "impl\/vhdl\/attention_v_weighsc4.vhd",
+      "impl\/vhdl\/attention_v_weightde.vhd",
+      "impl\/vhdl\/attention_v_weighudo.vhd",
+      "impl\/vhdl\/attention_v_weighvdy.vhd",
+      "impl\/vhdl\/cache_update.vhd",
+      "impl\/vhdl\/dut_input_0_V.vhd",
+      "impl\/vhdl\/dut_mul_64s_32s_7dEe.vhd",
+      "impl\/vhdl\/dut_mux_32_32_1_1.vhd",
+      "impl\/vhdl\/dut_mux_42_32_1_1.vhd",
+      "impl\/vhdl\/dut_mux_124_32_1_1.vhd",
+      "impl\/vhdl\/dut_mux_165_32_1_1.vhd",
+      "impl\/vhdl\/dut_sdiv_46ns_32scud.vhd",
+      "impl\/vhdl\/dut_sdiv_53s_32s_bkb.vhd",
+      "impl\/vhdl\/dut_sdiv_54ns_32sibs.vhd",
+      "impl\/vhdl\/dut_sdiv_76ns_59sfYi.vhd",
+      "impl\/vhdl\/dut_udiv_51s_31nseOg.vhd",
+      "impl\/vhdl\/GEMM_3D_float.vhd",
+      "impl\/vhdl\/GEMM_3D_float_1.vhd",
+      "impl\/vhdl\/init_2d_mem.vhd",
+      "impl\/vhdl\/linear_forward_no_mu.vhd",
+      "impl\/vhdl\/quantize_activation.vhd",
+      "impl\/vhdl\/reshape_2D_to_3D.vhd",
+      "impl\/vhdl\/rms_norm_16_s.vhd",
+      "impl\/vhdl\/softmax_1_4_3_s.vhd",
+      "impl\/vhdl\/transpose_last_two_d.vhd",
+      "impl\/vhdl\/dut.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/apply_rotary_pos_emb.v",
+      "impl\/verilog\/apply_rotary_pos_g8j.v",
+      "impl\/verilog\/apply_rotary_pos_g8j_rom.dat",
+      "impl\/verilog\/apply_rotary_pos_hbi.v",
+      "impl\/verilog\/apply_rotary_pos_hbi_rom.dat",
+      "impl\/verilog\/attention.v",
+      "impl\/verilog\/attention_exp.v",
+      "impl\/verilog\/attention_k_cache_V.v",
+      "impl\/verilog\/attention_k_cache_V_rom.dat",
+      "impl\/verilog\/attention_k_cacheFfa.v",
+      "impl\/verilog\/attention_k_weighocq.v",
+      "impl\/verilog\/attention_k_weighocq_rom.dat",
+      "impl\/verilog\/attention_k_weighpcA.v",
+      "impl\/verilog\/attention_k_weighpcA_rom.dat",
+      "impl\/verilog\/attention_k_weighqcK.v",
+      "impl\/verilog\/attention_k_weighqcK_rom.dat",
+      "impl\/verilog\/attention_k_weighrcU.v",
+      "impl\/verilog\/attention_k_weighrcU_rom.dat",
+      "impl\/verilog\/attention_ln_weigjbC.v",
+      "impl\/verilog\/attention_ln_weigjbC_rom.dat",
+      "impl\/verilog\/attention_ln_weigwdI.v",
+      "impl\/verilog\/attention_ln_weigwdI_rom.dat",
+      "impl\/verilog\/attention_o_weighAem.v",
+      "impl\/verilog\/attention_o_weighAem_rom.dat",
+      "impl\/verilog\/attention_o_weighxdS.v",
+      "impl\/verilog\/attention_o_weighxdS_rom.dat",
+      "impl\/verilog\/attention_o_weighyd2.v",
+      "impl\/verilog\/attention_o_weighyd2_rom.dat",
+      "impl\/verilog\/attention_o_weighzec.v",
+      "impl\/verilog\/attention_o_weighzec_rom.dat",
+      "impl\/verilog\/attention_q_proj_CeG.v",
+      "impl\/verilog\/attention_q_weighkbM.v",
+      "impl\/verilog\/attention_q_weighkbM_rom.dat",
+      "impl\/verilog\/attention_q_weighlbW.v",
+      "impl\/verilog\/attention_q_weighlbW_rom.dat",
+      "impl\/verilog\/attention_q_weighmb6.v",
+      "impl\/verilog\/attention_q_weighmb6_rom.dat",
+      "impl\/verilog\/attention_q_weighncg.v",
+      "impl\/verilog\/attention_q_weighncg_rom.dat",
+      "impl\/verilog\/attention_quantizBew.v",
+      "impl\/verilog\/attention_v_cache_V.v",
+      "impl\/verilog\/attention_v_cache_V_rom.dat",
+      "impl\/verilog\/attention_v_cacheJfO.v",
+      "impl\/verilog\/attention_v_weighsc4.v",
+      "impl\/verilog\/attention_v_weighsc4_rom.dat",
+      "impl\/verilog\/attention_v_weightde.v",
+      "impl\/verilog\/attention_v_weightde_rom.dat",
+      "impl\/verilog\/attention_v_weighudo.v",
+      "impl\/verilog\/attention_v_weighudo_rom.dat",
+      "impl\/verilog\/attention_v_weighvdy.v",
+      "impl\/verilog\/attention_v_weighvdy_rom.dat",
+      "impl\/verilog\/cache_update.v",
+      "impl\/verilog\/dut_input_0_V.v",
+      "impl\/verilog\/dut_mul_64s_32s_7dEe.v",
+      "impl\/verilog\/dut_mux_32_32_1_1.v",
+      "impl\/verilog\/dut_mux_42_32_1_1.v",
+      "impl\/verilog\/dut_mux_124_32_1_1.v",
+      "impl\/verilog\/dut_mux_165_32_1_1.v",
+      "impl\/verilog\/dut_sdiv_46ns_32scud.v",
+      "impl\/verilog\/dut_sdiv_53s_32s_bkb.v",
+      "impl\/verilog\/dut_sdiv_54ns_32sibs.v",
+      "impl\/verilog\/dut_sdiv_76ns_59sfYi.v",
+      "impl\/verilog\/dut_udiv_51s_31nseOg.v",
+      "impl\/verilog\/GEMM_3D_float.v",
+      "impl\/verilog\/GEMM_3D_float_1.v",
+      "impl\/verilog\/init_2d_mem.v",
+      "impl\/verilog\/linear_forward_no_mu.v",
+      "impl\/verilog\/quantize_activation.v",
+      "impl\/verilog\/reshape_2D_to_3D.v",
+      "impl\/verilog\/rms_norm_16_s.v",
+      "impl\/verilog\/softmax_1_4_3_s.v",
+      "impl\/verilog\/transpose_last_two_d.v",
+      "impl\/verilog\/dut.v"
+    ],
+    "Misc": ["impl\/misc\/logo.png"],
+    "DesignXml": "\/home\/pis7\/ece6775-final\/ecelinux\/attention.prj\/solution1\/.autopilot\/db\/dut.design.xml",
+    "DebugDir": "\/home\/pis7\/ece6775-final\/ecelinux\/attention.prj\/solution1\/.debug",
+    "ProtoInst": ["\/home\/pis7\/ece6775-final\/ecelinux\/attention.prj\/solution1\/.debug\/dut.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "IP": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "ctype": {"CLK": {"Type": "bool"}},
+      "bundle_name": "ap_clk",
+      "bundle_role": "default",
+      "reset": "ap_rst"
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "ctrl_ports": "ap_start ap_done ap_idle ap_ready",
+      "ctype": {
+        "start": {"Type": "bool"},
+        "done": {"Type": "bool"},
+        "idle": {"Type": "bool"},
+        "ready": {"Type": "bool"}
+      }
+    },
+    "ap_rst": {
+      "type": "reset",
+      "polarity": "ACTIVE_HIGH",
+      "ctype": {"RST": {"Type": "bool"}},
+      "bundle_name": "ap_rst",
+      "bundle_role": "default"
+    },
+    "strm_in_V_V": {
+      "type": "ap_fifo",
+      "fifo_width": "32",
+      "fifo_type": "read",
+      "ctype": {
+        "RD_DATA": {
+          "Type": "real fixed signed 22",
+          "Width": "32"
+        },
+        "EMPTY_N": {"Type": "bool"},
+        "RD_EN": {"Type": "bool"}
+      }
+    },
+    "strm_out_V_V": {
+      "type": "ap_fifo",
+      "fifo_width": "32",
+      "fifo_type": "write",
+      "ctype": {
+        "WR_DATA": {
+          "Type": "real fixed signed 22",
+          "Width": "32"
+        },
+        "FULL_N": {"Type": "bool"},
+        "WR_EN": {"Type": "bool"}
+      }
+    }
+  },
+  "RtlPorts": {
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "strm_in_V_V_dout": {
+      "dir": "in",
+      "width": "32"
+    },
+    "strm_in_V_V_empty_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "strm_in_V_V_read": {
+      "dir": "out",
+      "width": "1"
+    },
+    "strm_out_V_V_din": {
+      "dir": "out",
+      "width": "32"
+    },
+    "strm_out_V_V_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "strm_out_V_V_write": {
+      "dir": "out",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "dut",
+      "Instances": [{
+          "ModuleName": "attention",
+          "InstanceName": "grp_attention_fu_177",
+          "Instances": [
+            {
+              "ModuleName": "linear_forward_no_mu",
+              "InstanceName": "grp_linear_forward_no_mu_fu_458"
+            },
+            {
+              "ModuleName": "softmax_1_4_3_s",
+              "InstanceName": "grp_softmax_1_4_3_s_fu_491",
+              "Instances": [{
+                  "ModuleName": "attention_exp",
+                  "InstanceName": "grp_attention_exp_fu_1581"
+                }]
+            },
+            {
+              "ModuleName": "apply_rotary_pos_emb",
+              "InstanceName": "grp_apply_rotary_pos_emb_fu_511"
+            },
+            {
+              "ModuleName": "rms_norm_16_s",
+              "InstanceName": "grp_rms_norm_16_s_fu_551"
+            },
+            {
+              "ModuleName": "quantize_activation",
+              "InstanceName": "grp_quantize_activation_fu_560"
+            },
+            {
+              "ModuleName": "GEMM_3D_float",
+              "InstanceName": "grp_GEMM_3D_float_fu_567"
+            },
+            {
+              "ModuleName": "GEMM_3D_float_1",
+              "InstanceName": "grp_GEMM_3D_float_1_fu_590"
+            },
+            {
+              "ModuleName": "cache_update",
+              "InstanceName": "grp_cache_update_fu_610"
+            },
+            {
+              "ModuleName": "reshape_2D_to_3D",
+              "InstanceName": "grp_reshape_2D_to_3D_fu_637"
+            },
+            {
+              "ModuleName": "transpose_last_two_d",
+              "InstanceName": "grp_transpose_last_two_d_fu_642"
+            },
+            {
+              "ModuleName": "init_2d_mem",
+              "InstanceName": "grp_init_2d_mem_fu_653"
+            },
+            {
+              "ModuleName": "init_2d_mem",
+              "InstanceName": "grp_init_2d_mem_fu_658"
+            },
+            {
+              "ModuleName": "init_2d_mem",
+              "InstanceName": "grp_init_2d_mem_fu_663"
+            }
+          ]
+        }]
+    },
+    "Info": {
+      "rms_norm_16_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "quantize_activation": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "init_2d_mem": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "linear_forward_no_mu": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "reshape_2D_to_3D": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "apply_rotary_pos_emb": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "cache_update": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "transpose_last_two_d": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "GEMM_3D_float": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "attention_exp": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "softmax_1_4_3_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "GEMM_3D_float_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "attention": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "dut": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "rms_norm_16_s": {
+        "Latency": {
+          "LatencyBest": "157",
+          "LatencyAvg": "432",
+          "LatencyWorst": "767",
+          "PipelineIIMin": "157",
+          "PipelineIIMax": "767",
+          "PipelineII": "157 ~ 767",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.545"
+        },
+        "Loops": [
+          {
+            "Name": "RMS_NORM_LOOP_1",
+            "TripCount": "16",
+            "Latency": "18",
+            "PipelineII": "1",
+            "PipelineDepth": "4"
+          },
+          {
+            "Name": "ATTENTION_SQRT_LOOP_1",
+            "TripCount": "",
+            "LatencyMin": "61",
+            "LatencyMax": "670",
+            "Latency": "61 ~ 670",
+            "PipelineII": "",
+            "PipelineDepth": "61"
+          },
+          {
+            "Name": "RMS_NORM_LOOP_2",
+            "TripCount": "16",
+            "Latency": "23",
+            "PipelineII": "1",
+            "PipelineDepth": "9"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "DSP48E": "19",
+          "FF": "2699",
+          "LUT": "2596",
+          "URAM": "0"
+        }
+      },
+      "quantize_activation": {
+        "Latency": {
+          "LatencyBest": "85",
+          "LatencyAvg": "85",
+          "LatencyWorst": "85",
+          "PipelineII": "85",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.568"
+        },
+        "Loops": [{
+            "Name": "QUANTIZE_ACTIVATION_LOOP_3",
+            "TripCount": "16",
+            "Latency": "19",
+            "PipelineII": "1",
+            "PipelineDepth": "5"
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "DSP48E": "4",
+          "FF": "1782",
+          "LUT": "2045",
+          "URAM": "0"
+        }
+      },
+      "init_2d_mem": {
+        "Latency": {
+          "LatencyBest": "17",
+          "LatencyAvg": "17",
+          "LatencyWorst": "17",
+          "PipelineII": "17",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "2.322"
+        },
+        "Loops": [{
+            "Name": "INIT_2D_MEM_LOOP_2",
+            "TripCount": "16",
+            "Latency": "16",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          }],
+        "Area": {
+          "FF": "7",
+          "LUT": "50",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "linear_forward_no_mu": {
+        "Latency": {
+          "LatencyBest": "376",
+          "LatencyAvg": "376",
+          "LatencyWorst": "376",
+          "PipelineII": "376",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.510"
+        },
+        "Loops": [{
+            "Name": "LINEAR_FORWARD_NO_MUL_LOOP_2",
+            "TripCount": "16",
+            "Latency": "374",
+            "PipelineII": "17",
+            "PipelineDepth": "120"
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "DSP48E": "4",
+          "FF": "9052",
+          "LUT": "8711",
+          "URAM": "0"
+        }
+      },
+      "reshape_2D_to_3D": {
+        "Latency": {
+          "LatencyBest": "18",
+          "LatencyAvg": "18",
+          "LatencyWorst": "18",
+          "PipelineII": "18",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.687"
+        },
+        "Loops": [{
+            "Name": "RESHAPE_2D_TO_3D_LOOP_2_RESHAPE_2D_TO_3D_LOOP_3",
+            "TripCount": "16",
+            "Latency": "16",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }],
+        "Area": {
+          "FF": "536",
+          "LUT": "154",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "apply_rotary_pos_emb": {
+        "Latency": {
+          "LatencyBest": "122",
+          "LatencyAvg": "122",
+          "LatencyWorst": "122",
+          "PipelineII": "122",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.510"
+        },
+        "Loops": [
+          {
+            "Name": "APPLY_ROTARY_POS_EMB_LOOP_1",
+            "TripCount": "4",
+            "Latency": "16",
+            "PipelineII": "",
+            "PipelineDepth": "4",
+            "Loops": [{
+                "Name": "APPLY_ROTARY_POS_EMB_LOOP_3",
+                "TripCount": "2",
+                "Latency": "2",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          },
+          {
+            "Name": "APPLY_ROTARY_POS_EMB_LOOP_4",
+            "TripCount": "4",
+            "Latency": "104",
+            "PipelineII": "",
+            "PipelineDepth": "26",
+            "Loops": [{
+                "Name": "APPLY_ROTARY_POS_EMB_LOOP_6",
+                "TripCount": "4",
+                "Latency": "24",
+                "PipelineII": "",
+                "PipelineDepth": "6"
+              }]
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "8",
+          "FF": "2558",
+          "LUT": "3869",
+          "URAM": "0"
+        }
+      },
+      "cache_update": {
+        "Latency": {
+          "LatencyBest": "129",
+          "LatencyAvg": "129",
+          "LatencyWorst": "129",
+          "PipelineII": "129",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "5.576"
+        },
+        "Loops": [{
+            "Name": "CACHE_UPDATE_LOOP_1",
+            "TripCount": "4",
+            "Latency": "128",
+            "PipelineII": "",
+            "PipelineDepth": "32",
+            "Loops": [{
+                "Name": "CACHE_UPDATE_LOOP_2",
+                "TripCount": "3",
+                "Latency": "30",
+                "PipelineII": "",
+                "PipelineDepth": "10",
+                "Loops": [{
+                    "Name": "CACHE_UPDATE_LOOP_3",
+                    "TripCount": "4",
+                    "Latency": "8",
+                    "PipelineII": "",
+                    "PipelineDepth": "2"
+                  }]
+              }]
+          }],
+        "Area": {
+          "FF": "55",
+          "LUT": "270",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "transpose_last_two_d": {
+        "Latency": {
+          "LatencyBest": "26",
+          "LatencyAvg": "26",
+          "LatencyWorst": "26",
+          "PipelineII": "26",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.356"
+        },
+        "Loops": [{
+            "Name": "TRANSPOSE_LAST_TWO_DIMS_LOOP_1_TRANSPOSE_LAST_TWO_DIMS_LOOP_2",
+            "TripCount": "12",
+            "Latency": "24",
+            "PipelineII": "2",
+            "PipelineDepth": "3"
+          }],
+        "Area": {
+          "FF": "94",
+          "LUT": "360",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "GEMM_3D_float": {
+        "Latency": {
+          "LatencyBest": "28",
+          "LatencyAvg": "28",
+          "LatencyWorst": "28",
+          "PipelineII": "28",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.510"
+        },
+        "Loops": [{
+            "Name": "GEMM_3D_FLOAT_LOOP_1_GEMM_3D_FLOAT_LOOP_3",
+            "TripCount": "12",
+            "Latency": "26",
+            "PipelineII": "2",
+            "PipelineDepth": "5"
+          }],
+        "Area": {
+          "DSP48E": "16",
+          "FF": "904",
+          "LUT": "643",
+          "BRAM_18K": "0",
+          "URAM": "0"
+        }
+      },
+      "attention_exp": {
+        "Latency": {
+          "LatencyBest": "10",
+          "LatencyAvg": "10",
+          "LatencyWorst": "10",
+          "PipelineII": "1",
+          "PipelineDepth": "11",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.510"
+        },
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "1805",
+          "LUT": "1453",
+          "URAM": "0"
+        }
+      },
+      "softmax_1_4_3_s": {
+        "Latency": {
+          "LatencyBest": "401",
+          "LatencyAvg": "401",
+          "LatencyWorst": "401",
+          "PipelineII": "401",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.510"
+        },
+        "Loops": [{
+            "Name": "SOFTMAX_LOOP_1",
+            "TripCount": "4",
+            "Latency": "400",
+            "PipelineII": "",
+            "PipelineDepth": "100",
+            "Loops": [{
+                "Name": "SOFTMAX_LOOP_4",
+                "TripCount": "3",
+                "Latency": "40",
+                "PipelineII": "13",
+                "PipelineDepth": "14"
+              }]
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "5534",
+          "LUT": "4542",
+          "URAM": "0"
+        }
+      },
+      "GEMM_3D_float_1": {
+        "Latency": {
+          "LatencyBest": "36",
+          "LatencyAvg": "36",
+          "LatencyWorst": "36",
+          "PipelineII": "36",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.512"
+        },
+        "Loops": [{
+            "Name": "GEMM_3D_FLOAT_LOOP_1_GEMM_3D_FLOAT_LOOP_3",
+            "TripCount": "16",
+            "Latency": "34",
+            "PipelineII": "2",
+            "PipelineDepth": "5"
+          }],
+        "Area": {
+          "DSP48E": "12",
+          "FF": "923",
+          "LUT": "549",
+          "BRAM_18K": "0",
+          "URAM": "0"
+        }
+      },
+      "attention": {
+        "Latency": {
+          "LatencyBest": "2936",
+          "LatencyAvg": "3486",
+          "LatencyWorst": "4156",
+          "PipelineIIMin": "2936",
+          "PipelineIIMax": "4156",
+          "PipelineII": "2936 ~ 4156",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.750"
+        },
+        "Loops": [
+          {
+            "Name": "INIT_2D_MEM_LOOP_2",
+            "TripCount": "16",
+            "Latency": "16",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "SF_LOOP_1",
+            "TripCount": "4",
+            "Latency": "32",
+            "PipelineII": "",
+            "PipelineDepth": "8",
+            "Loops": [{
+                "Name": "SF_LOOP_3",
+                "TripCount": "3",
+                "Latency": "6",
+                "PipelineII": "",
+                "PipelineDepth": "2"
+              }]
+          },
+          {
+            "Name": "CM_LOOP_1",
+            "TripCount": "4",
+            "Latency": "4",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "ATTN_2D_LOOP_2",
+            "TripCount": "4",
+            "Latency": "8",
+            "PipelineII": "2",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "INIT_2D_MEM_LOOP_2",
+            "TripCount": "16",
+            "Latency": "16",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "20",
+          "DSP48E": "87",
+          "FF": "29100",
+          "LUT": "27159",
+          "URAM": "0"
+        }
+      },
+      "dut": {
+        "Latency": {
+          "LatencyBest": "2987",
+          "LatencyAvg": "3537",
+          "LatencyWorst": "4207",
+          "PipelineIIMin": "2988",
+          "PipelineIIMax": "4208",
+          "PipelineII": "2988 ~ 4208",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.750"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "16",
+            "Latency": "16",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "16",
+            "Latency": "32",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "24",
+          "DSP48E": "87",
+          "FF": "29121",
+          "LUT": "27387",
+          "URAM": "0"
+        }
+      }
+    }
+  },
+  "Sdx": {
+    "Target": "none",
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "XO": "",
+    "KernelName": "dut",
+    "EnableXoSwEmu": "1"
+  },
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2024-11-24 10:25:35 EST",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2019.2"
+  }
+}

@@ -66,8 +66,8 @@ fixed32_t attention_sqrt(fixed32_t in) {
     fixed32_t epsilon = 0.0001; // Convergence tolerance
 
     ATTENTION_SQRT_LOOP_1: for (int i = 0; i < 10; ++i) {
-        guess = (guess + in / guess) / (fixed32_t)2.0;
-        if (attention_abs(guess * guess - in) < epsilon) break;
+      guess = (guess + in / guess) / (fixed32_t)2.0;
+      if (attention_abs(guess * guess - in) < epsilon) break;
     }
 
     return guess;
@@ -292,21 +292,19 @@ void create_causal_mask (
 //----------------------------------------------------------
 fixed32_t attention_exp(fixed32_t in) {
     const fixed32_t tolerance = 1e-10;
-    const int MAX_TERMS = 5;  // Limit the number of terms to reduce complexity
+    const int MAX_TERMS = 5;
 
     fixed32_t res = 1.0;
     fixed32_t term = 1.0;
 
-    for (int n = 1; n <= MAX_TERMS; ++n) {
+      ATTENTION_EXP_LOOP_1: for (int n = 1; n <= MAX_TERMS; ++n) {
         term *= in / n;
-        if (attention_abs(term) < tolerance) break;  // Break if the term is too small to add
+        if (attention_abs(term) < tolerance) break;
         res += term;
     }
 
     return res;
 }
-
-
 
 //----------------------------------------------------------
 // softmax
