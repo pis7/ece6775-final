@@ -115,8 +115,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "hidden_states_0_V", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "79", "SubInstance" : "grp_rms_norm_16_s_fu_551", "Port" : "input_0_V"},
-					{"ID" : "83", "SubInstance" : "grp_quantize_activation_fu_560", "Port" : "input_0_V"}]},
+					{"ID" : "83", "SubInstance" : "grp_quantize_activation_fu_560", "Port" : "input_0_V"},
+					{"ID" : "79", "SubInstance" : "grp_rms_norm_16_s_fu_551", "Port" : "input_0_V"}]},
 			{"Name" : "final_output_0_V", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "38", "SubInstance" : "grp_linear_forward_no_mu_fu_458", "Port" : "output_0_V"},

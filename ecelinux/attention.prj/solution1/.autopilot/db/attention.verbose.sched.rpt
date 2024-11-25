@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'attention'
 ================================================================
-* Date:           Sun Nov 24 10:25:17 2024
+* Date:           Mon Nov 25 00:15:51 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention.prj
@@ -636,8 +636,8 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'sub' operation ('sub_ln1148_6', attention.cpp:191) [257]  (2.52 ns)
 	'select' operation ('select_ln1148', attention.cpp:191) [258]  (0.698 ns)
-	'mux' operation ('attn_weights_V_1_0_0_3', attention.cpp:191) [264]  (1.96 ns)
-	'store' operation ('store_ln191', attention.cpp:191) of variable 'attn_weights_V_1_0_0_3', attention.cpp:191 on local variable 'attn_weights_V_1_0_0_4' [265]  (1.77 ns)
+	'mux' operation ('attn_weights_V_0_0_0_5', attention.cpp:191) [274]  (1.96 ns)
+	'store' operation ('store_ln191', attention.cpp:191) of variable 'attn_weights_V_0_0_0_5', attention.cpp:191 on local variable 'attn_weights_V_0_0_0_6' [275]  (1.77 ns)
 
  <State 21>: 3.92ns
 The critical path consists of the following:

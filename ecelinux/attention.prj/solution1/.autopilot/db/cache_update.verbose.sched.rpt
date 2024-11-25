@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'cache_update'
 ================================================================
-* Date:           Sun Nov 24 10:25:14 2024
+* Date:           Mon Nov 25 00:15:48 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention.prj
@@ -226,7 +226,7 @@ The critical path consists of the following:
  <State 5>: 5.58ns
 The critical path consists of the following:
 	'load' operation ('cache_in_V_load', ./layer.h:234) on array 'cache_in_V' [89]  (3.25 ns)
-	'store' operation ('store_ln234', ./layer.h:234) of variable 'cache_in_V_load', ./layer.h:234 on array 'cache_out_3_V' [102]  (2.32 ns)
+	'store' operation ('store_ln234', ./layer.h:234) of variable 'cache_in_V_load', ./layer.h:234 on array 'cache_out_2_V' [93]  (2.32 ns)
 
 
 ============================================================

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'softmax_1_4_3_s'
 ================================================================
-* Date:           Sun Nov 24 10:25:16 2024
+* Date:           Mon Nov 25 00:15:50 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention.prj
@@ -735,9 +735,9 @@ The critical path consists of the following:
 
  <State 16>: 4.55ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('empty_44', ./layer.h:316) with incoming values : ('p_read_6', ./layer.h:316) ('op_V_assign_1', ./layer.h:323) ('input_V16_1', ./layer.h:316) [138]  (1.77 ns)
-	'phi' operation ('empty_44', ./layer.h:316) with incoming values : ('p_read_6', ./layer.h:316) ('op_V_assign_1', ./layer.h:323) ('input_V16_1', ./layer.h:316) [138]  (0 ns)
-	'phi' operation ('empty_31', ./layer.h:316) with incoming values : ('p_read_6', ./layer.h:316) ('op_V_assign_1', ./layer.h:323) ('input_V16_1', ./layer.h:316) [74]  (0 ns)
+	multiplexor before 'phi' operation ('empty_39', ./layer.h:323) with incoming values : ('p_read_1', ./layer.h:316) ('op_V_assign_1', ./layer.h:323) ('input_V211_1', ./layer.h:316) [133]  (1.77 ns)
+	'phi' operation ('empty_39', ./layer.h:323) with incoming values : ('p_read_1', ./layer.h:316) ('op_V_assign_1', ./layer.h:323) ('input_V211_1', ./layer.h:316) [133]  (0 ns)
+	'phi' operation ('empty_26', ./layer.h:316) with incoming values : ('p_read_1', ./layer.h:316) ('op_V_assign_1', ./layer.h:323) ('input_V211_1', ./layer.h:316) [69]  (0 ns)
 	'mux' operation ('tmp_8', ./layer.h:323) [92]  (2.78 ns)
 
  <State 17>: 6.69ns

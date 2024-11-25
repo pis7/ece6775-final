@@ -1,5 +1,5 @@
 0.0261049 -0.0298078 0.0107381 -0.0261049 -0.0362875 -0.00888658 -0.000555277 -0.0318441 0.0605412 -0.0396202 0.00907183 0.0127747 0.0127747 0.00370264 -0.0348065 0.0179586 
-attention           :      1 calls;   2.769 msecs total time
+attention           :      1 calls;   2.952 msecs total time
 INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
@@ -260,7 +260,7 @@ Built simulation snapshot dut
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/xsim.dir/dut/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun Nov 24 10:26:01 2024...
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 25 00:16:34 2024...
 
 ****** xsim v2019.2 (64-bit)
   **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
@@ -284,6 +284,6 @@ source dut.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 35525 ns : File "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut.autotb.v" Line 271
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sun Nov 24 10:26:09 2024...
+INFO: [Common 17-206] Exiting xsim at Mon Nov 25 00:16:43 2024...
 0.0261049 -0.0298078 0.0107381 -0.0261049 -0.0362875 -0.00888658 -0.000555277 -0.0318441 0.0605412 -0.0396202 0.00907183 0.0127747 0.0127747 0.00370264 -0.0348065 0.0179586 
-attention           :      1 calls;   1.648 msecs total time
+attention           :      1 calls;   1.637 msecs total time
