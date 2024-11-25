@@ -3,10 +3,10 @@
 //---------------------------------------------------------
 #ifndef __TIMER_H__
 #define __TIMER_H__
-#include <time.h>
-#include <sys/time.h>
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
+#include <sys/time.h>
+#include <time.h>
 
 #define TIMER_ON
 
@@ -25,7 +25,7 @@ class Timer {
 
   char binName[50];
   unsigned nCalls;
-  struct timespec ts_start;
+  timeval ts_start;
   float totalTime;
 
 public:
@@ -35,7 +35,7 @@ public:
   Timer(const char *Name = "", bool On = false) {
     if (On) {
       // record the start time
-      clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &ts_start);
+      gettimeofday(&ts_start, NULL);
       nCalls = 1;
     } else {
       nCalls = 0;
@@ -50,9 +50,9 @@ public:
   ~Timer() {
     // on being destroyed, print the average and total time
     if (nCalls > 0) {
-      printf("%-20s: ", binName);
-      printf("%6d calls; ", nCalls);
-      printf("%7.3f msecs total time\n", totalTime);
+      printf("\033[35m%-20s: \033[0m", binName);
+      printf("\033[35m%6d calls; \033[0m", nCalls);
+      printf("\033[35m%7.3f msecs total time\n\033[0m", 1000 * totalTime);
       // printf ("%7.4f msecs average time;\n", 1000*totalTime/nCalls);
     }
   }
@@ -62,7 +62,7 @@ public:
   //------------------------------------------------------------------
   void start() {
     // record start time
-    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &ts_start);
+    gettimeofday(&ts_start, NULL);
     nCalls++;
   }
 
@@ -71,12 +71,10 @@ public:
   //------------------------------------------------------------------
   void stop() {
     // get current time, add elapsed time to totalTime
-    struct timespec ts_curr;
-    clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &ts_curr);
-    float diff_sec = float(ts_curr.tv_sec - ts_start.tv_sec);
-    float diff_nsec = float(ts_curr.tv_nsec - ts_start.tv_nsec);
-
-    totalTime += 1e3 * diff_sec + 1e-6 * diff_nsec;
+    timeval ts_curr;
+    gettimeofday(&ts_curr, NULL);
+    totalTime += float(ts_curr.tv_sec - ts_start.tv_sec) +
+                 float(ts_curr.tv_usec) * 1e-6 - float(ts_start.tv_usec) * 1e-6;
   }
 
 #else

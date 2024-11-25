@@ -54,7 +54,7 @@ set_directive_unroll quantize_activation/QUANTIZE_ACTIVATION_LOOP_2
 set_directive_pipeline quantize_activation/QUANTIZE_ACTIVATION_LOOP_3
 
 # linear_forward_no_mul directives
-set_directive_pipeline linear_forward_no_mul/LINEAR_FORWARD_NO_MUL_LOOP_2
+set_directive_pipeline -II 17 linear_forward_no_mul/LINEAR_FORWARD_NO_MUL_LOOP_2
 
 # reshape_2D_to_3D directives
 set_directive_pipeline reshape_2D_to_3D/RESHAPE_2D_TO_3D_LOOP_3
@@ -66,23 +66,23 @@ set_directive_pipeline apply_rotary_pos_emb/APPLY_ROTARY_POS_EMB_LOOP_2
 set_directive_pipeline apply_rotary_pos_emb/APPLY_ROTARY_POS_EMB_LOOP_5
 
 # transpose_last_two_dims directives
-set_directive_pipeline transpose_last_two_dims/TRANSPOSE_LAST_TWO_DIMS_LOOP_2
+set_directive_pipeline -II 2 transpose_last_two_dims/TRANSPOSE_LAST_TWO_DIMS_LOOP_2
 
-# # GEMM_3D_float directives
-set_directive_pipeline GEMM_3D_float/GEMM_3D_FLOAT_LOOP_3
+# GEMM_3D_float directives
+set_directive_pipeline -II 2 GEMM_3D_float/GEMM_3D_FLOAT_LOOP_3
 
-# # create_causal_mask directives
+# create_causal_mask directives
 set_directive_pipeline create_causal_mask/CREATE_CAUSAL_MASK_LOOP_1
 
 # softmax directives
 set_directive_unroll softmax/SOFTMAX_LOOP_3
-set_directive_pipeline softmax/SOFTMAX_LOOP_4
+set_directive_pipeline -II 13 softmax/SOFTMAX_LOOP_4
 set_directive_unroll softmax/SOFTMAX_LOOP_5
 
 # attention directives
 set_directive_pipeline attention/SF_LOOP_2
 set_directive_pipeline attention/CM_LOOP_2
-set_directive_pipeline attention/ATTN_2D_LOOP_2
+set_directive_pipeline -II 2 attention/ATTN_2D_LOOP_2
 
 ############################################
 

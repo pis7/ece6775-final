@@ -4,12 +4,15 @@
 #include <fcntl.h>
 #include <math.h>
 #include <assert.h>
+
 #include <iostream>
 #include <fstream>
+
 #include <string>
 #include "attention.h"
 #include "timer.h"
 #include "data_short/hidden_states.h"
+#include "data_short/ground_truth.h"
 
 using namespace std;
 
@@ -25,7 +28,7 @@ int main() {
     exit(-1);
   }
   int nbytes;
-  bit32_t input_vector;
+  fixed32_t input_vector;
 
   // Timer
   Timer timer("attention");
@@ -40,17 +43,24 @@ int main() {
     }
 
   // check results
-  bit32_t result;
+  fixed32_t result;
+  int num_incorrect = 0;
   for (int i = 0; i < SEQ_LEN_DECODE; i++) {
-    for (int j = 0; j < PROJ_COLS_BASIC; j++){
+    for (int j = 0; j < PROJ_COLS_BASIC; j++) {
       nbytes = read(fdr, (void *)&result, sizeof(result));
       assert(nbytes == sizeof(result));
-      cout << result << " ";
+      cout << "\033[34m" << result << "\033[0m ";
+      int res_scaled = result * 1000;
+      int gt_scaled = ground_truth[i][j] * 1000;
+      if (std::abs(res_scaled - gt_scaled) != 0) num_incorrect++;
     }
     cout << endl;
   }
 
   timer.stop();
+
+  if (num_incorrect == 0) cout << "\033[32mAttention test passed!\033[0m" << endl;
+  else cout << "\033[31mAttention test failed with " << num_incorrect << " errors!\033[0m" << endl;
 
   return 0;
 }

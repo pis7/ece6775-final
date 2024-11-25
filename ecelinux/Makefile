@@ -13,7 +13,7 @@ XILINX_VIVADO?=/opt/xilinx/Vivado/2019.2
 XIL_HLS=source $(XILINX_VIVADO)/settings64.sh; vivado_hls
 VHLS_INC=$(XILINX_VIVADO)/include
 # Specify compilation flags
-CFLAGS= -I${VHLS_INC}
+CFLAGS=-g -I${VHLS_INC} -DHLS_NO_XIL_FPO_LIB -std=c++11 -O3
 
 TCL_SCRIPT=run.tcl
 
@@ -38,11 +38,11 @@ xillydemo.bit:
 	@echo "Synthesizing attention and creating bitstream for $(TCL_SCRIPT)..."
 	@echo "================================================================="
 	$(XIL_HLS) -f $(TCL_SCRIPT)
-	./run_bitstream.sh
+	source $(XILINX_VIVADO)/settings64.sh; ./run_bitstream.sh
 
 bitstream: xillydemo.bit
 	@echo "Bitstream saved to $<"
 
 clean:
 	rm -rf attention *.dat *.prj *.log
-	rm -rf zedboard_project* xillydemo.bit
+	rm -rf xillydemo.bit

@@ -1025,7 +1025,7 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_begin:29  %tmp_1 = call i32 (...)* @_ssdm_op_Spec
 
 <Node id="47" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-TRANSPOSE_LAST_TWO_DIMS_LOOP_2_begin:30  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind
+TRANSPOSE_LAST_TWO_DIMS_LOOP_2_begin:30  call void (...)* @_ssdm_op_SpecPipeline(i32 2, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln248"/></StgValue>

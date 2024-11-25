@@ -1339,7 +1339,7 @@ LINEAR_FORWARD_NO_MUL_LOOP_2_begin:1  %tmp_s = call i32 (...)* @_ssdm_op_SpecReg
 
 <Node id="42" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-LINEAR_FORWARD_NO_MUL_LOOP_2_begin:2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind
+LINEAR_FORWARD_NO_MUL_LOOP_2_begin:2  call void (...)* @_ssdm_op_SpecPipeline(i32 17, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln155"/></StgValue>

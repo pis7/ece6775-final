@@ -101,18 +101,6 @@ read_verilog -library xil_defaultlib {
   /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fifo_32x512.v
   /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/system.v
 }
-add_files /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system.bd
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_processing_system7_0_0/vivado_system_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_xbar_0/vivado_system_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_3/vivado_system_auto_pc_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_0/vivado_system_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_1/vivado_system_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_2/vivado_system_auto_pc_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system_ooc.xdc]
-
 read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo.xci
 set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo.xdc]
 set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo_clocks.xdc]
@@ -125,6 +113,18 @@ set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece
 read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512.xci
 set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512.xdc]
 set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512_ooc.xdc]
+
+add_files /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system.bd
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_processing_system7_0_0/vivado_system_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_xbar_0/vivado_system_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_3/vivado_system_auto_pc_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_0/vivado_system_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_1/vivado_system_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_2/vivado_system_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system_ooc.xdc]
 
 set_property edif_extra_search_paths /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/cores [current_fileset]
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -143,7 +143,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top xillydemo -part xc7z020clg484-1
+synth_design -top xillydemo -part xc7z020clg484-1 -retiming
 
 
 # disable binary constraint mode for synth run checkpoints

@@ -83,6 +83,22 @@
                <obj_property name="Render_Data">/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_softmax_1_4_3_s_fu_491_activity.dataflowTxWaveData.Cycles</obj_property>
                <obj_property name="Value_Data">/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_softmax_1_4_3_s_fu_491_activity.dataflowTxWaveData.OutStanding</obj_property>
                <obj_property name="Detail_Data">/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_softmax_1_4_3_s_fu_491_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/grp_attention_exp_fu_1581_activity">
+                  <obj_property name="label">grp_attention_exp_fu_1581_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_attention_exp_fu_1581_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_attention_exp_fu_1581_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/grp_attention_exp_fu_1581_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/grp_attention_exp_fu_1581_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/grp_attention_exp_fu_1581_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
             </wvobject>
             <wvobject type="group" fp_name="/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_apply_rotary_pos_emb_fu_511/grp_apply_rotary_pos_emb_fu_511_activity">
                <obj_property name="label">grp_apply_rotary_pos_emb_fu_511_activity</obj_property>
@@ -384,6 +400,10 @@
          <wvobject type="group" fp_name="grp_softmax_1_4_3_s_fu_491_group">
             <obj_property name="label">grp_softmax_1_4_3_s_fu_491</obj_property>
             <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/grp_attention_exp_fu_1581_activity">
+               <obj_property name="ElementShortName">grp_attention_exp_fu_1581_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_attention_exp_fu_1581_activity</obj_property>
+            </wvobject>
             <wvobject type="group" fp_name="grp_softmax_1_4_3_s_fu_491_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
@@ -398,6 +418,26 @@
                <wvobject type="logic" fp_name="/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_attention_exp_fu_1581_group">
+               <obj_property name="label">grp_attention_exp_fu_1581</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_attention_exp_fu_1581_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_dut_top/AESL_inst_dut/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
                </wvobject>
             </wvobject>
          </wvobject>

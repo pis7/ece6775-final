@@ -1,0 +1,675 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Mon Nov 25 11:20:46 2024
+| Host         : ecelinux-11.ece.cornell.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : report_methodology -file xillydemo_methodology_drc_routed.rpt -pb xillydemo_methodology_drc_routed.pb -rpx xillydemo_methodology_drc_routed.rpx
+| Design       : xillydemo
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 121
++-----------+----------+------------------------------------------------------+------------+
+| Rule      | Severity | Description                                          | Violations |
++-----------+----------+------------------------------------------------------+------------+
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal           | 8          |
+| SYNTH-10  | Warning  | Wide multiplier                                      | 80         |
+| TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                        | 11         |
+| TIMING-24 | Warning  | Overridden Max delay datapath only                   | 2          |
+| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint | 4          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port             | 14         |
++-----------+----------+------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_177/attn_output_2D_0_V_U/attention_q_proj_CeG_ram_U/ram_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_177/k_cache_V_U/attention_k_cache_V_rom_U/q0_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_177/k_proj_re_0_V_U/attention_q_proj_CeG_ram_U/ram_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_177/q_proj_re_0_V_U/attention_q_proj_CeG_ram_U/ram_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_177/v_cache_V_U/attention_v_cache_V_rom_U/q0_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_177/v_proj_re_0_V_U/attention_q_proj_CeG_ram_U/ram_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/input_0_V_U/dut_input_0_V_ram_U/ram_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/output_0_U/dut_input_0_V_ram_U/ram_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/mul_ln1118_fu_570_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/mul_ln1118_fu_570_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/mul_ln1192_1_fu_617_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/mul_ln1192_1_fu_617_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#5 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/mul_ln1192_1_reg_1164_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#6 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/mul_ln1192_1_reg_1164_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#7 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/mul_ln1192_fu_582_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#8 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/mul_ln1192_fu_582_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#9 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/mul_ln1192_reg_1154_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#10 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/mul_ln1192_reg_1154_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#11 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/tmp_24_reg_1159_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#12 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_1_fu_590/tmp_24_reg_1159_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#13 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1118_fu_602_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#14 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1118_fu_602_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#15 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_1_fu_650_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#16 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_1_fu_650_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#17 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_1_reg_1170_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#18 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_1_reg_1170_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#19 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_2_fu_673_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#20 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_2_fu_673_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#21 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_2_reg_1180_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#22 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_2_reg_1180_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#23 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_fu_615_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#24 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_fu_615_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#25 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_reg_1160_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#26 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/mul_ln1192_reg_1160_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#27 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/tmp_38_reg_1165_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#28 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_GEMM_3D_float_fu_567/tmp_38_reg_1165_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#29 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_linear_forward_no_mu_fu_458/mul_ln1118_fu_387_p2 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#30 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_linear_forward_no_mu_fu_458/mul_ln1118_fu_387_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#31 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_linear_forward_no_mu_fu_458/sext_ln1148_reg_1449_reg of size 12x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#32 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_linear_forward_no_mu_fu_458/sext_ln1148_reg_1449_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#33 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_quantize_activation_fu_560/mul_ln1118_fu_708_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#34 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_quantize_activation_fu_560/mul_ln1118_fu_708_p2__0 of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#35 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_quantize_activation_fu_560/mul_ln1118_fu_708_p2__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#36 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_quantize_activation_fu_560/mul_ln1118_fu_708_p2__2 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#37 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/dut_mul_64s_32s_7dEe_U3/dut_mul_64s_32s_7dEe_MulnS_0_U/buff0_reg of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#38 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/dut_mul_64s_32s_7dEe_U3/dut_mul_64s_32s_7dEe_MulnS_0_U/buff0_reg__0 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#39 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/dut_mul_64s_32s_7dEe_U3/dut_mul_64s_32s_7dEe_MulnS_0_U/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#40 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/dut_mul_64s_32s_7dEe_U3/dut_mul_64s_32s_7dEe_MulnS_0_U/buff1_reg of size 13x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#41 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/dut_mul_64s_32s_7dEe_U3/dut_mul_64s_32s_7dEe_MulnS_0_U/buff1_reg__0 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#42 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/dut_mul_64s_32s_7dEe_U3/dut_mul_64s_32s_7dEe_MulnS_0_U/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#43 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/dut_mul_64s_32s_7dEe_U3/dut_mul_64s_32s_7dEe_MulnS_0_U/tmp_product of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#44 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/dut_mul_64s_32s_7dEe_U3/dut_mul_64s_32s_7dEe_MulnS_0_U/tmp_product__0 of size 18x15, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#45 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_5_fu_625_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#46 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_5_fu_625_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#47 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_5_reg_787_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#48 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_5_reg_787_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#49 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_7_fu_247_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#50 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_7_fu_247_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#51 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_7_reg_667_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#52 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_7_reg_667_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#53 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_8_fu_534_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#54 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_8_fu_534_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#55 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_8_reg_743_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#56 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_rms_norm_16_s_fu_551/r_V_8_reg_743_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#57 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_1_fu_292_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#58 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_1_fu_292_p2__0 of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#59 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_1_fu_292_p2__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#60 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_1_fu_292_p2__2 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#61 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_2_fu_392_p2 of size 14x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#62 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_2_fu_392_p2__0 of size 14x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#63 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_2_fu_392_p2__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#64 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_2_fu_392_p2__2 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#65 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_3_fu_510_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#66 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_3_fu_510_p2__0 of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#67 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_3_fu_510_p2__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#68 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_3_fu_510_p2__2 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#69 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_fu_169_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#70 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_fu_169_p2__0 of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#71 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_fu_169_p2__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#72 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1118_fu_169_p2__2 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#73 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1148_1_fu_447_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#74 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1148_1_fu_447_p2__0 of size 15x17, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#75 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1148_1_fu_447_p2__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#76 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1148_1_fu_447_p2__2 of size 18x17, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#77 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1148_fu_228_p2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#78 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1148_fu_228_p2__0 of size 15x17, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#79 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1148_fu_228_p2__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#80 Warning
+Wide multiplier  
+Detected multiplier at test_fpga_design/grp_attention_fu_177/grp_softmax_1_4_3_s_fu_491/grp_attention_exp_fu_1581/mul_ln1148_fu_228_p2__2 of size 18x17, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on audio_adc relative to clock(s) clk_fpga_1
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on audio_bclk relative to clock(s) clk_fpga_1
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on audio_lrclk relative to clock(s) clk_fpga_1
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on smb_sdata relative to clock(s) clk_fpga_1
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on GPIO_LED[0] relative to clock(s) clk_fpga_1
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on GPIO_LED[1] relative to clock(s) clk_fpga_1
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on GPIO_LED[2] relative to clock(s) clk_fpga_1
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on GPIO_LED[3] relative to clock(s) clk_fpga_1
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on audio_dac relative to clock(s) clk_fpga_1
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on audio_mclk relative to clock(s) gclk
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on smb_sclk relative to clock(s) clk_fpga_1
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks clk_fpga_1 and vga_clk_ins/clkout0 overrides a set_max_delay -datapath_only (position 12). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 6 in the Timing Constraints window in Vivado IDE) between clocks vga_clk_ins/clkout0 and clk_fpga_1 overrides a set_max_delay -datapath_only (position 10). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-28#1 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock vga_clk_ins/clk_fb is referenced by name inside timing constraint (see constraint position 5 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_pll/CLKFBOUT]
+Related violations: <none>
+
+TIMING-28#2 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock vga_clk_ins/clk_fb is referenced by name inside timing constraint (see constraint position 6 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_pll/CLKFBOUT]
+Related violations: <none>
+
+TIMING-28#3 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock vga_clk_ins/clkout0 is referenced by name inside timing constraint (see constraint position 5 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_pll/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#4 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock vga_clk_ins/clkout0 is referenced by name inside timing constraint (see constraint position 6 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_pll/CLKOUT0]
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_blue[0]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_blue[1]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_blue[2]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_blue[3]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_green[0]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_green[1]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_green[2]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_green[3]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_red[0]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_red[1]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_red[2]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga4_red[3]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga_hsync' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same output delay of 5.500 ns has been defined on port 'vga_vsync' for both max and min. Make sure this reflects the design intent.
+set_output_delay 5.500 [get_ports vga*]
+/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc (Line: 12)
+Related violations: <none>
+
+

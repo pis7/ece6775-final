@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Sun Nov 24 10:33:43 2024
-| Host         : ecelinux-20.ece.cornell.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Date         : Mon Nov 25 11:16:05 2024
+| Host         : ecelinux-11.ece.cornell.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_utilization -file xillydemo_utilization_synth.rpt -pb xillydemo_utilization_synth.pb
 | Design       : xillydemo
 | Device       : 7z020clg484-1
@@ -30,15 +30,15 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 25995 |     0 |     53200 | 48.86 |
-|   LUT as Logic             | 24880 |     0 |     53200 | 46.77 |
-|   LUT as Memory            |  1115 |     0 |     17400 |  6.41 |
+| Slice LUTs*                | 25009 |     0 |     53200 | 47.01 |
+|   LUT as Logic             | 24021 |     0 |     53200 | 45.15 |
+|   LUT as Memory            |   988 |     0 |     17400 |  5.68 |
 |     LUT as Distributed RAM |   692 |     0 |           |       |
-|     LUT as Shift Register  |   423 |     0 |           |       |
-| Slice Registers            | 31238 |    19 |    106400 | 29.36 |
-|   Register as Flip Flop    | 31238 |    19 |    106400 | 29.36 |
+|     LUT as Shift Register  |   296 |     0 |           |       |
+| Slice Registers            | 30738 |    19 |    106400 | 28.89 |
+|   Register as Flip Flop    | 30738 |    19 |    106400 | 28.89 |
 |   Register as Latch        |     0 |     0 |    106400 |  0.00 |
-| F7 Muxes                   |   715 |     0 |     26600 |  2.69 |
+| F7 Muxes                   |   555 |     0 |     26600 |  2.09 |
 | F8 Muxes                   |   142 |     0 |     13300 |  1.07 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 14    |          Yes |           - |        Reset |
-| 254   |          Yes |         Set |            - |
-| 30970 |          Yes |       Reset |            - |
+| 253   |          Yes |         Set |            - |
+| 30471 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -151,23 +151,23 @@ Table of Contents
 +-----------+-------+----------------------+
 |  Ref Name |  Used |  Functional Category |
 +-----------+-------+----------------------+
-| FDRE      | 30970 |         Flop & Latch |
-| LUT3      |  9586 |                  LUT |
-| LUT2      |  7304 |                  LUT |
-| LUT6      |  5783 |                  LUT |
-| LUT1      |  2834 |                  LUT |
+| FDRE      | 30471 |         Flop & Latch |
+| LUT3      |  9885 |                  LUT |
+| LUT2      |  7199 |                  LUT |
+| LUT6      |  5621 |                  LUT |
 | CARRY4    |  2784 |           CarryLogic |
-| LUT5      |  2408 |                  LUT |
-| LUT4      |  2185 |                  LUT |
-| MUXF7     |   715 |                MuxFx |
+| LUT1      |  2700 |                  LUT |
+| LUT4      |  2000 |                  LUT |
+| LUT5      |  1986 |                  LUT |
+| MUXF7     |   555 |                MuxFx |
 | RAMD32    |   372 |   Distributed Memory |
-| FDSE      |   254 |         Flop & Latch |
-| SRL16E    |   235 |   Distributed Memory |
+| FDSE      |   253 |         Flop & Latch |
 | RAMS32    |   192 |   Distributed Memory |
 | SRLC32E   |   185 |   Distributed Memory |
 | RAMD64E   |   176 |   Distributed Memory |
 | MUXF8     |   142 |                MuxFx |
 | BIBUF     |   130 |                   IO |
+| SRL16E    |   108 |   Distributed Memory |
 | DSP48E1   |    88 |     Block Arithmetic |
 | IBUF      |    62 |                   IO |
 | OBUFT     |    58 |                   IO |

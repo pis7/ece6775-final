@@ -3,8 +3,8 @@
 //===========================================================================
 // @brief: This header file include the parameters for Attention
 
-#ifndef MODEL_CONV
-#define MODEL_CONV
+#ifndef MODEL_ATTN
+#define MODEL_ATTN
 
 #include "typedefs.h"
 

@@ -6,7 +6,7 @@
 
 # This points to the common directory where all the
 # Xillybus files are stored
-XILLYBUS_TAR="/classes/ece6775/zedboard/zedboard_project.tgz"
+XILLYBUS_TAR="./zedboard_project.tgz"
 WORKDIR="./zedboard_project"
 
 # HLS generated verilog files directory
@@ -58,7 +58,7 @@ cp $VERILOG_DIR/* $WORKDIR/xillybus/src/fpga-design
 # run vivado
 printf "Running vivado\n"
 pushd $WORKDIR/xillybus
-vivado -mode batch -source xillydemo-vivado.tcl
+vivado -mode batch -source ./zedboard_project/xillydemo-vivado.tcl
 rm -f *.backup.log *.jou
 popd
 

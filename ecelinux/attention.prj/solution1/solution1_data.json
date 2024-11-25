@@ -31,21 +31,21 @@
       "set_directive_pipeline rms_norm\/RMS_NORM_LOOP_2 ",
       "set_directive_unroll quantize_activation\/QUANTIZE_ACTIVATION_LOOP_2 ",
       "set_directive_pipeline quantize_activation\/QUANTIZE_ACTIVATION_LOOP_3 ",
-      "set_directive_pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_2 ",
+      "set_directive_pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_2 -II 17",
       "set_directive_pipeline reshape_2D_to_3D\/RESHAPE_2D_TO_3D_LOOP_3 ",
       "set_directive_array_partition apply_rotary_pos_emb ",
       "set_directive_array_partition apply_rotary_pos_emb ",
       "set_directive_pipeline apply_rotary_pos_emb\/APPLY_ROTARY_POS_EMB_LOOP_2 ",
       "set_directive_pipeline apply_rotary_pos_emb\/APPLY_ROTARY_POS_EMB_LOOP_5 ",
-      "set_directive_pipeline transpose_last_two_dims\/TRANSPOSE_LAST_TWO_DIMS_LOOP_2 ",
-      "set_directive_pipeline GEMM_3D_float\/GEMM_3D_FLOAT_LOOP_3 ",
+      "set_directive_pipeline transpose_last_two_dims\/TRANSPOSE_LAST_TWO_DIMS_LOOP_2 -II 2",
+      "set_directive_pipeline GEMM_3D_float\/GEMM_3D_FLOAT_LOOP_3 -II 2",
       "set_directive_pipeline create_causal_mask\/CREATE_CAUSAL_MASK_LOOP_1 ",
       "set_directive_unroll softmax\/SOFTMAX_LOOP_3 ",
-      "set_directive_pipeline softmax\/SOFTMAX_LOOP_4 ",
+      "set_directive_pipeline softmax\/SOFTMAX_LOOP_4 -II 13",
       "set_directive_unroll softmax\/SOFTMAX_LOOP_5 ",
       "set_directive_pipeline attention\/SF_LOOP_2 ",
       "set_directive_pipeline attention\/CM_LOOP_2 ",
-      "set_directive_pipeline attention\/ATTN_2D_LOOP_2 "
+      "set_directive_pipeline attention\/ATTN_2D_LOOP_2 -II 2"
     ],
     "DirectiveInfo": [
       "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredq_proj} {complete positionBoolean0type} {dim 3}} {}",
@@ -65,21 +65,21 @@
       "pipeline rms_norm\/RMS_NORM_LOOP_2 {} {}",
       "unroll quantize_activation\/QUANTIZE_ACTIVATION_LOOP_2 {} {}",
       "pipeline quantize_activation\/QUANTIZE_ACTIVATION_LOOP_3 {} {}",
-      "pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_2 {} {}",
+      "pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_2 {{II 17}} {}",
       "pipeline reshape_2D_to_3D\/RESHAPE_2D_TO_3D_LOOP_3 {} {}",
       "array_partition apply_rotary_pos_emb {{partition positionBooleanCmd} {variable positionBooleanTextRequiredrotated_q} {complete positionBoolean0type} {dim 3}} {}",
       "array_partition apply_rotary_pos_emb {{partition positionBooleanCmd} {variable positionBooleanTextRequiredrotated_k} {complete positionBoolean0type} {dim 3}} {}",
       "pipeline apply_rotary_pos_emb\/APPLY_ROTARY_POS_EMB_LOOP_2 {} {}",
       "pipeline apply_rotary_pos_emb\/APPLY_ROTARY_POS_EMB_LOOP_5 {} {}",
-      "pipeline transpose_last_two_dims\/TRANSPOSE_LAST_TWO_DIMS_LOOP_2 {} {}",
-      "pipeline GEMM_3D_float\/GEMM_3D_FLOAT_LOOP_3 {} {}",
+      "pipeline transpose_last_two_dims\/TRANSPOSE_LAST_TWO_DIMS_LOOP_2 {{II 2}} {}",
+      "pipeline GEMM_3D_float\/GEMM_3D_FLOAT_LOOP_3 {{II 2}} {}",
       "pipeline create_causal_mask\/CREATE_CAUSAL_MASK_LOOP_1 {} {}",
       "unroll softmax\/SOFTMAX_LOOP_3 {} {}",
-      "pipeline softmax\/SOFTMAX_LOOP_4 {} {}",
+      "pipeline softmax\/SOFTMAX_LOOP_4 {{II 13}} {}",
       "unroll softmax\/SOFTMAX_LOOP_5 {} {}",
       "pipeline attention\/SF_LOOP_2 {} {}",
       "pipeline attention\/CM_LOOP_2 {} {}",
-      "pipeline attention\/ATTN_2D_LOOP_2 {} {}"
+      "pipeline attention\/ATTN_2D_LOOP_2 {{II 2}} {}"
     ]
   },
   "Args": {
@@ -100,7 +100,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "2987",
+    "Latency": "2983",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -246,9 +246,9 @@
       "impl\/verilog\/dut.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/pis7\/ece6775-final\/ecelinux\/attention.prj\/solution1\/.autopilot\/db\/dut.design.xml",
-    "DebugDir": "\/home\/pis7\/ece6775-final\/ecelinux\/attention.prj\/solution1\/.debug",
-    "ProtoInst": ["\/home\/pis7\/ece6775-final\/ecelinux\/attention.prj\/solution1\/.debug\/dut.protoinst"]
+    "DesignXml": "\/home\/pis7\/ece6775\/ece6775-final\/ecelinux\/attention.prj\/solution1\/.autopilot\/db\/dut.design.xml",
+    "DebugDir": "\/home\/pis7\/ece6775\/ece6775-final\/ecelinux\/attention.prj\/solution1\/.debug",
+    "ProtoInst": ["\/home\/pis7\/ece6775\/ece6775-final\/ecelinux\/attention.prj\/solution1\/.debug\/dut.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -490,7 +490,7 @@
       "attention_exp": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
@@ -847,7 +847,7 @@
           "LatencyBest": "10",
           "LatencyAvg": "10",
           "LatencyWorst": "10",
-          "PipelineII": "1",
+          "PipelineII": "11",
           "PipelineDepth": "11",
           "PipelineType": "function"
         },
@@ -857,19 +857,19 @@
           "Estimate": "8.510"
         },
         "Area": {
-          "BRAM_18K": "2",
           "DSP48E": "24",
-          "FF": "1805",
-          "LUT": "1453",
+          "FF": "726",
+          "LUT": "1117",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "softmax_1_4_3_s": {
         "Latency": {
-          "LatencyBest": "401",
-          "LatencyAvg": "401",
-          "LatencyWorst": "401",
-          "PipelineII": "401",
+          "LatencyBest": "397",
+          "LatencyAvg": "397",
+          "LatencyWorst": "397",
+          "PipelineII": "397",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -881,22 +881,22 @@
         "Loops": [{
             "Name": "SOFTMAX_LOOP_1",
             "TripCount": "4",
-            "Latency": "400",
+            "Latency": "396",
             "PipelineII": "",
-            "PipelineDepth": "100",
+            "PipelineDepth": "99",
             "Loops": [{
                 "Name": "SOFTMAX_LOOP_4",
                 "TripCount": "3",
-                "Latency": "40",
+                "Latency": "39",
                 "PipelineII": "13",
-                "PipelineDepth": "14"
+                "PipelineDepth": "13"
               }]
           }],
         "Area": {
-          "BRAM_18K": "2",
           "DSP48E": "24",
-          "FF": "5534",
-          "LUT": "4542",
+          "FF": "4454",
+          "LUT": "4078",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
@@ -931,12 +931,12 @@
       },
       "attention": {
         "Latency": {
-          "LatencyBest": "2936",
-          "LatencyAvg": "3486",
-          "LatencyWorst": "4156",
-          "PipelineIIMin": "2936",
-          "PipelineIIMax": "4156",
-          "PipelineII": "2936 ~ 4156",
+          "LatencyBest": "2932",
+          "LatencyAvg": "3482",
+          "LatencyWorst": "4152",
+          "PipelineIIMin": "2932",
+          "PipelineIIMax": "4152",
+          "PipelineII": "2932 ~ 4152",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -990,21 +990,21 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "20",
+          "BRAM_18K": "18",
           "DSP48E": "87",
-          "FF": "29100",
-          "LUT": "27159",
+          "FF": "28020",
+          "LUT": "26695",
           "URAM": "0"
         }
       },
       "dut": {
         "Latency": {
-          "LatencyBest": "2987",
-          "LatencyAvg": "3537",
-          "LatencyWorst": "4207",
-          "PipelineIIMin": "2988",
-          "PipelineIIMax": "4208",
-          "PipelineII": "2988 ~ 4208",
+          "LatencyBest": "2983",
+          "LatencyAvg": "3533",
+          "LatencyWorst": "4203",
+          "PipelineIIMin": "2984",
+          "PipelineIIMax": "4204",
+          "PipelineII": "2984 ~ 4204",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1030,10 +1030,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "24",
+          "BRAM_18K": "22",
           "DSP48E": "87",
-          "FF": "29121",
-          "LUT": "27387",
+          "FF": "28041",
+          "LUT": "26923",
           "URAM": "0"
         }
       }
@@ -1049,7 +1049,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-11-25 00:16:09 EST",
+    "Time": "2024-11-25 13:06:07 EST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

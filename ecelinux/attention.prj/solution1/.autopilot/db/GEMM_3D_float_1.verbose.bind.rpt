@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'GEMM_3D_float_1'
 ================================================================
-* Date:           Mon Nov 25 00:15:50 2024
+* Date:           Mon Nov 25 13:05:47 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention.prj
@@ -41,7 +41,7 @@
         |                                             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |                  Loop Name                  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +---------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- GEMM_3D_FLOAT_LOOP_1_GEMM_3D_FLOAT_LOOP_3  |       34|       34|         5|          2|          1|    16|    yes   |
+        |- GEMM_3D_FLOAT_LOOP_1_GEMM_3D_FLOAT_LOOP_3  |       34|       34|         5|          2|          2|    16|    yes   |
         +---------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
@@ -252,7 +252,7 @@ State 6 <SV = 5> <Delay = 3.26>
 ST_6 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([42 x i8]* @GEMM_3D_FLOAT_LOOP_1)"   --->   Operation 137 'specloopname' <Predicate = (!icmp_ln267)> <Delay = 0.00>
 ST_6 : Operation 138 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16)"   --->   Operation 138 'speclooptripcount' 'empty' <Predicate = (!icmp_ln267)> <Delay = 0.00>
 ST_6 : Operation 139 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([21 x i8]* @p_str32) nounwind" [./layer.h:269]   --->   Operation 139 'specloopname' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_6 : Operation 140 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind" [./layer.h:270]   --->   Operation 140 'specpipeline' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_6 : Operation 140 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 2, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind" [./layer.h:270]   --->   Operation 140 'specpipeline' <Predicate = (!icmp_ln267)> <Delay = 0.00>
 ST_6 : Operation 141 [1/1] (0.00ns)   --->   "%shl_ln728_6 = call i54 @_ssdm_op_BitConcatenate.i54.i32.i22(i32 %tmp_27, i22 0)" [./layer.h:272]   --->   Operation 141 'bitconcatenate' 'shl_ln728_6' <Predicate = (!icmp_ln267)> <Delay = 0.00>
 ST_6 : Operation 142 [1/1] (3.26ns)   --->   "%add_ln1192_2 = add i54 %shl_ln728_6, %mul_ln1192_1" [./layer.h:272]   --->   Operation 142 'add' 'add_ln1192_2' <Predicate = (!icmp_ln267)> <Delay = 3.26> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 143 [1/1] (0.00ns)   --->   "%trunc_ln708_8 = call i32 @_ssdm_op_PartSelect.i32.i54.i32.i32(i54 %add_ln1192_2, i32 22, i32 53)" [./layer.h:272]   --->   Operation 143 'partselect' 'trunc_ln708_8' <Predicate = (!icmp_ln267)> <Delay = 0.00>

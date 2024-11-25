@@ -21,4 +21,5 @@ obj/attention_test.o: ../../../../attention_test.cpp \
  /opt/xilinx/Vivado/2019.2/include/ap_fixed_special.h \
  /opt/xilinx/Vivado/2019.2/include/hls_stream.h ../../../../timer.h \
  ../../../../data_short/hidden_states.h \
- ../../../../data_short/../typedefs.h
+ ../../../../data_short/../typedefs.h \
+ ../../../../data_short/ground_truth.h

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'GEMM_3D_float_1'" level="0">
-<item name = "Date">Mon Nov 25 00:15:50 2024
+<item name = "Date">Mon Nov 25 13:05:47 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention.prj</item>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- GEMM_3D_FLOAT_LOOP_1_GEMM_3D_FLOAT_LOOP_3">34, 34, 5, 2, 1, 16, yes</column>
+<column name="- GEMM_3D_FLOAT_LOOP_1_GEMM_3D_FLOAT_LOOP_3">34, 34, 5, 2, 2, 16, yes</column>
 </table>
 </item>
 </section>

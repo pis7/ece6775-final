@@ -3,6 +3,15 @@
 
 # XDC: /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc
 
+# IP: /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==vga_fifo || ORIG_REF_NAME==vga_fifo} -quiet] -quiet
+
+# IP: /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_8x2048 || ORIG_REF_NAME==fifo_8x2048} -quiet] -quiet
+
+# IP: /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_32x512 || ORIG_REF_NAME==fifo_32x512} -quiet] -quiet
+
 # Block Designs: /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==vivado_system || ORIG_REF_NAME==vivado_system} -quiet] -quiet
 

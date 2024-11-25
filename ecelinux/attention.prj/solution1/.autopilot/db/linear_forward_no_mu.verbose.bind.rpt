@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'linear_forward_no_mu'
 ================================================================
-* Date:           Mon Nov 25 00:15:46 2024
+* Date:           Mon Nov 25 13:05:44 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention.prj
@@ -41,7 +41,7 @@
         |                                |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |            Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +--------------------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- LINEAR_FORWARD_NO_MUL_LOOP_2  |      374|      374|       120|         17|          1|    16|    yes   |
+        |- LINEAR_FORWARD_NO_MUL_LOOP_2  |      374|      374|       120|         17|         17|    16|    yes   |
         +--------------------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
@@ -247,7 +247,7 @@ ST_2 : Operation 158 [2/2] (2.32ns)   --->   "%packed_weights_2_V_1 = load i8* %
 State 3 <SV = 2> <Delay = 3.28>
 ST_3 : Operation 159 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([29 x i8]* @p_str57) nounwind" [./layer.h:154]   --->   Operation 159 'specloopname' <Predicate = (!icmp_ln154)> <Delay = 0.00>
 ST_3 : Operation 160 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([29 x i8]* @p_str57)" [./layer.h:154]   --->   Operation 160 'specregionbegin' 'tmp_s' <Predicate = (!icmp_ln154)> <Delay = 0.00>
-ST_3 : Operation 161 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind" [./layer.h:155]   --->   Operation 161 'specpipeline' <Predicate = (!icmp_ln154)> <Delay = 0.00>
+ST_3 : Operation 161 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 17, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind" [./layer.h:155]   --->   Operation 161 'specpipeline' <Predicate = (!icmp_ln154)> <Delay = 0.00>
 ST_3 : Operation 162 [1/1] (0.00ns)   --->   "%output_0_V_addr = getelementptr [16 x i32]* %output_0_V, i64 0, i64 %zext_ln156" [./layer.h:160]   --->   Operation 162 'getelementptr' 'output_0_V_addr' <Predicate = (!icmp_ln154)> <Delay = 0.00>
 ST_3 : Operation 163 [1/2] (2.32ns)   --->   "%packed_weights_0_V_1 = load i8* %packed_weights_0_V_s, align 1" [./layer.h:156]   --->   Operation 163 'load' 'packed_weights_0_V_1' <Predicate = (!icmp_ln154)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
 ST_3 : Operation 164 [1/1] (0.00ns)   --->   "%trunc_ln1503 = trunc i8 %packed_weights_0_V_1 to i2" [./layer.h:159]   --->   Operation 164 'trunc' 'trunc_ln1503' <Predicate = (!icmp_ln154)> <Delay = 0.00>

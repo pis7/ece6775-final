@@ -104,14 +104,15 @@ set_property "xsim.simulate.uut" "UUT" $obj
 
 # Create 'synth_1' run (if not found)
 if {[string equal [get_runs synth_1] ""]} {
-  create_run -name synth_1 -part $thepart -flow {Vivado Synthesis 2013} -strategy "Vivado Synthesis Defaults" -constrset constrs_1
+  create_run -name synth_1 -part $thepart -flow {Vivado Synthesis 2013} -strategy "Flow_PerfOptimized_high" -constrset constrs_1
 }
 set obj [get_runs synth_1]
 set_property "part" $thepart $obj
+set_property -name "steps.synth_design.args.retiming" -value "1" -objects $obj
 
 # Create 'impl_1' run (if not found)
 if {[string equal [get_runs impl_1] ""]} {
-  create_run -name impl_1 -part $thepart -flow {Vivado Implementation 2013} -strategy "Vivado Implementation Defaults" -constrset constrs_1 -parent_run synth_1
+  create_run -name impl_1 -part $thepart -flow {Vivado Implementation 2013} -strategy "Performance_Retiming" -constrset constrs_1 -parent_run synth_1
 }
 set obj [get_runs impl_1]
 set_property "part" $thepart $obj

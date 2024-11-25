@@ -2,12 +2,12 @@
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp"
+# 1 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
-# 1 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp"
+# 1 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp"
 
 
 
@@ -27251,7 +27251,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 7 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp" 2
+# 7 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp" 2
 # 1 "/opt/xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fstream" 1 3
 # 36 "/opt/xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fstream" 3
        
@@ -29603,14 +29603,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 1082 "/opt/xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fstream" 2 3
-# 8 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp" 2
+# 8 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp" 2
 
-# 1 "/home/pis7/ece6775-final/ecelinux/attention.h" 1
-# 9 "/home/pis7/ece6775-final/ecelinux/attention.h"
-# 1 "/home/pis7/ece6775-final/ecelinux/model.h" 1
-# 9 "/home/pis7/ece6775-final/ecelinux/model.h"
-# 1 "/home/pis7/ece6775-final/ecelinux/typedefs.h" 1
-# 9 "/home/pis7/ece6775-final/ecelinux/typedefs.h"
+# 1 "/home/pis7/ece6775/ece6775-final/ecelinux/attention.h" 1
+# 9 "/home/pis7/ece6775/ece6775-final/ecelinux/attention.h"
+# 1 "/home/pis7/ece6775/ece6775-final/ecelinux/model.h" 1
+# 9 "/home/pis7/ece6775/ece6775-final/ecelinux/model.h"
+# 1 "/home/pis7/ece6775/ece6775-final/ecelinux/typedefs.h" 1
+# 9 "/home/pis7/ece6775/ece6775-final/ecelinux/typedefs.h"
 # 1 "/opt/xilinx/Vivado/2019.2/include/ap_int.h" 1
 # 54 "/opt/xilinx/Vivado/2019.2/include/ap_int.h"
 # 1 "/opt/xilinx/Vivado/2019.2/include/ap_common.h" 1
@@ -70114,7 +70114,7 @@ inline bool operator!=(
 }
 # 399 "/opt/xilinx/Vivado/2019.2/include/ap_fixed.h" 2
 # 368 "/opt/xilinx/Vivado/2019.2/include/ap_int.h" 2
-# 10 "/home/pis7/ece6775-final/ecelinux/typedefs.h" 2
+# 10 "/home/pis7/ece6775/ece6775-final/ecelinux/typedefs.h" 2
 
 
 typedef ap_uint<4> bit4_t;
@@ -70127,7 +70127,7 @@ typedef ap_int<32> sbit32_t;
 typedef ap_uint<64> bit64_t;
 typedef ap_fixed<32, 10> fixed32_t;
 typedef ap_fixed<64, 16> fixed64_t;
-# 10 "/home/pis7/ece6775-final/ecelinux/model.h" 2
+# 10 "/home/pis7/ece6775/ece6775-final/ecelinux/model.h" 2
 
 const int CACHE_SIZE_INIT = 2;
 const int SEQ_LEN_DECODE = 1;
@@ -70139,7 +70139,7 @@ const int HEAD_DIM_BASIC_SQRT= 2;
 const fixed32_t NORM_EPSILON = 1e-5;
 const int P_ID = CACHE_SIZE_INIT;
 const fixed32_t FIXED32_MIN = -32768.0;
-# 10 "/home/pis7/ece6775-final/ecelinux/attention.h" 2
+# 10 "/home/pis7/ece6775/ece6775-final/ecelinux/attention.h" 2
 # 1 "/opt/xilinx/Vivado/2019.2/include/hls_stream.h" 1
 # 79 "/opt/xilinx/Vivado/2019.2/include/hls_stream.h"
 # 1 "/opt/xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/queue" 1 3
@@ -77442,7 +77442,7 @@ class stream
 };
 
 }
-# 11 "/home/pis7/ece6775-final/ecelinux/attention.h" 2
+# 11 "/home/pis7/ece6775/ece6775-final/ecelinux/attention.h" 2
 
 
 void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out);
@@ -77473,8 +77473,9 @@ template <
   const fixed32_t ln_weight[PROJ_COLS],
   const fixed32_t p_id
 );
-# 10 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp" 2
-# 1 "/home/pis7/ece6775-final/ecelinux/timer.h" 1
+# 10 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp" 2
+# 1 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h" 1
+
 
 
 
@@ -77582,17 +77583,17 @@ extern int futimesat (int __fd, const char *__file,
         const struct timeval __tvp[2]) throw ();
 # 186 "/usr/include/sys/time.h" 3 4
 }
-# 8 "/home/pis7/ece6775-final/ecelinux/timer.h" 2
-# 22 "/home/pis7/ece6775-final/ecelinux/timer.h"
+# 9 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h" 2
+# 22 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h"
 
-# 22 "/home/pis7/ece6775-final/ecelinux/timer.h"
+# 22 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h"
 class Timer {
 
 
 
   char binName[50];
   unsigned nCalls;
-  struct timespec ts_start;
+  timeval ts_start;
   float totalTime;
 
 public:
@@ -77602,11 +77603,11 @@ public:
   Timer(const char *Name = "", bool On = false) {
     if (On) {
 
-      clock_gettime(
-# 38 "/home/pis7/ece6775-final/ecelinux/timer.h" 3 4
-                   2
-# 38 "/home/pis7/ece6775-final/ecelinux/timer.h"
-                                           , &ts_start);
+      gettimeofday(&ts_start, 
+# 38 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h" 3 4
+                             __null
+# 38 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h"
+                                 );
       nCalls = 1;
     } else {
       nCalls = 0;
@@ -77621,9 +77622,9 @@ public:
   ~Timer() {
 
     if (nCalls > 0) {
-      printf("%-20s: ", binName);
-      printf("%6d calls; ", nCalls);
-      printf("%7.3f msecs total time\n", totalTime);
+      printf("\033[35m%-20s: \033[0m", binName);
+      printf("\033[35m%6d calls; \033[0m", nCalls);
+      printf("\033[35m%7.3f msecs total time\n\033[0m", 1000 * totalTime);
 
     }
   }
@@ -77633,11 +77634,11 @@ public:
 
   void start() {
 
-    clock_gettime(
-# 65 "/home/pis7/ece6775-final/ecelinux/timer.h" 3 4
-                 2
-# 65 "/home/pis7/ece6775-final/ecelinux/timer.h"
-                                         , &ts_start);
+    gettimeofday(&ts_start, 
+# 65 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h" 3 4
+                           __null
+# 65 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h"
+                               );
     nCalls++;
   }
 
@@ -77646,25 +77647,27 @@ public:
 
   void stop() {
 
-    struct timespec ts_curr;
-    clock_gettime(
-# 75 "/home/pis7/ece6775-final/ecelinux/timer.h" 3 4
-                 2
-# 75 "/home/pis7/ece6775-final/ecelinux/timer.h"
-                                         , &ts_curr);
-    float diff_sec = float(ts_curr.tv_sec - ts_start.tv_sec);
-    float diff_nsec = float(ts_curr.tv_nsec - ts_start.tv_nsec);
-
-    totalTime += 1e3 * diff_sec + 1e-6 * diff_nsec;
+    timeval ts_curr;
+    gettimeofday(&ts_curr, 
+# 75 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h" 3 4
+                          __null
+# 75 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h"
+                              );
+    totalTime += float(ts_curr.tv_sec - ts_start.tv_sec) +
+                 float(ts_curr.tv_usec) * 1e-6 - float(ts_start.tv_usec) * 1e-6;
   }
-# 93 "/home/pis7/ece6775-final/ecelinux/timer.h"
+# 91 "/home/pis7/ece6775/ece6775-final/ecelinux/timer.h"
 };
-# 11 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp" 2
-# 1 "/home/pis7/ece6775-final/ecelinux/data_short/hidden_states.h" 1
-# 1 "/home/pis7/ece6775-final/ecelinux/data_short/../typedefs.h" 1
-# 2 "/home/pis7/ece6775-final/ecelinux/data_short/hidden_states.h" 2
+# 11 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp" 2
+# 1 "/home/pis7/ece6775/ece6775-final/ecelinux/data_short/hidden_states.h" 1
+# 1 "/home/pis7/ece6775/ece6775-final/ecelinux/data_short/../typedefs.h" 1
+# 2 "/home/pis7/ece6775/ece6775-final/ecelinux/data_short/hidden_states.h" 2
 const fixed32_t hidden_states[1][16] = {{-0.031341552734, 0.005634307861, 0.008308410645, -0.003650665283, -0.040069580078, -0.008613586426, 0.012229919434, 0.002740859985, -0.010581970215, -0.016098022461, -0.023696899414, 0.003917694092, 0.007488250732, 0.037506103516, -0.078735351562, 0.035186767578}};
-# 12 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp" 2
+# 12 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp" 2
+# 1 "/home/pis7/ece6775/ece6775-final/ecelinux/data_short/ground_truth.h" 1
+
+const fixed32_t ground_truth[1][16] = {{0.026066897437, -0.029579458758, 0.010722553357, -0.026066897437, -0.036049965769, -0.008688965812, -0.000554614875, -0.031613048166, 0.060268145055, -0.039377655834, 0.009058709256, 0.012941013090, 0.012571269646, 0.003697432345, -0.034570991993, 0.017932547256}};
+# 13 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp" 2
 
 using namespace std;
 
@@ -77676,7 +77679,7 @@ using namespace std;
 #ifndef HLS_FASTSIM
 #include "apatb_dut.h"
 #endif
-# 19 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp"
+# 20 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp"
 int main() {
 
 
@@ -77697,24 +77700,33 @@ int main() {
 #ifndef HLS_FASTSIM
 #define dut AESL_WRAP_dut
 #endif
-# 35 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp"
+# 36 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp"
 dut(attention_in, attention_out);
 #undef dut
-# 35 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp"
+# 36 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp"
 
 
 
+  fixed32_t result;
   int num_incorrect = 0;
   for (int i = 0; i < SEQ_LEN_DECODE; i++) {
-    for (int j = 0; j < PROJ_COLS_BASIC; j++)
-      cout << attention_out.read() << " ";
+    for (int j = 0; j < PROJ_COLS_BASIC; j++) {
+      result = attention_out.read();
+      cout << "\033[34m" << result << "\033[0m ";
+      int res_scaled = result * 1000;
+      int gt_scaled = ground_truth[i][j] * 1000;
+      if (std::abs(res_scaled - gt_scaled) != 0) num_incorrect++;
+    }
     cout << endl;
   }
 
   timer.stop();
 
+  if (num_incorrect == 0) cout << "\033[32mAttention test passed!\033[0m" << endl;
+  else cout << "\033[31mAttention test failed with " << num_incorrect << " errors!\033[0m" << endl;
+
   return 0;
 }
 #endif
-# 48 "/home/pis7/ece6775-final/ecelinux/attention_test.cpp"
+# 58 "/home/pis7/ece6775/ece6775-final/ecelinux/attention_test.cpp"
 

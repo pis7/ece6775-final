@@ -84,7 +84,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -166,7 +166,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -214,7 +214,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -265,7 +265,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -314,7 +314,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -363,7 +363,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -413,7 +413,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -461,7 +461,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -510,7 +510,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -560,7 +560,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -609,7 +609,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -657,7 +657,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -729,7 +729,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -777,7 +777,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -828,7 +828,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -877,7 +877,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -926,7 +926,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -976,7 +976,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1024,7 +1024,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1074,7 +1074,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1122,7 +1122,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1172,7 +1172,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1220,7 +1220,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2132,8 +2132,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>2987</mMinLatency>
-        <mMaxLatency>4207</mMaxLatency>
+        <mMinLatency>2983</mMinLatency>
+        <mMaxLatency>4203</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -2199,8 +2199,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>2937</mMinLatency>
-        <mMaxLatency>4157</mMaxLatency>
+        <mMinLatency>2933</mMinLatency>
+        <mMaxLatency>4153</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -2582,7 +2582,7 @@
             <item_version>0</item_version>
             <item class_id="40" tracking_level="0" version="0">
               <first>BRAM</first>
-              <second>20</second>
+              <second>18</second>
             </item>
             <item>
               <first>DSP48E</first>
@@ -2590,11 +2590,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>29100</second>
+              <second>28020</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>27159</second>
+              <second>26695</second>
             </item>
             <item>
               <first>URAM</first>

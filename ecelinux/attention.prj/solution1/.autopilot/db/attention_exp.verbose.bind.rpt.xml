@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'attention_exp'" level="0">
-<item name = "Date">Mon Nov 25 00:15:49 2024
+<item name = "Date">Mon Nov 25 13:05:46 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention.prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">10, 10, 0.100 us, 0.100 us, 1, 1, function</column>
+<column name="">10, 10, 0.100 us, 0.100 us, 11, 11, function</column>
 </table>
 </item>
 <item name = "Detail">

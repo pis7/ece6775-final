@@ -6854,7 +6854,7 @@ void linear_forward_no_mul (
 ) {
   LINEAR_FORWARD_NO_MUL_LOOP_1: for (int i = 0; i < R; i++) {
     LINEAR_FORWARD_NO_MUL_LOOP_2: for (int j = 0; j < OUT_C; j++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(17, 1, 1, 0, "");
 # 154 "./layer.h"
 
       LINEAR_FORWARD_NO_MUL_LOOP_3: for (int k = 0; k < IN_C; k+=4) {
@@ -6965,7 +6965,7 @@ void transpose_last_two_dims (
 ) {
   TRANSPOSE_LAST_TWO_DIMS_LOOP_1: for (int i = 0; i < R; i++)
     TRANSPOSE_LAST_TWO_DIMS_LOOP_2: for (int j = 0; j < P; j++)
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(2, 1, 1, 0, "");
 # 247 "./layer.h"
 
       TRANSPOSE_LAST_TWO_DIMS_LOOP_3: for (int k = 0; k < C; k++)
@@ -6990,7 +6990,7 @@ template <
   GEMM_3D_FLOAT_LOOP_1: for (int i = 0; i < P1; i++) {
     GEMM_3D_FLOAT_LOOP_2: for (int j = 0; j < R1; j++) {
       GEMM_3D_FLOAT_LOOP_3: for (int k = 0; k < C2; k++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(2, 1, 1, 0, "");
 # 269 "./layer.h"
 
         output[i][j][k] = 0;
@@ -7042,25 +7042,26 @@ template <int P, int R, int C>
 void softmax (
   fixed32_t input[R][P][C]
 ) {
+  fixed32_t max_val, sum;
   SOFTMAX_LOOP_1: for (int i = 0; i < R; i++) {
     SOFTMAX_LOOP_2: for (int j = 0; j < P; j++) {
-      fixed32_t max_val = input[i][j][0];
+      max_val = input[i][j][0];
       SOFTMAX_LOOP_3: for (int k = 1; k < C; k++)
 _ssdm_Unroll(0,0,0, "");
-# 319 "./layer.h"
+# 320 "./layer.h"
 
         max_val = attention_max<fixed32_t>(max_val, input[i][j][k]);
-      fixed32_t sum = 0.0;
+      sum = 0.0;
       SOFTMAX_LOOP_4: for (int k = 0; k < C; k++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
-# 322 "./layer.h"
+_ssdm_op_SpecPipeline(13, 1, 1, 0, "");
+# 323 "./layer.h"
 
         input[i][j][k] = attention_exp(input[i][j][k] - max_val);
         sum += input[i][j][k];
       }
       SOFTMAX_LOOP_5: for (int k = 0; k < C; k++)
 _ssdm_Unroll(0,0,0, "");
-# 326 "./layer.h"
+# 327 "./layer.h"
 
         input[i][j][k] /= sum;
     }
@@ -7407,7 +7408,7 @@ _ssdm_SpecArrayPartition( attn_output, 3, "COMPLETE", 0, "");
   init_2d_mem<SEQ_LEN, PROJ_COLS, fixed32_t>(attn_output_2D, 0);
   ATTN_2D_LOOP_1: for (int s = 0; s < SEQ_LEN; ++s)
     ATTN_2D_LOOP_2: for (int h = 0; h < NUM_HEADS; ++h)
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(2, 1, 1, 0, "");
 # 221 "attention.cpp"
 
       ATTN_2D_LOOP_3: for (int d = 0; d < HEAD_DIM; ++d)

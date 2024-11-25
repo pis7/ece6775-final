@@ -86,10 +86,10 @@ set rc [catch {
   add_files -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.runs/synth_1/xillydemo.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system.bd
   read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo.xci
   read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
   read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512.xci
+  add_files /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system.bd
   set_param project.isImplRun false
   set_property edif_extra_search_paths /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/cores [current_fileset]
   read_xdc /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc

@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2024 11 24 10 33 30)
+      (timestamp 2024 11 25 11 15 52)
       (program "Xilinx ngc2edif" (version "P_INT.20190617"))
       (author "Xilinx. Inc ")
       (comment "This EDIF netlist is to be used within supported synthesis tools")

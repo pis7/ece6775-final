@@ -287,7 +287,13 @@
           "functionName": "linear_forward_no_mul",
           "label": "LINEAR_FORWARD_NO_MUL_LOOP_2",
           "functionLabel": "",
-          "pragma": {"name": "PIPELINE"}
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "II",
+                "value": "17"
+              }]
+          }
         },
         {
           "functionName": "reshape_2D_to_3D",
@@ -359,13 +365,25 @@
           "functionName": "transpose_last_two_dims",
           "label": "TRANSPOSE_LAST_TWO_DIMS_LOOP_2",
           "functionLabel": "",
-          "pragma": {"name": "PIPELINE"}
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "II",
+                "value": "2"
+              }]
+          }
         },
         {
           "functionName": "GEMM_3D_float",
           "label": "GEMM_3D_FLOAT_LOOP_3",
           "functionLabel": "",
-          "pragma": {"name": "PIPELINE"}
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "II",
+                "value": "2"
+              }]
+          }
         },
         {
           "functionName": "create_causal_mask",
@@ -383,7 +401,13 @@
           "functionName": "softmax",
           "label": "SOFTMAX_LOOP_4",
           "functionLabel": "",
-          "pragma": {"name": "PIPELINE"}
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "II",
+                "value": "13"
+              }]
+          }
         },
         {
           "functionName": "softmax",
@@ -407,7 +431,13 @@
           "functionName": "attention",
           "label": "ATTN_2D_LOOP_2",
           "functionLabel": "",
-          "pragma": {"name": "PIPELINE"}
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "II",
+                "value": "2"
+              }]
+          }
         }
       ]
     }]}

@@ -6,8 +6,8 @@
 #ifndef TYPEDEFS_H
 #define TYPEDEFS_H
 
-#include "ap_int.h"
-#include "ap_fixed.h"
+#include <ap_int.h>
+#include <ap_fixed.h>
 
 typedef ap_uint<4> bit4_t;
 typedef ap_uint<6> bit6_t;

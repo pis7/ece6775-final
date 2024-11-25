@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'GEMM_3D_float'
 ================================================================
-* Date:           Mon Nov 25 00:15:48 2024
+* Date:           Mon Nov 25 13:05:46 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention.prj
@@ -41,7 +41,7 @@
         |                                             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |                  Loop Name                  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +---------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- GEMM_3D_FLOAT_LOOP_1_GEMM_3D_FLOAT_LOOP_3  |       26|       26|         5|          2|          1|    12|    yes   |
+        |- GEMM_3D_FLOAT_LOOP_1_GEMM_3D_FLOAT_LOOP_3  |       26|       26|         5|          2|          2|    12|    yes   |
         +---------------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
@@ -223,34 +223,34 @@ ST_4 : Operation 119 [1/2] (2.32ns)   --->   "%input_2_0_V_load_3 = load i32* %i
 ST_4 : Operation 120 [1/2] (2.32ns)   --->   "%input_2_1_V_load_3 = load i32* %input_2_1_V_addr_5, align 4" [./layer.h:272]   --->   Operation 120 'load' 'input_2_1_V_load_3' <Predicate = (!icmp_ln267)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
 ST_4 : Operation 121 [1/2] (2.32ns)   --->   "%input_2_2_V_load_3 = load i32* %input_2_2_V_addr_5, align 4" [./layer.h:272]   --->   Operation 121 'load' 'input_2_2_V_load_3' <Predicate = (!icmp_ln267)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
 ST_4 : Operation 122 [1/1] (1.77ns)   --->   "%tmp_34 = call i32 @_ssdm_op_Mux.ap_auto.3i32.i2(i32 %input_2_0_V_load_3, i32 %input_2_1_V_load_3, i32 %input_2_2_V_load_3, i2 %select_ln270)" [./layer.h:272]   --->   Operation 122 'mux' 'tmp_34' <Predicate = (!icmp_ln267)> <Delay = 1.77> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-
-State 5 <SV = 4> <Delay = 8.51>
-ST_5 : Operation 123 [1/1] (0.00ns)   --->   "%shl_ln = call i54 @_ssdm_op_BitConcatenate.i54.i32.i22(i32 %tmp_38, i22 0)" [./layer.h:272]   --->   Operation 123 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_5 : Operation 124 [1/1] (3.26ns)   --->   "%add_ln1192 = add i54 %shl_ln, %mul_ln1192" [./layer.h:272]   --->   Operation 124 'add' 'add_ln1192' <Predicate = (!icmp_ln267)> <Delay = 3.26> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 125 [1/1] (0.00ns)   --->   "%sext_ln1192_2 = sext i32 %tmp_31 to i54" [./layer.h:272]   --->   Operation 125 'sext' 'sext_ln1192_2' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_5 : Operation 126 [1/1] (0.00ns)   --->   "%sext_ln1192_3 = sext i32 %tmp_32 to i54" [./layer.h:272]   --->   Operation 126 'sext' 'sext_ln1192_3' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_5 : Operation 127 [1/1] (8.51ns)   --->   "%mul_ln1192_1 = mul i54 %sext_ln1192_2, %sext_ln1192_3" [./layer.h:272]   --->   Operation 127 'mul' 'mul_ln1192_1' <Predicate = (!icmp_ln267)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 128 [1/1] (0.00ns)   --->   "%tmp_39 = call i32 @_ssdm_op_PartSelect.i32.i54.i32.i32(i54 %add_ln1192, i32 22, i32 53)" [./layer.h:272]   --->   Operation 128 'partselect' 'tmp_39' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_5 : Operation 129 [1/1] (0.00ns)   --->   "%sext_ln1192_4 = sext i32 %tmp_33 to i54" [./layer.h:272]   --->   Operation 129 'sext' 'sext_ln1192_4' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_5 : Operation 130 [1/1] (0.00ns)   --->   "%sext_ln1192_5 = sext i32 %tmp_34 to i54" [./layer.h:272]   --->   Operation 130 'sext' 'sext_ln1192_5' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_5 : Operation 131 [1/1] (8.51ns)   --->   "%mul_ln1192_2 = mul i54 %sext_ln1192_4, %sext_ln1192_5" [./layer.h:272]   --->   Operation 131 'mul' 'mul_ln1192_2' <Predicate = (!icmp_ln267)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-
-State 6 <SV = 5> <Delay = 6.52>
-ST_6 : Operation 132 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([42 x i8]* @GEMM_3D_FLOAT_LOOP_1)"   --->   Operation 132 'specloopname' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_6 : Operation 133 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 12, i64 12, i64 12)"   --->   Operation 133 'speclooptripcount' 'empty' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_6 : Operation 134 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([21 x i8]* @p_str32) nounwind" [./layer.h:269]   --->   Operation 134 'specloopname' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_6 : Operation 135 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([21 x i8]* @p_str32)" [./layer.h:269]   --->   Operation 135 'specregionbegin' 'tmp_s' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_6 : Operation 136 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind" [./layer.h:270]   --->   Operation 136 'specpipeline' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_6 : Operation 137 [1/1] (0.00ns)   --->   "%shl_ln728_4 = call i54 @_ssdm_op_BitConcatenate.i54.i32.i22(i32 %tmp_39, i22 0)" [./layer.h:272]   --->   Operation 137 'bitconcatenate' 'shl_ln728_4' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_6 : Operation 138 [1/1] (3.26ns)   --->   "%add_ln1192_2 = add i54 %shl_ln728_4, %mul_ln1192_1" [./layer.h:272]   --->   Operation 138 'add' 'add_ln1192_2' <Predicate = (!icmp_ln267)> <Delay = 3.26> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 139 [1/1] (0.00ns)   --->   "%tmp_40 = call i32 @_ssdm_op_PartSelect.i32.i54.i32.i32(i54 %add_ln1192_2, i32 22, i32 53)" [./layer.h:272]   --->   Operation 139 'partselect' 'tmp_40' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_6 : Operation 140 [1/1] (0.00ns)   --->   "%shl_ln728_5 = call i54 @_ssdm_op_BitConcatenate.i54.i32.i22(i32 %tmp_40, i22 0)" [./layer.h:272]   --->   Operation 140 'bitconcatenate' 'shl_ln728_5' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_6 : Operation 141 [1/1] (3.26ns)   --->   "%add_ln1192_3 = add i54 %shl_ln728_5, %mul_ln1192_2" [./layer.h:272]   --->   Operation 141 'add' 'add_ln1192_3' <Predicate = (!icmp_ln267)> <Delay = 3.26> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 142 [1/1] (0.00ns)   --->   "%trunc_ln708_6 = call i32 @_ssdm_op_PartSelect.i32.i54.i32.i32(i54 %add_ln1192_3, i32 22, i32 53)" [./layer.h:272]   --->   Operation 142 'partselect' 'trunc_ln708_6' <Predicate = (!icmp_ln267)> <Delay = 0.00>
-ST_6 : Operation 143 [1/1] (1.13ns)   --->   "switch i2 %select_ln270, label %branch2 [
+ST_4 : Operation 123 [1/1] (1.13ns)   --->   "switch i2 %select_ln270, label %branch2 [
     i2 0, label %branch0
     i2 1, label %branch1
-  ]" [./layer.h:272]   --->   Operation 143 'switch' <Predicate = (!icmp_ln267)> <Delay = 1.13>
+  ]" [./layer.h:272]   --->   Operation 123 'switch' <Predicate = (!icmp_ln267)> <Delay = 1.13>
+
+State 5 <SV = 4> <Delay = 8.51>
+ST_5 : Operation 124 [1/1] (0.00ns)   --->   "%shl_ln = call i54 @_ssdm_op_BitConcatenate.i54.i32.i22(i32 %tmp_38, i22 0)" [./layer.h:272]   --->   Operation 124 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_5 : Operation 125 [1/1] (3.26ns)   --->   "%add_ln1192 = add i54 %shl_ln, %mul_ln1192" [./layer.h:272]   --->   Operation 125 'add' 'add_ln1192' <Predicate = (!icmp_ln267)> <Delay = 3.26> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 126 [1/1] (0.00ns)   --->   "%sext_ln1192_2 = sext i32 %tmp_31 to i54" [./layer.h:272]   --->   Operation 126 'sext' 'sext_ln1192_2' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_5 : Operation 127 [1/1] (0.00ns)   --->   "%sext_ln1192_3 = sext i32 %tmp_32 to i54" [./layer.h:272]   --->   Operation 127 'sext' 'sext_ln1192_3' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_5 : Operation 128 [1/1] (8.51ns)   --->   "%mul_ln1192_1 = mul i54 %sext_ln1192_2, %sext_ln1192_3" [./layer.h:272]   --->   Operation 128 'mul' 'mul_ln1192_1' <Predicate = (!icmp_ln267)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 129 [1/1] (0.00ns)   --->   "%tmp_39 = call i32 @_ssdm_op_PartSelect.i32.i54.i32.i32(i54 %add_ln1192, i32 22, i32 53)" [./layer.h:272]   --->   Operation 129 'partselect' 'tmp_39' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_5 : Operation 130 [1/1] (0.00ns)   --->   "%sext_ln1192_4 = sext i32 %tmp_33 to i54" [./layer.h:272]   --->   Operation 130 'sext' 'sext_ln1192_4' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_5 : Operation 131 [1/1] (0.00ns)   --->   "%sext_ln1192_5 = sext i32 %tmp_34 to i54" [./layer.h:272]   --->   Operation 131 'sext' 'sext_ln1192_5' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_5 : Operation 132 [1/1] (8.51ns)   --->   "%mul_ln1192_2 = mul i54 %sext_ln1192_4, %sext_ln1192_5" [./layer.h:272]   --->   Operation 132 'mul' 'mul_ln1192_2' <Predicate = (!icmp_ln267)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.52>
+ST_6 : Operation 133 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([42 x i8]* @GEMM_3D_FLOAT_LOOP_1)"   --->   Operation 133 'specloopname' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_6 : Operation 134 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 12, i64 12, i64 12)"   --->   Operation 134 'speclooptripcount' 'empty' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_6 : Operation 135 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([21 x i8]* @p_str32) nounwind" [./layer.h:269]   --->   Operation 135 'specloopname' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_6 : Operation 136 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([21 x i8]* @p_str32)" [./layer.h:269]   --->   Operation 136 'specregionbegin' 'tmp_s' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_6 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 2, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind" [./layer.h:270]   --->   Operation 137 'specpipeline' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_6 : Operation 138 [1/1] (0.00ns)   --->   "%shl_ln728_4 = call i54 @_ssdm_op_BitConcatenate.i54.i32.i22(i32 %tmp_39, i22 0)" [./layer.h:272]   --->   Operation 138 'bitconcatenate' 'shl_ln728_4' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_6 : Operation 139 [1/1] (3.26ns)   --->   "%add_ln1192_2 = add i54 %shl_ln728_4, %mul_ln1192_1" [./layer.h:272]   --->   Operation 139 'add' 'add_ln1192_2' <Predicate = (!icmp_ln267)> <Delay = 3.26> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 140 [1/1] (0.00ns)   --->   "%tmp_40 = call i32 @_ssdm_op_PartSelect.i32.i54.i32.i32(i54 %add_ln1192_2, i32 22, i32 53)" [./layer.h:272]   --->   Operation 140 'partselect' 'tmp_40' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_6 : Operation 141 [1/1] (0.00ns)   --->   "%shl_ln728_5 = call i54 @_ssdm_op_BitConcatenate.i54.i32.i22(i32 %tmp_40, i22 0)" [./layer.h:272]   --->   Operation 141 'bitconcatenate' 'shl_ln728_5' <Predicate = (!icmp_ln267)> <Delay = 0.00>
+ST_6 : Operation 142 [1/1] (3.26ns)   --->   "%add_ln1192_3 = add i54 %shl_ln728_5, %mul_ln1192_2" [./layer.h:272]   --->   Operation 142 'add' 'add_ln1192_3' <Predicate = (!icmp_ln267)> <Delay = 3.26> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.26> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 143 [1/1] (0.00ns)   --->   "%trunc_ln708_6 = call i32 @_ssdm_op_PartSelect.i32.i54.i32.i32(i54 %add_ln1192_3, i32 22, i32 53)" [./layer.h:272]   --->   Operation 143 'partselect' 'trunc_ln708_6' <Predicate = (!icmp_ln267)> <Delay = 0.00>
 ST_6 : Operation 144 [1/1] (0.00ns)   --->   "store i32 %trunc_ln708_6, i32* %output_V620_1" [./layer.h:272]   --->   Operation 144 'store' <Predicate = (select_ln270 == 1 & trunc_ln270 == 2)> <Delay = 0.00>
 ST_6 : Operation 145 [1/1] (0.00ns)   --->   "store i32 %trunc_ln708_6, i32* %output_V619_1" [./layer.h:272]   --->   Operation 145 'store' <Predicate = (select_ln270 == 1 & trunc_ln270 == 1)> <Delay = 0.00>
 ST_6 : Operation 146 [1/1] (0.00ns)   --->   "store i32 %trunc_ln708_6, i32* %output_V6_1" [./layer.h:272]   --->   Operation 146 'store' <Predicate = (select_ln270 == 1 & trunc_ln270 == 0)> <Delay = 0.00>
@@ -433,6 +433,7 @@ input_2_0_V_load_3 (load             ) [ 00000000]
 input_2_1_V_load_3 (load             ) [ 00000000]
 input_2_2_V_load_3 (load             ) [ 00000000]
 tmp_34             (mux              ) [ 00010100]
+switch_ln272       (switch           ) [ 00000000]
 shl_ln             (bitconcatenate   ) [ 00000000]
 add_ln1192         (add              ) [ 00000000]
 sext_ln1192_2      (sext             ) [ 00000000]
@@ -453,7 +454,6 @@ tmp_40             (partselect       ) [ 00000000]
 shl_ln728_5        (bitconcatenate   ) [ 00000000]
 add_ln1192_3       (add              ) [ 00000000]
 trunc_ln708_6      (partselect       ) [ 00000000]
-switch_ln272       (switch           ) [ 00000000]
 store_ln272        (store            ) [ 00000000]
 store_ln272        (store            ) [ 00000000]
 store_ln272        (store            ) [ 00000000]

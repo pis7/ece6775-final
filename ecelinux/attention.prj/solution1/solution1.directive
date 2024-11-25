@@ -92,7 +92,9 @@
             <pragma name="PIPELINE"/>
         </directive>
         <directive functionName="linear_forward_no_mul" label="LINEAR_FORWARD_NO_MUL_LOOP_2" functionLabel="">
-            <pragma name="PIPELINE"/>
+            <pragma name="PIPELINE">
+                <option name="II" value="17"/>
+            </pragma>
         </directive>
         <directive functionName="reshape_2D_to_3D" label="RESHAPE_2D_TO_3D_LOOP_3" functionLabel="">
             <pragma name="PIPELINE"/>
@@ -118,10 +120,14 @@
             <pragma name="PIPELINE"/>
         </directive>
         <directive functionName="transpose_last_two_dims" label="TRANSPOSE_LAST_TWO_DIMS_LOOP_2" functionLabel="">
-            <pragma name="PIPELINE"/>
+            <pragma name="PIPELINE">
+                <option name="II" value="2"/>
+            </pragma>
         </directive>
         <directive functionName="GEMM_3D_float" label="GEMM_3D_FLOAT_LOOP_3" functionLabel="">
-            <pragma name="PIPELINE"/>
+            <pragma name="PIPELINE">
+                <option name="II" value="2"/>
+            </pragma>
         </directive>
         <directive functionName="create_causal_mask" label="CREATE_CAUSAL_MASK_LOOP_1" functionLabel="">
             <pragma name="PIPELINE"/>
@@ -130,7 +136,9 @@
             <pragma name="UNROLL"/>
         </directive>
         <directive functionName="softmax" label="SOFTMAX_LOOP_4" functionLabel="">
-            <pragma name="PIPELINE"/>
+            <pragma name="PIPELINE">
+                <option name="II" value="13"/>
+            </pragma>
         </directive>
         <directive functionName="softmax" label="SOFTMAX_LOOP_5" functionLabel="">
             <pragma name="UNROLL"/>
@@ -142,7 +150,9 @@
             <pragma name="PIPELINE"/>
         </directive>
         <directive functionName="attention" label="ATTN_2D_LOOP_2" functionLabel="">
-            <pragma name="PIPELINE"/>
+            <pragma name="PIPELINE">
+                <option name="II" value="2"/>
+            </pragma>
         </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>

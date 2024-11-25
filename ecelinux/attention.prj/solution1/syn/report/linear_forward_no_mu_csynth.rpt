@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'linear_forward_no_mu'
 ================================================================
-* Date:           Mon Nov 25 00:15:55 2024
+* Date:           Mon Nov 25 13:05:50 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention.prj
@@ -41,7 +41,7 @@
         |                                |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |            Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +--------------------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- LINEAR_FORWARD_NO_MUL_LOOP_2  |      374|      374|       120|         17|          1|    16|    yes   |
+        |- LINEAR_FORWARD_NO_MUL_LOOP_2  |      374|      374|       120|         17|         17|    16|    yes   |
         +--------------------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 

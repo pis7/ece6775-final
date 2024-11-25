@@ -1020,7 +1020,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="11" tracking_level="0" version="0">
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second class_id="12" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1069,7 +1069,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1118,7 +1118,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1167,7 +1167,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1216,7 +1216,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1265,7 +1265,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1314,7 +1314,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1363,7 +1363,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1412,7 +1412,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1461,7 +1461,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1510,7 +1510,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1559,7 +1559,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1608,7 +1608,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1656,7 +1656,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1707,7 +1707,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1758,7 +1758,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1809,7 +1809,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1858,7 +1858,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1907,7 +1907,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1957,7 +1957,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2006,7 +2006,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2055,7 +2055,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2105,7 +2105,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2155,7 +2155,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2203,7 +2203,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2253,7 +2253,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2302,7 +2302,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2350,7 +2350,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2400,7 +2400,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2449,7 +2449,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2497,7 +2497,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2547,7 +2547,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2596,7 +2596,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2644,7 +2644,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2694,7 +2694,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2744,7 +2744,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2794,7 +2794,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2844,7 +2844,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2894,7 +2894,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2944,7 +2944,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2994,7 +2994,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3044,7 +3044,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3094,7 +3094,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3144,7 +3144,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3192,7 +3192,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3240,7 +3240,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3293,7 +3293,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3341,7 +3341,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3389,7 +3389,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3437,7 +3437,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3485,7 +3485,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3533,7 +3533,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3586,7 +3586,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3634,7 +3634,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3683,7 +3683,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3736,7 +3736,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3784,7 +3784,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3832,7 +3832,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3880,7 +3880,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3928,7 +3928,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3976,7 +3976,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4029,7 +4029,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4077,7 +4077,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4126,7 +4126,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4177,7 +4177,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4227,7 +4227,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4276,7 +4276,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4329,7 +4329,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4377,7 +4377,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4403,10 +4403,10 @@
             <item>389</item>
           </oprand_edges>
           <opcode>load</opcode>
-          <m_Display>1</m_Display>
+          <m_Display>0</m_Display>
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
-          <m_isLCDNode>1</m_isLCDNode>
-          <m_isStartOfPath>1</m_isStartOfPath>
+          <m_isLCDNode>0</m_isLCDNode>
+          <m_isStartOfPath>0</m_isStartOfPath>
           <m_delay>2.32</m_delay>
           <m_topoIndex>95</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
@@ -4425,7 +4425,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4473,7 +4473,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4521,7 +4521,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4569,7 +4569,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4622,7 +4622,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4670,7 +4670,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4719,7 +4719,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4770,7 +4770,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4820,7 +4820,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4869,7 +4869,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4920,7 +4920,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4975,7 +4975,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5030,7 +5030,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5079,7 +5079,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5127,7 +5127,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5176,7 +5176,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5224,7 +5224,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5273,7 +5273,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5321,7 +5321,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5370,7 +5370,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5418,7 +5418,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5473,7 +5473,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5522,7 +5522,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5570,7 +5570,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5619,7 +5619,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5667,7 +5667,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5716,7 +5716,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5764,7 +5764,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5813,7 +5813,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5861,7 +5861,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5916,7 +5916,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5965,7 +5965,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6013,7 +6013,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6062,7 +6062,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6110,7 +6110,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6159,7 +6159,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6207,7 +6207,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6256,7 +6256,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6304,7 +6304,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6359,7 +6359,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6408,7 +6408,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6456,7 +6456,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6505,7 +6505,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6553,7 +6553,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6602,7 +6602,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6650,7 +6650,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6699,7 +6699,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6747,7 +6747,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6830,7 +6830,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6878,7 +6878,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6926,7 +6926,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6974,7 +6974,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7022,7 +7022,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7070,7 +7070,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7118,7 +7118,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7166,7 +7166,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7214,7 +7214,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7262,7 +7262,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7310,7 +7310,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7358,7 +7358,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7406,7 +7406,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7454,7 +7454,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7502,7 +7502,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7550,7 +7550,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7598,7 +7598,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7647,7 +7647,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7696,7 +7696,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7745,7 +7745,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7794,7 +7794,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7843,7 +7843,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7892,7 +7892,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7941,7 +7941,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7990,7 +7990,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8039,7 +8039,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8088,7 +8088,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8137,7 +8137,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8186,7 +8186,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8235,7 +8235,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8284,7 +8284,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8333,7 +8333,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8382,7 +8382,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>

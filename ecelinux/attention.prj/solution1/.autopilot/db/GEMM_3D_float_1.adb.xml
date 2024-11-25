@@ -2212,7 +2212,7 @@ GEMM_3D_FLOAT_LOOP_3_begin:27  call void (...)* @_ssdm_op_SpecLoopName([21 x i8]
 
 <Node id="83" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-GEMM_3D_FLOAT_LOOP_3_begin:29  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind
+GEMM_3D_FLOAT_LOOP_3_begin:29  call void (...)* @_ssdm_op_SpecPipeline(i32 2, i32 1, i32 1, i32 0, [1 x i8]* @p_str19) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln270"/></StgValue>

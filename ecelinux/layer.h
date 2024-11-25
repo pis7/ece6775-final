@@ -313,12 +313,13 @@ template <int P, int R, int C>
 void softmax (
   fixed32_t input[R][P][C]
 ) {
+  fixed32_t max_val, sum;
   SOFTMAX_LOOP_1: for (int i = 0; i < R; i++) {
     SOFTMAX_LOOP_2: for (int j = 0; j < P; j++) {
-      fixed32_t max_val = input[i][j][0];
+      max_val = input[i][j][0];
       SOFTMAX_LOOP_3: for (int k = 1; k < C; k++)
         max_val = attention_max<fixed32_t>(max_val, input[i][j][k]);
-      fixed32_t sum = 0.0;
+      sum = 0.0;
       SOFTMAX_LOOP_4: for (int k = 0; k < C; k++) {
         input[i][j][k] = attention_exp(input[i][j][k] - max_val);
         sum += input[i][j][k];
