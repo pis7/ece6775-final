@@ -31,11 +31,10 @@ int main() {
     for (int j = 0; j < HS_COLS_BASIC; j++)
       attention_in.write(hidden_states[i][j]);
 
-  // // perform prediction
+  // perform attention
   dut(attention_in, attention_out);
 
   // check results
-  int num_incorrect = 0;
   for (int i = 0; i < SEQ_LEN_DECODE; i++) {
     for (int j = 0; j < PROJ_COLS_BASIC; j++)
       cout << attention_out.read() << " ";

@@ -4,15 +4,12 @@
 #include <fcntl.h>
 #include <math.h>
 #include <assert.h>
-
 #include <iostream>
 #include <fstream>
 #include <string>
-
-#include "typedefs.h"
-#include "timer.h"
-#include "model.h"
 #include "attention.h"
+#include "timer.h"
+#include "data_short/hidden_states.h"
 
 using namespace std;
 
@@ -28,8 +25,6 @@ int main() {
     exit(-1);
   }
   int nbytes;
-
-  // read test images and labels
   bit32_t input_vector;
 
   // Timer
@@ -37,28 +32,22 @@ int main() {
   timer.start();
 
   // pack images to 32-bit and transmit to dut function
-  for (int i = 0; i < I_WIDTH1; i++) {
-    for (int j = 0; j < I_WIDTH1; j+=4) {
-      input_vector(7, 0) = test_att_input1[i][j];
-      input_vector(15, 8) = test_att_input1[i][j+1];
-      input_vector(23, 16) = test_att_input1[i][j+2];
-      input_vector(31, 24) = test_att_input1[i][j+3];
+  for (int i = 0; i < SEQ_LEN_DECODE; i++)
+    for (int j = 0; j < HS_COLS_BASIC; j++) {
+      input_vector = hidden_states[i][j];
+      nbytes = write(fdw, (void *)&input_vector, sizeof(input_vector));
+      assert(nbytes == sizeof(input_vector));
     }
-    nbytes = write(fdw, (void *)&input_vector, sizeof(input_vector));
-    assert(nbytes == sizeof(input_vector));
-  }
 
   // check results
   bit32_t result;
-  for (int i = 0; i < I_WIDTH1*3; i++) {
-    cout << "{";
-    for (int j = 0; j < O_WIDTH1; j++) {
+  for (int i = 0; i < SEQ_LEN_DECODE; i++) {
+    for (int j = 0; j < PROJ_COLS_BASIC; j++){
       nbytes = read(fdr, (void *)&result, sizeof(result));
       assert(nbytes == sizeof(result));
-      if (j != O_WIDTH1 - 1) cout << result << ", ";
-      else cout << result;
+      cout << result << " ";
     }
-    cout << "}," << endl;
+    cout << endl;
   }
 
   timer.stop();
