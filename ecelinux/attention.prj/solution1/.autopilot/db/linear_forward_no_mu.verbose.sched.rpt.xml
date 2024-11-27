@@ -1,0 +1,48 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'linear_forward_no_mu'" level="0">
+<item name = "Date">Wed Nov 27 14:05:54 2024
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">attention.prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.510 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3068929, 8967169, 30.689 ms, 89.672 ms, 3068929, 8967169, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- LINEAR_FORWARD_NO_MUL_LOOP_2">3068928, 8967168, 1998 ~ 5838, -, -, 1536, no</column>
+<column name=" + LINEAR_FORWARD_NO_MUL_LOOP_3">1920, 5760, 5 ~ 15, -, -, 384, no</column>
+<column name="  ++ LINEAR_FORWARD_NO_MUL_LOOP_4">2, 12, 2 ~ 3, -, -, 1 ~ 4, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

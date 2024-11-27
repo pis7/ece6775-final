@@ -17,14 +17,15 @@
 //----------------------------------------------------------
 // dut
 //----------------------------------------------------------
-void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out) {
-  fixed32_t input[SEQ_LEN_DECODE][HS_COLS_BASIC];
-  fixed32_t output[SEQ_LEN_DECODE][PROJ_COLS_BASIC]; 
+void dut(hls::stream<st_fixed32_t> &strm_in, hls::stream<st_fixed32_t> &strm_out) {
+  attn_fixed_t input[SEQ_LEN_DECODE][HS_COLS_BASIC];
+  attn_fixed_t output[SEQ_LEN_DECODE][PROJ_COLS_BASIC]; 
 
   // input processing
   for (int i = 0; i < SEQ_LEN_DECODE; i++)
-    for (int j = 0; j < HS_COLS_BASIC; j++)
-      input[i][j] = strm_in.read();
+    for (int j = 0; j < HS_COLS_BASIC; j++){
+      input[i][j] = (attn_fixed_t)strm_in.read();
+    }
 
   // call attention
   attention<
@@ -55,7 +56,7 @@ void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out) {
   // output processing
   for (int i = 0; i < SEQ_LEN_DECODE; i++)
     for (int j = 0; j < PROJ_COLS_BASIC; j++)
-      strm_out.write(output[i][j]);
+      strm_out.write((st_fixed32_t)output[i][j]);
 }
 
 //----------------------------------------------------------
@@ -69,21 +70,21 @@ template <
   int NUM_HEADS,
   int HEAD_DIM
 > void attention (
-  fixed32_t hidden_states[SEQ_LEN][HS_COLS],
-  fixed32_t final_output[SEQ_LEN][PROJ_COLS],
-  const sbit8_t q_weights[HS_COLS/4][PROJ_COLS],
-  const fixed32_t q_scale,
-  const sbit8_t k_weights[HS_COLS/4][PROJ_COLS],
-  const fixed32_t k_scale,
-  const sbit8_t v_weights[HS_COLS/4][PROJ_COLS],
-  const fixed32_t v_scale,
-  const sbit8_t o_weights[HS_COLS/4][PROJ_COLS],
-  const fixed32_t o_scale,
-  const fixed32_t k_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
-  const fixed32_t v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
-  const fixed32_t ln_weight_in[HS_COLS],
-  const fixed32_t ln_weight[PROJ_COLS],
-  const fixed32_t p_id
+  attn_fixed_t hidden_states[SEQ_LEN][HS_COLS],
+  attn_fixed_t final_output[SEQ_LEN][PROJ_COLS],
+  const uint8_t q_weights[HS_COLS/4][PROJ_COLS],
+  const attn_fixed_t q_scale,
+  const uint8_t k_weights[HS_COLS/4][PROJ_COLS],
+  const attn_fixed_t k_scale,
+  const uint8_t v_weights[HS_COLS/4][PROJ_COLS],
+  const attn_fixed_t v_scale,
+  const uint8_t o_weights[HS_COLS/4][PROJ_COLS],
+  const attn_fixed_t o_scale,
+  const float k_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
+  const float v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
+  const float ln_weight_in[HS_COLS],
+  const float ln_weight[PROJ_COLS],
+  const attn_fixed_t p_id
 ) {
 
   // step 1: apply layer normalization
@@ -97,10 +98,10 @@ template <
 
   // step 2: quantize input activations
   sbit8_t quantized_hidden_states[SEQ_LEN][HS_COLS];
-  fixed32_t scales[SEQ_LEN];
+  attn_fixed_t scales[SEQ_LEN];
 
   init_2d_mem<SEQ_LEN, HS_COLS, sbit8_t>(quantized_hidden_states, 0);
-  init_1d_mem<SEQ_LEN, fixed32_t>(scales, 1);
+  init_1d_mem<SEQ_LEN, attn_fixed_t>(scales, 1);
 
   quantize_activation<SEQ_LEN, HS_COLS>(
     hidden_states,
@@ -110,13 +111,13 @@ template <
   );
 
   // step 3: linear transformation
-  fixed32_t q_proj_re[SEQ_LEN][PROJ_COLS];
-  fixed32_t k_proj_re[SEQ_LEN][PROJ_COLS];
-  fixed32_t v_proj_re[SEQ_LEN][PROJ_COLS];
+  attn_fixed_t q_proj_re[SEQ_LEN][PROJ_COLS];
+  attn_fixed_t k_proj_re[SEQ_LEN][PROJ_COLS];
+  attn_fixed_t v_proj_re[SEQ_LEN][PROJ_COLS];
 
-  init_2d_mem<SEQ_LEN, PROJ_COLS, fixed32_t>(q_proj_re, 0);
-  init_2d_mem<SEQ_LEN, PROJ_COLS, fixed32_t>(k_proj_re, 0);
-  init_2d_mem<SEQ_LEN, PROJ_COLS, fixed32_t>(v_proj_re, 0);
+  init_2d_mem<SEQ_LEN, PROJ_COLS, attn_fixed_t>(q_proj_re, 0);
+  init_2d_mem<SEQ_LEN, PROJ_COLS, attn_fixed_t>(k_proj_re, 0);
+  init_2d_mem<SEQ_LEN, PROJ_COLS, attn_fixed_t>(v_proj_re, 0);
 
   linear_forward_no_mul<SEQ_LEN, HS_COLS, PROJ_COLS>(
     quantized_hidden_states,
@@ -140,35 +141,34 @@ template <
     v_scale
   );
 
-  fixed32_t q_proj[NUM_HEADS][SEQ_LEN][HEAD_DIM];
-  fixed32_t k_proj[NUM_HEADS][SEQ_LEN][HEAD_DIM];
-  fixed32_t v_proj[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  attn_fixed_t q_proj[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  attn_fixed_t k_proj[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  attn_fixed_t v_proj[NUM_HEADS][SEQ_LEN][HEAD_DIM];
 
   reshape_2D_to_3D<SEQ_LEN, NUM_HEADS, HEAD_DIM>(q_proj_re, q_proj);
   reshape_2D_to_3D<SEQ_LEN, NUM_HEADS, HEAD_DIM>(k_proj_re, k_proj);
   reshape_2D_to_3D<SEQ_LEN, NUM_HEADS, HEAD_DIM>(v_proj_re, v_proj);
 
   // step 4: apply rotary embedding
-  fixed32_t q_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
-  fixed32_t k_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  attn_fixed_t q_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  attn_fixed_t k_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
   apply_rotary_pos_emb<SEQ_LEN, NUM_HEADS, HEAD_DIM>(
     q_proj, k_proj, q_embed, k_embed, p_id
   );
-  fixed32_t k_cache_upd[NUM_HEADS][CACHE_SIZE_INIT+1][HEAD_DIM];
-  fixed32_t v_cache_upd[NUM_HEADS][CACHE_SIZE_INIT+1][HEAD_DIM];
+  attn_fixed_t k_cache_upd[NUM_HEADS][CACHE_SIZE_INIT+1][HEAD_DIM];
+  attn_fixed_t v_cache_upd[NUM_HEADS][CACHE_SIZE_INIT+1][HEAD_DIM];
   cache_update<NUM_HEADS, CACHE_SIZE_INIT, HEAD_DIM>(
     k_cache, k_cache_upd, k_embed
   );
   cache_update<NUM_HEADS, CACHE_SIZE_INIT, HEAD_DIM>(
     v_cache, v_cache_upd, v_proj
   );
-
   // step 5: transpose K for correct multiplication
-  fixed32_t k_proj_transposed[NUM_HEADS][HEAD_DIM][CACHE_SIZE_INIT+1];
+  attn_fixed_t k_proj_transposed[NUM_HEADS][HEAD_DIM][CACHE_SIZE_INIT+1];
   transpose_last_two_dims<CACHE_SIZE_INIT+1, NUM_HEADS, HEAD_DIM>(k_cache_upd, k_proj_transposed);
 
   // step 6: calculate attention scores
-  fixed32_t attn_weights[NUM_HEADS][SEQ_LEN][CACHE_SIZE_INIT+1];
+  attn_fixed_t attn_weights[NUM_HEADS][SEQ_LEN][CACHE_SIZE_INIT+1];
   GEMM_3D_float<
     NUM_HEADS,
     SEQ_LEN,
@@ -187,7 +187,7 @@ template <
       SF_LOOP_3: for (int d = 0; d < CACHE_SIZE_INIT+1; ++d)
         attn_weights[h][s][d] /= HEAD_DIM_BASIC_SQRT;
 
-  fixed32_t causal_mask[SEQ_LEN][SEQ_LEN];
+  attn_fixed_t causal_mask[SEQ_LEN][SEQ_LEN];
   create_causal_mask<SEQ_LEN>(causal_mask);
   CM_LOOP_1: for (int h = 0; h < NUM_HEADS; ++h)
     CM_LOOP_2: for (int s = 0; s < SEQ_LEN; ++s)
@@ -198,7 +198,7 @@ template <
   softmax<SEQ_LEN, NUM_HEADS, CACHE_SIZE_INIT+1>(attn_weights);
 
   // step 8: multiply with V
-  fixed32_t attn_output[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  attn_fixed_t attn_output[NUM_HEADS][SEQ_LEN][HEAD_DIM];
   GEMM_3D_float<
     NUM_HEADS,
     SEQ_LEN,
@@ -212,8 +212,8 @@ template <
     attn_output
   );
 
-  fixed32_t attn_output_2D[SEQ_LEN][PROJ_COLS];
-  init_2d_mem<SEQ_LEN, PROJ_COLS, fixed32_t>(attn_output_2D, 0);
+  attn_fixed_t attn_output_2D[SEQ_LEN][PROJ_COLS];
+  init_2d_mem<SEQ_LEN, PROJ_COLS, attn_fixed_t>(attn_output_2D, 0);
   ATTN_2D_LOOP_1: for (int s = 0; s < SEQ_LEN; ++s)
     ATTN_2D_LOOP_2: for (int h = 0; h < NUM_HEADS; ++h)
       ATTN_2D_LOOP_3: for (int d = 0; d < HEAD_DIM; ++d)
@@ -230,9 +230,9 @@ template <
   // step 10: final output projection using quantized GEMM (forward_no_mul)
   // quantize attention output before final projection
   sbit8_t quantized_final_output[SEQ_LEN][PROJ_COLS];
-  fixed32_t final_scales[SEQ_LEN];
+  attn_fixed_t final_scales[SEQ_LEN];
   init_2d_mem<SEQ_LEN, PROJ_COLS, sbit8_t>(quantized_final_output, 0);
-  init_1d_mem<SEQ_LEN, fixed32_t>(final_scales, 1);
+  init_1d_mem<SEQ_LEN, attn_fixed_t>(final_scales, 1);
   quantize_activation<SEQ_LEN, PROJ_COLS>(
     attn_output_2D,
     quantized_final_output,
@@ -240,7 +240,7 @@ template <
     8
   );
 
-  init_2d_mem<SEQ_LEN, PROJ_COLS, fixed32_t>(final_output, 0);
+  init_2d_mem<SEQ_LEN, PROJ_COLS, attn_fixed_t>(final_output, 0);
   linear_forward_no_mul<SEQ_LEN, PROJ_COLS, PROJ_COLS>(
     quantized_final_output,
     final_output,

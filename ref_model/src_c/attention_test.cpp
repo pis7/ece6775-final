@@ -3,27 +3,27 @@
 #include <vector>
 #include <string>
 #include "attention.h"
-#include "../data_short/cos_tab.h"
-#include "../data_short/sin_tab.h"
-#include "../data_short/q_weights.h"
-#include "../data_short/k_weights.h"
-#include "../data_short/v_weights.h"
-#include "../data_short/o_weights.h"
-#include "../data_short/ln_weight_in.h"
-#include "../data_short/ln_weight.h"
-#include "../data_short/k_cache.h"
-#include "../data_short/v_cache.h"
-#include "../data_short/hidden_states.h"
+#include "../data_long/cos_tab.h"
+#include "../data_long/sin_tab.h"
+#include "../data_long/q_weights.h"
+#include "../data_long/k_weights.h"
+#include "../data_long/v_weights.h"
+#include "../data_long/o_weights.h"
+#include "../data_long/ln_weight_in.h"
+#include "../data_long/ln_weight.h"
+#include "../data_long/k_cache.h"
+#include "../data_long/v_cache.h"
+#include "../data_long/hidden_states.h"
 
 int main() {
 
     // Model parameter sizes
     size_t seq_len = 1;
-    size_t num_heads = 4;
-    size_t head_dim = 4;
-    size_t hidden_size = num_heads * head_dim;
+    size_t num_heads = 16;
+    size_t head_dim = 96;
+    size_t hidden_size = num_heads*head_dim;
     size_t trig_dim_1 = 10;
-    size_t p_id = 2;
+    size_t p_id = 5;
 
     std::vector<std::vector<float>> l_hidden_states;
     for (int i = 0; i < seq_len; i++) {
@@ -39,7 +39,7 @@ int main() {
     l_k_weights.scale = k_scale;
     l_v_weights.scale = v_scale;
     l_o_weights.scale = o_scale;
-    for (int i = 0; i < num_heads; i++) {
+    for (int i = 0; i < hidden_size/4; i++) {
         std::vector<uint8_t> temp_q, temp_k, temp_v, temp_o;
         for (int j = 0; j < hidden_size; j++) {
             temp_q.push_back(q_weights[i][j]);
@@ -56,7 +56,7 @@ int main() {
     Tensor2D l_cos, l_sin;
     for (int i = 0; i < trig_dim_1; i++) {
         std::vector<float> temp_cos, temp_sin;
-        for (int j = 0; j < hidden_size; j++) {
+        for (int j = 0; j < head_dim; j++) {
             temp_cos.push_back(cos_tab[i][j]);
             temp_sin.push_back(sin_tab[i][j]);
         }
@@ -105,13 +105,14 @@ int main() {
     );
 
     // Print the result
-    std::cout << std::endl;
-    for (int i = 0; i < seq_len; i++) {
-        for (int j = 0; j < hidden_size; j++) {
-            std::cout << result[i][j] << " ";
-        }
-        std::cout << std::endl;
-    }
+    // std::cout << std::endl;
+    // for (int i = 0; i < seq_len; i++) {
+    //     for (int j = 0; j < hidden_size; j++) {
+    //         if (j != hidden_size - 1) std::cout << result[i][j] << ", ";
+    //         else std::cout << result[i][j];
+    //     }
+    //     std::cout << std::endl;
+    // }
 
     return 0;
 }

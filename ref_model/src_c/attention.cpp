@@ -286,6 +286,15 @@ std::vector<std::vector<float>> bitnet_attention(
         row = rms_norm(row, ln_weight, RMS_NORM_EPS);
     }
 
+    // Print attn_output_2D for debugging
+    // std::cout << "Attention Output 2D:" << std::endl;
+    // for (const auto &row : attn_output_2D) {
+    //     for (const auto &elem : row) {
+    //         std::cout << elem << " ";
+    //     }
+    //     std::cout << std::endl;
+    // }
+
     // Step 10: Final output projection using quantized GEMM (forward_no_mul)
     // Quantize the attention output before final projection
     auto quantized_final_result = quantize_activation(attn_output_2D, 8);

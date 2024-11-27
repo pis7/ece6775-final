@@ -1,0 +1,1725 @@
+result: -0.0196381, ground_truth: -0.0193461
+result: -0.0133667, ground_truth: -0.0117311
+result: 0.0366211, ground_truth: 0.0364283
+result: -0.0100708, ground_truth: -0.0105992
+result: 0.039505, ground_truth: 0.0409561
+result: 0.0151215, ground_truth: 0.0136863
+result: 0.0769501, ground_truth: 0.0780018
+result: 0.00267029, ground_truth: 0.0022639
+result: -0.022522, ground_truth: -0.0230507
+result: -0.0237579, ground_truth: -0.0236681
+result: 0.00965881, ground_truth: 0.00884981
+result: 0.0012207, ground_truth: 0.00123486
+result: -0.0601807, ground_truth: -0.0612283
+result: 0.0238647, ground_truth: 0.0244913
+result: 0.0456696, ground_truth: 0.0456897
+result: -0.0210876, ground_truth: -0.0206839
+result: 0.0654297, ground_truth: 0.0655503
+result: 0.104523, ground_truth: 0.103831
+result: -0.0521545, ground_truth: -0.0529959
+result: 0.0022583, ground_truth: 0.00236681
+result: -0.00915527, ground_truth: -0.00884981
+result: 0.0804443, ground_truth: 0.0810889
+result: -0.0696411, ground_truth: -0.0684317
+result: -0.0368195, ground_truth: -0.0361196
+result: -0.0268402, ground_truth: -0.0270639
+result: -0.23735, ground_truth: -0.238327
+result: 0.0767365, ground_truth: 0.0774873
+result: 0.0345612, ground_truth: 0.0346789
+result: 0.026535, ground_truth: 0.0262407
+result: -0.0172729, ground_truth: -0.0184199
+result: -0.0743713, ground_truth: -0.0731653
+result: -0.0078125, ground_truth: -0.00812947
+result: -0.0477295, ground_truth: -0.0468217
+result: -0.0631561, ground_truth: -0.0621545
+result: 0.0296173, ground_truth: 0.0294308
+result: -0.0240631, ground_truth: -0.0245942
+result: 0.0834351, ground_truth: 0.0825296
+result: 0.0278778, ground_truth: 0.0270639
+result: 0.0348663, ground_truth: 0.0338557
+result: 0.0055542, ground_truth: 0.00679171
+result: -0.0203705, ground_truth: -0.0198606
+result: 0.0219116, ground_truth: 0.0220216
+result: 0.0270538, ground_truth: 0.0272698
+result: 0.0373383, ground_truth: 0.0373544
+result: 0.0106964, ground_truth: 0.0110108
+result: 0.0299377, ground_truth: 0.0307685
+result: -0.0272522, ground_truth: -0.0272698
+result: 0.0448456, ground_truth: 0.0445578
+result: 0.0762329, ground_truth: 0.0762524
+result: 0.0530853, ground_truth: 0.0527901
+result: 0.0113068, ground_truth: 0.0101876
+result: -0.00195313, ground_truth: -0.00123486
+result: -0.0242767, ground_truth: -0.0246971
+result: -0.0232391, ground_truth: -0.0234623
+result: 0.00132751, ground_truth: 0.00133776
+result: 0.0548248, ground_truth: 0.0562889
+result: -0.0365143, ground_truth: -0.0370457
+result: 0.0027771, ground_truth: 0.00267552
+result: 0.0391846, ground_truth: 0.0390009
+result: 0.00523376, ground_truth: 0.00401328
+result: 0.109055, ground_truth: 0.109182
+result: -0.0924835, ground_truth: -0.0927172
+result: 0.0332184, ground_truth: 0.0339586
+result: 0.00863647, ground_truth: 0.00812947
+result: -0.0251923, ground_truth: -0.0258291
+result: 0.00245667, ground_truth: 0.00113195
+result: -0.00349426, ground_truth: -0.00246971
+result: -0.0546265, ground_truth: -0.055054
+result: -0.0589447, ground_truth: -0.0578325
+result: -0.0183105, ground_truth: -0.0190374
+result: 0.0735474, ground_truth: 0.073474
+result: -0.0797272, ground_truth: -0.0793395
+result: 0.000396729, ground_truth: 0.00133776
+result: -0.103088, ground_truth: -0.10414
+result: -0.0757141, ground_truth: -0.0749146
+result: -0.0256042, ground_truth: -0.0255204
+result: 0.00863647, ground_truth: 0.00843819
+result: -0.0594635, ground_truth: -0.0587586
+result: 0.000610352, ground_truth: 0.00113195
+result: 0.0441284, ground_truth: 0.0439403
+result: -0.0320892, ground_truth: -0.0321063
+result: -0.02005, ground_truth: -0.0202722
+result: -0.0373383, ground_truth: -0.038898
+result: -0.029007, ground_truth: -0.0284017
+result: -0.0353851, ground_truth: -0.0343702
+result: -0.104935, ground_truth: -0.104345
+result: 0.038681, ground_truth: 0.0375602
+result: -0.112961, ground_truth: -0.113195
+result: -0.056366, ground_truth: -0.0553627
+result: 0.0710907, ground_truth: 0.0704897
+result: -0.0166626, ground_truth: -0.017288
+result: -0.00770569, ground_truth: -0.00823238
+result: 0.0125427, ground_truth: 0.0133776
+result: -0.067688, ground_truth: -0.0675055
+result: 0.0545197, ground_truth: 0.0552598
+result: -0.0904236, ground_truth: -0.08963
+result: -0.000305176, ground_truth: 0.00123486
+result: -0.0215912, ground_truth: -0.0214042
+result: 0.00514221, ground_truth: 0.00689462
+result: 0.00564575, ground_truth: 0.00586557
+result: -0.00575256, ground_truth: -0.00483652
+result: 0.102158, ground_truth: 0.101567
+result: 0.0146027, ground_truth: 0.0147154
+result: -0.0039978, ground_truth: -0.00391038
+result: -0.00965881, ground_truth: -0.0107021
+result: 0.0357971, ground_truth: 0.0362225
+result: -0.00544739, ground_truth: -0.00607138
+result: 0.0369263, ground_truth: 0.0376631
+result: 0.0144958, ground_truth: 0.0138921
+result: -0.0383606, ground_truth: -0.0394125
+result: -0.0184021, ground_truth: -0.0188316
+result: -0.00575256, ground_truth: -0.00545395
+result: 0.0916595, ground_truth: 0.0918939
+result: 0.0235596, ground_truth: 0.0232565
+result: -0.0578156, ground_truth: -0.0584499
+result: -0.027771, ground_truth: -0.026961
+result: 0.00915527, ground_truth: 0.0100847
+result: -0.0244751, ground_truth: -0.0253146
+result: 0.0153198, ground_truth: 0.0162589
+result: -0.0814819, ground_truth: -0.0808831
+result: 0.0119324, ground_truth: 0.0117311
+result: 0.0819855, ground_truth: 0.0808831
+result: 0.0274658, ground_truth: 0.0282988
+result: 0.016037, ground_truth: 0.0160531
+result: 0.0507202, ground_truth: 0.0508349
+result: -0.0320892, ground_truth: -0.0313859
+result: -0.00473022, ground_truth: -0.00380748
+result: 0.0179901, ground_truth: 0.0175967
+result: -0.120773, ground_truth: -0.120296
+result: -0.00132751, ground_truth: -0.00123486
+result: 0.0487518, ground_truth: 0.0489827
+result: 0.00564575, ground_truth: 0.0065859
+result: 0.0172729, ground_truth: 0.0174938
+result: 0.0177917, ground_truth: 0.0181112
+result: 0.0456696, ground_truth: 0.0448665
+result: 0.0804443, ground_truth: 0.079957
+result: -0.0868225, ground_truth: -0.0871603
+result: -0.0575104, ground_truth: -0.0574208
+result: 0.0621338, ground_truth: 0.0631835
+result: -0.021698, ground_truth: -0.0223303
+result: 0.0224152, ground_truth: 0.0217129
+result: 0.00935364, ground_truth: 0.00854109
+result: 0.00245667, ground_truth: 0.002161
+result: -0.00679016, ground_truth: -0.00710043
+result: 0.00698853, ground_truth: 0.00720333
+result: -0.0305481, ground_truth: -0.030254
+result: -0.0405273, ground_truth: -0.0398241
+result: 0.00646973, ground_truth: 0.00689462
+result: 0.0368195, ground_truth: 0.0376631
+result: 0.0543213, ground_truth: 0.0552598
+result: -0.0455627, ground_truth: -0.0451752
+result: 0.032608, ground_truth: 0.0338557
+result: 0.02005, ground_truth: 0.0205809
+result: 0.0637817, ground_truth: 0.062669
+result: -0.0614166, ground_truth: -0.060508
+result: -0.0821991, ground_truth: -0.0833528
+result: 0.0594635, ground_truth: 0.0596847
+result: 0.00987244, ground_truth: 0.0102905
+result: 0.0323029, ground_truth: 0.0337528
+result: 0.0297241, ground_truth: 0.0290191
+result: 0.0201569, ground_truth: 0.0206839
+result: -0.0383606, ground_truth: -0.038898
+result: -0.034256, ground_truth: -0.0337528
+result: 0.00492859, ground_truth: 0.00576267
+result: 0.0314789, ground_truth: 0.0306656
+result: -0.0344543, ground_truth: -0.0338557
+result: -0.0421753, ground_truth: -0.0414706
+result: -0.0843506, ground_truth: -0.0840732
+result: -0.260696, ground_truth: -0.260452
+result: -0.0340424, ground_truth: -0.0339586
+result: 0.0131683, ground_truth: 0.0123486
+result: -0.135178, ground_truth: -0.135011
+result: -0.0398102, ground_truth: -0.0392067
+result: -0.0405273, ground_truth: -0.0403387
+result: 0.0236511, ground_truth: 0.0244913
+result: -0.0933075, ground_truth: -0.0927172
+result: -0.0191345, ground_truth: -0.0178025
+result: -0.0578156, ground_truth: -0.057215
+result: 0, ground_truth: -0.000411619
+result: -0.0964966, ground_truth: -0.096113
+result: -0.110794, ground_truth: -0.109799
+result: -0.0434113, ground_truth: -0.042088
+result: 0.038269, ground_truth: 0.0374573
+result: -0.000808716, ground_truth: -0.000926143
+result: -0.0961914, ground_truth: -0.0967305
+result: -0.0189209, ground_truth: -0.019449
+result: 0.032608, ground_truth: 0.0322092
+result: 0.00132751, ground_truth: 0.00164648
+result: 0.0818939, ground_truth: 0.0812947
+result: 0.00965881, ground_truth: 0.00884981
+result: -0.0173798, ground_truth: -0.0182141
+result: 0.0318909, ground_truth: 0.0305627
+result: -0.0658417, ground_truth: -0.0657561
+result: 0.0720062, ground_truth: 0.0716217
+result: -0.0307617, ground_truth: -0.031283
+result: -0.0363159, ground_truth: -0.0358108
+result: -0.138168, ground_truth: -0.136452
+result: 0.00544739, ground_truth: 0.00545395
+result: -0.0395966, ground_truth: -0.041059
+result: -0.0482483, ground_truth: -0.0477478
+result: -0.0518494, ground_truth: -0.0524814
+result: -0.0503998, ground_truth: -0.0503204
+result: 0.0873413, ground_truth: 0.0875719
+result: -0.0598755, ground_truth: -0.0597877
+result: -0.0274658, ground_truth: -0.0273727
+result: 0.00154114, ground_truth: 0.00205809
+result: 0.039505, ground_truth: 0.0386922
+result: -0.038269, ground_truth: -0.0382806
+result: 0.0306549, ground_truth: 0.0311801
+result: -0.0512238, ground_truth: -0.0514524
+result: 0.0805511, ground_truth: 0.0801628
+result: -0.0173798, ground_truth: -0.0170822
+result: -0.00679016, ground_truth: -0.00782076
+result: 0.0246887, ground_truth: 0.0249029
+result: -0.0280762, ground_truth: -0.028093
+result: 0.00924683, ground_truth: 0.0087469
+result: 0.0364075, ground_truth: 0.0364283
+result: -0.0226288, ground_truth: -0.0220216
+result: 0.0483551, ground_truth: 0.0490856
+result: 0.0347595, ground_truth: 0.0343702
+result: 0.00965881, ground_truth: 0.00905562
+result: -0.0365143, ground_truth: -0.0370457
+result: 0.0307617, ground_truth: 0.0308714
+result: -0.0275726, ground_truth: -0.0277843
+result: 0.0682068, ground_truth: 0.0697694
+result: 0.0153198, ground_truth: 0.0160531
+result: 0.00904846, ground_truth: 0.0087469
+result: -0.0279694, ground_truth: -0.0277843
+result: -0.0318909, ground_truth: -0.0322092
+result: 0.136627, ground_truth: 0.136863
+result: 0.0418701, ground_truth: 0.0415735
+result: -0.0039978, ground_truth: -0.00473362
+result: 0.0027771, ground_truth: 0.00288133
+result: 0.00421143, ground_truth: 0.00524814
+result: -0.0172729, ground_truth: -0.0169793
+result: -0.061203, ground_truth: -0.0609196
+result: 0.00492859, ground_truth: 0.00596847
+result: -0.0151215, ground_truth: -0.0146125
+result: 0.00236511, ground_truth: 0.00113195
+result: 0.0017395, ground_truth: 0.002161
+result: 0.0659485, ground_truth: 0.06483
+result: -0.020874, ground_truth: -0.0215071
+result: 0.00473022, ground_truth: 0.00493943
+result: -0.000610352, ground_truth: -0.000720333
+result: -0.000305176, ground_truth: 0.000308714
+result: -0.00791931, ground_truth: -0.00802657
+result: -0.0116119, ground_truth: -0.0117311
+result: 0.0597687, ground_truth: 0.0597877
+result: 0.0251923, ground_truth: 0.0258291
+result: -0.026947, ground_truth: -0.0277843
+result: -0.0127563, ground_truth: -0.0127602
+result: 0.107407, ground_truth: 0.106506
+result: 0.0583344, ground_truth: 0.0581412
+result: -0.0391846, ground_truth: -0.0387951
+result: -0.015213, ground_truth: -0.0152299
+result: 0.026123, ground_truth: 0.0260349
+result: 0.0186157, ground_truth: 0.0181112
+result: -0.0446472, ground_truth: -0.0445578
+result: -0.0619354, ground_truth: -0.0613312
+result: -0.00410461, ground_truth: -0.00452781
+result: -0.0222168, ground_truth: -0.0218158
+result: -0.0301361, ground_truth: -0.0305627
+result: 0.045166, ground_truth: 0.0454839
+result: -0.0776672, ground_truth: -0.0768698
+result: -0.0422821, ground_truth: -0.0421909
+result: -0.00883484, ground_truth: -0.00998176
+result: 0.0155334, ground_truth: 0.0156415
+result: -0.0424805, ground_truth: -0.0433229
+result: -0.0401154, ground_truth: -0.0405445
+result: -0.0606995, ground_truth: -0.0610225
+result: -0.015625, ground_truth: -0.0157444
+result: -0.0228271, ground_truth: -0.0218158
+result: -0.0103912, ground_truth: -0.0100847
+result: 0.0240631, ground_truth: 0.0244913
+result: -0.0562744, ground_truth: -0.0571121
+result: -0.0213928, ground_truth: -0.0213013
+result: 0.00318909, ground_truth: 0.00411619
+result: -0.156586, ground_truth: -0.157033
+result: -0.021286, ground_truth: -0.0214042
+result: -0.00759888, ground_truth: -0.00751205
+result: 0.0464935, ground_truth: 0.0457926
+result: 0.0376434, ground_truth: 0.0390009
+result: -0.0166626, ground_truth: -0.017288
+result: 0.0753021, ground_truth: 0.0759437
+result: -0.00915527, ground_truth: -0.00771786
+result: 0.0202637, ground_truth: 0.0199635
+result: -0.0510254, ground_truth: -0.0520698
+result: 0.0347595, ground_truth: 0.0361196
+result: 0.0753021, ground_truth: 0.0755321
+result: 0.061615, ground_truth: 0.0611254
+result: -0.0316772, ground_truth: -0.0333411
+result: 0.0398102, ground_truth: 0.0396183
+result: -0.028595, ground_truth: -0.0285046
+result: -0.0940247, ground_truth: -0.0940549
+result: -0.028595, ground_truth: -0.0299453
+result: 0.0904236, ground_truth: 0.0910707
+result: -0.0137787, ground_truth: -0.013995
+result: -0.0351715, ground_truth: -0.0342673
+result: -0.0455627, ground_truth: -0.0462042
+result: 0.0142975, ground_truth: 0.0142009
+result: -0.00544739, ground_truth: -0.00565976
+result: 0.0366211, ground_truth: 0.0358108
+result: -0.00318909, ground_truth: -0.00329295
+result: -0.00534058, ground_truth: -0.00555686
+result: -0.077774, ground_truth: -0.0782076
+result: 0.0176849, ground_truth: 0.0178025
+result: 0.0367279, ground_truth: 0.0370457
+result: -0.0199585, ground_truth: -0.0201693
+result: 0.0302429, ground_truth: 0.0299453
+result: 0.0210876, ground_truth: 0.0215071
+result: 0.00965881, ground_truth: 0.00967305
+result: 0.026947, ground_truth: 0.0278872
+result: -0.0144958, ground_truth: -0.0137892
+result: 0.00915527, ground_truth: 0.0087469
+result: -0.0792084, ground_truth: -0.0790308
+result: 0.0629578, ground_truth: 0.0635951
+result: -0.0759277, ground_truth: -0.0765611
+result: -0.016861, ground_truth: -0.017288
+result: -0.020874, ground_truth: -0.0220216
+result: 0.0215912, ground_truth: 0.0209926
+result: 0.0364075, ground_truth: 0.0358108
+result: 0.121292, ground_truth: 0.119575
+result: 0.14032, ground_truth: 0.140362
+result: -0.0650177, ground_truth: -0.0649329
+result: -0.0795288, ground_truth: -0.0797512
+result: 0.0151215, ground_truth: 0.0148183
+result: -0.0313721, ground_truth: -0.0322092
+result: 0.00286865, ground_truth: 0.00195519
+result: 0.0491638, ground_truth: 0.0492914
+result: 0.469559, ground_truth: 0.470172
+result: 0.0740662, ground_truth: 0.074503
+result: 0.0526733, ground_truth: 0.051864
+result: 0.0149078, ground_truth: 0.0148183
+result: -0.00770569, ground_truth: -0.00740914
+result: -0.00369263, ground_truth: -0.002161
+result: 0.102676, ground_truth: 0.10239
+result: 0.0477295, ground_truth: 0.047542
+result: 0.0601807, ground_truth: 0.0603022
+result: -0.041153, ground_truth: -0.0409561
+result: -0.104309, ground_truth: -0.105066
+result: -0.00596619, ground_truth: -0.00535105
+result: 0.0227356, ground_truth: 0.0230507
+result: -0.0103912, ground_truth: -0.00905562
+result: 0.00390625, ground_truth: 0.00319005
+result: -0.0835266, ground_truth: -0.0837645
+result: 0.0310669, ground_truth: 0.0303569
+result: 0.0135803, ground_truth: 0.0130689
+result: 0.0171814, ground_truth: 0.0168764
+result: -0.0744781, ground_truth: -0.0741943
+result: -0.00997925, ground_truth: -0.00998176
+result: -0.0147095, ground_truth: -0.0148183
+result: -0.0105896, ground_truth: -0.010805
+result: 0.0362091, ground_truth: 0.0363254
+result: -0.0222168, ground_truth: -0.0219187
+result: -0.0237579, ground_truth: -0.0233594
+result: -0.044342, ground_truth: -0.0443519
+result: 0.032608, ground_truth: 0.0320034
+result: 0.0782928, ground_truth: 0.0783105
+result: 0.0487518, ground_truth: 0.0471304
+result: 0.0627441, ground_truth: 0.0633893
+result: 0.0238647, ground_truth: 0.0241826
+result: -0.0666656, ground_truth: -0.0668881
+result: 0.0654297, ground_truth: 0.0656532
+result: 0.0108948, ground_truth: 0.0114224
+result: 0.0271606, ground_truth: 0.0263436
+result: 0.0255127, ground_truth: 0.0254175
+result: 0.038681, ground_truth: 0.0381777
+result: 0.0117188, ground_truth: 0.010805
+result: 0.0423737, ground_truth: 0.0417793
+result: 0.00718689, ground_truth: 0.00710043
+result: 0.00842285, ground_truth: 0.00957014
+result: 0.0433044, ground_truth: 0.0427055
+result: 0.0129547, ground_truth: 0.0121428
+result: 0.0700531, ground_truth: 0.0703868
+result: 0.0793152, ground_truth: 0.0794425
+result: 0.0233459, ground_truth: 0.0240797
+result: 0.00482178, ground_truth: 0.00535105
+result: 0.0313721, ground_truth: 0.031283
+result: -0.00349426, ground_truth: -0.00452781
+result: 0.0587463, ground_truth: 0.0595818
+result: 0.0155334, ground_truth: 0.0152299
+result: 0.0405273, ground_truth: 0.0415735
+result: -0.0276642, ground_truth: -0.0276814
+result: 0, ground_truth: -0.000308714
+result: 0.0246887, ground_truth: 0.0244913
+result: -0.028183, ground_truth: -0.0286075
+result: 0.0569916, ground_truth: 0.0577296
+result: -0.0191345, ground_truth: -0.0205809
+result: 0.0666656, ground_truth: 0.066991
+result: -0.105759, ground_truth: -0.104551
+result: 0.00534058, ground_truth: 0.00607138
+result: 0.0329132, ground_truth: 0.0323121
+result: -0.0128479, ground_truth: -0.0125544
+result: 0.0554504, ground_truth: 0.0555686
+result: -0.0482483, ground_truth: -0.0477478
+result: -0.0914612, ground_truth: -0.0920997
+result: -0.0526733, ground_truth: -0.0521727
+result: -0.0457764, ground_truth: -0.0462042
+result: 0.00924683, ground_truth: 0.00884981
+result: -0.0477295, ground_truth: -0.0477478
+result: 0.0499878, ground_truth: 0.0502175
+result: -0.0663452, ground_truth: -0.0674026
+result: -0.000808716, ground_truth: 0.000720333
+result: -0.014801, ground_truth: -0.0145096
+result: 0.0498962, ground_truth: 0.0491885
+result: -0.0301361, ground_truth: -0.0304598
+result: -0.000610352, ground_truth: -0.000514524
+result: 0.000610352, ground_truth: 0.000720333
+result: 0.0022583, ground_truth: 0.00298424
+result: -0.0608978, ground_truth: -0.0611254
+result: -0.0592499, ground_truth: -0.0591702
+result: -0.0359039, ground_truth: -0.0359138
+result: 0.0471191, ground_truth: 0.0466158
+result: -0.041153, ground_truth: -0.0404416
+result: -0.0412445, ground_truth: -0.0407503
+result: -0.0214996, ground_truth: -0.0219187
+result: -0.0984497, ground_truth: -0.0987885
+result: 0.0133667, ground_truth: 0.0125544
+result: 0.0600739, ground_truth: 0.0608167
+result: -0.00750732, ground_truth: -0.00782076
+result: 0.0297241, ground_truth: 0.0299453
+result: -0.068512, ground_truth: -0.0679171
+result: 0.00575256, ground_truth: 0.00586557
+result: -0.0751038, ground_truth: -0.0755321
+result: 0.0292053, ground_truth: 0.0304598
+result: 0.0993805, ground_truth: 0.0995089
+result: 0.027359, ground_truth: 0.0275785
+result: 0.0754089, ground_truth: 0.0754292
+result: 0.0202637, ground_truth: 0.0206839
+result: -0.00286865, ground_truth: -0.00360167
+result: -0.121704, ground_truth: -0.121325
+result: 0.0606995, ground_truth: 0.0596847
+result: -0.0510254, ground_truth: -0.0509378
+result: -0.0345612, ground_truth: -0.0360167
+result: -0.0476227, ground_truth: -0.0478507
+result: 0.00924683, ground_truth: 0.00946724
+result: 0.0263367, ground_truth: 0.0258291
+result: -0.0658417, ground_truth: -0.0663736
+result: -0.0116119, ground_truth: -0.0117311
+result: 0.0920715, ground_truth: 0.0922026
+result: 0.0106964, ground_truth: 0.0114224
+result: -0.0490723, ground_truth: -0.0494972
+result: -0.0615234, ground_truth: -0.0599935
+result: -0.0579224, ground_truth: -0.0577296
+result: -0.0311737, ground_truth: -0.0308714
+result: -0.056778, ground_truth: -0.0571121
+result: 0.026947, ground_truth: 0.0264465
+result: -0.0359039, ground_truth: -0.0359138
+result: -0.0427856, ground_truth: -0.0418822
+result: -0.022934, ground_truth: -0.0219187
+result: 0.0270538, ground_truth: 0.0263436
+result: -0.0598755, ground_truth: -0.0611254
+result: 0.00267029, ground_truth: 0.00164648
+result: -0.0703583, ground_truth: -0.0694607
+result: -0.0395966, ground_truth: -0.0390009
+result: -0.0405273, ground_truth: -0.0402358
+result: 0.0220032, ground_truth: 0.0222274
+result: 0.0540009, ground_truth: 0.0535105
+result: -0.0417633, ground_truth: -0.0416764
+result: 0.0187225, ground_truth: 0.0181112
+result: 0.0169678, ground_truth: 0.0179054
+result: -0.0233459, ground_truth: -0.0227419
+result: -0.000717163, ground_truth: 0.000102905
+result: 0.0712891, ground_truth: 0.0719304
+result: 0.0289001, ground_truth: 0.0287104
+result: -0.00286865, ground_truth: -0.00267552
+result: -0.0467072, ground_truth: -0.0473362
+result: -0.0106964, ground_truth: -0.0113195
+result: 0.0730438, ground_truth: 0.0727537
+result: 0.0235596, ground_truth: 0.0243884
+result: -0.00883484, ground_truth: -0.00884981
+result: 0.0283813, ground_truth: 0.0282988
+result: -0.0214996, ground_truth: -0.0224332
+result: 0.0869293, ground_truth: 0.0873661
+result: -0.0199585, ground_truth: -0.019449
+result: -0.00750732, ground_truth: -0.00792366
+result: -0.0232391, ground_truth: -0.0222274
+result: -0.0331268, ground_truth: -0.0332382
+result: 0.0507202, ground_truth: 0.0509378
+result: 0.0637817, ground_truth: 0.0646242
+result: 0.0161438, ground_truth: 0.0159502
+result: -0.0375519, ground_truth: -0.0376631
+result: 0.0125427, ground_truth: 0.0111137
+result: 0.00709534, ground_truth: 0.00699752
+result: -0.0201569, ground_truth: -0.0202722
+result: 0.026947, ground_truth: 0.0263436
+result: -0.0121307, ground_truth: -0.0111137
+result: -0.00358582, ground_truth: -0.004322
+result: 0.021698, ground_truth: 0.0224332
+result: -0.0477295, ground_truth: -0.0477478
+result: -0.00308228, ground_truth: -0.00360167
+result: -0.0423737, ground_truth: -0.0428084
+result: -0.00390625, ground_truth: -0.00401328
+result: -0.014801, ground_truth: -0.0154357
+result: -0.0302429, ground_truth: -0.0300482
+result: 0.0631561, ground_truth: 0.0622574
+result: 0.0389862, ground_truth: 0.0396183
+result: -0.0257111, ground_truth: -0.0249029
+result: -0.0110016, ground_truth: -0.0109079
+result: 0.0481415, ground_truth: 0.0478507
+result: 0.0564728, ground_truth: 0.0560831
+result: -0.014801, ground_truth: -0.0153328
+result: 0.020874, ground_truth: 0.0213013
+result: -0.00369263, ground_truth: -0.00257262
+result: 0.0490723, ground_truth: 0.0491885
+result: -0.0525665, ground_truth: -0.0521727
+result: -0.00431824, ground_truth: -0.00401328
+result: -0.0673828, ground_truth: -0.0679171
+result: 0.0383606, ground_truth: 0.038898
+result: 0.0371399, ground_truth: 0.037766
+result: -0.0323944, ground_truth: -0.0322092
+result: 0.0343628, ground_truth: 0.0330324
+result: 0.0045166, ground_truth: 0.00401328
+result: 0.033844, ground_truth: 0.034576
+result: 0.0577087, ground_truth: 0.0580383
+result: -0.0704651, ground_truth: -0.0710043
+result: -0.0963898, ground_truth: -0.096113
+result: -0.040329, ground_truth: -0.0415735
+result: -0.0162506, ground_truth: -0.0168764
+result: -0.0643921, ground_truth: -0.0644184
+result: -0.020462, ground_truth: -0.0215071
+result: 0.0380554, ground_truth: 0.0382806
+result: 0.0911407, ground_truth: 0.090762
+result: -0.00698853, ground_truth: -0.00565976
+result: 0.0353851, ground_truth: 0.0363254
+result: 0.0425873, ground_truth: 0.04322
+result: -0.0574036, ground_truth: -0.0562889
+result: 0.0314789, ground_truth: 0.0314889
+result: 0.0406342, ground_truth: 0.0409561
+result: -0.0142975, ground_truth: -0.0128631
+result: 0.0202637, ground_truth: 0.0198606
+result: -0.021698, ground_truth: -0.0222274
+result: 0.0270538, ground_truth: 0.0275785
+result: 0.0231476, ground_truth: 0.0227419
+result: -0.0719147, ground_truth: -0.0717246
+result: 0.0852814, ground_truth: 0.0849993
+result: -0.200928, ground_truth: -0.200664
+result: -0.00987244, ground_truth: -0.00967305
+result: 0.0317841, ground_truth: 0.032415
+result: -0.0336304, ground_truth: -0.0339586
+result: 0.00564575, ground_truth: 0.00504233
+result: 0.0379639, ground_truth: 0.037766
+result: 0.0171814, ground_truth: 0.0158473
+result: -0.00297546, ground_truth: -0.00391038
+result: -0.0207825, ground_truth: -0.0202722
+result: -0.0517426, ground_truth: -0.0520698
+result: 0.0385742, ground_truth: 0.0379718
+result: -0.0163574, ground_truth: -0.0162589
+result: 0.0189209, ground_truth: 0.0179054
+result: 0.0480347, ground_truth: 0.0489827
+result: -0.0518494, ground_truth: -0.0508349
+result: -0.00987244, ground_truth: -0.00936433
+result: 0.0380554, ground_truth: 0.0386922
+result: 0.0654297, ground_truth: 0.0663736
+result: -0.0510254, ground_truth: -0.0515553
+result: -0.0247803, ground_truth: -0.0250059
+result: 0.0151215, ground_truth: 0.0147154
+result: -0.0136719, ground_truth: -0.0143038
+result: 0.0577087, ground_truth: 0.0579354
+result: 0.0479431, ground_truth: 0.048571
+result: 0.00627136, ground_truth: 0.00555686
+result: 0.000396729, ground_truth: 0.00164648
+result: -0.033432, ground_truth: -0.0329295
+result: 0.0730438, ground_truth: 0.0729595
+result: -9.15527e-05, ground_truth: -0.000926143
+result: -0.0114136, ground_truth: -0.010805
+result: 0.020874, ground_truth: 0.0215071
+result: 0.0354919, ground_truth: 0.0347818
+result: -0.0378571, ground_truth: -0.0376631
+result: -0.0711823, ground_truth: -0.0706956
+result: -0.00379944, ground_truth: -0.00257262
+result: -0.0307617, ground_truth: -0.0308714
+result: -0.0176849, ground_truth: -0.0166706
+result: 0.00267029, ground_truth: 0.00246971
+result: 0.0351715, ground_truth: 0.034576
+result: 0.00050354, ground_truth: 0.00113195
+result: -0.00698853, ground_truth: -0.00710043
+result: -0.0256042, ground_truth: -0.0260349
+result: -0.0186157, ground_truth: -0.0186258
+result: -0.0113068, ground_truth: -0.0121428
+result: 0.0914612, ground_truth: 0.091791
+result: -0.0128479, ground_truth: -0.0125544
+result: 0.0184021, ground_truth: 0.0186258
+result: 0.0312653, ground_truth: 0.0315918
+result: 0.010788, ground_truth: 0.0107021
+result: 0.00646973, ground_truth: 0.00617428
+result: 0.0370331, ground_truth: 0.0369428
+result: -0.0280762, ground_truth: -0.0286075
+result: -0.0640869, ground_truth: -0.0629777
+result: -0.0681, ground_truth: -0.0677113
+result: -0.0155334, ground_truth: -0.0156415
+result: 0.0183105, ground_truth: 0.0189345
+result: 0.0484467, ground_truth: 0.0480565
+result: -0.0309601, ground_truth: -0.0297395
+result: 0.00440979, ground_truth: 0.00349876
+result: -0.269958, ground_truth: -0.269096
+result: 0.00759888, ground_truth: 0.00823238
+result: -0.0637817, ground_truth: -0.0640067
+result: -0.032608, ground_truth: -0.0323121
+result: 0.0661469, ground_truth: 0.0664765
+result: -0.00987244, ground_truth: -0.0087469
+result: 0.0310669, ground_truth: 0.0304598
+result: -0.0431061, ground_truth: -0.0439403
+result: -0.0825043, ground_truth: -0.0830441
+result: 0.0480347, ground_truth: 0.0483652
+result: -0.000198364, ground_truth: -0.00102905
+result: 0.0521545, ground_truth: 0.0523785
+result: -0.00349426, ground_truth: -0.00236681
+result: -0.0588379, ground_truth: -0.0584499
+result: -0.0548248, ground_truth: -0.0544366
+result: 0.0255127, ground_truth: 0.0248
+result: 0.00564575, ground_truth: 0.00411619
+result: 0.0669708, ground_truth: 0.0665794
+result: -0.0144958, ground_truth: -0.0153328
+result: -0.0222168, ground_truth: -0.0215071
+result: -0.0495758, ground_truth: -0.0488798
+result: 0.0227356, ground_truth: 0.0229478
+result: 0.0320892, ground_truth: 0.0313859
+result: 0.0266418, ground_truth: 0.0260349
+result: -0.00544739, ground_truth: -0.00493943
+result: -0.0383606, ground_truth: -0.0382806
+result: 0.301025, ground_truth: 0.301099
+result: -0.0102844, ground_truth: -0.0100847
+result: -0.0371399, ground_truth: -0.0373544
+result: 0.0149078, ground_truth: 0.015127
+result: -0.00698853, ground_truth: -0.00627719
+result: 0.0393982, ground_truth: 0.0403387
+result: -0.00369263, ground_truth: -0.00463071
+result: 0.0310669, ground_truth: 0.030254
+result: -0.0640869, ground_truth: -0.0640067
+result: 0.0890961, ground_truth: 0.0892184
+result: 0.00924683, ground_truth: 0.00987886
+result: -0.0369263, ground_truth: -0.0358108
+result: -0.0259247, ground_truth: -0.0263436
+result: 0.0963898, ground_truth: 0.0967305
+result: 0.044342, ground_truth: 0.0431171
+result: -0.0183105, ground_truth: -0.0182141
+result: 0.0669708, ground_truth: 0.0661677
+result: -0.0218048, ground_truth: -0.0221245
+result: -0.00904846, ground_truth: -0.00915852
+result: -0.0535889, ground_truth: -0.0533047
+result: -0.00369263, ground_truth: -0.00401328
+result: -0.0169678, ground_truth: -0.017288
+result: 0.00997925, ground_truth: 0.0104963
+result: -0.020462, ground_truth: -0.020478
+result: 0.0192261, ground_truth: 0.0185229
+result: -0.0184021, ground_truth: -0.0179054
+result: -0.0258179, ground_truth: -0.0253146
+result: -0.0640869, ground_truth: -0.063698
+result: -0.015213, ground_truth: -0.015127
+result: -0.0502014, ground_truth: -0.0506291
+result: -0.0452576, ground_truth: -0.0440432
+result: 0.0488586, ground_truth: 0.0490856
+result: 0.0560608, ground_truth: 0.0562889
+result: 0.10257, ground_truth: 0.102596
+result: -0.0736542, ground_truth: -0.0725478
+result: -0.0341492, ground_truth: -0.0341644
+result: 0.129105, ground_truth: 0.12966
+result: -0.00718689, ground_truth: -0.00751205
+result: -0.0138855, ground_truth: -0.0133776
+result: -0.0615234, ground_truth: -0.0613312
+result: 0.0173798, ground_truth: 0.0180083
+result: -0.061203, ground_truth: -0.0614341
+result: 0.00688171, ground_truth: 0.00689462
+result: -0.0121307, ground_truth: -0.0127602
+result: -0.00482178, ground_truth: -0.00411619
+result: 0.0205688, ground_truth: 0.0197577
+result: -0.0388794, ground_truth: -0.0373544
+result: -0.00646973, ground_truth: -0.00668881
+result: -0.0305481, ground_truth: -0.0323121
+result: 0.0126495, ground_truth: 0.0130689
+result: 0.0106964, ground_truth: 0.0107021
+result: 0.0159454, ground_truth: 0.0167735
+result: -0.0962982, ground_truth: -0.0960101
+result: 0.0132599, ground_truth: 0.012966
+result: 0.0644989, ground_truth: 0.0634922
+result: 0.0113068, ground_truth: 0.0112166
+result: -0.0173798, ground_truth: -0.0182141
+result: 0.02005, ground_truth: 0.0198606
+result: 0.0367279, ground_truth: 0.0362225
+result: 0.0827179, ground_truth: 0.0819122
+result: 0.105865, ground_truth: 0.10486
+result: 0.038269, ground_truth: 0.038898
+result: -0.0650177, ground_truth: -0.0653445
+result: -0.318008, ground_truth: -0.319519
+result: 0.0463867, ground_truth: 0.0463071
+result: 0.0858002, ground_truth: 0.0862342
+result: -0.125, ground_truth: -0.124618
+result: -0.0163574, ground_truth: -0.0168764
+result: 0.0554504, ground_truth: 0.055054
+result: 0.0422821, ground_truth: 0.0427055
+result: -0.0540009, ground_truth: -0.054025
+result: 0.079834, ground_truth: 0.0785163
+result: 0.00750732, ground_truth: 0.00792366
+result: -0.061203, ground_truth: -0.061537
+result: -0.000717163, ground_truth: -0.000823238
+result: -0.0623474, ground_truth: -0.0622574
+result: 0.0365143, ground_truth: 0.0368399
+result: 0.0184021, ground_truth: 0.0182141
+result: 0.0166626, ground_truth: 0.0165677
+result: 0.0121307, ground_truth: 0.0120399
+result: -0.000808716, ground_truth: -0.00133776
+result: 0.026947, ground_truth: 0.0260349
+result: -0.0774689, ground_truth: -0.0776931
+result: 0.0237579, ground_truth: 0.0232565
+result: -0.0302429, ground_truth: -0.0293279
+result: 0.0669708, ground_truth: 0.0687404
+result: -0.033432, ground_truth: -0.0332382
+result: -0.0416565, ground_truth: -0.0406474
+result: 0.00379944, ground_truth: 0.00360167
+result: 0.022934, ground_truth: 0.0228449
+result: -0.0176849, ground_truth: -0.0175967
+result: -0.00564575, ground_truth: -0.00679171
+result: -0.00946045, ground_truth: -0.0101876
+result: -0.00616455, ground_truth: -0.00545395
+result: 0.0242767, ground_truth: 0.0244913
+result: 0.0220032, ground_truth: 0.0228449
+result: -0.0188141, ground_truth: -0.0188316
+result: 0.014801, ground_truth: 0.013995
+result: 0.0361023, ground_truth: 0.0369428
+result: 0.0127563, ground_truth: 0.0122457
+result: 0.0202637, ground_truth: 0.0202722
+result: 0.0203705, ground_truth: 0.0205809
+result: -0.00668335, ground_truth: -0.00596847
+result: 0.0128479, ground_truth: 0.0114224
+result: 0.0325012, ground_truth: 0.0326208
+result: 0.0175781, ground_truth: 0.0165677
+result: 0.0149078, ground_truth: 0.0146125
+result: -0.00410461, ground_truth: -0.00370457
+result: -0.0230408, ground_truth: -0.0228449
+result: 0.061615, ground_truth: 0.061537
+result: -0.0231476, ground_truth: -0.0224332
+result: -0.0287018, ground_truth: -0.0290191
+result: -0.0146027, ground_truth: -0.0146125
+result: 0.0142975, ground_truth: 0.0145096
+result: 0.00965881, ground_truth: 0.011834
+result: 0.1073, ground_truth: 0.106403
+result: -0.0305481, ground_truth: -0.0297395
+result: -0.0202637, ground_truth: -0.0202722
+result: -0.014389, ground_truth: -0.0152299
+result: -0.0921783, ground_truth: -0.0927172
+result: 0.0129547, ground_truth: 0.011834
+result: 0.0167694, ground_truth: 0.0175967
+result: 0.00852966, ground_truth: 0.00802657
+result: 0.109558, ground_truth: 0.11052
+result: 0.014389, ground_truth: 0.0150241
+result: -0.0251007, ground_truth: -0.0252117
+result: -0.0524597, ground_truth: -0.0514524
+result: 0.000915527, ground_truth: 0.000205809
+result: -0.0262299, ground_truth: -0.0258291
+result: 0.0270538, ground_truth: 0.0277843
+result: 0.0183105, ground_truth: 0.0188316
+result: -0.00163269, ground_truth: -0.002161
+result: 0.0708771, ground_truth: 0.0707985
+result: 0.00883484, ground_truth: 0.00987886
+result: 0.0756073, ground_truth: 0.0751205
+result: -0.0193329, ground_truth: -0.0190374
+result: 0.0683136, ground_truth: 0.0675055
+result: 0.03302, ground_truth: 0.0327237
+result: 0.00679016, ground_truth: 0.00638009
+result: 0.0703583, ground_truth: 0.0705926
+result: -0.0388794, ground_truth: -0.0385893
+result: 0.0305481, ground_truth: 0.0300482
+result: -0.0720062, ground_truth: -0.0719304
+result: -0.0697479, ground_truth: -0.0690491
+result: 0.0248871, ground_truth: 0.0249029
+result: -0.0196381, ground_truth: -0.0203751
+result: 0.0211792, ground_truth: 0.0220216
+result: 0.00514221, ground_truth: 0.00555686
+result: -0.162247, ground_truth: -0.162898
+result: 0.00627136, ground_truth: 0.00679171
+result: 0.00874329, ground_truth: 0.00854109
+result: 0.263474, ground_truth: 0.263539
+result: -0.00946045, ground_truth: -0.00998176
+result: -0.0692291, ground_truth: -0.0699752
+result: 0.0706787, ground_truth: 0.0706956
+result: -0.0105896, ground_truth: -0.0111137
+result: 0.00679016, ground_truth: 0.00720333
+result: 0.0637817, ground_truth: 0.0639038
+result: -0.00154114, ground_truth: -0.00267552
+result: 0.0237579, ground_truth: 0.0233594
+result: 0.0083313, ground_truth: 0.00926143
+result: 0.0460815, ground_truth: 0.0458955
+result: -0.0663452, ground_truth: -0.0651387
+result: -0.029007, ground_truth: -0.0276814
+result: 0.0302429, ground_truth: 0.0307685
+result: 0.0323029, ground_truth: 0.0328266
+result: -0.0997925, ground_truth: -0.100538
+result: -0.0709839, ground_truth: -0.0718275
+result: 0.0131683, ground_truth: 0.0134805
+result: -0.0295258, ground_truth: -0.0285046
+result: 0.0404205, ground_truth: 0.0404416
+result: -0.0775604, ground_truth: -0.076664
+result: -0.0692291, ground_truth: -0.0694607
+result: -0.0765381, ground_truth: -0.0772815
+result: 0.0150146, ground_truth: 0.0150241
+result: -0.0055542, ground_truth: -0.00545395
+result: -0.0694427, ground_truth: -0.0698723
+result: 0.0165558, ground_truth: 0.0157444
+result: -0.0516357, ground_truth: -0.0513495
+result: -0.0368195, ground_truth: -0.0374573
+result: -0.0602875, ground_truth: -0.0609196
+result: 0.0039978, ground_truth: 0.00421909
+result: -0.113159, ground_truth: -0.112989
+result: -0.0218048, ground_truth: -0.0206839
+result: 0.0438232, ground_truth: 0.0438374
+result: 0.00482178, ground_truth: 0.00596847
+result: -0.0279694, ground_truth: -0.0265494
+result: -0.0022583, ground_truth: -0.00277843
+result: -0.0643005, ground_truth: -0.0644184
+result: 0.0104828, ground_truth: 0.0101876
+result: 0.00112915, ground_truth: 0.000411619
+result: -0.0671692, ground_truth: -0.0677113
+result: 0.0351715, ground_truth: 0.0358108
+result: 0.0648041, ground_truth: 0.0645213
+result: -0.0420685, ground_truth: -0.0415735
+result: 0.0410461, ground_truth: 0.0415735
+result: 0.0598755, ground_truth: 0.0606109
+result: -0.0485535, ground_truth: -0.0482623
+result: 0.0444336, ground_truth: 0.0447636
+result: 0.000610352, ground_truth: 0.000617428
+result: 0.0480347, ground_truth: 0.0480565
+result: -0.0449524, ground_truth: -0.0440432
+result: 0.0507202, ground_truth: 0.0504233
+result: -0.0190277, ground_truth: -0.0192432
+result: -0.0243683, ground_truth: -0.0250059
+result: 0.0731354, ground_truth: 0.073474
+result: -0.0190277, ground_truth: -0.0189345
+result: -0.0378571, ground_truth: -0.0378689
+result: -0.134674, ground_truth: -0.134599
+result: 0.00935364, ground_truth: 0.0100847
+result: 0.00431824, ground_truth: 0.00411619
+result: 0.0133667, ground_truth: 0.0133776
+result: 0.0318909, ground_truth: 0.0304598
+result: -0.0408325, ground_truth: -0.0402358
+result: -0.00421143, ground_truth: -0.00380748
+result: 0.0376434, ground_truth: 0.0366341
+result: 0.0157318, ground_truth: 0.0155386
+result: -0.0116119, ground_truth: -0.0103934
+result: -0.0613098, ground_truth: -0.0616399
+result: 0.00637817, ground_truth: 0.00771786
+result: -0.0177917, ground_truth: -0.0180083
+result: -0.0022583, ground_truth: -0.00288133
+result: 0.0231476, ground_truth: 0.0221245
+result: -0.150406, ground_truth: -0.150447
+result: -0.00915527, ground_truth: -0.0087469
+result: 0.0970154, ground_truth: 0.097245
+result: -0.101944, ground_truth: -0.102802
+result: 0.11348, ground_truth: 0.112989
+result: -0.00668335, ground_truth: -0.00740914
+result: -0.0596619, ground_truth: -0.0588615
+result: 0.0140839, ground_truth: 0.0150241
+result: 0.0176849, ground_truth: 0.0171851
+result: -0.0619354, ground_truth: -0.0616399
+result: -0.0252991, ground_truth: -0.0248
+result: -0.0112, ground_truth: -0.0112166
+result: 0.00410461, ground_truth: 0.00380748
+result: -0.0705719, ground_truth: -0.0712101
+result: -0.0550385, ground_truth: -0.0543337
+result: 0.0252991, ground_truth: 0.025932
+result: -0.0163574, ground_truth: -0.0169793
+result: 0.0715027, ground_truth: 0.072342
+result: -0.0732422, ground_truth: -0.0736798
+result: 0.0797272, ground_truth: 0.0797512
+result: -0.0380554, ground_truth: -0.0373544
+result: 0.00657654, ground_truth: 0.00555686
+result: -0.00245667, ground_truth: -0.00154357
+result: 0.0494843, ground_truth: 0.0500117
+result: -0.0437164, ground_truth: -0.0428084
+result: -0.0203705, ground_truth: -0.0205809
+result: 0.0315704, ground_truth: 0.0316947
+result: 0.0310669, ground_truth: 0.0314889
+result: 0.0130615, ground_truth: 0.0127602
+result: 0.026123, ground_truth: 0.0261378
+result: 0.03508, ground_truth: 0.0341644
+result: -0.0377502, ground_truth: -0.0373544
+result: -0.0433044, ground_truth: -0.0440432
+result: -0.032608, ground_truth: -0.0322092
+result: -0.0391846, ground_truth: -0.0386922
+result: 0.0748901, ground_truth: 0.0748117
+result: 0.00369263, ground_truth: 0.00370457
+result: 0.0469055, ground_truth: 0.0462042
+result: 0.0571899, ground_truth: 0.057215
+result: -0.0587463, ground_truth: -0.057215
+result: 0.0597687, ground_truth: 0.0603022
+result: 0.00915527, ground_truth: 0.00936433
+result: -0.00987244, ground_truth: -0.00936433
+result: 0.00822449, ground_truth: 0.00895271
+result: -0.0821991, ground_truth: -0.0827354
+result: 0.067276, ground_truth: 0.0675055
+result: -0.0171814, ground_truth: -0.0169793
+result: 0.0331268, ground_truth: 0.0333411
+result: -0.0426941, ground_truth: -0.0427055
+result: -0.00297546, ground_truth: -0.00236681
+result: -0.0235596, ground_truth: -0.0233594
+result: 0.0139771, ground_truth: 0.0126573
+result: 0.0039978, ground_truth: 0.00329295
+result: -0.0123444, ground_truth: -0.0124515
+result: -0.0639801, ground_truth: -0.0643155
+result: 0.0805511, ground_truth: 0.0800599
+result: 0.0291138, ground_truth: 0.0285046
+result: -0.0198517, ground_truth: -0.0197577
+result: -0.0275726, ground_truth: -0.028093
+result: 0.0307617, ground_truth: 0.0308714
+result: 0.00112915, ground_truth: 0.00154357
+result: 0.0513306, ground_truth: 0.0517611
+result: -0.00163269, ground_truth: -0.00185229
+result: 0.00564575, ground_truth: 0.00586557
+result: 0.0211792, ground_truth: 0.0207868
+result: -0.0466003, ground_truth: -0.0456897
+result: 0.0240631, ground_truth: 0.0239768
+result: 0.020874, ground_truth: 0.0205809
+result: 0.00050354, ground_truth: -0.000102905
+result: 0.0207825, ground_truth: 0.0214042
+result: -0.0100708, ground_truth: -0.0109079
+result: 0.0055542, ground_truth: 0.00555686
+result: 0.0742798, ground_truth: 0.0733711
+result: 0.0187225, ground_truth: 0.0195519
+result: -0.0199585, ground_truth: -0.019449
+result: 0.016861, ground_truth: 0.0181112
+result: -0.0389862, ground_truth: -0.0392067
+result: 0.0177917, ground_truth: 0.0188316
+result: 0.0404205, ground_truth: 0.0392067
+result: -0.0467072, ground_truth: -0.0469246
+result: 0.0502014, ground_truth: 0.0508349
+result: -0.0421753, ground_truth: -0.0430142
+result: -0.0337372, ground_truth: -0.0336499
+result: -0.0489655, ground_truth: -0.0498059
+result: -0.0260162, ground_truth: -0.026961
+result: 0.0114136, ground_truth: 0.0113195
+result: 0.0348663, ground_truth: 0.0350905
+result: 9.15527e-05, ground_truth: -0.000205809
+result: -0.0391846, ground_truth: -0.0387951
+result: -0.0171814, ground_truth: -0.0176996
+result: -0.0385742, ground_truth: -0.0381777
+result: -0.0112, ground_truth: -0.0114224
+result: 0.027359, ground_truth: 0.0272698
+result: -0.026123, ground_truth: -0.025932
+result: 0.00894165, ground_truth: 0.0087469
+result: -0.0472107, ground_truth: -0.0469246
+result: 0.0158386, ground_truth: 0.0165677
+result: -0.105759, ground_truth: -0.105889
+result: 0.0373383, ground_truth: 0.037766
+result: 0.072937, ground_truth: 0.0736798
+result: 0.00976563, ground_truth: 0.0100847
+result: -0.0347595, ground_truth: -0.0359138
+result: 0.0135803, ground_truth: 0.0135834
+result: -0.522232, ground_truth: -0.521727
+result: -0.0423737, ground_truth: -0.0428084
+result: 0.0408325, ground_truth: 0.0417793
+result: -0.0776672, ground_truth: -0.0785163
+result: 0.0658417, ground_truth: 0.0654474
+result: 0.0193329, ground_truth: 0.0193461
+result: -0.0420685, ground_truth: -0.0414706
+result: -0.0435181, ground_truth: -0.0438374
+result: -0.0610046, ground_truth: -0.0599935
+result: -0.0491638, ground_truth: -0.0483652
+result: -0.0244751, ground_truth: -0.023771
+result: 0.0473175, ground_truth: 0.0472333
+result: -0.0979309, ground_truth: -0.0986856
+result: -0.0973206, ground_truth: -0.096113
+result: -0.0520477, ground_truth: -0.0516582
+result: -0.112137, ground_truth: -0.112989
+result: 0.0423737, ground_truth: 0.0416764
+result: -0.00338745, ground_truth: -0.00370457
+result: -0.0830231, ground_truth: -0.0834557
+result: 0.0640869, ground_truth: 0.0633893
+result: -0.0126495, ground_truth: -0.0121428
+result: 0.00852966, ground_truth: 0.00802657
+result: 0.0662537, ground_truth: 0.0654474
+result: -0.0474243, ground_truth: -0.0476449
+result: 0.0462952, ground_truth: 0.0459984
+result: -0.040741, ground_truth: -0.0400299
+result: -0.0615234, ground_truth: -0.0612283
+result: -0.00997925, ground_truth: -0.0107021
+result: -0.0263367, ground_truth: -0.026961
+result: 0.0370331, ground_truth: 0.0364283
+result: -0.0355835, ground_truth: -0.0362225
+result: -0.0194397, ground_truth: -0.0191403
+result: -0.0179901, ground_truth: -0.0179054
+result: -0.0132599, ground_truth: -0.0130689
+result: 0.00718689, ground_truth: 0.006483
+result: -0.0832214, ground_truth: -0.0827354
+result: -0.0236511, ground_truth: -0.0236681
+result: 0.0124359, ground_truth: 0.0130689
+result: 0.016449, ground_truth: 0.0163619
+result: 0.0377502, ground_truth: 0.0385893
+result: 0.0339508, ground_truth: 0.032415
+result: 0.0389862, ground_truth: 0.0395154
+result: -0.0442352, ground_truth: -0.0447636
+result: -0.00544739, ground_truth: -0.00514524
+result: -0.0116119, ground_truth: -0.0127602
+result: -0.021286, ground_truth: -0.0220216
+result: -0.0287933, ground_truth: -0.0298424
+result: 0.0533905, ground_truth: 0.0537163
+result: 0.0378571, ground_truth: 0.0378689
+result: 0.105133, ground_truth: 0.105272
+result: -0.0728302, ground_truth: -0.0727537
+result: 0.00904846, ground_truth: 0.0104963
+result: -0.0580139, ground_truth: -0.0573179
+result: 0.0503998, ground_truth: 0.0511437
+result: -0.0438232, ground_truth: -0.0441461
+result: -0.0139771, ground_truth: -0.0144067
+result: 0.0437164, ground_truth: 0.0434258
+result: 0.0279694, ground_truth: 0.028093
+result: 0.00627136, ground_truth: 0.00617428
+result: 0.0779724, ground_truth: 0.0782076
+result: -0.0457764, ground_truth: -0.0459984
+result: -0.0236511, ground_truth: -0.0240797
+result: -0.0602875, ground_truth: -0.0608167
+result: 0.0564728, ground_truth: 0.0563918
+result: 0.0135803, ground_truth: 0.0140979
+result: 0.0670776, ground_truth: 0.0675055
+result: -0.0173798, ground_truth: -0.0169793
+result: 0.0323944, ground_truth: 0.0315918
+result: 0.0118256, ground_truth: 0.010805
+result: 0.0243683, ground_truth: 0.0244913
+result: 0.0695343, ground_truth: 0.0693578
+result: 0.0429993, ground_truth: 0.0417793
+result: 0.0576019, ground_truth: 0.0571121
+result: -0.0108948, ground_truth: -0.0119369
+result: -0.0600739, ground_truth: -0.0608167
+result: -0.0305481, ground_truth: -0.0315918
+result: 0.0551453, ground_truth: 0.0564947
+result: 0.0344543, ground_truth: 0.0341644
+result: -0.0823975, ground_truth: -0.083147
+result: 0.0637817, ground_truth: 0.0642126
+result: 0.00369263, ground_truth: 0.00370457
+result: -0.00874329, ground_truth: -0.0101876
+result: -0.00718689, ground_truth: -0.00638009
+result: 0.0448456, ground_truth: 0.0450723
+result: -0.0124359, ground_truth: -0.0131718
+result: 0.0102844, ground_truth: 0.0103934
+result: 0.0214996, ground_truth: 0.020478
+result: 0.0636749, ground_truth: 0.0641097
+result: -0.0344543, ground_truth: -0.0337528
+result: -0.0928955, ground_truth: -0.0931288
+result: 0.0489655, ground_truth: 0.0484681
+result: -0.00132751, ground_truth: -0.000720333
+result: -0.357513, ground_truth: -0.356668
+result: 0.0754089, ground_truth: 0.0757379
+result: -0.033432, ground_truth: -0.0335469
+result: -0.0868225, ground_truth: -0.0861313
+result: -0.0175781, ground_truth: -0.0182141
+result: -0.0972137, ground_truth: -0.0970392
+result: -0.016449, ground_truth: -0.0168764
+result: -0.0240631, ground_truth: -0.0241826
+result: 0.0318909, ground_truth: 0.0308714
+result: -0.0739594, ground_truth: -0.0742972
+result: -0.0719147, ground_truth: -0.0722391
+result: 0.0292053, ground_truth: 0.0288133
+result: 0.00657654, ground_truth: 0.00535105
+result: -0.00564575, ground_truth: -0.00483652
+result: 0.0247803, ground_truth: 0.0252117
+result: 0.0177917, ground_truth: 0.0174938
+result: 0.0153198, ground_truth: 0.0152299
+result: -0.0517426, ground_truth: -0.0525843
+result: -0.033432, ground_truth: -0.0340615
+result: 0.0845642, ground_truth: 0.0845877
+result: 0.0147095, ground_truth: 0.0140979
+result: 0.00267029, ground_truth: 0.00174938
+result: 0.0142975, ground_truth: 0.0136863
+result: -0.0195465, ground_truth: -0.0188316
+result: -0.00473022, ground_truth: -0.004322
+result: 0.120682, ground_truth: 0.121119
+result: 0.0258179, ground_truth: 0.0265494
+result: 0.0415649, ground_truth: 0.0424997
+result: 0.033844, ground_truth: 0.0333411
+result: 0.0855865, ground_truth: 0.0849993
+result: -0.0401154, ground_truth: -0.0406474
+result: -0.0702667, ground_truth: -0.0698723
+result: -0.0815735, ground_truth: -0.0819122
+result: 0.0017395, ground_truth: 0.002161
+result: 0.0368195, ground_truth: 0.0372515
+result: -0.0332184, ground_truth: -0.0333411
+result: 0.0908356, ground_truth: 0.0904533
+result: 0.0257111, ground_truth: 0.0256233
+result: -0.0316772, ground_truth: -0.0316947
+result: -0.0319824, ground_truth: -0.0321063
+result: 0.0129547, ground_truth: 0.0135834
+result: 0.0488586, ground_truth: 0.0489827
+result: -0.0568848, ground_truth: -0.0569063
+result: 0.00575256, ground_truth: 0.00586557
+result: -0.0381622, ground_truth: -0.0383835
+result: -0.0543213, ground_truth: -0.0536134
+result: -0.0373383, ground_truth: -0.037766
+result: 0.0117188, ground_truth: 0.0107021
+result: -0.0188141, ground_truth: -0.0186258
+result: 0.078186, ground_truth: 0.0774873
+result: 0.113785, ground_truth: 0.113504
+result: -0.0287018, ground_truth: -0.0287104
+result: -0.00946045, ground_truth: -0.00998176
+result: 0.00605774, ground_truth: 0.00638009
+result: 0.0120239, ground_truth: 0.010805
+result: 0.0514374, ground_truth: 0.0517611
+result: 0.0233459, ground_truth: 0.0231536
+result: -0.0436096, ground_truth: -0.0430142
+result: 0.00163269, ground_truth: 0.00144067
+result: -0.0112, ground_truth: -0.0107021
+result: 0.0600739, ground_truth: 0.0600964
+result: -0.0544128, ground_truth: -0.0541279
+result: 0.0649109, ground_truth: 0.0639038
+result: 0.0441284, ground_truth: 0.0439403
+result: -0.0483551, ground_truth: -0.0480565
+result: 0.0367279, ground_truth: 0.036737
+result: 0.0996857, ground_truth: 0.101052
+result: 0.0159454, ground_truth: 0.0155386
+result: -0.0301361, ground_truth: -0.0305627
+result: 0.0894012, ground_truth: 0.0903504
+result: 0.0349731, ground_truth: 0.0343702
+result: 0.0522614, ground_truth: 0.0516582
+result: -0.000808716, ground_truth: 0.000102905
+result: 0.0870361, ground_truth: 0.0888068
+result: -0.0180969, ground_truth: -0.0178025
+result: 0.078186, ground_truth: 0.0792366
+result: 0.00154114, ground_truth: 0.00257262
+result: 0.0732422, ground_truth: 0.0740914
+result: -0.0128479, ground_truth: -0.0125544
+result: -0.00338745, ground_truth: -0.002161
+result: -0.0477295, ground_truth: -0.0484681
+result: -0.0136719, ground_truth: -0.0138921
+result: -0.0500946, ground_truth: -0.0516582
+result: -0.0196381, ground_truth: -0.019449
+result: -0.0570984, ground_truth: -0.0573179
+result: -0.00143433, ground_truth: -0.002161
+result: -0.0371399, ground_truth: -0.0378689
+result: 0.0500946, ground_truth: 0.0499088
+result: 0.0173798, ground_truth: 0.0173909
+result: 0.0697479, ground_truth: 0.0696665
+result: 0.0271606, ground_truth: 0.0275785
+result: -0.0228271, ground_truth: -0.022639
+result: 0.0347595, ground_truth: 0.0344731
+result: -0.0197449, ground_truth: -0.0208897
+result: -0.022522, ground_truth: -0.0239768
+result: -0.0427856, ground_truth: -0.04322
+result: 0.0137787, ground_truth: 0.0128631
+result: -0.0292053, ground_truth: -0.0288133
+result: 0.000396729, ground_truth: -0.00144067
+result: -0.0214996, ground_truth: -0.02161
+result: -0.0256042, ground_truth: -0.0258291
+result: -0.0241699, ground_truth: -0.0246971
+result: 0.0531769, ground_truth: 0.0529959
+result: 0.0511322, ground_truth: 0.0496001
+result: -0.0479431, ground_truth: -0.0488798
+result: 0.0375519, ground_truth: 0.0373544
+result: -0.0220032, ground_truth: -0.0223303
+result: 0.0133667, ground_truth: 0.0132747
+result: 0.0256042, ground_truth: 0.0249029
+result: -0.0128479, ground_truth: -0.0127602
+result: -0.0295258, ground_truth: -0.0285046
+result: 0.0420685, ground_truth: 0.0415735
+result: 0.00184631, ground_truth: 0.00205809
+result: 0.0635681, ground_truth: 0.0630806
+result: 0.0597687, ground_truth: 0.0603022
+result: 0.0300293, ground_truth: 0.0308714
+result: -0.0100708, ground_truth: -0.0101876
+result: -0.0795288, ground_truth: -0.0796483
+result: -0.248566, ground_truth: -0.24975
+result: 0.0580139, ground_truth: 0.0576267
+result: -0.0892944, ground_truth: -0.0890126
+result: -0.0359955, ground_truth: -0.0363254
+result: 0.0323029, ground_truth: 0.0327237
+result: 0.00585938, ground_truth: 0.00638009
+result: 0.112549, ground_truth: 0.112063
+result: -0.0115204, ground_truth: -0.0120399
+result: 0.0126495, ground_truth: 0.0117311
+result: 0.0367279, ground_truth: 0.0373544
+result: -0.0123444, ground_truth: -0.0121428
+result: 0.0312653, ground_truth: 0.0301511
+result: -0.0122375, ground_truth: -0.0124515
+result: 0.0470123, ground_truth: 0.0474391
+result: 0.0311737, ground_truth: 0.0309743
+result: 0.0111084, ground_truth: 0.010805
+result: -0.0429993, ground_truth: -0.0434258
+result: -0.0232391, ground_truth: -0.0232565
+result: -0.0223236, ground_truth: -0.0223303
+result: -0.039917, ground_truth: -0.0387951
+result: 0.0243683, ground_truth: 0.0246971
+result: -0.0327148, ground_truth: -0.0321063
+result: 0.0050354, ground_truth: 0.00493943
+result: -0.0401154, ground_truth: -0.0401328
+result: 0.00431824, ground_truth: 0.0044249
+result: -0.0597687, ground_truth: -0.0591702
+result: 0.0110016, ground_truth: 0.010805
+result: 0.0749969, ground_truth: 0.0748117
+result: 0.0184021, ground_truth: 0.0193461
+result: 0.0561676, ground_truth: 0.0558773
+result: -0.041153, ground_truth: -0.0393096
+result: -0.0590515, ground_truth: -0.0599935
+result: 0.00791931, ground_truth: 0.00792366
+result: -0.0153198, ground_truth: -0.0158473
+result: 0.0479431, ground_truth: 0.0483652
+result: 0.0238647, ground_truth: 0.0234623
+result: 0.0192261, ground_truth: 0.0193461
+result: -0.0663452, ground_truth: -0.0664765
+result: 0.0632629, ground_truth: 0.0631835
+result: -0.073349, ground_truth: -0.0737827
+result: 0.00668335, ground_truth: 0.00782076
+result: -0.0163574, ground_truth: -0.0160531
+result: -0.00668335, ground_truth: -0.00668881
+result: 0.0244751, ground_truth: 0.0238739
+result: 0.00338745, ground_truth: 0.00349876
+result: 0.00575256, ground_truth: 0.00586557
+result: 0.00668335, ground_truth: 0.00679171
+result: 0.02211, ground_truth: 0.0209926
+result: -0.552994, ground_truth: -0.551569
+result: 0.0696411, ground_truth: 0.0697694
+result: 0.0139771, ground_truth: 0.015127
+result: -0.0691376, ground_truth: -0.0699752
+result: 0.00915527, ground_truth: 0.00926143
+result: -0.0255127, ground_truth: -0.0251088
+result: -0.0327148, ground_truth: -0.0337528
+result: 0.00791931, ground_truth: 0.00710043
+result: 0.0120239, ground_truth: 0.0115253
+result: -0.0249939, ground_truth: -0.0265494
+result: 0.0552368, ground_truth: 0.0549511
+result: -0.00575256, ground_truth: -0.00514524
+result: 0.032608, ground_truth: 0.0335469
+result: -0.0588379, ground_truth: -0.0596847
+result: 0.0050354, ground_truth: 0.00545395
+result: -0.0773621, ground_truth: -0.0780018
+result: -0.0209808, ground_truth: -0.0205809
+result: -0.0279694, ground_truth: -0.0276814
+result: -0.0928955, ground_truth: -0.093952
+result: -0.0166626, ground_truth: -0.0182141
+result: -0.0470123, ground_truth: -0.0466158
+result: 0.0278778, ground_truth: 0.0278872
+result: -0.0569916, ground_truth: -0.0560831
+result: 0.0163574, ground_truth: 0.0162589
+result: 0.00852966, ground_truth: 0.00782076
+result: 0.0918732, ground_truth: 0.0924085
+result: -0.0538025, ground_truth: -0.0533047
+result: -0.0632629, ground_truth: -0.0629777
+result: -0.0146027, ground_truth: -0.013995
+result: 0.0345612, ground_truth: 0.0350905
+result: 0.00585938, ground_truth: 0.0044249
+result: 0.0301361, ground_truth: 0.0309743
+result: 0.0120239, ground_truth: 0.0109079
+result: -0.0865173, ground_truth: -0.0859255
+result: 0.0457764, ground_truth: 0.0454839
+result: 0.0112, ground_truth: 0.0107021
+result: -0.0170746, ground_truth: -0.0176996
+result: -0.0166626, ground_truth: -0.0159502
+result: 0.0595551, ground_truth: 0.0592731
+result: 0.0424805, ground_truth: 0.0423968
+result: 0.033844, ground_truth: 0.0339586
+result: -0.0132599, ground_truth: -0.0143038
+result: -0.0562744, ground_truth: -0.055054
+result: -0.0132599, ground_truth: -0.012966
+result: 0.246094, ground_truth: 0.246868
+result: 0.00195313, ground_truth: 0.00277843
+result: -0.0366211, ground_truth: -0.0365312
+result: 0.114914, ground_truth: 0.114533
+result: -0.0475311, ground_truth: -0.0471304
+result: -0.0613098, ground_truth: -0.0599935
+result: 0.060379, ground_truth: 0.0608167
+result: -0.0433044, ground_truth: -0.0426026
+result: -0.027771, ground_truth: -0.0266523
+result: 0.0861053, ground_truth: 0.0860284
+result: 0.0702667, ground_truth: 0.070181
+result: 0.0776672, ground_truth: 0.0780018
+result: 0.0187225, ground_truth: 0.0191403
+result: 0.0608978, ground_truth: 0.0608167
+result: 0.0625458, ground_truth: 0.0624632
+result: -0.156784, ground_truth: -0.158267
+result: 0.0679016, ground_truth: 0.0679171
+result: 0.0552368, ground_truth: 0.0549511
+result: -0.0533905, ground_truth: -0.0521727
+result: -0.0815735, ground_truth: -0.0822209
+result: 0.0888824, ground_truth: 0.088601
+result: -0.0419617, ground_truth: -0.0416764
+result: 0.0263367, ground_truth: 0.0256233
+result: -0.0151215, ground_truth: -0.016156
+result: -0.0335388, ground_truth: -0.0348847
+result: 0.0078125, ground_truth: 0.00710043
+result: 0.0317841, ground_truth: 0.032415
+result: -0.0205688, ground_truth: -0.0208897
+result: -0.0388794, ground_truth: -0.0378689
+result: -0.0306549, ground_truth: -0.0308714
+result: -0.0149078, ground_truth: -0.0152299
+result: 0.00679016, ground_truth: 0.00730624
+result: -0.0231476, ground_truth: -0.0242855
+result: -0.102768, ground_truth: -0.102802
+result: -0.0853882, ground_truth: -0.0849993
+result: 0.0219116, ground_truth: 0.0217129
+result: 0.0271606, ground_truth: 0.0267552
+result: -0.0711823, ground_truth: -0.0704897
+result: -0.0159454, ground_truth: -0.0153328
+result: 0.0707703, ground_truth: 0.0702839
+result: 0.0694427, ground_truth: 0.0692549
+result: -0.00112915, ground_truth: -0.00144067
+result: -0.066452, ground_truth: -0.0655503
+result: 0.083847, ground_truth: 0.0838674
+result: 0.0706787, ground_truth: 0.0700781
+result: 0.00050354, ground_truth: 0.002161
+result: 0.0128479, ground_truth: 0.0143038
+result: 0.0022583, ground_truth: 0.00267552
+result: 0.00874329, ground_truth: 0.00915852
+result: 0.068924, ground_truth: 0.0686375
+result: -0.0687256, ground_truth: -0.0688433
+result: -0.0539093, ground_truth: -0.0546424
+result: 0.0078125, ground_truth: 0.00761495
+result: -0.0237579, ground_truth: -0.0233594
+result: 0.00904846, ground_truth: 0.00895271
+result: -0.00297546, ground_truth: -0.00267552
+result: 0.0108948, ground_truth: 0.0101876
+result: 0.0431976, ground_truth: 0.0441461
+result: 0.0270538, ground_truth: 0.0267552
+result: 0.0103912, ground_truth: 0.0110108
+result: -0.00801086, ground_truth: -0.00833528
+result: -0.00482178, ground_truth: -0.00452781
+result: 0.0372314, ground_truth: 0.0366341
+result: 0.0155334, ground_truth: 0.0155386
+result: 0.00369263, ground_truth: 0.00288133
+result: 0.0870361, ground_truth: 0.0865429
+result: -0.0575104, ground_truth: -0.0576267
+result: -0.00286865, ground_truth: -0.00319005
+result: -0.0332184, ground_truth: -0.0315918
+result: -0.0805511, ground_truth: -0.0806773
+result: -0.0167694, ground_truth: -0.0160531
+result: 0.0746918, ground_truth: 0.0744001
+result: 0.0491638, ground_truth: 0.0483652
+result: 0.026535, ground_truth: 0.0271669
+result: 0.0825043, ground_truth: 0.083147
+result: 0.0184021, ground_truth: 0.0187287
+result: -0.0172729, ground_truth: -0.0167735
+result: -0.039917, ground_truth: -0.0395154
+result: -0.0282898, ground_truth: -0.0288133
+result: -0.0420685, ground_truth: -0.0426026
+result: -0.0426941, ground_truth: -0.0431171
+result: -0.0684052, ground_truth: -0.0678142
+result: 0.0596619, ground_truth: 0.060508
+result: -0.0956726, ground_truth: -0.0949811
+result: 0.020874, ground_truth: 0.0208897
+result: 0.0506134, ground_truth: 0.0509378
+result: 0.0391846, ground_truth: 0.0385893
+result: 0.0050354, ground_truth: 0.00473362
+result: 0.0191345, ground_truth: 0.0197577
+result: 0.0491638, ground_truth: 0.0498059
+result: -0.022934, ground_truth: -0.0229478
+result: 0.0640869, ground_truth: 0.0645213
+result: -0.0340424, ground_truth: -0.0332382
+result: 0.0173798, ground_truth: 0.0192432
+result: 0.00544739, ground_truth: 0.00607138
+result: -0.0306549, ground_truth: -0.0316947
+result: -0.0875397, ground_truth: -0.0867487
+result: 0.0146027, ground_truth: 0.0146125
+result: -0.0175781, ground_truth: -0.0179054
+result: 0.0211792, ground_truth: 0.0202722
+result: 0.0134735, ground_truth: 0.012966
+result: -0.0022583, ground_truth: -0.00195519
+result: 0.00544739, ground_truth: 0.00493943
+result: -0.0166626, ground_truth: -0.0153328
+result: -0.000610352, ground_truth: -0.000720333
+result: 0.00184631, ground_truth: 0.00205809
+result: 0.014389, ground_truth: 0.0136863
+result: 0.0159454, ground_truth: 0.0152299
+result: -0.0578156, ground_truth: -0.0574208
+result: 0.0158386, ground_truth: 0.0164648
+result: 0.0169678, ground_truth: 0.017288
+result: -0.0233459, ground_truth: -0.022639
+result: 0.0317841, ground_truth: 0.0316947
+result: -0.0319824, ground_truth: -0.0321063
+result: -0.00575256, ground_truth: -0.00493943
+result: 0.0558624, ground_truth: 0.0556715
+result: 0.0565796, ground_truth: 0.0563918
+result: -0.00163269, ground_truth: -0.00133776
+result: 0.0832214, ground_truth: 0.0837645
+result: 0.00308228, ground_truth: 0.00267552
+result: -0.0104828, ground_truth: -0.0104963
+result: -0.0248871, ground_truth: -0.0246971
+result: -0.00946045, ground_truth: -0.00905562
+result: -0.014801, ground_truth: -0.0146125
+result: -0.00657654, ground_truth: -0.00576267
+result: -0.0964966, ground_truth: -0.0944666
+result: -0.0267487, ground_truth: -0.0273727
+result: 0.0693359, ground_truth: 0.0693578
+result: 0.0050354, ground_truth: 0.00596847
+result: -0.00318909, ground_truth: -0.00288133
+result: 0.0724182, ground_truth: 0.0719304
+result: 0.108536, ground_truth: 0.108462
+result: -0.0952606, ground_truth: -0.0940549
+result: 0.102158, ground_truth: 0.103419
+result: -0.00267029, ground_truth: -0.00277843
+result: -0.0195465, ground_truth: -0.020478
+result: 0.0643005, ground_truth: 0.06483
+result: 0.00410461, ground_truth: 0.00401328
+result: -0.0499878, ground_truth: -0.0502175
+result: 0.0287933, ground_truth: 0.0293279
+result: 0.0579224, ground_truth: 0.0571121
+result: 0.00946045, ground_truth: 0.008644
+result: 0.00822449, ground_truth: 0.00751205
+result: 0.0121307, ground_truth: 0.0107021
+result: -0.033844, ground_truth: -0.0340615
+result: 0.0389862, ground_truth: 0.038898
+result: -0.205139, ground_truth: -0.206427
+result: -0.00668335, ground_truth: -0.00761495
+result: -0.026123, ground_truth: -0.0262407
+result: -0.0337372, ground_truth: -0.0341644
+result: -0.0187225, ground_truth: -0.0181112
+result: -0.0343628, ground_truth: -0.0343702
+result: -0.0307617, ground_truth: -0.0304598
+result: 0.0323944, ground_truth: 0.0317976
+result: -0.00349426, ground_truth: -0.00329295
+result: -0.0333252, ground_truth: -0.0329295
+result: 0.0560608, ground_truth: 0.0567005
+result: -0.0436096, ground_truth: -0.0424997
+result: -0.0176849, ground_truth: -0.0180083
+result: 0.0222168, ground_truth: 0.0232565
+result: -0.062851, ground_truth: -0.0631835
+result: 0.0303497, ground_truth: 0.0303569
+result: -0.0742798, ground_truth: -0.073474
+result: 0.0415649, ground_truth: 0.0417793
+result: 0.0142975, ground_truth: 0.013995
+result: 0.0256042, ground_truth: 0.0256233
+result: -0.0301361, ground_truth: -0.0301511
+result: 0.0184021, ground_truth: 0.0178025
+result: 0.000610352, ground_truth: 0.00102905
+result: 0.00236511, ground_truth: 0.00288133
+result: 0.0653229, ground_truth: 0.0662706
+result: 0.0171814, ground_truth: 0.0174938
+result: 0.022522, ground_truth: 0.022639
+result: 0.0165558, ground_truth: 0.0166706
+result: -0.0803375, ground_truth: -0.0808831
+result: -0.0234528, ground_truth: -0.0227419
+result: -0.0491638, ground_truth: -0.0482623
+result: -0.00852966, ground_truth: -0.00843819
+result: -0.034256, ground_truth: -0.0347818
+result: -0.0353851, ground_truth: -0.0349876
+result: 0.0172729, ground_truth: 0.017288
+result: -0.000808716, ground_truth: -0.00102905
+result: 0.0561676, ground_truth: 0.0557744
+result: 0.0449524, ground_truth: 0.0451752
+result: -0.0542145, ground_truth: -0.0538192
+result: 0.0140839, ground_truth: 0.0128631
+result: -0.0190277, ground_truth: -0.0198606
+result: -0.0492706, ground_truth: -0.0486739
+result: 0.0557556, ground_truth: 0.0551569
+result: -0.0521545, ground_truth: -0.0524814
+result: -0.0335388, ground_truth: -0.0339586
+result: 0.0313721, ground_truth: 0.0309743
+result: -0.03302, ground_truth: -0.0336499
+result: -0.0570984, ground_truth: -0.0575237
+result: -0.080658, ground_truth: -0.0820151
+result: -0.0355835, ground_truth: -0.0349876
+result: -0.0116119, ground_truth: -0.0124515
+result: 0.00883484, ground_truth: 0.00998176
+result: -0.0222168, ground_truth: -0.0224332
+result: -0.00482178, ground_truth: -0.00555686
+result: -0.026535, ground_truth: -0.0256233
+result: -0.00688171, ground_truth: -0.00607138
+result: -0.0289001, ground_truth: -0.029122
+result: 0.0131683, ground_truth: 0.0137892
+result: 0.0715027, ground_truth: 0.0717246
+result: 0.034256, ground_truth: 0.034576
+result: -0.0146027, ground_truth: -0.0152299
+result: -0.000717163, ground_truth: -0.000514524
+result: -0.0115204, ground_truth: -0.0117311
+result: 0.0419617, ground_truth: 0.0414706
+result: 0.0116119, ground_truth: 0.0121428
+result: 0.0166626, ground_truth: 0.0170822
+result: 0.0169678, ground_truth: 0.0170822
+result: -0.0456696, ground_truth: -0.0458955
+result: 0.0313721, ground_truth: 0.0316947
+result: -0.336533, ground_truth: -0.337219
+result: 0.00657654, ground_truth: 0.00699752
+result: -0.0329132, ground_truth: -0.0321063
+result: -0.0157318, ground_truth: -0.0152299
+result: -0.00904846, ground_truth: -0.00967305
+result: 0.00627136, ground_truth: 0.00699752
+result: 0.0354919, ground_truth: 0.0352963
+result: 0.0297241, ground_truth: 0.0298424
+result: -0.0469055, ground_truth: -0.0473362
+result: -0.0467072, ground_truth: -0.0466158
+result: -0.0888824, ground_truth: -0.0887039
+result: 0.0388794, ground_truth: 0.0386922
+result: 0.0102844, ground_truth: 0.00977595
+result: 0.0351715, ground_truth: 0.0348847
+result: 0.0464935, ground_truth: 0.0465129
+result: -0.0251007, ground_truth: -0.0256233
+result: 0.0045166, ground_truth: 0.00452781
+result: 0.0133667, ground_truth: 0.0137892
+result: 0.0377502, ground_truth: 0.036737
+result: 0.0188141, ground_truth: 0.0193461
+result: 0.0422821, ground_truth: 0.0438374
+result: 0.00637817, ground_truth: 0.00617428
+result: -0.0205688, ground_truth: -0.0214042
+result: -0.0213928, ground_truth: -0.0218158
+result: 0.0166626, ground_truth: 0.0169793
+result: 0.0302429, ground_truth: 0.0290191
+result: -0.0173798, ground_truth: -0.0176996
+result: -0.00523376, ground_truth: -0.00565976
+result: 0.00904846, ground_truth: 0.008644
+result: -0.0213928, ground_truth: -0.0205809
+result: 0.0376434, ground_truth: 0.0372515
+result: -0.0533905, ground_truth: -0.0532017
+result: -0.0254059, ground_truth: -0.0253146
+result: -0.000610352, ground_truth: -0.000411619
+result: -0.0166626, ground_truth: -0.0176996
+result: -0.00646973, ground_truth: -0.00596847
+result: -0.0438232, ground_truth: -0.0443519
+result: 0.00256348, ground_truth: 0.00246971
+result: -0.0157318, ground_truth: -0.015127
+result: 0.0985565, ground_truth: 0.0984798
+result: -0.00544739, ground_truth: -0.00463071
+result: -0.0453644, ground_truth: -0.0449694
+result: -0.0408325, ground_truth: -0.042088
+result: 0.0597687, ground_truth: 0.0594789
+result: 0.0215912, ground_truth: 0.0208897
+result: -0.0256042, ground_truth: -0.0252117
+result: -0.0189209, ground_truth: -0.0187287
+result: 0.0328064, ground_truth: 0.0341644
+result: 0.0770569, ground_truth: 0.0767669
+result: 0.0884705, ground_truth: 0.0890126
+result: -0.0511322, ground_truth: -0.0521727
+result: 0.100311, ground_truth: 0.100847
+result: -0.0991669, ground_truth: -0.0996118
+result: 0.00328064, ground_truth: 0.00267552
+result: 0.133224, ground_truth: 0.133262
+result: 0.0311737, ground_truth: 0.032415
+result: 0.0138855, ground_truth: 0.0135834
+result: -0.0626526, ground_truth: -0.0632864
+result: -0.0351715, ground_truth: -0.0349876
+result: 0.0751038, ground_truth: 0.0750176
+result: 0.0529785, ground_truth: 0.0529959
+result: -0.134872, ground_truth: -0.136246
+result: 0, ground_truth: 0.000411619
+result: -0.0146027, ground_truth: -0.0138921
+result: -0.0176849, ground_truth: -0.0181112
+result: -0.0461884, ground_truth: -0.0452781
+result: 0.0514374, ground_truth: 0.0513495
+result: 0.0134735, ground_truth: 0.012966
+result: 0.016037, ground_truth: 0.0156415
+result: -0.0697479, ground_truth: -0.0694607
+result: 0.0606995, ground_truth: 0.0611254
+result: 0.0305481, ground_truth: 0.0297395
+
+[32mRMSE: [0m0.000656532
+[35mattention           : [0m[35m     1 calls; [0m[35m2903.728 msecs total time
+[0m
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_dut_top glbl -prj dut.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /opt/xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s dut 
+Multi-threading is on. Using 62 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_dut_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/AESL_autofifo_strm_in_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_strm_in_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/AESL_autofifo_strm_out_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_strm_out_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/sqrt_fixed_42_26_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sqrt_fixed_42_26_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/rms_norm_1536_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rms_norm_1536_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/quantize_activation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quantize_activation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/init_2d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_2d_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/linear_forward_no_mu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module linear_forward_no_mu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/reshape_2D_to_3D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reshape_2D_to_3D
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/apply_rotary_pos_emb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_emb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/cache_update.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/transpose_last_two_d.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transpose_last_two_d
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/GEMM_3D_float.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GEMM_3D_float
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/exp_41_25_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_41_25_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/softmax_1_16_6_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_1_16_6_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/GEMM_3D_float_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GEMM_3D_float_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_fpext_32ns_64bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_fpext_32ns_64bkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_mul_40s_42ns_cud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_40s_42ns_cud_MulnS_0
+INFO: [VRFC 10-311] analyzing module dut_mul_40s_42ns_cud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_udiv_33s_29nsdEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_udiv_33s_29nsdEe_div_u
+INFO: [VRFC 10-311] analyzing module dut_udiv_33s_29nsdEe_div
+INFO: [VRFC 10-311] analyzing module dut_udiv_33s_29nsdEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_mul_72s_40s_7eOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_72s_40s_7eOg_MulnS_1
+INFO: [VRFC 10-311] analyzing module dut_mul_72s_40s_7eOg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_udiv_40ns_40nfYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_udiv_40ns_40nfYi_div_u
+INFO: [VRFC 10-311] analyzing module dut_udiv_40ns_40nfYi_div
+INFO: [VRFC 10-311] analyzing module dut_udiv_40ns_40nfYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_sdiv_72ns_61sg8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_sdiv_72ns_61sg8j_div_u
+INFO: [VRFC 10-311] analyzing module dut_sdiv_72ns_61sg8j_div
+INFO: [VRFC 10-311] analyzing module dut_sdiv_72ns_61sg8j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/apply_rotary_pos_hbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_hbi_rom
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_hbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/apply_rotary_pos_ibs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_ibs_rom
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_ibs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/apply_rotary_pos_jbC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_jbC_ram
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_jbC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_mul_67ns_62nsocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_67ns_62nsocq_MulnS_2
+INFO: [VRFC 10-311] analyzing module dut_mul_67ns_62nsocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_mul_72ns_68nspcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_72ns_68nspcA_MulnS_3
+INFO: [VRFC 10-311] analyzing module dut_mul_72ns_68nspcA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/exp_41_25_s_f_x_mlbW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_41_25_s_f_x_mlbW_rom
+INFO: [VRFC 10-311] analyzing module exp_41_25_s_f_x_mlbW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/exp_41_25_s_f_x_mmb6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_41_25_s_f_x_mmb6_rom
+INFO: [VRFC 10-311] analyzing module exp_41_25_s_f_x_mmb6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/exp_41_25_s_exp_xncg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_41_25_s_exp_xncg_rom
+INFO: [VRFC 10-311] analyzing module exp_41_25_s_exp_xncg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_sdiv_56ns_40sqcK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_sdiv_56ns_40sqcK_div_u
+INFO: [VRFC 10-311] analyzing module dut_sdiv_56ns_40sqcK_div
+INFO: [VRFC 10-311] analyzing module dut_sdiv_56ns_40sqcK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_mul_58ns_56s_IfE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_58ns_56s_IfE_MulnS_4
+INFO: [VRFC 10-311] analyzing module dut_mul_58ns_56s_IfE
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_ln_weigrcU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_ln_weigrcU_rom
+INFO: [VRFC 10-311] analyzing module attention_ln_weigrcU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_q_weights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_q_weights_rom
+INFO: [VRFC 10-311] analyzing module attention_q_weights
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_k_weights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_k_weights_rom
+INFO: [VRFC 10-311] analyzing module attention_k_weights
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_v_weights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_v_weights_rom
+INFO: [VRFC 10-311] analyzing module attention_v_weights
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_k_cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_k_cache_rom
+INFO: [VRFC 10-311] analyzing module attention_k_cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_v_cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_v_cache_rom
+INFO: [VRFC 10-311] analyzing module attention_v_cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_ln_weight.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_ln_weight_rom
+INFO: [VRFC 10-311] analyzing module attention_ln_weight
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_o_weights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_o_weights_rom
+INFO: [VRFC 10-311] analyzing module attention_o_weights
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_quantizsc4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_quantizsc4_ram
+INFO: [VRFC 10-311] analyzing module attention_quantizsc4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_q_proj_wdI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_q_proj_wdI_ram
+INFO: [VRFC 10-311] analyzing module attention_q_proj_wdI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_k_cacheBew.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_k_cacheBew_ram
+INFO: [VRFC 10-311] analyzing module attention_k_cacheBew
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_attn_weEe0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_attn_weEe0_ram
+INFO: [VRFC 10-311] analyzing module attention_attn_weEe0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/ip/xil_defaultlib/dut_ap_fpext_0_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dut_ap_fpext_0_no_dsp_32'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/ip/xil_defaultlib/dut_ap_fpext_0_no_dsp_32.vhd:190]
+Completed static elaboration
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/Default/libstdc++.so.6(std::_Rb_tree_increment(std::_Rb_tree_node_base const*)+0x22) [0x7fce3f9d6b82]
+[1] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x773ab8]
+[2] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x734aa2]
+[3] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x73502e]
+[4] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7353f1]
+[5] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[6] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[7] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[8] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[9] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7345e6]
+[10] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x73502e]
+[11] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x63b938]
+[12] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7fce40c91d56]
+[13] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7fce40c98698]
+[14] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x63d102]
+[15] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x605ccb]
+[16] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x63b542]
+[17] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7fce40c91d56]
+[18] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7fce40c98698]
+[19] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x63d102]
+[20] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x605ccb]
+[21] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x63b542]
+[22] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7fce40c91d56]
+[23] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7fce40c98698]
+[24] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x63d102]
+[25] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x605ccb]
+[26] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x63b542]
+[27] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7fce40c91d56]
+[28] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7fce40c98698]
+[29] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x63d102]
+[30] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x605ccb]
+[31] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x63b542]
+[32] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::TraverseArray(Verific::Array const*)+0x86) [0x7fce40c91d56]
+[33] /opt/xilinx/Vivado/2019.2/lib/lnx64.o/libxsimverific.so(Verific::VeriVisitor::Visit(Verific::VeriModule&)+0x98) [0x7fce40c98698]
+[34] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x63d102]
+[35] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x605ccb]
+[36] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x491cb4]
+[37] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x4764b2]
+[38] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x480253]
+[39] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x45241d]
+[40] /lib64/libc.so.6(__libc_start_main+0xe5) [0x7fce3effd7e5]
+[41] /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x46a3d0]
+
+Done
+ERROR: Please check the snapshot name which is created during 'xelab',the current snapshot name "xsim.dir/dut/xsimk" does not exist 

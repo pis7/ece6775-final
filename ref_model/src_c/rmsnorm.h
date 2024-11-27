@@ -8,8 +8,11 @@ inline std::vector<float> rms_norm(const std::vector<float> &hidden_states, cons
     size_t hidden_size = hidden_states.size();
     float variance = 0.0f;
 
+    int i = 0;
     for (float val : hidden_states) {
         variance += val * val;
+        std::cout << "variance " << variance << " val[" << i << "] " << val << std::endl;
+        i++;
     }
 
     variance =  1.0f / std::sqrt(variance / hidden_size + epsilon);
