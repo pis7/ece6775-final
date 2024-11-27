@@ -19,8 +19,7 @@ template <
   int HS_COLS,
   int PROJ_COLS,
   int NUM_HEADS,
-  int HEAD_DIM,
-  int HEAD_DIM_SQRT
+  int HEAD_DIM
 > void attention (
   fixed32_t hidden_states[SEQ_LEN][HS_COLS],
   fixed32_t final_output[SEQ_LEN][PROJ_COLS],

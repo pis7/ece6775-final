@@ -15,7 +15,7 @@ set_top dut
 # Add design and testbench files
 add_files attention.cpp
 add_files -tb attention_test.cpp
-add_files -tb data_short
+add_files -tb data_long
 
 open_solution "solution1"
 # Use Zynq device
@@ -87,7 +87,7 @@ set_directive_pipeline -II 2 attention/ATTN_2D_LOOP_2
 ############################################
 
 # Simulate the C++ design
-csim_design
+# csim_design
 # Synthesize the design
 csynth_design
 # Co-simulate the design

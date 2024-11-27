@@ -9,8 +9,8 @@
 typedef bit32_t HLS_SIZE_T;
 
 #include "model.h"
-#include "data_short/cos_tab.h"
-#include "data_short/sin_tab.h"
+#include "data_long/cos_tab.h"
+#include "data_long/sin_tab.h"
 
 //----------------------------------------------------------
 // init_1d_mem

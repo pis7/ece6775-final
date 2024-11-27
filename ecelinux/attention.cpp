@@ -5,14 +5,14 @@
 
 #include "attention.h"
 #include "layer.h"
-#include "data_short/q_weights.h"
-#include "data_short/k_weights.h"
-#include "data_short/v_weights.h"
-#include "data_short/o_weights.h"
-#include "data_short/ln_weight_in.h"
-#include "data_short/ln_weight.h"
-#include "data_short/k_cache.h"
-#include "data_short/v_cache.h"
+#include "data_long/q_weights.h"
+#include "data_long/k_weights.h"
+#include "data_long/v_weights.h"
+#include "data_long/o_weights.h"
+#include "data_long/ln_weight_in.h"
+#include "data_long/ln_weight.h"
+#include "data_long/k_cache.h"
+#include "data_long/v_cache.h"
 
 //----------------------------------------------------------
 // dut
@@ -33,8 +33,7 @@ void dut(hls::stream<fixed32_t> &strm_in, hls::stream<fixed32_t> &strm_out) {
     HS_COLS_BASIC,
     PROJ_COLS_BASIC,
     NUM_HEADS_BASIC,
-    HEAD_DIM_BASIC,
-    HEAD_DIM_BASIC_SQRT
+    HEAD_DIM_BASIC
   > (
     input,
     output,
@@ -68,8 +67,7 @@ template <
   int HS_COLS,
   int PROJ_COLS,
   int NUM_HEADS,
-  int HEAD_DIM,
-  int HEAD_DIM_SQRT
+  int HEAD_DIM
 > void attention (
   fixed32_t hidden_states[SEQ_LEN][HS_COLS],
   fixed32_t final_output[SEQ_LEN][PROJ_COLS],
@@ -184,11 +182,10 @@ template <
     attn_weights
   );
 
-  fixed32_t scale_factor = HEAD_DIM_SQRT;
   SF_LOOP_1: for (int h = 0; h < NUM_HEADS; ++h)
     SF_LOOP_2: for (int s = 0; s < SEQ_LEN; ++s)
       SF_LOOP_3: for (int d = 0; d < CACHE_SIZE_INIT+1; ++d)
-        attn_weights[h][s][d] /= scale_factor;
+        attn_weights[h][s][d] /= HEAD_DIM_BASIC_SQRT;
 
   fixed32_t causal_mask[SEQ_LEN][SEQ_LEN];
   create_causal_mask<SEQ_LEN>(causal_mask);

@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/pis7/ece6775/ece6775-final/ecelinux/attention.prj/solution1/./sim/autowrap/testbench/attention.cpp_pre.cpp.tb.cpp
