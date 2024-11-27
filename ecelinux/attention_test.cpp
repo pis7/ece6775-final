@@ -37,11 +37,11 @@ int main() {
   dut(attention_in, attention_out);
 
   // check results with precision of 3 decimal places
-  attn_fixed_t result;
+  st_fixed32_t result;
   float error_accum = 0.0;
   for (int i = 0; i < SEQ_LEN_DECODE; i++) {
     for (int j = 0; j < PROJ_COLS_BASIC; j++) {
-      result = (attn_fixed_t)attention_out.read();
+      result = (st_fixed32_t)attention_out.read();
       cout << "result: " << result << ", ground_truth: " << ground_truth[i][j] << endl;
       error_accum += pow(abs((float)result - ground_truth[i][j]), 2);
     }

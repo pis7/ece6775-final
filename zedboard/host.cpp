@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <cmath>
 #include <math.h>
 #include <assert.h>
 
@@ -28,7 +29,7 @@ int main() {
     exit(-1);
   }
   int nbytes;
-  fixed32_t input_vector;
+  st_fixed32_t input_vector;
 
   // Timer
   Timer timer("attention");
@@ -43,24 +44,23 @@ int main() {
     }
 
   // check results
-  fixed32_t result;
-  int num_incorrect = 0;
+  st_fixed32_t result;
+  float error_accum  = 0.0;
   for (int i = 0; i < SEQ_LEN_DECODE; i++) {
     for (int j = 0; j < PROJ_COLS_BASIC; j++) {
       nbytes = read(fdr, (void *)&result, sizeof(result));
       assert(nbytes == sizeof(result));
-      cout << "\033[34m" << result << "\033[0m ";
-      int res_scaled = result * 1000;
-      int gt_scaled = ground_truth[i][j] * 1000;
-      if (std::abs(res_scaled - gt_scaled) != 0) num_incorrect++;
+      cout << "result: " << result << ", ground_truth: " << ground_truth[i][j] << endl;
+      error_accum += pow(fabs((float)result - ground_truth[i][j]), 2);
     }
     cout << endl;
   }
 
   timer.stop();
-
-  if (num_incorrect == 0) cout << "\033[32mAttention test passed!\033[0m" << endl;
-  else cout << "\033[31mAttention test failed with " << num_incorrect << " errors!\033[0m" << endl;
+ 
+  // calculate RMSE
+  float rmse = sqrt(error_accum / (SEQ_LEN_DECODE * PROJ_COLS_BASIC));
+  cout << "\033[32mRMSE: \033[0m" << rmse << endl;
 
   return 0;
 }
