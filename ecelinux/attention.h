@@ -32,10 +32,10 @@ template <
   const attn_fixed_t v_scale,
   const uint8_t o_weights[HS_COLS/4][PROJ_COLS],
   const attn_fixed_t o_scale,
-  const float k_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
-  const float v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
-  const float ln_weight_in[HS_COLS],
-  const float ln_weight[PROJ_COLS],
+  const attn_fixed_t k_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
+  const attn_fixed_t v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
+  const attn_fixed_t ln_weight_in[HS_COLS],
+  const attn_fixed_t ln_weight[PROJ_COLS],
   const attn_fixed_t p_id
 );
 

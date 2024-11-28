@@ -21,34 +21,30 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>12333</Best-caseLatency>
-<Average-caseLatency>12333</Average-caseLatency>
-<Worst-caseLatency>12333</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.123 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.123 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.123 ms</Worst-caseRealTimeLatency>
-<Interval-min>12333</Interval-min>
-<Interval-max>12333</Interval-max>
+<Best-caseLatency>65</Best-caseLatency>
+<Average-caseLatency>65</Average-caseLatency>
+<Worst-caseLatency>65</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.650 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.650 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.650 us</Worst-caseRealTimeLatency>
+<Interval-min>65</Interval-min>
+<Interval-max>65</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <QUANTIZE_ACTIVATION_LOOP_2>
-<TripCount>1536</TripCount>
-<Latency>4608</Latency>
-<IterationLatency>3</IterationLatency>
+<TripCount>15</TripCount>
+<Latency>16</Latency>
+<PipelineII>1</PipelineII>
+<PipelineDepth>3</PipelineDepth>
 </QUANTIZE_ACTIVATION_LOOP_2>
-<QUANTIZE_ACTIVATION_LOOP_3>
-<TripCount>1536</TripCount>
-<Latency>7680</Latency>
-<IterationLatency>5</IterationLatency>
-</QUANTIZE_ACTIVATION_LOOP_3>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<DSP48E>5</DSP48E>
-<FF>878</FF>
-<LUT>1028</LUT>
+<DSP48E>80</DSP48E>
+<FF>2567</FF>
+<LUT>5085</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -129,7 +125,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ap_return</name>
+<name>ap_return_0</name>
 <Object>quantize_activation</Object>
 <Type>return value</Type>
 <Scope></Scope>
@@ -140,6 +136,182 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>ap_return_1</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_2</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_3</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_4</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_5</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_6</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_7</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_8</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_9</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_10</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_11</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_12</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_13</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_14</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_15</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_16</name>
+<Object>quantize_activation</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>input_0_V_address0</name>
 <Object>input_0_V</Object>
 <Type>array</Type>
@@ -147,7 +319,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>11</Bits>
+<Bits>4</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -173,19 +345,19 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>output_states_0_V_address0</name>
-<Object>output_states_0_V</Object>
+<name>input_0_V_address1</name>
+<Object>input_0_V</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>11</Bits>
+<Bits>4</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>output_states_0_V_ce0</name>
-<Object>output_states_0_V</Object>
+<name>input_0_V_ce1</name>
+<Object>input_0_V</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -195,25 +367,14 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>output_states_0_V_we0</name>
-<Object>output_states_0_V</Object>
+<name>input_0_V_q1</name>
+<Object>input_0_V</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_states_0_V_d0</name>
-<Object>output_states_0_V</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>8</Bits>
+<Dir>in</Dir>
+<Bits>40</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

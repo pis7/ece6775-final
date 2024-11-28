@@ -119,9 +119,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="3" bw="30" op_0_bw="30" op_1_bw="30">
+<Node id="3" bw="37" op_0_bw="37" op_1_bw="37">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:1  %x_V_read = call i30 @_ssdm_op_Read.ap_auto.i30(i30 %x_V)
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:1  %x_V_read = call i37 @_ssdm_op_Read.ap_auto.i37(i37 %x_V)
 
 ]]></Node>
 <StgValue><ssdm name="x_V_read"/></StgValue>
@@ -134,9 +134,9 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="14" op_0_bw="14" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="5" bw="21" op_0_bw="21" op_1_bw="37" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:3  %trunc_ln = call i14 @_ssdm_op_PartSelect.i14.i30.i32.i32(i30 %x_V_read, i32 16, i32 29)
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:3  %trunc_ln = call i21 @_ssdm_op_PartSelect.i21.i37.i32.i32(i37 %x_V_read, i32 16, i32 36)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln"/></StgValue>
@@ -149,9 +149,9 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="26" op_0_bw="14">
+<Node id="6" bw="26" op_0_bw="21">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:4  %sext_ln708 = sext i14 %trunc_ln to i26
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:4  %sext_ln708 = sext i21 %trunc_ln to i26
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln708"/></StgValue>
@@ -179,9 +179,9 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="8" bw="16" op_0_bw="30">
+<Node id="8" bw="16" op_0_bw="37">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:6  %trunc_ln731 = trunc i30 %x_V_read to i16
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:6  %trunc_ln731 = trunc i37 %x_V_read to i16
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln731"/></StgValue>
@@ -194,9 +194,9 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="10" bw="1" op_0_bw="1" op_1_bw="30" op_2_bw="32">
+<Node id="10" bw="1" op_0_bw="1" op_1_bw="37" op_2_bw="32">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:8  %tmp = call i1 @_ssdm_op_BitSelect.i1.i30.i32(i30 %x_V_read, i32 29)
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:8  %tmp = call i1 @_ssdm_op_BitSelect.i1.i37.i32(i37 %x_V_read, i32 36)
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -226,10 +226,10 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 
 <Node id="12" bw="29" op_0_bw="29" op_1_bw="29" op_2_bw="3" op_3_bw="32" op_4_bw="32">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:10  %p_Result_s_85 = call i29 @llvm.part.set.i29.i3(i29 %x_l_I_V, i3 %select_ln248, i32 24, i32 26)
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:10  %p_Result_s_66 = call i29 @llvm.part.set.i29.i3(i29 %x_l_I_V, i3 %select_ln248, i32 24, i32 26)
 
 ]]></Node>
-<StgValue><ssdm name="p_Result_s_85"/></StgValue>
+<StgValue><ssdm name="p_Result_s_66"/></StgValue>
 </operation>
 
 <operation id="27" st_id="1" stage="1" lat="1">
@@ -256,7 +256,7 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 
 <Node id="14" bw="29" op_0_bw="1" op_1_bw="29" op_2_bw="29">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:12  %select_ln488_1 = select i1 %tmp, i29 %p_Result_s_85, i29 %x_l_I_V
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:12  %select_ln488_1 = select i1 %tmp, i29 %p_Result_s_66, i29 %x_l_I_V
 
 ]]></Node>
 <StgValue><ssdm name="select_ln488_1"/></StgValue>
@@ -704,9 +704,9 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="138" bw="2" op_0_bw="2" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="138" bw="2" op_0_bw="2" op_1_bw="37" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:136  %tmp_45 = call i2 @_ssdm_op_PartSelect.i2.i30.i32.i32(i30 %x_V_read, i32 14, i32 15)
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:136  %tmp_45 = call i2 @_ssdm_op_PartSelect.i2.i37.i32.i32(i37 %x_V_read, i32 14, i32 15)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_45"/></StgValue>
@@ -734,9 +734,9 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="144" bw="2" op_0_bw="2" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<Node id="144" bw="2" op_0_bw="2" op_1_bw="37" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:142  %tmp_47 = call i2 @_ssdm_op_PartSelect.i2.i30.i32.i32(i30 %x_V_read, i32 14, i32 15)
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:142  %tmp_47 = call i2 @_ssdm_op_PartSelect.i2.i37.i32.i32(i37 %x_V_read, i32 14, i32 15)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_47"/></StgValue>
@@ -8378,7 +8378,7 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 
 <Node id="2" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:0  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str26) nounwind
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:0  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str13) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln44"/></StgValue>
@@ -8391,9 +8391,9 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="1" op_0_bw="1" op_1_bw="30" op_2_bw="32">
+<Node id="4" bw="1" op_0_bw="1" op_1_bw="37" op_2_bw="32">
 <![CDATA[
-_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:2  %p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i30.i32(i30 %x_V_read, i32 29)
+_ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit_ifconv:2  %p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i37.i32(i37 %x_V_read, i32 36)
 
 ]]></Node>
 <StgValue><ssdm name="p_Result_s"/></StgValue>
@@ -8891,11 +8891,11 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 
 
 <dataflows>
-<dataflow id="636" from="_ssdm_op_Read.ap_auto.i30" to="x_V_read" fromId="635" toId="19">
+<dataflow id="636" from="_ssdm_op_Read.ap_auto.i37" to="x_V_read" fromId="635" toId="19">
 </dataflow>
 <dataflow id="637" from="x_V" to="x_V_read" fromId="634" toId="19">
 </dataflow>
-<dataflow id="639" from="_ssdm_op_PartSelect.i14.i30.i32.i32" to="trunc_ln" fromId="638" toId="20">
+<dataflow id="639" from="_ssdm_op_PartSelect.i21.i37.i32.i32" to="trunc_ln" fromId="638" toId="20">
 </dataflow>
 <dataflow id="640" from="x_V_read" to="trunc_ln" fromId="19" toId="20">
 </dataflow>
@@ -8909,7 +8909,7 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 </dataflow>
 <dataflow id="647" from="x_V_read" to="trunc_ln731" fromId="19" toId="23">
 </dataflow>
-<dataflow id="649" from="_ssdm_op_BitSelect.i1.i30.i32" to="tmp" fromId="648" toId="24">
+<dataflow id="649" from="_ssdm_op_BitSelect.i1.i37.i32" to="tmp" fromId="648" toId="24">
 </dataflow>
 <dataflow id="650" from="x_V_read" to="tmp" fromId="19" toId="24">
 </dataflow>
@@ -8921,15 +8921,15 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 </dataflow>
 <dataflow id="656" from="StgValue_655" to="select_ln248" fromId="655" toId="25">
 </dataflow>
-<dataflow id="658" from="llvm.part.set.i29.i3" to="p_Result_s_85" fromId="657" toId="26">
+<dataflow id="658" from="llvm.part.set.i29.i3" to="p_Result_s_66" fromId="657" toId="26">
 </dataflow>
-<dataflow id="659" from="x_l_I_V" to="p_Result_s_85" fromId="22" toId="26">
+<dataflow id="659" from="x_l_I_V" to="p_Result_s_66" fromId="22" toId="26">
 </dataflow>
-<dataflow id="660" from="select_ln248" to="p_Result_s_85" fromId="25" toId="26">
+<dataflow id="660" from="select_ln248" to="p_Result_s_66" fromId="25" toId="26">
 </dataflow>
-<dataflow id="662" from="StgValue_661" to="p_Result_s_85" fromId="661" toId="26">
+<dataflow id="662" from="StgValue_661" to="p_Result_s_66" fromId="661" toId="26">
 </dataflow>
-<dataflow id="664" from="StgValue_663" to="p_Result_s_85" fromId="663" toId="26">
+<dataflow id="664" from="StgValue_663" to="p_Result_s_66" fromId="663" toId="26">
 </dataflow>
 <dataflow id="665" from="tmp" to="select_ln488" fromId="24" toId="27">
 </dataflow>
@@ -8939,7 +8939,7 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 </dataflow>
 <dataflow id="670" from="tmp" to="select_ln488_1" fromId="24" toId="28">
 </dataflow>
-<dataflow id="671" from="p_Result_s_85" to="select_ln488_1" fromId="26" toId="28">
+<dataflow id="671" from="p_Result_s_66" to="select_ln488_1" fromId="26" toId="28">
 </dataflow>
 <dataflow id="672" from="x_l_I_V" to="select_ln488_1" fromId="22" toId="28">
 </dataflow>
@@ -9123,7 +9123,7 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 </dataflow>
 <dataflow id="786" from="StgValue_688" to="p_Result_28_4" fromId="688" toId="57">
 </dataflow>
-<dataflow id="788" from="_ssdm_op_PartSelect.i2.i30.i32.i32" to="tmp_45" fromId="787" toId="58">
+<dataflow id="788" from="_ssdm_op_PartSelect.i2.i37.i32.i32" to="tmp_45" fromId="787" toId="58">
 </dataflow>
 <dataflow id="789" from="x_V_read" to="tmp_45" fromId="19" toId="58">
 </dataflow>
@@ -9135,7 +9135,7 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 </dataflow>
 <dataflow id="796" from="StgValue_795" to="icmp_ln1495" fromId="795" toId="59">
 </dataflow>
-<dataflow id="797" from="_ssdm_op_PartSelect.i2.i30.i32.i32" to="tmp_47" fromId="787" toId="60">
+<dataflow id="797" from="_ssdm_op_PartSelect.i2.i37.i32.i32" to="tmp_47" fromId="787" toId="60">
 </dataflow>
 <dataflow id="798" from="x_V_read" to="tmp_47" fromId="19" toId="60">
 </dataflow>
@@ -11739,9 +11739,9 @@ _ZN9ap_ufixedILi41ELi25EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi42ELi26ELb1ELS0_5ELS
 </dataflow>
 <dataflow id="2224" from="StgValue_1115" to="specpipeline_ln44" fromId="1115" toId="565">
 </dataflow>
-<dataflow id="2226" from="p_str26" to="specpipeline_ln44" fromId="2225" toId="565">
+<dataflow id="2226" from="p_str13" to="specpipeline_ln44" fromId="2225" toId="565">
 </dataflow>
-<dataflow id="2227" from="_ssdm_op_BitSelect.i1.i30.i32" to="p_Result_s" fromId="648" toId="566">
+<dataflow id="2227" from="_ssdm_op_BitSelect.i1.i37.i32" to="p_Result_s" fromId="648" toId="566">
 </dataflow>
 <dataflow id="2228" from="x_V_read" to="p_Result_s" fromId="19" toId="566">
 </dataflow>

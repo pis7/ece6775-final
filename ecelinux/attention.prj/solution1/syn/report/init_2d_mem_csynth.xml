@@ -17,23 +17,23 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.254</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.322</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1537</Best-caseLatency>
-<Average-caseLatency>1537</Average-caseLatency>
-<Worst-caseLatency>1537</Worst-caseLatency>
-<Best-caseRealTimeLatency>15.370 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>15.370 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>15.370 us</Worst-caseRealTimeLatency>
-<Interval-min>1537</Interval-min>
-<Interval-max>1537</Interval-max>
+<Best-caseLatency>17</Best-caseLatency>
+<Average-caseLatency>17</Average-caseLatency>
+<Worst-caseLatency>17</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.170 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.170 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.170 us</Worst-caseRealTimeLatency>
+<Interval-min>17</Interval-min>
+<Interval-max>17</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <INIT_2D_MEM_LOOP_2>
-<TripCount>1536</TripCount>
-<Latency>1536</Latency>
+<TripCount>16</TripCount>
+<Latency>16</Latency>
 <IterationLatency>1</IterationLatency>
 </INIT_2D_MEM_LOOP_2>
 </SummaryOfLoopLatency>
@@ -41,7 +41,7 @@
 
 <AreaEstimates>
 <Resources>
-<FF>13</FF>
+<FF>7</FF>
 <LUT>50</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
@@ -131,7 +131,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>11</Bits>
+<Bits>4</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>

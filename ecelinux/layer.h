@@ -11,8 +11,8 @@ typedef bit32_t HLS_SIZE_T;
 #include <stdint.h>
 #include <hls_math.h>
 #include "model.h"
-#include "data_long/cos_tab.h"
-#include "data_long/sin_tab.h"
+#include "data_short/cos_tab.h"
+#include "data_short/sin_tab.h"
 
 //----------------------------------------------------------
 // init_1d_mem
@@ -81,7 +81,7 @@ attn_fixed_t attention_abs(attn_fixed_t a) {
 template <int C>
 void rms_norm(
   attn_fixed_t input[C],
-  const float weight[C],
+  const attn_fixed_t weight[C],
   attn_fixed_t epsilon
 ) {
   attn_fixed_t variance = 0.0;
@@ -125,9 +125,9 @@ void quantize_activation(
   QUANTIZE_ACTIVATION_LOOP_1: for (int i = 0; i < R; i++) {
     
       // Calculate the scale for each row
-      attn_fixed_t max_val = 0.0;
-      QUANTIZE_ACTIVATION_LOOP_2: for (int j = 0; j < C; j++)
-          max_val = attention_max<attn_fixed_t>(max_val, attention_abs(input[i][j]));
+      attn_fixed_t max_val = attention_abs(input[i][0]);
+      QUANTIZE_ACTIVATION_LOOP_2: for (int j = 1; j < C; j++)
+        if (attention_abs(input[i][j]) > max_val) max_val = attention_abs(input[i][j]);
       attn_fixed_t max_v = attention_max<attn_fixed_t>(max_val, (attn_fixed_t)(1e-5));
       attn_fixed_t scale = (attn_fixed_t)Qp / max_v;
       output_scales[i] = scale;
@@ -160,8 +160,10 @@ void linear_forward_no_mul (
 
         LINEAR_FORWARD_NO_MUL_LOOP_4: for (int l = 0; l < 4 && (k + l) < IN_C; l++) {
           int8_t weight_val = (packed_val >> (2 * l)) & 0b11;
-          if (weight_val == 0b01) output[i][j] += input[i][k + l];
-          else if (weight_val == 0b10) output[i][j] -= input[i][k + l];
+          sbit8_t new_val = 0;
+          if (weight_val == 0b01) new_val += input[i][k + l];
+          else if (weight_val == 0b10) new_val -= input[i][k + l] + 1;
+          output[i][j] += new_val;
         }
       }
       output[i][j] /= (scales[i] * w_scale);
@@ -227,15 +229,14 @@ void apply_rotary_pos_emb (
 //----------------------------------------------------------
 template <int P, int R, int C>
 void cache_update (
-  const float cache_in[P][R][C],
+  const attn_fixed_t cache_in[P][R][C],
   attn_fixed_t cache_out[P][R+1][C],
   attn_fixed_t update[P][1][C]
 ) {
   CACHE_UPDATE_LOOP_1: for (int i = 0; i < P; i++)
     CACHE_UPDATE_LOOP_2: for (int j = 0; j < R+1; j++)
       CACHE_UPDATE_LOOP_3: for (int k = 0; k < C; k++)
-        if (j != R) cache_out[i][j][k] = (attn_fixed_t)cache_in[i][j][k];
-        else cache_out[i][j][k] = update[i][0][k];
+        cache_out[i][j][k] = (j != R) ? cache_in[i][j][k] : update[i][0][k];
 }
 
 //----------------------------------------------------------
@@ -291,25 +292,6 @@ void create_causal_mask (
 }
 
 //----------------------------------------------------------
-// attention_exp
-//----------------------------------------------------------
-// attn_fixed_t attention_exp(attn_fixed_t in) {
-//     const fixed48_t tolerance = 1e-10;
-//     const int MAX_TERMS = 1000;
-
-//     fixed48_t res = 1.0;
-//     fixed48_t term = 1.0;
-
-//       ATTENTION_EXP_LOOP_1: for (int n = 1; n <= MAX_TERMS; ++n) {
-//         term *= (fixed48_t)in / n;
-//         if (attention_abs(term) < tolerance) break;
-//         res += term;
-//     }
-
-//     return (attn_fixed_t)res;
-// }
-
-//----------------------------------------------------------
 // softmax
 //----------------------------------------------------------
 template <int P, int R, int C>
@@ -321,10 +303,11 @@ void softmax (
     SOFTMAX_LOOP_2: for (int j = 0; j < P; j++) {
       max_val = input[i][j][0];
       SOFTMAX_LOOP_3: for (int k = 1; k < C; k++)
-        max_val = attention_max<attn_fixed_t>(max_val, input[i][j][k]);
+        if (input[i][j][k] > max_val) max_val = input[i][j][k];
       sum = 0.0;
       SOFTMAX_LOOP_4: for (int k = 0; k < C; k++) {
-        input[i][j][k] = hls::exp(input[i][j][k] - max_val);
+        attn_fixed_t x = input[i][j][k] - max_val;
+        input[i][j][k] = 1 + x + ((x * x) >> 1);
         sum += input[i][j][k];
       }
       SOFTMAX_LOOP_5: for (int k = 0; k < C; k++)

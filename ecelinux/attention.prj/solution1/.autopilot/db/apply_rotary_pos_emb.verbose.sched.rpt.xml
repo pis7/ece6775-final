@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'apply_rotary_pos_emb'" level="0">
-<item name = "Date">Wed Nov 27 14:05:55 2024
+<item name = "Date">Thu Nov 28 07:55:28 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.670 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 8.510 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">13122, 13122, 0.131 ms, 0.131 ms, 13122, 13122, none</column>
+<column name="">122, 122, 1.220 us, 1.220 us, 122, 122, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,10 +35,10 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- APPLY_ROTARY_POS_EMB_LOOP_1">2336, 2336, 146, -, -, 16, no</column>
-<column name=" + APPLY_ROTARY_POS_EMB_LOOP_3">144, 144, 3, -, -, 48, no</column>
-<column name="- APPLY_ROTARY_POS_EMB_LOOP_4">10784, 10784, 674, -, -, 16, no</column>
-<column name=" + APPLY_ROTARY_POS_EMB_LOOP_6">672, 672, 7, -, -, 96, no</column>
+<column name="- APPLY_ROTARY_POS_EMB_LOOP_1">16, 16, 4, -, -, 4, no</column>
+<column name=" + APPLY_ROTARY_POS_EMB_LOOP_3">2, 2, 1, -, -, 2, no</column>
+<column name="- APPLY_ROTARY_POS_EMB_LOOP_4">104, 104, 26, -, -, 4, no</column>
+<column name=" + APPLY_ROTARY_POS_EMB_LOOP_6">24, 24, 6, -, -, 4, no</column>
 </table>
 </item>
 </section>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'init_2d_mem'" level="0">
-<item name = "Date">Wed Nov 27 14:05:54 2024
+<item name = "Date">Thu Nov 28 07:55:26 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 3.254 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 2.322 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1537, 1537, 15.370 us, 15.370 us, 1537, 1537, none</column>
+<column name="">17, 17, 0.170 us, 0.170 us, 17, 17, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- INIT_2D_MEM_LOOP_2">1536, 1536, 1, -, -, 1536, no</column>
+<column name="- INIT_2D_MEM_LOOP_2">16, 16, 1, -, -, 16, no</column>
 </table>
 </item>
 </section>

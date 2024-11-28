@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.runs/impl_1'
+HD_PWD='/home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

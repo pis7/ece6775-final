@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.xpr">
+<Project Version="7" Minor="44" Path="/home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="83d7c57bf86e4cd6b88c893aa2730104"/>
+    <Option Name="Id" Val="af2393dfd0ad4679a97a701251a65315"/>
     <Option Name="Part" Val="xc7z020clg484-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -109,6 +109,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/../src/fpga-design/sqrt_fixed_42_26_s.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/../src/fpga-design/softmax_1_4_3_s.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -165,6 +172,34 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/../src/fpga-design/exp_41_25_s.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../src/fpga-design/exp_41_25_s_f_x_mibs.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../src/fpga-design/exp_41_25_s_f_x_mhbi.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../src/fpga-design/exp_41_25_s_exp_xjbC.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/../src/fpga-design/dut.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -172,70 +207,98 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/dut_udiv_51s_31nseOg.v">
+      <File Path="$PPRDIR/../src/fpga-design/dut_udiv_39s_39nsdEe.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/dut_sdiv_76ns_59sfYi.v">
+      <File Path="$PPRDIR/../src/fpga-design/dut_udiv_33s_29nsbkb.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/dut_sdiv_54ns_32sibs.v">
+      <File Path="$PPRDIR/../src/fpga-design/dut_sdiv_72ns_61seOg.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/dut_sdiv_53s_32s_bkb.v">
+      <File Path="$PPRDIR/../src/fpga-design/dut_sdiv_56ns_40smb6.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/dut_sdiv_46ns_32scud.v">
+      <File Path="$PPRDIR/../src/fpga-design/dut_output_0.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/dut_mux_42_32_1_1.v">
+      <File Path="$PPRDIR/../src/fpga-design/dut_mux_42_40_1_1.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/dut_mux_32_32_1_1.v">
+      <File Path="$PPRDIR/../src/fpga-design/dut_mux_32_40_1_1.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/dut_mux_165_32_1_1.v">
+      <File Path="$PPRDIR/../src/fpga-design/dut_mux_165_40_1_1.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/dut_mux_124_32_1_1.v">
+      <File Path="$PPRDIR/../src/fpga-design/dut_mux_164_8_1_1.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/dut_mul_64s_32s_7dEe.v">
+      <File Path="$PPRDIR/../src/fpga-design/dut_mux_164_1_1_1.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../src/fpga-design/dut_mux_124_40_1_1.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../src/fpga-design/dut_mul_72s_40s_7cud.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../src/fpga-design/dut_mul_72ns_68nslbW.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../src/fpga-design/dut_mul_67ns_62nskbM.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -256,28 +319,28 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_v_weighvdy.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_v_weighzec.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_v_weighudo.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_v_weighyd2.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_v_weightde.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_v_weighxdS.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_v_weighsc4.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_v_weighwdI.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -291,7 +354,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_v_cacheJfO.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_v_cacheMgi.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -305,112 +368,112 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_q_weighncg.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_q_weighrcU.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_q_weighmb6.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_q_weighqcK.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_q_weighlbW.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_q_weighpcA.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_q_weighkbM.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_q_weighocq.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_quantizBew.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_q_proj_Ffa.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_q_proj_CeG.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_o_weighEe0.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_o_weighzec.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_o_weighDeQ.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_o_weighyd2.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_o_weighCeG.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_o_weighxdS.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_o_weighBew.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_o_weighAem.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_ln_weigncg.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_ln_weigwdI.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_ln_weigAem.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_ln_weigjbC.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_k_weighvdy.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_k_weighrcU.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_k_weighudo.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_k_weighqcK.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_k_weightde.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_k_weighpcA.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_k_weighsc4.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_k_weighocq.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_k_proj_QgW.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -424,21 +487,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_k_cacheFfa.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../src/fpga-design/attention_exp.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../src/fpga-design/apply_rotary_pos_hbi.v">
+      <File Path="$PPRDIR/../src/fpga-design/attention_k_cacheIfE.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -446,6 +495,13 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../src/fpga-design/apply_rotary_pos_g8j.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../src/fpga-design/apply_rotary_pos_fYi.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -511,7 +567,7 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="xillydemo"/>
-        <Option Name="ExtraSearchPath" Val="/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/cores"/>
+        <Option Name="ExtraSearchPath" Val="/home/pis7/ece6775-final/ecelinux/zedboard_project/cores"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

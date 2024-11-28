@@ -1,7 +1,7 @@
 #include "../typedefs.h"
 #include <stdint.h>
 
-const fixed32_t o_scale = 11.110462188721;
+const attn_fixed_t o_scale = 11.110462188721;
 
 const uint8_t o_weights[4][16] = {
     {150, 105, 168, 165, 134, 164, 153, 102, 165, 82, 2, 85, 2, 86, 66, 150},

@@ -6,7 +6,7 @@
 (* rom_style = "block" *) module attention_v_cache_V_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 32;
+parameter DWIDTH = 40;
 parameter AWIDTH = 5;
 parameter MEM_SIZE = 32;
 
@@ -43,7 +43,7 @@ module attention_v_cache_V(
     ce0,
     q0);
 
-parameter DataWidth = 32'd32;
+parameter DataWidth = 32'd40;
 parameter AddressRange = 32'd32;
 parameter AddressWidth = 32'd5;
 input reset;

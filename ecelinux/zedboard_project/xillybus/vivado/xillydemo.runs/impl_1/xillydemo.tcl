@@ -72,27 +72,27 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 7
   create_project -in_memory -part xc7z020clg484-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.cache/wt [current_project]
-  set_property parent.project_path /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.xpr [current_project]
-  set_property ip_repo_paths /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado-ip [current_project]
+  set_property webtalk.parent_dir /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.cache/wt [current_project]
+  set_property parent.project_path /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.xpr [current_project]
+  set_property ip_repo_paths /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado-ip [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.cache/ip [current_project]
+  set_property ip_output_repo /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.runs/synth_1/xillydemo.dcp
+  add_files -quiet /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.runs/synth_1/xillydemo.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo.xci
-  read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
-  read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512.xci
-  add_files /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system.bd
+  read_ip -quiet /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo.xci
+  read_ip -quiet /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
+  read_ip -quiet /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512.xci
+  add_files /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system.bd
   set_param project.isImplRun false
-  set_property edif_extra_search_paths /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/cores [current_fileset]
-  read_xdc /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc
+  set_property edif_extra_search_paths /home/pis7/ece6775-final/ecelinux/zedboard_project/cores [current_fileset]
+  read_xdc /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc
   set_param project.isImplRun true
   link_design -top xillydemo -part xc7z020clg484-1
   set_param project.isImplRun false
@@ -168,12 +168,12 @@ set rc [catch {
   create_msg_db route_design.pb
   route_design 
   set src_rc [catch { 
-    puts "source /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/showstopper.tcl"
-    source /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/showstopper.tcl
+    puts "source /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/showstopper.tcl"
+    source /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/showstopper.tcl
   } _RESULT] 
   if {$src_rc} { 
     send_msg_id runtcl-1 error "$_RESULT"
-    send_msg_id runtcl-2 error "sourcing script /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/showstopper.tcl failed"
+    send_msg_id runtcl-2 error "sourcing script /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/showstopper.tcl failed"
     return -code error
   }
   write_checkpoint -force xillydemo_routed.dcp

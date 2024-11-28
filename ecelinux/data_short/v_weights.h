@@ -1,7 +1,7 @@
 #include "../typedefs.h"
 #include <stdint.h>
 
-const fixed32_t v_scale = 10.926223754883;
+const attn_fixed_t v_scale = 10.926223754883;
 
 const uint8_t v_weights[4][16] = {
     {10, 34, 101, 18, 1, 169, 33, 90, 81, 69, 5, 149, 154, 136, 89, 137},

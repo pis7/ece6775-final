@@ -7,10 +7,11 @@
 #include <fstream>
 #include <string>
 #include <math.h>
+#include <cmath>
 #include "attention.h"
 #include "timer.h"
-#include "data_long/hidden_states.h"
-#include "data_long/ground_truth.h"
+#include "data_short/hidden_states.h"
+#include "data_short/ground_truth.h"
 
 using namespace std;
 
@@ -43,7 +44,7 @@ int main() {
     for (int j = 0; j < PROJ_COLS_BASIC; j++) {
       result = (st_fixed32_t)attention_out.read();
       cout << "result: " << result << ", ground_truth: " << ground_truth[i][j] << endl;
-      error_accum += pow(abs((float)result - ground_truth[i][j]), 2);
+      error_accum += pow(fabs((float)result - (float)ground_truth[i][j]), 2);
     }
     cout << endl;
   }

@@ -12,7 +12,8 @@
 #include "AESL_pkg.h"
 
 #include "attention.h"
-#include "apply_rotary_pos_jbC.h"
+#include "dut_input_0_V.h"
+#include "dut_output_0.h"
 
 namespace ap_rtl {
 
@@ -42,53 +43,57 @@ struct dut : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    apply_rotary_pos_jbC* input_0_V_U;
-    apply_rotary_pos_jbC* output_0_U;
-    attention* grp_attention_fu_165;
+    dut_input_0_V* input_0_V_U;
+    dut_output_0* output_0_U;
+    attention* grp_attention_fu_173;
     sc_signal< sc_lv<5> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_logic > strm_in_V_V_blk_n;
     sc_signal< sc_logic > ap_CS_fsm_state2;
-    sc_signal< sc_lv<1> > icmp_ln26_fu_197_p2;
+    sc_signal< sc_lv<1> > icmp_ln26_fu_235_p2;
     sc_signal< sc_logic > strm_out_V_V_blk_n;
     sc_signal< sc_logic > ap_CS_fsm_state5;
-    sc_signal< sc_lv<11> > add_ln26_fu_203_p2;
+    sc_signal< sc_lv<5> > add_ln26_fu_241_p2;
     sc_signal< bool > ap_block_state2;
-    sc_signal< sc_lv<11> > add_ln58_fu_235_p2;
-    sc_signal< sc_lv<11> > add_ln58_reg_270;
+    sc_signal< sc_lv<5> > add_ln58_fu_273_p2;
+    sc_signal< sc_lv<5> > add_ln58_reg_308;
     sc_signal< sc_logic > ap_CS_fsm_state4;
-    sc_signal< sc_lv<1> > icmp_ln58_fu_229_p2;
-    sc_signal< sc_lv<11> > input_0_V_address0;
+    sc_signal< sc_lv<1> > icmp_ln58_fu_267_p2;
+    sc_signal< sc_lv<4> > input_0_V_address0;
     sc_signal< sc_logic > input_0_V_ce0;
     sc_signal< sc_logic > input_0_V_we0;
     sc_signal< sc_lv<40> > input_0_V_d0;
     sc_signal< sc_lv<40> > input_0_V_q0;
-    sc_signal< sc_lv<11> > output_0_address0;
+    sc_signal< sc_logic > input_0_V_ce1;
+    sc_signal< sc_logic > input_0_V_we1;
+    sc_signal< sc_lv<40> > input_0_V_q1;
+    sc_signal< sc_lv<4> > output_0_address0;
     sc_signal< sc_logic > output_0_ce0;
     sc_signal< sc_logic > output_0_we0;
     sc_signal< sc_lv<40> > output_0_q0;
-    sc_signal< sc_logic > grp_attention_fu_165_ap_start;
-    sc_signal< sc_logic > grp_attention_fu_165_ap_done;
-    sc_signal< sc_logic > grp_attention_fu_165_ap_idle;
-    sc_signal< sc_logic > grp_attention_fu_165_ap_ready;
-    sc_signal< sc_lv<11> > grp_attention_fu_165_hidden_states_0_V_address0;
-    sc_signal< sc_logic > grp_attention_fu_165_hidden_states_0_V_ce0;
-    sc_signal< sc_logic > grp_attention_fu_165_hidden_states_0_V_we0;
-    sc_signal< sc_lv<40> > grp_attention_fu_165_hidden_states_0_V_d0;
-    sc_signal< sc_lv<11> > grp_attention_fu_165_final_output_0_V_address0;
-    sc_signal< sc_logic > grp_attention_fu_165_final_output_0_V_ce0;
-    sc_signal< sc_logic > grp_attention_fu_165_final_output_0_V_we0;
-    sc_signal< sc_lv<40> > grp_attention_fu_165_final_output_0_V_d0;
-    sc_signal< sc_lv<11> > j_0_0_reg_143;
-    sc_signal< sc_lv<11> > j9_0_0_reg_154;
+    sc_signal< sc_logic > grp_attention_fu_173_ap_start;
+    sc_signal< sc_logic > grp_attention_fu_173_ap_done;
+    sc_signal< sc_logic > grp_attention_fu_173_ap_idle;
+    sc_signal< sc_logic > grp_attention_fu_173_ap_ready;
+    sc_signal< sc_lv<4> > grp_attention_fu_173_hidden_states_0_V_address0;
+    sc_signal< sc_logic > grp_attention_fu_173_hidden_states_0_V_ce0;
+    sc_signal< sc_lv<4> > grp_attention_fu_173_hidden_states_0_V_address1;
+    sc_signal< sc_logic > grp_attention_fu_173_hidden_states_0_V_ce1;
+    sc_signal< sc_logic > grp_attention_fu_173_hidden_states_0_V_we1;
+    sc_signal< sc_lv<40> > grp_attention_fu_173_hidden_states_0_V_d1;
+    sc_signal< sc_lv<4> > grp_attention_fu_173_final_output_0_V_address0;
+    sc_signal< sc_logic > grp_attention_fu_173_final_output_0_V_ce0;
+    sc_signal< sc_logic > grp_attention_fu_173_final_output_0_V_we0;
+    sc_signal< sc_lv<40> > grp_attention_fu_173_final_output_0_V_d0;
+    sc_signal< sc_lv<5> > j_0_0_reg_151;
+    sc_signal< sc_lv<5> > j9_0_0_reg_162;
     sc_signal< sc_logic > ap_CS_fsm_state3;
-    sc_signal< sc_logic > grp_attention_fu_165_ap_start_reg;
+    sc_signal< sc_logic > grp_attention_fu_173_ap_start_reg;
     sc_signal< bool > ap_block_state2_ignore_call0;
-    sc_signal< sc_lv<64> > zext_ln27_fu_209_p1;
-    sc_signal< sc_lv<64> > zext_ln59_fu_241_p1;
-    sc_signal< sc_lv<40> > sext_ln708_fu_224_p1;
-    sc_signal< sc_lv<30> > trunc_ln_fu_214_p4;
-    sc_signal< sc_lv<30> > trunc_ln731_fu_246_p1;
+    sc_signal< sc_lv<64> > zext_ln27_fu_247_p1;
+    sc_signal< sc_lv<64> > zext_ln59_fu_279_p1;
+    sc_signal< sc_lv<30> > trunc_ln_fu_252_p4;
+    sc_signal< sc_lv<30> > trunc_ln731_fu_284_p1;
     sc_signal< sc_lv<5> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
@@ -102,18 +107,18 @@ struct dut : public sc_module {
     static const sc_lv<1> ap_const_lv1_0;
     static const sc_lv<32> ap_const_lv32_4;
     static const sc_lv<32> ap_const_lv32_3;
-    static const sc_lv<11> ap_const_lv11_0;
+    static const sc_lv<5> ap_const_lv5_0;
     static const sc_lv<32> ap_const_lv32_2;
     static const sc_lv<1> ap_const_lv1_1;
-    static const sc_lv<11> ap_const_lv11_600;
-    static const sc_lv<11> ap_const_lv11_1;
+    static const sc_lv<5> ap_const_lv5_10;
+    static const sc_lv<5> ap_const_lv5_1;
     static const sc_lv<32> ap_const_lv32_1F;
     static const sc_lv<2> ap_const_lv2_0;
     static const bool ap_const_boolean_1;
     // Thread declarations
     void thread_ap_clk_no_reset_();
-    void thread_add_ln26_fu_203_p2();
-    void thread_add_ln58_fu_235_p2();
+    void thread_add_ln26_fu_241_p2();
+    void thread_add_ln58_fu_273_p2();
     void thread_ap_CS_fsm_state1();
     void thread_ap_CS_fsm_state2();
     void thread_ap_CS_fsm_state3();
@@ -124,26 +129,27 @@ struct dut : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_grp_attention_fu_165_ap_start();
-    void thread_icmp_ln26_fu_197_p2();
-    void thread_icmp_ln58_fu_229_p2();
+    void thread_grp_attention_fu_173_ap_start();
+    void thread_icmp_ln26_fu_235_p2();
+    void thread_icmp_ln58_fu_267_p2();
     void thread_input_0_V_address0();
     void thread_input_0_V_ce0();
+    void thread_input_0_V_ce1();
     void thread_input_0_V_d0();
     void thread_input_0_V_we0();
+    void thread_input_0_V_we1();
     void thread_output_0_address0();
     void thread_output_0_ce0();
     void thread_output_0_we0();
-    void thread_sext_ln708_fu_224_p1();
     void thread_strm_in_V_V_blk_n();
     void thread_strm_in_V_V_read();
     void thread_strm_out_V_V_blk_n();
     void thread_strm_out_V_V_din();
     void thread_strm_out_V_V_write();
-    void thread_trunc_ln731_fu_246_p1();
-    void thread_trunc_ln_fu_214_p4();
-    void thread_zext_ln27_fu_209_p1();
-    void thread_zext_ln59_fu_241_p1();
+    void thread_trunc_ln731_fu_284_p1();
+    void thread_trunc_ln_fu_252_p4();
+    void thread_zext_ln27_fu_247_p1();
+    void thread_zext_ln59_fu_279_p1();
     void thread_ap_NS_fsm();
     void thread_hdltv_gen();
 };

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dut'" level="0">
-<item name = "Date">Wed Nov 27 14:06:02 2024
+<item name = "Date">Thu Nov 28 07:55:36 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention.prj</item>
@@ -24,20 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">12533259, 36163083, 0.125 sec, 0.362 sec, 12533259, 36163083, none</column>
+<column name="">1280, 1280, 12.800 us, 12.800 us, 1280, 1280, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_attention_fu_165">attention, 12528648, 36158472, 0.125 sec, 0.362 sec, 12528648, 36158472, none</column>
+<column name="grp_attention_fu_173">attention, 1229, 1229, 12.290 us, 12.290 us, 1229, 1229, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">1536, 1536, 1, -, -, 1536, no</column>
-<column name="- Loop 2">3072, 3072, 2, -, -, 1536, no</column>
+<column name="- Loop 1">16, 16, 1, -, -, 16, no</column>
+<column name="- Loop 2">32, 32, 2, -, -, 16, no</column>
 </table>
 </item>
 </section>

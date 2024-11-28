@@ -51,7 +51,7 @@ int main() {
       nbytes = read(fdr, (void *)&result, sizeof(result));
       assert(nbytes == sizeof(result));
       cout << "result: " << result << ", ground_truth: " << ground_truth[i][j] << endl;
-      error_accum += pow(fabs((float)result - ground_truth[i][j]), 2);
+      error_accum += pow(fabs((float)result - (float)ground_truth[i][j]), 2);
     }
     cout << endl;
   }

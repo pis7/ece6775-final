@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Mon Nov 25 11:20:51 2024
-| Host             : ecelinux-11.ece.cornell.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Date             : Thu Nov 28 00:02:40 2024
+| Host             : zhang-22.ece.cornell.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command          : report_power -file xillydemo_power_routed.rpt -pb xillydemo_power_summary_routed.pb -rpx xillydemo_power_routed.rpx
 | Design           : xillydemo
 | Device           : xc7z020clg484-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.031        |
+| Total On-Chip Power (W)  | 2.504        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.876        |
-| Device Static (W)        | 0.155        |
+| Dynamic (W)              | 2.332        |
+| Device Static (W)        | 0.172        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 61.6         |
-| Junction Temperature (C) | 48.4         |
+| Max Ambient (C)          | 56.1         |
+| Junction Temperature (C) | 53.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.094 |        6 |       --- |             --- |
-| Slice Logic              |     0.026 |    65089 |       --- |             --- |
-|   LUT as Logic           |     0.022 |    23377 |     53200 |           43.94 |
-|   CARRY4                 |     0.002 |     2825 |     13300 |           21.24 |
-|   Register               |     0.001 |    30572 |    106400 |           28.73 |
-|   LUT as Distributed RAM |    <0.001 |      542 |     17400 |            3.11 |
-|   F7/F8 Muxes            |    <0.001 |      694 |     53200 |            1.30 |
-|   LUT as Shift Register  |    <0.001 |      266 |     17400 |            1.53 |
-|   Others                 |     0.000 |      855 |       --- |             --- |
-| Signals                  |     0.039 |    53304 |       --- |             --- |
-| Block RAM                |     0.009 |     15.5 |       140 |           11.07 |
+| Clocks                   |     0.135 |        6 |       --- |             --- |
+| Slice Logic              |     0.244 |    95390 |       --- |             --- |
+|   LUT as Logic           |     0.203 |    33856 |     53200 |           63.64 |
+|   CARRY4                 |     0.024 |     4414 |     13300 |           33.19 |
+|   Register               |     0.014 |    44536 |    106400 |           41.86 |
+|   LUT as Distributed RAM |     0.002 |      614 |     17400 |            3.53 |
+|   LUT as Shift Register  |     0.001 |      552 |     17400 |            3.17 |
+|   F7/F8 Muxes            |    <0.001 |      904 |     53200 |            1.70 |
+|   Others                 |     0.000 |      871 |       --- |             --- |
+| Signals                  |     0.247 |    75729 |       --- |             --- |
+| Block RAM                |     0.009 |       23 |       140 |           16.43 |
 | PLL                      |     0.107 |        1 |         4 |           25.00 |
-| DSPs                     |     0.023 |       88 |       220 |           40.00 |
-| I/O                      |     0.045 |       85 |       200 |           42.50 |
+| DSPs                     |     0.012 |      103 |       220 |           46.82 |
+| I/O                      |     0.044 |       85 |       200 |           42.50 |
 | PS7                      |     1.533 |        1 |       --- |             --- |
-| Static Power             |     0.155 |          |           |                 |
-| Total                    |     2.031 |          |           |                 |
+| Static Power             |     0.172 |          |           |                 |
+| Total                    |     2.504 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,20 +78,20 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.220 |       0.202 |      0.018 |
-| Vccaux    |       1.800 |     0.072 |       0.055 |      0.017 |
-| Vcco33    |       3.300 |     0.014 |       0.013 |      0.001 |
+| Vccint    |       1.000 |     0.682 |       0.659 |      0.023 |
+| Vccaux    |       1.800 |     0.074 |       0.055 |      0.019 |
+| Vcco33    |       3.300 |     0.013 |       0.012 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| Vccbram   |       1.000 |     0.004 |       0.000 |      0.003 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.757 |       0.722 |      0.034 |
+| Vccpint   |       1.000 |     0.764 |       0.722 |      0.041 |
 | Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
@@ -157,7 +157,7 @@ Table of Contents
 +---------------------------------------+-----------+
 | Name                                  | Power (W) |
 +---------------------------------------+-----------+
-| xillydemo                             |     1.876 |
+| xillydemo                             |     2.332 |
 |   audio                               |     0.004 |
 |     playback_fifo                     |     0.002 |
 |       U0                              |     0.002 |
@@ -172,17 +172,19 @@ Table of Contents
 |   fifo_8                              |     0.001 |
 |     U0                                |     0.001 |
 |       inst_fifo_gen                   |     0.001 |
-|   test_fpga_design                    |     0.129 |
-|     grp_attention_fu_177              |     0.128 |
-|       attn_output_2D_0_V_U            |     0.003 |
-|       grp_GEMM_3D_float_1_fu_590      |     0.005 |
-|       grp_GEMM_3D_float_fu_567        |     0.002 |
-|       grp_apply_rotary_pos_emb_fu_511 |     0.011 |
-|       grp_linear_forward_no_mu_fu_458 |     0.032 |
-|       grp_quantize_activation_fu_560  |     0.011 |
-|       grp_reshape_2D_to_3D_fu_637     |     0.002 |
-|       grp_rms_norm_16_s_fu_551        |     0.018 |
-|       grp_softmax_1_4_3_s_fu_491      |     0.027 |
+|   test_fpga_design                    |     0.585 |
+|     grp_attention_fu_167              |     0.584 |
+|       grp_GEMM_3D_float_1_fu_575      |     0.005 |
+|       grp_GEMM_3D_float_fu_552        |     0.005 |
+|       grp_apply_rotary_pos_emb_fu_506 |     0.019 |
+|       grp_cache_update_fu_595         |     0.004 |
+|       grp_linear_forward_no_mu_fu_396 |     0.202 |
+|       grp_linear_forward_no_mu_fu_428 |     0.212 |
+|       grp_quantize_activation_fu_546  |     0.011 |
+|       grp_reshape_2D_to_3D_fu_622     |     0.002 |
+|       grp_reshape_2D_to_3D_fu_627     |     0.002 |
+|       grp_rms_norm_16_s_fu_497        |     0.075 |
+|       grp_softmax_1_4_3_s_fu_471      |     0.018 |
 |   xillybus_ins                        |     1.688 |
 |     system_i                          |     1.666 |
 |       vivado_system_i                 |     1.666 |

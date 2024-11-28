@@ -1,7 +1,7 @@
 #include "../typedefs.h"
 #include <stdint.h>
 
-const fixed32_t k_scale = 18.834289550781;
+const attn_fixed_t k_scale = 18.834289550781;
 
 const uint8_t k_weights[4][16] = {
     {146, 37, 166, 97, 165, 32, 97, 4, 81, 20, 165, 85, 136, 150, 160, 26},

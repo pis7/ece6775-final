@@ -18,7 +18,7 @@ struct sqrt_fixed_42_26_s : public sc_module {
     // Port declarations 4
     sc_in_clk ap_clk;
     sc_in< sc_logic > ap_rst;
-    sc_in< sc_lv<30> > x_V;
+    sc_in< sc_lv<37> > x_V;
     sc_out< sc_lv<29> > ap_return;
 
 
@@ -30,7 +30,7 @@ struct sqrt_fixed_42_26_s : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    sc_signal< sc_lv<30> > x_V_read_reg_4259;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259;
     sc_signal< bool > ap_block_state1_pp0_stage0_iter0;
     sc_signal< bool > ap_block_state2_pp0_stage0_iter1;
     sc_signal< bool > ap_block_state3_pp0_stage0_iter2;
@@ -50,22 +50,22 @@ struct sqrt_fixed_42_26_s : public sc_module {
     sc_signal< bool > ap_block_state17_pp0_stage0_iter16;
     sc_signal< bool > ap_block_state18_pp0_stage0_iter17;
     sc_signal< bool > ap_block_pp0_stage0_11001;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter1_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter2_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter3_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter4_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter5_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter6_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter7_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter8_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter9_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter10_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter11_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter12_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter13_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter14_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter15_reg;
-    sc_signal< sc_lv<30> > x_V_read_reg_4259_pp0_iter16_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter1_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter2_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter3_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter4_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter5_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter6_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter7_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter8_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter9_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter10_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter11_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter12_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter13_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter14_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter15_reg;
+    sc_signal< sc_lv<37> > x_V_read_reg_4259_pp0_iter16_reg;
     sc_signal< sc_lv<16> > trunc_ln731_fu_378_p1;
     sc_signal< sc_lv<16> > trunc_ln731_reg_4264;
     sc_signal< sc_lv<16> > trunc_ln731_reg_4264_pp0_iter1_reg;
@@ -419,12 +419,12 @@ struct sqrt_fixed_42_26_s : public sc_module {
     sc_signal< sc_lv<1> > or_ln318_37_fu_4041_p2;
     sc_signal< sc_lv<1> > or_ln318_37_reg_5028;
     sc_signal< bool > ap_block_pp0_stage0;
-    sc_signal< sc_lv<14> > trunc_ln_fu_360_p4;
+    sc_signal< sc_lv<21> > trunc_ln_fu_360_p4;
     sc_signal< sc_lv<26> > sext_ln708_fu_370_p1;
     sc_signal< sc_lv<1> > tmp_fu_382_p3;
     sc_signal< sc_lv<29> > x_l_I_V_fu_374_p1;
     sc_signal< sc_lv<3> > select_ln248_fu_390_p3;
-    sc_signal< sc_lv<29> > p_Result_s_85_fu_398_p5;
+    sc_signal< sc_lv<29> > p_Result_s_66_fu_398_p5;
     sc_signal< sc_lv<13> > select_ln488_fu_410_p3;
     sc_signal< sc_lv<2> > p_Result_25_1_fu_426_p4;
     sc_signal< sc_lv<29> > select_ln488_1_fu_418_p3;
@@ -865,11 +865,11 @@ struct sqrt_fixed_42_26_s : public sc_module {
     sc_signal< sc_lv<16> > tmp_52_fu_4233_p4;
     sc_signal< sc_lv<1> > p_Result_s_fu_4047_p3;
     sc_signal< sc_lv<29> > r_V_fu_4243_p3;
-    sc_signal< sc_lv<30> > x_V_int_reg;
+    sc_signal< sc_lv<37> > x_V_int_reg;
     static const bool ap_const_boolean_1;
     static const bool ap_const_boolean_0;
     static const sc_lv<32> ap_const_lv32_10;
-    static const sc_lv<32> ap_const_lv32_1D;
+    static const sc_lv<32> ap_const_lv32_24;
     static const sc_lv<3> ap_const_lv3_2;
     static const sc_lv<3> ap_const_lv3_7;
     static const sc_lv<32> ap_const_lv32_18;
@@ -1210,7 +1210,7 @@ struct sqrt_fixed_42_26_s : public sc_module {
     void thread_p_Result_34_6_fu_2268_p4();
     void thread_p_Result_34_7_fu_2387_p4();
     void thread_p_Result_34_8_fu_2513_p4();
-    void thread_p_Result_s_85_fu_398_p5();
+    void thread_p_Result_s_66_fu_398_p5();
     void thread_p_Result_s_fu_4047_p3();
     void thread_p_Val2_s_fu_4226_p3();
     void thread_p_neg_10_fu_2988_p3();

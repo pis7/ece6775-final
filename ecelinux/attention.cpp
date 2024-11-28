@@ -5,14 +5,14 @@
 
 #include "attention.h"
 #include "layer.h"
-#include "data_long/q_weights.h"
-#include "data_long/k_weights.h"
-#include "data_long/v_weights.h"
-#include "data_long/o_weights.h"
-#include "data_long/ln_weight_in.h"
-#include "data_long/ln_weight.h"
-#include "data_long/k_cache.h"
-#include "data_long/v_cache.h"
+#include "data_short/q_weights.h"
+#include "data_short/k_weights.h"
+#include "data_short/v_weights.h"
+#include "data_short/o_weights.h"
+#include "data_short/ln_weight_in.h"
+#include "data_short/ln_weight.h"
+#include "data_short/k_cache.h"
+#include "data_short/v_cache.h"
 
 //----------------------------------------------------------
 // dut
@@ -80,10 +80,10 @@ template <
   const attn_fixed_t v_scale,
   const uint8_t o_weights[HS_COLS/4][PROJ_COLS],
   const attn_fixed_t o_scale,
-  const float k_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
-  const float v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
-  const float ln_weight_in[HS_COLS],
-  const float ln_weight[PROJ_COLS],
+  const attn_fixed_t k_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
+  const attn_fixed_t v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
+  const attn_fixed_t ln_weight_in[HS_COLS],
+  const attn_fixed_t ln_weight[PROJ_COLS],
   const attn_fixed_t p_id
 ) {
 

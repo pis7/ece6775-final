@@ -1,7 +1,7 @@
 #include "../typedefs.h"
 #include <stdint.h>
 
-const fixed32_t q_scale = 19.167518615723;
+const attn_fixed_t q_scale = 19.167518615723;
 
 const uint8_t q_weights[4][16] = {
     {130, 25, 69, 168, 25, 10, 149, 20, 21, 144, 9, 98, 138, 146, 81, 106},

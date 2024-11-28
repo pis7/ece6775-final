@@ -58,7 +58,7 @@ cp $VERILOG_DIR/* $WORKDIR/xillybus/src/fpga-design
 # run vivado
 printf "Running vivado\n"
 pushd $WORKDIR/xillybus
-vivado -mode batch -source ./zedboard_project/xillydemo-vivado.tcl
+vivado -mode batch -source ./xillydemo-vivado.tcl
 rm -f *.backup.log *.jou
 popd
 

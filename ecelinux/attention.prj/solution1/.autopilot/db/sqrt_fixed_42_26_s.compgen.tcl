@@ -18,7 +18,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_x_V \
     op interface \
-    ports { x_V { I 30 vector } } \
+    ports { x_V { I 37 vector } } \
 } "
 }
 
