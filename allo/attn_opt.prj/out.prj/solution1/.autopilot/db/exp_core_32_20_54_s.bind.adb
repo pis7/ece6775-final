@@ -1431,7 +1431,7 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>p_Result_s_85</name>
+						<name>p_Result_s_83</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1311</lineNumber>
@@ -2965,7 +2965,7 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>tmp_6</name>
+						<name>tmp_5</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1383</lineNumber>
@@ -3408,7 +3408,7 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>tmp_16</name>
+						<name>tmp_110</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1393</lineNumber>
@@ -3459,7 +3459,7 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>tmp_17</name>
+						<name>tmp_111</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1394</lineNumber>
@@ -7287,7 +7287,7 @@
 					<Obj>
 						<type>0</type>
 						<id>158</id>
-						<name>add_ln703_9</name>
+						<name>add_ln703_1541</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1508</lineNumber>
@@ -7336,7 +7336,7 @@
 					<Obj>
 						<type>0</type>
 						<id>159</id>
-						<name>add_ln703_10</name>
+						<name>add_ln703_1542</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1508</lineNumber>
@@ -7782,7 +7782,7 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>tmp_18</name>
+						<name>tmp_112</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1525</lineNumber>
@@ -15198,19 +15198,19 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln703_10_fu_1170</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>159</item>
-			</second>
-		</item>
-		<item>
-			<first>add_ln703_9_fu_1132</first>
+			<first>add_ln703_1541_fu_1132</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>158</item>
+			</second>
+		</item>
+		<item>
+			<first>add_ln703_1542_fu_1170</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>159</item>
 			</second>
 		</item>
 		<item>
@@ -15750,7 +15750,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_Result_s_85_fu_434</first>
+			<first>p_Result_s_83_fu_434</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -15894,7 +15894,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_16_fu_835</first>
+			<first>tmp_110_fu_835</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -15902,7 +15902,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_17_fu_651</first>
+			<first>tmp_111_fu_651</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -15910,7 +15910,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_18_fu_1198</first>
+			<first>tmp_112_fu_1198</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -15918,7 +15918,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_6_fu_631</first>
+			<first>tmp_5_fu_631</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16946,7 +16946,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_16_reg_1280</first>
+			<first>tmp_110_reg_1280</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16954,7 +16954,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_17_reg_1259</first>
+			<first>tmp_111_reg_1259</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -16962,7 +16962,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_6_reg_1249</first>
+			<first>tmp_5_reg_1249</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

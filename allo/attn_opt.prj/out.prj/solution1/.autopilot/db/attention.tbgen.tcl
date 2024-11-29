@@ -15,13 +15,13 @@ set C_modelName {attention}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ v252_V int 32 regular {array 1536 { 1 3 } 1 1 }  }
-	{ v253 int 8 regular {array 589824 { 1 3 } 1 1 }  }
+	{ v253 int 8 regular {array 589824 { 1 1 } 1 1 }  }
 	{ v254_V int 32 regular  }
-	{ v255 int 8 regular {array 589824 { 1 3 } 1 1 }  }
+	{ v255 int 8 regular {array 589824 { 1 1 } 1 1 }  }
 	{ v256_V int 32 regular  }
-	{ v257 int 8 regular {array 589824 { 1 3 } 1 1 }  }
+	{ v257 int 8 regular {array 589824 { 1 1 } 1 1 }  }
 	{ v258_V int 32 regular  }
-	{ v259 int 8 regular {array 589824 { 1 3 } 1 1 }  }
+	{ v259 int 8 regular {array 589824 { 1 1 } 1 1 }  }
 	{ v260_V int 32 regular  }
 	{ v261_V int 32 regular {array 960 { 1 3 } 1 1 }  }
 	{ v262_V int 32 regular {array 960 { 1 3 } 1 1 }  }
@@ -51,7 +51,7 @@ set C_modelArgMapList {[
  	{ "Name" : "v267", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "v267","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "v268_V", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "v268.V","cData": "int32","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 1},{"low" : 0,"up" : 1535,"step" : 1}]}]}]} ]}
 # RTL Port declarations: 
-set portNum 48
+set portNum 60
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -65,18 +65,30 @@ set portList {
 	{ v253_address0 sc_out sc_lv 20 signal 1 } 
 	{ v253_ce0 sc_out sc_logic 1 signal 1 } 
 	{ v253_q0 sc_in sc_lv 8 signal 1 } 
+	{ v253_address1 sc_out sc_lv 20 signal 1 } 
+	{ v253_ce1 sc_out sc_logic 1 signal 1 } 
+	{ v253_q1 sc_in sc_lv 8 signal 1 } 
 	{ v254_V sc_in sc_lv 32 signal 2 } 
 	{ v255_address0 sc_out sc_lv 20 signal 3 } 
 	{ v255_ce0 sc_out sc_logic 1 signal 3 } 
 	{ v255_q0 sc_in sc_lv 8 signal 3 } 
+	{ v255_address1 sc_out sc_lv 20 signal 3 } 
+	{ v255_ce1 sc_out sc_logic 1 signal 3 } 
+	{ v255_q1 sc_in sc_lv 8 signal 3 } 
 	{ v256_V sc_in sc_lv 32 signal 4 } 
 	{ v257_address0 sc_out sc_lv 20 signal 5 } 
 	{ v257_ce0 sc_out sc_logic 1 signal 5 } 
 	{ v257_q0 sc_in sc_lv 8 signal 5 } 
+	{ v257_address1 sc_out sc_lv 20 signal 5 } 
+	{ v257_ce1 sc_out sc_logic 1 signal 5 } 
+	{ v257_q1 sc_in sc_lv 8 signal 5 } 
 	{ v258_V sc_in sc_lv 32 signal 6 } 
 	{ v259_address0 sc_out sc_lv 20 signal 7 } 
 	{ v259_ce0 sc_out sc_logic 1 signal 7 } 
 	{ v259_q0 sc_in sc_lv 8 signal 7 } 
+	{ v259_address1 sc_out sc_lv 20 signal 7 } 
+	{ v259_ce1 sc_out sc_logic 1 signal 7 } 
+	{ v259_q1 sc_in sc_lv 8 signal 7 } 
 	{ v260_V sc_in sc_lv 32 signal 8 } 
 	{ v261_V_address0 sc_out sc_lv 10 signal 9 } 
 	{ v261_V_ce0 sc_out sc_logic 1 signal 9 } 
@@ -115,18 +127,30 @@ set NewPortList {[
  	{ "name": "v253_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":20, "type": "signal", "bundle":{"name": "v253", "role": "address0" }} , 
  	{ "name": "v253_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v253", "role": "ce0" }} , 
  	{ "name": "v253_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "v253", "role": "q0" }} , 
+ 	{ "name": "v253_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":20, "type": "signal", "bundle":{"name": "v253", "role": "address1" }} , 
+ 	{ "name": "v253_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v253", "role": "ce1" }} , 
+ 	{ "name": "v253_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "v253", "role": "q1" }} , 
  	{ "name": "v254_V", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v254_V", "role": "default" }} , 
  	{ "name": "v255_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":20, "type": "signal", "bundle":{"name": "v255", "role": "address0" }} , 
  	{ "name": "v255_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v255", "role": "ce0" }} , 
  	{ "name": "v255_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "v255", "role": "q0" }} , 
+ 	{ "name": "v255_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":20, "type": "signal", "bundle":{"name": "v255", "role": "address1" }} , 
+ 	{ "name": "v255_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v255", "role": "ce1" }} , 
+ 	{ "name": "v255_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "v255", "role": "q1" }} , 
  	{ "name": "v256_V", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v256_V", "role": "default" }} , 
  	{ "name": "v257_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":20, "type": "signal", "bundle":{"name": "v257", "role": "address0" }} , 
  	{ "name": "v257_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v257", "role": "ce0" }} , 
  	{ "name": "v257_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "v257", "role": "q0" }} , 
+ 	{ "name": "v257_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":20, "type": "signal", "bundle":{"name": "v257", "role": "address1" }} , 
+ 	{ "name": "v257_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v257", "role": "ce1" }} , 
+ 	{ "name": "v257_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "v257", "role": "q1" }} , 
  	{ "name": "v258_V", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v258_V", "role": "default" }} , 
  	{ "name": "v259_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":20, "type": "signal", "bundle":{"name": "v259", "role": "address0" }} , 
  	{ "name": "v259_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v259", "role": "ce0" }} , 
  	{ "name": "v259_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "v259", "role": "q0" }} , 
+ 	{ "name": "v259_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":20, "type": "signal", "bundle":{"name": "v259", "role": "address1" }} , 
+ 	{ "name": "v259_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v259", "role": "ce1" }} , 
+ 	{ "name": "v259_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "v259", "role": "q1" }} , 
  	{ "name": "v260_V", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v260_V", "role": "default" }} , 
  	{ "name": "v261_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "v261_V", "role": "address0" }} , 
  	{ "name": "v261_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v261_V", "role": "ce0" }} , 
@@ -153,13 +177,13 @@ set NewPortList {[
  	{ "name": "v268_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v268_V", "role": "d0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "52", "77", "82", "84", "86", "87", "88", "89", "90", "91"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "28", "54", "79", "84", "86", "87", "88", "89", "90", "91"],
 		"CDFG" : "attention",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2916585", "EstimateLatencyMax" : "2925013",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1423801", "EstimateLatencyMax" : "1432229",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -167,14 +191,14 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"WaitState" : [
-			{"State" : "ap_ST_fsm_state3", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_rms_norm_fu_778"},
-			{"State" : "ap_ST_fsm_state51", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_rms_norm_fu_778"},
-			{"State" : "ap_ST_fsm_state42", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_softmax_fu_808"},
-			{"State" : "ap_ST_fsm_state20", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_apply_rotary_pos_emb_fu_834"},
-			{"State" : "ap_ST_fsm_state9", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_linear_forward_no_mu_fu_848"},
-			{"State" : "ap_ST_fsm_state11", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_linear_forward_no_mu_fu_848"},
-			{"State" : "ap_ST_fsm_state13", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_linear_forward_no_mu_fu_848"},
-			{"State" : "ap_ST_fsm_state55", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_linear_forward_no_mu_fu_848"},
+			{"State" : "ap_ST_fsm_state9", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_linear_forward_no_mu_fu_778"},
+			{"State" : "ap_ST_fsm_state11", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_linear_forward_no_mu_fu_778"},
+			{"State" : "ap_ST_fsm_state13", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_linear_forward_no_mu_fu_778"},
+			{"State" : "ap_ST_fsm_state55", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_linear_forward_no_mu_fu_778"},
+			{"State" : "ap_ST_fsm_state3", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_rms_norm_fu_803"},
+			{"State" : "ap_ST_fsm_state51", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_rms_norm_fu_803"},
+			{"State" : "ap_ST_fsm_state42", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_softmax_fu_833"},
+			{"State" : "ap_ST_fsm_state20", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_apply_rotary_pos_emb_fu_859"},
 			{"State" : "ap_ST_fsm_state5", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_quantize_activation_fu_873"},
 			{"State" : "ap_ST_fsm_state53", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_quantize_activation_fu_873"},
 			{"State" : "ap_ST_fsm_state27", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_cache_update_fu_890"},
@@ -188,35 +212,35 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "v252_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "v0_V"}]},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "v0_V"}]},
 			{"Name" : "v253", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v79"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v79"}]},
 			{"Name" : "v254_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "v255", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v79"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v79"}]},
 			{"Name" : "v256_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "v257", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v79"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v79"}]},
 			{"Name" : "v258_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "v259", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v79"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v79"}]},
 			{"Name" : "v260_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "v261_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "77", "SubInstance" : "grp_apply_rotary_pos_emb_fu_834", "Port" : "v151_V"}]},
+					{"ID" : "79", "SubInstance" : "grp_apply_rotary_pos_emb_fu_859", "Port" : "v151_V"}]},
 			{"Name" : "v262_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "77", "SubInstance" : "grp_apply_rotary_pos_emb_fu_834", "Port" : "v152_V"}]},
+					{"ID" : "79", "SubInstance" : "grp_apply_rotary_pos_emb_fu_859", "Port" : "v152_V"}]},
 			{"Name" : "v263_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "v1_V"}]},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "v1_V"}]},
 			{"Name" : "v264_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "v1_V"}]},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "v1_V"}]},
 			{"Name" : "v265_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "86", "SubInstance" : "grp_cache_update_fu_890", "Port" : "v181_V"}]},
@@ -226,95 +250,95 @@ set RtlHierarchyInfo {[
 			{"Name" : "v267", "Type" : "None", "Direction" : "I"},
 			{"Name" : "v268_V", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v81_V"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v81_V"}]},
 			{"Name" : "log_apfixed_reduce_6", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "52", "SubInstance" : "grp_softmax_fu_808", "Port" : "log_apfixed_reduce_6"},
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "log_apfixed_reduce_6"}]},
+					{"ID" : "54", "SubInstance" : "grp_softmax_fu_833", "Port" : "log_apfixed_reduce_6"},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "log_apfixed_reduce_6"}]},
 			{"Name" : "log_apfixed_reduce_5", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "52", "SubInstance" : "grp_softmax_fu_808", "Port" : "log_apfixed_reduce_5"},
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "log_apfixed_reduce_5"}]},
+					{"ID" : "54", "SubInstance" : "grp_softmax_fu_833", "Port" : "log_apfixed_reduce_5"},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "log_apfixed_reduce_5"}]},
 			{"Name" : "log_apfixed_reduce_9", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "52", "SubInstance" : "grp_softmax_fu_808", "Port" : "log_apfixed_reduce_9"},
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "log_apfixed_reduce_9"}]},
+					{"ID" : "54", "SubInstance" : "grp_softmax_fu_833", "Port" : "log_apfixed_reduce_9"},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "log_apfixed_reduce_9"}]},
 			{"Name" : "log_apfixed_reduce_s", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "52", "SubInstance" : "grp_softmax_fu_808", "Port" : "log_apfixed_reduce_s"},
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "log_apfixed_reduce_s"}]},
+					{"ID" : "54", "SubInstance" : "grp_softmax_fu_833", "Port" : "log_apfixed_reduce_s"},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "log_apfixed_reduce_s"}]},
 			{"Name" : "log_apfixed_reduce_7", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "52", "SubInstance" : "grp_softmax_fu_808", "Port" : "log_apfixed_reduce_7"},
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "log_apfixed_reduce_7"}]},
+					{"ID" : "54", "SubInstance" : "grp_softmax_fu_833", "Port" : "log_apfixed_reduce_7"},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "log_apfixed_reduce_7"}]},
 			{"Name" : "log_apfixed_reduce_8", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "52", "SubInstance" : "grp_softmax_fu_808", "Port" : "log_apfixed_reduce_8"},
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "log_apfixed_reduce_8"}]},
+					{"ID" : "54", "SubInstance" : "grp_softmax_fu_833", "Port" : "log_apfixed_reduce_8"},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "log_apfixed_reduce_8"}]},
 			{"Name" : "f_x_msb_4_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "52", "SubInstance" : "grp_softmax_fu_808", "Port" : "f_x_msb_4_table_V"},
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "f_x_msb_4_table_V"}]},
+					{"ID" : "54", "SubInstance" : "grp_softmax_fu_833", "Port" : "f_x_msb_4_table_V"},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "f_x_msb_4_table_V"}]},
 			{"Name" : "f_x_msb_3_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "52", "SubInstance" : "grp_softmax_fu_808", "Port" : "f_x_msb_3_table_V"},
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "f_x_msb_3_table_V"}]},
+					{"ID" : "54", "SubInstance" : "grp_softmax_fu_833", "Port" : "f_x_msb_3_table_V"},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "f_x_msb_3_table_V"}]},
 			{"Name" : "f_x_msb_2_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "52", "SubInstance" : "grp_softmax_fu_808", "Port" : "f_x_msb_2_table_V"},
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "f_x_msb_2_table_V"}]},
+					{"ID" : "54", "SubInstance" : "grp_softmax_fu_833", "Port" : "f_x_msb_2_table_V"},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "f_x_msb_2_table_V"}]},
 			{"Name" : "exp_x_msb_1_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "52", "SubInstance" : "grp_softmax_fu_808", "Port" : "exp_x_msb_1_table_V"},
-					{"ID" : "26", "SubInstance" : "grp_rms_norm_fu_778", "Port" : "exp_x_msb_1_table_V"}]},
+					{"ID" : "54", "SubInstance" : "grp_softmax_fu_833", "Port" : "exp_x_msb_1_table_V"},
+					{"ID" : "28", "SubInstance" : "grp_rms_norm_fu_803", "Port" : "exp_x_msb_1_table_V"}]},
 			{"Name" : "quantized_hidden_sta_3", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_0_0"},
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v77_0_0"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v77_0_0"},
+					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_0_0"}]},
 			{"Name" : "quantized_hidden_sta_2", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_1_0"},
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v77_1_0"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v77_1_0"},
+					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_1_0"}]},
 			{"Name" : "quantized_hidden_sta_1", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_2_0"},
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v77_2_0"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v77_2_0"},
+					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_2_0"}]},
 			{"Name" : "quantized_hidden_sta", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_3_0"},
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v77_3_0"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v77_3_0"},
+					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_3_0"}]},
 			{"Name" : "q_proj_V_0", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "90", "SubInstance" : "grp_reshape_2D_to_3D_fu_922", "Port" : "v136_0_V"},
-					{"ID" : "77", "SubInstance" : "grp_apply_rotary_pos_emb_fu_834", "Port" : "q_proj_V_0"}]},
+					{"ID" : "79", "SubInstance" : "grp_apply_rotary_pos_emb_fu_859", "Port" : "q_proj_V_0"}]},
 			{"Name" : "k_proj_V_0", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "90", "SubInstance" : "grp_reshape_2D_to_3D_fu_922", "Port" : "v136_0_V"},
-					{"ID" : "77", "SubInstance" : "grp_apply_rotary_pos_emb_fu_834", "Port" : "k_proj_V_0"}]},
+					{"ID" : "79", "SubInstance" : "grp_apply_rotary_pos_emb_fu_859", "Port" : "k_proj_V_0"}]},
 			{"Name" : "v_proj_V_0", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "86", "SubInstance" : "grp_cache_update_fu_890", "Port" : "v182_0_V"},
-					{"ID" : "90", "SubInstance" : "grp_reshape_2D_to_3D_fu_922", "Port" : "v136_0_V"}]},
+					{"ID" : "90", "SubInstance" : "grp_reshape_2D_to_3D_fu_922", "Port" : "v136_0_V"},
+					{"ID" : "86", "SubInstance" : "grp_cache_update_fu_890", "Port" : "v182_0_V"}]},
 			{"Name" : "k_proj_transposed_V", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "87", "SubInstance" : "grp_GEMM_3D_float_fu_900", "Port" : "k_proj_transposed_V"},
 					{"ID" : "89", "SubInstance" : "grp_transpose_last_two_d_fu_915", "Port" : "v193_V"}]},
 			{"Name" : "quantized_final_outp_3", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_0_0"},
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v77_0_0"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v77_0_0"},
+					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_0_0"}]},
 			{"Name" : "quantized_final_outp_2", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_1_0"},
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v77_1_0"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v77_1_0"},
+					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_1_0"}]},
 			{"Name" : "quantized_final_outp_1", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_2_0"},
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v77_2_0"}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v77_2_0"},
+					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_2_0"}]},
 			{"Name" : "quantized_final_outp", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_3_0"},
-					{"ID" : "82", "SubInstance" : "grp_linear_forward_no_mu_fu_848", "Port" : "v77_3_0"}]}]},
+					{"ID" : "26", "SubInstance" : "grp_linear_forward_no_mu_fu_778", "Port" : "v77_3_0"},
+					{"ID" : "84", "SubInstance" : "grp_quantize_activation_fu_873", "Port" : "v24_3_0"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.quantized_hidden_sta_3_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.quantized_hidden_sta_2_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.quantized_hidden_sta_1_U", "Parent" : "0"},
@@ -340,7 +364,30 @@ set RtlHierarchyInfo {[
 	{"ID" : "23", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.attn_output_0_V_U", "Parent" : "0"},
 	{"ID" : "24", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.attn_output_2D_V_U", "Parent" : "0"},
 	{"ID" : "25", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.rms_attn_output_0_V_U", "Parent" : "0"},
-	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778", "Parent" : "0", "Child" : ["27", "50", "51"],
+	{"ID" : "26", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_linear_forward_no_mu_fu_778", "Parent" : "0", "Child" : ["27"],
+		"CDFG" : "linear_forward_no_mu",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "294965", "EstimateLatencyMax" : "294965",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "v77_0_0", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "v77_1_0", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "v77_2_0", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "v77_3_0", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "v78_0_V_read", "Type" : "None", "Direction" : "I"},
+			{"Name" : "v79", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "v80_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "v81_V", "Type" : "Memory", "Direction" : "O"}]},
+	{"ID" : "27", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_linear_forward_no_mu_fu_778.attention_sdiv_43yd2_U49", "Parent" : "26"},
+	{"ID" : "28", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803", "Parent" : "0", "Child" : ["29", "52", "53"],
 		"CDFG" : "rms_norm",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -361,35 +408,35 @@ set RtlHierarchyInfo {[
 			{"Name" : "v3_0_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "log_apfixed_reduce_6", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_6"}]},
+					{"ID" : "29", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_6"}]},
 			{"Name" : "log_apfixed_reduce_5", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_5"}]},
+					{"ID" : "29", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_5"}]},
 			{"Name" : "log_apfixed_reduce_9", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_9"}]},
+					{"ID" : "29", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_9"}]},
 			{"Name" : "log_apfixed_reduce_s", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_s"}]},
+					{"ID" : "29", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_s"}]},
 			{"Name" : "log_apfixed_reduce_7", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_7"}]},
+					{"ID" : "29", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_7"}]},
 			{"Name" : "log_apfixed_reduce_8", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_8"}]},
+					{"ID" : "29", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "log_apfixed_reduce_8"}]},
 			{"Name" : "f_x_msb_4_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "f_x_msb_4_table_V"}]},
+					{"ID" : "29", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "f_x_msb_4_table_V"}]},
 			{"Name" : "f_x_msb_3_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "f_x_msb_3_table_V"}]},
+					{"ID" : "29", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "f_x_msb_3_table_V"}]},
 			{"Name" : "f_x_msb_2_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "f_x_msb_2_table_V"}]},
+					{"ID" : "29", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "f_x_msb_2_table_V"}]},
 			{"Name" : "exp_x_msb_1_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "27", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "exp_x_msb_1_table_V"}]}]},
-	{"ID" : "27", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163", "Parent" : "26", "Child" : ["28", "41", "49"],
+					{"ID" : "29", "SubInstance" : "grp_pow_32_20_s_fu_163", "Port" : "exp_x_msb_1_table_V"}]}]},
+	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163", "Parent" : "28", "Child" : ["30", "43", "51"],
 		"CDFG" : "pow_32_20_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -407,35 +454,35 @@ set RtlHierarchyInfo {[
 			{"Name" : "y_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "log_apfixed_reduce_6", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "28", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_6"}]},
+					{"ID" : "30", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_6"}]},
 			{"Name" : "log_apfixed_reduce_5", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "28", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_5"}]},
+					{"ID" : "30", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_5"}]},
 			{"Name" : "log_apfixed_reduce_9", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "28", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_9"}]},
+					{"ID" : "30", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_9"}]},
 			{"Name" : "log_apfixed_reduce_s", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "28", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_s"}]},
+					{"ID" : "30", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_s"}]},
 			{"Name" : "log_apfixed_reduce_7", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "28", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_7"}]},
+					{"ID" : "30", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_7"}]},
 			{"Name" : "log_apfixed_reduce_8", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "28", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_8"}]},
+					{"ID" : "30", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_8"}]},
 			{"Name" : "f_x_msb_4_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "41", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_4_table_V"}]},
+					{"ID" : "43", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_4_table_V"}]},
 			{"Name" : "f_x_msb_3_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "41", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_3_table_V"}]},
+					{"ID" : "43", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_3_table_V"}]},
 			{"Name" : "f_x_msb_2_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "41", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_2_table_V"}]},
+					{"ID" : "43", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_2_table_V"}]},
 			{"Name" : "exp_x_msb_1_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "41", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "exp_x_msb_1_table_V"}]}]},
-	{"ID" : "28", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232", "Parent" : "27", "Child" : ["29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"],
+					{"ID" : "43", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "exp_x_msb_1_table_V"}]}]},
+	{"ID" : "30", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232", "Parent" : "29", "Child" : ["31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42"],
 		"CDFG" : "log_75_21_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -456,19 +503,19 @@ set RtlHierarchyInfo {[
 			{"Name" : "log_apfixed_reduce_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "log_apfixed_reduce_7", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "log_apfixed_reduce_8", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "29", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_6_U", "Parent" : "28"},
-	{"ID" : "30", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_5_U", "Parent" : "28"},
-	{"ID" : "31", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_9_U", "Parent" : "28"},
-	{"ID" : "32", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_s_U", "Parent" : "28"},
-	{"ID" : "33", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_7_U", "Parent" : "28"},
-	{"ID" : "34", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_8_U", "Parent" : "28"},
-	{"ID" : "35", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_85nhbi_U1", "Parent" : "28"},
-	{"ID" : "36", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_68nibs_U2", "Parent" : "28"},
-	{"ID" : "37", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_60njbC_U3", "Parent" : "28"},
-	{"ID" : "38", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_55nkbM_U4", "Parent" : "28"},
-	{"ID" : "39", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_7s_lbW_U5", "Parent" : "28"},
-	{"ID" : "40", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_50nmb6_U6", "Parent" : "28"},
-	{"ID" : "41", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249", "Parent" : "27", "Child" : ["42", "43", "44", "45", "46", "47", "48"],
+	{"ID" : "31", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_6_U", "Parent" : "30"},
+	{"ID" : "32", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_5_U", "Parent" : "30"},
+	{"ID" : "33", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_9_U", "Parent" : "30"},
+	{"ID" : "34", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_s_U", "Parent" : "30"},
+	{"ID" : "35", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_7_U", "Parent" : "30"},
+	{"ID" : "36", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.log_apfixed_reduce_8_U", "Parent" : "30"},
+	{"ID" : "37", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_85nhbi_U1", "Parent" : "30"},
+	{"ID" : "38", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_68nibs_U2", "Parent" : "30"},
+	{"ID" : "39", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_60njbC_U3", "Parent" : "30"},
+	{"ID" : "40", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_55nkbM_U4", "Parent" : "30"},
+	{"ID" : "41", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_7s_lbW_U5", "Parent" : "30"},
+	{"ID" : "42", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_log_75_21_s_fu_232.attention_mul_50nmb6_U6", "Parent" : "30"},
+	{"ID" : "43", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249", "Parent" : "29", "Child" : ["44", "45", "46", "47", "48", "49", "50"],
 		"CDFG" : "exp_core_32_20_54_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -487,17 +534,17 @@ set RtlHierarchyInfo {[
 			{"Name" : "f_x_msb_3_table_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "f_x_msb_2_table_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "exp_x_msb_1_table_V", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "42", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.f_x_msb_4_table_V_U", "Parent" : "41"},
-	{"ID" : "43", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.f_x_msb_3_table_V_U", "Parent" : "41"},
-	{"ID" : "44", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.f_x_msb_2_table_V_U", "Parent" : "41"},
-	{"ID" : "45", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.exp_x_msb_1_table_V_U", "Parent" : "41"},
-	{"ID" : "46", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.attention_mul_36nrcU_U20", "Parent" : "41"},
-	{"ID" : "47", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.attention_mul_48nsc4_U21", "Parent" : "41"},
-	{"ID" : "48", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.attention_mul_50ntde_U22", "Parent" : "41"},
-	{"ID" : "49", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.grp_pow_32_20_s_fu_163.attention_mul_60sudo_U31", "Parent" : "27"},
-	{"ID" : "50", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.attention_mul_46nvdy_U35", "Parent" : "26"},
-	{"ID" : "51", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_778.attention_sdiv_27wdI_U36", "Parent" : "26"},
-	{"ID" : "52", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808", "Parent" : "0", "Child" : ["53", "76"],
+	{"ID" : "44", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.f_x_msb_4_table_V_U", "Parent" : "43"},
+	{"ID" : "45", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.f_x_msb_3_table_V_U", "Parent" : "43"},
+	{"ID" : "46", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.f_x_msb_2_table_V_U", "Parent" : "43"},
+	{"ID" : "47", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.exp_x_msb_1_table_V_U", "Parent" : "43"},
+	{"ID" : "48", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.attention_mul_36nrcU_U20", "Parent" : "43"},
+	{"ID" : "49", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.attention_mul_48nsc4_U21", "Parent" : "43"},
+	{"ID" : "50", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.grp_exp_core_32_20_54_s_fu_249.attention_mul_50ntde_U22", "Parent" : "43"},
+	{"ID" : "51", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.grp_pow_32_20_s_fu_163.attention_mul_60sudo_U31", "Parent" : "29"},
+	{"ID" : "52", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.attention_mul_46nvdy_U35", "Parent" : "28"},
+	{"ID" : "53", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_rms_norm_fu_803.attention_sdiv_27wdI_U36", "Parent" : "28"},
+	{"ID" : "54", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833", "Parent" : "0", "Child" : ["55", "78"],
 		"CDFG" : "softmax",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -517,35 +564,35 @@ set RtlHierarchyInfo {[
 			{"Name" : "v214_0_V", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "log_apfixed_reduce_6", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "53", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_6"}]},
+					{"ID" : "55", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_6"}]},
 			{"Name" : "log_apfixed_reduce_5", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "53", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_5"}]},
+					{"ID" : "55", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_5"}]},
 			{"Name" : "log_apfixed_reduce_9", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "53", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_9"}]},
+					{"ID" : "55", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_9"}]},
 			{"Name" : "log_apfixed_reduce_s", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "53", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_s"}]},
+					{"ID" : "55", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_s"}]},
 			{"Name" : "log_apfixed_reduce_7", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "53", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_7"}]},
+					{"ID" : "55", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_7"}]},
 			{"Name" : "log_apfixed_reduce_8", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "53", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_8"}]},
+					{"ID" : "55", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "log_apfixed_reduce_8"}]},
 			{"Name" : "f_x_msb_4_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "53", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "f_x_msb_4_table_V"}]},
+					{"ID" : "55", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "f_x_msb_4_table_V"}]},
 			{"Name" : "f_x_msb_3_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "53", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "f_x_msb_3_table_V"}]},
+					{"ID" : "55", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "f_x_msb_3_table_V"}]},
 			{"Name" : "f_x_msb_2_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "53", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "f_x_msb_2_table_V"}]},
+					{"ID" : "55", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "f_x_msb_2_table_V"}]},
 			{"Name" : "exp_x_msb_1_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "53", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "exp_x_msb_1_table_V"}]}]},
-	{"ID" : "53", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223", "Parent" : "52", "Child" : ["54", "67", "75"],
+					{"ID" : "55", "SubInstance" : "grp_pow_32_20_s_fu_223", "Port" : "exp_x_msb_1_table_V"}]}]},
+	{"ID" : "55", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223", "Parent" : "54", "Child" : ["56", "69", "77"],
 		"CDFG" : "pow_32_20_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -563,35 +610,35 @@ set RtlHierarchyInfo {[
 			{"Name" : "y_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "log_apfixed_reduce_6", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "54", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_6"}]},
+					{"ID" : "56", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_6"}]},
 			{"Name" : "log_apfixed_reduce_5", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "54", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_5"}]},
+					{"ID" : "56", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_5"}]},
 			{"Name" : "log_apfixed_reduce_9", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "54", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_9"}]},
+					{"ID" : "56", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_9"}]},
 			{"Name" : "log_apfixed_reduce_s", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "54", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_s"}]},
+					{"ID" : "56", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_s"}]},
 			{"Name" : "log_apfixed_reduce_7", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "54", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_7"}]},
+					{"ID" : "56", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_7"}]},
 			{"Name" : "log_apfixed_reduce_8", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "54", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_8"}]},
+					{"ID" : "56", "SubInstance" : "grp_log_75_21_s_fu_232", "Port" : "log_apfixed_reduce_8"}]},
 			{"Name" : "f_x_msb_4_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "67", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_4_table_V"}]},
+					{"ID" : "69", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_4_table_V"}]},
 			{"Name" : "f_x_msb_3_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "67", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_3_table_V"}]},
+					{"ID" : "69", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_3_table_V"}]},
 			{"Name" : "f_x_msb_2_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "67", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_2_table_V"}]},
+					{"ID" : "69", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "f_x_msb_2_table_V"}]},
 			{"Name" : "exp_x_msb_1_table_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "67", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "exp_x_msb_1_table_V"}]}]},
-	{"ID" : "54", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232", "Parent" : "53", "Child" : ["55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66"],
+					{"ID" : "69", "SubInstance" : "grp_exp_core_32_20_54_s_fu_249", "Port" : "exp_x_msb_1_table_V"}]}]},
+	{"ID" : "56", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232", "Parent" : "55", "Child" : ["57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68"],
 		"CDFG" : "log_75_21_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -612,19 +659,19 @@ set RtlHierarchyInfo {[
 			{"Name" : "log_apfixed_reduce_s", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "log_apfixed_reduce_7", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "log_apfixed_reduce_8", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "55", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_6_U", "Parent" : "54"},
-	{"ID" : "56", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_5_U", "Parent" : "54"},
-	{"ID" : "57", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_9_U", "Parent" : "54"},
-	{"ID" : "58", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_s_U", "Parent" : "54"},
-	{"ID" : "59", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_7_U", "Parent" : "54"},
-	{"ID" : "60", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_8_U", "Parent" : "54"},
-	{"ID" : "61", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_85nhbi_U1", "Parent" : "54"},
-	{"ID" : "62", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_68nibs_U2", "Parent" : "54"},
-	{"ID" : "63", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_60njbC_U3", "Parent" : "54"},
-	{"ID" : "64", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_55nkbM_U4", "Parent" : "54"},
-	{"ID" : "65", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_7s_lbW_U5", "Parent" : "54"},
-	{"ID" : "66", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_50nmb6_U6", "Parent" : "54"},
-	{"ID" : "67", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249", "Parent" : "53", "Child" : ["68", "69", "70", "71", "72", "73", "74"],
+	{"ID" : "57", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_6_U", "Parent" : "56"},
+	{"ID" : "58", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_5_U", "Parent" : "56"},
+	{"ID" : "59", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_9_U", "Parent" : "56"},
+	{"ID" : "60", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_s_U", "Parent" : "56"},
+	{"ID" : "61", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_7_U", "Parent" : "56"},
+	{"ID" : "62", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.log_apfixed_reduce_8_U", "Parent" : "56"},
+	{"ID" : "63", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_85nhbi_U1", "Parent" : "56"},
+	{"ID" : "64", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_68nibs_U2", "Parent" : "56"},
+	{"ID" : "65", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_60njbC_U3", "Parent" : "56"},
+	{"ID" : "66", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_55nkbM_U4", "Parent" : "56"},
+	{"ID" : "67", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_7s_lbW_U5", "Parent" : "56"},
+	{"ID" : "68", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_log_75_21_s_fu_232.attention_mul_50nmb6_U6", "Parent" : "56"},
+	{"ID" : "69", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249", "Parent" : "55", "Child" : ["70", "71", "72", "73", "74", "75", "76"],
 		"CDFG" : "exp_core_32_20_54_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -643,16 +690,16 @@ set RtlHierarchyInfo {[
 			{"Name" : "f_x_msb_3_table_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "f_x_msb_2_table_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "exp_x_msb_1_table_V", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "68", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.f_x_msb_4_table_V_U", "Parent" : "67"},
-	{"ID" : "69", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.f_x_msb_3_table_V_U", "Parent" : "67"},
-	{"ID" : "70", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.f_x_msb_2_table_V_U", "Parent" : "67"},
-	{"ID" : "71", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.exp_x_msb_1_table_V_U", "Parent" : "67"},
-	{"ID" : "72", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.attention_mul_36nrcU_U20", "Parent" : "67"},
-	{"ID" : "73", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.attention_mul_48nsc4_U21", "Parent" : "67"},
-	{"ID" : "74", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.attention_mul_50ntde_U22", "Parent" : "67"},
-	{"ID" : "75", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.grp_pow_32_20_s_fu_223.attention_mul_60sudo_U31", "Parent" : "53"},
-	{"ID" : "76", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_808.attention_sdiv_44Bew_U78", "Parent" : "52"},
-	{"ID" : "77", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_apply_rotary_pos_emb_fu_834", "Parent" : "0", "Child" : ["78", "79", "80", "81"],
+	{"ID" : "70", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.f_x_msb_4_table_V_U", "Parent" : "69"},
+	{"ID" : "71", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.f_x_msb_3_table_V_U", "Parent" : "69"},
+	{"ID" : "72", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.f_x_msb_2_table_V_U", "Parent" : "69"},
+	{"ID" : "73", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.exp_x_msb_1_table_V_U", "Parent" : "69"},
+	{"ID" : "74", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.attention_mul_36nrcU_U20", "Parent" : "69"},
+	{"ID" : "75", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.attention_mul_48nsc4_U21", "Parent" : "69"},
+	{"ID" : "76", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.grp_exp_core_32_20_54_s_fu_249.attention_mul_50ntde_U22", "Parent" : "69"},
+	{"ID" : "77", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.grp_pow_32_20_s_fu_223.attention_mul_60sudo_U31", "Parent" : "55"},
+	{"ID" : "78", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_softmax_fu_833.attention_sdiv_44Bew_U78", "Parent" : "54"},
+	{"ID" : "79", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_apply_rotary_pos_emb_fu_859", "Parent" : "0", "Child" : ["80", "81", "82", "83"],
 		"CDFG" : "apply_rotary_pos_emb",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -675,13 +722,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "v154_0_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "q_proj_V_0", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "80", "SubInstance" : "grp_rotate_half_fu_254", "Port" : "v141_0_V"}]},
+					{"ID" : "82", "SubInstance" : "grp_rotate_half_fu_254", "Port" : "v141_0_V"}]},
 			{"Name" : "k_proj_V_0", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "81", "SubInstance" : "grp_rotate_half_fu_261", "Port" : "v141_0_V"}]}]},
-	{"ID" : "78", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_apply_rotary_pos_emb_fu_834.rotated_q_0_V_U", "Parent" : "77"},
-	{"ID" : "79", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_apply_rotary_pos_emb_fu_834.rotated_k_0_V_U", "Parent" : "77"},
-	{"ID" : "80", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_apply_rotary_pos_emb_fu_834.grp_rotate_half_fu_254", "Parent" : "77",
+					{"ID" : "83", "SubInstance" : "grp_rotate_half_fu_261", "Port" : "v141_0_V"}]}]},
+	{"ID" : "80", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_apply_rotary_pos_emb_fu_859.rotated_q_0_V_U", "Parent" : "79"},
+	{"ID" : "81", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_apply_rotary_pos_emb_fu_859.rotated_k_0_V_U", "Parent" : "79"},
+	{"ID" : "82", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_apply_rotary_pos_emb_fu_859.grp_rotate_half_fu_254", "Parent" : "79",
 		"CDFG" : "rotate_half",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -697,7 +744,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "v141_0_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "v142_0_V", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "81", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_apply_rotary_pos_emb_fu_834.grp_rotate_half_fu_261", "Parent" : "77",
+	{"ID" : "83", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_apply_rotary_pos_emb_fu_859.grp_rotate_half_fu_261", "Parent" : "79",
 		"CDFG" : "rotate_half",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -713,29 +760,6 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "v141_0_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "v142_0_V", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "82", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_linear_forward_no_mu_fu_848", "Parent" : "0", "Child" : ["83"],
-		"CDFG" : "linear_forward_no_mu",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "668161", "EstimateLatencyMax" : "668161",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "v77_0_0", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "v77_1_0", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "v77_2_0", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "v77_3_0", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "v78_0_V_read", "Type" : "None", "Direction" : "I"},
-			{"Name" : "v79", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "v80_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "v81_V", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "83", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_linear_forward_no_mu_fu_848.attention_sdiv_43yd2_U49", "Parent" : "82"},
 	{"ID" : "84", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_quantize_activation_fu_873", "Parent" : "0", "Child" : ["85"],
 		"CDFG" : "quantize_activation",
 		"Protocol" : "ap_ctrl_hs",
@@ -845,13 +869,13 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	attention {
 		v252_V {Type I LastRead 36 FirstWrite -1}
-		v253 {Type I LastRead 2 FirstWrite -1}
+		v253 {Type I LastRead 193 FirstWrite -1}
 		v254_V {Type I LastRead 0 FirstWrite -1}
-		v255 {Type I LastRead 2 FirstWrite -1}
+		v255 {Type I LastRead 193 FirstWrite -1}
 		v256_V {Type I LastRead 0 FirstWrite -1}
-		v257 {Type I LastRead 2 FirstWrite -1}
+		v257 {Type I LastRead 193 FirstWrite -1}
 		v258_V {Type I LastRead 0 FirstWrite -1}
-		v259 {Type I LastRead 2 FirstWrite -1}
+		v259 {Type I LastRead 193 FirstWrite -1}
 		v260_V {Type I LastRead 0 FirstWrite -1}
 		v261_V {Type I LastRead 5 FirstWrite -1}
 		v262_V {Type I LastRead 5 FirstWrite -1}
@@ -883,6 +907,15 @@ set ArgLastReadFirstWriteLatency {
 		quantized_final_outp_2 {Type IO LastRead -1 FirstWrite -1}
 		quantized_final_outp_1 {Type IO LastRead -1 FirstWrite -1}
 		quantized_final_outp {Type IO LastRead -1 FirstWrite -1}}
+	linear_forward_no_mu {
+		v77_0_0 {Type I LastRead 193 FirstWrite -1}
+		v77_1_0 {Type I LastRead 193 FirstWrite -1}
+		v77_2_0 {Type I LastRead 193 FirstWrite -1}
+		v77_3_0 {Type I LastRead 193 FirstWrite -1}
+		v78_0_V_read {Type I LastRead 0 FirstWrite -1}
+		v79 {Type I LastRead 193 FirstWrite -1}
+		v80_V {Type I LastRead 0 FirstWrite -1}
+		v81_V {Type O LastRead -1 FirstWrite 244}}
 	rms_norm {
 		v0_V {Type I LastRead 36 FirstWrite -1}
 		v1_V {Type I LastRead 36 FirstWrite -1}
@@ -977,15 +1010,6 @@ set ArgLastReadFirstWriteLatency {
 	rotate_half {
 		v141_0_V {Type I LastRead 3 FirstWrite -1}
 		v142_0_V {Type O LastRead -1 FirstWrite 3}}
-	linear_forward_no_mu {
-		v77_0_0 {Type I LastRead 3 FirstWrite -1}
-		v77_1_0 {Type I LastRead 3 FirstWrite -1}
-		v77_2_0 {Type I LastRead 3 FirstWrite -1}
-		v77_3_0 {Type I LastRead 3 FirstWrite -1}
-		v78_0_V_read {Type I LastRead 0 FirstWrite -1}
-		v79 {Type I LastRead 2 FirstWrite -1}
-		v80_V {Type I LastRead 0 FirstWrite -1}
-		v81_V {Type O LastRead -1 FirstWrite 49}}
 	quantize_activation {
 		v22_0_V {Type I LastRead 37 FirstWrite -1}
 		v24_0_0 {Type O LastRead -1 FirstWrite 41}
@@ -1014,8 +1038,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "2916585", "Max" : "2925013"}
-	, {"Name" : "Interval", "Min" : "2916586", "Max" : "2925014"}
+	{"Name" : "Latency", "Min" : "1423801", "Max" : "1432229"}
+	, {"Name" : "Interval", "Min" : "1423802", "Max" : "1432230"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -1023,13 +1047,13 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	v252_V { ap_memory {  { v252_V_address0 mem_address 1 11 }  { v252_V_ce0 mem_ce 1 1 }  { v252_V_q0 mem_dout 0 32 } } }
-	v253 { ap_memory {  { v253_address0 mem_address 1 20 }  { v253_ce0 mem_ce 1 1 }  { v253_q0 mem_dout 0 8 } } }
+	v253 { ap_memory {  { v253_address0 mem_address 1 20 }  { v253_ce0 mem_ce 1 1 }  { v253_q0 mem_dout 0 8 }  { v253_address1 MemPortADDR2 1 20 }  { v253_ce1 MemPortCE2 1 1 }  { v253_q1 MemPortDOUT2 0 8 } } }
 	v254_V { ap_none {  { v254_V in_data 0 32 } } }
-	v255 { ap_memory {  { v255_address0 mem_address 1 20 }  { v255_ce0 mem_ce 1 1 }  { v255_q0 mem_dout 0 8 } } }
+	v255 { ap_memory {  { v255_address0 mem_address 1 20 }  { v255_ce0 mem_ce 1 1 }  { v255_q0 mem_dout 0 8 }  { v255_address1 MemPortADDR2 1 20 }  { v255_ce1 MemPortCE2 1 1 }  { v255_q1 MemPortDOUT2 0 8 } } }
 	v256_V { ap_none {  { v256_V in_data 0 32 } } }
-	v257 { ap_memory {  { v257_address0 mem_address 1 20 }  { v257_ce0 mem_ce 1 1 }  { v257_q0 mem_dout 0 8 } } }
+	v257 { ap_memory {  { v257_address0 mem_address 1 20 }  { v257_ce0 mem_ce 1 1 }  { v257_q0 mem_dout 0 8 }  { v257_address1 MemPortADDR2 1 20 }  { v257_ce1 MemPortCE2 1 1 }  { v257_q1 MemPortDOUT2 0 8 } } }
 	v258_V { ap_none {  { v258_V in_data 0 32 } } }
-	v259 { ap_memory {  { v259_address0 mem_address 1 20 }  { v259_ce0 mem_ce 1 1 }  { v259_q0 mem_dout 0 8 } } }
+	v259 { ap_memory {  { v259_address0 mem_address 1 20 }  { v259_ce0 mem_ce 1 1 }  { v259_q0 mem_dout 0 8 }  { v259_address1 MemPortADDR2 1 20 }  { v259_ce1 MemPortCE2 1 1 }  { v259_q1 MemPortDOUT2 0 8 } } }
 	v260_V { ap_none {  { v260_V in_data 0 32 } } }
 	v261_V { ap_memory {  { v261_V_address0 mem_address 1 10 }  { v261_V_ce0 mem_ce 1 1 }  { v261_V_q0 mem_dout 0 32 } } }
 	v262_V { ap_memory {  { v262_V_address0 mem_address 1 10 }  { v262_V_ce0 mem_ce 1 1 }  { v262_V_q0 mem_dout 0 32 } } }

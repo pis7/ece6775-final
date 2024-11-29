@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'GEMM_3D_float2'
 ================================================================
-* Date:           Thu Nov 28 22:08:12 2024
+* Date:           Thu Nov 28 22:28:49 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        out.prj
@@ -98,16 +98,16 @@ ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_
 ST_2 : Operation 13 [1/1] (1.78ns)   --->   "%h5 = add i5 %h5_0, 1" [kernel.cpp:415]   --->   Operation 13 'add' 'h5' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "br i1 %icmp_ln415, label %4, label %l_S_i_0_i9_begin" [kernel.cpp:415]   --->   Operation 14 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str42) nounwind" [kernel.cpp:415]   --->   Operation 15 'specloopname' <Predicate = (!icmp_ln415)> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_48 = call i8 @_ssdm_op_BitConcatenate.i8.i5.i3(i5 %h5_0, i3 0)" [kernel.cpp:419]   --->   Operation 16 'bitconcatenate' 'tmp_48' <Predicate = (!icmp_ln415)> <Delay = 0.00>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln419 = zext i8 %tmp_48 to i9" [kernel.cpp:419]   --->   Operation 17 'zext' 'zext_ln419' <Predicate = (!icmp_ln415)> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_49 = call i6 @_ssdm_op_BitConcatenate.i6.i5.i1(i5 %h5_0, i1 false)" [kernel.cpp:419]   --->   Operation 18 'bitconcatenate' 'tmp_49' <Predicate = (!icmp_ln415)> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln419_1 = zext i6 %tmp_49 to i9" [kernel.cpp:419]   --->   Operation 19 'zext' 'zext_ln419_1' <Predicate = (!icmp_ln415)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_141 = call i8 @_ssdm_op_BitConcatenate.i8.i5.i3(i5 %h5_0, i3 0)" [kernel.cpp:419]   --->   Operation 16 'bitconcatenate' 'tmp_141' <Predicate = (!icmp_ln415)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln419 = zext i8 %tmp_141 to i9" [kernel.cpp:419]   --->   Operation 17 'zext' 'zext_ln419' <Predicate = (!icmp_ln415)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_142 = call i6 @_ssdm_op_BitConcatenate.i6.i5.i1(i5 %h5_0, i1 false)" [kernel.cpp:419]   --->   Operation 18 'bitconcatenate' 'tmp_142' <Predicate = (!icmp_ln415)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln419_1 = zext i6 %tmp_142 to i9" [kernel.cpp:419]   --->   Operation 19 'zext' 'zext_ln419_1' <Predicate = (!icmp_ln415)> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (1.91ns)   --->   "%sub_ln419 = sub i9 %zext_ln419, %zext_ln419_1" [kernel.cpp:419]   --->   Operation 20 'sub' 'sub_ln419' <Predicate = (!icmp_ln415)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%sext_ln419 = sext i9 %sub_ln419 to i10" [kernel.cpp:419]   --->   Operation 21 'sext' 'sext_ln419' <Predicate = (!icmp_ln415)> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_50 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %h5_0, i7 0)" [kernel.cpp:422]   --->   Operation 22 'bitconcatenate' 'tmp_50' <Predicate = (!icmp_ln415)> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_51 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %h5_0, i5 0)" [kernel.cpp:422]   --->   Operation 23 'bitconcatenate' 'tmp_51' <Predicate = (!icmp_ln415)> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln422 = zext i10 %tmp_51 to i12" [kernel.cpp:422]   --->   Operation 24 'zext' 'zext_ln422' <Predicate = (!icmp_ln415)> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (1.54ns)   --->   "%sub_ln422 = sub i12 %tmp_50, %zext_ln422" [kernel.cpp:422]   --->   Operation 25 'sub' 'sub_ln422' <Predicate = (!icmp_ln415)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_143 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %h5_0, i7 0)" [kernel.cpp:422]   --->   Operation 22 'bitconcatenate' 'tmp_143' <Predicate = (!icmp_ln415)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_144 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %h5_0, i5 0)" [kernel.cpp:422]   --->   Operation 23 'bitconcatenate' 'tmp_144' <Predicate = (!icmp_ln415)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln422 = zext i10 %tmp_144 to i12" [kernel.cpp:422]   --->   Operation 24 'zext' 'zext_ln422' <Predicate = (!icmp_ln415)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (1.54ns)   --->   "%sub_ln422 = sub i12 %tmp_143, %zext_ln422" [kernel.cpp:422]   --->   Operation 25 'sub' 'sub_ln422' <Predicate = (!icmp_ln415)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([11 x i8]* @p_str43)" [kernel.cpp:416]   --->   Operation 26 'specregionbegin' 'tmp' <Predicate = (!icmp_ln415)> <Delay = 0.00>
 ST_2 : Operation 27 [1/1] (1.76ns)   --->   "br label %2" [kernel.cpp:417]   --->   Operation 27 'br' <Predicate = (!icmp_ln415)> <Delay = 1.76>
 ST_2 : Operation 28 [1/1] (0.00ns)   --->   "ret void" [kernel.cpp:429]   --->   Operation 28 'ret' <Predicate = (icmp_ln415)> <Delay = 0.00>
@@ -115,7 +115,7 @@ ST_2 : Operation 28 [1/1] (0.00ns)   --->   "ret void" [kernel.cpp:429]   --->  
 State 3 <SV = 2> <Delay = 1.87>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%j8_0_0 = phi i7 [ 0, %l_S_i_0_i9_begin ], [ %add_ln417, %l_S_j_0_j8_end ]" [kernel.cpp:417]   --->   Operation 29 'phi' 'j8_0_0' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 30 [1/1] (1.48ns)   --->   "%icmp_ln417 = icmp eq i7 %j8_0_0, -32" [kernel.cpp:417]   --->   Operation 30 'icmp' 'icmp_ln417' <Predicate = true> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%empty_625 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 96, i64 96, i64 96)"   --->   Operation 31 'speclooptripcount' 'empty_625' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%empty_620 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 96, i64 96, i64 96)"   --->   Operation 31 'speclooptripcount' 'empty_620' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 32 [1/1] (1.87ns)   --->   "%add_ln417 = add i7 %j8_0_0, 1" [kernel.cpp:417]   --->   Operation 32 'add' 'add_ln417' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 33 [1/1] (0.00ns)   --->   "br i1 %icmp_ln417, label %l_S_i_0_i9_end, label %l_S_j_0_j8_begin" [kernel.cpp:417]   --->   Operation 33 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str44) nounwind" [kernel.cpp:417]   --->   Operation 34 'specloopname' <Predicate = (!icmp_ln417)> <Delay = 0.00>
@@ -126,13 +126,13 @@ ST_3 : Operation 38 [1/1] (1.54ns)   --->   "%add_ln422 = add i12 %sub_ln422, %z
 ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%sext_ln422 = sext i12 %add_ln422 to i64" [kernel.cpp:422]   --->   Operation 39 'sext' 'sext_ln422' <Predicate = (!icmp_ln417)> <Delay = 0.00>
 ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%v242_0_V_addr = getelementptr [1536 x i32]* %v242_0_V, i64 0, i64 %sext_ln422" [kernel.cpp:422]   --->   Operation 40 'getelementptr' 'v242_0_V_addr' <Predicate = (!icmp_ln417)> <Delay = 0.00>
 ST_3 : Operation 41 [1/1] (1.76ns)   --->   "br label %3" [kernel.cpp:418]   --->   Operation 41 'br' <Predicate = (!icmp_ln417)> <Delay = 1.76>
-ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%empty_624 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str43, i32 %tmp)" [kernel.cpp:427]   --->   Operation 42 'specregionend' 'empty_624' <Predicate = (icmp_ln417)> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%empty_619 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str43, i32 %tmp)" [kernel.cpp:427]   --->   Operation 42 'specregionend' 'empty_619' <Predicate = (icmp_ln417)> <Delay = 0.00>
 ST_3 : Operation 43 [1/1] (0.00ns)   --->   "br label %1" [kernel.cpp:415]   --->   Operation 43 'br' <Predicate = (icmp_ln417)> <Delay = 0.00>
 
 State 4 <SV = 3> <Delay = 5.69>
 ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%k8_0_0 = phi i3 [ 0, %l_S_j_0_j8_begin ], [ %add_ln418, %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ]" [kernel.cpp:418]   --->   Operation 44 'phi' 'k8_0_0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 45 [1/1] (1.13ns)   --->   "%icmp_ln418 = icmp eq i3 %k8_0_0, -2" [kernel.cpp:418]   --->   Operation 45 'icmp' 'icmp_ln418' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%empty_627 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)"   --->   Operation 46 'speclooptripcount' 'empty_627' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%empty_622 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)"   --->   Operation 46 'speclooptripcount' 'empty_622' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 47 [1/1] (1.65ns)   --->   "%add_ln418 = add i3 %k8_0_0, 1" [kernel.cpp:418]   --->   Operation 47 'add' 'add_ln418' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 48 [1/1] (0.00ns)   --->   "br i1 %icmp_ln418, label %l_S_j_0_j8_end, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0" [kernel.cpp:418]   --->   Operation 48 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln419_2 = zext i3 %k8_0_0 to i10" [kernel.cpp:419]   --->   Operation 49 'zext' 'zext_ln419_2' <Predicate = (!icmp_ln418)> <Delay = 0.00>
@@ -142,7 +142,7 @@ ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%p_shl4_cast = call i15 @_ssdm_op_B
 ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%p_shl5_cast = call i15 @_ssdm_op_BitConcatenate.i15.i10.i5(i10 %add_ln419, i5 0)" [kernel.cpp:420]   --->   Operation 53 'bitconcatenate' 'p_shl5_cast' <Predicate = (!icmp_ln418)> <Delay = 0.00>
 ST_4 : Operation 54 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln420 = sub i15 %p_shl4_cast, %p_shl5_cast" [kernel.cpp:420]   --->   Operation 54 'sub' 'sub_ln420' <Predicate = (!icmp_ln418)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_4 : Operation 55 [1/1] (3.87ns) (root node of TernaryAdder)   --->   "%add_ln420 = add i15 %zext_ln422_1, %sub_ln420" [kernel.cpp:420]   --->   Operation 55 'add' 'add_ln420' <Predicate = (!icmp_ln418)> <Delay = 3.87> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%empty_626 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str44, i32 %tmp_s)" [kernel.cpp:426]   --->   Operation 56 'specregionend' 'empty_626' <Predicate = (icmp_ln418)> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%empty_621 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str44, i32 %tmp_s)" [kernel.cpp:426]   --->   Operation 56 'specregionend' 'empty_621' <Predicate = (icmp_ln418)> <Delay = 0.00>
 ST_4 : Operation 57 [1/1] (0.00ns)   --->   "br label %2" [kernel.cpp:417]   --->   Operation 57 'br' <Predicate = (icmp_ln418)> <Delay = 0.00>
 
 State 5 <SV = 4> <Delay = 3.25>

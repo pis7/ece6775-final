@@ -36026,11 +36026,11 @@ void linear_forward_no_mul(
 #pragma HLS array_partition variable=&v77 cyclic factor=4 dim=2
  l_S_i_0_i3: for (int i3 = 0; i3 < 1; i3++) {
     l_S_j_0_j2: for (int j2 = 0; j2 < 1536; j2++) {
-      ap_fixed<32, 20> local_acum;
+#pragma HLS pipeline II=1
+ ap_fixed<32, 20> local_acum;
       local_acum = (ap_fixed<32, 20>)0.000000;
       l_S_k_0_k: for (int k = 0; k < 384; k++) {
-#pragma HLS pipeline II=1
- int8_t v86 = v79[k][j2];
+        int8_t v86 = v79[k][j2];
         int8_t packed_value;
         packed_value = v86;
         ap_fixed<32, 20> temp;

@@ -5,7 +5,7 @@ set ID 86
 set hasByteEnable 0
 set MemName attention_quantizCeG
 set CoreName ap_simcore_mem
-set PortList { 2 3 }
+set PortList { 2 1 }
 set DataWd 8
 set AddrRange 384
 set AddrWd 9
@@ -552,7 +552,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename v253 \
     op interface \
-    ports { v253_address0 { O 20 vector } v253_ce0 { O 1 bit } v253_q0 { I 8 vector } } \
+    ports { v253_address0 { O 20 vector } v253_ce0 { O 1 bit } v253_q0 { I 8 vector } v253_address1 { O 20 vector } v253_ce1 { O 1 bit } v253_q1 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v253'"
@@ -571,7 +571,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename v255 \
     op interface \
-    ports { v255_address0 { O 20 vector } v255_ce0 { O 1 bit } v255_q0 { I 8 vector } } \
+    ports { v255_address0 { O 20 vector } v255_ce0 { O 1 bit } v255_q0 { I 8 vector } v255_address1 { O 20 vector } v255_ce1 { O 1 bit } v255_q1 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v255'"
@@ -590,7 +590,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename v257 \
     op interface \
-    ports { v257_address0 { O 20 vector } v257_ce0 { O 1 bit } v257_q0 { I 8 vector } } \
+    ports { v257_address0 { O 20 vector } v257_ce0 { O 1 bit } v257_q0 { I 8 vector } v257_address1 { O 20 vector } v257_ce1 { O 1 bit } v257_q1 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v257'"
@@ -609,7 +609,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename v259 \
     op interface \
-    ports { v259_address0 { O 20 vector } v259_ce0 { O 1 bit } v259_q0 { I 8 vector } } \
+    ports { v259_address0 { O 20 vector } v259_ce0 { O 1 bit } v259_q0 { I 8 vector } v259_address1 { O 20 vector } v259_ce1 { O 1 bit } v259_q1 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v259'"

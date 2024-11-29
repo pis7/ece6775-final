@@ -37,22 +37,38 @@
          <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention//AESL_inst_attention_activity.dataflowTxWaveData.Cycles</obj_property>
          <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention//AESL_inst_attention_activity.dataflowTxWaveData.OutStanding</obj_property>
          <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention//AESL_inst_attention_activity.dataflowTxTooltipData</obj_property>
-         <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_rms_norm_fu_778_activity">
-            <obj_property name="label">grp_rms_norm_fu_778_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_778/grp_linear_forward_no_mu_fu_778_activity">
+            <obj_property name="label">grp_linear_forward_no_mu_fu_778_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_rms_norm_fu_778_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_rms_norm_fu_778_activity</obj_property>
+            <obj_property name="ElementShortName">grp_linear_forward_no_mu_fu_778_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_linear_forward_no_mu_fu_778_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_rms_norm_fu_778_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_rms_norm_fu_778_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_rms_norm_fu_778_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_pow_32_20_s_fu_163_activity">
+            <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_778/grp_linear_forward_no_mu_fu_778_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_778/grp_linear_forward_no_mu_fu_778_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_778/grp_linear_forward_no_mu_fu_778_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_rms_norm_fu_803_activity">
+            <obj_property name="label">grp_rms_norm_fu_803_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_rms_norm_fu_803_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_rms_norm_fu_803_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_rms_norm_fu_803_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_rms_norm_fu_803_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_rms_norm_fu_803_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_pow_32_20_s_fu_163_activity">
                <obj_property name="label">grp_pow_32_20_s_fu_163_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
@@ -64,10 +80,10 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_pow_32_20_s_fu_163_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_pow_32_20_s_fu_163_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_pow_32_20_s_fu_163_activity.dataflowTxTooltipData</obj_property>
-               <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity">
+               <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_pow_32_20_s_fu_163_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_pow_32_20_s_fu_163_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_pow_32_20_s_fu_163_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity">
                   <obj_property name="label">grp_log_75_21_s_fu_232_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
@@ -79,11 +95,11 @@
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity">
+               <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity">
                   <obj_property name="label">grp_exp_core_32_20_54_s_fu_249_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
@@ -95,28 +111,28 @@
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_softmax_fu_808_activity">
-            <obj_property name="label">grp_softmax_fu_808_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_softmax_fu_833_activity">
+            <obj_property name="label">grp_softmax_fu_833_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_softmax_fu_808_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_softmax_fu_808_activity</obj_property>
+            <obj_property name="ElementShortName">grp_softmax_fu_833_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_softmax_fu_833_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_softmax_fu_808_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_softmax_fu_808_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_softmax_fu_808_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_pow_32_20_s_fu_223_activity">
+            <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_softmax_fu_833_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_softmax_fu_833_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_softmax_fu_833_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_pow_32_20_s_fu_223_activity">
                <obj_property name="label">grp_pow_32_20_s_fu_223_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
@@ -128,10 +144,10 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_pow_32_20_s_fu_223_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_pow_32_20_s_fu_223_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_pow_32_20_s_fu_223_activity.dataflowTxTooltipData</obj_property>
-               <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity">
+               <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_pow_32_20_s_fu_223_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_pow_32_20_s_fu_223_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_pow_32_20_s_fu_223_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity">
                   <obj_property name="label">grp_log_75_21_s_fu_232_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
@@ -143,11 +159,11 @@
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity">
+               <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity">
                   <obj_property name="label">grp_exp_core_32_20_54_s_fu_249_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
@@ -159,28 +175,28 @@
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_apply_rotary_pos_emb_fu_834_activity">
-            <obj_property name="label">grp_apply_rotary_pos_emb_fu_834_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_apply_rotary_pos_emb_fu_859_activity">
+            <obj_property name="label">grp_apply_rotary_pos_emb_fu_859_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_apply_rotary_pos_emb_fu_834_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_apply_rotary_pos_emb_fu_834_activity</obj_property>
+            <obj_property name="ElementShortName">grp_apply_rotary_pos_emb_fu_859_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_apply_rotary_pos_emb_fu_859_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_apply_rotary_pos_emb_fu_834_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_apply_rotary_pos_emb_fu_834_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_apply_rotary_pos_emb_fu_834_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_254/grp_rotate_half_fu_254_activity">
+            <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_apply_rotary_pos_emb_fu_859_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_apply_rotary_pos_emb_fu_859_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_apply_rotary_pos_emb_fu_859_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_254/grp_rotate_half_fu_254_activity">
                <obj_property name="label">grp_rotate_half_fu_254_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
@@ -192,11 +208,11 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_254/grp_rotate_half_fu_254_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_254/grp_rotate_half_fu_254_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_254/grp_rotate_half_fu_254_activity.dataflowTxTooltipData</obj_property>
+               <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_254/grp_rotate_half_fu_254_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_254/grp_rotate_half_fu_254_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_254/grp_rotate_half_fu_254_activity.dataflowTxTooltipData</obj_property>
             </wvobject>
-            <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_261/grp_rotate_half_fu_261_activity">
+            <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_261/grp_rotate_half_fu_261_activity">
                <obj_property name="label">grp_rotate_half_fu_261_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
@@ -208,26 +224,10 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_261/grp_rotate_half_fu_261_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_261/grp_rotate_half_fu_261_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_261/grp_rotate_half_fu_261_activity.dataflowTxTooltipData</obj_property>
+               <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_261/grp_rotate_half_fu_261_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_261/grp_rotate_half_fu_261_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_261/grp_rotate_half_fu_261_activity.dataflowTxTooltipData</obj_property>
             </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_848/grp_linear_forward_no_mu_fu_848_activity">
-            <obj_property name="label">grp_linear_forward_no_mu_fu_848_activity</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_linear_forward_no_mu_fu_848_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_linear_forward_no_mu_fu_848_activity</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-            <obj_property name="UseCustomSignalColor">true</obj_property>
-            <obj_property name="CustomSignalColor">turquoise</obj_property>
-            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_848/grp_linear_forward_no_mu_fu_848_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_848/grp_linear_forward_no_mu_fu_848_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_848/grp_linear_forward_no_mu_fu_848_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
          <wvobject type="group" fp_name="/apatb_attention_top/AESL_inst_attention/grp_quantize_activation_fu_873/grp_quantize_activation_fu_873_activity">
             <obj_property name="label">grp_quantize_activation_fu_873_activity</obj_property>
@@ -334,21 +334,21 @@
    <wvobject type="group" fp_name="AESL_inst_attention_group">
       <obj_property name="label">AESL_inst_attention</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_rms_norm_fu_778_activity">
-         <obj_property name="ElementShortName">grp_rms_norm_fu_778_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_rms_norm_fu_778_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_778/grp_linear_forward_no_mu_fu_778_activity">
+         <obj_property name="ElementShortName">grp_linear_forward_no_mu_fu_778_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_linear_forward_no_mu_fu_778_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_softmax_fu_808_activity">
-         <obj_property name="ElementShortName">grp_softmax_fu_808_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_softmax_fu_808_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_rms_norm_fu_803_activity">
+         <obj_property name="ElementShortName">grp_rms_norm_fu_803_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_rms_norm_fu_803_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_apply_rotary_pos_emb_fu_834_activity">
-         <obj_property name="ElementShortName">grp_apply_rotary_pos_emb_fu_834_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_apply_rotary_pos_emb_fu_834_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_softmax_fu_833_activity">
+         <obj_property name="ElementShortName">grp_softmax_fu_833_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_softmax_fu_833_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_848/grp_linear_forward_no_mu_fu_848_activity">
-         <obj_property name="ElementShortName">grp_linear_forward_no_mu_fu_848_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_linear_forward_no_mu_fu_848_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_apply_rotary_pos_emb_fu_859_activity">
+         <obj_property name="ElementShortName">grp_apply_rotary_pos_emb_fu_859_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_apply_rotary_pos_emb_fu_859_activity</obj_property>
       </wvobject>
       <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_quantize_activation_fu_873/grp_quantize_activation_fu_873_activity">
          <obj_property name="ElementShortName">grp_quantize_activation_fu_873_activity</obj_property>
@@ -390,25 +390,45 @@
             <obj_property name="ObjectShortName">ap_done</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_rms_norm_fu_778_group">
-         <obj_property name="label">grp_rms_norm_fu_778</obj_property>
+      <wvobject type="group" fp_name="grp_linear_forward_no_mu_fu_778_group">
+         <obj_property name="label">grp_linear_forward_no_mu_fu_778</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_pow_32_20_s_fu_163_activity">
-            <obj_property name="ElementShortName">grp_pow_32_20_s_fu_163_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_pow_32_20_s_fu_163_activity</obj_property>
-         </wvobject>
-         <wvobject type="group" fp_name="grp_rms_norm_fu_778_Handshake_group">
+         <wvobject type="group" fp_name="grp_linear_forward_no_mu_fu_778_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/ap_start">
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_778/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_778/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/ap_done">
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_778/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_rms_norm_fu_803_group">
+         <obj_property name="label">grp_rms_norm_fu_803</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_pow_32_20_s_fu_163_activity">
+            <obj_property name="ElementShortName">grp_pow_32_20_s_fu_163_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_pow_32_20_s_fu_163_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_rms_norm_fu_803_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
@@ -416,26 +436,26 @@
          <wvobject type="group" fp_name="grp_pow_32_20_s_fu_163_group">
             <obj_property name="label">grp_pow_32_20_s_fu_163</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity">
+            <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity">
                <obj_property name="ElementShortName">grp_log_75_21_s_fu_232_activity</obj_property>
                <obj_property name="ObjectShortName">grp_log_75_21_s_fu_232_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity">
+            <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity">
                <obj_property name="ElementShortName">grp_exp_core_32_20_54_s_fu_249_activity</obj_property>
                <obj_property name="ObjectShortName">grp_exp_core_32_20_54_s_fu_249_activity</obj_property>
             </wvobject>
             <wvobject type="group" fp_name="grp_pow_32_20_s_fu_163_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/ap_start">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/ap_done">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
@@ -446,15 +466,15 @@
                <wvobject type="group" fp_name="grp_log_75_21_s_fu_232_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_log_75_21_s_fu_232/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
@@ -466,15 +486,15 @@
                <wvobject type="group" fp_name="grp_exp_core_32_20_54_s_fu_249_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_778/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_rms_norm_fu_803/grp_pow_32_20_s_fu_163/grp_exp_core_32_20_54_s_fu_249/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
@@ -482,25 +502,25 @@
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_softmax_fu_808_group">
-         <obj_property name="label">grp_softmax_fu_808</obj_property>
+      <wvobject type="group" fp_name="grp_softmax_fu_833_group">
+         <obj_property name="label">grp_softmax_fu_833</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_pow_32_20_s_fu_223_activity">
+         <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_pow_32_20_s_fu_223_activity">
             <obj_property name="ElementShortName">grp_pow_32_20_s_fu_223_activity</obj_property>
             <obj_property name="ObjectShortName">grp_pow_32_20_s_fu_223_activity</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="grp_softmax_fu_808_Handshake_group">
+         <wvobject type="group" fp_name="grp_softmax_fu_833_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/ap_start">
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/ap_done">
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
@@ -508,26 +528,26 @@
          <wvobject type="group" fp_name="grp_pow_32_20_s_fu_223_group">
             <obj_property name="label">grp_pow_32_20_s_fu_223</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity">
+            <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/grp_log_75_21_s_fu_232_activity">
                <obj_property name="ElementShortName">grp_log_75_21_s_fu_232_activity</obj_property>
                <obj_property name="ObjectShortName">grp_log_75_21_s_fu_232_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity">
+            <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/grp_exp_core_32_20_54_s_fu_249_activity">
                <obj_property name="ElementShortName">grp_exp_core_32_20_54_s_fu_249_activity</obj_property>
                <obj_property name="ObjectShortName">grp_exp_core_32_20_54_s_fu_249_activity</obj_property>
             </wvobject>
             <wvobject type="group" fp_name="grp_pow_32_20_s_fu_223_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/ap_start">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/ap_done">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
@@ -538,15 +558,15 @@
                <wvobject type="group" fp_name="grp_log_75_21_s_fu_232_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_log_75_21_s_fu_232/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
@@ -558,15 +578,15 @@
                <wvobject type="group" fp_name="grp_exp_core_32_20_54_s_fu_249_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_808/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_softmax_fu_833/grp_pow_32_20_s_fu_223/grp_exp_core_32_20_54_s_fu_249/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
@@ -574,29 +594,29 @@
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_apply_rotary_pos_emb_fu_834_group">
-         <obj_property name="label">grp_apply_rotary_pos_emb_fu_834</obj_property>
+      <wvobject type="group" fp_name="grp_apply_rotary_pos_emb_fu_859_group">
+         <obj_property name="label">grp_apply_rotary_pos_emb_fu_859</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_254/grp_rotate_half_fu_254_activity">
+         <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_254/grp_rotate_half_fu_254_activity">
             <obj_property name="ElementShortName">grp_rotate_half_fu_254_activity</obj_property>
             <obj_property name="ObjectShortName">grp_rotate_half_fu_254_activity</obj_property>
          </wvobject>
-         <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_261/grp_rotate_half_fu_261_activity">
+         <wvobject type="protoinst" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_261/grp_rotate_half_fu_261_activity">
             <obj_property name="ElementShortName">grp_rotate_half_fu_261_activity</obj_property>
             <obj_property name="ObjectShortName">grp_rotate_half_fu_261_activity</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="grp_apply_rotary_pos_emb_fu_834_Handshake_group">
+         <wvobject type="group" fp_name="grp_apply_rotary_pos_emb_fu_859_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/ap_start">
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/ap_done">
+            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
@@ -607,15 +627,15 @@
             <wvobject type="group" fp_name="grp_rotate_half_fu_254_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_254/ap_start">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_254/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_254/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_254/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_254/ap_done">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_254/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
@@ -627,38 +647,18 @@
             <wvobject type="group" fp_name="grp_rotate_half_fu_261_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_261/ap_start">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_261/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_261/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_261/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_834/grp_rotate_half_fu_261/ap_done">
+               <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_apply_rotary_pos_emb_fu_859/grp_rotate_half_fu_261/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
-            </wvobject>
-         </wvobject>
-      </wvobject>
-      <wvobject type="group" fp_name="grp_linear_forward_no_mu_fu_848_group">
-         <obj_property name="label">grp_linear_forward_no_mu_fu_848</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_linear_forward_no_mu_fu_848_Handshake_group">
-            <obj_property name="label">Block-level handshake</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_848/ap_start">
-               <obj_property name="ElementShortName">ap_start</obj_property>
-               <obj_property name="ObjectShortName">ap_start</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_848/ap_ready">
-               <obj_property name="ElementShortName">ap_ready</obj_property>
-               <obj_property name="ObjectShortName">ap_ready</obj_property>
-            </wvobject>
-            <wvobject type="logic" fp_name="/apatb_attention_top/AESL_inst_attention/grp_linear_forward_no_mu_fu_848/ap_done">
-               <obj_property name="ElementShortName">ap_done</obj_property>
-               <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>

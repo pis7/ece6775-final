@@ -1725,7 +1725,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_rms_norm_fu_778</rtlName>
+              <rtlName>grp_rms_norm_fu_803</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3167,7 +3167,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_linear_forward_no_mu_fu_848</rtlName>
+              <rtlName>grp_linear_forward_no_mu_fu_778</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3224,7 +3224,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_linear_forward_no_mu_fu_848</rtlName>
+              <rtlName>grp_linear_forward_no_mu_fu_778</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3283,7 +3283,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_linear_forward_no_mu_fu_848</rtlName>
+              <rtlName>grp_linear_forward_no_mu_fu_778</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -3705,7 +3705,7 @@
             <Obj>
               <type>0</type>
               <id>156</id>
-              <name>tmp_25</name>
+              <name>tmp_s</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>523</lineNumber>
@@ -3729,7 +3729,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_25_fu_1016_p3</rtlName>
+              <rtlName>tmp_s_fu_1016_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -3755,7 +3755,7 @@
             <Obj>
               <type>0</type>
               <id>157</id>
-              <name>tmp_26</name>
+              <name>tmp_119</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>523</lineNumber>
@@ -3779,7 +3779,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_26_fu_1024_p3</rtlName>
+              <rtlName>tmp_119_fu_1024_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -4708,7 +4708,7 @@
             <Obj>
               <type>0</type>
               <id>185</id>
-              <name>tmp_27</name>
+              <name>tmp_120</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>531</lineNumber>
@@ -4732,7 +4732,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_27_fu_1080_p3</rtlName>
+              <rtlName>tmp_120_fu_1080_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -4758,7 +4758,7 @@
             <Obj>
               <type>0</type>
               <id>186</id>
-              <name>tmp_28</name>
+              <name>tmp_121</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>531</lineNumber>
@@ -4782,7 +4782,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_28_fu_1088_p3</rtlName>
+              <rtlName>tmp_121_fu_1088_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -5502,7 +5502,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_apply_rotary_pos_emb_fu_834</rtlName>
+              <rtlName>grp_apply_rotary_pos_emb_fu_859</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -5767,7 +5767,7 @@
             <Obj>
               <type>0</type>
               <id>215</id>
-              <name>tmp_29</name>
+              <name>tmp_122</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>540</lineNumber>
@@ -5791,7 +5791,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_29_fu_1144_p3</rtlName>
+              <rtlName>tmp_122_fu_1144_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -5865,7 +5865,7 @@
             <Obj>
               <type>0</type>
               <id>217</id>
-              <name>tmp_30</name>
+              <name>tmp_123</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>540</lineNumber>
@@ -5889,7 +5889,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_30_fu_1156_p3</rtlName>
+              <rtlName>tmp_123_fu_1156_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -7413,7 +7413,7 @@
             <Obj>
               <type>0</type>
               <id>262</id>
-              <name>tmp_31</name>
+              <name>tmp_124</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>548</lineNumber>
@@ -7437,7 +7437,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_31_fu_1263_p3</rtlName>
+              <rtlName>tmp_124_fu_1263_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -7511,7 +7511,7 @@
             <Obj>
               <type>0</type>
               <id>264</id>
-              <name>tmp_32</name>
+              <name>tmp_125</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>548</lineNumber>
@@ -7535,7 +7535,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_32_fu_1275_p3</rtlName>
+              <rtlName>tmp_125_fu_1275_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -9215,7 +9215,7 @@
             <Obj>
               <type>0</type>
               <id>312</id>
-              <name>tmp_33</name>
+              <name>tmp_126</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>567</lineNumber>
@@ -9239,7 +9239,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_33_fu_1382_p3</rtlName>
+              <rtlName>tmp_126_fu_1382_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -9265,7 +9265,7 @@
             <Obj>
               <type>0</type>
               <id>313</id>
-              <name>tmp_34</name>
+              <name>tmp_127</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>567</lineNumber>
@@ -9289,7 +9289,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_34_fu_1390_p3</rtlName>
+              <rtlName>tmp_127_fu_1390_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -10271,7 +10271,7 @@
             <Obj>
               <type>0</type>
               <id>343</id>
-              <name>tmp_35</name>
+              <name>tmp_128</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>577</lineNumber>
@@ -10295,7 +10295,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_35_fu_1446_p3</rtlName>
+              <rtlName>tmp_128_fu_1446_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -10321,7 +10321,7 @@
             <Obj>
               <type>0</type>
               <id>344</id>
-              <name>tmp_36</name>
+              <name>tmp_129</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>577</lineNumber>
@@ -10345,7 +10345,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_36_fu_1454_p3</rtlName>
+              <rtlName>tmp_129_fu_1454_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -11453,7 +11453,7 @@
             <Obj>
               <type>0</type>
               <id>372</id>
-              <name>sext_ln703_5</name>
+              <name>sext_ln703_1024</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>579</lineNumber>
@@ -11477,7 +11477,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sext_ln703_5_fu_1563_p1</rtlName>
+              <rtlName>sext_ln703_1024_fu_1563_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -11930,7 +11930,7 @@
             <Obj>
               <type>0</type>
               <id>388</id>
-              <name>tmp_37</name>
+              <name>tmp_130</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>605</lineNumber>
@@ -11954,7 +11954,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_37_fu_1586_p3</rtlName>
+              <rtlName>tmp_130_fu_1586_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -11980,7 +11980,7 @@
             <Obj>
               <type>0</type>
               <id>389</id>
-              <name>tmp_38</name>
+              <name>tmp_131</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>605</lineNumber>
@@ -12004,7 +12004,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_38_fu_1594_p3</rtlName>
+              <rtlName>tmp_131_fu_1594_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -12724,7 +12724,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_softmax_fu_808</rtlName>
+              <rtlName>grp_softmax_fu_833</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -12994,7 +12994,7 @@
             <Obj>
               <type>0</type>
               <id>418</id>
-              <name>tmp_39</name>
+              <name>tmp_132</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>614</lineNumber>
@@ -13018,7 +13018,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_39_fu_1650_p3</rtlName>
+              <rtlName>tmp_132_fu_1650_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -13044,7 +13044,7 @@
             <Obj>
               <type>0</type>
               <id>419</id>
-              <name>tmp_40</name>
+              <name>tmp_133</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>614</lineNumber>
@@ -13068,7 +13068,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_40_fu_1658_p3</rtlName>
+              <rtlName>tmp_133_fu_1658_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -14506,7 +14506,7 @@
             <Obj>
               <type>0</type>
               <id>464</id>
-              <name>tmp_41</name>
+              <name>tmp_134</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>628</lineNumber>
@@ -14530,7 +14530,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_41_fu_1731_p3</rtlName>
+              <rtlName>tmp_134_fu_1731_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -14556,7 +14556,7 @@
             <Obj>
               <type>0</type>
               <id>465</id>
-              <name>tmp_42</name>
+              <name>tmp_135</name>
               <fileName>kernel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>628</lineNumber>
@@ -14580,7 +14580,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_42_fu_1739_p3</rtlName>
+              <rtlName>tmp_135_fu_1739_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -16292,7 +16292,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_rms_norm_fu_778</rtlName>
+              <rtlName>grp_rms_norm_fu_803</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -16850,7 +16850,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_linear_forward_no_mu_fu_848</rtlName>
+              <rtlName>grp_linear_forward_no_mu_fu_778</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -26038,8 +26038,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>2916585</mMinLatency>
-        <mMaxLatency>2925013</mMaxLatency>
+        <mMinLatency>1423801</mMinLatency>
+        <mMaxLatency>1432229</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -26240,8 +26240,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>2007595</mMinLatency>
-        <mMaxLatency>2007595</mMaxLatency>
+        <mMinLatency>888007</mMinLatency>
+        <mMaxLatency>888007</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -27539,8 +27539,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>668162</mMinLatency>
-        <mMaxLatency>668162</mMaxLatency>
+        <mMinLatency>294966</mMinLatency>
+        <mMaxLatency>294966</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -31675,7 +31675,7 @@
           </second>
         </item>
         <item>
-          <first>grp_apply_rotary_pos_emb_fu_834 (apply_rotary_pos_emb)</first>
+          <first>grp_apply_rotary_pos_emb_fu_859 (apply_rotary_pos_emb)</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -31717,25 +31717,21 @@
           </second>
         </item>
         <item>
-          <first>grp_linear_forward_no_mu_fu_848 (linear_forward_no_mu)</first>
+          <first>grp_linear_forward_no_mu_fu_778 (linear_forward_no_mu)</first>
           <second>
-            <count>4</count>
+            <count>3</count>
             <item_version>0</item_version>
-            <item>
-              <first>BRAM</first>
-              <second>0</second>
-            </item>
             <item>
               <first>DSP48E</first>
               <second>4</second>
             </item>
             <item>
               <first>FF</first>
-              <second>826</second>
+              <second>17610</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1116</second>
+              <second>128188</second>
             </item>
           </second>
         </item>
@@ -31774,7 +31770,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rms_norm_fu_778 (rms_norm)</first>
+          <first>grp_rms_norm_fu_803 (rms_norm)</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -31797,7 +31793,7 @@
           </second>
         </item>
         <item>
-          <first>grp_softmax_fu_808 (softmax)</first>
+          <first>grp_softmax_fu_833 (softmax)</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -34763,7 +34759,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>142</count>
+        <count>159</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -35111,7 +35107,7 @@
           </second>
         </item>
         <item>
-          <first>grp_linear_forward_no_mu_fu_848_v77_0_0_q0</first>
+          <first>grp_linear_forward_no_mu_fu_778_v77_0_0_q0</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -35134,7 +35130,7 @@
           </second>
         </item>
         <item>
-          <first>grp_linear_forward_no_mu_fu_848_v77_1_0_q0</first>
+          <first>grp_linear_forward_no_mu_fu_778_v77_0_0_q1</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -35157,7 +35153,7 @@
           </second>
         </item>
         <item>
-          <first>grp_linear_forward_no_mu_fu_848_v77_2_0_q0</first>
+          <first>grp_linear_forward_no_mu_fu_778_v77_1_0_q0</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -35180,7 +35176,7 @@
           </second>
         </item>
         <item>
-          <first>grp_linear_forward_no_mu_fu_848_v77_3_0_q0</first>
+          <first>grp_linear_forward_no_mu_fu_778_v77_1_0_q1</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -35203,7 +35199,99 @@
           </second>
         </item>
         <item>
-          <first>grp_linear_forward_no_mu_fu_848_v79_q0</first>
+          <first>grp_linear_forward_no_mu_fu_778_v77_2_0_q0</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>24</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_linear_forward_no_mu_fu_778_v77_2_0_q1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>24</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_linear_forward_no_mu_fu_778_v77_3_0_q0</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>24</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_linear_forward_no_mu_fu_778_v77_3_0_q1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>24</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_linear_forward_no_mu_fu_778_v79_q0</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -35226,7 +35314,30 @@
           </second>
         </item>
         <item>
-          <first>grp_linear_forward_no_mu_fu_848_v80_V</first>
+          <first>grp_linear_forward_no_mu_fu_778_v79_q1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>5</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>8</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>40</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>27</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_linear_forward_no_mu_fu_778_v80_V</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -35295,7 +35406,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rms_norm_fu_778_v0_V_q0</first>
+          <first>grp_rms_norm_fu_803_v0_V_q0</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -35318,7 +35429,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rms_norm_fu_778_v1_V_q0</first>
+          <first>grp_rms_norm_fu_803_v1_V_q0</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -36077,6 +36188,29 @@
           </second>
         </item>
         <item>
+          <first>quantized_final_outp_1_ce1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>quantized_final_outp_1_we0</first>
           <second>
             <count>4</count>
@@ -36142,6 +36276,29 @@
             <item>
               <first>LUT</first>
               <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>quantized_final_outp_2_ce1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
             </item>
           </second>
         </item>
@@ -36215,6 +36372,29 @@
           </second>
         </item>
         <item>
+          <first>quantized_final_outp_3_ce1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>quantized_final_outp_3_we0</first>
           <second>
             <count>4</count>
@@ -36280,6 +36460,29 @@
             <item>
               <first>LUT</first>
               <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>quantized_final_outp_ce1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
             </item>
           </second>
         </item>
@@ -36353,6 +36556,29 @@
           </second>
         </item>
         <item>
+          <first>quantized_hidden_sta_1_ce1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>quantized_hidden_sta_1_we0</first>
           <second>
             <count>4</count>
@@ -36418,6 +36644,29 @@
             <item>
               <first>LUT</first>
               <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>quantized_hidden_sta_2_ce1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
             </item>
           </second>
         </item>
@@ -36491,6 +36740,29 @@
           </second>
         </item>
         <item>
+          <first>quantized_hidden_sta_3_ce1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>quantized_hidden_sta_3_we0</first>
           <second>
             <count>4</count>
@@ -36556,6 +36828,29 @@
             <item>
               <first>LUT</first>
               <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>quantized_hidden_sta_ce1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
             </item>
           </second>
         </item>
@@ -37089,7 +37384,53 @@
           </second>
         </item>
         <item>
+          <first>v253_ce1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>v255_ce0</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>v255_ce1</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -37135,7 +37476,53 @@
           </second>
         </item>
         <item>
+          <first>v257_ce1</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>v259_ce0</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>v259_ce1</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -38226,7 +38613,7 @@
           </second>
         </item>
         <item>
-          <first>grp_apply_rotary_pos_emb_fu_834_ap_start_reg</first>
+          <first>grp_apply_rotary_pos_emb_fu_859_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -38264,7 +38651,7 @@
           </second>
         </item>
         <item>
-          <first>grp_linear_forward_no_mu_fu_848_ap_start_reg</first>
+          <first>grp_linear_forward_no_mu_fu_778_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -38321,7 +38708,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rms_norm_fu_778_ap_start_reg</first>
+          <first>grp_rms_norm_fu_803_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -38340,7 +38727,7 @@
           </second>
         </item>
         <item>
-          <first>grp_softmax_fu_808_ap_start_reg</first>
+          <first>grp_softmax_fu_833_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -39410,7 +39797,7 @@
           </second>
         </item>
         <item>
-          <first>grp_apply_rotary_pos_emb_fu_834</first>
+          <first>grp_apply_rotary_pos_emb_fu_859</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -39424,7 +39811,7 @@
           </second>
         </item>
         <item>
-          <first>grp_linear_forward_no_mu_fu_848</first>
+          <first>grp_linear_forward_no_mu_fu_778</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -39445,14 +39832,14 @@
           </second>
         </item>
         <item>
-          <first>grp_rms_norm_fu_778</first>
+          <first>grp_rms_norm_fu_803</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_softmax_fu_808</first>
+          <first>grp_softmax_fu_833</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -39494,7 +39881,7 @@
           </second>
         </item>
         <item>
-          <first>grp_apply_rotary_pos_emb_fu_834 (apply_rotary_pos_emb)</first>
+          <first>grp_apply_rotary_pos_emb_fu_859 (apply_rotary_pos_emb)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -39511,7 +39898,7 @@
           </second>
         </item>
         <item>
-          <first>grp_linear_forward_no_mu_fu_848 (linear_forward_no_mu)</first>
+          <first>grp_linear_forward_no_mu_fu_778 (linear_forward_no_mu)</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -39541,7 +39928,7 @@
           </second>
         </item>
         <item>
-          <first>grp_rms_norm_fu_778 (rms_norm)</first>
+          <first>grp_rms_norm_fu_803 (rms_norm)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -39550,7 +39937,7 @@
           </second>
         </item>
         <item>
-          <first>grp_softmax_fu_808 (softmax)</first>
+          <first>grp_softmax_fu_833 (softmax)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -40238,7 +40625,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>685</item>
+            <item>721</item>
           </second>
         </item>
         <item>
@@ -40246,7 +40633,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>694</item>
+            <item>730</item>
           </second>
         </item>
         <item>
@@ -40254,7 +40641,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>668</item>
+            <item>704</item>
           </second>
         </item>
         <item>
@@ -40262,7 +40649,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>639</item>
+            <item>675</item>
           </second>
         </item>
         <item>
@@ -40270,7 +40657,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>203</item>
+            <item>227</item>
           </second>
         </item>
         <item>
@@ -40278,7 +40665,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>612</item>
+            <item>648</item>
           </second>
         </item>
         <item>
@@ -40286,7 +40673,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>226</item>
+            <item>250</item>
           </second>
         </item>
         <item>
@@ -40294,7 +40681,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>630</item>
+            <item>666</item>
           </second>
         </item>
         <item>
@@ -40302,7 +40689,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>191</item>
+            <item>215</item>
           </second>
         </item>
         <item>
@@ -40310,7 +40697,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>603</item>
+            <item>639</item>
           </second>
         </item>
         <item>
@@ -40318,7 +40705,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>253</item>
+            <item>283</item>
           </second>
         </item>
         <item>
@@ -40326,7 +40713,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>244</item>
+            <item>271</item>
           </second>
         </item>
         <item>
@@ -40334,7 +40721,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>235</item>
+            <item>259</item>
           </second>
         </item>
         <item>
@@ -40342,7 +40729,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>262</item>
+            <item>295</item>
           </second>
         </item>
         <item>
@@ -40350,7 +40737,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>172</item>
+            <item>190</item>
           </second>
         </item>
         <item>
@@ -40358,7 +40745,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>163</item>
+            <item>178</item>
           </second>
         </item>
         <item>
@@ -40366,7 +40753,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>154</item>
+            <item>166</item>
           </second>
         </item>
         <item>
@@ -40374,7 +40761,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>181</item>
+            <item>202</item>
           </second>
         </item>
         <item>
@@ -40382,7 +40769,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>703</item>
+            <item>739</item>
           </second>
         </item>
         <item>
@@ -40390,7 +40777,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>594</item>
+            <item>630</item>
           </second>
         </item>
         <item>
@@ -40398,7 +40785,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>676</item>
+            <item>712</item>
           </second>
         </item>
         <item>
@@ -40406,7 +40793,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>649</item>
+            <item>685</item>
           </second>
         </item>
         <item>
@@ -40414,7 +40801,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>658</item>
+            <item>694</item>
           </second>
         </item>
         <item>
@@ -40422,7 +40809,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>216</item>
+            <item>240</item>
           </second>
         </item>
         <item>
@@ -40430,7 +40817,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>621</item>
+            <item>657</item>
           </second>
         </item>
       </dp_memory_map>
@@ -44013,35 +44400,6 @@
       <item>
         <first>778</first>
         <second>
-          <count>4</count>
-          <item_version>0</item_version>
-          <item>101</item>
-          <item>101</item>
-          <item>512</item>
-          <item>512</item>
-        </second>
-      </item>
-      <item>
-        <first>808</first>
-        <second>
-          <count>2</count>
-          <item_version>0</item_version>
-          <item>409</item>
-          <item>409</item>
-        </second>
-      </item>
-      <item>
-        <first>834</first>
-        <second>
-          <count>2</count>
-          <item_version>0</item_version>
-          <item>206</item>
-          <item>206</item>
-        </second>
-      </item>
-      <item>
-        <first>848</first>
-        <second>
           <count>8</count>
           <item_version>0</item_version>
           <item>142</item>
@@ -44052,6 +44410,35 @@
           <item>144</item>
           <item>527</item>
           <item>527</item>
+        </second>
+      </item>
+      <item>
+        <first>803</first>
+        <second>
+          <count>4</count>
+          <item_version>0</item_version>
+          <item>101</item>
+          <item>101</item>
+          <item>512</item>
+          <item>512</item>
+        </second>
+      </item>
+      <item>
+        <first>833</first>
+        <second>
+          <count>2</count>
+          <item_version>0</item_version>
+          <item>409</item>
+          <item>409</item>
+        </second>
+      </item>
+      <item>
+        <first>859</first>
+        <second>
+          <count>2</count>
+          <item_version>0</item_version>
+          <item>206</item>
+          <item>206</item>
         </second>
       </item>
       <item>
@@ -46186,7 +46573,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln703_5_fu_1563</first>
+        <first>sext_ln703_1024_fu_1563</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46354,15 +46741,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_25_fu_1016</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>156</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_26_fu_1024</first>
+        <first>tmp_119_fu_1024</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46370,7 +46749,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_27_fu_1080</first>
+        <first>tmp_120_fu_1080</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46378,7 +46757,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_28_fu_1088</first>
+        <first>tmp_121_fu_1088</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46386,7 +46765,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_29_fu_1144</first>
+        <first>tmp_122_fu_1144</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46394,7 +46773,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_30_fu_1156</first>
+        <first>tmp_123_fu_1156</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46402,7 +46781,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_31_fu_1263</first>
+        <first>tmp_124_fu_1263</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46410,7 +46789,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_32_fu_1275</first>
+        <first>tmp_125_fu_1275</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46418,7 +46797,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_33_fu_1382</first>
+        <first>tmp_126_fu_1382</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46426,7 +46805,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_34_fu_1390</first>
+        <first>tmp_127_fu_1390</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46434,7 +46813,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_35_fu_1446</first>
+        <first>tmp_128_fu_1446</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46442,7 +46821,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_36_fu_1454</first>
+        <first>tmp_129_fu_1454</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46450,7 +46829,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_37_fu_1586</first>
+        <first>tmp_130_fu_1586</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46458,7 +46837,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_38_fu_1594</first>
+        <first>tmp_131_fu_1594</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46466,7 +46845,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_39_fu_1650</first>
+        <first>tmp_132_fu_1650</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46474,7 +46853,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_40_fu_1658</first>
+        <first>tmp_133_fu_1658</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46482,7 +46861,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_41_fu_1731</first>
+        <first>tmp_134_fu_1731</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46490,7 +46869,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_42_fu_1739</first>
+        <first>tmp_135_fu_1739</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -46519,6 +46898,14 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>368</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_s_fu_1016</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>156</item>
         </second>
       </item>
       <item>
@@ -47168,7 +47555,7 @@
         </second>
       </item>
       <item>
-        <first>grp_apply_rotary_pos_emb_fu_834</first>
+        <first>grp_apply_rotary_pos_emb_fu_859</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -47197,7 +47584,7 @@
         </second>
       </item>
       <item>
-        <first>grp_linear_forward_no_mu_fu_848</first>
+        <first>grp_linear_forward_no_mu_fu_778</first>
         <second>
           <count>8</count>
           <item_version>0</item_version>
@@ -47236,7 +47623,7 @@
         </second>
       </item>
       <item>
-        <first>grp_rms_norm_fu_778</first>
+        <first>grp_rms_norm_fu_803</first>
         <second>
           <count>4</count>
           <item_version>0</item_version>
@@ -47247,7 +47634,7 @@
         </second>
       </item>
       <item>
-        <first>grp_softmax_fu_808</first>
+        <first>grp_softmax_fu_833</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

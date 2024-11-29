@@ -3705,7 +3705,7 @@
 					<Obj>
 						<type>0</type>
 						<id>156</id>
-						<name>tmp_25</name>
+						<name>tmp_s</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>523</lineNumber>
@@ -3755,7 +3755,7 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>tmp_26</name>
+						<name>tmp_119</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>523</lineNumber>
@@ -4708,7 +4708,7 @@
 					<Obj>
 						<type>0</type>
 						<id>185</id>
-						<name>tmp_27</name>
+						<name>tmp_120</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>531</lineNumber>
@@ -4758,7 +4758,7 @@
 					<Obj>
 						<type>0</type>
 						<id>186</id>
-						<name>tmp_28</name>
+						<name>tmp_121</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>531</lineNumber>
@@ -5767,7 +5767,7 @@
 					<Obj>
 						<type>0</type>
 						<id>215</id>
-						<name>tmp_29</name>
+						<name>tmp_122</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>540</lineNumber>
@@ -5865,7 +5865,7 @@
 					<Obj>
 						<type>0</type>
 						<id>217</id>
-						<name>tmp_30</name>
+						<name>tmp_123</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>540</lineNumber>
@@ -7413,7 +7413,7 @@
 					<Obj>
 						<type>0</type>
 						<id>262</id>
-						<name>tmp_31</name>
+						<name>tmp_124</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>548</lineNumber>
@@ -7511,7 +7511,7 @@
 					<Obj>
 						<type>0</type>
 						<id>264</id>
-						<name>tmp_32</name>
+						<name>tmp_125</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>548</lineNumber>
@@ -9215,7 +9215,7 @@
 					<Obj>
 						<type>0</type>
 						<id>312</id>
-						<name>tmp_33</name>
+						<name>tmp_126</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>567</lineNumber>
@@ -9265,7 +9265,7 @@
 					<Obj>
 						<type>0</type>
 						<id>313</id>
-						<name>tmp_34</name>
+						<name>tmp_127</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>567</lineNumber>
@@ -10271,7 +10271,7 @@
 					<Obj>
 						<type>0</type>
 						<id>343</id>
-						<name>tmp_35</name>
+						<name>tmp_128</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>577</lineNumber>
@@ -10321,7 +10321,7 @@
 					<Obj>
 						<type>0</type>
 						<id>344</id>
-						<name>tmp_36</name>
+						<name>tmp_129</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>577</lineNumber>
@@ -11453,7 +11453,7 @@
 					<Obj>
 						<type>0</type>
 						<id>372</id>
-						<name>sext_ln703_5</name>
+						<name>sext_ln703_1024</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>579</lineNumber>
@@ -11930,7 +11930,7 @@
 					<Obj>
 						<type>0</type>
 						<id>388</id>
-						<name>tmp_37</name>
+						<name>tmp_130</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>605</lineNumber>
@@ -11980,7 +11980,7 @@
 					<Obj>
 						<type>0</type>
 						<id>389</id>
-						<name>tmp_38</name>
+						<name>tmp_131</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>605</lineNumber>
@@ -12994,7 +12994,7 @@
 					<Obj>
 						<type>0</type>
 						<id>418</id>
-						<name>tmp_39</name>
+						<name>tmp_132</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>614</lineNumber>
@@ -13044,7 +13044,7 @@
 					<Obj>
 						<type>0</type>
 						<id>419</id>
-						<name>tmp_40</name>
+						<name>tmp_133</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>614</lineNumber>
@@ -14506,7 +14506,7 @@
 					<Obj>
 						<type>0</type>
 						<id>464</id>
-						<name>tmp_41</name>
+						<name>tmp_134</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>628</lineNumber>
@@ -14556,7 +14556,7 @@
 					<Obj>
 						<type>0</type>
 						<id>465</id>
-						<name>tmp_42</name>
+						<name>tmp_135</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>628</lineNumber>
@@ -26038,8 +26038,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>2916585</mMinLatency>
-			<mMaxLatency>2925013</mMaxLatency>
+			<mMinLatency>1423801</mMinLatency>
+			<mMaxLatency>1432229</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -26240,8 +26240,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>2007595</mMinLatency>
-			<mMaxLatency>2007595</mMaxLatency>
+			<mMinLatency>888007</mMinLatency>
+			<mMaxLatency>888007</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -27539,8 +27539,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>668162</mMinLatency>
-			<mMaxLatency>668162</mMaxLatency>
+			<mMinLatency>294966</mMinLatency>
+			<mMaxLatency>294966</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -35192,35 +35192,6 @@
 		<item>
 			<first>778</first>
 			<second>
-				<count>4</count>
-				<item_version>0</item_version>
-				<item>101</item>
-				<item>101</item>
-				<item>512</item>
-				<item>512</item>
-			</second>
-		</item>
-		<item>
-			<first>808</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>409</item>
-				<item>409</item>
-			</second>
-		</item>
-		<item>
-			<first>834</first>
-			<second>
-				<count>2</count>
-				<item_version>0</item_version>
-				<item>206</item>
-				<item>206</item>
-			</second>
-		</item>
-		<item>
-			<first>848</first>
-			<second>
 				<count>8</count>
 				<item_version>0</item_version>
 				<item>142</item>
@@ -35231,6 +35202,35 @@
 				<item>144</item>
 				<item>527</item>
 				<item>527</item>
+			</second>
+		</item>
+		<item>
+			<first>803</first>
+			<second>
+				<count>4</count>
+				<item_version>0</item_version>
+				<item>101</item>
+				<item>101</item>
+				<item>512</item>
+				<item>512</item>
+			</second>
+		</item>
+		<item>
+			<first>833</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>409</item>
+				<item>409</item>
+			</second>
+		</item>
+		<item>
+			<first>859</first>
+			<second>
+				<count>2</count>
+				<item_version>0</item_version>
+				<item>206</item>
+				<item>206</item>
 			</second>
 		</item>
 		<item>
@@ -37365,7 +37365,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln703_5_fu_1563</first>
+			<first>sext_ln703_1024_fu_1563</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37533,15 +37533,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_25_fu_1016</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>156</item>
-			</second>
-		</item>
-		<item>
-			<first>tmp_26_fu_1024</first>
+			<first>tmp_119_fu_1024</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37549,7 +37541,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_27_fu_1080</first>
+			<first>tmp_120_fu_1080</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37557,7 +37549,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_28_fu_1088</first>
+			<first>tmp_121_fu_1088</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37565,7 +37557,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_29_fu_1144</first>
+			<first>tmp_122_fu_1144</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37573,7 +37565,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_30_fu_1156</first>
+			<first>tmp_123_fu_1156</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37581,7 +37573,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_31_fu_1263</first>
+			<first>tmp_124_fu_1263</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37589,7 +37581,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_32_fu_1275</first>
+			<first>tmp_125_fu_1275</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37597,7 +37589,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_33_fu_1382</first>
+			<first>tmp_126_fu_1382</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37605,7 +37597,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_34_fu_1390</first>
+			<first>tmp_127_fu_1390</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37613,7 +37605,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_35_fu_1446</first>
+			<first>tmp_128_fu_1446</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37621,7 +37613,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_36_fu_1454</first>
+			<first>tmp_129_fu_1454</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37629,7 +37621,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_37_fu_1586</first>
+			<first>tmp_130_fu_1586</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37637,7 +37629,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_38_fu_1594</first>
+			<first>tmp_131_fu_1594</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37645,7 +37637,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_39_fu_1650</first>
+			<first>tmp_132_fu_1650</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37653,7 +37645,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_40_fu_1658</first>
+			<first>tmp_133_fu_1658</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37661,7 +37653,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_41_fu_1731</first>
+			<first>tmp_134_fu_1731</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37669,7 +37661,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_42_fu_1739</first>
+			<first>tmp_135_fu_1739</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -37698,6 +37690,14 @@
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>368</item>
+			</second>
+		</item>
+		<item>
+			<first>tmp_s_fu_1016</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>156</item>
 			</second>
 		</item>
 		<item>
@@ -38347,7 +38347,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_apply_rotary_pos_emb_fu_834</first>
+			<first>grp_apply_rotary_pos_emb_fu_859</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -38376,7 +38376,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_linear_forward_no_mu_fu_848</first>
+			<first>grp_linear_forward_no_mu_fu_778</first>
 			<second>
 				<count>8</count>
 				<item_version>0</item_version>
@@ -38415,7 +38415,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_rms_norm_fu_778</first>
+			<first>grp_rms_norm_fu_803</first>
 			<second>
 				<count>4</count>
 				<item_version>0</item_version>
@@ -38426,7 +38426,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_softmax_fu_808</first>
+			<first>grp_softmax_fu_833</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

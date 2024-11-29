@@ -4,7 +4,7 @@
 // ==============================================================
 #ifndef __attention_sdiv_43yd2__HH__
 #define __attention_sdiv_43yd2__HH__
-#include "ACMP_sdiv_seq.h"
+#include "ACMP_sdiv.h"
 #include <systemc>
 
 template<
@@ -17,25 +17,21 @@ SC_MODULE(attention_sdiv_43yd2) {
     sc_core::sc_in_clk clk;
     sc_core::sc_in<sc_dt::sc_logic> reset;
     sc_core::sc_in<sc_dt::sc_logic> ce;
-    sc_core::sc_in< sc_dt::sc_logic >   start;
-    sc_core::sc_out< sc_dt::sc_logic >   done;
     sc_core::sc_in< sc_dt::sc_lv<din0_WIDTH> >   din0;
     sc_core::sc_in< sc_dt::sc_lv<din1_WIDTH> >   din1;
     sc_core::sc_out< sc_dt::sc_lv<dout_WIDTH> >   dout;
 
 
 
-    ACMP_sdiv_seq<ID, 47, din0_WIDTH, din1_WIDTH, dout_WIDTH> ACMP_sdiv_seq_U;
+    ACMP_sdiv<ID, 47, din0_WIDTH, din1_WIDTH, dout_WIDTH> ACMP_sdiv_U;
 
-    SC_CTOR(attention_sdiv_43yd2):  ACMP_sdiv_seq_U ("ACMP_sdiv_seq_U") {
-        ACMP_sdiv_seq_U.clk(clk);
-        ACMP_sdiv_seq_U.reset(reset);
-        ACMP_sdiv_seq_U.ce(ce);
-        ACMP_sdiv_seq_U.din0(din0);
-        ACMP_sdiv_seq_U.din1(din1);
-        ACMP_sdiv_seq_U.dout(dout);
-        ACMP_sdiv_seq_U.start(start);
-        ACMP_sdiv_seq_U.done(done);
+    SC_CTOR(attention_sdiv_43yd2):  ACMP_sdiv_U ("ACMP_sdiv_U") {
+        ACMP_sdiv_U.clk(clk);
+        ACMP_sdiv_U.reset(reset);
+        ACMP_sdiv_U.ce(ce);
+        ACMP_sdiv_U.din0(din0);
+        ACMP_sdiv_U.din1(din1);
+        ACMP_sdiv_U.dout(dout);
 
     }
 

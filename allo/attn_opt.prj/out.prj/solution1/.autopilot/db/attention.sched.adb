@@ -3705,7 +3705,7 @@
 					<Obj>
 						<type>0</type>
 						<id>156</id>
-						<name>tmp_25</name>
+						<name>tmp_s</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>523</lineNumber>
@@ -3755,7 +3755,7 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>tmp_26</name>
+						<name>tmp_119</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>523</lineNumber>
@@ -4708,7 +4708,7 @@
 					<Obj>
 						<type>0</type>
 						<id>185</id>
-						<name>tmp_27</name>
+						<name>tmp_120</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>531</lineNumber>
@@ -4758,7 +4758,7 @@
 					<Obj>
 						<type>0</type>
 						<id>186</id>
-						<name>tmp_28</name>
+						<name>tmp_121</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>531</lineNumber>
@@ -5767,7 +5767,7 @@
 					<Obj>
 						<type>0</type>
 						<id>215</id>
-						<name>tmp_29</name>
+						<name>tmp_122</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>540</lineNumber>
@@ -5865,7 +5865,7 @@
 					<Obj>
 						<type>0</type>
 						<id>217</id>
-						<name>tmp_30</name>
+						<name>tmp_123</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>540</lineNumber>
@@ -7413,7 +7413,7 @@
 					<Obj>
 						<type>0</type>
 						<id>262</id>
-						<name>tmp_31</name>
+						<name>tmp_124</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>548</lineNumber>
@@ -7511,7 +7511,7 @@
 					<Obj>
 						<type>0</type>
 						<id>264</id>
-						<name>tmp_32</name>
+						<name>tmp_125</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>548</lineNumber>
@@ -9215,7 +9215,7 @@
 					<Obj>
 						<type>0</type>
 						<id>312</id>
-						<name>tmp_33</name>
+						<name>tmp_126</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>567</lineNumber>
@@ -9265,7 +9265,7 @@
 					<Obj>
 						<type>0</type>
 						<id>313</id>
-						<name>tmp_34</name>
+						<name>tmp_127</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>567</lineNumber>
@@ -10271,7 +10271,7 @@
 					<Obj>
 						<type>0</type>
 						<id>343</id>
-						<name>tmp_35</name>
+						<name>tmp_128</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>577</lineNumber>
@@ -10321,7 +10321,7 @@
 					<Obj>
 						<type>0</type>
 						<id>344</id>
-						<name>tmp_36</name>
+						<name>tmp_129</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>577</lineNumber>
@@ -11453,7 +11453,7 @@
 					<Obj>
 						<type>0</type>
 						<id>372</id>
-						<name>sext_ln703_5</name>
+						<name>sext_ln703_1024</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>579</lineNumber>
@@ -11930,7 +11930,7 @@
 					<Obj>
 						<type>0</type>
 						<id>388</id>
-						<name>tmp_37</name>
+						<name>tmp_130</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>605</lineNumber>
@@ -11980,7 +11980,7 @@
 					<Obj>
 						<type>0</type>
 						<id>389</id>
-						<name>tmp_38</name>
+						<name>tmp_131</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>605</lineNumber>
@@ -12994,7 +12994,7 @@
 					<Obj>
 						<type>0</type>
 						<id>418</id>
-						<name>tmp_39</name>
+						<name>tmp_132</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>614</lineNumber>
@@ -13044,7 +13044,7 @@
 					<Obj>
 						<type>0</type>
 						<id>419</id>
-						<name>tmp_40</name>
+						<name>tmp_133</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>614</lineNumber>
@@ -14506,7 +14506,7 @@
 					<Obj>
 						<type>0</type>
 						<id>464</id>
-						<name>tmp_41</name>
+						<name>tmp_134</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>628</lineNumber>
@@ -14556,7 +14556,7 @@
 					<Obj>
 						<type>0</type>
 						<id>465</id>
-						<name>tmp_42</name>
+						<name>tmp_135</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>628</lineNumber>
@@ -26038,8 +26038,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>2916585</mMinLatency>
-			<mMaxLatency>2925013</mMaxLatency>
+			<mMinLatency>1423801</mMinLatency>
+			<mMaxLatency>1432229</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -26240,8 +26240,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>2007595</mMinLatency>
-			<mMaxLatency>2007595</mMaxLatency>
+			<mMinLatency>888007</mMinLatency>
+			<mMaxLatency>888007</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -27539,8 +27539,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>668162</mMinLatency>
-			<mMaxLatency>668162</mMaxLatency>
+			<mMinLatency>294966</mMinLatency>
+			<mMaxLatency>294966</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
