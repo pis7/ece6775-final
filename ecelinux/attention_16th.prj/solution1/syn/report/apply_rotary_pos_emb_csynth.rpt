@@ -1,0 +1,213 @@
+
+
+================================================================
+== Vivado HLS Report for 'apply_rotary_pos_emb'
+================================================================
+* Date:           Fri Nov 29 11:43:01 2024
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        attention_16th.prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.510 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      546|      546| 5.460 us | 5.460 us |  546|  546|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |            Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- APPLY_ROTARY_POS_EMB_LOOP_1   |      152|      152|        38|          -|          -|     4|    no    |
+        | + APPLY_ROTARY_POS_EMB_LOOP_3  |       36|       36|         3|          -|          -|    12|    no    |
+        |- APPLY_ROTARY_POS_EMB_LOOP_4   |      392|      392|        98|          -|          -|     4|    no    |
+        | + APPLY_ROTARY_POS_EMB_LOOP_6  |       96|       96|         4|          -|          -|    24|    no    |
+        +--------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      8|       0|    516|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        6|      -|       0|      0|    0|
+|Multiplexer      |        -|      -|       -|    188|    -|
+|Register         |        -|      -|     660|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        6|      8|     660|    704|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        2|      3|   ~0   |      1|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +-----------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |      Memory     |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |cos_tab_V_5_U    |apply_rotary_pos_g8j  |        1|  0|   0|    0|    96|   17|     1|         1632|
+    |sin_tab_V_5_U    |apply_rotary_pos_hbi  |        1|  0|   0|    0|    96|   17|     1|         1632|
+    |rotated_q_0_V_U  |apply_rotary_pos_ibs  |        2|  0|   0|    0|    96|   40|     1|         3840|
+    |rotated_k_0_V_U  |apply_rotary_pos_ibs  |        2|  0|   0|    0|    96|   40|     1|         3840|
+    +-----------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total            |                      |        6|  0|   0|    0|   384|  114|     4|        10944|
+    +-----------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+-------+---+----+------------+------------+
+    |mul_ln1118_1_fu_502_p2  |     *    |      2|  0|  29|          17|          40|
+    |mul_ln1118_2_fu_512_p2  |     *    |      2|  0|  29|          17|          40|
+    |mul_ln1118_3_fu_521_p2  |     *    |      2|  0|  29|          17|          40|
+    |mul_ln1118_fu_490_p2    |     *    |      2|  0|  29|          17|          40|
+    |add_ln1116_fu_470_p2    |     +    |      0|  0|  15|           8|           8|
+    |add_ln1192_1_fu_542_p2  |     +    |      0|  0|  63|          56|          56|
+    |add_ln1192_fu_527_p2    |     +    |      0|  0|  63|          56|          56|
+    |add_ln1265_fu_385_p2    |     +    |      0|  0|  15|           8|           8|
+    |add_ln203_fu_364_p2     |     +    |      0|  0|  15|           8|           8|
+    |add_ln204_fu_354_p2     |     +    |      0|  0|  13|           4|           1|
+    |add_ln205_fu_375_p2     |     +    |      0|  0|  15|           5|           4|
+    |add_ln216_fu_454_p2     |     +    |      0|  0|  15|           5|           1|
+    |i_2_fu_416_p2           |     +    |      0|  0|  12|           3|           1|
+    |i_fu_312_p2             |     +    |      0|  0|  12|           3|           1|
+    |sub_ln1116_fu_442_p2    |     -    |      0|  0|  15|           8|           8|
+    |sub_ln1265_fu_338_p2    |     -    |      0|  0|  15|           8|           8|
+    |sub_ln703_35_fu_403_p2  |     -    |      0|  0|  47|           1|          40|
+    |sub_ln703_fu_396_p2     |     -    |      0|  0|  47|           1|          40|
+    |icmp_ln202_fu_306_p2    |   icmp   |      0|  0|   9|           3|           4|
+    |icmp_ln204_fu_348_p2    |   icmp   |      0|  0|   9|           4|           4|
+    |icmp_ln214_fu_410_p2    |   icmp   |      0|  0|   9|           3|           4|
+    |icmp_ln216_fu_448_p2    |   icmp   |      0|  0|  11|           5|           5|
+    +------------------------+----------+-------+---+----+------------+------------+
+    |Total                   |          |      8|  0| 516|         257|         417|
+    +------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm               |  50|         11|    1|         11|
+    |i14_0_reg_276           |   9|          2|    3|          6|
+    |i_0_reg_254             |   9|          2|    3|          6|
+    |input_k_0_V_address0    |  15|          3|    7|         21|
+    |input_q_0_V_address0    |  15|          3|    7|         21|
+    |k16_0_0_reg_287         |   9|          2|    5|         10|
+    |k_0_0_reg_265           |   9|          2|    4|          8|
+    |rotated_k_0_V_address0  |  21|          4|    7|         28|
+    |rotated_k_0_V_d0        |  15|          3|   40|        120|
+    |rotated_q_0_V_address0  |  21|          4|    7|         28|
+    |rotated_q_0_V_d0        |  15|          3|   40|        120|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   | 188|         39|  124|        379|
+    +------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+----+----+-----+-----------+
+    |            Name            | FF | LUT| Bits| Const Bits|
+    +----------------------------+----+----+-----+-----------+
+    |add_ln204_reg_574           |   4|   0|    4|          0|
+    |add_ln216_reg_627           |   5|   0|    5|          0|
+    |ap_CS_fsm                   |  10|   0|   10|          0|
+    |cos_tab_V_5_load_reg_668    |  17|   0|   17|          0|
+    |i14_0_reg_276               |   3|   0|    3|          0|
+    |i_0_reg_254                 |   3|   0|    3|          0|
+    |i_2_reg_614                 |   3|   0|    3|          0|
+    |i_reg_560                   |   3|   0|    3|          0|
+    |k16_0_0_reg_287             |   5|   0|    5|          0|
+    |k_0_0_reg_265               |   4|   0|    4|          0|
+    |mul_ln1118_1_reg_693        |  56|   0|   56|          0|
+    |mul_ln1118_2_reg_698        |  56|   0|   56|          0|
+    |mul_ln1118_3_reg_703        |  56|   0|   56|          0|
+    |mul_ln1118_reg_688          |  56|   0|   56|          0|
+    |reg_298                     |  40|   0|   40|          0|
+    |reg_302                     |  40|   0|   40|          0|
+    |rotated_k_0_V_load_reg_683  |  40|   0|   40|          0|
+    |rotated_q_0_V_load_reg_678  |  40|   0|   40|          0|
+    |sext_ln1116_reg_632         |  64|   0|   64|          0|
+    |sext_ln1265_reg_595         |  64|   0|   64|          0|
+    |sext_ln203_reg_579          |  64|   0|   64|          0|
+    |sin_tab_V_5_load_reg_673    |  17|   0|   17|          0|
+    |sub_ln1116_reg_619          |   5|   0|    8|          3|
+    |sub_ln1265_reg_565          |   5|   0|    8|          3|
+    +----------------------------+----+----+-----+-----------+
+    |Total                       | 660|   0|  666|          6|
+    +----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+----------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-----------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                 |  in |    1| ap_ctrl_hs | apply_rotary_pos_emb | return value |
+|ap_rst                 |  in |    1| ap_ctrl_hs | apply_rotary_pos_emb | return value |
+|ap_start               |  in |    1| ap_ctrl_hs | apply_rotary_pos_emb | return value |
+|ap_done                | out |    1| ap_ctrl_hs | apply_rotary_pos_emb | return value |
+|ap_idle                | out |    1| ap_ctrl_hs | apply_rotary_pos_emb | return value |
+|ap_ready               | out |    1| ap_ctrl_hs | apply_rotary_pos_emb | return value |
+|input_q_0_V_address0   | out |    7|  ap_memory |      input_q_0_V     |     array    |
+|input_q_0_V_ce0        | out |    1|  ap_memory |      input_q_0_V     |     array    |
+|input_q_0_V_q0         |  in |   40|  ap_memory |      input_q_0_V     |     array    |
+|input_q_0_V_address1   | out |    7|  ap_memory |      input_q_0_V     |     array    |
+|input_q_0_V_ce1        | out |    1|  ap_memory |      input_q_0_V     |     array    |
+|input_q_0_V_q1         |  in |   40|  ap_memory |      input_q_0_V     |     array    |
+|input_k_0_V_address0   | out |    7|  ap_memory |      input_k_0_V     |     array    |
+|input_k_0_V_ce0        | out |    1|  ap_memory |      input_k_0_V     |     array    |
+|input_k_0_V_q0         |  in |   40|  ap_memory |      input_k_0_V     |     array    |
+|input_k_0_V_address1   | out |    7|  ap_memory |      input_k_0_V     |     array    |
+|input_k_0_V_ce1        | out |    1|  ap_memory |      input_k_0_V     |     array    |
+|input_k_0_V_q1         |  in |   40|  ap_memory |      input_k_0_V     |     array    |
+|output_q_0_V_address0  | out |    7|  ap_memory |     output_q_0_V     |     array    |
+|output_q_0_V_ce0       | out |    1|  ap_memory |     output_q_0_V     |     array    |
+|output_q_0_V_we0       | out |    1|  ap_memory |     output_q_0_V     |     array    |
+|output_q_0_V_d0        | out |   40|  ap_memory |     output_q_0_V     |     array    |
+|output_k_0_V_address0  | out |    7|  ap_memory |     output_k_0_V     |     array    |
+|output_k_0_V_ce0       | out |    1|  ap_memory |     output_k_0_V     |     array    |
+|output_k_0_V_we0       | out |    1|  ap_memory |     output_k_0_V     |     array    |
+|output_k_0_V_d0        | out |   40|  ap_memory |     output_k_0_V     |     array    |
++-----------------------+-----+-----+------------+----------------------+--------------+
+

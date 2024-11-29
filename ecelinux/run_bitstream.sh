@@ -6,15 +6,42 @@
 
 # This points to the common directory where all the
 # Xillybus files are stored
+
+# Function to display usage
+usage() {
+    echo "Usage: $0 [-p <plusarg_value>]"
+    exit 1
+}
+
+# Default plusarg value
+plusarg=""
+
+# Parse command-line options
+while getopts ":p:" opt; do
+    case $opt in
+        p)
+            plusarg=$OPTARG
+            ;;
+        \?)
+            usage
+            ;;
+    esac
+done
+
+# Check if plusarg is set
+if [ -z "$plusarg" ]; then
+    usage
+fi
+
 XILLYBUS_TAR="./zedboard_project.tgz"
 WORKDIR="./zedboard_project"
 
 # HLS generated verilog files directory
-VERILOG_DIR="attention.prj/solution1/syn/verilog"
+VERILOG_DIR="$plusarg.prj/solution1/syn/verilog"
 
 # The generated bitstream file
 GENFILE="$WORKDIR/xillybus/vivado/xillydemo.runs/impl_1/xillydemo.bit"
-OUTFILE="xillydemo.bit"
+OUTFILE="$plusarg.prj/$plusarg.bit"
 
 # Check here for synthesis errors
 LOGFILE="$WORKDIR/xillybus/vivado/xillydemo.runs/synth_1/runme.log"
@@ -70,4 +97,3 @@ else
   printf "\n**** There were errors creating the bitstream!\n\n"
   grep --color=always -i error $LOGFILE
 fi
-

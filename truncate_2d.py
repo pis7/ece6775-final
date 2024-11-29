@@ -41,8 +41,8 @@ def main():
     elem_type = sys.argv[2]
     dim1 = int(sys.argv[3])
     dim2 = int(sys.argv[4])
-    input_file_path = array_name + '.h'
-    output_file_path = 'truncated_' + array_name + '.h'
+    input_file_path = '../data_full/' + array_name + '.h'
+    output_file_path = array_name + '.h'
     array = read_array(input_file_path, array_name)
     truncated_array = truncate_array(array, (dim1, dim2))
     write_array(output_file_path, truncated_array, elem_type, array_name, (dim1, dim2))

@@ -10,8 +10,7 @@
 #include <cmath>
 #include "attention.h"
 #include "timer.h"
-#include "data_quarter/hidden_states.h"
-#include "data_quarter/ground_truth.h"
+#include "data_include.h"
 
 using namespace std;
 
@@ -26,7 +25,7 @@ int main() {
   hls::stream<st_fixed32_t> attention_out;
 
   // Timer
-  Timer timer("attention");
+  Timer timer("attention_dut");
   timer.start();
 
   // pack images to 32-bit and transmit to dut function
@@ -40,6 +39,7 @@ int main() {
   // check results with precision of 3 decimal places
   st_fixed32_t result;
   float error_accum = 0.0;
+  std::cout << "\033[32m";
   for (int i = 0; i < SEQ_LEN_DECODE; i++) {
     for (int j = 0; j < PROJ_COLS_BASIC; j++) {
       result = (st_fixed32_t)attention_out.read();
@@ -53,7 +53,8 @@ int main() {
 
   // calculate RMSE
   float rmse = sqrt(error_accum / (SEQ_LEN_DECODE * PROJ_COLS_BASIC));
-  cout << "\033[32mRMSE: \033[0m" << rmse << endl;
+  cout << "BUS_TOT_W=" << BUS_TOT_W << " BUS_INT_W=" << BUS_INT_W << " RMSE=" << rmse << endl;
+  cout << "\033[0m";
 
   return 0;
 }
