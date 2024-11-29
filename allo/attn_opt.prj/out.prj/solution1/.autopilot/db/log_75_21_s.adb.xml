@@ -37553,7 +37553,7 @@ _ZN9ap_ufixedILi92ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi91ELi2ELb0ELS0_5ELS1_
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-_ZN8ap_fixedILi75ELi21EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:0  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str10) nounwind
+_ZN8ap_fixedILi75ELi21EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:0  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str7) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln500"/></StgValue>
@@ -47884,7 +47884,7 @@ _ZN9ap_ufixedILi92ELi1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi91ELi2ELb0ELS0_5ELS1_
 </dataflow>
 <dataflow id="3330" from="StgValue_1521" to="specpipeline_ln500" fromId="1521" toId="841">
 </dataflow>
-<dataflow id="3332" from="p_str10" to="specpipeline_ln500" fromId="3331" toId="841">
+<dataflow id="3332" from="p_str7" to="specpipeline_ln500" fromId="3331" toId="841">
 </dataflow>
 <dataflow id="3334" from="_ssdm_op_BitConcatenate.i14.i1.i13" to="shl_ln703_1" fromId="3333" toId="842">
 </dataflow>

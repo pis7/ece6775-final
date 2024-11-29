@@ -1,14 +1,14 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 79
+set ID 86
 set hasByteEnable 0
-set MemName attention_quantizBew
+set MemName attention_quantizCeG
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 8
-set AddrRange 1536
-set AddrWd 11
+set AddrRange 384
+set AddrWd 9
 set impl_style block
 set TrueReset 0
 set IsROM 0
@@ -87,9 +87,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 80
+set ID 87
 set hasByteEnable 0
-set MemName attention_q_proj_CeG
+set MemName attention_q_proj_Gfk
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 32
@@ -173,9 +173,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 81
+set ID 88
 set hasByteEnable 0
-set MemName attention_v_proj_Ee0
+set MemName attention_v_proj_IfE
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 32
@@ -259,9 +259,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 82
+set ID 89
 set hasByteEnable 0
-set MemName attention_k_proj_Ffa
+set MemName attention_k_proj_JfO
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 32
@@ -345,9 +345,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 83
+set ID 90
 set hasByteEnable 0
-set MemName attention_updatedNgs
+set MemName attention_updatedUhA
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 32
@@ -430,9 +430,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 84
+set ID 91
 set hasByteEnable 0
-set MemName attention_attn_wePgM
+set MemName attention_attn_weWhU
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 32
@@ -526,7 +526,7 @@ set axilite_register_dict [dict create]
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 85 \
+    id 92 \
     name v252_V \
     reset_level 1 \
     sync_rst true \
@@ -545,7 +545,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 86 \
+    id 93 \
     name v253 \
     reset_level 1 \
     sync_rst true \
@@ -564,7 +564,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 88 \
+    id 95 \
     name v255 \
     reset_level 1 \
     sync_rst true \
@@ -583,7 +583,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 90 \
+    id 97 \
     name v257 \
     reset_level 1 \
     sync_rst true \
@@ -602,7 +602,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 92 \
+    id 99 \
     name v259 \
     reset_level 1 \
     sync_rst true \
@@ -621,7 +621,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 94 \
+    id 101 \
     name v261_V \
     reset_level 1 \
     sync_rst true \
@@ -640,7 +640,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 95 \
+    id 102 \
     name v262_V \
     reset_level 1 \
     sync_rst true \
@@ -659,7 +659,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 96 \
+    id 103 \
     name v263_V \
     reset_level 1 \
     sync_rst true \
@@ -678,7 +678,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 97 \
+    id 104 \
     name v264_V \
     reset_level 1 \
     sync_rst true \
@@ -697,7 +697,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 98 \
+    id 105 \
     name v265_V \
     reset_level 1 \
     sync_rst true \
@@ -716,7 +716,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 99 \
+    id 106 \
     name v266_V \
     reset_level 1 \
     sync_rst true \
@@ -735,7 +735,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 100 \
+    id 107 \
     name v268_V \
     reset_level 1 \
     sync_rst true \
@@ -753,7 +753,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 87 \
+    id 94 \
     name v254_V \
     type other \
     dir I \
@@ -768,7 +768,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 89 \
+    id 96 \
     name v256_V \
     type other \
     dir I \
@@ -783,7 +783,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 91 \
+    id 98 \
     name v258_V \
     type other \
     dir I \
@@ -798,7 +798,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 93 \
+    id 100 \
     name v260_V \
     type other \
     dir I \

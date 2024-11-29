@@ -1,10 +1,10 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 46
-set name attention_sdiv_44yd2
+set id 49
+set name attention_sdiv_43yd2
 set corename simcore_sdiv_seq
 set op sdiv
-set stage_num 48
+set stage_num 47
 set max_latency -1
 set registered_input 1
 set clk_width 1
@@ -14,7 +14,7 @@ set reset_signed 0
 set start_width 1
 set start_signed 0
 set done_width 1
-set in0_width 44
+set in0_width 43
 set in0_signed 0
 set in1_width 32
 set in1_signed 1
@@ -105,17 +105,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 48 \
-    name v77_0 \
+    id 51 \
+    name v77_0_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename v77_0 \
+    corename v77_0_0 \
     op interface \
-    ports { v77_0_address0 { O 11 vector } v77_0_ce0 { O 1 bit } v77_0_q0 { I 8 vector } } \
+    ports { v77_0_0_address0 { O 9 vector } v77_0_0_ce0 { O 1 bit } v77_0_0_q0 { I 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v77_0'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v77_0_0'"
 }
 }
 
@@ -124,7 +124,64 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 50 \
+    id 52 \
+    name v77_1_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename v77_1_0 \
+    op interface \
+    ports { v77_1_0_address0 { O 9 vector } v77_1_0_ce0 { O 1 bit } v77_1_0_q0 { I 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v77_1_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 53 \
+    name v77_2_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename v77_2_0 \
+    op interface \
+    ports { v77_2_0_address0 { O 9 vector } v77_2_0_ce0 { O 1 bit } v77_2_0_q0 { I 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v77_2_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 54 \
+    name v77_3_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir I \
+    corename v77_3_0 \
+    op interface \
+    ports { v77_3_0_address0 { O 9 vector } v77_3_0_ce0 { O 1 bit } v77_3_0_q0 { I 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v77_3_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 56 \
     name v79 \
     reset_level 1 \
     sync_rst true \
@@ -143,7 +200,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 52 \
+    id 58 \
     name v81_V \
     reset_level 1 \
     sync_rst true \
@@ -161,7 +218,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 49 \
+    id 55 \
     name v78_0_V_read \
     type other \
     dir I \
@@ -176,7 +233,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 51 \
+    id 57 \
     name v80_V \
     type other \
     dir I \

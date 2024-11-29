@@ -1595,10 +1595,10 @@ _ZN8ap_fixedILi33ELi21EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi20ELb1ELS0_5ELS1
 
 <Node id="60" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:4  %empty_75 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
+:4  %empty_79 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
 
 ]]></Node>
-<StgValue><ssdm name="empty_75"/></StgValue>
+<StgValue><ssdm name="empty_79"/></StgValue>
 </operation>
 
 <operation id="124" st_id="37" stage="1" lat="1">
@@ -2214,10 +2214,10 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 
 <Node id="89" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader799:4  %empty_76 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)
+.preheader799:4  %empty_80 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)
 
 ]]></Node>
-<StgValue><ssdm name="empty_76"/></StgValue>
+<StgValue><ssdm name="empty_80"/></StgValue>
 </operation>
 
 <operation id="159" st_id="51" stage="1" lat="1">

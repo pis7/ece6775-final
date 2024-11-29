@@ -125,16 +125,73 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 45 \
-    name v24_0 \
+    name v24_0_0 \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename v24_0 \
+    corename v24_0_0 \
     op interface \
-    ports { v24_0_address0 { O 11 vector } v24_0_ce0 { O 1 bit } v24_0_we0 { O 1 bit } v24_0_d0 { O 8 vector } } \
+    ports { v24_0_0_address0 { O 9 vector } v24_0_0_ce0 { O 1 bit } v24_0_0_we0 { O 1 bit } v24_0_0_d0 { O 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v24_0'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v24_0_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 46 \
+    name v24_1_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename v24_1_0 \
+    op interface \
+    ports { v24_1_0_address0 { O 9 vector } v24_1_0_ce0 { O 1 bit } v24_1_0_we0 { O 1 bit } v24_1_0_d0 { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v24_1_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 47 \
+    name v24_2_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename v24_2_0 \
+    op interface \
+    ports { v24_2_0_address0 { O 9 vector } v24_2_0_ce0 { O 1 bit } v24_2_0_we0 { O 1 bit } v24_2_0_d0 { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v24_2_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 48 \
+    name v24_3_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename v24_3_0 \
+    op interface \
+    ports { v24_3_0_address0 { O 9 vector } v24_3_0_ce0 { O 1 bit } v24_3_0_we0 { O 1 bit } v24_3_0_d0 { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v24_3_0'"
 }
 }
 

@@ -1,7 +1,8 @@
-INFO-FLOW: Workspace /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1 opened at Thu Nov 28 21:57:58 EST 2024
+INFO-FLOW: Workspace /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1 opened at Thu Nov 28 22:06:23 EST 2024
+Command     open_solution done; 0.55 sec.
 Execute     set_part xc7z020clg484-1 
 Execute       ap_part_info -name xc7z020clg484-1 -data single -quiet 
-Command       ap_part_info done; 1.27 sec.
+Command       ap_part_info done; 2.09 sec.
 Execute       ap_part_info -name xc7z020clg484-1 -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
 Execute         get_default_platform 
@@ -53,7 +54,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data info
 Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info 
 Execute         config_chip_info -quiet -speed slow 
-Command       add_library done; 0.18 sec.
+Command       add_library done; 0.16 sec.
 Execute       add_library xilinx/zynq/zynq_fpv6 
 Execute         get_default_platform 
 Execute         open_platform DefaultPlatform 
@@ -71,7 +72,7 @@ Execute           source /opt/xilinx/Vivado/2019.2/common/technology/xilinx/comm
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       get_default_platform 
-Command     set_part done; 1.55 sec.
+Command     set_part done; 2.34 sec.
 Execute     create_clock -period 10 
 Execute       config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
@@ -101,14 +102,14 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute         clang  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "kernel.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp" 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E kernel.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp
-Command         clang done; 1.49 sec.
+Command         clang done; 1.5 sec.
 Execute         tidy_31 xilinx-xfmat-array-geometry /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command         tidy_31 done; 6.99 sec.
+Command         tidy_31 done; 7 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute         clang -syntaxcheck -src /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp"  -o "/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/useless.bc
-Command         clang done; 5.3 sec.
+Command         clang done; 5.29 sec.
 INFO-FLOW: Done: GCC PP time: 13.8 seconds per iteration
 Execute         source /opt/xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute         source /opt/xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
@@ -116,50 +117,50 @@ Execute           source /opt/xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/try/try.
 Execute         list_core -type functional_unit 
 Execute         tidy_31 xilinx-systemc-detector /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp std=gnu++98 -directive=/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command         tidy_31 done; 6.29 sec.
+Command         tidy_31 done; 6.26 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute         tidy_31 xilinx-directive2pragma /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp std=gnu++98 -directive=/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command         tidy_31 done; 6.24 sec.
+Command         tidy_31 done; 6.22 sec.
 Execute         get_config_dataflow -strict_mode 
 Execute         ap_eval exec -ignorestderr /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.kernel.pp.0.cpp.diag.yml /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.kernel.pp.0.cpp.out.log 2> /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.kernel.pp.0.cpp.err.log 
-Command         ap_eval done; 7.26 sec.
+Command         ap_eval done; 7.48 sec.
 Execute         tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp std=gnu++98 
 Execute           ap_eval exec -ignorestderr /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/tidy-3.1.kernel.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/tidy-3.1.kernel.pp.0.cpp.out.log 2> /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/tidy-3.1.kernel.pp.0.cpp.err.log 
-Command           ap_eval done; 10.52 sec.
+Command           ap_eval done; 10.49 sec.
 Execute           source /opt/xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
 Execute             source /opt/xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
 Execute           ap_eval exec -ignorestderr /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/xilinx-legacy-rewriter.kernel.pp.0.cpp.out.log 2> /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/xilinx-legacy-rewriter.kernel.pp.0.cpp.err.log 
-Command           ap_eval done; 5.41 sec.
-Command         tidy_31 done; 16.52 sec.
+Command           ap_eval done; 5.21 sec.
+Command         tidy_31 done; 16.26 sec.
 INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 30 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute         tidy_31 xilinx-ssdm-intrinsics-arguments /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command         tidy_31 done; 9.44 sec.
+Command         tidy_31 done; 9.15 sec.
 Execute         ap_part_info -name xc7z020-clg484-1 -data info 
 INFO-FLOW: Processing labels
 Execute         clang -src /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.bc" 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.bc
-Command         clang done; 6.02 sec.
+Command         clang done; 6.05 sec.
 INFO-FLOW: Linking Debug ...
 Execute         llvm-ld /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.g.bc -hls-opt -except-internalize attention -L/opt/xilinx/Vivado/2019.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.g 
-Command         llvm-ld done; 2.45 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 620020 ; free virtual = 758761
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 620020 ; free virtual = 758761
+Command         llvm-ld done; 2.66 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 620657 ; free virtual = 758763
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 620657 ; free virtual = 758763
 Execute         get_config_sdx -target 
 Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute           cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute           transform -promote-dbg-pointer /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.pp.bc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.pp.0.bc -f 
-Command           transform done; 0.72 sec.
+Command           transform done; 0.7 sec.
 Execute           llvm-ld /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/xilinx/Vivado/2019.2/lnx64/lib -lfloatconversion -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.g.0 
 Command           llvm-ld done; 2.29 sec.
 INFO-FLOW: Running Standard Transforms...
 Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top attention -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.g.0.bc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
 INFO: [XFORM 203-603] Inlining function 'std::max<ap_fixed<32, 20, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'quantize_activation' (kernel.cpp:86).
-Command           transform done; 6.3 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 1424.152 ; gain = 786.125 ; free physical = 619718 ; free virtual = 758505
+Command           transform done; 6.21 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1308.250 ; gain = 670.223 ; free physical = 620380 ; free virtual = 758533
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.g.1.bc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.g.2.prechk.bc -f 
@@ -169,56 +170,57 @@ INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fix
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fixed<74, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 50, 45>' into 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:354) automatically.
 INFO: [XFORM 203-602] Inlining function 'fabs_fixed<33, 21>' into 'pow_apfixed_reduce::pow<32, 20>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:94) automatically.
 INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'rms_norm' (kernel.cpp:35) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'softmax' (kernel.cpp:392) automatically.
-INFO: [XFORM 203-602] Inlining function 'causal_mask' into 'attention' (kernel.cpp:589) automatically.
-Command           transform done; 4.15 sec.
+INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'softmax' (kernel.cpp:393) automatically.
+INFO: [XFORM 203-602] Inlining function 'causal_mask' into 'attention' (kernel.cpp:590) automatically.
+Command           transform done; 4.08 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute           transform -syn-check /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
 WARNING: [SYNCHK 200-23] /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:75: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-Command           transform done; 0.56 sec.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1434.117 ; gain = 796.090 ; free physical = 619614 ; free virtual = 758419
+Command           transform done; 0.6 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1434.113 ; gain = 796.086 ; free physical = 620254 ; free virtual = 758424
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.g.1.bc to /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute           transform -hls -tmp /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.o.1.bc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.o.1.tmp.bc -f 
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'log_apfixed_reduce::log<75, 21>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:500:9).
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'exp_reduce::exp_core<32, 20, 54>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:873:30).
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (kernel.cpp:452) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-2' (kernel.cpp:466) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-3' (kernel.cpp:471) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-4' (kernel.cpp:477) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-5' (kernel.cpp:483) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-6.1' (kernel.cpp:493) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-7.1' (kernel.cpp:501) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-8.1' (kernel.cpp:509) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-9.1' (kernel.cpp:520) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-10.1' (kernel.cpp:528) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-14.1' (kernel.cpp:564) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j9' (kernel.cpp:574) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-16' (kernel.cpp:584) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-16.1' (kernel.cpp:585) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_3_i11' (kernel.cpp:591) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_3_j10' (kernel.cpp:592) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-18.1' (kernel.cpp:602) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-19.1' (kernel.cpp:611) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-20' (kernel.cpp:619) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_6_s4' (kernel.cpp:624) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-22' (kernel.cpp:633) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-23' (kernel.cpp:647) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-24' (kernel.cpp:651) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i9' (kernel.cpp:415) in function 'GEMM_3D_float2' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j6' (kernel.cpp:366) in function 'softmax' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_3_j7' (kernel.cpp:374) in function 'softmax' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i6' (kernel.cpp:354) in function 'causal_mask' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j5' (kernel.cpp:355) in function 'causal_mask' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i5' (kernel.cpp:336) in function 'GEMM_3D_float' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1.1' (kernel.cpp:252) in function 'apply_rotary_pos_emb' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-2.1' (kernel.cpp:260) in function 'apply_rotary_pos_emb' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s2' (kernel.cpp:269) in function 'apply_rotary_pos_emb' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s1' (kernel.cpp:229) in function 'rotate_half' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s' (kernel.cpp:214) in function 'reshape_2D_to_3D' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i3' (kernel.cpp:131) in function 'linear_forward_no_mul' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (kernel.cpp:453) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-2' (kernel.cpp:467) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-3' (kernel.cpp:472) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-4' (kernel.cpp:478) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-5' (kernel.cpp:484) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-6.1' (kernel.cpp:494) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-7.1' (kernel.cpp:502) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-8.1' (kernel.cpp:510) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-9.1' (kernel.cpp:521) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-10.1' (kernel.cpp:529) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-14.1' (kernel.cpp:565) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j9' (kernel.cpp:575) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-16' (kernel.cpp:585) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-16.1' (kernel.cpp:586) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_3_i11' (kernel.cpp:592) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_3_j10' (kernel.cpp:593) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-18.1' (kernel.cpp:603) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-19.1' (kernel.cpp:612) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-20' (kernel.cpp:620) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_6_s4' (kernel.cpp:625) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-22' (kernel.cpp:634) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-23' (kernel.cpp:648) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-24' (kernel.cpp:652) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i9' (kernel.cpp:416) in function 'GEMM_3D_float2' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j6' (kernel.cpp:367) in function 'softmax' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_3_j7' (kernel.cpp:375) in function 'softmax' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i6' (kernel.cpp:355) in function 'causal_mask' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j5' (kernel.cpp:356) in function 'causal_mask' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i5' (kernel.cpp:337) in function 'GEMM_3D_float' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1.1' (kernel.cpp:253) in function 'apply_rotary_pos_emb' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-2.1' (kernel.cpp:261) in function 'apply_rotary_pos_emb' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s2' (kernel.cpp:270) in function 'apply_rotary_pos_emb' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s1' (kernel.cpp:230) in function 'rotate_half' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s' (kernel.cpp:215) in function 'reshape_2D_to_3D' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i3' (kernel.cpp:132) in function 'linear_forward_no_mul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'l_S_k_0_k' (kernel.cpp:136) in function 'linear_forward_no_mul' for pipelining.
 INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i2' (kernel.cpp:67) in function 'quantize_activation' automatically.
 INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_index_0_index' (kernel.cpp:22) in function 'rms_norm' automatically.
 INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:729) in function 'log_apfixed_reduce::log<75, 21>' completely with a factor of 75.
@@ -227,62 +229,71 @@ INFO: [HLS 200-489] Unrolling loop 'Loop-2' (/opt/xilinx/Vivado/2019.2/common/te
 INFO: [HLS 200-489] Unrolling loop 'Loop-3' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:1512) in function 'exp_reduce::exp_core<32, 20, 54>' completely with a factor of 5.
 INFO: [HLS 200-489] Unrolling loop 'Loop-4' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:1518) in function 'exp_reduce::exp_core<32, 20, 54>' completely with a factor of 5.
 INFO: [HLS 200-489] Unrolling loop 'Loop-5' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:1521) in function 'exp_reduce::exp_core<32, 20, 54>' completely with a factor of 42.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (kernel.cpp:452) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2' (kernel.cpp:466) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-3' (kernel.cpp:471) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-4' (kernel.cpp:477) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-5' (kernel.cpp:483) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-6.1' (kernel.cpp:493) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-7.1' (kernel.cpp:501) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-8.1' (kernel.cpp:509) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-9.1' (kernel.cpp:520) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-10.1' (kernel.cpp:528) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-14.1' (kernel.cpp:564) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j9' (kernel.cpp:574) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-16' (kernel.cpp:584) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-16.1' (kernel.cpp:585) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_i_3_i11' (kernel.cpp:591) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_j_3_j10' (kernel.cpp:592) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-18.1' (kernel.cpp:602) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-19.1' (kernel.cpp:611) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-20' (kernel.cpp:619) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_s_6_s4' (kernel.cpp:624) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-22' (kernel.cpp:633) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-23' (kernel.cpp:647) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-24' (kernel.cpp:651) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i9' (kernel.cpp:415) in function 'GEMM_3D_float2' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j6' (kernel.cpp:366) in function 'softmax' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_j_3_j7' (kernel.cpp:374) in function 'softmax' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i6' (kernel.cpp:354) in function 'causal_mask' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j5' (kernel.cpp:355) in function 'causal_mask' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i5' (kernel.cpp:336) in function 'GEMM_3D_float' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (kernel.cpp:252) in function 'apply_rotary_pos_emb' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (kernel.cpp:260) in function 'apply_rotary_pos_emb' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s2' (kernel.cpp:269) in function 'apply_rotary_pos_emb' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s1' (kernel.cpp:229) in function 'rotate_half' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s' (kernel.cpp:214) in function 'reshape_2D_to_3D' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i3' (kernel.cpp:131) in function 'linear_forward_no_mul' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (kernel.cpp:453) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (kernel.cpp:467) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (kernel.cpp:472) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (kernel.cpp:478) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (kernel.cpp:484) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1' (kernel.cpp:494) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1' (kernel.cpp:502) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8.1' (kernel.cpp:510) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-9.1' (kernel.cpp:521) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10.1' (kernel.cpp:529) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-14.1' (kernel.cpp:565) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j9' (kernel.cpp:575) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-16' (kernel.cpp:585) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-16.1' (kernel.cpp:586) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_i_3_i11' (kernel.cpp:592) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_j_3_j10' (kernel.cpp:593) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-18.1' (kernel.cpp:603) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-19.1' (kernel.cpp:612) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-20' (kernel.cpp:620) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_s_6_s4' (kernel.cpp:625) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-22' (kernel.cpp:634) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-23' (kernel.cpp:648) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-24' (kernel.cpp:652) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i9' (kernel.cpp:416) in function 'GEMM_3D_float2' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j6' (kernel.cpp:367) in function 'softmax' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_j_3_j7' (kernel.cpp:375) in function 'softmax' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i6' (kernel.cpp:355) in function 'causal_mask' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j5' (kernel.cpp:356) in function 'causal_mask' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i5' (kernel.cpp:337) in function 'GEMM_3D_float' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (kernel.cpp:253) in function 'apply_rotary_pos_emb' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (kernel.cpp:261) in function 'apply_rotary_pos_emb' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s2' (kernel.cpp:270) in function 'apply_rotary_pos_emb' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s1' (kernel.cpp:230) in function 'rotate_half' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s' (kernel.cpp:215) in function 'reshape_2D_to_3D' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i3' (kernel.cpp:132) in function 'linear_forward_no_mul' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_l_0_l' (kernel.cpp:143) in function 'linear_forward_no_mul' completely with a factor of 4.
 INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i2' (kernel.cpp:67) in function 'quantize_activation' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'l_S_index_0_index' (kernel.cpp:22) in function 'rms_norm' completely with a factor of 1.
-INFO: [XFORM 203-102] Partitioning array 'rotated_q.V' (kernel.cpp:250) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'rotated_k.V' (kernel.cpp:258) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'rotated_q.V' (kernel.cpp:251) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'rotated_k.V' (kernel.cpp:259) in dimension 2 automatically.
 INFO: [XFORM 203-102] Partitioning array 'v210.V.0' automatically.
-INFO: [XFORM 203-102] Partitioning array 'rms_hidden_states.V' (kernel.cpp:451) in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'scales.V' (kernel.cpp:465) automatically.
-INFO: [XFORM 203-102] Partitioning array 'q_embed.V' (kernel.cpp:518) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'k_embed.V' (kernel.cpp:526) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'attn_weights.V' (kernel.cpp:562) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'causal_mask_matrix.V' (kernel.cpp:583) in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'softmax_attn_weights.V' (kernel.cpp:600) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'attn_output.V' (kernel.cpp:609) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'rms_attn_output.V' (kernel.cpp:632) in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'final_scales.V' (kernel.cpp:646) automatically.
-INFO: [XFORM 203-102] Partitioning array 'causal_mask_matrix.V.0' (kernel.cpp:583) automatically.
-INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states' in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'quantized_final_output' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'rms_hidden_states.V' (kernel.cpp:452) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'scales.V' (kernel.cpp:466) automatically.
+INFO: [XFORM 203-102] Partitioning array 'q_embed.V' (kernel.cpp:519) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'k_embed.V' (kernel.cpp:527) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'attn_weights.V' (kernel.cpp:563) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'causal_mask_matrix.V' (kernel.cpp:584) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'softmax_attn_weights.V' (kernel.cpp:601) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'attn_output.V' (kernel.cpp:610) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'rms_attn_output.V' (kernel.cpp:633) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'final_scales.V' (kernel.cpp:647) automatically.
+INFO: [XFORM 203-102] Partitioning array 'causal_mask_matrix.V.0' (kernel.cpp:584) automatically.
 INFO: [XFORM 203-102] Partitioning array 'q_proj.V' in dimension 2 automatically.
 INFO: [XFORM 203-102] Partitioning array 'k_proj.V' in dimension 2 automatically.
 INFO: [XFORM 203-102] Partitioning array 'v_proj.V' in dimension 2 automatically.
+INFO: [XFORM 203-101] Partitioning array 'quantized_hidden_states'  in dimension 2 with a cyclic factor 4.
+INFO: [XFORM 203-101] Partitioning array 'quantized_final_output'  in dimension 2 with a cyclic factor 4.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.3' in dimension 1 automatically.
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fixed<74, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 68, 60>' into 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:348) automatically.
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fixed<74, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 60, 55>' into 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:350) automatically.
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fixed<74, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 55, 50>' into 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:352) automatically.
@@ -290,67 +301,67 @@ INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fix
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' into 'log_apfixed_reduce::log<75, 21>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:771) automatically.
 INFO: [XFORM 203-602] Inlining function 'fabs_fixed<33, 21>' into 'pow_apfixed_reduce::pow<32, 20>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:94) automatically.
 INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'rms_norm' (kernel.cpp:35) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'softmax' (kernel.cpp:392) automatically.
-INFO: [XFORM 203-602] Inlining function 'causal_mask' into 'attention' (kernel.cpp:589) automatically.
-Command           transform done; 5.99 sec.
+INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'softmax' (kernel.cpp:393) automatically.
+INFO: [XFORM 203-602] Inlining function 'causal_mask' into 'attention' (kernel.cpp:590) automatically.
+Command           transform done; 6.07 sec.
 INFO-FLOW: Presyn 2...
 Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kernel.cpp:97:52) to (kernel.cpp:97:45) in function 'quantize_activation'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kernel.cpp:97:52) to (kernel.cpp:119:7) in function 'quantize_activation'... converting 3 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:727:44) to (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:747:17) in function 'log_apfixed_reduce::log<75, 21>'... converting 76 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kernel.cpp:141:49) to (kernel.cpp:141:43) in function 'linear_forward_no_mul'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kernel.cpp:136:49) to (kernel.cpp:136:43) in function 'linear_forward_no_mul'... converting 9 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:873:1) to (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:1993:5) in function 'exp_reduce::exp_core<32, 20, 54>'... converting 5 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'log_apfixed_reduce::log<75, 21>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:178:90)...11 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'linear_forward_no_mul' (kernel.cpp:125)...4 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp_core<32, 20, 54>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:873:5)...22 expression(s) balanced.
-Command           transform done; 1.53 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 1584.156 ; gain = 946.129 ; free physical = 619423 ; free virtual = 758255
+Command           transform done; 1.57 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:27 ; elapsed = 00:01:33 . Memory (MB): peak = 1584.156 ; gain = 946.129 ; free physical = 620062 ; free virtual = 758259
 INFO-FLOW: Building ssdm...
 Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.o.2.bc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [XFORM 203-541] Flattening a loop nest 'l_S_k_0_k' (kernel.cpp:135:49) in function 'linear_forward_no_mul'.
-WARNING: [XFORM 203-542] Cannot flatten a loop nest 'l_S_j_0_j2' (kernel.cpp:132:52) in function 'linear_forward_no_mul' : 
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'l_S_j_0_j2' (kernel.cpp:133:52) in function 'linear_forward_no_mul' : 
 
 the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
-WARNING: [XFORM 203-631] Renaming function 'transpose_last_two_dims' to 'transpose_last_two_d' (kernel.cpp:320:45)
+WARNING: [XFORM 203-631] Renaming function 'transpose_last_two_dims' to 'transpose_last_two_d' (kernel.cpp:321:45)
 WARNING: [XFORM 203-631] Renaming function 'pow_apfixed_reduce::pow<32, 20>' to 'pow<32, 20>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:63:29)
 WARNING: [XFORM 203-631] Renaming function 'log_apfixed_reduce::log<75, 21>' to 'log<75, 21>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:178:90)
-WARNING: [XFORM 203-631] Renaming function 'linear_forward_no_mul' to 'linear_forward_no_mu' (kernel.cpp:131:43)
+WARNING: [XFORM 203-631] Renaming function 'linear_forward_no_mul' to 'linear_forward_no_mu' (kernel.cpp:132:43)
 WARNING: [XFORM 203-631] Renaming function 'exp_reduce::exp_core<32, 20, 54>' to 'exp_core<32, 20, 54>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:873:5)
-INFO: [HLS 200-472] Inferring partial write operation for 'v193.V' (kernel.cpp:324:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v214[0].V' (kernel.cpp:369:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v214[0].V' (kernel.cpp:393:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v214[0].V' (kernel.cpp:403:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v142[0].V' (kernel.cpp:233:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v142[0].V' (kernel.cpp:235:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v193.V' (kernel.cpp:325:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v214[0].V' (kernel.cpp:370:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v214[0].V' (kernel.cpp:394:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v214[0].V' (kernel.cpp:404:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v142[0].V' (kernel.cpp:234:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v142[0].V' (kernel.cpp:236:9)
 INFO: [HLS 200-472] Inferring partial write operation for 'v3[0].V' (kernel.cpp:44:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'v136[0].V' (kernel.cpp:218:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v24[0]' (kernel.cpp:119:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'v183.V' (kernel.cpp:304:11)
-INFO: [HLS 200-472] Inferring partial write operation for 'v183.V' (kernel.cpp:309:11)
-INFO: [HLS 200-472] Inferring partial write operation for 'rms_hidden_states[0]' (kernel.cpp:454:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'q_proj_re.V' (kernel.cpp:473:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'k_proj_re.V' (kernel.cpp:479:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'v_proj_re.V' (kernel.cpp:485:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'q_embed[0].V' (kernel.cpp:522:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'k_embed[0].V' (kernel.cpp:530:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'updated_k_cache.V' (kernel.cpp:539:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'updated_v_cache.V' (kernel.cpp:547:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'attn_weights[0].V' (kernel.cpp:566:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'attn_weights[0].V' (kernel.cpp:579:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'softmax_attn_weights' (kernel.cpp:604:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'attn_output[0].V' (kernel.cpp:613:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'attn_output_2D.V' (kernel.cpp:621:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'attn_output_2D.V' (kernel.cpp:628:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'rms_attn_output[0].V' (kernel.cpp:635:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'rotated_q[0].V' (kernel.cpp:254:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'rotated_k[0].V' (kernel.cpp:262:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v153[0].V' (kernel.cpp:278:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v154[0].V' (kernel.cpp:286:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v242[0].V' (kernel.cpp:423:11)
-INFO: [HLS 200-472] Inferring partial write operation for 'v200[0].V' (kernel.cpp:344:11)
-Command           transform done; 8.54 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1840.156 ; gain = 1202.129 ; free physical = 619232 ; free virtual = 758073
+INFO: [HLS 200-472] Inferring partial write operation for 'v136[0].V' (kernel.cpp:219:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v24[0][0]' (kernel.cpp:119:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'v183.V' (kernel.cpp:305:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'v183.V' (kernel.cpp:310:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'rms_hidden_states[0]' (kernel.cpp:455:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'q_proj_re.V' (kernel.cpp:474:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'k_proj_re.V' (kernel.cpp:480:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'v_proj_re.V' (kernel.cpp:486:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'q_embed[0].V' (kernel.cpp:523:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'k_embed[0].V' (kernel.cpp:531:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'updated_k_cache.V' (kernel.cpp:540:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'updated_v_cache.V' (kernel.cpp:548:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'attn_weights[0].V' (kernel.cpp:567:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'attn_weights[0].V' (kernel.cpp:580:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'softmax_attn_weights' (kernel.cpp:605:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'attn_output[0].V' (kernel.cpp:614:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'attn_output_2D.V' (kernel.cpp:622:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'attn_output_2D.V' (kernel.cpp:629:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'rms_attn_output[0].V' (kernel.cpp:636:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'rotated_q[0].V' (kernel.cpp:255:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'rotated_k[0].V' (kernel.cpp:263:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v153[0].V' (kernel.cpp:279:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v154[0].V' (kernel.cpp:287:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v242[0].V' (kernel.cpp:424:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'v200[0].V' (kernel.cpp:345:11)
+Command           transform done; 7.68 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1840.156 ; gain = 1202.129 ; free physical = 619867 ; free virtual = 758073
 INFO-FLOW: Finish building internal data model.
-Command         opt_and_import_c done; 30.23 sec.
-Command       elaborate done; 98.69 sec.
+Command         opt_and_import_c done; 29.38 sec.
+Command       elaborate done; 97.74 sec.
 Execute       autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -493,12 +504,12 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'log<75, 21>'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 30.
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.41 sec.
-INFO: [HLS 200-111]  Elapsed time: 101.06 seconds; current allocated memory: 773.648 MB.
+Command         schedule done; 0.4 sec.
+INFO: [HLS 200-111]  Elapsed time: 101.65 seconds; current allocated memory: 775.261 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/log_75_21_s.verbose.sched.rpt 
-Command         syn_report done; 0.42 sec.
+Command         syn_report done; 0.4 sec.
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/log_75_21_s.sched.adb -f 
-Command         db_write done; 0.38 sec.
+Command         db_write done; 0.37 sec.
 INFO-FLOW: Finish scheduling log<75, 21>.
 Execute         set_default_model log<75, 21> 
 Execute         bind -model log<75, 21> 
@@ -508,12 +519,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command         bind done; 0.21 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.01 seconds; current allocated memory: 777.269 MB.
+Command         bind done; 0.19 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.96 seconds; current allocated memory: 778.884 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/log_75_21_s.verbose.bind.rpt 
-Command         syn_report done; 0.71 sec.
+Command         syn_report done; 0.67 sec.
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/log_75_21_s.bind.adb -f 
-Command         db_write done; 0.39 sec.
+Command         db_write done; 0.4 sec.
 INFO-FLOW: Finish binding log<75, 21>.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'exp_core_32_20_54_s' 
@@ -524,8 +535,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'exp_core<32, 20, 54>'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 13.
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.11 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.23 seconds; current allocated memory: 778.353 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.19 seconds; current allocated memory: 779.969 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/exp_core_32_20_54_s.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/exp_core_32_20_54_s.sched.adb -f 
 INFO-FLOW: Finish scheduling exp_core<32, 20, 54>.
@@ -537,7 +547,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 779.009 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 780.627 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/exp_core_32_20_54_s.verbose.bind.rpt 
 Command         syn_report done; 0.14 sec.
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/exp_core_32_20_54_s.bind.adb -f 
@@ -549,7 +559,7 @@ Execute         set_default_model pow<32, 20>
 Execute         schedule -model pow<32, 20> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 779.467 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 781.066 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/pow_32_20_s.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/pow_32_20_s.sched.adb -f 
 INFO-FLOW: Finish scheduling pow<32, 20>.
@@ -562,9 +572,9 @@ INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
 Command         bind done; 0.35 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 780.281 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 781.896 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/pow_32_20_s.verbose.bind.rpt 
-Command         syn_report done; 0.44 sec.
+Command         syn_report done; 0.45 sec.
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/pow_32_20_s.bind.adb -f 
 INFO-FLOW: Finish binding pow<32, 20>.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -574,7 +584,7 @@ Execute         set_default_model rms_norm
 Execute         schedule -model rms_norm 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 780.992 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 782.606 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rms_norm.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rms_norm.sched.adb -f 
 INFO-FLOW: Finish scheduling rms_norm.
@@ -586,10 +596,10 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command         bind done; 0.17 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 781.452 MB.
+Command         bind done; 0.19 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 783.065 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rms_norm.verbose.bind.rpt 
-Command         syn_report done; 0.43 sec.
+Command         syn_report done; 0.45 sec.
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rms_norm.bind.adb -f 
 INFO-FLOW: Finish binding rms_norm.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -599,7 +609,7 @@ Execute         set_default_model quantize_activation
 Execute         schedule -model quantize_activation 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 782.172 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 783.822 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/quantize_activation.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/quantize_activation.sched.adb -f 
 INFO-FLOW: Finish scheduling quantize_activation.
@@ -611,7 +621,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 782.510 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 784.220 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/quantize_activation.verbose.bind.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/quantize_activation.bind.adb -f 
 INFO-FLOW: Finish binding quantize_activation.
@@ -621,10 +631,10 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute         set_default_model linear_forward_no_mu 
 Execute         schedule -model linear_forward_no_mu 
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k_l_S_l_0_l'.
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 782.887 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 784.656 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/linear_forward_no_mu.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/linear_forward_no_mu.sched.adb -f 
 INFO-FLOW: Finish scheduling linear_forward_no_mu.
@@ -636,8 +646,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 783.330 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 785.172 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/linear_forward_no_mu.verbose.bind.rpt 
+Command         syn_report done; 0.11 sec.
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/linear_forward_no_mu.bind.adb -f 
 INFO-FLOW: Finish binding linear_forward_no_mu.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -647,7 +658,7 @@ Execute         set_default_model reshape_2D_to_3D
 Execute         schedule -model reshape_2D_to_3D 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 783.506 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 785.347 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/reshape_2D_to_3D.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/reshape_2D_to_3D.sched.adb -f 
 INFO-FLOW: Finish scheduling reshape_2D_to_3D.
@@ -659,7 +670,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 783.661 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 785.500 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/reshape_2D_to_3D.verbose.bind.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/reshape_2D_to_3D.bind.adb -f 
 INFO-FLOW: Finish binding reshape_2D_to_3D.
@@ -670,7 +681,7 @@ Execute         set_default_model rotate_half
 Execute         schedule -model rotate_half 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 783.769 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 785.657 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rotate_half.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rotate_half.sched.adb -f 
 INFO-FLOW: Finish scheduling rotate_half.
@@ -682,7 +693,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 783.942 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 785.832 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rotate_half.verbose.bind.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rotate_half.bind.adb -f 
 INFO-FLOW: Finish binding rotate_half.
@@ -693,7 +704,7 @@ Execute         set_default_model apply_rotary_pos_emb
 Execute         schedule -model apply_rotary_pos_emb 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 784.286 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 786.126 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/apply_rotary_pos_emb.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/apply_rotary_pos_emb.sched.adb -f 
 INFO-FLOW: Finish scheduling apply_rotary_pos_emb.
@@ -705,7 +716,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 784.693 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 786.533 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/apply_rotary_pos_emb.verbose.bind.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/apply_rotary_pos_emb.bind.adb -f 
 INFO-FLOW: Finish binding apply_rotary_pos_emb.
@@ -716,7 +727,7 @@ Execute         set_default_model cache_update
 Execute         schedule -model cache_update 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 784.987 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 786.821 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/cache_update.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/cache_update.sched.adb -f 
 INFO-FLOW: Finish scheduling cache_update.
@@ -728,7 +739,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 785.314 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 787.145 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/cache_update.verbose.bind.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/cache_update.bind.adb -f 
 INFO-FLOW: Finish binding cache_update.
@@ -739,7 +750,7 @@ Execute         set_default_model transpose_last_two_d
 Execute         schedule -model transpose_last_two_d 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 785.520 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 787.352 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/transpose_last_two_d.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/transpose_last_two_d.sched.adb -f 
 INFO-FLOW: Finish scheduling transpose_last_two_d.
@@ -751,7 +762,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 785.739 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 787.573 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/transpose_last_two_d.verbose.bind.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/transpose_last_two_d.bind.adb -f 
 INFO-FLOW: Finish binding transpose_last_two_d.
@@ -762,7 +773,7 @@ Execute         set_default_model GEMM_3D_float
 Execute         schedule -model GEMM_3D_float 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 785.898 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 787.777 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float.sched.adb -f 
 INFO-FLOW: Finish scheduling GEMM_3D_float.
@@ -774,7 +785,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 786.139 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 788.016 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float.verbose.bind.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float.bind.adb -f 
 INFO-FLOW: Finish binding GEMM_3D_float.
@@ -785,7 +796,7 @@ Execute         set_default_model softmax
 Execute         schedule -model softmax 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 786.501 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 788.384 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/softmax.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/softmax.sched.adb -f 
 INFO-FLOW: Finish scheduling softmax.
@@ -797,10 +808,10 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command         bind done; 0.19 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 787.113 MB.
+Command         bind done; 0.18 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 788.998 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/softmax.verbose.bind.rpt 
-Command         syn_report done; 0.46 sec.
+Command         syn_report done; 0.48 sec.
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/softmax.bind.adb -f 
 INFO-FLOW: Finish binding softmax.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -810,7 +821,7 @@ Execute         set_default_model GEMM_3D_float2
 Execute         schedule -model GEMM_3D_float2 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 787.797 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.62 seconds; current allocated memory: 789.668 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float2.verbose.sched.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float2.sched.adb -f 
 INFO-FLOW: Finish scheduling GEMM_3D_float2.
@@ -822,7 +833,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 788.035 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 789.907 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float2.verbose.bind.rpt 
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float2.bind.adb -f 
 INFO-FLOW: Finish binding GEMM_3D_float2.
@@ -833,12 +844,12 @@ Execute         set_default_model attention
 Execute         schedule -model attention 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.17 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 789.026 MB.
+Command         schedule done; 0.16 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 790.901 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.verbose.sched.rpt 
 Command         syn_report done; 0.19 sec.
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.sched.adb -f 
-Command         db_write done; 0.22 sec.
+Command         db_write done; 0.2 sec.
 INFO-FLOW: Finish scheduling attention.
 Execute         set_default_model attention 
 Execute         bind -model attention 
@@ -849,11 +860,11 @@ INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
 Command         bind done; 2.39 sec.
-INFO: [HLS 200-111]  Elapsed time: 2.8 seconds; current allocated memory: 792.958 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.78 seconds; current allocated memory: 794.858 MB.
 Execute         syn_report -verbosereport -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.verbose.bind.rpt 
-Command         syn_report done; 1.18 sec.
+Command         syn_report done; 1.22 sec.
 Execute         db_write -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.bind.adb -f 
-Command         db_write done; 0.23 sec.
+Command         db_write done; 0.22 sec.
 INFO-FLOW: Finish binding attention.
 Execute         get_model_list attention -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
@@ -898,8 +909,8 @@ INFO: [RTGEN 206-100] Generating core module 'attention_mul_68nibs': 1 instance(
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_7s_lbW': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_85nhbi': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'log_75_21_s'.
-Command         create_rtl_model done; 0.4 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.85 seconds; current allocated memory: 800.847 MB.
+Command         create_rtl_model done; 0.41 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.89 seconds; current allocated memory: 802.779 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl log<75, 21> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/log_75_21_s -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl log<75, 21> -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/log_75_21_s 
@@ -907,11 +918,11 @@ Execute         gen_rtl log<75, 21> -style xilinx -f -lang vlog -o /home/bg372/e
 Execute         syn_report -csynth -model log<75, 21> -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/log_75_21_s_csynth.rpt 
 Command         syn_report done; 0.24 sec.
 Execute         syn_report -rtlxml -model log<75, 21> -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/log_75_21_s_csynth.xml 
-Command         syn_report done; 0.13 sec.
+Command         syn_report done; 0.12 sec.
 Execute         syn_report -verbosereport -model log<75, 21> -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/log_75_21_s.verbose.rpt 
-Command         syn_report done; 0.77 sec.
+Command         syn_report done; 0.78 sec.
 Execute         db_write -model log<75, 21> -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/log_75_21_s.adb 
-Command         db_write done; 0.9 sec.
+Command         db_write done; 0.92 sec.
 Execute         gen_tb_info log<75, 21> -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/log_75_21_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'exp_core_32_20_54_s' 
@@ -931,7 +942,7 @@ INFO: [RTGEN 206-100] Generating core module 'attention_mul_48nsc4': 1 instance(
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_50ntde': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_core_32_20_54_s'.
 Command         create_rtl_model done; 0.14 sec.
-INFO: [HLS 200-111]  Elapsed time: 2.39 seconds; current allocated memory: 815.379 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.4 seconds; current allocated memory: 817.280 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl exp_core<32, 20, 54> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/exp_core_32_20_54_s -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl exp_core<32, 20, 54> -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/exp_core_32_20_54_s 
@@ -939,9 +950,9 @@ Execute         gen_rtl exp_core<32, 20, 54> -style xilinx -f -lang vlog -o /hom
 Execute         syn_report -csynth -model exp_core<32, 20, 54> -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/exp_core_32_20_54_s_csynth.rpt 
 Execute         syn_report -rtlxml -model exp_core<32, 20, 54> -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/exp_core_32_20_54_s_csynth.xml 
 Execute         syn_report -verbosereport -model exp_core<32, 20, 54> -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/exp_core_32_20_54_s.verbose.rpt 
-Command         syn_report done; 0.17 sec.
+Command         syn_report done; 0.15 sec.
 Execute         db_write -model exp_core<32, 20, 54> -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/exp_core_32_20_54_s.adb 
-Command         db_write done; 0.51 sec.
+Command         db_write done; 0.4 sec.
 Execute         gen_tb_info exp_core<32, 20, 54> -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/exp_core_32_20_54_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'pow_32_20_s' 
@@ -952,7 +963,7 @@ Execute         create_rtl_model pow<32, 20> -vendor xilinx -mg_file /home/bg372
 INFO: [SYN 201-210] Renamed object name 'attention_mul_60s_32s_92_5_1' to 'attention_mul_60sudo' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_60sudo': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'pow_32_20_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.9 seconds; current allocated memory: 819.066 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 820.971 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl pow<32, 20> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/pow_32_20_s -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl pow<32, 20> -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/pow_32_20_s 
@@ -960,9 +971,9 @@ Execute         gen_rtl pow<32, 20> -style xilinx -f -lang vlog -o /home/bg372/e
 Execute         syn_report -csynth -model pow<32, 20> -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/pow_32_20_s_csynth.rpt 
 Execute         syn_report -rtlxml -model pow<32, 20> -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/pow_32_20_s_csynth.xml 
 Execute         syn_report -verbosereport -model pow<32, 20> -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/pow_32_20_s.verbose.rpt 
-Command         syn_report done; 0.46 sec.
+Command         syn_report done; 0.42 sec.
 Execute         db_write -model pow<32, 20> -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/pow_32_20_s.adb 
-Command         db_write done; 0.46 sec.
+Command         db_write done; 0.47 sec.
 Execute         gen_tb_info pow<32, 20> -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/pow_32_20_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'rms_norm' 
@@ -975,7 +986,7 @@ INFO: [SYN 201-210] Renamed object name 'attention_sdiv_27ns_32ns_32_31_seq_1' t
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_46nvdy': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'attention_sdiv_27wdI': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'rms_norm'.
-INFO: [HLS 200-111]  Elapsed time: 1.08 seconds; current allocated memory: 822.000 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.05 seconds; current allocated memory: 823.868 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl rms_norm -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/rms_norm -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl rms_norm -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/rms_norm 
@@ -983,9 +994,9 @@ Execute         gen_rtl rms_norm -style xilinx -f -lang vlog -o /home/bg372/ece6
 Execute         syn_report -csynth -model rms_norm -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/rms_norm_csynth.rpt 
 Execute         syn_report -rtlxml -model rms_norm -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/rms_norm_csynth.xml 
 Execute         syn_report -verbosereport -model rms_norm -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rms_norm.verbose.rpt 
-Command         syn_report done; 0.48 sec.
+Command         syn_report done; 0.44 sec.
 Execute         db_write -model rms_norm -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rms_norm.adb 
-Command         db_write done; 0.35 sec.
+Command         db_write done; 0.44 sec.
 Execute         gen_tb_info rms_norm -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rms_norm 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'quantize_activation' 
@@ -996,7 +1007,7 @@ Execute         create_rtl_model quantize_activation -vendor xilinx -mg_file /ho
 INFO: [SYN 201-210] Renamed object name 'attention_udiv_32ns_32ns_32_36_seq_1' to 'attention_udiv_32xdS' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'attention_udiv_32xdS': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'quantize_activation'.
-INFO: [HLS 200-111]  Elapsed time: 0.97 seconds; current allocated memory: 824.215 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.01 seconds; current allocated memory: 826.118 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl quantize_activation -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/quantize_activation -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl quantize_activation -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/quantize_activation 
@@ -1005,7 +1016,7 @@ Execute         syn_report -csynth -model quantize_activation -o /home/bg372/ece
 Execute         syn_report -rtlxml -model quantize_activation -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/quantize_activation_csynth.xml 
 Execute         syn_report -verbosereport -model quantize_activation -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/quantize_activation.verbose.rpt 
 Execute         db_write -model quantize_activation -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/quantize_activation.adb 
-Command         db_write done; 0.44 sec.
+Command         db_write done; 0.42 sec.
 Execute         gen_tb_info quantize_activation -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/quantize_activation 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'linear_forward_no_mu' 
@@ -1013,10 +1024,10 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute         get_config_rtl -module_prefix 
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model linear_forward_no_mu -vendor xilinx -mg_file /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/linear_forward_no_mu.compgen.tcl 
-INFO: [SYN 201-210] Renamed object name 'attention_sdiv_44ns_32s_32_48_seq_1' to 'attention_sdiv_44yd2' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'attention_sdiv_44yd2': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'attention_sdiv_43ns_32s_32_47_seq_1' to 'attention_sdiv_43yd2' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'attention_sdiv_43yd2': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_forward_no_mu'.
-INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 826.255 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 828.498 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl linear_forward_no_mu -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/linear_forward_no_mu -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl linear_forward_no_mu -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/linear_forward_no_mu 
@@ -1024,9 +1035,9 @@ Execute         gen_rtl linear_forward_no_mu -style xilinx -f -lang vlog -o /hom
 Execute         syn_report -csynth -model linear_forward_no_mu -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/linear_forward_no_mu_csynth.rpt 
 Execute         syn_report -rtlxml -model linear_forward_no_mu -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/linear_forward_no_mu_csynth.xml 
 Execute         syn_report -verbosereport -model linear_forward_no_mu -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/linear_forward_no_mu.verbose.rpt 
-Command         syn_report done; 0.11 sec.
+Command         syn_report done; 0.12 sec.
 Execute         db_write -model linear_forward_no_mu -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/linear_forward_no_mu.adb 
-Command         db_write done; 0.48 sec.
+Command         db_write done; 0.44 sec.
 Execute         gen_tb_info linear_forward_no_mu -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/linear_forward_no_mu 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reshape_2D_to_3D' 
@@ -1035,7 +1046,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model reshape_2D_to_3D -vendor xilinx -mg_file /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/reshape_2D_to_3D.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reshape_2D_to_3D'.
-INFO: [HLS 200-111]  Elapsed time: 0.73 seconds; current allocated memory: 828.022 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.71 seconds; current allocated memory: 830.540 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl reshape_2D_to_3D -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/reshape_2D_to_3D -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl reshape_2D_to_3D -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/reshape_2D_to_3D 
@@ -1044,7 +1055,7 @@ Execute         syn_report -csynth -model reshape_2D_to_3D -o /home/bg372/ece677
 Execute         syn_report -rtlxml -model reshape_2D_to_3D -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/reshape_2D_to_3D_csynth.xml 
 Execute         syn_report -verbosereport -model reshape_2D_to_3D -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/reshape_2D_to_3D.verbose.rpt 
 Execute         db_write -model reshape_2D_to_3D -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/reshape_2D_to_3D.adb 
-Command         db_write done; 0.43 sec.
+Command         db_write done; 0.44 sec.
 Execute         gen_tb_info reshape_2D_to_3D -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/reshape_2D_to_3D 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'rotate_half' 
@@ -1053,7 +1064,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model rotate_half -vendor xilinx -mg_file /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rotate_half.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'rotate_half'.
-INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 828.863 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.56 seconds; current allocated memory: 831.428 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl rotate_half -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/rotate_half -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl rotate_half -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/rotate_half 
@@ -1062,7 +1073,7 @@ Execute         syn_report -csynth -model rotate_half -o /home/bg372/ece6775-fin
 Execute         syn_report -rtlxml -model rotate_half -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/rotate_half_csynth.xml 
 Execute         syn_report -verbosereport -model rotate_half -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rotate_half.verbose.rpt 
 Execute         db_write -model rotate_half -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rotate_half.adb 
-Command         db_write done; 0.45 sec.
+Command         db_write done; 0.3 sec.
 Execute         gen_tb_info rotate_half -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rotate_half 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'apply_rotary_pos_emb' 
@@ -1073,7 +1084,7 @@ Execute         create_rtl_model apply_rotary_pos_emb -vendor xilinx -mg_file /h
 INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_q_0_V' to 'apply_rotary_pos_zec' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_k_0_V' to 'apply_rotary_pos_Aem' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'apply_rotary_pos_emb'.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 830.305 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 832.854 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl apply_rotary_pos_emb -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/apply_rotary_pos_emb -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl apply_rotary_pos_emb -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/apply_rotary_pos_emb 
@@ -1092,7 +1103,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model cache_update -vendor xilinx -mg_file /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/cache_update.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'cache_update'.
-INFO: [HLS 200-111]  Elapsed time: 0.74 seconds; current allocated memory: 832.555 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 835.104 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl cache_update -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/cache_update -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl cache_update -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/cache_update 
@@ -1101,7 +1112,7 @@ Execute         syn_report -csynth -model cache_update -o /home/bg372/ece6775-fi
 Execute         syn_report -rtlxml -model cache_update -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/cache_update_csynth.xml 
 Execute         syn_report -verbosereport -model cache_update -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/cache_update.verbose.rpt 
 Execute         db_write -model cache_update -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/cache_update.adb 
-Command         db_write done; 0.47 sec.
+Command         db_write done; 0.5 sec.
 Execute         gen_tb_info cache_update -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/cache_update 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'transpose_last_two_d' 
@@ -1110,7 +1121,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model transpose_last_two_d -vendor xilinx -mg_file /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/transpose_last_two_d.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'transpose_last_two_d'.
-INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 834.255 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 836.802 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl transpose_last_two_d -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/transpose_last_two_d -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl transpose_last_two_d -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/transpose_last_two_d 
@@ -1119,7 +1130,7 @@ Execute         syn_report -csynth -model transpose_last_two_d -o /home/bg372/ec
 Execute         syn_report -rtlxml -model transpose_last_two_d -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/transpose_last_two_d_csynth.xml 
 Execute         syn_report -verbosereport -model transpose_last_two_d -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/transpose_last_two_d.verbose.rpt 
 Execute         db_write -model transpose_last_two_d -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/transpose_last_two_d.adb 
-Command         db_write done; 0.42 sec.
+Command         db_write done; 0.49 sec.
 Execute         gen_tb_info transpose_last_two_d -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/transpose_last_two_d 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'GEMM_3D_float' 
@@ -1128,7 +1139,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model GEMM_3D_float -vendor xilinx -mg_file /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'GEMM_3D_float'.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 835.513 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 838.097 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl GEMM_3D_float -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/GEMM_3D_float -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl GEMM_3D_float -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/GEMM_3D_float 
@@ -1137,7 +1148,7 @@ Execute         syn_report -csynth -model GEMM_3D_float -o /home/bg372/ece6775-f
 Execute         syn_report -rtlxml -model GEMM_3D_float -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/GEMM_3D_float_csynth.xml 
 Execute         syn_report -verbosereport -model GEMM_3D_float -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float.verbose.rpt 
 Execute         db_write -model GEMM_3D_float -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float.adb 
-Command         db_write done; 0.49 sec.
+Command         db_write done; 0.48 sec.
 Execute         gen_tb_info GEMM_3D_float -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'softmax' 
@@ -1145,9 +1156,10 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute         get_config_rtl -module_prefix 
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model softmax -vendor xilinx -mg_file /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/softmax.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'attention_sdiv_44yd2': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'attention_sdiv_44ns_32s_32_48_seq_1' to 'attention_sdiv_44Bew' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'attention_sdiv_44Bew': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'softmax'.
-INFO: [HLS 200-111]  Elapsed time: 0.68 seconds; current allocated memory: 837.507 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 840.058 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl softmax -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/softmax -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl softmax -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/softmax 
@@ -1157,7 +1169,7 @@ Execute         syn_report -rtlxml -model softmax -o /home/bg372/ece6775-final/a
 Execute         syn_report -verbosereport -model softmax -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/softmax.verbose.rpt 
 Command         syn_report done; 0.47 sec.
 Execute         db_write -model softmax -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/softmax.adb 
-Command         db_write done; 0.49 sec.
+Command         db_write done; 0.52 sec.
 Execute         gen_tb_info softmax -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/softmax 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'GEMM_3D_float2' 
@@ -1166,7 +1178,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model GEMM_3D_float2 -vendor xilinx -mg_file /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float2.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'GEMM_3D_float2'.
-INFO: [HLS 200-111]  Elapsed time: 1.1 seconds; current allocated memory: 839.920 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.1 seconds; current allocated memory: 842.479 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl GEMM_3D_float2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/GEMM_3D_float2 -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl GEMM_3D_float2 -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/GEMM_3D_float2 
@@ -1175,7 +1187,7 @@ Execute         syn_report -csynth -model GEMM_3D_float2 -o /home/bg372/ece6775-
 Execute         syn_report -rtlxml -model GEMM_3D_float2 -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/GEMM_3D_float2_csynth.xml 
 Execute         syn_report -verbosereport -model GEMM_3D_float2 -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float2.verbose.rpt 
 Execute         db_write -model GEMM_3D_float2 -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float2.adb 
-Command         db_write done; 0.49 sec.
+Command         db_write done; 0.51 sec.
 Execute         gen_tb_info GEMM_3D_float2 -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float2 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'attention' 
@@ -1201,46 +1213,52 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v266_V' to 'ap_m
 INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v267' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v268_V' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'attention' to 'ap_ctrl_hs'.
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta' to 'attention_quantizBew' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_q_proj_V_0' to 'attention_q_proj_CeG' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_proj_V_0' to 'attention_k_proj_DeQ' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_v_proj_V_0' to 'attention_v_proj_Ee0' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_proj_transposed_V' to 'attention_k_proj_Ffa' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp' to 'attention_quantizGfk' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_rms_hidden_states_0' to 'attention_rms_hidHfu' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_q_proj_re_V' to 'attention_q_proj_IfE' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_proj_re_V' to 'attention_k_proj_JfO' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_v_proj_re_V' to 'attention_v_proj_KfY' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_q_embed_0_V' to 'attention_q_embedLf8' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_embed_0_V' to 'attention_k_embedMgi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_updated_k_cache_V' to 'attention_updatedNgs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_updated_v_cache_V' to 'attention_updatedOgC' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_attn_weights_0_V' to 'attention_attn_wePgM' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_softmax_attn_weights' to 'attention_softmaxQgW' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_attn_output_0_V' to 'attention_attn_ouRg6' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_attn_output_2D_V' to 'attention_attn_ouShg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_rms_attn_output_0_V' to 'attention_rms_attThq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_3' to 'attention_quantizCeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_2' to 'attention_quantizDeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_1' to 'attention_quantizEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta' to 'attention_quantizFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_q_proj_V_0' to 'attention_q_proj_Gfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_proj_V_0' to 'attention_k_proj_Hfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_v_proj_V_0' to 'attention_v_proj_IfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_proj_transposed_V' to 'attention_k_proj_JfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_3' to 'attention_quantizKfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_2' to 'attention_quantizLf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_1' to 'attention_quantizMgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp' to 'attention_quantizNgs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_rms_hidden_states_0' to 'attention_rms_hidOgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_q_proj_re_V' to 'attention_q_proj_PgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_proj_re_V' to 'attention_k_proj_QgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_v_proj_re_V' to 'attention_v_proj_Rg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_q_embed_0_V' to 'attention_q_embedShg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_embed_0_V' to 'attention_k_embedThq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_updated_k_cache_V' to 'attention_updatedUhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_updated_v_cache_V' to 'attention_updatedVhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_attn_weights_0_V' to 'attention_attn_weWhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_softmax_attn_weights' to 'attention_softmaxXh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_attn_output_0_V' to 'attention_attn_ouYie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_attn_output_2D_V' to 'attention_attn_ouZio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_rms_attn_output_0_V' to 'attention_rms_att0iy' due to the length limit 20
 WARNING: [RTGEN 206-101] Port 'attention/v267' has no fanin or fanout and is left dangling.
                Please use C simulation to confirm this function argument can be read from or written to.
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_46nvdy': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'attention'.
-Command         create_rtl_model done; 0.64 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.29 seconds; current allocated memory: 843.934 MB.
+Command         create_rtl_model done; 0.96 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.61 seconds; current allocated memory: 846.660 MB.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.rtl_wrap.cfg.tcl 
 Execute         gen_rtl attention -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/systemc/attention -synmodules {log<75, 21>} {exp_core<32, 20, 54>} {pow<32, 20>} rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention 
 Execute         gen_rtl attention -istop -style xilinx -f -lang vhdl -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/vhdl/attention 
-Command         gen_rtl done; 0.12 sec.
+Command         gen_rtl done; 0.14 sec.
 Execute         gen_rtl attention -istop -style xilinx -f -lang vlog -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/verilog/attention 
 Execute         syn_report -csynth -model attention -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/attention_csynth.rpt 
 Execute         syn_report -rtlxml -model attention -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/syn/report/attention_csynth.xml 
 Execute         syn_report -verbosereport -model attention -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.verbose.rpt 
-Command         syn_report done; 1.34 sec.
+Command         syn_report done; 1.26 sec.
 Execute         db_write -model attention -f -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.adb 
-Command         db_write done; 0.71 sec.
+Command         db_write done; 0.81 sec.
 Execute         gen_tb_info attention -p /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention 
 Execute         export_constraint_db -f -tool general -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.constraint.tcl 
 Execute         syn_report -designview -model attention -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.design.xml 
-Command         syn_report done; 0.61 sec.
+Command         syn_report done; 0.58 sec.
 Execute         get_config_rtl -disable_wave_debug 
 Execute         syn_report -wcfg -model attention -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention_dataflow_ana.wcfg 
 Execute         syn_report -protoinst -model attention -o /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.protoinst 
@@ -1307,8 +1325,8 @@ INFO-FLOW: Found component attention_udiv_32xdS.
 INFO-FLOW: Append model attention_udiv_32xdS
 INFO-FLOW: Handling components in module [linear_forward_no_mu] ... 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/linear_forward_no_mu.compgen.tcl 
-INFO-FLOW: Found component attention_sdiv_44yd2.
-INFO-FLOW: Append model attention_sdiv_44yd2
+INFO-FLOW: Found component attention_sdiv_43yd2.
+INFO-FLOW: Append model attention_sdiv_43yd2
 INFO-FLOW: Handling components in module [reshape_2D_to_3D] ... 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/reshape_2D_to_3D.compgen.tcl 
 INFO-FLOW: Handling components in module [rotate_half] ... 
@@ -1325,22 +1343,24 @@ INFO-FLOW: Handling components in module [GEMM_3D_float] ...
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float.compgen.tcl 
 INFO-FLOW: Handling components in module [softmax] ... 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/softmax.compgen.tcl 
+INFO-FLOW: Found component attention_sdiv_44Bew.
+INFO-FLOW: Append model attention_sdiv_44Bew
 INFO-FLOW: Handling components in module [GEMM_3D_float2] ... 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float2.compgen.tcl 
 INFO-FLOW: Handling components in module [attention] ... 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.compgen.tcl 
-INFO-FLOW: Found component attention_quantizBew.
-INFO-FLOW: Append model attention_quantizBew
-INFO-FLOW: Found component attention_q_proj_CeG.
-INFO-FLOW: Append model attention_q_proj_CeG
-INFO-FLOW: Found component attention_v_proj_Ee0.
-INFO-FLOW: Append model attention_v_proj_Ee0
-INFO-FLOW: Found component attention_k_proj_Ffa.
-INFO-FLOW: Append model attention_k_proj_Ffa
-INFO-FLOW: Found component attention_updatedNgs.
-INFO-FLOW: Append model attention_updatedNgs
-INFO-FLOW: Found component attention_attn_wePgM.
-INFO-FLOW: Append model attention_attn_wePgM
+INFO-FLOW: Found component attention_quantizCeG.
+INFO-FLOW: Append model attention_quantizCeG
+INFO-FLOW: Found component attention_q_proj_Gfk.
+INFO-FLOW: Append model attention_q_proj_Gfk
+INFO-FLOW: Found component attention_v_proj_IfE.
+INFO-FLOW: Append model attention_v_proj_IfE
+INFO-FLOW: Found component attention_k_proj_JfO.
+INFO-FLOW: Append model attention_k_proj_JfO
+INFO-FLOW: Found component attention_updatedUhA.
+INFO-FLOW: Append model attention_updatedUhA
+INFO-FLOW: Found component attention_attn_weWhU.
+INFO-FLOW: Append model attention_attn_weWhU
 INFO-FLOW: Append model log_75_21_s
 INFO-FLOW: Append model exp_core_32_20_54_s
 INFO-FLOW: Append model pow_32_20_s
@@ -1357,7 +1377,7 @@ INFO-FLOW: Append model softmax
 INFO-FLOW: Append model GEMM_3D_float2
 INFO-FLOW: Append model attention
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: attention_mul_85nhbi attention_mul_68nibs attention_mul_60njbC attention_mul_55nkbM attention_mul_7s_lbW attention_mul_50nmb6 log_75_21_s_log_abkb log_75_21_s_log_acud log_75_21_s_log_adEe log_75_21_s_log_aeOg log_75_21_s_log_afYi log_75_21_s_log_ag8j attention_mul_36nrcU attention_mul_48nsc4 attention_mul_50ntde exp_core_32_20_54ncg exp_core_32_20_54ocq exp_core_32_20_54pcA exp_core_32_20_54qcK attention_mul_60sudo attention_mul_46nvdy attention_sdiv_27wdI attention_udiv_32xdS attention_sdiv_44yd2 apply_rotary_pos_zec attention_quantizBew attention_q_proj_CeG attention_v_proj_Ee0 attention_k_proj_Ffa attention_updatedNgs attention_attn_wePgM log_75_21_s exp_core_32_20_54_s pow_32_20_s rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention
+INFO-FLOW: All models in this session: attention_mul_85nhbi attention_mul_68nibs attention_mul_60njbC attention_mul_55nkbM attention_mul_7s_lbW attention_mul_50nmb6 log_75_21_s_log_abkb log_75_21_s_log_acud log_75_21_s_log_adEe log_75_21_s_log_aeOg log_75_21_s_log_afYi log_75_21_s_log_ag8j attention_mul_36nrcU attention_mul_48nsc4 attention_mul_50ntde exp_core_32_20_54ncg exp_core_32_20_54ocq exp_core_32_20_54pcA exp_core_32_20_54qcK attention_mul_60sudo attention_mul_46nvdy attention_sdiv_27wdI attention_udiv_32xdS attention_sdiv_43yd2 apply_rotary_pos_zec attention_sdiv_44Bew attention_quantizCeG attention_q_proj_Gfk attention_v_proj_IfE attention_k_proj_JfO attention_updatedUhA attention_attn_weWhU log_75_21_s exp_core_32_20_54_s pow_32_20_s rms_norm quantize_activation linear_forward_no_mu reshape_2D_to_3D rotate_half apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float softmax GEMM_3D_float2 attention
 INFO-FLOW: To file: write model attention_mul_85nhbi
 INFO-FLOW: To file: write model attention_mul_68nibs
 INFO-FLOW: To file: write model attention_mul_60njbC
@@ -1381,14 +1401,15 @@ INFO-FLOW: To file: write model attention_mul_60sudo
 INFO-FLOW: To file: write model attention_mul_46nvdy
 INFO-FLOW: To file: write model attention_sdiv_27wdI
 INFO-FLOW: To file: write model attention_udiv_32xdS
-INFO-FLOW: To file: write model attention_sdiv_44yd2
+INFO-FLOW: To file: write model attention_sdiv_43yd2
 INFO-FLOW: To file: write model apply_rotary_pos_zec
-INFO-FLOW: To file: write model attention_quantizBew
-INFO-FLOW: To file: write model attention_q_proj_CeG
-INFO-FLOW: To file: write model attention_v_proj_Ee0
-INFO-FLOW: To file: write model attention_k_proj_Ffa
-INFO-FLOW: To file: write model attention_updatedNgs
-INFO-FLOW: To file: write model attention_attn_wePgM
+INFO-FLOW: To file: write model attention_sdiv_44Bew
+INFO-FLOW: To file: write model attention_quantizCeG
+INFO-FLOW: To file: write model attention_q_proj_Gfk
+INFO-FLOW: To file: write model attention_v_proj_IfE
+INFO-FLOW: To file: write model attention_k_proj_JfO
+INFO-FLOW: To file: write model attention_updatedUhA
+INFO-FLOW: To file: write model attention_attn_weWhU
 INFO-FLOW: To file: write model log_75_21_s
 INFO-FLOW: To file: write model exp_core_32_20_54_s
 INFO-FLOW: To file: write model pow_32_20_s
@@ -1438,8 +1459,8 @@ Execute             source /opt/xilinx/Vivado/2019.2/common/technology/xilinx/ip
 Execute             source /opt/xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
 Execute             source /opt/xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
 Execute             source /opt/xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
-Command           ap_source done; 0.12 sec.
-Command         ap_source done; 0.12 sec.
+Command           ap_source done; 0.11 sec.
+Command         ap_source done; 0.11 sec.
 Execute         source /opt/xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute           source /opt/xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
@@ -1522,7 +1543,7 @@ Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command         ap_source done; 0.77 sec.
+Command         ap_source done; 0.73 sec.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/exp_core_32_20_54_s.compgen.tcl 
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1567,7 +1588,7 @@ Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command         ap_source done; 0.45 sec.
+Command         ap_source done; 0.43 sec.
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/pow_32_20_s.compgen.tcl 
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -1591,7 +1612,7 @@ INFO: [RTMG 210-282] Generating pipelined core: 'attention_udiv_32xdS_div'
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/linear_forward_no_mu.compgen.tcl 
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-282] Generating pipelined core: 'attention_sdiv_44yd2_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'attention_sdiv_43yd2_div'
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/reshape_2D_to_3D.compgen.tcl 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/rotate_half.compgen.tcl 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/apply_rotary_pos_emb.compgen.tcl 
@@ -1602,27 +1623,30 @@ Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solut
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/transpose_last_two_d.compgen.tcl 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float.compgen.tcl 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/softmax.compgen.tcl 
+Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'attention_sdiv_44Bew_div'
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/GEMM_3D_float2.compgen.tcl 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.compgen.tcl 
-INFO: [RTMG 210-278] Implementing memory 'attention_quantizBew_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'attention_quantizCeG_ram (RAM)' using block RAMs with power-on initialization.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'attention_q_proj_CeG_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'attention_q_proj_Gfk_ram (RAM)' using block RAMs with power-on initialization.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'attention_v_proj_Ee0_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'attention_v_proj_IfE_ram (RAM)' using block RAMs with power-on initialization.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'attention_k_proj_Ffa_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'attention_k_proj_JfO_ram (RAM)' using block RAMs with power-on initialization.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'attention_updatedNgs_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'attention_updatedUhA_ram (RAM)' using block RAMs.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'attention_attn_wePgM_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'attention_attn_weWhU_ram (RAM)' using block RAMs.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command         ap_source done; 0.24 sec.
+Command         ap_source done; 0.25 sec.
 INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:CMD: read_platform_lib /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/global.setting.tcl
@@ -1724,7 +1748,7 @@ Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command         ap_source done; 0.34 sec.
+Command         ap_source done; 0.3 sec.
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
@@ -1755,7 +1779,7 @@ Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solut
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/attention.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=34
 INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=17
-INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=46 #gSsdmPorts=34
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=47 #gSsdmPorts=34
 Execute         source /opt/xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/global.setting.tcl 
 Execute         source /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/global.setting.tcl 
@@ -1798,9 +1822,9 @@ Execute         get_config_rtl -stall_sig_gen
 Execute         get_config_rtl -profile 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/bg372/ece6775-final/allo/attn_opt.prj/out.prj/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:02:00 ; elapsed = 00:02:18 . Memory (MB): peak = 1840.156 ; gain = 1202.129 ; free physical = 619105 ; free virtual = 757990
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:59 ; elapsed = 00:02:19 . Memory (MB): peak = 1840.156 ; gain = 1202.129 ; free physical = 619737 ; free virtual = 757987
 INFO: [VHDL 208-304] Generating VHDL RTL for attention.
 INFO: [VLOG 209-307] Generating Verilog RTL for attention.
-Command       autosyn done; 37.33 sec.
-Command     csynth_design done; 136.03 sec.
+Command       autosyn done; 37.42 sec.
+Command     csynth_design done; 135.17 sec.
 Execute     cleanup_all 

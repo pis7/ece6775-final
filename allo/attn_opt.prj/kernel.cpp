@@ -128,18 +128,19 @@ void linear_forward_no_mul(
   ap_fixed<32, 20> v80,
   ap_fixed<32, 20> v81[1][1536]
 ) {	// L113
+  #pragma HLS array_partition variable=v77 cyclic factor=4 dim=2
   l_S_i_0_i3: for (int i3 = 0; i3 < 1; i3++) {	// L114
     l_S_j_0_j2: for (int j2 = 0; j2 < 1536; j2++) {	// L115
       ap_fixed<32, 20> local_acum;	// L118
       local_acum = (ap_fixed<32, 20>)0.000000;	// L119
       l_S_k_0_k: for (int k = 0; k < 384; k++) {	// L120
+      #pragma HLS pipeline II=1
         int8_t v86 = v79[k][j2];	// L121
         int8_t packed_value;	// L122
         packed_value = v86;	// L123
         ap_fixed<32, 20> temp;	// L124
         temp = (ap_fixed<32, 20>)0.000000;	// L125
         l_S_l_0_l: for (int l = 0; l < 4; l++) {	// L126
-        #pragma HLS pipeline II=1
           int64_t v90 = k;	// L129
           int64_t v91 = v90 * 4;	// L130
           ap_int<65> v92 = v91;	// L131

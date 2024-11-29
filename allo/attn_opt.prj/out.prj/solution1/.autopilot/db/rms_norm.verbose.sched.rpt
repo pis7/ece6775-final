@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'rms_norm'
 ================================================================
-* Date:           Thu Nov 28 21:59:43 2024
+* Date:           Thu Nov 28 22:08:07 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        out.prj
@@ -131,7 +131,7 @@ State 2 <SV = 1> <Delay = 8.62>
 ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%v9_V_0 = phi i32 [ 0, %l_S_index_0_index_begin ], [ %add_ln703, %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit43.0 ]" [kernel.cpp:29]   --->   Operation 47 'phi' 'v9_V_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%i_0_0 = phi i11 [ 0, %l_S_index_0_index_begin ], [ %add_ln25, %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit43.0 ]" [kernel.cpp:25]   --->   Operation 48 'phi' 'i_0_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 49 [1/1] (1.88ns)   --->   "%icmp_ln25 = icmp eq i11 %i_0_0, -512" [kernel.cpp:25]   --->   Operation 49 'icmp' 'icmp_ln25' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%empty_69 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)"   --->   Operation 50 'speclooptripcount' 'empty_69' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%empty_73 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)"   --->   Operation 50 'speclooptripcount' 'empty_73' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 51 [1/1] (1.63ns)   --->   "%add_ln25 = add i11 %i_0_0, 1" [kernel.cpp:25]   --->   Operation 51 'add' 'add_ln25' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 52 [1/1] (0.00ns)   --->   "br i1 %icmp_ln25, label %ap_fixed_base.exit.0, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit43.0" [kernel.cpp:25]   --->   Operation 52 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%zext_ln26 = zext i11 %i_0_0 to i64" [kernel.cpp:26]   --->   Operation 53 'zext' 'zext_ln26' <Predicate = (!icmp_ln25)> <Delay = 0.00>
@@ -270,7 +270,7 @@ ST_39 : Operation 110 [1/1] (1.76ns)   --->   "br label %0" [kernel.cpp:38]   --
 State 40 <SV = 36> <Delay = 3.25>
 ST_40 : Operation 111 [1/1] (0.00ns)   --->   "%i1_0_0 = phi i11 [ 0, %ap_fixed_base.exit.0 ], [ %add_ln38, %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit10.0 ]" [kernel.cpp:38]   --->   Operation 111 'phi' 'i1_0_0' <Predicate = true> <Delay = 0.00>
 ST_40 : Operation 112 [1/1] (1.88ns)   --->   "%icmp_ln38 = icmp eq i11 %i1_0_0, -512" [kernel.cpp:38]   --->   Operation 112 'icmp' 'icmp_ln38' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_40 : Operation 113 [1/1] (0.00ns)   --->   "%empty_68 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)"   --->   Operation 113 'speclooptripcount' 'empty_68' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 113 [1/1] (0.00ns)   --->   "%empty_72 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)"   --->   Operation 113 'speclooptripcount' 'empty_72' <Predicate = true> <Delay = 0.00>
 ST_40 : Operation 114 [1/1] (1.63ns)   --->   "%add_ln38 = add i11 %i1_0_0, 1" [kernel.cpp:38]   --->   Operation 114 'add' 'add_ln38' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_40 : Operation 115 [1/1] (0.00ns)   --->   "br i1 %icmp_ln38, label %l_S_index_0_index_end, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit10.0" [kernel.cpp:38]   --->   Operation 115 'br' <Predicate = true> <Delay = 0.00>
 ST_40 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln39 = zext i11 %i1_0_0 to i64" [kernel.cpp:39]   --->   Operation 116 'zext' 'zext_ln39' <Predicate = (!icmp_ln38)> <Delay = 0.00>

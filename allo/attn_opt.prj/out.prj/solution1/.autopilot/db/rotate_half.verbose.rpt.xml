@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'rotate_half'" level="0">
-<item name = "Date">Thu Nov 28 22:00:00 2024
+<item name = "Date">Thu Nov 28 22:08:24 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">out.prj</item>
@@ -79,15 +79,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln230_fu_173_p2">+, 0, 0, 15, 6, 1</column>
-<column name="add_ln231_1_fu_189_p2">+, 0, 0, 12, 12, 12</column>
-<column name="add_ln231_fu_179_p2">+, 0, 0, 15, 7, 6</column>
-<column name="add_ln234_fu_203_p2">+, 0, 0, 12, 12, 12</column>
+<column name="add_ln231_fu_173_p2">+, 0, 0, 15, 6, 1</column>
+<column name="add_ln232_1_fu_189_p2">+, 0, 0, 12, 12, 12</column>
+<column name="add_ln232_fu_179_p2">+, 0, 0, 15, 7, 6</column>
+<column name="add_ln235_fu_203_p2">+, 0, 0, 12, 12, 12</column>
 <column name="h1_fu_131_p2">+, 0, 0, 15, 5, 1</column>
 <column name="sub_ln1118_fu_220_p2">-, 0, 0, 51, 1, 44</column>
-<column name="sub_ln231_fu_157_p2">-, 0, 0, 12, 12, 12</column>
-<column name="icmp_ln228_fu_125_p2">icmp, 0, 0, 11, 5, 6</column>
-<column name="icmp_ln230_fu_167_p2">icmp, 0, 0, 11, 6, 6</column>
+<column name="sub_ln232_fu_157_p2">-, 0, 0, 12, 12, 12</column>
+<column name="icmp_ln229_fu_125_p2">icmp, 0, 0, 11, 5, 6</column>
+<column name="icmp_ln231_fu_167_p2">icmp, 0, 0, 11, 6, 6</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -101,14 +101,14 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln230_reg_254">6, 0, 6, 0</column>
+<column name="add_ln231_reg_254">6, 0, 6, 0</column>
 <column name="ap_CS_fsm">5, 0, 5, 0</column>
 <column name="d1_0_0_reg_114">6, 0, 6, 0</column>
 <column name="h1_0_reg_103">5, 0, 5, 0</column>
 <column name="h1_reg_240">5, 0, 5, 0</column>
-<column name="sext_ln231_reg_259">64, 0, 64, 0</column>
-<column name="sext_ln234_reg_269">64, 0, 64, 0</column>
-<column name="sub_ln231_reg_245">7, 0, 12, 5</column>
+<column name="sext_ln232_reg_259">64, 0, 64, 0</column>
+<column name="sext_ln235_reg_269">64, 0, 64, 0</column>
+<column name="sub_ln232_reg_245">7, 0, 12, 5</column>
 <column name="v141_0_V_load_reg_279">32, 0, 32, 0</column>
 </table>
 </item>

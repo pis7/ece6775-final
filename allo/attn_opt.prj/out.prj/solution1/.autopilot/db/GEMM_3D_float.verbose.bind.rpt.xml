@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'GEMM_3D_float'" level="0">
-<item name = "Date">Thu Nov 28 21:59:46 2024
+<item name = "Date">Thu Nov 28 22:08:10 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">out.prj</item>

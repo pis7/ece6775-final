@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'log_75_21_s'
 ================================================================
-* Date:           Thu Nov 28 21:59:39 2024
+* Date:           Thu Nov 28 22:08:03 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        out.prj
@@ -976,7 +976,7 @@ ST_29 : Operation 839 [1/1] (5.59ns) (root node of TernaryAdder)   --->   "%log_
 ST_29 : Operation 840 [1/1] (0.00ns)   --->   "%p_Result_18 = call i1 @_ssdm_op_BitSelect.i1.i74.i32(i74 %log_base_V, i32 73)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:783]   --->   Operation 840 'bitselect' 'p_Result_18' <Predicate = (!icmp_ln1497)> <Delay = 0.00>
 
 State 30 <SV = 29> <Delay = 5.57>
-ST_30 : Operation 841 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str10) nounwind" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:500]   --->   Operation 841 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 841 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str7) nounwind" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:500]   --->   Operation 841 'specpipeline' <Predicate = true> <Delay = 0.00>
 ST_30 : Operation 842 [1/1] (0.00ns)   --->   "%shl_ln703_1 = call i14 @_ssdm_op_BitConcatenate.i14.i1.i13(i1 %p_Result_18, i13 -4096)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:785]   --->   Operation 842 'bitconcatenate' 'shl_ln703_1' <Predicate = (!icmp_ln1497)> <Delay = 0.00>
 ST_30 : Operation 843 [1/1] (0.00ns)   --->   "%sext_ln703_2 = sext i14 %shl_ln703_1 to i74" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:785]   --->   Operation 843 'sext' 'sext_ln703_2' <Predicate = (!icmp_ln1497)> <Delay = 0.00>
 ST_30 : Operation 844 [1/1] (3.80ns)   --->   "%log_base_V_1 = add i74 %sext_ln703_2, %log_base_V" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:785]   --->   Operation 844 'add' 'log_base_V_1' <Predicate = (!icmp_ln1497)> <Delay = 3.80> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>

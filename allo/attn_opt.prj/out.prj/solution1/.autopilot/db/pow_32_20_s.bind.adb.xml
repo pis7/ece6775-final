@@ -1595,10 +1595,10 @@ _ZN8ap_fixedILi33ELi21EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi20ELb1ELS0_5ELS1
 
 <Node id="60" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:4  %empty_75 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
+:4  %empty_79 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
 
 ]]></Node>
-<StgValue><ssdm name="empty_75"/></StgValue>
+<StgValue><ssdm name="empty_79"/></StgValue>
 </operation>
 
 <operation id="124" st_id="37" stage="1" lat="1">
@@ -2214,10 +2214,10 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 
 <Node id="89" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader799:4  %empty_76 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)
+.preheader799:4  %empty_80 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)
 
 ]]></Node>
-<StgValue><ssdm name="empty_76"/></StgValue>
+<StgValue><ssdm name="empty_80"/></StgValue>
 </operation>
 
 <operation id="159" st_id="51" stage="1" lat="1">
@@ -3389,13 +3389,13 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:1  ret i32 %a
 </dataflow>
 <dataflow id="587" from="StgValue_586" to="icmp_ln134" fromId="586" toId="122">
 </dataflow>
-<dataflow id="589" from="_ssdm_op_SpecLoopTripCount" to="empty_75" fromId="588" toId="123">
+<dataflow id="589" from="_ssdm_op_SpecLoopTripCount" to="empty_79" fromId="588" toId="123">
 </dataflow>
-<dataflow id="591" from="StgValue_590" to="empty_75" fromId="590" toId="123">
+<dataflow id="591" from="StgValue_590" to="empty_79" fromId="590" toId="123">
 </dataflow>
-<dataflow id="592" from="StgValue_590" to="empty_75" fromId="590" toId="123">
+<dataflow id="592" from="StgValue_590" to="empty_79" fromId="590" toId="123">
 </dataflow>
-<dataflow id="593" from="StgValue_590" to="empty_75" fromId="590" toId="123">
+<dataflow id="593" from="StgValue_590" to="empty_79" fromId="590" toId="123">
 </dataflow>
 <dataflow id="594" from="icmp_ln134" to="br_ln134" fromId="122" toId="124">
 </dataflow>
@@ -3684,13 +3684,13 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:1  ret i32 %a
 </dataflow>
 <dataflow id="720" from="StgValue_719" to="tmp_12" fromId="719" toId="157">
 </dataflow>
-<dataflow id="721" from="_ssdm_op_SpecLoopTripCount" to="empty_76" fromId="588" toId="158">
+<dataflow id="721" from="_ssdm_op_SpecLoopTripCount" to="empty_80" fromId="588" toId="158">
 </dataflow>
-<dataflow id="723" from="StgValue_722" to="empty_76" fromId="722" toId="158">
+<dataflow id="723" from="StgValue_722" to="empty_80" fromId="722" toId="158">
 </dataflow>
-<dataflow id="724" from="StgValue_722" to="empty_76" fromId="722" toId="158">
+<dataflow id="724" from="StgValue_722" to="empty_80" fromId="722" toId="158">
 </dataflow>
-<dataflow id="725" from="StgValue_722" to="empty_76" fromId="722" toId="158">
+<dataflow id="725" from="StgValue_722" to="empty_80" fromId="722" toId="158">
 </dataflow>
 <dataflow id="726" from="tmp_12" to="br_ln177" fromId="157" toId="159">
 </dataflow>

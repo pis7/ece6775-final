@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'quantize_activation'" level="0">
-<item name = "Date">Thu Nov 28 21:59:58 2024
+<item name = "Date">Thu Nov 28 22:08:22 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">out.prj</item>
@@ -54,7 +54,7 @@
 <column name="Instance">-, -, 394, 238, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 239, -</column>
-<column name="Register">-, -, 292, -, -</column>
+<column name="Register">-, -, 281, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 1, ~0, 1, 0</specialColumn>
 </table>
@@ -80,54 +80,53 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="mul_ln1118_fu_248_p2">*, 4, 0, 20, 32, 32</column>
-<column name="add_ln104_fu_276_p2">+, 0, 0, 39, 32, 32</column>
-<column name="add_ln700_fu_309_p2">+, 0, 0, 27, 1, 20</column>
-<column name="add_ln70_fu_150_p2">+, 0, 0, 13, 11, 1</column>
-<column name="add_ln97_fu_233_p2">+, 0, 0, 13, 11, 1</column>
-<column name="sub_ln1118_fu_185_p2">-, 0, 0, 52, 1, 45</column>
-<column name="icmp_ln110_fu_341_p2">icmp, 0, 0, 18, 20, 9</column>
-<column name="icmp_ln112_fu_346_p2">icmp, 0, 0, 13, 13, 1</column>
-<column name="icmp_ln1494_1_fu_263_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln1494_fu_167_p2">icmp, 0, 0, 18, 32, 1</column>
-<column name="icmp_ln1495_fu_209_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="icmp_ln70_fu_144_p2">icmp, 0, 0, 13, 11, 11</column>
-<column name="icmp_ln851_fu_303_p2">icmp, 0, 0, 13, 12, 1</column>
-<column name="icmp_ln97_fu_227_p2">icmp, 0, 0, 13, 11, 11</column>
-<column name="or_ln115_fu_362_p2">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln104_fu_268_p3">select, 0, 0, 13, 1, 12</column>
-<column name="select_ln115_fu_354_p3">select, 0, 0, 9, 1, 9</column>
-<column name="select_ln74_fu_201_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln80_fu_215_p3">select, 0, 0, 32, 1, 32</column>
-<column name="select_ln850_fu_323_p3">select, 0, 0, 20, 1, 20</column>
-<column name="select_ln851_fu_315_p3">select, 0, 0, 20, 1, 20</column>
-<column name="v24_0_d0">select, 0, 0, 8, 1, 8</column>
+<column name="mul_ln1118_fu_306_p2">*, 4, 0, 20, 32, 32</column>
+<column name="add_ln104_fu_334_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln700_fu_367_p2">+, 0, 0, 27, 1, 20</column>
+<column name="add_ln70_fu_208_p2">+, 0, 0, 13, 11, 1</column>
+<column name="add_ln97_fu_291_p2">+, 0, 0, 13, 11, 1</column>
+<column name="sub_ln1118_fu_243_p2">-, 0, 0, 52, 1, 45</column>
+<column name="icmp_ln110_fu_399_p2">icmp, 0, 0, 18, 20, 9</column>
+<column name="icmp_ln112_fu_404_p2">icmp, 0, 0, 13, 13, 1</column>
+<column name="icmp_ln1494_1_fu_321_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln1494_fu_225_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln1495_fu_267_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln70_fu_202_p2">icmp, 0, 0, 13, 11, 11</column>
+<column name="icmp_ln851_fu_361_p2">icmp, 0, 0, 13, 12, 1</column>
+<column name="icmp_ln97_fu_285_p2">icmp, 0, 0, 13, 11, 11</column>
+<column name="or_ln115_fu_420_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln104_fu_326_p3">select, 0, 0, 13, 1, 12</column>
+<column name="select_ln115_1_fu_426_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln115_fu_412_p3">select, 0, 0, 9, 1, 9</column>
+<column name="select_ln74_fu_259_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln80_fu_273_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln850_fu_381_p3">select, 0, 0, 20, 1, 20</column>
+<column name="select_ln851_fu_373_p3">select, 0, 0, 20, 1, 20</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">197, 45, 1, 45</column>
-<column name="j1_0_0_reg_129">9, 2, 11, 22</column>
-<column name="j_0_0_reg_118">9, 2, 11, 22</column>
+<column name="j1_0_0_reg_186">9, 2, 11, 22</column>
+<column name="j_0_0_reg_175">9, 2, 11, 22</column>
 <column name="v22_0_V_address0">15, 3, 11, 33</column>
-<column name="v45_V_0_reg_106">9, 2, 32, 64</column>
+<column name="v45_V_0_reg_163">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln70_reg_380">11, 0, 11, 0</column>
-<column name="add_ln97_reg_407">11, 0, 11, 0</column>
+<column name="add_ln70_reg_463">11, 0, 11, 0</column>
+<column name="add_ln97_reg_490">11, 0, 11, 0</column>
 <column name="ap_CS_fsm">44, 0, 44, 0</column>
-<column name="j1_0_0_reg_129">11, 0, 11, 0</column>
-<column name="j_0_0_reg_118">11, 0, 11, 0</column>
-<column name="reg_140">32, 0, 32, 0</column>
-<column name="select_ln850_reg_428">20, 0, 20, 0</column>
-<column name="tmp_5_reg_434">13, 0, 13, 0</column>
-<column name="trunc_ln708_3_reg_422">32, 0, 32, 0</column>
-<column name="udiv_ln1148_reg_395">32, 0, 32, 0</column>
-<column name="v45_V_0_reg_106">32, 0, 32, 0</column>
-<column name="zext_ln97_reg_399">32, 0, 44, 12</column>
-<column name="zext_ln98_reg_412">11, 0, 64, 53</column>
+<column name="j1_0_0_reg_186">11, 0, 11, 0</column>
+<column name="j_0_0_reg_175">11, 0, 11, 0</column>
+<column name="reg_198">32, 0, 32, 0</column>
+<column name="select_ln850_reg_506">20, 0, 20, 0</column>
+<column name="tmp_5_reg_512">13, 0, 13, 0</column>
+<column name="trunc_ln708_3_reg_500">32, 0, 32, 0</column>
+<column name="udiv_ln1148_reg_478">32, 0, 32, 0</column>
+<column name="v45_V_0_reg_163">32, 0, 32, 0</column>
+<column name="zext_ln97_reg_482">32, 0, 44, 12</column>
 </table>
 </item>
 </section>
@@ -147,10 +146,22 @@
 <column name="v22_0_V_address0">out, 11, ap_memory, v22_0_V, array</column>
 <column name="v22_0_V_ce0">out, 1, ap_memory, v22_0_V, array</column>
 <column name="v22_0_V_q0">in, 32, ap_memory, v22_0_V, array</column>
-<column name="v24_0_address0">out, 11, ap_memory, v24_0, array</column>
-<column name="v24_0_ce0">out, 1, ap_memory, v24_0, array</column>
-<column name="v24_0_we0">out, 1, ap_memory, v24_0, array</column>
-<column name="v24_0_d0">out, 8, ap_memory, v24_0, array</column>
+<column name="v24_0_0_address0">out, 9, ap_memory, v24_0_0, array</column>
+<column name="v24_0_0_ce0">out, 1, ap_memory, v24_0_0, array</column>
+<column name="v24_0_0_we0">out, 1, ap_memory, v24_0_0, array</column>
+<column name="v24_0_0_d0">out, 8, ap_memory, v24_0_0, array</column>
+<column name="v24_1_0_address0">out, 9, ap_memory, v24_1_0, array</column>
+<column name="v24_1_0_ce0">out, 1, ap_memory, v24_1_0, array</column>
+<column name="v24_1_0_we0">out, 1, ap_memory, v24_1_0, array</column>
+<column name="v24_1_0_d0">out, 8, ap_memory, v24_1_0, array</column>
+<column name="v24_2_0_address0">out, 9, ap_memory, v24_2_0, array</column>
+<column name="v24_2_0_ce0">out, 1, ap_memory, v24_2_0, array</column>
+<column name="v24_2_0_we0">out, 1, ap_memory, v24_2_0, array</column>
+<column name="v24_2_0_d0">out, 8, ap_memory, v24_2_0, array</column>
+<column name="v24_3_0_address0">out, 9, ap_memory, v24_3_0, array</column>
+<column name="v24_3_0_ce0">out, 1, ap_memory, v24_3_0, array</column>
+<column name="v24_3_0_we0">out, 1, ap_memory, v24_3_0, array</column>
+<column name="v24_3_0_d0">out, 8, ap_memory, v24_3_0, array</column>
 </table>
 </item>
 </section>
