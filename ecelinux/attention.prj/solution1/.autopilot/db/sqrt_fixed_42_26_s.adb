@@ -28,7 +28,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>37</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -74,7 +74,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>37</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -173,7 +173,7 @@
               <rtlName>trunc_ln_fu_360_p4</rtlName>
               <coreName/>
             </Obj>
-            <bitwidth>21</bitwidth>
+            <bitwidth>16</bitwidth>
           </Value>
           <oprand_edges>
             <count>4</count>
@@ -491,7 +491,7 @@
             <Obj>
               <type>0</type>
               <id>12</id>
-              <name>p_Result_s_66</name>
+              <name>p_Result_s_79</name>
               <fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>286</lineNumber>
@@ -515,7 +515,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>p_Result_s_66_fu_398_p5</rtlName>
+              <rtlName>p_Result_s_79_fu_398_p5</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>29</bitwidth>
@@ -28782,7 +28782,7 @@
             <bitwidth>32</bitwidth>
           </Value>
           <const_type>0</const_type>
-          <content>36</content>
+          <content>31</content>
         </item>
         <item class_id_reference="16" object_id="_582">
           <Value>
@@ -43741,7 +43741,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -43787,7 +43787,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -43833,7 +43833,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -43879,7 +43879,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -43925,7 +43925,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -43994,7 +43994,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -44040,7 +44040,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -51859,7 +51859,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -51951,7 +51951,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -52020,7 +52020,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -52089,7 +52089,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -52158,7 +52158,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -52227,7 +52227,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -52273,7 +52273,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>13</second>
             </item>
           </second>
         </item>
@@ -55364,7 +55364,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>37</second>
+              <second>32</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -55372,7 +55372,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>37</second>
+              <second>32</second>
             </item>
           </second>
         </item>
@@ -55383,7 +55383,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>37</second>
+              <second>32</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -55391,7 +55391,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>37</second>
+              <second>32</second>
             </item>
           </second>
         </item>
@@ -69231,7 +69231,7 @@
         </second>
       </item>
       <item>
-        <first>p_Result_s_66_fu_398</first>
+        <first>p_Result_s_79_fu_398</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

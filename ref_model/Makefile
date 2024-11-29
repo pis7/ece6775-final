@@ -6,22 +6,27 @@ CXXFLAGS = -std=c++17 -I./include
 
 # Define directories
 SRC_DIR = src_c
-
-all: run
+INFERENCE_DIR = inference
 
 # Define source files
-SRC_FILES = $(wildcard $(SRC_DIR)/*.cpp)
-
-# Define the output executable
-OUTPUT = attention_test
+ATTN_FILES = $(wildcard $(SRC_DIR)/*.cpp) attn_test/attention_test.cpp
+INF_FILES = $(wildcard $(SRC_DIR)/*.cpp) $(INFERENCE_DIR)/load_model.cpp $(INFERENCE_DIR)/inference.cpp
 
 # Build target
-$(OUTPUT): $(SRC_FILES)
-	$(CXX) $(CXXFLAGS) -o $(OUTPUT) $(SRC_FILES)
+inference/inference: $(INF_FILES)
+	$(CXX) $(CXXFLAGS) -o $@ $(INF_FILES)
 
-run: $(OUTPUT)
-	./$(OUTPUT)
+attn_test/attention_test: $(ATTN_FILES)
+	$(CXX) $(CXXFLAGS) -o $@ $(ATTN_FILES)
+
+# Run target
+run_inference: inference/inference
+	./$<
+
+run_attention: attn_test/attention_test
+	./$<
 
 # Clean up build files
 clean:
-	rm -f $(OUTPUT)
+	rm -f inference/inference
+	rm -f attn_test/attention_test

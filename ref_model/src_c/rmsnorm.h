@@ -11,7 +11,6 @@ inline std::vector<float> rms_norm(const std::vector<float> &hidden_states, cons
     int i = 0;
     for (float val : hidden_states) {
         variance += val * val;
-        std::cout << "variance " << variance << " val[" << i << "] " << val << std::endl;
         i++;
     }
 

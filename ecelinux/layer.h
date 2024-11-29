@@ -11,8 +11,8 @@ typedef bit32_t HLS_SIZE_T;
 #include <stdint.h>
 #include <hls_math.h>
 #include "model.h"
-#include "data_short/cos_tab.h"
-#include "data_short/sin_tab.h"
+#include "data_quarter/cos_tab.h"
+#include "data_quarter/sin_tab.h"
 
 //----------------------------------------------------------
 // init_1d_mem
@@ -162,7 +162,7 @@ void linear_forward_no_mul (
           int8_t weight_val = (packed_val >> (2 * l)) & 0b11;
           sbit8_t new_val = 0;
           if (weight_val == 0b01) new_val += input[i][k + l];
-          else if (weight_val == 0b10) new_val -= input[i][k + l] + 1;
+          else if (weight_val == 0b10) new_val -= input[i][k + l];
           output[i][j] += new_val;
         }
       }
@@ -307,7 +307,8 @@ void softmax (
       sum = 0.0;
       SOFTMAX_LOOP_4: for (int k = 0; k < C; k++) {
         attn_fixed_t x = input[i][j][k] - max_val;
-        input[i][j][k] = 1 + x + ((x * x) >> 1);
+        // input[i][j][k] = 1 + x + ((x * x) >> 1);
+        input[i][j][k] = hls::exp(x);
         sum += input[i][j][k];
       }
       SOFTMAX_LOOP_5: for (int k = 0; k < C; k++)

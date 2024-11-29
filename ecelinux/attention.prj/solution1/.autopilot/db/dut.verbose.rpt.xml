@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dut'" level="0">
-<item name = "Date">Thu Nov 28 07:55:53 2024
+<item name = "Date">Thu Nov 28 18:17:17 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention.prj</item>
@@ -24,20 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1280, 1280, 12.800 us, 12.800 us, 1280, 1280, none</column>
+<column name="">1060721, 2387825, 10.607 ms, 23.878 ms, 1060721, 2387825, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_attention_fu_173">attention, 1229, 1229, 12.290 us, 12.290 us, 1229, 1229, none</column>
+<column name="grp_attention_fu_165">attention, 1059566, 2386670, 10.596 ms, 23.867 ms, 1059566, 2386670, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">16, 16, 1, -, -, 16, no</column>
-<column name="- Loop 2">32, 32, 2, -, -, 16, no</column>
+<column name="- Loop 1">384, 384, 1, -, -, 384, no</column>
+<column name="- Loop 2">768, 768, 2, -, -, 384, no</column>
 </table>
 </item>
 </section>
@@ -50,21 +50,21 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 54, -</column>
+<column name="Expression">-, -, 0, 58, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">16, 160, 43371, 42908, 0</column>
-<column name="Memory">3, -, 80, 10, 0</column>
-<column name="Multiplexer">-, -, -, 156, -</column>
-<column name="Register">-, -, 21, -, -</column>
+<column name="Instance">213, 77, 10982, 16570, 0</column>
+<column name="Memory">4, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 168, -</column>
+<column name="Register">-, -, 33, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">6, 72, 40, 81, 0</specialColumn>
+<specialColumn name="Utilization (%)">77, 35, 10, 31, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_attention_fu_173">attention, 16, 160, 43371, 42908, 0</column>
+<column name="grp_attention_fu_165">attention, 213, 77, 10982, 16570, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -73,8 +73,8 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="input_0_V_U">dut_input_0_V, 3, 0, 0, 0, 16, 40, 1, 640</column>
-<column name="output_0_U">dut_output_0, 0, 80, 10, 0, 16, 40, 1, 640</column>
+<column name="input_0_V_U">apply_rotary_pos_ibs, 2, 0, 0, 0, 384, 40, 1, 15360</column>
+<column name="output_0_U">apply_rotary_pos_ibs, 2, 0, 0, 0, 384, 40, 1, 15360</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -83,23 +83,23 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln26_fu_241_p2">+, 0, 0, 15, 5, 1</column>
-<column name="add_ln58_fu_273_p2">+, 0, 0, 15, 5, 1</column>
+<column name="add_ln26_fu_203_p2">+, 0, 0, 15, 9, 1</column>
+<column name="add_ln58_fu_235_p2">+, 0, 0, 15, 9, 1</column>
 <column name="ap_block_state2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln26_fu_235_p2">icmp, 0, 0, 11, 5, 6</column>
-<column name="icmp_ln58_fu_267_p2">icmp, 0, 0, 11, 5, 6</column>
+<column name="icmp_ln26_fu_197_p2">icmp, 0, 0, 13, 9, 9</column>
+<column name="icmp_ln58_fu_229_p2">icmp, 0, 0, 13, 9, 9</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">33, 6, 1, 6</column>
-<column name="input_0_V_address0">15, 3, 4, 12</column>
+<column name="input_0_V_address0">15, 3, 9, 27</column>
 <column name="input_0_V_ce0">15, 3, 1, 3</column>
-<column name="input_0_V_ce1">9, 2, 1, 2</column>
-<column name="input_0_V_we1">9, 2, 1, 2</column>
-<column name="j9_0_0_reg_162">9, 2, 5, 10</column>
-<column name="j_0_0_reg_151">9, 2, 5, 10</column>
-<column name="output_0_address0">15, 3, 4, 12</column>
+<column name="input_0_V_d0">15, 3, 40, 120</column>
+<column name="input_0_V_we0">15, 3, 1, 3</column>
+<column name="j9_0_0_reg_154">9, 2, 9, 18</column>
+<column name="j_0_0_reg_143">9, 2, 9, 18</column>
+<column name="output_0_address0">15, 3, 9, 27</column>
 <column name="output_0_ce0">15, 3, 1, 3</column>
 <column name="output_0_we0">9, 2, 1, 2</column>
 <column name="strm_in_V_V_blk_n">9, 2, 1, 2</column>
@@ -108,11 +108,11 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln58_reg_308">5, 0, 5, 0</column>
+<column name="add_ln58_reg_270">9, 0, 9, 0</column>
 <column name="ap_CS_fsm">5, 0, 5, 0</column>
-<column name="grp_attention_fu_173_ap_start_reg">1, 0, 1, 0</column>
-<column name="j9_0_0_reg_162">5, 0, 5, 0</column>
-<column name="j_0_0_reg_151">5, 0, 5, 0</column>
+<column name="grp_attention_fu_165_ap_start_reg">1, 0, 1, 0</column>
+<column name="j9_0_0_reg_154">9, 0, 9, 0</column>
+<column name="j_0_0_reg_143">9, 0, 9, 0</column>
 </table>
 </item>
 </section>

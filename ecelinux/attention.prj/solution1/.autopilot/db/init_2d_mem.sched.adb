@@ -32,7 +32,7 @@
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
-				<array_size>16</array_size>
+				<array_size>384</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -51,7 +51,7 @@
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>38</lineNumber>
-						<contextFuncName>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -63,7 +63,7 @@
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>./layer.h</first>
-											<second>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>38</second>
 									</item>
@@ -99,7 +99,7 @@
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>38</lineNumber>
-						<contextFuncName>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -111,7 +111,7 @@
 									<item>
 										<first>
 											<first>./layer.h</first>
-											<second>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>38</second>
 									</item>
@@ -122,7 +122,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -150,7 +150,7 @@
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>38</lineNumber>
-						<contextFuncName>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -162,7 +162,7 @@
 									<item>
 										<first>
 											<first>./layer.h</first>
-											<second>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>38</second>
 									</item>
@@ -186,7 +186,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.36</m_delay>
+				<m_delay>1.66</m_delay>
 				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -199,7 +199,7 @@
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>38</lineNumber>
-						<contextFuncName>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -211,7 +211,7 @@
 									<item>
 										<first>
 											<first>./layer.h</first>
-											<second>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>38</second>
 									</item>
@@ -222,7 +222,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -235,7 +235,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.78</m_delay>
+				<m_delay>1.82</m_delay>
 				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -248,7 +248,7 @@
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>38</lineNumber>
-						<contextFuncName>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -260,7 +260,7 @@
 									<item>
 										<first>
 											<first>./layer.h</first>
-											<second>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>38</second>
 									</item>
@@ -298,7 +298,7 @@
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>39</lineNumber>
-						<contextFuncName>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -310,7 +310,7 @@
 									<item>
 										<first>
 											<first>./layer.h</first>
-											<second>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>39</second>
 									</item>
@@ -346,7 +346,7 @@
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>39</lineNumber>
-						<contextFuncName>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -358,7 +358,7 @@
 									<item>
 										<first>
 											<first>./layer.h</first>
-											<second>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>39</second>
 									</item>
@@ -369,7 +369,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>4</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -396,7 +396,7 @@
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>39</lineNumber>
-						<contextFuncName>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -408,7 +408,7 @@
 									<item>
 										<first>
 											<first>./layer.h</first>
-											<second>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>39</second>
 									</item>
@@ -432,7 +432,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.32</m_delay>
+				<m_delay>3.25</m_delay>
 				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -445,7 +445,7 @@
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>38</lineNumber>
-						<contextFuncName>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -457,7 +457,7 @@
 									<item>
 										<first>
 											<first>./layer.h</first>
-											<second>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>38</second>
 									</item>
@@ -493,7 +493,7 @@
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>40</lineNumber>
-						<contextFuncName>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -505,7 +505,7 @@
 									<item>
 										<first>
 											<first>./layer.h</first>
-											<second>init_2d_mem&amp;lt;1, 16, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>init_2d_mem&amp;lt;1, 384, ap_fixed&amp;lt;40, 24, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>40</second>
 									</item>
@@ -553,7 +553,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -576,10 +576,10 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>16</content>
+				<content>384</content>
 			</item>
 			<item class_id_reference="16" object_id="_14">
 				<Value>
@@ -599,7 +599,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -941,8 +941,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>17</mMinLatency>
-			<mMaxLatency>17</mMaxLatency>
+			<mMinLatency>385</mMinLatency>
+			<mMaxLatency>385</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -984,10 +984,10 @@
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
-			<mMinTripCount>16</mMinTripCount>
-			<mMaxTripCount>16</mMaxTripCount>
-			<mMinLatency>16</mMinLatency>
-			<mMaxLatency>16</mMaxLatency>
+			<mMinTripCount>384</mMinTripCount>
+			<mMaxTripCount>384</mMaxTripCount>
+			<mMinLatency>384</mMinLatency>
+			<mMaxLatency>384</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

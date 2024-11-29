@@ -14,7 +14,7 @@ set isEnableWaveformDebug 1
 set C_modelName {init_2d_mem}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ mem_0_V int 40 regular {array 16 { 0 3 } 0 1 }  }
+	{ mem_0_V int 40 regular {array 384 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "mem_0_V", "interface" : "memory", "bitwidth" : 40, "direction" : "WRITEONLY"} ]}
@@ -27,7 +27,7 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ mem_0_V_address0 sc_out sc_lv 4 signal 0 } 
+	{ mem_0_V_address0 sc_out sc_lv 9 signal 0 } 
 	{ mem_0_V_ce0 sc_out sc_logic 1 signal 0 } 
 	{ mem_0_V_we0 sc_out sc_logic 1 signal 0 } 
 	{ mem_0_V_d0 sc_out sc_lv 40 signal 0 } 
@@ -39,7 +39,7 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "mem_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "mem_0_V", "role": "address0" }} , 
+ 	{ "name": "mem_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "mem_0_V", "role": "address0" }} , 
  	{ "name": "mem_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "mem_0_V", "role": "ce0" }} , 
  	{ "name": "mem_0_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "mem_0_V", "role": "we0" }} , 
  	{ "name": "mem_0_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "mem_0_V", "role": "d0" }}  ]}
@@ -51,7 +51,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "17", "EstimateLatencyMax" : "17",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "385", "EstimateLatencyMax" : "385",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -69,13 +69,13 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "17", "Max" : "17"}
-	, {"Name" : "Interval", "Min" : "17", "Max" : "17"}
+	{"Name" : "Latency", "Min" : "385", "Max" : "385"}
+	, {"Name" : "Interval", "Min" : "385", "Max" : "385"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	mem_0_V { ap_memory {  { mem_0_V_address0 mem_address 1 4 }  { mem_0_V_ce0 mem_ce 1 1 }  { mem_0_V_we0 mem_we 1 1 }  { mem_0_V_d0 mem_din 1 40 } } }
+	mem_0_V { ap_memory {  { mem_0_V_address0 mem_address 1 9 }  { mem_0_V_ce0 mem_ce 1 1 }  { mem_0_V_we0 mem_we 1 1 }  { mem_0_V_d0 mem_din 1 40 } } }
 }

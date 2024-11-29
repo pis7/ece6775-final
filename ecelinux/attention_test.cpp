@@ -10,8 +10,8 @@
 #include <cmath>
 #include "attention.h"
 #include "timer.h"
-#include "data_short/hidden_states.h"
-#include "data_short/ground_truth.h"
+#include "data_quarter/hidden_states.h"
+#include "data_quarter/ground_truth.h"
 
 using namespace std;
 

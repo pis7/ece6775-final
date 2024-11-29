@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Thu Nov 28 00:02:32 2024
+| Date         : Thu Nov 28 11:14:01 2024
 | Host         : zhang-22.ece.cornell.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_methodology -file xillydemo_methodology_drc_routed.rpt -pb xillydemo_methodology_drc_routed.pb -rpx xillydemo_methodology_drc_routed.rpx
 | Design       : xillydemo
@@ -23,14 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 122
+             Violations found: 119
 +-----------+----------+------------------------------------------------------+------------+
 | Rule      | Severity | Description                                          | Violations |
 +-----------+----------+------------------------------------------------------+------------+
-| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal           | 14         |
-| SYNTH-10  | Warning  | Wide multiplier                                      | 72         |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal           | 32         |
+| SYNTH-10  | Warning  | Wide multiplier                                      | 53         |
 | SYNTH-11  | Warning  | DSP output not registered                            | 1          |
-| SYNTH-12  | Warning  | DSP input not registered                             | 2          |
 | TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
 | TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
 | TIMING-18 | Warning  | Missing input or output delay                        | 11         |
@@ -43,447 +42,432 @@ Table of Contents
 -----------------
 SYNTH-6#1 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/attn_output_2D_0_V_U/attention_k_proj_QgW_ram_U/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/attn_output_2D_0_V_U/apply_rotary_pos_ibs_ram_U/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#2 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/attn_output_2D_0_V_U/attention_k_proj_QgW_ram_U/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/attn_weights_0_V_U/attention_attn_weEe0_ram_U/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#3 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/f_x_msb_2_table_V_U/exp_41_25_s_f_x_mibs_rom_U/q0_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/attn_weights_0_V_U/attention_attn_weEe0_ram_U/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#4 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/f_x_msb_2_table_V_U/exp_41_25_s_f_x_mibs_rom_U/q0_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/k_cache_upd_V_U/attention_k_cacheBew_ram_U/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#5 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/f_x_msb_3_table_V_U/exp_41_25_s_f_x_mhbi_rom_U/q0_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/k_cache_upd_V_U/attention_k_cacheBew_ram_U/ram_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#6 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/f_x_msb_3_table_V_U/exp_41_25_s_f_x_mhbi_rom_U/q0_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/k_cache_upd_V_U/attention_k_cacheBew_ram_U/ram_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#7 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/k_cache_V_U/attention_k_cache_V_rom_U/q0_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/k_proj_transposed_V_U/attention_k_cacheBew_ram_U/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#8 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/k_proj_transposed_2_U/attention_k_proj_QgW_ram_U/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/k_proj_transposed_V_U/attention_k_cacheBew_ram_U/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#9 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/q_proj_re_0_V_U/attention_q_proj_Ffa_ram_U/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/k_proj_transposed_V_U/attention_k_cacheBew_ram_U/ram_reg_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#10 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/v_cache_V_U/attention_v_cache_V_rom_U/q0_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/k_proj_transposed_V_U/attention_k_cacheBew_ram_U/ram_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#11 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/v_proj_re_0_V_U/attention_q_proj_Ffa_ram_U/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/k_weights_U/attention_k_weights_rom_U/q0_reg_1_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#12 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/grp_attention_fu_167/v_proj_re_0_V_U/attention_q_proj_Ffa_ram_U/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/k_weights_U/attention_k_weights_rom_U/q0_reg_1_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#13 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/input_0_V_U/dut_input_0_V_ram_U/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/k_weights_U/attention_k_weights_rom_U/q0_reg_1_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#14 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance test_fpga_design/input_0_V_U/dut_input_0_V_ram_U/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance test_fpga_design/grp_attention_fu_165/o_weights_U/attention_o_weights_rom_U/q0_reg_1_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/o_weights_U/attention_o_weights_rom_U/q0_reg_1_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/q_proj_0_V_U/attention_q_proj_wdI_ram_U/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/q_weights_U/attention_q_weights_rom_U/q0_reg_1_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/q_weights_U/attention_q_weights_rom_U/q0_reg_1_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/q_weights_U/attention_q_weights_rom_U/q0_reg_1_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#20 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/q_weights_U/attention_q_weights_rom_U/q0_reg_1_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#21 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/quantized_final_outp_U/attention_quantizsc4_ram_U/ram_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#22 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/quantized_hidden_sta_U/attention_quantizsc4_ram_U/ram_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/v_cache_V_U/attention_v_cache_V_rom_U/q0_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/v_cache_upd_V_U/attention_k_cacheBew_ram_U/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/v_cache_upd_V_U/attention_k_cacheBew_ram_U/ram_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/v_cache_upd_V_U/attention_k_cacheBew_ram_U/ram_reg_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#27 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/v_proj_0_V_U/apply_rotary_pos_ibs_ram_U/ram_reg_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#28 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/v_proj_0_V_U/apply_rotary_pos_ibs_ram_U/ram_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#29 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/v_weights_U/attention_v_weights_rom_U/q0_reg_1_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#30 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/v_weights_U/attention_v_weights_rom_U/q0_reg_1_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#31 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance test_fpga_design/grp_attention_fu_165/v_weights_U/attention_v_weights_rom_U/q0_reg_1_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#32 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance tmp_product_i_1__0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-10#1 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_1_fu_575/mul_ln1118_fu_570_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/dut_mul_58ns_56s_IfE_U53/dut_mul_58ns_56s_IfE_MulnS_4_U/buff0_reg__1 of size 25x18, it is decomposed from a wide multipler into 10 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#2 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_1_fu_575/mul_ln1118_fu_570_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/dut_mul_58ns_56s_IfE_U53/dut_mul_58ns_56s_IfE_MulnS_4_U/buff0_reg__2 of size 18x18, it is decomposed from a wide multipler into 10 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#3 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_1_fu_575/mul_ln1192_1_fu_617_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/dut_mul_58ns_56s_IfE_U53/dut_mul_58ns_56s_IfE_MulnS_4_U/tmp_product of size 18x22, it is decomposed from a wide multipler into 10 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#4 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_1_fu_575/mul_ln1192_1_fu_617_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/dut_mul_58ns_56s_IfE_U53/dut_mul_58ns_56s_IfE_MulnS_4_U/tmp_product__0 of size 25x18, it is decomposed from a wide multipler into 10 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#5 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_1_fu_575/mul_ln1192_1_reg_1164_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/dut_mul_58ns_56s_IfE_U53/dut_mul_58ns_56s_IfE_MulnS_4_U/tmp_product__1 of size 18x22, it is decomposed from a wide multipler into 10 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#6 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_1_fu_575/mul_ln1192_fu_582_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/dut_mul_58ns_56s_IfE_U53/dut_mul_58ns_56s_IfE_MulnS_4_U/tmp_product__2 of size 18x18, it is decomposed from a wide multipler into 10 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#7 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_1_fu_575/mul_ln1192_fu_582_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/dut_mul_58ns_56s_IfE_U53/dut_mul_58ns_56s_IfE_MulnS_4_U/tmp_product__3 of size 18x18, it is decomposed from a wide multipler into 10 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#8 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_1_fu_575/mul_ln1192_reg_1154_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/dut_mul_58ns_56s_IfE_U53/dut_mul_58ns_56s_IfE_MulnS_4_U/tmp_product__4 of size 18x18, it is decomposed from a wide multipler into 10 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#9 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_1_fu_575/tmp_59_reg_1159_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_GEMM_3D_float_1_fu_413/mul_ln1192_fu_328_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#10 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1118_fu_602_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_GEMM_3D_float_1_fu_413/mul_ln1192_fu_328_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#11 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1118_fu_602_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_GEMM_3D_float_1_fu_413/mul_ln1192_reg_421_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#12 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1192_1_fu_650_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_GEMM_3D_float_fu_406/mul_ln1192_fu_326_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#13 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1192_1_fu_650_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_GEMM_3D_float_fu_406/mul_ln1192_fu_326_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#14 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1192_1_reg_1170_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_GEMM_3D_float_fu_406/mul_ln1192_reg_429_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#15 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1192_2_fu_673_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_linear_forward_no_mu_fu_369/mul_ln1148_fu_176_p2 of size 23x18, it is decomposed from a wide multipler into 3 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#16 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1192_2_fu_673_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_quantize_activation_fu_387/mul_ln1118_fu_224_p2__0 of size 24x18, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#17 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1192_2_reg_1180_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_quantize_activation_fu_387/mul_ln1118_fu_224_p2__2 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#18 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1192_fu_615_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_quantize_activation_fu_387/mul_ln1118_fu_224_p2__3 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#19 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1192_fu_615_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/dut_mul_40s_42ns_bkb_U2/dut_mul_40s_42ns_bkb_MulnS_0_U/p_reg__1 of size 18x25, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#20 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/mul_ln1192_reg_1160_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/dut_mul_40s_42ns_bkb_U2/dut_mul_40s_42ns_bkb_MulnS_0_U/tmp_product of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#21 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_GEMM_3D_float_fu_552/tmp_64_reg_1165_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/dut_mul_40s_42ns_bkb_U2/dut_mul_40s_42ns_bkb_MulnS_0_U/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#22 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_linear_forward_no_mu_fu_396/mul_ln1148_fu_306_p2 of size 23x18, it is decomposed from a wide multipler into 3 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/dut_mul_72s_40s_7dEe_U4/dut_mul_72s_40s_7dEe_MulnS_1_U/buff0_reg of size 21x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#23 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_linear_forward_no_mu_fu_428/mul_ln1148_fu_306_p2 of size 23x18, it is decomposed from a wide multipler into 3 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/dut_mul_72s_40s_7dEe_U4/dut_mul_72s_40s_7dEe_MulnS_1_U/buff0_reg__0 of size 18x23, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#24 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_quantize_activation_fu_546/mul_ln1118_fu_1663_p2__0 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/dut_mul_72s_40s_7dEe_U4/dut_mul_72s_40s_7dEe_MulnS_1_U/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#25 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_quantize_activation_fu_546/mul_ln1118_fu_1663_p2__2 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/dut_mul_72s_40s_7dEe_U4/dut_mul_72s_40s_7dEe_MulnS_1_U/buff1_reg of size 18x23, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#26 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_quantize_activation_fu_546/mul_ln1118_fu_1663_p2__3 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/dut_mul_72s_40s_7dEe_U4/dut_mul_72s_40s_7dEe_MulnS_1_U/buff1_reg__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#27 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/dut_mul_72s_40s_7cud_U3/dut_mul_72s_40s_7cud_MulnS_0_U/buff0_reg of size 21x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/dut_mul_72s_40s_7dEe_U4/dut_mul_72s_40s_7dEe_MulnS_1_U/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#28 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/dut_mul_72s_40s_7cud_U3/dut_mul_72s_40s_7cud_MulnS_0_U/buff0_reg__0 of size 18x23, it is decomposed from a wide multipler into 9 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/dut_mul_72s_40s_7dEe_U4/dut_mul_72s_40s_7dEe_MulnS_1_U/tmp_product__1 of size 18x23, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#29 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/dut_mul_72s_40s_7cud_U3/dut_mul_72s_40s_7cud_MulnS_0_U/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/mul_ln1118_fu_283_p2 of size 23x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#30 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/dut_mul_72s_40s_7cud_U3/dut_mul_72s_40s_7cud_MulnS_0_U/buff1_reg of size 18x23, it is decomposed from a wide multipler into 9 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/mul_ln1118_fu_283_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#31 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/dut_mul_72s_40s_7cud_U3/dut_mul_72s_40s_7cud_MulnS_0_U/buff1_reg__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/mul_ln1118_reg_389_reg of size 23x17, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#32 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/dut_mul_72s_40s_7cud_U3/dut_mul_72s_40s_7cud_MulnS_0_U/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/mul_ln1118_reg_389_reg__0 of size 18x17, it is decomposed from a wide multipler into 4 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#33 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/dut_mul_72s_40s_7cud_U3/dut_mul_72s_40s_7cud_MulnS_0_U/tmp_product__1 of size 18x23, it is decomposed from a wide multipler into 9 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/mul_ln1192_fu_167_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#34 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/mul_ln1118_fu_288_p2 of size 23x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/mul_ln1192_fu_167_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#35 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/mul_ln1118_fu_288_p2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_rms_norm_384_s_fu_349/mul_ln1192_reg_325_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#36 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/mul_ln1118_reg_381_reg of size 23x17, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_47nsncg_U39/dut_mul_50ns_47nsncg_MulnS_2_U/p_reg of size 17x14, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#37 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/mul_ln1118_reg_381_reg__0 of size 18x17, it is decomposed from a wide multipler into 4 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_47nsncg_U39/dut_mul_50ns_47nsncg_MulnS_2_U/p_reg__0 of size 17x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#38 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/mul_ln1192_fu_169_p2 of size 23x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_47nsncg_U39/dut_mul_50ns_47nsncg_MulnS_2_U/p_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#39 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/mul_ln1192_fu_169_p2__0 of size 18x18, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_47nsncg_U39/dut_mul_50ns_47nsncg_MulnS_2_U/tmp_product of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#40 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_rms_norm_16_s_fu_497/mul_ln1192_reg_326_reg__1 of size 18x23, it is decomposed from a wide multipler into 5 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_47nsncg_U39/dut_mul_50ns_47nsncg_MulnS_2_U/tmp_product__0 of size 17x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#41 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff0_reg of size 17x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_47nsncg_U39/dut_mul_50ns_47nsncg_MulnS_2_U/tmp_product__1 of size 18x14, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#42 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff0_reg__0 of size 17x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_47nsncg_U39/dut_mul_50ns_47nsncg_MulnS_2_U/tmp_product__2 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#43 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff0_reg__1 of size 18x12, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_47nsncg_U39/dut_mul_50ns_47nsncg_MulnS_2_U/tmp_product__3 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#44 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff0_reg__2 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_47nsncg_U39/dut_mul_50ns_47nsncg_MulnS_2_U/tmp_product__4 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#45 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff0_reg__3 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_50nsocq_U40/dut_mul_50ns_50nsocq_MulnS_3_U/p_reg of size 17x17, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#46 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff1_reg of size 17x12, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_50nsocq_U40/dut_mul_50ns_50nsocq_MulnS_3_U/p_reg__0 of size 17x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#47 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff1_reg__0 of size 17x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_50nsocq_U40/dut_mul_50ns_50nsocq_MulnS_3_U/p_reg__1 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#48 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_50nsocq_U40/dut_mul_50ns_50nsocq_MulnS_3_U/tmp_product of size 18x17, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#49 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff1_reg__2 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_50nsocq_U40/dut_mul_50ns_50nsocq_MulnS_3_U/tmp_product__0 of size 17x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#50 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff1_reg__3 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_50nsocq_U40/dut_mul_50ns_50nsocq_MulnS_3_U/tmp_product__1 of size 18x17, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#51 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/buff1_reg__4 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_50nsocq_U40/dut_mul_50ns_50nsocq_MulnS_3_U/tmp_product__2 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#52 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/tmp_product of size 18x12, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_50nsocq_U40/dut_mul_50ns_50nsocq_MulnS_3_U/tmp_product__3 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-10#53 Warning
 Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/tmp_product__0 of size 18x12, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#54 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/tmp_product__1 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#55 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/tmp_product__2 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#56 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_67ns_62nskbM_U190/dut_mul_67ns_62nskbM_MulnS_1_U/tmp_product__3 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#57 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff0_reg of size 22x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#58 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff0_reg__0 of size 22x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#59 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff0_reg__1 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#60 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff0_reg__2 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#61 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff0_reg__3 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#62 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff1_reg of size 22x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#63 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff1_reg__0 of size 22x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#64 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff1_reg__1 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#65 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff1_reg__2 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#66 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff1_reg__3 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#67 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/buff1_reg__4 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#68 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/tmp_product of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#69 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/tmp_product__0 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#70 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/tmp_product__1 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#71 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/tmp_product__2 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#72 Warning
-Wide multiplier  
-Detected multiplier at test_fpga_design/grp_attention_fu_167/grp_softmax_1_4_3_s_fu_471/grp_exp_41_25_s_fu_1589/dut_mul_72ns_68nslbW_U191/dut_mul_72ns_68nslbW_MulnS_2_U/tmp_product__3 of size 18x18, it is decomposed from a wide multipler into 16 DSP blocks.
+Detected multiplier at test_fpga_design/grp_attention_fu_165/grp_softmax_1_8_6_s_fu_358/grp_exp_40_24_s_fu_163/dut_mul_50ns_50nsocq_U40/dut_mul_50ns_50nsocq_MulnS_3_U/tmp_product__4 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
 Related violations: <none>
 
 SYNTH-11#1 Warning
 DSP output not registered  
-DSP instance test_fpga_design/grp_attention_fu_167/grp_quantize_activation_fu_546/mul_ln1118_fu_1663_p2__1 is not fully pipelined on the output side. MREG/PREG are not used.
-Related violations: <none>
-
-SYNTH-12#1 Warning
-DSP input not registered  
-DSP instance test_fpga_design/grp_attention_fu_167/grp_linear_forward_no_mu_fu_396/sext_ln700_reg_1387_reg is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
-Related violations: <none>
-
-SYNTH-12#2 Warning
-DSP input not registered  
-DSP instance test_fpga_design/grp_attention_fu_167/grp_linear_forward_no_mu_fu_396/sext_ln700_reg_1387_reg__0 is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
+DSP instance test_fpga_design/grp_attention_fu_165/grp_quantize_activation_fu_387/mul_ln1118_fu_224_p2__1 is not fully pipelined on the output side. MREG/PREG are not used.
 Related violations: <none>
 
 TIMING-9#1 Warning

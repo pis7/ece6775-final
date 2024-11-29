@@ -6,7 +6,7 @@
 module apply_rotary_pos_g8j_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 16;
+parameter DWIDTH = 17;
 parameter AWIDTH = 7;
 parameter MEM_SIZE = 96;
 
@@ -43,7 +43,7 @@ module apply_rotary_pos_g8j(
     ce0,
     q0);
 
-parameter DataWidth = 32'd16;
+parameter DataWidth = 32'd17;
 parameter AddressRange = 32'd96;
 parameter AddressWidth = 32'd7;
 input reset;

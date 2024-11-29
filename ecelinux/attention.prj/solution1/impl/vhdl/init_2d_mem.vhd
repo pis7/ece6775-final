@@ -17,7 +17,7 @@ port (
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    mem_0_V_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
+    mem_0_V_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
     mem_0_V_ce0 : OUT STD_LOGIC;
     mem_0_V_we0 : OUT STD_LOGIC;
     mem_0_V_d0 : OUT STD_LOGIC_VECTOR (39 downto 0) );
@@ -31,11 +31,11 @@ architecture behav of init_2d_mem is
     constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (1 downto 0) := "10";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
-    constant ap_const_lv5_0 : STD_LOGIC_VECTOR (4 downto 0) := "00000";
+    constant ap_const_lv9_0 : STD_LOGIC_VECTOR (8 downto 0) := "000000000";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv40_0 : STD_LOGIC_VECTOR (39 downto 0) := "0000000000000000000000000000000000000000";
-    constant ap_const_lv5_10 : STD_LOGIC_VECTOR (4 downto 0) := "10000";
-    constant ap_const_lv5_1 : STD_LOGIC_VECTOR (4 downto 0) := "00001";
+    constant ap_const_lv9_180 : STD_LOGIC_VECTOR (8 downto 0) := "110000000";
+    constant ap_const_lv9_1 : STD_LOGIC_VECTOR (8 downto 0) := "000000001";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_boolean_1 : BOOLEAN := true;
 
@@ -44,10 +44,10 @@ architecture behav of init_2d_mem is
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal add_ln38_fu_57_p2 : STD_LOGIC_VECTOR (4 downto 0);
+    signal add_ln38_fu_57_p2 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal j_0_0_reg_40 : STD_LOGIC_VECTOR (4 downto 0);
+    signal j_0_0_reg_40 : STD_LOGIC_VECTOR (8 downto 0);
     signal icmp_ln38_fu_51_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal zext_ln39_fu_63_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (1 downto 0);
@@ -76,7 +76,7 @@ begin
             if (((icmp_ln38_fu_51_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                 j_0_0_reg_40 <= add_ln38_fu_57_p2;
             elsif (((ap_start = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                j_0_0_reg_40 <= ap_const_lv5_0;
+                j_0_0_reg_40 <= ap_const_lv9_0;
             end if; 
         end if;
     end process;
@@ -100,7 +100,7 @@ begin
                 ap_NS_fsm <= "XX";
         end case;
     end process;
-    add_ln38_fu_57_p2 <= std_logic_vector(unsigned(j_0_0_reg_40) + unsigned(ap_const_lv5_1));
+    add_ln38_fu_57_p2 <= std_logic_vector(unsigned(j_0_0_reg_40) + unsigned(ap_const_lv9_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
 
@@ -133,8 +133,8 @@ begin
         end if; 
     end process;
 
-    icmp_ln38_fu_51_p2 <= "1" when (j_0_0_reg_40 = ap_const_lv5_10) else "0";
-    mem_0_V_address0 <= zext_ln39_fu_63_p1(4 - 1 downto 0);
+    icmp_ln38_fu_51_p2 <= "1" when (j_0_0_reg_40 = ap_const_lv9_180) else "0";
+    mem_0_V_address0 <= zext_ln39_fu_63_p1(9 - 1 downto 0);
 
     mem_0_V_ce0_assign_proc : process(ap_CS_fsm_state2)
     begin

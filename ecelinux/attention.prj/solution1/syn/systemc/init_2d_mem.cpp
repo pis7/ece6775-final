@@ -18,11 +18,11 @@ const sc_lv<2> init_2d_mem::ap_ST_fsm_state1 = "1";
 const sc_lv<2> init_2d_mem::ap_ST_fsm_state2 = "10";
 const sc_lv<32> init_2d_mem::ap_const_lv32_0 = "00000000000000000000000000000000";
 const sc_lv<32> init_2d_mem::ap_const_lv32_1 = "1";
-const sc_lv<5> init_2d_mem::ap_const_lv5_0 = "00000";
+const sc_lv<9> init_2d_mem::ap_const_lv9_0 = "000000000";
 const sc_lv<1> init_2d_mem::ap_const_lv1_0 = "0";
 const sc_lv<40> init_2d_mem::ap_const_lv40_0 = "0000000000000000000000000000000000000000";
-const sc_lv<5> init_2d_mem::ap_const_lv5_10 = "10000";
-const sc_lv<5> init_2d_mem::ap_const_lv5_1 = "1";
+const sc_lv<9> init_2d_mem::ap_const_lv9_180 = "110000000";
+const sc_lv<9> init_2d_mem::ap_const_lv9_1 = "1";
 const sc_lv<1> init_2d_mem::ap_const_lv1_1 = "1";
 const bool init_2d_mem::ap_const_boolean_1 = true;
 
@@ -134,12 +134,12 @@ void init_2d_mem::thread_ap_clk_no_reset_() {
         j_0_0_reg_40 = add_ln38_fu_57_p2.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        j_0_0_reg_40 = ap_const_lv5_0;
+        j_0_0_reg_40 = ap_const_lv9_0;
     }
 }
 
 void init_2d_mem::thread_add_ln38_fu_57_p2() {
-    add_ln38_fu_57_p2 = (!j_0_0_reg_40.read().is_01() || !ap_const_lv5_1.is_01())? sc_lv<5>(): (sc_biguint<5>(j_0_0_reg_40.read()) + sc_biguint<5>(ap_const_lv5_1));
+    add_ln38_fu_57_p2 = (!j_0_0_reg_40.read().is_01() || !ap_const_lv9_1.is_01())? sc_lv<9>(): (sc_biguint<9>(j_0_0_reg_40.read()) + sc_biguint<9>(ap_const_lv9_1));
 }
 
 void init_2d_mem::thread_ap_CS_fsm_state1() {
@@ -180,11 +180,11 @@ void init_2d_mem::thread_ap_ready() {
 }
 
 void init_2d_mem::thread_icmp_ln38_fu_51_p2() {
-    icmp_ln38_fu_51_p2 = (!j_0_0_reg_40.read().is_01() || !ap_const_lv5_10.is_01())? sc_lv<1>(): sc_lv<1>(j_0_0_reg_40.read() == ap_const_lv5_10);
+    icmp_ln38_fu_51_p2 = (!j_0_0_reg_40.read().is_01() || !ap_const_lv9_180.is_01())? sc_lv<1>(): sc_lv<1>(j_0_0_reg_40.read() == ap_const_lv9_180);
 }
 
 void init_2d_mem::thread_mem_0_V_address0() {
-    mem_0_V_address0 =  (sc_lv<4>) (zext_ln39_fu_63_p1.read());
+    mem_0_V_address0 =  (sc_lv<9>) (zext_ln39_fu_63_p1.read());
 }
 
 void init_2d_mem::thread_mem_0_V_ce0() {
@@ -209,7 +209,7 @@ void init_2d_mem::thread_mem_0_V_we0() {
 }
 
 void init_2d_mem::thread_zext_ln39_fu_63_p1() {
-    zext_ln39_fu_63_p1 = esl_zext<64,5>(j_0_0_reg_40.read());
+    zext_ln39_fu_63_p1 = esl_zext<64,9>(j_0_0_reg_40.read());
 }
 
 void init_2d_mem::thread_ap_NS_fsm() {

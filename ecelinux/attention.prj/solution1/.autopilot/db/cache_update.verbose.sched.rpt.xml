@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'cache_update'" level="0">
-<item name = "Date">Thu Nov 28 07:55:29 2024
+<item name = "Date">Thu Nov 28 18:16:59 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.687 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 8.069 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">14, 14, 0.140 us, 0.140 us, 14, 14, none</column>
+<column name="">4721, 4721, 47.210 us, 47.210 us, 4721, 4721, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- CACHE_UPDATE_LOOP_1_CACHE_UPDATE_LOOP_2">12, 12, 2, 1, 1, 12, yes</column>
+<column name="- CACHE_UPDATE_LOOP_1">4720, 4720, 590, -, -, 8, no</column>
+<column name=" + CACHE_UPDATE_LOOP_2">588, 588, 98, -, -, 6, no</column>
+<column name="  ++ CACHE_UPDATE_LOOP_3">96, 96, 2, -, -, 48, no</column>
 </table>
 </item>
 </section>

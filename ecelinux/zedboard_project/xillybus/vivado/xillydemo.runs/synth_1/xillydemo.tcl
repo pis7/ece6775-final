@@ -48,62 +48,45 @@ read_verilog -library xil_defaultlib {
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/i2s_audio.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/transpose_last_two_d.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/sqrt_fixed_42_26_s.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/softmax_1_4_3_s.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/rms_norm_16_s.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/softmax_1_8_6_s.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/rms_norm_384_s.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/reshape_2D_to_3D.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/quantize_activation.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/linear_forward_no_mu.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/init_2d_mem.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/GEMM_3D_float.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/GEMM_3D_float_1.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_41_25_s.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_41_25_s_f_x_mibs.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_41_25_s_f_x_mhbi.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_41_25_s_exp_xjbC.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s_f_x_mlbW.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s_f_x_mkbM.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s_exp_xmb6.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_udiv_39s_39nsdEe.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_udiv_33s_29nsbkb.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_sdiv_72ns_61seOg.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_sdiv_56ns_40smb6.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_output_0.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mux_42_40_1_1.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mux_32_40_1_1.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mux_165_40_1_1.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mux_164_8_1_1.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mux_164_1_1_1.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mux_124_40_1_1.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_72s_40s_7cud.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_72ns_68nslbW.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_67ns_62nskbM.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_input_0_V.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_udiv_40ns_40neOg.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_udiv_33s_29nscud.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_sdiv_72ns_61sfYi.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_sdiv_56ns_40spcA.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_72s_40s_7dEe.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_58ns_56s_IfE.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_50ns_50nsocq.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_50ns_47nsncg.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_40s_42ns_bkb.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/cache_update.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weighzec.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weighyd2.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weighxdS.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weighwdI.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weights.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_cache_V.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_cacheMgi.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighrcU.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighqcK.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighpcA.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighocq.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_proj_Ffa.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighEe0.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighDeQ.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighCeG.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighBew.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_ln_weigncg.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_ln_weigAem.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighvdy.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighudo.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weightde.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighsc4.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_proj_QgW.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weights.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_quantizsc4.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_proj_wdI.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weights.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_ln_weigrcU.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_ln_weigqcK.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weights.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_cache_V.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_cacheIfE.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_cacheBew.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_attn_weEe0.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_ibs.v
+  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_hbi.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_g8j.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_fYi.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_emb.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fifo_8x2048.v
   /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fifo_32x512.v

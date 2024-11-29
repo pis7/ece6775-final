@@ -28,7 +28,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>37</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -74,7 +74,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>37</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -173,7 +173,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>21</bitwidth>
+					<bitwidth>16</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -491,7 +491,7 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>p_Result_s_66</name>
+						<name>p_Result_s_79</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>286</lineNumber>
@@ -28782,7 +28782,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>36</content>
+				<content>31</content>
 			</item>
 			<item class_id_reference="16" object_id="_582">
 				<Value>

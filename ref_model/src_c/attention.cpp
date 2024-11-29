@@ -242,7 +242,7 @@ std::vector<std::vector<float>> bitnet_attention(
 
     // Step 5: Transpose K for correct multiplication
     Tensor3D k_proj_transposed = transpose_last_two_dims(k_embed);
-   
+
     // Step 6: Calculate attention scores (QK^T) / sqrt(d)
     auto attn_weights = GEMM_3D_float(q_embed, k_proj_transposed);
 
@@ -285,15 +285,6 @@ std::vector<std::vector<float>> bitnet_attention(
     for (auto &row : attn_output_2D) {
         row = rms_norm(row, ln_weight, RMS_NORM_EPS);
     }
-
-    // Print attn_output_2D for debugging
-    // std::cout << "Attention Output 2D:" << std::endl;
-    // for (const auto &row : attn_output_2D) {
-    //     for (const auto &elem : row) {
-    //         std::cout << elem << " ";
-    //     }
-    //     std::cout << std::endl;
-    // }
 
     // Step 10: Final output projection using quantized GEMM (forward_no_mul)
     // Quantize the attention output before final projection

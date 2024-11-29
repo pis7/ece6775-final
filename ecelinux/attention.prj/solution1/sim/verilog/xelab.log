@@ -1,0 +1,212 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_dut_top glbl -prj dut.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /opt/xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s dut 
+Multi-threading is on. Using 62 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_dut_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/AESL_autofifo_strm_in_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_strm_in_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/AESL_autofifo_strm_out_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_strm_out_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/sqrt_fixed_42_26_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sqrt_fixed_42_26_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/rms_norm_384_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rms_norm_384_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/quantize_activation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quantize_activation
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/init_2d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_2d_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/linear_forward_no_mu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module linear_forward_no_mu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/reshape_2D_to_3D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reshape_2D_to_3D
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/apply_rotary_pos_emb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_emb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/cache_update.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_update
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/transpose_last_two_d.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transpose_last_two_d
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/GEMM_3D_float_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GEMM_3D_float_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/exp_40_24_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_40_24_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/softmax_1_8_6_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_1_8_6_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/GEMM_3D_float.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GEMM_3D_float
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_mul_40s_42ns_bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_40s_42ns_bkb_MulnS_0
+INFO: [VRFC 10-311] analyzing module dut_mul_40s_42ns_bkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_udiv_33s_29nscud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_udiv_33s_29nscud_div_u
+INFO: [VRFC 10-311] analyzing module dut_udiv_33s_29nscud_div
+INFO: [VRFC 10-311] analyzing module dut_udiv_33s_29nscud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_mul_72s_40s_7dEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_72s_40s_7dEe_MulnS_1
+INFO: [VRFC 10-311] analyzing module dut_mul_72s_40s_7dEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_udiv_40ns_40neOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_udiv_40ns_40neOg_div_u
+INFO: [VRFC 10-311] analyzing module dut_udiv_40ns_40neOg_div
+INFO: [VRFC 10-311] analyzing module dut_udiv_40ns_40neOg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_sdiv_72ns_61sfYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_sdiv_72ns_61sfYi_div_u
+INFO: [VRFC 10-311] analyzing module dut_sdiv_72ns_61sfYi_div
+INFO: [VRFC 10-311] analyzing module dut_sdiv_72ns_61sfYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/apply_rotary_pos_g8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_g8j_rom
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_g8j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/apply_rotary_pos_hbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_hbi_rom
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_hbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/apply_rotary_pos_ibs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_ibs_ram
+INFO: [VRFC 10-311] analyzing module apply_rotary_pos_ibs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_mul_50ns_47nsncg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_50ns_47nsncg_MulnS_2
+INFO: [VRFC 10-311] analyzing module dut_mul_50ns_47nsncg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_mul_50ns_50nsocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_50ns_50nsocq_MulnS_3
+INFO: [VRFC 10-311] analyzing module dut_mul_50ns_50nsocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/exp_40_24_s_f_x_mkbM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_40_24_s_f_x_mkbM_rom
+INFO: [VRFC 10-311] analyzing module exp_40_24_s_f_x_mkbM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/exp_40_24_s_f_x_mlbW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_40_24_s_f_x_mlbW_rom
+INFO: [VRFC 10-311] analyzing module exp_40_24_s_f_x_mlbW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/exp_40_24_s_exp_xmb6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_40_24_s_exp_xmb6_rom
+INFO: [VRFC 10-311] analyzing module exp_40_24_s_exp_xmb6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_sdiv_56ns_40spcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_sdiv_56ns_40spcA_div_u
+INFO: [VRFC 10-311] analyzing module dut_sdiv_56ns_40spcA_div
+INFO: [VRFC 10-311] analyzing module dut_sdiv_56ns_40spcA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/dut_mul_58ns_56s_IfE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dut_mul_58ns_56s_IfE_MulnS_4
+INFO: [VRFC 10-311] analyzing module dut_mul_58ns_56s_IfE
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_ln_weigqcK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_ln_weigqcK_rom
+INFO: [VRFC 10-311] analyzing module attention_ln_weigqcK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_q_weights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_q_weights_rom
+INFO: [VRFC 10-311] analyzing module attention_q_weights
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_k_weights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_k_weights_rom
+INFO: [VRFC 10-311] analyzing module attention_k_weights
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_v_weights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_v_weights_rom
+INFO: [VRFC 10-311] analyzing module attention_v_weights
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_k_cache_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_k_cache_V_rom
+INFO: [VRFC 10-311] analyzing module attention_k_cache_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_v_cache_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_v_cache_V_rom
+INFO: [VRFC 10-311] analyzing module attention_v_cache_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_ln_weigrcU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_ln_weigrcU_rom
+INFO: [VRFC 10-311] analyzing module attention_ln_weigrcU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_o_weights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_o_weights_rom
+INFO: [VRFC 10-311] analyzing module attention_o_weights
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_quantizsc4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_quantizsc4_ram
+INFO: [VRFC 10-311] analyzing module attention_quantizsc4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_q_proj_wdI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_q_proj_wdI_ram
+INFO: [VRFC 10-311] analyzing module attention_q_proj_wdI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_k_cacheBew.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_k_cacheBew_ram
+INFO: [VRFC 10-311] analyzing module attention_k_cacheBew
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pis7/ece6775-final/ecelinux/attention.prj/solution1/sim/verilog/attention_attn_weEe0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module attention_attn_weEe0_ram
+INFO: [VRFC 10-311] analyzing module attention_attn_weEe0
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.apply_rotary_pos_ibs_ram
+Compiling module xil_defaultlib.apply_rotary_pos_ibs(DataWidth=4...
+Compiling module xil_defaultlib.attention_ln_weigqcK_rom
+Compiling module xil_defaultlib.attention_ln_weigqcK(DataWidth=4...
+Compiling module xil_defaultlib.attention_q_weights_rom
+Compiling module xil_defaultlib.attention_q_weights(DataWidth=8,...
+Compiling module xil_defaultlib.attention_k_weights_rom
+Compiling module xil_defaultlib.attention_k_weights(DataWidth=8,...
+Compiling module xil_defaultlib.attention_v_weights_rom
+Compiling module xil_defaultlib.attention_v_weights(DataWidth=8,...
+Compiling module xil_defaultlib.attention_k_cache_V_rom
+Compiling module xil_defaultlib.attention_k_cache_V(DataWidth=40...
+Compiling module xil_defaultlib.attention_v_cache_V_rom
+Compiling module xil_defaultlib.attention_v_cache_V(DataWidth=40...
+Compiling module xil_defaultlib.attention_ln_weigrcU_rom
+Compiling module xil_defaultlib.attention_ln_weigrcU(DataWidth=4...
+Compiling module xil_defaultlib.attention_o_weights_rom
+Compiling module xil_defaultlib.attention_o_weights(DataWidth=8,...
+Compiling module xil_defaultlib.attention_quantizsc4_ram
+Compiling module xil_defaultlib.attention_quantizsc4(DataWidth=8...
+Compiling module xil_defaultlib.attention_q_proj_wdI_ram
+Compiling module xil_defaultlib.attention_q_proj_wdI(DataWidth=4...
+Compiling module xil_defaultlib.attention_k_cacheBew_ram
+Compiling module xil_defaultlib.attention_k_cacheBew(DataWidth=4...
+Compiling module xil_defaultlib.attention_attn_weEe0_ram
+Compiling module xil_defaultlib.attention_attn_weEe0(DataWidth=4...
+Compiling module xil_defaultlib.sqrt_fixed_42_26_s
+Compiling module xil_defaultlib.dut_mul_40s_42ns_bkb_MulnS_0
+Compiling module xil_defaultlib.dut_mul_40s_42ns_bkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.dut_udiv_33s_29nscud_div_u(in0_W...
+Compiling module xil_defaultlib.dut_udiv_33s_29nscud_div(in0_WID...
+Compiling module xil_defaultlib.dut_udiv_33s_29nscud(ID=1,NUM_ST...
+Compiling module xil_defaultlib.dut_mul_72s_40s_7dEe_MulnS_1
+Compiling module xil_defaultlib.dut_mul_72s_40s_7dEe(ID=1,NUM_ST...
+Compiling module xil_defaultlib.rms_norm_384_s
+Compiling module xil_defaultlib.exp_40_24_s_f_x_mkbM_rom
+Compiling module xil_defaultlib.exp_40_24_s_f_x_mkbM(DataWidth=3...
+Compiling module xil_defaultlib.exp_40_24_s_f_x_mlbW_rom
+Compiling module xil_defaultlib.exp_40_24_s_f_x_mlbW(DataWidth=4...
+Compiling module xil_defaultlib.exp_40_24_s_exp_xmb6_rom
+Compiling module xil_defaultlib.exp_40_24_s_exp_xmb6(DataWidth=5...
+Compiling module xil_defaultlib.dut_mul_50ns_47nsncg_MulnS_2
+Compiling module xil_defaultlib.dut_mul_50ns_47nsncg(ID=1,NUM_ST...
+Compiling module xil_defaultlib.dut_mul_50ns_50nsocq_MulnS_3
+Compiling module xil_defaultlib.dut_mul_50ns_50nsocq(ID=1,NUM_ST...
+Compiling module xil_defaultlib.exp_40_24_s
+Compiling module xil_defaultlib.dut_sdiv_56ns_40spcA_div_u(in0_W...
+Compiling module xil_defaultlib.dut_sdiv_56ns_40spcA_div(in0_WID...
+Compiling module xil_defaultlib.dut_sdiv_56ns_40spcA(ID=1,NUM_ST...
+Compiling module xil_defaultlib.softmax_1_8_6_s
+Compiling module xil_defaultlib.dut_sdiv_72ns_61sfYi_div_u(in0_W...
+Compiling module xil_defaultlib.dut_sdiv_72ns_61sfYi_div(in0_WID...
+Compiling module xil_defaultlib.dut_sdiv_72ns_61sfYi(ID=1,NUM_ST...
+Compiling module xil_defaultlib.linear_forward_no_mu
+Compiling module xil_defaultlib.dut_udiv_40ns_40neOg_div_u(in0_W...
+Compiling module xil_defaultlib.dut_udiv_40ns_40neOg_div(in0_WID...
+Compiling module xil_defaultlib.dut_udiv_40ns_40neOg(ID=1,NUM_ST...
+Compiling module xil_defaultlib.quantize_activation
+Compiling module xil_defaultlib.apply_rotary_pos_g8j_rom
+Compiling module xil_defaultlib.apply_rotary_pos_g8j(DataWidth=1...
+Compiling module xil_defaultlib.apply_rotary_pos_hbi_rom
+Compiling module xil_defaultlib.apply_rotary_pos_hbi(DataWidth=1...
+Compiling module xil_defaultlib.apply_rotary_pos_emb
+Compiling module xil_defaultlib.GEMM_3D_float
+Compiling module xil_defaultlib.GEMM_3D_float_1
+Compiling module xil_defaultlib.cache_update
+Compiling module xil_defaultlib.transpose_last_two_d
+Compiling module xil_defaultlib.reshape_2D_to_3D
+Compiling module xil_defaultlib.init_2d_mem
+Compiling module xil_defaultlib.dut_mul_58ns_56s_IfE_MulnS_4
+Compiling module xil_defaultlib.dut_mul_58ns_56s_IfE(ID=1,NUM_ST...
+Compiling module xil_defaultlib.attention
+Compiling module xil_defaultlib.dut
+Compiling module xil_defaultlib.AESL_autofifo_strm_in_V_V
+Compiling module xil_defaultlib.AESL_autofifo_strm_out_V_V
+Compiling module xil_defaultlib.apatb_dut_top
+Compiling module work.glbl
+Built simulation snapshot dut

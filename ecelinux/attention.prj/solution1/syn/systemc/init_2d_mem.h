@@ -22,7 +22,7 @@ struct init_2d_mem : public sc_module {
     sc_out< sc_logic > ap_done;
     sc_out< sc_logic > ap_idle;
     sc_out< sc_logic > ap_ready;
-    sc_out< sc_lv<4> > mem_0_V_address0;
+    sc_out< sc_lv<9> > mem_0_V_address0;
     sc_out< sc_logic > mem_0_V_ce0;
     sc_out< sc_logic > mem_0_V_we0;
     sc_out< sc_lv<40> > mem_0_V_d0;
@@ -38,9 +38,9 @@ struct init_2d_mem : public sc_module {
 
     sc_signal< sc_lv<2> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
-    sc_signal< sc_lv<5> > add_ln38_fu_57_p2;
+    sc_signal< sc_lv<9> > add_ln38_fu_57_p2;
     sc_signal< sc_logic > ap_CS_fsm_state2;
-    sc_signal< sc_lv<5> > j_0_0_reg_40;
+    sc_signal< sc_lv<9> > j_0_0_reg_40;
     sc_signal< sc_lv<1> > icmp_ln38_fu_51_p2;
     sc_signal< sc_lv<64> > zext_ln39_fu_63_p1;
     sc_signal< sc_lv<2> > ap_NS_fsm;
@@ -50,11 +50,11 @@ struct init_2d_mem : public sc_module {
     static const sc_lv<2> ap_ST_fsm_state2;
     static const sc_lv<32> ap_const_lv32_0;
     static const sc_lv<32> ap_const_lv32_1;
-    static const sc_lv<5> ap_const_lv5_0;
+    static const sc_lv<9> ap_const_lv9_0;
     static const sc_lv<1> ap_const_lv1_0;
     static const sc_lv<40> ap_const_lv40_0;
-    static const sc_lv<5> ap_const_lv5_10;
-    static const sc_lv<5> ap_const_lv5_1;
+    static const sc_lv<9> ap_const_lv9_180;
+    static const sc_lv<9> ap_const_lv9_1;
     static const sc_lv<1> ap_const_lv1_1;
     static const bool ap_const_boolean_1;
     // Thread declarations
