@@ -1,0 +1,581 @@
+
+
+================================================================
+== Vivado HLS Report for 'quantize_activation'
+================================================================
+* Date:           Thu Nov 28 23:10:06 2024
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        out.prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.510 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    12325|    12325| 0.123 ms | 0.123 ms |  12325|  12325|   none  |
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- l_S_j_0_j   |     4608|     4608|         3|          -|          -|  1536|    no    |
+        |- l_S_j_1_j1  |     7680|     7680|         5|          -|          -|  1536|    no    |
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 44
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 5 
+3 --> 4 
+4 --> 2 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 40 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([11 x i8]* @p_str3)" [kernel.cpp:67]   --->   Operation 45 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (1.76ns)   --->   "br label %1" [kernel.cpp:70]   --->   Operation 46 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 4.13>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%v45_V_0 = phi i32 [ 0, %l_S_i_0_i2_begin ], [ %select_ln80, %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit86.0 ]" [kernel.cpp:80]   --->   Operation 47 'phi' 'v45_V_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%j_0_0 = phi i11 [ 0, %l_S_i_0_i2_begin ], [ %add_ln70, %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit86.0 ]" [kernel.cpp:70]   --->   Operation 48 'phi' 'j_0_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (1.88ns)   --->   "%icmp_ln70 = icmp eq i11 %j_0_0, -512" [kernel.cpp:70]   --->   Operation 49 'icmp' 'icmp_ln70' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.09> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%empty_78 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)"   --->   Operation 50 'speclooptripcount' 'empty_78' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (1.63ns)   --->   "%add_ln70 = add i11 %j_0_0, 1" [kernel.cpp:70]   --->   Operation 51 'add' 'add_ln70' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.19> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "br i1 %icmp_ln70, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit.0, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit86.0" [kernel.cpp:70]   --->   Operation 52 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%zext_ln71 = zext i11 %j_0_0 to i64" [kernel.cpp:71]   --->   Operation 53 'zext' 'zext_ln71' <Predicate = (!icmp_ln70)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%v22_0_V_addr = getelementptr [1536 x i32]* %v22_0_V, i64 0, i64 %zext_ln71" [kernel.cpp:71]   --->   Operation 54 'getelementptr' 'v22_0_V_addr' <Predicate = (!icmp_ln70)> <Delay = 0.00>
+ST_2 : Operation 55 [2/2] (3.25ns)   --->   "%v22_0_V_load = load i32* %v22_0_V_addr, align 4" [kernel.cpp:71]   --->   Operation 55 'load' 'v22_0_V_load' <Predicate = (!icmp_ln70)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
+ST_2 : Operation 56 [36/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 56 'udiv' 'udiv_ln1148' <Predicate = (icmp_ln70)> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 57 [1/2] (3.25ns)   --->   "%v22_0_V_load = load i32* %v22_0_V_addr, align 4" [kernel.cpp:71]   --->   Operation 57 'load' 'v22_0_V_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
+
+State 4 <SV = 3> <Delay = 6.85>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str4) nounwind" [kernel.cpp:70]   --->   Operation 58 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 59 [1/1] (2.47ns)   --->   "%icmp_ln1494 = icmp sgt i32 %v22_0_V_load, 0" [kernel.cpp:72]   --->   Operation 59 'icmp' 'icmp_ln1494' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.09> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%shl_ln = call i44 @_ssdm_op_BitConcatenate.i44.i32.i12(i32 %v22_0_V_load, i12 0)" [kernel.cpp:73]   --->   Operation 60 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln1118 = zext i44 %shl_ln to i45" [kernel.cpp:73]   --->   Operation 61 'zext' 'zext_ln1118' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 62 [1/1] (2.98ns)   --->   "%sub_ln1118 = sub i45 0, %zext_ln1118" [kernel.cpp:73]   --->   Operation 62 'sub' 'sub_ln1118' <Predicate = true> <Delay = 2.98> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.19> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%trunc_ln = call i32 @_ssdm_op_PartSelect.i32.i45.i32.i32(i45 %sub_ln1118, i32 12, i32 43)" [kernel.cpp:73]   --->   Operation 63 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (0.69ns)   --->   "%select_ln74 = select i1 %icmp_ln1494, i32 %v22_0_V_load, i32 %trunc_ln" [kernel.cpp:74]   --->   Operation 64 'select' 'select_ln74' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 65 [1/1] (2.47ns)   --->   "%icmp_ln1495 = icmp slt i32 %v45_V_0, %select_ln74" [kernel.cpp:79]   --->   Operation 65 'icmp' 'icmp_ln1495' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.09> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 66 [1/1] (0.69ns)   --->   "%select_ln80 = select i1 %icmp_ln1495, i32 %select_ln74, i32 %v45_V_0" [kernel.cpp:80]   --->   Operation 66 'select' 'select_ln80' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 67 [1/1] (0.00ns)   --->   "br label %1" [kernel.cpp:70]   --->   Operation 67 'br' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 2> <Delay = 4.13>
+ST_5 : Operation 68 [35/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 68 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 3> <Delay = 4.13>
+ST_6 : Operation 69 [34/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 69 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 4> <Delay = 4.13>
+ST_7 : Operation 70 [33/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 70 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 5> <Delay = 4.13>
+ST_8 : Operation 71 [32/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 71 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 6> <Delay = 4.13>
+ST_9 : Operation 72 [31/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 72 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 7> <Delay = 4.13>
+ST_10 : Operation 73 [30/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 73 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 8> <Delay = 4.13>
+ST_11 : Operation 74 [29/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 74 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 9> <Delay = 4.13>
+ST_12 : Operation 75 [28/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 75 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 10> <Delay = 4.13>
+ST_13 : Operation 76 [27/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 76 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 11> <Delay = 4.13>
+ST_14 : Operation 77 [26/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 77 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 12> <Delay = 4.13>
+ST_15 : Operation 78 [25/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 78 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 13> <Delay = 4.13>
+ST_16 : Operation 79 [24/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 79 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 14> <Delay = 4.13>
+ST_17 : Operation 80 [23/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 80 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 15> <Delay = 4.13>
+ST_18 : Operation 81 [22/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 81 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 16> <Delay = 4.13>
+ST_19 : Operation 82 [21/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 82 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 17> <Delay = 4.13>
+ST_20 : Operation 83 [20/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 83 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 18> <Delay = 4.13>
+ST_21 : Operation 84 [19/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 84 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 19> <Delay = 4.13>
+ST_22 : Operation 85 [18/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 85 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 20> <Delay = 4.13>
+ST_23 : Operation 86 [17/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 86 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 21> <Delay = 4.13>
+ST_24 : Operation 87 [16/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 87 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 22> <Delay = 4.13>
+ST_25 : Operation 88 [15/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 88 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 23> <Delay = 4.13>
+ST_26 : Operation 89 [14/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 89 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 24> <Delay = 4.13>
+ST_27 : Operation 90 [13/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 90 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 25> <Delay = 4.13>
+ST_28 : Operation 91 [12/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 91 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 26> <Delay = 4.13>
+ST_29 : Operation 92 [11/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 92 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 27> <Delay = 4.13>
+ST_30 : Operation 93 [10/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 93 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 28> <Delay = 4.13>
+ST_31 : Operation 94 [9/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 94 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 29> <Delay = 4.13>
+ST_32 : Operation 95 [8/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 95 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 30> <Delay = 4.13>
+ST_33 : Operation 96 [7/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 96 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 31> <Delay = 4.13>
+ST_34 : Operation 97 [6/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 97 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 32> <Delay = 4.13>
+ST_35 : Operation 98 [5/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 98 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 33> <Delay = 4.13>
+ST_36 : Operation 99 [4/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 99 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 34> <Delay = 4.13>
+ST_37 : Operation 100 [3/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 100 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 35> <Delay = 4.13>
+ST_38 : Operation 101 [2/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 101 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 36> <Delay = 4.13>
+ST_39 : Operation 102 [1/36] (4.13ns)   --->   "%udiv_ln1148 = udiv i32 2130706432, %v45_V_0" [kernel.cpp:92]   --->   Operation 102 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 103 [1/1] (0.00ns)   --->   "%zext_ln97 = zext i32 %udiv_ln1148 to i44" [kernel.cpp:97]   --->   Operation 103 'zext' 'zext_ln97' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 104 [1/1] (1.76ns)   --->   "br label %0" [kernel.cpp:97]   --->   Operation 104 'br' <Predicate = true> <Delay = 1.76>
+
+State 40 <SV = 37> <Delay = 3.25>
+ST_40 : Operation 105 [1/1] (0.00ns)   --->   "%j1_0_0 = phi i11 [ 0, %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit.0 ], [ %add_ln97, %_ZNK13ap_fixed_baseILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcviEv.exit.08 ]" [kernel.cpp:97]   --->   Operation 105 'phi' 'j1_0_0' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 106 [1/1] (1.88ns)   --->   "%icmp_ln97 = icmp eq i11 %j1_0_0, -512" [kernel.cpp:97]   --->   Operation 106 'icmp' 'icmp_ln97' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.09> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 107 [1/1] (0.00ns)   --->   "%empty_77 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)"   --->   Operation 107 'speclooptripcount' 'empty_77' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 108 [1/1] (1.63ns)   --->   "%add_ln97 = add i11 %j1_0_0, 1" [kernel.cpp:97]   --->   Operation 108 'add' 'add_ln97' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.19> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 109 [1/1] (0.00ns)   --->   "br i1 %icmp_ln97, label %l_S_i_0_i2_end, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi64ELi40ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0_ifconv" [kernel.cpp:97]   --->   Operation 109 'br' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 110 [1/1] (0.00ns)   --->   "%zext_ln98 = zext i11 %j1_0_0 to i64" [kernel.cpp:98]   --->   Operation 110 'zext' 'zext_ln98' <Predicate = (!icmp_ln97)> <Delay = 0.00>
+ST_40 : Operation 111 [1/1] (0.00ns)   --->   "%v22_0_V_addr_1 = getelementptr [1536 x i32]* %v22_0_V, i64 0, i64 %zext_ln98" [kernel.cpp:98]   --->   Operation 111 'getelementptr' 'v22_0_V_addr_1' <Predicate = (!icmp_ln97)> <Delay = 0.00>
+ST_40 : Operation 112 [2/2] (3.25ns)   --->   "%v22_0_V_load_1 = load i32* %v22_0_V_addr_1, align 4" [kernel.cpp:98]   --->   Operation 112 'load' 'v22_0_V_load_1' <Predicate = (!icmp_ln97)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
+ST_40 : Operation 113 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str3, i32 %tmp)" [kernel.cpp:121]   --->   Operation 113 'specregionend' 'empty' <Predicate = (icmp_ln97)> <Delay = 0.00>
+ST_40 : Operation 114 [1/1] (0.00ns)   --->   "ret i32 %udiv_ln1148" [kernel.cpp:122]   --->   Operation 114 'ret' <Predicate = (icmp_ln97)> <Delay = 0.00>
+
+State 41 <SV = 38> <Delay = 3.25>
+ST_41 : Operation 115 [1/2] (3.25ns)   --->   "%v22_0_V_load_1 = load i32* %v22_0_V_addr_1, align 4" [kernel.cpp:98]   --->   Operation 115 'load' 'v22_0_V_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
+
+State 42 <SV = 39> <Delay = 8.51>
+ST_42 : Operation 116 [1/1] (0.00ns)   --->   "%sext_ln1118 = sext i32 %v22_0_V_load_1 to i44" [kernel.cpp:100]   --->   Operation 116 'sext' 'sext_ln1118' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 117 [1/1] (8.51ns)   --->   "%mul_ln1118 = mul i44 %zext_ln97, %sext_ln1118" [kernel.cpp:100]   --->   Operation 117 'mul' 'mul_ln1118' <Predicate = true> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 118 [1/1] (0.00ns)   --->   "%trunc_ln708_3 = call i32 @_ssdm_op_PartSelect.i32.i44.i32.i32(i44 %mul_ln1118, i32 12, i32 43)" [kernel.cpp:100]   --->   Operation 118 'partselect' 'trunc_ln708_3' <Predicate = true> <Delay = 0.00>
+
+State 43 <SV = 40> <Delay = 7.92>
+ST_43 : Operation 119 [1/1] (2.47ns)   --->   "%icmp_ln1494_1 = icmp sgt i32 %trunc_ln708_3, 0" [kernel.cpp:101]   --->   Operation 119 'icmp' 'icmp_ln1494_1' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.09> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 120 [1/1] (0.00ns) (grouped into LUT with out node add_ln104)   --->   "%select_ln104 = select i1 %icmp_ln1494_1, i32 2048, i32 -2048" [kernel.cpp:104]   --->   Operation 120 'select' 'select_ln104' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_43 : Operation 121 [1/1] (2.55ns) (out node of the LUT)   --->   "%add_ln104 = add i32 %select_ln104, %trunc_ln708_3" [kernel.cpp:104]   --->   Operation 121 'add' 'add_ln104' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.19> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 122 [1/1] (0.00ns)   --->   "%p_Result_s = call i20 @_ssdm_op_PartSelect.i20.i32.i32.i32(i32 %add_ln104, i32 12, i32 31)" [kernel.cpp:105]   --->   Operation 122 'partselect' 'p_Result_s' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 123 [1/1] (0.00ns) (grouped into LUT with out node select_ln850)   --->   "%tmp_4 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %add_ln104, i32 31)" [kernel.cpp:105]   --->   Operation 123 'bitselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 124 [1/1] (0.00ns)   --->   "%trunc_ln851 = trunc i32 %add_ln104 to i12" [kernel.cpp:105]   --->   Operation 124 'trunc' 'trunc_ln851' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 125 [1/1] (1.99ns)   --->   "%icmp_ln851 = icmp eq i12 %trunc_ln851, 0" [kernel.cpp:105]   --->   Operation 125 'icmp' 'icmp_ln851' <Predicate = true> <Delay = 1.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.09> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 126 [1/1] (2.19ns)   --->   "%add_ln700 = add i20 1, %p_Result_s" [kernel.cpp:105]   --->   Operation 126 'add' 'add_ln700' <Predicate = true> <Delay = 2.19> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.19> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node select_ln850)   --->   "%select_ln851 = select i1 %icmp_ln851, i20 %p_Result_s, i20 %add_ln700" [kernel.cpp:105]   --->   Operation 127 'select' 'select_ln851' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_43 : Operation 128 [1/1] (0.70ns) (out node of the LUT)   --->   "%select_ln850 = select i1 %tmp_4, i20 %select_ln851, i20 %p_Result_s" [kernel.cpp:105]   --->   Operation 128 'select' 'select_ln850' <Predicate = true> <Delay = 0.70> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_43 : Operation 129 [1/1] (0.00ns)   --->   "%tmp_5 = call i13 @_ssdm_op_PartSelect.i13.i20.i32.i32(i20 %select_ln850, i32 7, i32 19)" [kernel.cpp:112]   --->   Operation 129 'partselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
+
+State 44 <SV = 41> <Delay = 6.94>
+ST_44 : Operation 130 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str5) nounwind" [kernel.cpp:97]   --->   Operation 130 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 131 [1/1] (2.44ns)   --->   "%icmp_ln110 = icmp slt i20 %select_ln850, -128" [kernel.cpp:110]   --->   Operation 131 'icmp' 'icmp_ln110' <Predicate = true> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.09> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 132 [1/1] (2.09ns)   --->   "%icmp_ln112 = icmp sgt i13 %tmp_5, 0" [kernel.cpp:112]   --->   Operation 132 'icmp' 'icmp_ln112' <Predicate = true> <Delay = 2.09> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.09> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 133 [1/1] (0.00ns) (grouped into LUT with out node select_ln115_1)   --->   "%trunc_ln115 = trunc i20 %select_ln850 to i8" [kernel.cpp:115]   --->   Operation 133 'trunc' 'trunc_ln115' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 134 [1/1] (0.00ns) (grouped into LUT with out node select_ln115_1)   --->   "%select_ln115 = select i1 %icmp_ln110, i8 -128, i8 127" [kernel.cpp:115]   --->   Operation 134 'select' 'select_ln115' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_44 : Operation 135 [1/1] (0.00ns) (grouped into LUT with out node select_ln115_1)   --->   "%or_ln115 = or i1 %icmp_ln110, %icmp_ln112" [kernel.cpp:115]   --->   Operation 135 'or' 'or_ln115' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 136 [1/1] (1.24ns) (out node of the LUT)   --->   "%select_ln115_1 = select i1 %or_ln115, i8 %select_ln115, i8 %trunc_ln115" [kernel.cpp:115]   --->   Operation 136 'select' 'select_ln115_1' <Predicate = true> <Delay = 1.24> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_44 : Operation 137 [1/1] (0.00ns)   --->   "%trunc_ln119 = trunc i11 %j1_0_0 to i2" [kernel.cpp:119]   --->   Operation 137 'trunc' 'trunc_ln119' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 138 [1/1] (0.00ns)   --->   "%lshr_ln = call i9 @_ssdm_op_PartSelect.i9.i11.i32.i32(i11 %j1_0_0, i32 2, i32 10)" [kernel.cpp:119]   --->   Operation 138 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 139 [1/1] (0.00ns)   --->   "%zext_ln119 = zext i9 %lshr_ln to i64" [kernel.cpp:119]   --->   Operation 139 'zext' 'zext_ln119' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 140 [1/1] (0.00ns)   --->   "%v24_0_0_addr = getelementptr [384 x i8]* %v24_0_0, i64 0, i64 %zext_ln119" [kernel.cpp:119]   --->   Operation 140 'getelementptr' 'v24_0_0_addr' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 141 [1/1] (0.00ns)   --->   "%v24_1_0_addr = getelementptr [384 x i8]* %v24_1_0, i64 0, i64 %zext_ln119" [kernel.cpp:119]   --->   Operation 141 'getelementptr' 'v24_1_0_addr' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 142 [1/1] (0.00ns)   --->   "%v24_2_0_addr = getelementptr [384 x i8]* %v24_2_0, i64 0, i64 %zext_ln119" [kernel.cpp:119]   --->   Operation 142 'getelementptr' 'v24_2_0_addr' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 143 [1/1] (0.00ns)   --->   "%v24_3_0_addr = getelementptr [384 x i8]* %v24_3_0, i64 0, i64 %zext_ln119" [kernel.cpp:119]   --->   Operation 143 'getelementptr' 'v24_3_0_addr' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 144 [1/1] (1.30ns)   --->   "switch i2 %trunc_ln119, label %branch3 [
+    i2 0, label %branch0
+    i2 1, label %branch1
+    i2 -2, label %branch2
+  ]" [kernel.cpp:119]   --->   Operation 144 'switch' <Predicate = true> <Delay = 1.30>
+ST_44 : Operation 145 [1/1] (3.25ns)   --->   "store i8 %select_ln115_1, i8* %v24_2_0_addr, align 1" [kernel.cpp:119]   --->   Operation 145 'store' <Predicate = (trunc_ln119 == 2)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
+ST_44 : Operation 146 [1/1] (0.00ns)   --->   "br label %_ZNK13ap_fixed_baseILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcviEv.exit.08" [kernel.cpp:119]   --->   Operation 146 'br' <Predicate = (trunc_ln119 == 2)> <Delay = 0.00>
+ST_44 : Operation 147 [1/1] (3.25ns)   --->   "store i8 %select_ln115_1, i8* %v24_1_0_addr, align 1" [kernel.cpp:119]   --->   Operation 147 'store' <Predicate = (trunc_ln119 == 1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
+ST_44 : Operation 148 [1/1] (0.00ns)   --->   "br label %_ZNK13ap_fixed_baseILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcviEv.exit.08" [kernel.cpp:119]   --->   Operation 148 'br' <Predicate = (trunc_ln119 == 1)> <Delay = 0.00>
+ST_44 : Operation 149 [1/1] (3.25ns)   --->   "store i8 %select_ln115_1, i8* %v24_0_0_addr, align 1" [kernel.cpp:119]   --->   Operation 149 'store' <Predicate = (trunc_ln119 == 0)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
+ST_44 : Operation 150 [1/1] (0.00ns)   --->   "br label %_ZNK13ap_fixed_baseILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcviEv.exit.08" [kernel.cpp:119]   --->   Operation 150 'br' <Predicate = (trunc_ln119 == 0)> <Delay = 0.00>
+ST_44 : Operation 151 [1/1] (3.25ns)   --->   "store i8 %select_ln115_1, i8* %v24_3_0_addr, align 1" [kernel.cpp:119]   --->   Operation 151 'store' <Predicate = (trunc_ln119 == 3)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
+ST_44 : Operation 152 [1/1] (0.00ns)   --->   "br label %_ZNK13ap_fixed_baseILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEcviEv.exit.08" [kernel.cpp:119]   --->   Operation 152 'br' <Predicate = (trunc_ln119 == 3)> <Delay = 0.00>
+ST_44 : Operation 153 [1/1] (0.00ns)   --->   "br label %0" [kernel.cpp:97]   --->   Operation 153 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('v45_V_0', kernel.cpp:80) with incoming values : ('select_ln80', kernel.cpp:80) [9]  (1.77 ns)
+
+ <State 2>: 4.13ns
+The critical path consists of the following:
+	'phi' operation ('v45_V_0', kernel.cpp:80) with incoming values : ('select_ln80', kernel.cpp:80) [9]  (0 ns)
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('v22_0_V_load', kernel.cpp:71) on array 'v22_0_V' [19]  (3.25 ns)
+
+ <State 4>: 6.86ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln1118', kernel.cpp:73) [23]  (2.99 ns)
+	'select' operation ('select_ln74', kernel.cpp:74) [25]  (0.698 ns)
+	'icmp' operation ('icmp_ln1495', kernel.cpp:79) [26]  (2.47 ns)
+	'select' operation ('select_ln80', kernel.cpp:80) [27]  (0.698 ns)
+
+ <State 5>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 6>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 7>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 8>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 9>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 10>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 11>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 12>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 13>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 14>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 15>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 16>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 17>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 18>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 19>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 20>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 21>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 22>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 23>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 24>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 25>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 26>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 27>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 28>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 29>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 30>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 31>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 32>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 33>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 34>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 35>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 36>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 37>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 38>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 39>: 4.13ns
+The critical path consists of the following:
+	'udiv' operation ('v25[0].V', kernel.cpp:92) [30]  (4.13 ns)
+
+ <State 40>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('j1_0_0', kernel.cpp:97) with incoming values : ('add_ln97', kernel.cpp:97) [34]  (0 ns)
+	'getelementptr' operation ('v22_0_V_addr_1', kernel.cpp:98) [42]  (0 ns)
+	'load' operation ('v22_0_V_load_1', kernel.cpp:98) on array 'v22_0_V' [43]  (3.25 ns)
+
+ <State 41>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('v22_0_V_load_1', kernel.cpp:98) on array 'v22_0_V' [43]  (3.25 ns)
+
+ <State 42>: 8.51ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln1118', kernel.cpp:100) [45]  (8.51 ns)
+
+ <State 43>: 7.93ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln1494_1', kernel.cpp:101) [47]  (2.47 ns)
+	'select' operation ('select_ln104', kernel.cpp:104) [48]  (0 ns)
+	'add' operation ('add_ln104', kernel.cpp:104) [49]  (2.55 ns)
+	'add' operation ('add_ln700', kernel.cpp:105) [54]  (2.2 ns)
+	'select' operation ('select_ln851', kernel.cpp:105) [55]  (0 ns)
+	'select' operation ('select_ln850', kernel.cpp:105) [56]  (0.708 ns)
+
+ <State 44>: 6.94ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln110', kernel.cpp:110) [57]  (2.44 ns)
+	'select' operation ('select_ln115', kernel.cpp:115) [61]  (0 ns)
+	'select' operation ('select_ln115_1', kernel.cpp:115) [63]  (1.25 ns)
+	'store' operation ('store_ln119', kernel.cpp:119) of variable 'select_ln115_1', kernel.cpp:115 on array 'v24_0_0' [79]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
