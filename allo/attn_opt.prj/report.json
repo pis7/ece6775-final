@@ -1,0 +1,763 @@
+{
+  "ReportVersion": {
+    "Version": "2019.2"
+  },
+  "UserAssignments": {
+    "unit": "ns",
+    "ProductFamily": "zynq",
+    "Part": "xc7z020-clg484-1",
+    "TopModelName": "attention",
+    "TargetClockPeriod": "10.00",
+    "ClockUncertainty": "1.25"
+  },
+  "PerformanceEstimates": {
+    "PipelineType": "none",
+    "SummaryOfTimingAnalysis": {
+      "unit": "ns",
+      "EstimatedClockPeriod": "15.210"
+    },
+    "SummaryOfOverallLatency": {
+      "unit": "clock cycles",
+      "Best-caseLatency": "30800",
+      "Average-caseLatency": "30800",
+      "Worst-caseLatency": "30800",
+      "Best-caseRealTimeLatency": "0.468 ms",
+      "Average-caseRealTimeLatency": "0.468 ms",
+      "Worst-caseRealTimeLatency": "0.468 ms",
+      "Interval-min": "30801",
+      "Interval-max": "30801"
+    },
+    "SummaryOfLoopLatency": {
+      "Loop1": {
+        "TripCount": "16",
+        "Latency": "16",
+        "IterationLatency": "1"
+      },
+      "Loop2": {
+        "TripCount": "16",
+        "Latency": "16",
+        "IterationLatency": "1"
+      },
+      "Loop3": {
+        "TripCount": "16",
+        "Latency": "16",
+        "IterationLatency": "1"
+      },
+      "Loop4": {
+        "TripCount": "16",
+        "Latency": "16",
+        "IterationLatency": "1"
+      },
+      "Loop5": {
+        "TripCount": "2",
+        "Latency": "196",
+        "IterationLatency": "98",
+        "Loop5.1": {
+          "TripCount": "96",
+          "Latency": "96",
+          "IterationLatency": "1"
+        }
+      },
+      "Loop6": {
+        "TripCount": "2",
+        "Latency": "196",
+        "IterationLatency": "98",
+        "Loop6.1": {
+          "TripCount": "96",
+          "Latency": "96",
+          "IterationLatency": "1"
+        }
+      },
+      "Loop7": {
+        "TripCount": "2",
+        "Latency": "592",
+        "IterationLatency": "296",
+        "Loop7.1": {
+          "TripCount": "3",
+          "Latency": "294",
+          "IterationLatency": "98",
+          "Loop7.1.1": {
+            "TripCount": "96",
+            "Latency": "96",
+            "IterationLatency": "1"
+          }
+        }
+      },
+      "Loop8": {
+        "TripCount": "2",
+        "Latency": "592",
+        "IterationLatency": "296",
+        "Loop8.1": {
+          "TripCount": "3",
+          "Latency": "294",
+          "IterationLatency": "98",
+          "Loop8.1.1": {
+            "TripCount": "96",
+            "Latency": "96",
+            "IterationLatency": "1"
+          }
+        }
+      },
+      "Loop9": {
+        "TripCount": "2",
+        "Latency": "10",
+        "IterationLatency": "5",
+        "Loop9.1": {
+          "TripCount": "3",
+          "Latency": "3",
+          "IterationLatency": "1"
+        }
+      },
+      "l_S_i_0_i10": {
+        "TripCount": "2",
+        "Latency": "106",
+        "IterationLatency": "53",
+        "l_S_k_0_k9": {
+          "TripCount": "3",
+          "Latency": "51",
+          "IterationLatency": "17"
+        }
+      },
+      "l_S_h_3_h6": {
+        "TripCount": "2",
+        "Latency": "16",
+        "IterationLatency": "8"
+      },
+      "Loop12": {
+        "TripCount": "2",
+        "Latency": "10",
+        "IterationLatency": "5",
+        "Loop12.1": {
+          "TripCount": "3",
+          "Latency": "3",
+          "IterationLatency": "1"
+        }
+      },
+      "Loop13": {
+        "TripCount": "2",
+        "Latency": "196",
+        "IterationLatency": "98",
+        "Loop13.1": {
+          "TripCount": "96",
+          "Latency": "96",
+          "IterationLatency": "1"
+        }
+      },
+      "Loop14": {
+        "TripCount": "16",
+        "Latency": "16",
+        "IterationLatency": "1"
+      },
+      "l_S_h_6_h7": {
+        "TripCount": "2",
+        "Latency": "388",
+        "IterationLatency": "194",
+        "l_S_d_6_d4": {
+          "TripCount": "96",
+          "Latency": "192",
+          "IterationLatency": "2"
+        }
+      },
+      "Loop16": {
+        "TripCount": "16",
+        "Latency": "16",
+        "IterationLatency": "1"
+      },
+      "Loop17": {
+        "TripCount": "16",
+        "Latency": "16",
+        "IterationLatency": "1"
+      }
+    }
+  },
+  "AreaEstimates": {
+    "Resources": {
+      "BRAM_18K": "44",
+      "DSP48E": "63",
+      "FF": "18940",
+      "LUT": "29522",
+      "URAM": "0"
+    },
+    "AvailableResources": {
+      "BRAM_18K": "280",
+      "DSP48E": "220",
+      "FF": "106400",
+      "LUT": "53200",
+      "URAM": "0"
+    }
+  },
+  "InterfaceSummary": {
+    "RtlPorts": [
+      {
+        "name": "ap_clk",
+        "Object": "attention",
+        "Type": "return value",
+        "Scope": null,
+        "IOProtocol": "ap_ctrl_hs",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "1",
+        "Attribute": "control"
+      },
+      {
+        "name": "ap_rst",
+        "Object": "attention",
+        "Type": "return value",
+        "Scope": null,
+        "IOProtocol": "ap_ctrl_hs",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "1",
+        "Attribute": "control"
+      },
+      {
+        "name": "ap_start",
+        "Object": "attention",
+        "Type": "return value",
+        "Scope": null,
+        "IOProtocol": "ap_ctrl_hs",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "1",
+        "Attribute": "control"
+      },
+      {
+        "name": "ap_done",
+        "Object": "attention",
+        "Type": "return value",
+        "Scope": null,
+        "IOProtocol": "ap_ctrl_hs",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control"
+      },
+      {
+        "name": "ap_idle",
+        "Object": "attention",
+        "Type": "return value",
+        "Scope": null,
+        "IOProtocol": "ap_ctrl_hs",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control"
+      },
+      {
+        "name": "ap_ready",
+        "Object": "attention",
+        "Type": "return value",
+        "Scope": null,
+        "IOProtocol": "ap_ctrl_hs",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control"
+      },
+      {
+        "name": "v252_address0",
+        "Object": "v252",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "4",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v252_ce0",
+        "Object": "v252",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v252_q0",
+        "Object": "v252",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v253_address0",
+        "Object": "v253",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "6",
+        "Attribute": "address",
+        "CType": "int"
+      },
+      {
+        "name": "v253_ce0",
+        "Object": "v253",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "int"
+      },
+      {
+        "name": "v253_q0",
+        "Object": "v253",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "8",
+        "Attribute": "data",
+        "CType": "int"
+      },
+      {
+        "name": "v254",
+        "Object": "v254",
+        "Type": "scalar",
+        "Scope": null,
+        "IOProtocol": "ap_none",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v255_address0",
+        "Object": "v255",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "6",
+        "Attribute": "address",
+        "CType": "int"
+      },
+      {
+        "name": "v255_ce0",
+        "Object": "v255",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "int"
+      },
+      {
+        "name": "v255_q0",
+        "Object": "v255",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "8",
+        "Attribute": "data",
+        "CType": "int"
+      },
+      {
+        "name": "v256",
+        "Object": "v256",
+        "Type": "scalar",
+        "Scope": null,
+        "IOProtocol": "ap_none",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v257_address0",
+        "Object": "v257",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "6",
+        "Attribute": "address",
+        "CType": "int"
+      },
+      {
+        "name": "v257_ce0",
+        "Object": "v257",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "int"
+      },
+      {
+        "name": "v257_q0",
+        "Object": "v257",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "8",
+        "Attribute": "data",
+        "CType": "int"
+      },
+      {
+        "name": "v258",
+        "Object": "v258",
+        "Type": "scalar",
+        "Scope": null,
+        "IOProtocol": "ap_none",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v259_address0",
+        "Object": "v259",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "6",
+        "Attribute": "address",
+        "CType": "int"
+      },
+      {
+        "name": "v259_ce0",
+        "Object": "v259",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "int"
+      },
+      {
+        "name": "v259_q0",
+        "Object": "v259",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "8",
+        "Attribute": "data",
+        "CType": "int"
+      },
+      {
+        "name": "v260",
+        "Object": "v260",
+        "Type": "scalar",
+        "Scope": null,
+        "IOProtocol": "ap_none",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v261_address0",
+        "Object": "v261",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "10",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v261_ce0",
+        "Object": "v261",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v261_q0",
+        "Object": "v261",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v262_address0",
+        "Object": "v262",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "10",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v262_ce0",
+        "Object": "v262",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v262_q0",
+        "Object": "v262",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v263_address0",
+        "Object": "v263",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "4",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v263_ce0",
+        "Object": "v263",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v263_q0",
+        "Object": "v263",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v264_address0",
+        "Object": "v264",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "4",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v264_ce0",
+        "Object": "v264",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v264_q0",
+        "Object": "v264",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v265_address0",
+        "Object": "v265",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "9",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v265_ce0",
+        "Object": "v265",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v265_q0",
+        "Object": "v265",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v266_address0",
+        "Object": "v266",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "9",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v266_ce0",
+        "Object": "v266",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v266_q0",
+        "Object": "v266",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v267",
+        "Object": "v267",
+        "Type": "scalar",
+        "Scope": null,
+        "IOProtocol": "ap_none",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "int"
+      },
+      {
+        "name": "v268_address0",
+        "Object": "v268",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "4",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v268_ce0",
+        "Object": "v268",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v268_we0",
+        "Object": "v268",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v268_d0",
+        "Object": "v268",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      }
+    ]
+  }
+}

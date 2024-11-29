@@ -139,28 +139,26 @@ def attention_test():
     ):
         for i in allo.grid(SEQ_LEN):
             for j in allo.grid(HS_COLS):
+                local_acum: float32 = 0
                 for k in allo.grid(HS_COLS // 4):
                     packed_value: uint8 = weights_packed_data[k, j]
-
+                    temp: float32 = 0
                     for l in allo.grid(4):
                         col_index: int32 = 4 * k + l
                         if col_index < HS_COLS:
                             shift: int32 = 2 * l
                             value: int8 = (packed_value >> shift) & 0b11
                             weight_value: int8 = 0
-                            if value == 0b00:
-                                weight_value = 0
-                            elif value == 0b01:
+                            if value == 0b01:
                                 weight_value = 1
                             elif value == 0b10:
                                 weight_value = -1
 
-                            if weight_value == 1:
-                                q_proj_re[i, j] += input[i, col_index]
-                            elif weight_value == -1:
-                                q_proj_re[i, j] -= input[i, col_index]
+                            temp += input[i, col_index] * weight_value
 
-                q_proj_re[i, j] = q_proj_re[i, j] / (scales[i] * weights_scale)
+                    local_acum += temp
+
+                q_proj_re[i, j] = local_acum / (scales[i] * weights_scale)
 
     def quantize_activation(
         input: float32[SEQ_LEN, HS_COLS],
@@ -315,8 +313,11 @@ def attention_test():
         linear_forward_no_mul(quantized_final_output, final_scales, o_weights_packed_data, o_weights_scale, final_output)
         return final_output
 
+    s_linear_forward_no_mul = allo.customize(linear_forward_no_mul)
+    s_linear_forward_no_mul.pipeline("l")
     s = allo.customize(attention)
-    f = s.build(target="vivado_hls", mode="csyn", project="attn.prj")
+    s.compose(s_linear_forward_no_mul)
+    f = s.build(target="vivado_hls", mode="csyn", project="attn_opt.prj")
     outs = f(
         np.array(hidden_states, dtype=np.float32),
         np.array(q_weights_packed_data, dtype=np.uint8),
