@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'GEMM_3D_float'" level="0">
-<item name = "Date">Thu Nov 28 22:31:48 2024
+<item name = "Date">Thu Nov 28 23:10:23 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">out.prj</item>
@@ -81,19 +81,19 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="mul_ln1118_fu_307_p2">*, 4, 0, 20, 32, 32</column>
-<column name="add_ln338_fu_217_p2">+, 0, 0, 12, 3, 1</column>
-<column name="add_ln339_fu_247_p2">+, 0, 0, 15, 7, 1</column>
-<column name="add_ln341_1_fu_288_p2">+, 0, 0, 15, 15, 15</column>
-<column name="add_ln341_fu_257_p2">+, 0, 0, 19, 14, 14</column>
-<column name="add_ln343_fu_231_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln339_fu_217_p2">+, 0, 0, 12, 3, 1</column>
+<column name="add_ln340_fu_247_p2">+, 0, 0, 15, 7, 1</column>
+<column name="add_ln342_1_fu_288_p2">+, 0, 0, 15, 15, 15</column>
+<column name="add_ln342_fu_257_p2">+, 0, 0, 19, 14, 14</column>
+<column name="add_ln344_fu_231_p2">+, 0, 0, 15, 8, 8</column>
 <column name="h4_fu_145_p2">+, 0, 0, 15, 5, 1</column>
 <column name="v200_0_V_d0">+, 0, 0, 39, 32, 32</column>
-<column name="sub_ln341_1_fu_282_p2">-, 0, 0, 15, 15, 15</column>
-<column name="sub_ln341_fu_175_p2">-, 0, 0, 17, 13, 13</column>
-<column name="sub_ln343_fu_205_p2">-, 0, 0, 15, 8, 8</column>
-<column name="icmp_ln336_fu_139_p2">icmp, 0, 0, 11, 5, 6</column>
-<column name="icmp_ln338_fu_211_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="icmp_ln339_fu_241_p2">icmp, 0, 0, 11, 7, 7</column>
+<column name="sub_ln342_1_fu_282_p2">-, 0, 0, 15, 15, 15</column>
+<column name="sub_ln342_fu_175_p2">-, 0, 0, 17, 13, 13</column>
+<column name="sub_ln344_fu_205_p2">-, 0, 0, 15, 8, 8</column>
+<column name="icmp_ln337_fu_139_p2">icmp, 0, 0, 11, 5, 6</column>
+<column name="icmp_ln339_fu_211_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln340_fu_241_p2">icmp, 0, 0, 11, 7, 7</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -106,23 +106,23 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln338_reg_349">3, 0, 3, 0</column>
-<column name="add_ln339_reg_367">7, 0, 7, 0</column>
-<column name="add_ln341_1_reg_377">15, 0, 15, 0</column>
-<column name="add_ln341_reg_372">14, 0, 14, 0</column>
+<column name="add_ln339_reg_349">3, 0, 3, 0</column>
+<column name="add_ln340_reg_367">7, 0, 7, 0</column>
+<column name="add_ln342_1_reg_377">15, 0, 15, 0</column>
+<column name="add_ln342_reg_372">14, 0, 14, 0</column>
 <column name="ap_CS_fsm">8, 0, 8, 0</column>
 <column name="h4_0_reg_106">5, 0, 5, 0</column>
 <column name="h4_reg_331">5, 0, 5, 0</column>
 <column name="j4_0_0_reg_117">3, 0, 3, 0</column>
 <column name="k3_0_0_reg_128">7, 0, 7, 0</column>
 <column name="k_proj_transposed_V_1_reg_397">32, 0, 32, 0</column>
-<column name="sext_ln341_reg_336">9, 0, 14, 5</column>
-<column name="sub_ln343_reg_341">7, 0, 8, 1</column>
+<column name="sext_ln342_reg_336">9, 0, 14, 5</column>
+<column name="sub_ln344_reg_341">7, 0, 8, 1</column>
 <column name="trunc_ln_reg_402">32, 0, 32, 0</column>
 <column name="v198_0_V_load_reg_392">32, 0, 32, 0</column>
 <column name="v200_0_V_addr_reg_359">7, 0, 7, 0</column>
 <column name="v200_0_V_load_reg_407">32, 0, 32, 0</column>
-<column name="zext_ln343_1_reg_354">3, 0, 15, 12</column>
+<column name="zext_ln344_1_reg_354">3, 0, 15, 12</column>
 </table>
 </item>
 </section>

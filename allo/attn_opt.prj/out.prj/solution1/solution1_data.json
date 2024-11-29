@@ -44,9 +44,7 @@
         ],
         "multiInterfaceRef": [
           "v253_address0",
-          "v253_address1",
-          "v253_q0",
-          "v253_q1"
+          "v253_q0"
         ]
       }
     },
@@ -70,9 +68,7 @@
         ],
         "multiInterfaceRef": [
           "v255_address0",
-          "v255_address1",
-          "v255_q0",
-          "v255_q1"
+          "v255_q0"
         ]
       }
     },
@@ -96,9 +92,7 @@
         ],
         "multiInterfaceRef": [
           "v257_address0",
-          "v257_address1",
-          "v257_q0",
-          "v257_q1"
+          "v257_q0"
         ]
       }
     },
@@ -122,9 +116,7 @@
         ],
         "multiInterfaceRef": [
           "v259_address0",
-          "v259_address1",
-          "v259_q0",
-          "v259_q1"
+          "v259_q0"
         ]
       }
     },
@@ -261,7 +253,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "1423801",
+    "Latency": "2916585",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -458,17 +450,6 @@
       "bundle_name": "v253",
       "bundle_role": "address0"
     },
-    "v253_address1": {
-      "type": "data",
-      "dir": "out",
-      "width": "20",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "20"
-        }},
-      "bundle_name": "v253",
-      "bundle_role": "address1"
-    },
     "v253_q0": {
       "type": "data",
       "dir": "in",
@@ -479,17 +460,6 @@
         }},
       "bundle_name": "v253",
       "bundle_role": "q0"
-    },
-    "v253_q1": {
-      "type": "data",
-      "dir": "in",
-      "width": "8",
-      "ctype": {"DATA": {
-          "Type": "integer unsigned",
-          "Width": "8"
-        }},
-      "bundle_name": "v253",
-      "bundle_role": "q1"
     },
     "v254_V": {
       "type": "data",
@@ -513,17 +483,6 @@
       "bundle_name": "v255",
       "bundle_role": "address0"
     },
-    "v255_address1": {
-      "type": "data",
-      "dir": "out",
-      "width": "20",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "20"
-        }},
-      "bundle_name": "v255",
-      "bundle_role": "address1"
-    },
     "v255_q0": {
       "type": "data",
       "dir": "in",
@@ -534,17 +493,6 @@
         }},
       "bundle_name": "v255",
       "bundle_role": "q0"
-    },
-    "v255_q1": {
-      "type": "data",
-      "dir": "in",
-      "width": "8",
-      "ctype": {"DATA": {
-          "Type": "integer unsigned",
-          "Width": "8"
-        }},
-      "bundle_name": "v255",
-      "bundle_role": "q1"
     },
     "v256_V": {
       "type": "data",
@@ -568,17 +516,6 @@
       "bundle_name": "v257",
       "bundle_role": "address0"
     },
-    "v257_address1": {
-      "type": "data",
-      "dir": "out",
-      "width": "20",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "20"
-        }},
-      "bundle_name": "v257",
-      "bundle_role": "address1"
-    },
     "v257_q0": {
       "type": "data",
       "dir": "in",
@@ -589,17 +526,6 @@
         }},
       "bundle_name": "v257",
       "bundle_role": "q0"
-    },
-    "v257_q1": {
-      "type": "data",
-      "dir": "in",
-      "width": "8",
-      "ctype": {"DATA": {
-          "Type": "integer unsigned",
-          "Width": "8"
-        }},
-      "bundle_name": "v257",
-      "bundle_role": "q1"
     },
     "v258_V": {
       "type": "data",
@@ -623,17 +549,6 @@
       "bundle_name": "v259",
       "bundle_role": "address0"
     },
-    "v259_address1": {
-      "type": "data",
-      "dir": "out",
-      "width": "20",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "20"
-        }},
-      "bundle_name": "v259",
-      "bundle_role": "address1"
-    },
     "v259_q0": {
       "type": "data",
       "dir": "in",
@@ -644,17 +559,6 @@
         }},
       "bundle_name": "v259",
       "bundle_role": "q0"
-    },
-    "v259_q1": {
-      "type": "data",
-      "dir": "in",
-      "width": "8",
-      "ctype": {"DATA": {
-          "Type": "integer unsigned",
-          "Width": "8"
-        }},
-      "bundle_name": "v259",
-      "bundle_role": "q1"
     },
     "v260_V": {
       "type": "data",
@@ -882,18 +786,6 @@
       "dir": "in",
       "width": "8"
     },
-    "v253_address1": {
-      "dir": "out",
-      "width": "20"
-    },
-    "v253_ce1": {
-      "dir": "out",
-      "width": "1"
-    },
-    "v253_q1": {
-      "dir": "in",
-      "width": "8"
-    },
     "v254_V": {
       "dir": "in",
       "width": "32"
@@ -907,18 +799,6 @@
       "width": "1"
     },
     "v255_q0": {
-      "dir": "in",
-      "width": "8"
-    },
-    "v255_address1": {
-      "dir": "out",
-      "width": "20"
-    },
-    "v255_ce1": {
-      "dir": "out",
-      "width": "1"
-    },
-    "v255_q1": {
       "dir": "in",
       "width": "8"
     },
@@ -938,18 +818,6 @@
       "dir": "in",
       "width": "8"
     },
-    "v257_address1": {
-      "dir": "out",
-      "width": "20"
-    },
-    "v257_ce1": {
-      "dir": "out",
-      "width": "1"
-    },
-    "v257_q1": {
-      "dir": "in",
-      "width": "8"
-    },
     "v258_V": {
       "dir": "in",
       "width": "32"
@@ -963,18 +831,6 @@
       "width": "1"
     },
     "v259_q0": {
-      "dir": "in",
-      "width": "8"
-    },
-    "v259_address1": {
-      "dir": "out",
-      "width": "20"
-    },
-    "v259_ce1": {
-      "dir": "out",
-      "width": "1"
-    },
-    "v259_q1": {
       "dir": "in",
       "width": "8"
     },
@@ -1080,12 +936,8 @@
       "ModuleName": "attention",
       "Instances": [
         {
-          "ModuleName": "linear_forward_no_mu",
-          "InstanceName": "grp_linear_forward_no_mu_fu_778"
-        },
-        {
           "ModuleName": "rms_norm",
-          "InstanceName": "grp_rms_norm_fu_803",
+          "InstanceName": "grp_rms_norm_fu_778",
           "Instances": [{
               "ModuleName": "pow_32_20_s",
               "InstanceName": "grp_pow_32_20_s_fu_163",
@@ -1103,7 +955,7 @@
         },
         {
           "ModuleName": "softmax",
-          "InstanceName": "grp_softmax_fu_833",
+          "InstanceName": "grp_softmax_fu_808",
           "Instances": [{
               "ModuleName": "pow_32_20_s",
               "InstanceName": "grp_pow_32_20_s_fu_223",
@@ -1121,7 +973,7 @@
         },
         {
           "ModuleName": "apply_rotary_pos_emb",
-          "InstanceName": "grp_apply_rotary_pos_emb_fu_859",
+          "InstanceName": "grp_apply_rotary_pos_emb_fu_834",
           "Instances": [
             {
               "ModuleName": "rotate_half",
@@ -1132,6 +984,10 @@
               "InstanceName": "grp_rotate_half_fu_261"
             }
           ]
+        },
+        {
+          "ModuleName": "linear_forward_no_mu",
+          "InstanceName": "grp_linear_forward_no_mu_fu_848"
         },
         {
           "ModuleName": "quantize_activation",
@@ -1438,10 +1294,10 @@
       },
       "linear_forward_no_mu": {
         "Latency": {
-          "LatencyBest": "294965",
-          "LatencyAvg": "294965",
-          "LatencyWorst": "294965",
-          "PipelineII": "294965",
+          "LatencyBest": "668161",
+          "LatencyAvg": "668161",
+          "LatencyWorst": "668161",
+          "PipelineII": "668161",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1453,15 +1309,22 @@
         "Loops": [{
             "Name": "l_S_j_0_j2",
             "TripCount": "1536",
-            "Latency": "294963",
-            "PipelineII": "192",
-            "PipelineDepth": "244"
+            "Latency": "668160",
+            "PipelineII": "",
+            "PipelineDepth": "435",
+            "Loops": [{
+                "Name": "l_S_k_0_k",
+                "TripCount": "384",
+                "Latency": "386",
+                "PipelineII": "1",
+                "PipelineDepth": "4"
+              }]
           }],
         "Area": {
-          "DSP48E": "4",
-          "FF": "17610",
-          "LUT": "128188",
           "BRAM_18K": "0",
+          "DSP48E": "4",
+          "FF": "826",
+          "LUT": "1116",
           "URAM": "0"
         }
       },
@@ -1864,12 +1727,12 @@
       },
       "attention": {
         "Latency": {
-          "LatencyBest": "1423801",
-          "LatencyAvg": "1427133",
-          "LatencyWorst": "1432229",
-          "PipelineIIMin": "1423802",
-          "PipelineIIMax": "1432230",
-          "PipelineII": "1423802 ~ 1432230",
+          "LatencyBest": "2916585",
+          "LatencyAvg": "2919917",
+          "LatencyWorst": "2925013",
+          "PipelineIIMin": "2916586",
+          "PipelineIIMax": "2925014",
+          "PipelineII": "2916586 ~ 2925014",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -2072,8 +1935,8 @@
         "Area": {
           "BRAM_18K": "218",
           "DSP48E": "166",
-          "FF": "42301",
-          "LUT": "150585",
+          "FF": "25517",
+          "LUT": "23318",
           "URAM": "0"
         }
       }
@@ -2089,7 +1952,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-11-28 22:32:29 EST",
+    "Time": "2024-11-28 23:10:36 EST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

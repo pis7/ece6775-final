@@ -103,10 +103,10 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>_ln415</name>
+						<name>_ln416</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>415</lineNumber>
+						<lineNumber>416</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -121,7 +121,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>415</second>
+										<second>416</second>
 									</item>
 								</second>
 							</item>
@@ -188,10 +188,10 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>icmp_ln415</name>
+						<name>icmp_ln416</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>415</lineNumber>
+						<lineNumber>416</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -206,7 +206,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>415</second>
+										<second>416</second>
 									</item>
 								</second>
 							</item>
@@ -240,7 +240,7 @@
 						<name>h5</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>415</lineNumber>
+						<lineNumber>416</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -255,7 +255,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>415</second>
+										<second>416</second>
 									</item>
 								</second>
 							</item>
@@ -286,10 +286,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>_ln415</name>
+						<name>_ln416</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>415</lineNumber>
+						<lineNumber>416</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -304,7 +304,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>415</second>
+										<second>416</second>
 									</item>
 								</second>
 							</item>
@@ -336,10 +336,10 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>tmp_141</name>
+						<name>tmp_48</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>419</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -354,7 +354,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>419</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -386,10 +386,10 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>zext_ln419</name>
+						<name>zext_ln420</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>419</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -404,7 +404,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>419</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -434,10 +434,10 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>tmp_142</name>
+						<name>tmp_49</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>419</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -452,7 +452,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>419</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -484,10 +484,10 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>zext_ln419_1</name>
+						<name>zext_ln420_1</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>419</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -502,7 +502,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>419</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -532,10 +532,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>sub_ln419</name>
+						<name>sub_ln420</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>419</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -550,7 +550,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>419</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -581,10 +581,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>sext_ln419</name>
+						<name>sext_ln420</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>419</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -599,7 +599,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>419</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -629,10 +629,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>tmp_143</name>
+						<name>tmp_50</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>422</lineNumber>
+						<lineNumber>423</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -647,7 +647,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>422</second>
+										<second>423</second>
 									</item>
 								</second>
 							</item>
@@ -679,10 +679,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>tmp_144</name>
+						<name>tmp_51</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>422</lineNumber>
+						<lineNumber>423</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -697,7 +697,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>422</second>
+										<second>423</second>
 									</item>
 								</second>
 							</item>
@@ -729,10 +729,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>zext_ln422</name>
+						<name>zext_ln423</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>422</lineNumber>
+						<lineNumber>423</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -747,7 +747,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>422</second>
+										<second>423</second>
 									</item>
 								</second>
 							</item>
@@ -777,10 +777,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>sub_ln422</name>
+						<name>sub_ln423</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>422</lineNumber>
+						<lineNumber>423</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -795,7 +795,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>422</second>
+										<second>423</second>
 									</item>
 								</second>
 							</item>
@@ -826,10 +826,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>_ln417</name>
+						<name>_ln418</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>417</lineNumber>
+						<lineNumber>418</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -844,7 +844,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>417</second>
+										<second>418</second>
 									</item>
 								</second>
 							</item>
@@ -877,7 +877,7 @@
 						<name>j8_0_0</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>417</lineNumber>
+						<lineNumber>418</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -892,7 +892,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>417</second>
+										<second>418</second>
 									</item>
 								</second>
 							</item>
@@ -925,496 +925,6 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>icmp_ln417</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>417</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>417</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>126</item>
-					<item>128</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.48</m_delay>
-				<m_topoIndex>19</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_22">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>29</id>
-						<name>add_ln417</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>417</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>417</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>7</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>129</item>
-					<item>131</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.87</m_delay>
-				<m_topoIndex>20</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_23">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>30</id>
-						<name>_ln417</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>417</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>417</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>132</item>
-					<item>133</item>
-					<item>134</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>21</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_24">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>34</id>
-						<name>zext_ln422_1</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>422</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>422</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>15</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>149</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>22</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_25">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>35</id>
-						<name>zext_ln422_2</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>422</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>422</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>12</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>150</item>
-				</oprand_edges>
-				<opcode>zext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_26">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>36</id>
-						<name>add_ln422</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>422</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>422</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>12</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>151</item>
-					<item>152</item>
-				</oprand_edges>
-				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.54</m_delay>
-				<m_topoIndex>24</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_27">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>37</id>
-						<name>sext_ln422</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>422</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>422</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>64</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>153</item>
-				</oprand_edges>
-				<opcode>sext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>25</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_28">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>38</id>
-						<name>v242_0_V_addr</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>422</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>422</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>11</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>154</item>
-					<item>156</item>
-					<item>157</item>
-				</oprand_edges>
-				<opcode>getelementptr</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>26</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_29">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>39</id>
-						<name>_ln418</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>418</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>418</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>158</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.76</m_delay>
-				<m_topoIndex>27</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_30">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>41</id>
-						<name>k8_0_0</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>418</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>418</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>3</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>4</count>
-					<item_version>0</item_version>
-					<item>136</item>
-					<item>137</item>
-					<item>138</item>
-					<item>139</item>
-				</oprand_edges>
-				<opcode>phi</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>29</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_31">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>42</id>
 						<name>icmp_ln418</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
@@ -1447,23 +957,23 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>140</item>
-					<item>142</item>
+					<item>126</item>
+					<item>128</item>
 				</oprand_edges>
 				<opcode>icmp</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.13</m_delay>
-				<m_topoIndex>30</m_topoIndex>
+				<m_delay>1.48</m_delay>
+				<m_topoIndex>19</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_32">
+			<item class_id_reference="9" object_id="_22">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>44</id>
+						<id>29</id>
 						<name>add_ln418</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
@@ -1491,28 +1001,28 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>3</bitwidth>
+					<bitwidth>7</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>143</item>
-					<item>145</item>
+					<item>129</item>
+					<item>131</item>
 				</oprand_edges>
 				<opcode>add</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.65</m_delay>
-				<m_topoIndex>31</m_topoIndex>
+				<m_delay>1.87</m_delay>
+				<m_topoIndex>20</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_33">
+			<item class_id_reference="9" object_id="_23">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>45</id>
+						<id>30</id>
 						<name>_ln418</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
@@ -1545,9 +1055,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>146</item>
-					<item>147</item>
-					<item>148</item>
+					<item>132</item>
+					<item>133</item>
+					<item>134</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -1555,15 +1065,258 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>32</m_topoIndex>
+				<m_topoIndex>21</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_34">
+			<item class_id_reference="9" object_id="_24">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>48</id>
-						<name>zext_ln419_2</name>
+						<id>34</id>
+						<name>zext_ln423_1</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>423</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>423</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>15</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>149</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>22</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_25">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>35</id>
+						<name>zext_ln423_2</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>423</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>423</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>12</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>150</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>23</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_26">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>36</id>
+						<name>add_ln423</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>423</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>423</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>12</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>151</item>
+					<item>152</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.54</m_delay>
+				<m_topoIndex>24</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_27">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>37</id>
+						<name>sext_ln423</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>423</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>423</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>153</item>
+				</oprand_edges>
+				<opcode>sext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>25</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_28">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>38</id>
+						<name>v242_0_V_addr</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>423</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>423</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>11</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>154</item>
+					<item>156</item>
+					<item>157</item>
+				</oprand_edges>
+				<opcode>getelementptr</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>26</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_29">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>39</id>
+						<name>_ln419</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>419</lineNumber>
@@ -1582,6 +1335,253 @@
 											<second>GEMM_3D_float2</second>
 										</first>
 										<second>419</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>158</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.76</m_delay>
+				<m_topoIndex>27</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_30">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>41</id>
+						<name>k8_0_0</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>419</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>419</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>3</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>4</count>
+					<item_version>0</item_version>
+					<item>136</item>
+					<item>137</item>
+					<item>138</item>
+					<item>139</item>
+				</oprand_edges>
+				<opcode>phi</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>29</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_31">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>42</id>
+						<name>icmp_ln419</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>419</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>419</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>140</item>
+					<item>142</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.13</m_delay>
+				<m_topoIndex>30</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_32">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>44</id>
+						<name>add_ln419</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>419</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>419</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>3</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>143</item>
+					<item>145</item>
+				</oprand_edges>
+				<opcode>add</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.65</m_delay>
+				<m_topoIndex>31</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_33">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>45</id>
+						<name>_ln419</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>419</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>419</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>146</item>
+					<item>147</item>
+					<item>148</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>32</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_34">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>48</id>
+						<name>zext_ln420_2</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>420</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -1611,10 +1611,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>add_ln419</name>
+						<name>add_ln420</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>419</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1629,7 +1629,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>419</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -1660,10 +1660,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>sext_ln419_1</name>
+						<name>sext_ln420_1</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>419</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1678,7 +1678,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>419</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -1711,7 +1711,7 @@
 						<name>v240_0_V_addr</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>419</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1726,7 +1726,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>419</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -1758,10 +1758,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>trunc_ln420</name>
+						<name>trunc_ln421</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>420</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1776,7 +1776,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>420</second>
+										<second>421</second>
 									</item>
 								</second>
 							</item>
@@ -1809,7 +1809,7 @@
 						<name>p_shl4_cast</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>420</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1824,7 +1824,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>420</second>
+										<second>421</second>
 									</item>
 								</second>
 							</item>
@@ -1859,7 +1859,7 @@
 						<name>p_shl5_cast</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>420</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1874,7 +1874,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>420</second>
+										<second>421</second>
 									</item>
 								</second>
 							</item>
@@ -1906,10 +1906,10 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>sub_ln420</name>
+						<name>sub_ln421</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>420</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1924,7 +1924,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>420</second>
+										<second>421</second>
 									</item>
 								</second>
 							</item>
@@ -1955,10 +1955,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>add_ln420</name>
+						<name>add_ln421</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>420</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1973,7 +1973,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>420</second>
+										<second>421</second>
 									</item>
 								</second>
 							</item>
@@ -2004,10 +2004,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>zext_ln420</name>
+						<name>zext_ln421</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>420</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2022,7 +2022,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>420</second>
+										<second>421</second>
 									</item>
 								</second>
 							</item>
@@ -2055,7 +2055,7 @@
 						<name>v241_V_addr</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>420</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2070,7 +2070,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>420</second>
+										<second>421</second>
 									</item>
 								</second>
 							</item>
@@ -2105,7 +2105,7 @@
 						<name>v240_0_V_load</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>419</lineNumber>
+						<lineNumber>420</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2120,7 +2120,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>419</second>
+										<second>420</second>
 									</item>
 								</second>
 							</item>
@@ -2153,7 +2153,7 @@
 						<name>v241_V_load</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>420</lineNumber>
+						<lineNumber>421</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2168,7 +2168,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>420</second>
+										<second>421</second>
 									</item>
 								</second>
 							</item>
@@ -2201,7 +2201,7 @@
 						<name>sext_ln1118</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>421</lineNumber>
+						<lineNumber>422</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2216,7 +2216,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>421</second>
+										<second>422</second>
 									</item>
 								</second>
 							</item>
@@ -2249,7 +2249,7 @@
 						<name>sext_ln1118_9</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>421</lineNumber>
+						<lineNumber>422</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2264,7 +2264,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>421</second>
+										<second>422</second>
 									</item>
 								</second>
 							</item>
@@ -2297,7 +2297,7 @@
 						<name>mul_ln1118</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>421</lineNumber>
+						<lineNumber>422</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2312,7 +2312,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>421</second>
+										<second>422</second>
 									</item>
 								</second>
 							</item>
@@ -2346,7 +2346,7 @@
 						<name>trunc_ln</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>421</lineNumber>
+						<lineNumber>422</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2361,7 +2361,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>421</second>
+										<second>422</second>
 									</item>
 								</second>
 							</item>
@@ -2397,7 +2397,7 @@
 						<name>v242_0_V_load</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>422</lineNumber>
+						<lineNumber>423</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2412,7 +2412,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>422</second>
+										<second>423</second>
 									</item>
 								</second>
 							</item>
@@ -2445,7 +2445,7 @@
 						<name>add_ln703</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>423</lineNumber>
+						<lineNumber>424</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2460,7 +2460,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>423</second>
+										<second>424</second>
 									</item>
 								</second>
 							</item>
@@ -2491,10 +2491,10 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>v242_0_V_addr_write_ln424</name>
+						<name>v242_0_V_addr_write_ln425</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>424</lineNumber>
+						<lineNumber>425</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2509,7 +2509,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>424</second>
+										<second>425</second>
 									</item>
 								</second>
 							</item>
@@ -2541,6 +2541,54 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
+						<name>_ln419</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>419</lineNumber>
+						<contextFuncName>GEMM_3D_float2</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>GEMM_3D_float2</second>
+										</first>
+										<second>419</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>201</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>54</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_55">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>71</id>
 						<name>_ln418</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
@@ -2573,54 +2621,6 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>201</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>54</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_55">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>71</id>
-						<name>_ln417</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>417</lineNumber>
-						<contextFuncName>GEMM_3D_float2</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>GEMM_3D_float2</second>
-										</first>
-										<second>417</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
 					<item>135</item>
 				</oprand_edges>
 				<opcode>br</opcode>
@@ -2637,10 +2637,10 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>_ln415</name>
+						<name>_ln416</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>415</lineNumber>
+						<lineNumber>416</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2655,7 +2655,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>415</second>
+										<second>416</second>
 									</item>
 								</second>
 							</item>
@@ -2685,10 +2685,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>_ln429</name>
+						<name>_ln430</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>429</lineNumber>
+						<lineNumber>430</lineNumber>
 						<contextFuncName>GEMM_3D_float2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2703,7 +2703,7 @@
 											<first>kernel.cpp</first>
 											<second>GEMM_3D_float2</second>
 										</first>
-										<second>429</second>
+										<second>430</second>
 									</item>
 								</second>
 							</item>

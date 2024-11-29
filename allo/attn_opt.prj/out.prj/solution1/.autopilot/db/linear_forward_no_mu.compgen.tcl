@@ -2,7 +2,7 @@
 
 set id 49
 set name attention_sdiv_43yd2
-set corename simcore_sdiv
+set corename simcore_sdiv_seq
 set op sdiv
 set stage_num 47
 set max_latency -1
@@ -11,6 +11,9 @@ set clk_width 1
 set clk_signed 0
 set reset_width 1
 set reset_signed 0
+set start_width 1
+set start_signed 0
+set done_width 1
 set in0_width 43
 set in0_signed 0
 set in1_width 32
@@ -34,6 +37,9 @@ eval "ap_gen_simcore_sdiv { \
     clk_signed ${clk_signed} \
     reset_width ${reset_width} \
     reset_signed ${reset_signed} \
+    start_width ${start_width} \
+    start_signed ${start_signed} \
+    done_width ${done_width} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
@@ -54,7 +60,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 set op sdiv
-set corename DivnS
+set corename DivnS_SEQ
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
 if {[info proc ::AESL_LIB_VIRTEX::xil_gen_div] == "::AESL_LIB_VIRTEX::xil_gen_div"} {
 eval "::AESL_LIB_VIRTEX::xil_gen_div { \
@@ -71,6 +77,9 @@ eval "::AESL_LIB_VIRTEX::xil_gen_div { \
     clk_signed ${clk_signed} \
     reset_width ${reset_width} \
     reset_signed ${reset_signed} \
+    start_width ${start_width} \
+    start_signed ${start_signed} \
+    done_width ${done_width} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
@@ -103,7 +112,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename v77_0_0 \
     op interface \
-    ports { v77_0_0_address0 { O 9 vector } v77_0_0_ce0 { O 1 bit } v77_0_0_q0 { I 8 vector } v77_0_0_address1 { O 9 vector } v77_0_0_ce1 { O 1 bit } v77_0_0_q1 { I 8 vector } } \
+    ports { v77_0_0_address0 { O 9 vector } v77_0_0_ce0 { O 1 bit } v77_0_0_q0 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v77_0_0'"
@@ -122,7 +131,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename v77_1_0 \
     op interface \
-    ports { v77_1_0_address0 { O 9 vector } v77_1_0_ce0 { O 1 bit } v77_1_0_q0 { I 8 vector } v77_1_0_address1 { O 9 vector } v77_1_0_ce1 { O 1 bit } v77_1_0_q1 { I 8 vector } } \
+    ports { v77_1_0_address0 { O 9 vector } v77_1_0_ce0 { O 1 bit } v77_1_0_q0 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v77_1_0'"
@@ -141,7 +150,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename v77_2_0 \
     op interface \
-    ports { v77_2_0_address0 { O 9 vector } v77_2_0_ce0 { O 1 bit } v77_2_0_q0 { I 8 vector } v77_2_0_address1 { O 9 vector } v77_2_0_ce1 { O 1 bit } v77_2_0_q1 { I 8 vector } } \
+    ports { v77_2_0_address0 { O 9 vector } v77_2_0_ce0 { O 1 bit } v77_2_0_q0 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v77_2_0'"
@@ -160,7 +169,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename v77_3_0 \
     op interface \
-    ports { v77_3_0_address0 { O 9 vector } v77_3_0_ce0 { O 1 bit } v77_3_0_q0 { I 8 vector } v77_3_0_address1 { O 9 vector } v77_3_0_ce1 { O 1 bit } v77_3_0_q1 { I 8 vector } } \
+    ports { v77_3_0_address0 { O 9 vector } v77_3_0_ce0 { O 1 bit } v77_3_0_q0 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v77_3_0'"
@@ -179,7 +188,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename v79 \
     op interface \
-    ports { v79_address0 { O 20 vector } v79_ce0 { O 1 bit } v79_q0 { I 8 vector } v79_address1 { O 20 vector } v79_ce1 { O 1 bit } v79_q1 { I 8 vector } } \
+    ports { v79_address0 { O 20 vector } v79_ce0 { O 1 bit } v79_q0 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v79'"

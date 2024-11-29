@@ -314,6 +314,7 @@ def attention_test():
         return final_output
 
     s_linear_forward_no_mul = allo.customize(linear_forward_no_mul)
+    s_linear_forward_no_mul.pipeline("k")
     s_linear_forward_no_mul.pipeline("l")
     s = allo.customize(attention)
     s.compose(s_linear_forward_no_mul)

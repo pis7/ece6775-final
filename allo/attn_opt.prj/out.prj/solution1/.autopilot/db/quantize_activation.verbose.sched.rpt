@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'quantize_activation'
 ================================================================
-* Date:           Thu Nov 28 22:20:18 2024
+* Date:           Thu Nov 28 23:10:06 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        out.prj
@@ -518,7 +518,7 @@ The critical path consists of the following:
 	'icmp' operation ('icmp_ln110', kernel.cpp:110) [57]  (2.44 ns)
 	'select' operation ('select_ln115', kernel.cpp:115) [61]  (0 ns)
 	'select' operation ('select_ln115_1', kernel.cpp:115) [63]  (1.25 ns)
-	'store' operation ('store_ln119', kernel.cpp:119) of variable 'select_ln115_1', kernel.cpp:115 on array 'v24_2_0' [73]  (3.25 ns)
+	'store' operation ('store_ln119', kernel.cpp:119) of variable 'select_ln115_1', kernel.cpp:115 on array 'v24_0_0' [79]  (3.25 ns)
 
 
 ============================================================

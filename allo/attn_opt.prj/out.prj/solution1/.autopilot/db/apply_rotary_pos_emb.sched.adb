@@ -190,7 +190,7 @@
 						<name>rotated_q_0_V</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>251</lineNumber>
+						<lineNumber>252</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -205,7 +205,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>251</second>
+										<second>252</second>
 									</item>
 								</second>
 							</item>
@@ -238,7 +238,7 @@
 						<name>rotated_k_0_V</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>259</lineNumber>
+						<lineNumber>260</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -253,7 +253,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>259</second>
+										<second>260</second>
 									</item>
 								</second>
 							</item>
@@ -283,10 +283,10 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>_ln252</name>
+						<name>_ln253</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>252</lineNumber>
+						<lineNumber>253</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -301,7 +301,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>252</second>
+										<second>253</second>
 									</item>
 								</second>
 							</item>
@@ -368,10 +368,10 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>icmp_ln252</name>
+						<name>icmp_ln253</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>252</lineNumber>
+						<lineNumber>253</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -386,7 +386,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>252</second>
+										<second>253</second>
 									</item>
 								</second>
 							</item>
@@ -420,7 +420,7 @@
 						<name>v157</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>252</lineNumber>
+						<lineNumber>253</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -435,7 +435,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>252</second>
+										<second>253</second>
 									</item>
 								</second>
 							</item>
@@ -466,10 +466,10 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>_ln252</name>
+						<name>_ln253</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>252</lineNumber>
+						<lineNumber>253</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -484,7 +484,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>252</second>
+										<second>253</second>
 									</item>
 								</second>
 							</item>
@@ -519,7 +519,7 @@
 						<name>tmp_s</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>256</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -534,7 +534,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>255</second>
+										<second>256</second>
 									</item>
 								</second>
 							</item>
@@ -566,10 +566,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>tmp_136</name>
+						<name>tmp_43</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>256</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -584,7 +584,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>255</second>
+										<second>256</second>
 									</item>
 								</second>
 							</item>
@@ -619,7 +619,7 @@
 						<name>zext_ln203</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>256</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -634,7 +634,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>255</second>
+										<second>256</second>
 									</item>
 								</second>
 							</item>
@@ -667,7 +667,7 @@
 						<name>sub_ln203</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>256</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -682,7 +682,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>255</second>
+										<second>256</second>
 									</item>
 								</second>
 							</item>
@@ -713,10 +713,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>_ln254</name>
+						<name>_ln255</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>254</lineNumber>
+						<lineNumber>255</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -731,7 +731,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>254</second>
+										<second>255</second>
 									</item>
 								</second>
 							</item>
@@ -764,7 +764,7 @@
 						<name>v159_0_0</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>254</lineNumber>
+						<lineNumber>255</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -779,7 +779,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>254</second>
+										<second>255</second>
 									</item>
 								</second>
 							</item>
@@ -812,10 +812,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>icmp_ln254</name>
+						<name>icmp_ln255</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>254</lineNumber>
+						<lineNumber>255</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -830,7 +830,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>254</second>
+										<second>255</second>
 									</item>
 								</second>
 							</item>
@@ -861,10 +861,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>add_ln254</name>
+						<name>add_ln255</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>254</lineNumber>
+						<lineNumber>255</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -879,7 +879,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>254</second>
+										<second>255</second>
 									</item>
 								</second>
 							</item>
@@ -910,10 +910,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>_ln254</name>
+						<name>_ln255</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>254</lineNumber>
+						<lineNumber>255</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -928,7 +928,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>254</second>
+										<second>255</second>
 									</item>
 								</second>
 							</item>
@@ -963,7 +963,7 @@
 						<name>zext_ln203_27</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>256</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -978,7 +978,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>255</second>
+										<second>256</second>
 									</item>
 								</second>
 							</item>
@@ -1011,7 +1011,7 @@
 						<name>add_ln203</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>256</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1026,7 +1026,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>255</second>
+										<second>256</second>
 									</item>
 								</second>
 							</item>
@@ -1060,7 +1060,7 @@
 						<name>sext_ln203</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>256</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1075,7 +1075,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>255</second>
+										<second>256</second>
 									</item>
 								</second>
 							</item>
@@ -1108,7 +1108,7 @@
 						<name>rotated_q_0_V_addr</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>256</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1123,7 +1123,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>255</second>
+										<second>256</second>
 									</item>
 								</second>
 							</item>
@@ -1155,10 +1155,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>rotated_q_0_V_addr_write_ln255</name>
+						<name>rotated_q_0_V_addr_write_ln256</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>255</lineNumber>
+						<lineNumber>256</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1173,7 +1173,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>255</second>
+										<second>256</second>
 									</item>
 								</second>
 							</item>
@@ -1204,10 +1204,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>_ln254</name>
+						<name>_ln255</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>254</lineNumber>
+						<lineNumber>255</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1222,7 +1222,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>254</second>
+										<second>255</second>
 									</item>
 								</second>
 							</item>
@@ -1286,10 +1286,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>_ln260</name>
+						<name>_ln261</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>260</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1304,7 +1304,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>260</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -1371,10 +1371,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>icmp_ln260</name>
+						<name>icmp_ln261</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>260</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1389,7 +1389,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>260</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -1423,7 +1423,7 @@
 						<name>v161</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>260</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1438,7 +1438,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>260</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -1469,10 +1469,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>_ln260</name>
+						<name>_ln261</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>260</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1487,7 +1487,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>260</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -1519,10 +1519,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>tmp_137</name>
+						<name>tmp_44</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>263</lineNumber>
+						<lineNumber>264</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1537,7 +1537,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>263</second>
+										<second>264</second>
 									</item>
 								</second>
 							</item>
@@ -1569,10 +1569,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>tmp_138</name>
+						<name>tmp_45</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>263</lineNumber>
+						<lineNumber>264</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1587,7 +1587,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>263</second>
+										<second>264</second>
 									</item>
 								</second>
 							</item>
@@ -1622,7 +1622,7 @@
 						<name>zext_ln203_26</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>263</lineNumber>
+						<lineNumber>264</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1637,7 +1637,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>263</second>
+										<second>264</second>
 									</item>
 								</second>
 							</item>
@@ -1670,7 +1670,7 @@
 						<name>sub_ln203_11</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>263</lineNumber>
+						<lineNumber>264</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1685,7 +1685,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>263</second>
+										<second>264</second>
 									</item>
 								</second>
 							</item>
@@ -1716,10 +1716,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>_ln262</name>
+						<name>_ln263</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>262</lineNumber>
+						<lineNumber>263</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1734,7 +1734,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>262</second>
+										<second>263</second>
 									</item>
 								</second>
 							</item>
@@ -1767,7 +1767,7 @@
 						<name>v163_0_0</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>262</lineNumber>
+						<lineNumber>263</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1782,7 +1782,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>262</second>
+										<second>263</second>
 									</item>
 								</second>
 							</item>
@@ -1815,10 +1815,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>icmp_ln262</name>
+						<name>icmp_ln263</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>262</lineNumber>
+						<lineNumber>263</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1833,7 +1833,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>262</second>
+										<second>263</second>
 									</item>
 								</second>
 							</item>
@@ -1864,10 +1864,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>add_ln262</name>
+						<name>add_ln263</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>262</lineNumber>
+						<lineNumber>263</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1882,7 +1882,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>262</second>
+										<second>263</second>
 									</item>
 								</second>
 							</item>
@@ -1913,10 +1913,10 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>_ln262</name>
+						<name>_ln263</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>262</lineNumber>
+						<lineNumber>263</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1931,7 +1931,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>262</second>
+										<second>263</second>
 									</item>
 								</second>
 							</item>
@@ -1966,7 +1966,7 @@
 						<name>zext_ln203_28</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>263</lineNumber>
+						<lineNumber>264</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1981,7 +1981,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>263</second>
+										<second>264</second>
 									</item>
 								</second>
 							</item>
@@ -2014,7 +2014,7 @@
 						<name>add_ln203_14</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>263</lineNumber>
+						<lineNumber>264</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2029,7 +2029,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>263</second>
+										<second>264</second>
 									</item>
 								</second>
 							</item>
@@ -2063,7 +2063,7 @@
 						<name>sext_ln203_8</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>263</lineNumber>
+						<lineNumber>264</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2078,7 +2078,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>263</second>
+										<second>264</second>
 									</item>
 								</second>
 							</item>
@@ -2111,7 +2111,7 @@
 						<name>rotated_k_0_V_addr</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>263</lineNumber>
+						<lineNumber>264</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2126,7 +2126,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>263</second>
+										<second>264</second>
 									</item>
 								</second>
 							</item>
@@ -2158,10 +2158,10 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>rotated_k_0_V_addr_write_ln263</name>
+						<name>rotated_k_0_V_addr_write_ln264</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>263</lineNumber>
+						<lineNumber>264</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2176,7 +2176,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>263</second>
+										<second>264</second>
 									</item>
 								</second>
 							</item>
@@ -2207,10 +2207,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>_ln262</name>
+						<name>_ln263</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>262</lineNumber>
+						<lineNumber>263</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2225,7 +2225,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>262</second>
+										<second>263</second>
 									</item>
 								</second>
 							</item>
@@ -2289,56 +2289,6 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>_ln267</name>
-						<fileName>kernel.cpp</fileName>
-						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>267</lineNumber>
-						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>kernel.cpp</first>
-											<second>apply_rotary_pos_emb</second>
-										</first>
-										<second>267</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>240</item>
-					<item>241</item>
-					<item>242</item>
-				</oprand_edges>
-				<opcode>call</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.76</m_delay>
-				<m_topoIndex>34</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_52">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>69</id>
 						<name>_ln268</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
@@ -2371,9 +2321,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>243</item>
-					<item>244</item>
-					<item>245</item>
+					<item>240</item>
+					<item>241</item>
+					<item>242</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -2381,14 +2331,14 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.76</m_delay>
-				<m_topoIndex>35</m_topoIndex>
+				<m_topoIndex>34</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_53">
+			<item class_id_reference="9" object_id="_52">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>70</id>
+						<id>69</id>
 						<name>_ln269</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
@@ -2408,6 +2358,56 @@
 											<second>apply_rotary_pos_emb</second>
 										</first>
 										<second>269</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>243</item>
+					<item>244</item>
+					<item>245</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.76</m_delay>
+				<m_topoIndex>35</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_53">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>70</id>
+						<name>_ln270</name>
+						<fileName>kernel.cpp</fileName>
+						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
+						<lineNumber>270</lineNumber>
+						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/bg372/ece6775-final/allo/attn_opt.prj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>kernel.cpp</first>
+											<second>apply_rotary_pos_emb</second>
+										</first>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -2474,10 +2474,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>icmp_ln269</name>
+						<name>icmp_ln270</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>269</lineNumber>
+						<lineNumber>270</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2492,7 +2492,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>269</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -2526,7 +2526,7 @@
 						<name>h2</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>269</lineNumber>
+						<lineNumber>270</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2541,7 +2541,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>269</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -2572,10 +2572,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>_ln269</name>
+						<name>_ln270</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>269</lineNumber>
+						<lineNumber>270</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2590,7 +2590,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>269</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -2622,10 +2622,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>tmp_139</name>
+						<name>tmp_46</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>281</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2640,7 +2640,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>280</second>
+										<second>281</second>
 									</item>
 								</second>
 							</item>
@@ -2672,10 +2672,10 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>tmp_140</name>
+						<name>tmp_47</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>281</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2690,7 +2690,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>280</second>
+										<second>281</second>
 									</item>
 								</second>
 							</item>
@@ -2722,10 +2722,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>zext_ln280</name>
+						<name>zext_ln281</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>281</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2740,7 +2740,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>280</second>
+										<second>281</second>
 									</item>
 								</second>
 							</item>
@@ -2770,10 +2770,10 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>sub_ln280</name>
+						<name>sub_ln281</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>281</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2788,7 +2788,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>280</second>
+										<second>281</second>
 									</item>
 								</second>
 							</item>
@@ -2819,10 +2819,10 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>_ln271</name>
+						<name>_ln272</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>272</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2837,7 +2837,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>271</second>
+										<second>272</second>
 									</item>
 								</second>
 							</item>
@@ -2870,7 +2870,7 @@
 						<name>d2_0_0</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>272</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2885,7 +2885,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>271</second>
+										<second>272</second>
 									</item>
 								</second>
 							</item>
@@ -2918,10 +2918,10 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>icmp_ln271</name>
+						<name>icmp_ln272</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>272</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2936,7 +2936,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>271</second>
+										<second>272</second>
 									</item>
 								</second>
 							</item>
@@ -2967,10 +2967,10 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>add_ln271</name>
+						<name>add_ln272</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>272</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2985,7 +2985,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>271</second>
+										<second>272</second>
 									</item>
 								</second>
 							</item>
@@ -3016,10 +3016,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>_ln271</name>
+						<name>_ln272</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>272</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3034,7 +3034,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>271</second>
+										<second>272</second>
 									</item>
 								</second>
 							</item>
@@ -3066,10 +3066,10 @@
 					<Obj>
 						<type>0</type>
 						<id>93</id>
-						<name>zext_ln280_1</name>
+						<name>zext_ln281_1</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>281</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3084,7 +3084,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>280</second>
+										<second>281</second>
 									</item>
 								</second>
 							</item>
@@ -3114,10 +3114,10 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>zext_ln280_2</name>
+						<name>zext_ln281_2</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>281</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3132,7 +3132,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>280</second>
+										<second>281</second>
 									</item>
 								</second>
 							</item>
@@ -3162,10 +3162,10 @@
 					<Obj>
 						<type>0</type>
 						<id>95</id>
-						<name>add_ln280</name>
+						<name>add_ln281</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>281</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3180,7 +3180,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>280</second>
+										<second>281</second>
 									</item>
 								</second>
 							</item>
@@ -3211,10 +3211,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>sext_ln280</name>
+						<name>sext_ln281</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>281</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3229,7 +3229,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>280</second>
+										<second>281</second>
 									</item>
 								</second>
 							</item>
@@ -3262,7 +3262,7 @@
 						<name>k_proj_V_0_addr</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>281</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3277,7 +3277,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>280</second>
+										<second>281</second>
 									</item>
 								</second>
 							</item>
@@ -3312,7 +3312,7 @@
 						<name>q_proj_V_0_addr</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>272</lineNumber>
+						<lineNumber>273</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3327,7 +3327,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>272</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -3359,10 +3359,10 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>add_ln273</name>
+						<name>add_ln274</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>273</lineNumber>
+						<lineNumber>274</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3377,7 +3377,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>273</second>
+										<second>274</second>
 									</item>
 								</second>
 							</item>
@@ -3408,10 +3408,10 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>zext_ln273</name>
+						<name>zext_ln274</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>273</lineNumber>
+						<lineNumber>274</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3426,7 +3426,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>273</second>
+										<second>274</second>
 									</item>
 								</second>
 							</item>
@@ -3459,7 +3459,7 @@
 						<name>v151_V_addr</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>273</lineNumber>
+						<lineNumber>274</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3474,7 +3474,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>273</second>
+										<second>274</second>
 									</item>
 								</second>
 							</item>
@@ -3509,7 +3509,7 @@
 						<name>v152_V_addr</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>276</lineNumber>
+						<lineNumber>277</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3524,7 +3524,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>276</second>
+										<second>277</second>
 									</item>
 								</second>
 							</item>
@@ -3559,7 +3559,7 @@
 						<name>v153_0_V_addr</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>279</lineNumber>
+						<lineNumber>280</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3574,7 +3574,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>279</second>
+										<second>280</second>
 									</item>
 								</second>
 							</item>
@@ -3609,7 +3609,7 @@
 						<name>v154_0_V_addr</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>287</lineNumber>
+						<lineNumber>288</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3624,7 +3624,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>287</second>
+										<second>288</second>
 									</item>
 								</second>
 							</item>
@@ -3659,7 +3659,7 @@
 						<name>rotated_q_0_V_addr_1</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>275</lineNumber>
+						<lineNumber>276</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3674,7 +3674,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>275</second>
+										<second>276</second>
 									</item>
 								</second>
 							</item>
@@ -3709,7 +3709,7 @@
 						<name>rotated_k_0_V_addr_1</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>283</lineNumber>
+						<lineNumber>284</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3724,7 +3724,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>283</second>
+										<second>284</second>
 									</item>
 								</second>
 							</item>
@@ -3759,7 +3759,7 @@
 						<name>q_proj_V_0_load</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>272</lineNumber>
+						<lineNumber>273</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3774,7 +3774,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>272</second>
+										<second>273</second>
 									</item>
 								</second>
 							</item>
@@ -3807,7 +3807,7 @@
 						<name>v151_V_load</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>273</lineNumber>
+						<lineNumber>274</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3822,7 +3822,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>273</second>
+										<second>274</second>
 									</item>
 								</second>
 							</item>
@@ -3855,7 +3855,7 @@
 						<name>sext_ln1118</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>274</lineNumber>
+						<lineNumber>275</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3870,7 +3870,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>274</second>
+										<second>275</second>
 									</item>
 								</second>
 							</item>
@@ -3903,7 +3903,7 @@
 						<name>sext_ln1118_4</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>274</lineNumber>
+						<lineNumber>275</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3918,7 +3918,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>274</second>
+										<second>275</second>
 									</item>
 								</second>
 							</item>
@@ -3951,7 +3951,7 @@
 						<name>mul_ln1118</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>274</lineNumber>
+						<lineNumber>275</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3966,7 +3966,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>274</second>
+										<second>275</second>
 									</item>
 								</second>
 							</item>
@@ -4000,7 +4000,7 @@
 						<name>trunc_ln</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>274</lineNumber>
+						<lineNumber>275</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4015,7 +4015,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>274</second>
+										<second>275</second>
 									</item>
 								</second>
 							</item>
@@ -4051,7 +4051,7 @@
 						<name>rotated_q_0_V_load</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>275</lineNumber>
+						<lineNumber>276</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4066,7 +4066,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>275</second>
+										<second>276</second>
 									</item>
 								</second>
 							</item>
@@ -4099,7 +4099,7 @@
 						<name>v152_V_load</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>276</lineNumber>
+						<lineNumber>277</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4114,7 +4114,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>276</second>
+										<second>277</second>
 									</item>
 								</second>
 							</item>
@@ -4147,7 +4147,7 @@
 						<name>sext_ln1118_5</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>277</lineNumber>
+						<lineNumber>278</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4162,7 +4162,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>277</second>
+										<second>278</second>
 									</item>
 								</second>
 							</item>
@@ -4195,7 +4195,7 @@
 						<name>sext_ln1118_6</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>277</lineNumber>
+						<lineNumber>278</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4210,7 +4210,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>277</second>
+										<second>278</second>
 									</item>
 								</second>
 							</item>
@@ -4243,7 +4243,7 @@
 						<name>mul_ln1118_3</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>277</lineNumber>
+						<lineNumber>278</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4258,7 +4258,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>277</second>
+										<second>278</second>
 									</item>
 								</second>
 							</item>
@@ -4292,7 +4292,7 @@
 						<name>trunc_ln708_s</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>277</lineNumber>
+						<lineNumber>278</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4307,7 +4307,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>277</second>
+										<second>278</second>
 									</item>
 								</second>
 							</item>
@@ -4343,7 +4343,7 @@
 						<name>add_ln703</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>278</lineNumber>
+						<lineNumber>279</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4358,7 +4358,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>278</second>
+										<second>279</second>
 									</item>
 								</second>
 							</item>
@@ -4389,10 +4389,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>v153_0_V_addr_write_ln279</name>
+						<name>v153_0_V_addr_write_ln280</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>279</lineNumber>
+						<lineNumber>280</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4407,7 +4407,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>279</second>
+										<second>280</second>
 									</item>
 								</second>
 							</item>
@@ -4441,7 +4441,7 @@
 						<name>k_proj_V_0_load</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>280</lineNumber>
+						<lineNumber>281</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4456,7 +4456,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>280</second>
+										<second>281</second>
 									</item>
 								</second>
 							</item>
@@ -4489,7 +4489,7 @@
 						<name>sext_ln1118_7</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>282</lineNumber>
+						<lineNumber>283</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4504,7 +4504,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>282</second>
+										<second>283</second>
 									</item>
 								</second>
 							</item>
@@ -4537,7 +4537,7 @@
 						<name>mul_ln1118_4</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>282</lineNumber>
+						<lineNumber>283</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4552,7 +4552,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>282</second>
+										<second>283</second>
 									</item>
 								</second>
 							</item>
@@ -4586,7 +4586,7 @@
 						<name>trunc_ln708_1</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>282</lineNumber>
+						<lineNumber>283</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4601,7 +4601,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>282</second>
+										<second>283</second>
 									</item>
 								</second>
 							</item>
@@ -4637,7 +4637,7 @@
 						<name>rotated_k_0_V_load</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>283</lineNumber>
+						<lineNumber>284</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4652,7 +4652,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>283</second>
+										<second>284</second>
 									</item>
 								</second>
 							</item>
@@ -4685,7 +4685,7 @@
 						<name>sext_ln1118_8</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>285</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4700,7 +4700,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>285</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -4733,7 +4733,7 @@
 						<name>mul_ln1118_5</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>285</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4748,7 +4748,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>285</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -4782,7 +4782,7 @@
 						<name>trunc_ln708_2</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>285</lineNumber>
+						<lineNumber>286</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4797,7 +4797,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>285</second>
+										<second>286</second>
 									</item>
 								</second>
 							</item>
@@ -4830,10 +4830,10 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>add_ln703_1537</name>
+						<name>add_ln703_6</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>286</lineNumber>
+						<lineNumber>287</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4848,7 +4848,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>286</second>
+										<second>287</second>
 									</item>
 								</second>
 							</item>
@@ -4879,10 +4879,10 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>v154_0_V_addr_write_ln287</name>
+						<name>v154_0_V_addr_write_ln288</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>287</lineNumber>
+						<lineNumber>288</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4897,7 +4897,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>287</second>
+										<second>288</second>
 									</item>
 								</second>
 							</item>
@@ -4928,10 +4928,10 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>_ln271</name>
+						<name>_ln272</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>272</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4946,7 +4946,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>271</second>
+										<second>272</second>
 									</item>
 								</second>
 							</item>
@@ -4976,10 +4976,10 @@
 					<Obj>
 						<type>0</type>
 						<id>134</id>
-						<name>_ln269</name>
+						<name>_ln270</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>269</lineNumber>
+						<lineNumber>270</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4994,7 +4994,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>269</second>
+										<second>270</second>
 									</item>
 								</second>
 							</item>
@@ -5024,10 +5024,10 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>_ln291</name>
+						<name>_ln292</name>
 						<fileName>kernel.cpp</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
-						<lineNumber>291</lineNumber>
+						<lineNumber>292</lineNumber>
 						<contextFuncName>apply_rotary_pos_emb</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5042,7 +5042,7 @@
 											<first>kernel.cpp</first>
 											<second>apply_rotary_pos_emb</second>
 										</first>
-										<second>291</second>
+										<second>292</second>
 									</item>
 								</second>
 							</item>
