@@ -71,7 +71,7 @@ struct pow_32_20_s : public sc_module {
     sc_signal< sc_lv<32> > p_Result_11_fu_462_p4;
     sc_signal< sc_logic > ap_CS_fsm_state51;
     sc_signal< sc_lv<1> > r_is_neg_1_reg_108;
-    sc_signal< sc_lv<1> > tmp_12_fu_454_p3;
+    sc_signal< sc_lv<1> > tmp_14_fu_454_p3;
     sc_signal< sc_lv<6> > j_2_fu_472_p2;
     sc_signal< sc_lv<5> > j_fu_511_p2;
     sc_signal< sc_logic > ap_CS_fsm_state52;
@@ -118,8 +118,8 @@ struct pow_32_20_s : public sc_module {
     sc_signal< sc_lv<22> > trunc_ln1498_fu_273_p1;
     sc_signal< sc_lv<32> > p_Result_2_fu_283_p1;
     sc_signal< sc_lv<32> > icmp_ln84_fu_291_p0;
-    sc_signal< sc_lv<32> > tmp_6_fu_297_p1;
-    sc_signal< sc_lv<1> > tmp_6_fu_297_p3;
+    sc_signal< sc_lv<32> > tmp_8_fu_297_p1;
+    sc_signal< sc_lv<1> > tmp_8_fu_297_p3;
     sc_signal< sc_lv<1> > icmp_ln84_fu_291_p2;
     sc_signal< sc_lv<32> > x_e_1_V_fu_311_p0;
     sc_signal< sc_lv<22> > xs_V_1_fu_315_p2;
@@ -131,7 +131,7 @@ struct pow_32_20_s : public sc_module {
     sc_signal< sc_lv<32> > zext_ln134_fu_387_p1;
     sc_signal< sc_lv<1> > p_Result_s_fu_397_p3;
     sc_signal< sc_lv<1> > xor_ln135_fu_404_p2;
-    sc_signal< sc_lv<1> > tmp_10_fu_431_p3;
+    sc_signal< sc_lv<1> > tmp_12_fu_431_p3;
     sc_signal< sc_lv<1> > xor_ln155_fu_438_p2;
     sc_signal< sc_lv<32> > sext_ln177_fu_450_p1;
     sc_signal< sc_lv<32> > r_V_8_fu_484_p2;
@@ -287,10 +287,10 @@ struct pow_32_20_s : public sc_module {
     void thread_select_ln178_fu_335_p3();
     void thread_sext_ln177_fu_450_p1();
     void thread_sext_ln703_fu_321_p1();
-    void thread_tmp_10_fu_431_p3();
-    void thread_tmp_12_fu_454_p3();
-    void thread_tmp_6_fu_297_p1();
-    void thread_tmp_6_fu_297_p3();
+    void thread_tmp_12_fu_431_p3();
+    void thread_tmp_14_fu_454_p3();
+    void thread_tmp_8_fu_297_p1();
+    void thread_tmp_8_fu_297_p3();
     void thread_trunc_ln1498_fu_273_p0();
     void thread_trunc_ln1498_fu_273_p1();
     void thread_trunc_ln612_fu_263_p0();

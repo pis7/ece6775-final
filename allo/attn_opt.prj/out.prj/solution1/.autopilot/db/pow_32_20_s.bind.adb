@@ -616,7 +616,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>tmp_6</name>
+						<name>tmp_8</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>84</lineNumber>
@@ -2203,7 +2203,7 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>tmp_10</name>
+						<name>tmp_12</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>155</lineNumber>
@@ -2621,7 +2621,7 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>tmp_12</name>
+						<name>tmp_14</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>177</lineNumber>
@@ -10780,7 +10780,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_10_fu_431</first>
+			<first>tmp_12_fu_431</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10788,7 +10788,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_12_fu_454</first>
+			<first>tmp_14_fu_454</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10796,7 +10796,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_6_fu_297</first>
+			<first>tmp_8_fu_297</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

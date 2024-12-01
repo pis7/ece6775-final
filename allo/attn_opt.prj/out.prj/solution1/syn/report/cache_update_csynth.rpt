@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'cache_update'
 ================================================================
-* Date:           Thu Nov 28 23:10:22 2024
+* Date:           Sat Nov 30 20:59:14 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        out.prj
@@ -93,23 +93,23 @@
     |add_ln203_4_fu_462_p2  |     +    |      0|  0|  21|          15|          15|
     |add_ln203_5_fu_427_p2  |     +    |      0|  0|  21|          15|          15|
     |add_ln203_fu_293_p2    |     +    |      0|  0|  15|          15|          15|
-    |add_ln305_1_fu_331_p2  |     +    |      0|  0|  15|           8|           8|
-    |add_ln305_2_fu_417_p2  |     +    |      0|  0|  19|          14|          14|
-    |add_ln305_fu_203_p2    |     +    |      0|  0|  15|           8|           8|
-    |add_ln310_fu_452_p2    |     +    |      0|  0|  12|          12|          12|
+    |add_ln313_1_fu_331_p2  |     +    |      0|  0|  15|           8|           8|
+    |add_ln313_2_fu_417_p2  |     +    |      0|  0|  19|          14|          14|
+    |add_ln313_fu_203_p2    |     +    |      0|  0|  15|           8|           8|
+    |add_ln318_fu_452_p2    |     +    |      0|  0|  12|          12|          12|
     |i4_fu_181_p2           |     +    |      0|  0|  15|           5|           1|
     |j3_fu_311_p2           |     +    |      0|  0|  12|           3|           1|
     |k1_fu_403_p2           |     +    |      0|  0|  15|           7|           1|
     |k2_fu_438_p2           |     +    |      0|  0|  15|           7|           1|
     |sub_ln203_2_fu_391_p2  |     -    |      0|  0|  21|          15|          15|
     |sub_ln203_fu_259_p2    |     -    |      0|  0|  15|           9|           9|
-    |sub_ln305_fu_360_p2    |     -    |      0|  0|  19|          14|          14|
-    |sub_ln310_fu_229_p2    |     -    |      0|  0|  12|          12|          12|
-    |icmp_ln299_fu_175_p2   |   icmp   |      0|  0|  11|           5|           6|
-    |icmp_ln300_fu_305_p2   |   icmp   |      0|  0|   9|           3|           3|
-    |icmp_ln304_fu_397_p2   |   icmp   |      0|  0|  11|           7|           7|
-    |icmp_ln309_fu_432_p2   |   icmp   |      0|  0|  11|           7|           7|
-    |v187_fu_317_p2         |   icmp   |      0|  0|   9|           3|           3|
+    |sub_ln313_fu_360_p2    |     -    |      0|  0|  19|          14|          14|
+    |sub_ln318_fu_229_p2    |     -    |      0|  0|  12|          12|          12|
+    |icmp_ln307_fu_175_p2   |   icmp   |      0|  0|  11|           5|           6|
+    |icmp_ln308_fu_305_p2   |   icmp   |      0|  0|   9|           3|           3|
+    |icmp_ln312_fu_397_p2   |   icmp   |      0|  0|  11|           7|           7|
+    |icmp_ln317_fu_432_p2   |   icmp   |      0|  0|  11|           7|           7|
+    |v191_fu_317_p2         |   icmp   |      0|  0|   9|           3|           3|
     +-----------------------+----------+-------+---+----+------------+------------+
     |Total                  |          |      0|  0| 322|         209|         186|
     +-----------------------+----------+-------+---+----+------------+------------+
@@ -122,8 +122,8 @@
     |i4_0_reg_131        |   9|          2|    5|         10|
     |k1_0_reg_153        |   9|          2|    7|         14|
     |k2_0_reg_164        |   9|          2|    7|         14|
-    |v183_V_address0     |  15|          3|   14|         42|
-    |v183_V_d0           |  15|          3|   32|         96|
+    |v187_V_address0     |  15|          3|   14|         42|
+    |v187_V_d0           |  15|          3|   32|         96|
     |val_assign_reg_142  |   9|          2|    3|          6|
     +--------------------+----+-----------+-----+-----------+
     |Total               | 104|         21|   69|        189|
@@ -136,7 +136,7 @@
     |add_ln203_2_reg_498  |   9|   0|   15|          6|
     |add_ln203_4_reg_556  |  15|   0|   15|          0|
     |add_ln203_5_reg_538  |  15|   0|   15|          0|
-    |add_ln305_reg_483    |   8|   0|    8|          0|
+    |add_ln313_reg_483    |   8|   0|    8|          0|
     |ap_CS_fsm            |   6|   0|    6|          0|
     |i4_0_reg_131         |   5|   0|    5|          0|
     |i4_reg_478           |   5|   0|    5|          0|
@@ -147,9 +147,9 @@
     |k2_reg_546           |   7|   0|    7|          0|
     |sext_ln203_reg_493   |   9|   0|   10|          1|
     |sub_ln203_2_reg_520  |  10|   0|   15|          5|
-    |sub_ln305_reg_515    |   9|   0|   14|          5|
-    |sub_ln310_reg_488    |   7|   0|   12|          5|
-    |v187_reg_511         |   1|   0|    1|          0|
+    |sub_ln313_reg_515    |   9|   0|   14|          5|
+    |sub_ln318_reg_488    |   7|   0|   12|          5|
+    |v191_reg_511         |   1|   0|    1|          0|
     |val_assign_reg_142   |   3|   0|    3|          0|
     +---------------------+----+----+-----+-----------+
     |Total                | 133|   0|  155|         22|
@@ -170,15 +170,15 @@
 |ap_done            | out |    1| ap_ctrl_hs | cache_update | return value |
 |ap_idle            | out |    1| ap_ctrl_hs | cache_update | return value |
 |ap_ready           | out |    1| ap_ctrl_hs | cache_update | return value |
-|v181_V_address0    | out |   13|  ap_memory |    v181_V    |     array    |
-|v181_V_ce0         | out |    1|  ap_memory |    v181_V    |     array    |
-|v181_V_q0          |  in |   32|  ap_memory |    v181_V    |     array    |
-|v182_0_V_address0  | out |   11|  ap_memory |   v182_0_V   |     array    |
-|v182_0_V_ce0       | out |    1|  ap_memory |   v182_0_V   |     array    |
-|v182_0_V_q0        |  in |   32|  ap_memory |   v182_0_V   |     array    |
-|v183_V_address0    | out |   14|  ap_memory |    v183_V    |     array    |
-|v183_V_ce0         | out |    1|  ap_memory |    v183_V    |     array    |
-|v183_V_we0         | out |    1|  ap_memory |    v183_V    |     array    |
-|v183_V_d0          | out |   32|  ap_memory |    v183_V    |     array    |
+|v185_V_address0    | out |   13|  ap_memory |    v185_V    |     array    |
+|v185_V_ce0         | out |    1|  ap_memory |    v185_V    |     array    |
+|v185_V_q0          |  in |   32|  ap_memory |    v185_V    |     array    |
+|v186_0_V_address0  | out |   11|  ap_memory |   v186_0_V   |     array    |
+|v186_0_V_ce0       | out |    1|  ap_memory |   v186_0_V   |     array    |
+|v186_0_V_q0        |  in |   32|  ap_memory |   v186_0_V   |     array    |
+|v187_V_address0    | out |   14|  ap_memory |    v187_V    |     array    |
+|v187_V_ce0         | out |    1|  ap_memory |    v187_V    |     array    |
+|v187_V_we0         | out |    1|  ap_memory |    v187_V    |     array    |
+|v187_V_d0          | out |   32|  ap_memory |    v187_V    |     array    |
 +-------------------+-----+-----+------------+--------------+--------------+
 

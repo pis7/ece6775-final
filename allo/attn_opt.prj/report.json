@@ -14,43 +14,43 @@
     "PipelineType": "none",
     "SummaryOfTimingAnalysis": {
       "unit": "ns",
-      "EstimatedClockPeriod": "15.210"
+      "EstimatedClockPeriod": "15.789"
     },
     "SummaryOfOverallLatency": {
       "unit": "clock cycles",
-      "Best-caseLatency": "30800",
-      "Average-caseLatency": "30800",
-      "Worst-caseLatency": "30800",
-      "Best-caseRealTimeLatency": "0.468 ms",
-      "Average-caseRealTimeLatency": "0.468 ms",
-      "Worst-caseRealTimeLatency": "0.468 ms",
-      "Interval-min": "30801",
-      "Interval-max": "30801"
+      "Best-caseLatency": "9923352",
+      "Average-caseLatency": "9923352",
+      "Worst-caseLatency": "9923352",
+      "Best-caseRealTimeLatency": "0.157 sec",
+      "Average-caseRealTimeLatency": "0.157 sec",
+      "Worst-caseRealTimeLatency": "0.157 sec",
+      "Interval-min": "9923353",
+      "Interval-max": "9923353"
     },
     "SummaryOfLoopLatency": {
       "Loop1": {
-        "TripCount": "16",
-        "Latency": "16",
+        "TripCount": "1536",
+        "Latency": "1536",
         "IterationLatency": "1"
       },
       "Loop2": {
-        "TripCount": "16",
-        "Latency": "16",
+        "TripCount": "1536",
+        "Latency": "1536",
         "IterationLatency": "1"
       },
       "Loop3": {
-        "TripCount": "16",
-        "Latency": "16",
+        "TripCount": "1536",
+        "Latency": "1536",
         "IterationLatency": "1"
       },
       "Loop4": {
-        "TripCount": "16",
-        "Latency": "16",
+        "TripCount": "1536",
+        "Latency": "1536",
         "IterationLatency": "1"
       },
       "Loop5": {
-        "TripCount": "2",
-        "Latency": "196",
+        "TripCount": "16",
+        "Latency": "1568",
         "IterationLatency": "98",
         "Loop5.1": {
           "TripCount": "96",
@@ -59,8 +59,8 @@
         }
       },
       "Loop6": {
-        "TripCount": "2",
-        "Latency": "196",
+        "TripCount": "16",
+        "Latency": "1568",
         "IterationLatency": "98",
         "Loop6.1": {
           "TripCount": "96",
@@ -69,12 +69,12 @@
         }
       },
       "Loop7": {
-        "TripCount": "2",
-        "Latency": "592",
-        "IterationLatency": "296",
+        "TripCount": "16",
+        "Latency": "9440",
+        "IterationLatency": "590",
         "Loop7.1": {
-          "TripCount": "3",
-          "Latency": "294",
+          "TripCount": "6",
+          "Latency": "588",
           "IterationLatency": "98",
           "Loop7.1.1": {
             "TripCount": "96",
@@ -84,12 +84,12 @@
         }
       },
       "Loop8": {
-        "TripCount": "2",
-        "Latency": "592",
-        "IterationLatency": "296",
+        "TripCount": "16",
+        "Latency": "9440",
+        "IterationLatency": "590",
         "Loop8.1": {
-          "TripCount": "3",
-          "Latency": "294",
+          "TripCount": "6",
+          "Latency": "588",
           "IterationLatency": "98",
           "Loop8.1.1": {
             "TripCount": "96",
@@ -99,43 +99,43 @@
         }
       },
       "Loop9": {
-        "TripCount": "2",
-        "Latency": "10",
-        "IterationLatency": "5",
+        "TripCount": "16",
+        "Latency": "128",
+        "IterationLatency": "8",
         "Loop9.1": {
-          "TripCount": "3",
-          "Latency": "3",
+          "TripCount": "6",
+          "Latency": "6",
           "IterationLatency": "1"
         }
       },
       "l_S_i_0_i10": {
-        "TripCount": "2",
-        "Latency": "106",
-        "IterationLatency": "53",
+        "TripCount": "16",
+        "Latency": "1856",
+        "IterationLatency": "116",
         "l_S_k_0_k9": {
-          "TripCount": "3",
-          "Latency": "51",
-          "IterationLatency": "17"
+          "TripCount": "6",
+          "Latency": "114",
+          "IterationLatency": "19"
         }
       },
       "l_S_h_3_h6": {
-        "TripCount": "2",
-        "Latency": "16",
+        "TripCount": "16",
+        "Latency": "128",
         "IterationLatency": "8"
       },
       "Loop12": {
-        "TripCount": "2",
-        "Latency": "10",
-        "IterationLatency": "5",
+        "TripCount": "16",
+        "Latency": "128",
+        "IterationLatency": "8",
         "Loop12.1": {
-          "TripCount": "3",
-          "Latency": "3",
+          "TripCount": "6",
+          "Latency": "6",
           "IterationLatency": "1"
         }
       },
       "Loop13": {
-        "TripCount": "2",
-        "Latency": "196",
+        "TripCount": "16",
+        "Latency": "1568",
         "IterationLatency": "98",
         "Loop13.1": {
           "TripCount": "96",
@@ -144,13 +144,13 @@
         }
       },
       "Loop14": {
-        "TripCount": "16",
-        "Latency": "16",
+        "TripCount": "1536",
+        "Latency": "1536",
         "IterationLatency": "1"
       },
       "l_S_h_6_h7": {
-        "TripCount": "2",
-        "Latency": "388",
+        "TripCount": "16",
+        "Latency": "3104",
         "IterationLatency": "194",
         "l_S_d_6_d4": {
           "TripCount": "96",
@@ -159,23 +159,23 @@
         }
       },
       "Loop16": {
-        "TripCount": "16",
-        "Latency": "16",
+        "TripCount": "1536",
+        "Latency": "1536",
         "IterationLatency": "1"
       },
       "Loop17": {
-        "TripCount": "16",
-        "Latency": "16",
+        "TripCount": "1536",
+        "Latency": "1536",
         "IterationLatency": "1"
       }
     }
   },
   "AreaEstimates": {
     "Resources": {
-      "BRAM_18K": "44",
+      "BRAM_18K": "182",
       "DSP48E": "63",
-      "FF": "18940",
-      "LUT": "29522",
+      "FF": "19732",
+      "LUT": "33031",
       "URAM": "0"
     },
     "AvailableResources": {
@@ -255,131 +255,35 @@
         "Attribute": "control"
       },
       {
-        "name": "v252_address0",
-        "Object": "v252",
-        "Type": "array",
-        "Scope": null,
-        "IOProtocol": "ap_memory",
-        "IOConfig": null,
-        "Dir": "out",
-        "Bits": "4",
-        "Attribute": "address",
-        "CType": "float"
-      },
-      {
-        "name": "v252_ce0",
-        "Object": "v252",
-        "Type": "array",
-        "Scope": null,
-        "IOProtocol": "ap_memory",
-        "IOConfig": null,
-        "Dir": "out",
-        "Bits": "1",
-        "Attribute": "control",
-        "CType": "float"
-      },
-      {
-        "name": "v252_q0",
-        "Object": "v252",
-        "Type": "array",
-        "Scope": null,
-        "IOProtocol": "ap_memory",
-        "IOConfig": null,
-        "Dir": "in",
-        "Bits": "32",
-        "Attribute": "data",
-        "CType": "float"
-      },
-      {
-        "name": "v253_address0",
-        "Object": "v253",
-        "Type": "array",
-        "Scope": null,
-        "IOProtocol": "ap_memory",
-        "IOConfig": null,
-        "Dir": "out",
-        "Bits": "6",
-        "Attribute": "address",
-        "CType": "int"
-      },
-      {
-        "name": "v253_ce0",
-        "Object": "v253",
-        "Type": "array",
-        "Scope": null,
-        "IOProtocol": "ap_memory",
-        "IOConfig": null,
-        "Dir": "out",
-        "Bits": "1",
-        "Attribute": "control",
-        "CType": "int"
-      },
-      {
-        "name": "v253_q0",
-        "Object": "v253",
-        "Type": "array",
-        "Scope": null,
-        "IOProtocol": "ap_memory",
-        "IOConfig": null,
-        "Dir": "in",
-        "Bits": "8",
-        "Attribute": "data",
-        "CType": "int"
-      },
-      {
-        "name": "v254",
-        "Object": "v254",
-        "Type": "scalar",
-        "Scope": null,
-        "IOProtocol": "ap_none",
-        "IOConfig": null,
-        "Dir": "in",
-        "Bits": "32",
-        "Attribute": "data",
-        "CType": "float"
-      },
-      {
-        "name": "v255_address0",
-        "Object": "v255",
-        "Type": "array",
-        "Scope": null,
-        "IOProtocol": "ap_memory",
-        "IOConfig": null,
-        "Dir": "out",
-        "Bits": "6",
-        "Attribute": "address",
-        "CType": "int"
-      },
-      {
-        "name": "v255_ce0",
-        "Object": "v255",
-        "Type": "array",
-        "Scope": null,
-        "IOProtocol": "ap_memory",
-        "IOConfig": null,
-        "Dir": "out",
-        "Bits": "1",
-        "Attribute": "control",
-        "CType": "int"
-      },
-      {
-        "name": "v255_q0",
-        "Object": "v255",
-        "Type": "array",
-        "Scope": null,
-        "IOProtocol": "ap_memory",
-        "IOConfig": null,
-        "Dir": "in",
-        "Bits": "8",
-        "Attribute": "data",
-        "CType": "int"
-      },
-      {
-        "name": "v256",
+        "name": "v256_address0",
         "Object": "v256",
-        "Type": "scalar",
+        "Type": "array",
         "Scope": null,
-        "IOProtocol": "ap_none",
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "11",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v256_ce0",
+        "Object": "v256",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v256_q0",
+        "Object": "v256",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "in",
         "Bits": "32",
@@ -394,7 +298,7 @@
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "out",
-        "Bits": "6",
+        "Bits": "20",
         "Attribute": "address",
         "CType": "int"
       },
@@ -412,6 +316,42 @@
       },
       {
         "name": "v257_q0",
+        "Object": "v257",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "8",
+        "Attribute": "data",
+        "CType": "int"
+      },
+      {
+        "name": "v257_address1",
+        "Object": "v257",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "20",
+        "Attribute": "address",
+        "CType": "int"
+      },
+      {
+        "name": "v257_ce1",
+        "Object": "v257",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "int"
+      },
+      {
+        "name": "v257_q1",
         "Object": "v257",
         "Type": "array",
         "Scope": null,
@@ -442,7 +382,7 @@
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "out",
-        "Bits": "6",
+        "Bits": "20",
         "Attribute": "address",
         "CType": "int"
       },
@@ -460,6 +400,42 @@
       },
       {
         "name": "v259_q0",
+        "Object": "v259",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "8",
+        "Attribute": "data",
+        "CType": "int"
+      },
+      {
+        "name": "v259_address1",
+        "Object": "v259",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "20",
+        "Attribute": "address",
+        "CType": "int"
+      },
+      {
+        "name": "v259_ce1",
+        "Object": "v259",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "int"
+      },
+      {
+        "name": "v259_q1",
         "Object": "v259",
         "Type": "array",
         "Scope": null,
@@ -490,9 +466,9 @@
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "out",
-        "Bits": "10",
+        "Bits": "20",
         "Attribute": "address",
-        "CType": "float"
+        "CType": "int"
       },
       {
         "name": "v261_ce0",
@@ -504,7 +480,7 @@
         "Dir": "out",
         "Bits": "1",
         "Attribute": "control",
-        "CType": "float"
+        "CType": "int"
       },
       {
         "name": "v261_q0",
@@ -514,25 +490,25 @@
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "in",
-        "Bits": "32",
+        "Bits": "8",
         "Attribute": "data",
-        "CType": "float"
+        "CType": "int"
       },
       {
-        "name": "v262_address0",
-        "Object": "v262",
+        "name": "v261_address1",
+        "Object": "v261",
         "Type": "array",
         "Scope": null,
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "out",
-        "Bits": "10",
+        "Bits": "20",
         "Attribute": "address",
-        "CType": "float"
+        "CType": "int"
       },
       {
-        "name": "v262_ce0",
-        "Object": "v262",
+        "name": "v261_ce1",
+        "Object": "v261",
         "Type": "array",
         "Scope": null,
         "IOProtocol": "ap_memory",
@@ -540,14 +516,26 @@
         "Dir": "out",
         "Bits": "1",
         "Attribute": "control",
-        "CType": "float"
+        "CType": "int"
       },
       {
-        "name": "v262_q0",
-        "Object": "v262",
+        "name": "v261_q1",
+        "Object": "v261",
         "Type": "array",
         "Scope": null,
         "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "8",
+        "Attribute": "data",
+        "CType": "int"
+      },
+      {
+        "name": "v262",
+        "Object": "v262",
+        "Type": "scalar",
+        "Scope": null,
+        "IOProtocol": "ap_none",
         "IOConfig": null,
         "Dir": "in",
         "Bits": "32",
@@ -562,9 +550,9 @@
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "out",
-        "Bits": "4",
+        "Bits": "20",
         "Attribute": "address",
-        "CType": "float"
+        "CType": "int"
       },
       {
         "name": "v263_ce0",
@@ -576,7 +564,7 @@
         "Dir": "out",
         "Bits": "1",
         "Attribute": "control",
-        "CType": "float"
+        "CType": "int"
       },
       {
         "name": "v263_q0",
@@ -586,25 +574,25 @@
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "in",
-        "Bits": "32",
+        "Bits": "8",
         "Attribute": "data",
-        "CType": "float"
+        "CType": "int"
       },
       {
-        "name": "v264_address0",
-        "Object": "v264",
+        "name": "v263_address1",
+        "Object": "v263",
         "Type": "array",
         "Scope": null,
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "out",
-        "Bits": "4",
+        "Bits": "20",
         "Attribute": "address",
-        "CType": "float"
+        "CType": "int"
       },
       {
-        "name": "v264_ce0",
-        "Object": "v264",
+        "name": "v263_ce1",
+        "Object": "v263",
         "Type": "array",
         "Scope": null,
         "IOProtocol": "ap_memory",
@@ -612,14 +600,26 @@
         "Dir": "out",
         "Bits": "1",
         "Attribute": "control",
-        "CType": "float"
+        "CType": "int"
       },
       {
-        "name": "v264_q0",
-        "Object": "v264",
+        "name": "v263_q1",
+        "Object": "v263",
         "Type": "array",
         "Scope": null,
         "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "8",
+        "Attribute": "data",
+        "CType": "int"
+      },
+      {
+        "name": "v264",
+        "Object": "v264",
+        "Type": "scalar",
+        "Scope": null,
+        "IOProtocol": "ap_none",
         "IOConfig": null,
         "Dir": "in",
         "Bits": "32",
@@ -634,7 +634,7 @@
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "out",
-        "Bits": "9",
+        "Bits": "10",
         "Attribute": "address",
         "CType": "float"
       },
@@ -670,7 +670,7 @@
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "out",
-        "Bits": "9",
+        "Bits": "10",
         "Attribute": "address",
         "CType": "float"
       },
@@ -699,16 +699,40 @@
         "CType": "float"
       },
       {
-        "name": "v267",
+        "name": "v267_address0",
         "Object": "v267",
-        "Type": "scalar",
+        "Type": "array",
         "Scope": null,
-        "IOProtocol": "ap_none",
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "11",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v267_ce0",
+        "Object": "v267",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v267_q0",
+        "Object": "v267",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "in",
         "Bits": "32",
         "Attribute": "data",
-        "CType": "int"
+        "CType": "float"
       },
       {
         "name": "v268_address0",
@@ -718,7 +742,7 @@
         "IOProtocol": "ap_memory",
         "IOConfig": null,
         "Dir": "out",
-        "Bits": "4",
+        "Bits": "11",
         "Attribute": "address",
         "CType": "float"
       },
@@ -735,8 +759,32 @@
         "CType": "float"
       },
       {
-        "name": "v268_we0",
+        "name": "v268_q0",
         "Object": "v268",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v269_address0",
+        "Object": "v269",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "13",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v269_ce0",
+        "Object": "v269",
         "Type": "array",
         "Scope": null,
         "IOProtocol": "ap_memory",
@@ -747,8 +795,104 @@
         "CType": "float"
       },
       {
-        "name": "v268_d0",
-        "Object": "v268",
+        "name": "v269_q0",
+        "Object": "v269",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v270_address0",
+        "Object": "v270",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "13",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v270_ce0",
+        "Object": "v270",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v270_q0",
+        "Object": "v270",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "float"
+      },
+      {
+        "name": "v271",
+        "Object": "v271",
+        "Type": "scalar",
+        "Scope": null,
+        "IOProtocol": "ap_none",
+        "IOConfig": null,
+        "Dir": "in",
+        "Bits": "32",
+        "Attribute": "data",
+        "CType": "int"
+      },
+      {
+        "name": "v272_address0",
+        "Object": "v272",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "11",
+        "Attribute": "address",
+        "CType": "float"
+      },
+      {
+        "name": "v272_ce0",
+        "Object": "v272",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v272_we0",
+        "Object": "v272",
+        "Type": "array",
+        "Scope": null,
+        "IOProtocol": "ap_memory",
+        "IOConfig": null,
+        "Dir": "out",
+        "Bits": "1",
+        "Attribute": "control",
+        "CType": "float"
+      },
+      {
+        "name": "v272_d0",
+        "Object": "v272",
         "Type": "array",
         "Scope": null,
         "IOProtocol": "ap_memory",

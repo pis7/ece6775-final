@@ -616,7 +616,7 @@
             <Obj>
               <type>0</type>
               <id>37</id>
-              <name>tmp_6</name>
+              <name>tmp_8</name>
               <fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>84</lineNumber>
@@ -640,7 +640,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_6_fu_297_p3</rtlName>
+              <rtlName>tmp_8_fu_297_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2203,7 +2203,7 @@
             <Obj>
               <type>0</type>
               <id>76</id>
-              <name>tmp_10</name>
+              <name>tmp_12</name>
               <fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>155</lineNumber>
@@ -2227,7 +2227,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_10_fu_431_p3</rtlName>
+              <rtlName>tmp_12_fu_431_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2621,7 +2621,7 @@
             <Obj>
               <type>0</type>
               <id>88</id>
-              <name>tmp_12</name>
+              <name>tmp_14</name>
               <fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>177</lineNumber>
@@ -2645,7 +2645,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_12_fu_454_p3</rtlName>
+              <rtlName>tmp_14_fu_454_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -12318,7 +12318,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_10_fu_431</first>
+        <first>tmp_12_fu_431</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12326,7 +12326,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_12_fu_454</first>
+        <first>tmp_14_fu_454</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12334,7 +12334,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_6_fu_297</first>
+        <first>tmp_8_fu_297</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

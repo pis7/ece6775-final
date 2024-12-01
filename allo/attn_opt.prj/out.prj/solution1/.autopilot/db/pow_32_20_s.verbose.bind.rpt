@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pow_32_20_s'
 ================================================================
-* Date:           Thu Nov 28 23:10:04 2024
+* Date:           Sat Nov 30 20:58:28 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        out.prj
@@ -150,8 +150,8 @@ ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%p_Result_2 = call i1 @_ssdm_op_Bit
 ST_1 : Operation 61 [1/1] (1.76ns)   --->   "br i1 %p_Result_2, label %2, label %_ZN8ap_fixedILi33ELi21EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi20ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:79]   --->   Operation 61 'br' <Predicate = (!icmp_ln1498)> <Delay = 1.76>
 ST_1 : Operation 62 [1/1] (1.97ns)   --->   "br i1 %icmp_ln63, label %_ZeqILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit130, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:81]   --->   Operation 62 'br' <Predicate = (!icmp_ln1498 & p_Result_2)> <Delay = 1.97>
 ST_1 : Operation 63 [1/1] (2.47ns)   --->   "%icmp_ln84 = icmp ne i32 %y_V_read, 0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:84]   --->   Operation 63 'icmp' 'icmp_ln84' <Predicate = (!icmp_ln1498 & p_Result_2 & icmp_ln63)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_6 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %y_V_read, i32 12)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:84]   --->   Operation 64 'bitselect' 'tmp_6' <Predicate = (!icmp_ln1498 & p_Result_2 & icmp_ln63)> <Delay = 0.00>
-ST_1 : Operation 65 [1/1] (0.97ns)   --->   "%and_ln84 = and i1 %tmp_6, %icmp_ln84" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:84]   --->   Operation 65 'and' 'and_ln84' <Predicate = (!icmp_ln1498 & p_Result_2 & icmp_ln63)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_8 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %y_V_read, i32 12)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:84]   --->   Operation 64 'bitselect' 'tmp_8' <Predicate = (!icmp_ln1498 & p_Result_2 & icmp_ln63)> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.97ns)   --->   "%and_ln84 = and i1 %tmp_8, %icmp_ln84" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:84]   --->   Operation 65 'and' 'and_ln84' <Predicate = (!icmp_ln1498 & p_Result_2 & icmp_ln63)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 66 [1/1] (1.76ns)   --->   "br label %_ZN8ap_fixedILi33ELi21EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi20ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:84]   --->   Operation 66 'br' <Predicate = (!icmp_ln1498 & p_Result_2 & icmp_ln63)> <Delay = 1.76>
 ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%x_e_1_V = sext i32 %x_V_read to i33" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:91]   --->   Operation 67 'sext' 'x_e_1_V' <Predicate = (!icmp_ln1498 & icmp_ln63) | (!icmp_ln1498 & !p_Result_2)> <Delay = 0.00>
 ST_1 : Operation 68 [1/1] (2.25ns)   --->   "%xs_V_1 = sub i22 0, %trunc_ln1498" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_round_copysign_apfixed.h:176->/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:94]   --->   Operation 68 'sub' 'xs_V_1' <Predicate = (!icmp_ln1498 & icmp_ln63) | (!icmp_ln1498 & !p_Result_2)> <Delay = 2.25> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -281,7 +281,7 @@ ST_37 : Operation 119 [1/1] (0.00ns)   --->   "%phi_ln155 = phi i1 [ false, %_ZN
 ST_37 : Operation 120 [1/1] (0.00ns)   --->   "%index_assign_1 = phi i7 [ -43, %_ZN8ap_fixedILi33ELi21EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi20ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit ], [ %j_1, %4 ]"   --->   Operation 120 'phi' 'index_assign_1' <Predicate = true> <Delay = 0.00>
 ST_37 : Operation 121 [1/1] (0.00ns)   --->   "%zext_ln134 = zext i7 %index_assign_1 to i32" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:134]   --->   Operation 121 'zext' 'zext_ln134' <Predicate = true> <Delay = 0.00>
 ST_37 : Operation 122 [1/1] (1.48ns)   --->   "%icmp_ln134 = icmp eq i7 %index_assign_1, -37" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:134]   --->   Operation 122 'icmp' 'icmp_ln134' <Predicate = true> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 123 [1/1] (0.00ns)   --->   "%empty_79 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)"   --->   Operation 123 'speclooptripcount' 'empty_79' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 123 [1/1] (0.00ns)   --->   "%empty_83 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)"   --->   Operation 123 'speclooptripcount' 'empty_83' <Predicate = true> <Delay = 0.00>
 ST_37 : Operation 124 [1/1] (0.00ns)   --->   "br i1 %icmp_ln134, label %5, label %4" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:134]   --->   Operation 124 'br' <Predicate = true> <Delay = 0.00>
 ST_37 : Operation 125 [1/1] (0.00ns) (grouped into LUT with out node or_ln135)   --->   "%p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i92.i32(i92 %r_V, i32 %zext_ln134)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:135]   --->   Operation 125 'bitselect' 'p_Result_s' <Predicate = (!icmp_ln134)> <Delay = 0.00>
 ST_37 : Operation 126 [1/1] (0.00ns) (grouped into LUT with out node or_ln135)   --->   "%xor_ln135 = xor i1 %tmp, %p_Result_s" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:135]   --->   Operation 126 'xor' 'xor_ln135' <Predicate = (!icmp_ln134)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -331,8 +331,8 @@ State 50 <SV = 49> <Delay = 5.76>
 ST_50 : Operation 144 [1/13] (3.99ns)   --->   "%exp_r_V = call fastcc i32 @"exp_core<32, 20, 54>"(i54 %mul_y_ln_s_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:142]   --->   Operation 144 'call' 'exp_r_V' <Predicate = (!phi_ln155)> <Delay = 3.99> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_50 : Operation 145 [1/1] (1.76ns)   --->   "br label %._crit_edge798" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:153]   --->   Operation 145 'br' <Predicate = (!phi_ln155)> <Delay = 1.76>
 ST_50 : Operation 146 [1/1] (0.00ns)   --->   "%r_V_7 = phi i32 [ %exp_r_V, %_ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit ], [ 0, %5 ]"   --->   Operation 146 'phi' 'r_V_7' <Predicate = true> <Delay = 0.00>
-ST_50 : Operation 147 [1/1] (0.00ns) (grouped into LUT with out node and_ln155)   --->   "%tmp_10 = call i1 @_ssdm_op_BitSelect.i1.i92.i32(i92 %r_V, i32 91)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:155]   --->   Operation 147 'bitselect' 'tmp_10' <Predicate = true> <Delay = 0.00>
-ST_50 : Operation 148 [1/1] (0.00ns) (grouped into LUT with out node and_ln155)   --->   "%xor_ln155 = xor i1 %tmp_10, true" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:155]   --->   Operation 148 'xor' 'xor_ln155' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 147 [1/1] (0.00ns) (grouped into LUT with out node and_ln155)   --->   "%tmp_12 = call i1 @_ssdm_op_BitSelect.i1.i92.i32(i92 %r_V, i32 91)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:155]   --->   Operation 147 'bitselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
+ST_50 : Operation 148 [1/1] (0.00ns) (grouped into LUT with out node and_ln155)   --->   "%xor_ln155 = xor i1 %tmp_12, true" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:155]   --->   Operation 148 'xor' 'xor_ln155' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_50 : Operation 149 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln155 = and i1 %phi_ln155, %xor_ln155" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:155]   --->   Operation 149 'and' 'and_ln155' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_50 : Operation 150 [1/1] (0.00ns)   --->   "br i1 %r_is_neg_1, label %6, label %7" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:159]   --->   Operation 150 'br' <Predicate = true> <Delay = 0.00>
 ST_50 : Operation 151 [1/1] (1.97ns)   --->   "br i1 %and_ln155, label %.preheader799.preheader, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:174]   --->   Operation 151 'br' <Predicate = (!r_is_neg_1)> <Delay = 1.97>
@@ -343,20 +343,20 @@ State 51 <SV = 50> <Delay = 4.52>
 ST_51 : Operation 154 [1/1] (0.00ns)   --->   "%p_Val2_6 = phi i32 [ %p_Result_11, %8 ], [ 0, %.preheader799.preheader ]"   --->   Operation 154 'phi' 'p_Val2_6' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155)> <Delay = 0.00>
 ST_51 : Operation 155 [1/1] (0.00ns)   --->   "%index_assign_2 = phi i6 [ %j_2, %8 ], [ 30, %.preheader799.preheader ]"   --->   Operation 155 'phi' 'index_assign_2' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155)> <Delay = 0.00>
 ST_51 : Operation 156 [1/1] (0.00ns)   --->   "%sext_ln177 = sext i6 %index_assign_2 to i32" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:177]   --->   Operation 156 'sext' 'sext_ln177' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155)> <Delay = 0.00>
-ST_51 : Operation 157 [1/1] (0.00ns)   --->   "%tmp_12 = call i1 @_ssdm_op_BitSelect.i1.i6.i32(i6 %index_assign_2, i32 5)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:177]   --->   Operation 157 'bitselect' 'tmp_12' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155)> <Delay = 0.00>
-ST_51 : Operation 158 [1/1] (0.00ns)   --->   "%empty_80 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)"   --->   Operation 158 'speclooptripcount' 'empty_80' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155)> <Delay = 0.00>
-ST_51 : Operation 159 [1/1] (0.00ns)   --->   "br i1 %tmp_12, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189.loopexit, label %8" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:177]   --->   Operation 159 'br' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155)> <Delay = 0.00>
-ST_51 : Operation 160 [1/1] (0.00ns)   --->   "%p_Result_11 = call i32 @_ssdm_op_BitSet.i32.i32.i32.i1(i32 %p_Val2_6, i32 %sext_ln177, i1 true)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:178]   --->   Operation 160 'bitset' 'p_Result_11' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155 & !tmp_12) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155 & !tmp_12)> <Delay = 0.00>
-ST_51 : Operation 161 [1/1] (1.82ns)   --->   "%j_2 = add i6 %index_assign_2, -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:177]   --->   Operation 161 'add' 'j_2' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155 & !tmp_12) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155 & !tmp_12)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_51 : Operation 162 [1/1] (0.00ns)   --->   "br label %.preheader799" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:177]   --->   Operation 162 'br' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155 & !tmp_12) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155 & !tmp_12)> <Delay = 0.00>
-ST_51 : Operation 163 [1/1] (1.97ns)   --->   "br label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189"   --->   Operation 163 'br' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155 & tmp_12) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155 & tmp_12)> <Delay = 1.97>
+ST_51 : Operation 157 [1/1] (0.00ns)   --->   "%tmp_14 = call i1 @_ssdm_op_BitSelect.i1.i6.i32(i6 %index_assign_2, i32 5)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:177]   --->   Operation 157 'bitselect' 'tmp_14' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155)> <Delay = 0.00>
+ST_51 : Operation 158 [1/1] (0.00ns)   --->   "%empty_84 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)"   --->   Operation 158 'speclooptripcount' 'empty_84' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155)> <Delay = 0.00>
+ST_51 : Operation 159 [1/1] (0.00ns)   --->   "br i1 %tmp_14, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189.loopexit, label %8" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:177]   --->   Operation 159 'br' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155)> <Delay = 0.00>
+ST_51 : Operation 160 [1/1] (0.00ns)   --->   "%p_Result_11 = call i32 @_ssdm_op_BitSet.i32.i32.i32.i1(i32 %p_Val2_6, i32 %sext_ln177, i1 true)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:178]   --->   Operation 160 'bitset' 'p_Result_11' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155 & !tmp_14) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155 & !tmp_14)> <Delay = 0.00>
+ST_51 : Operation 161 [1/1] (1.82ns)   --->   "%j_2 = add i6 %index_assign_2, -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:177]   --->   Operation 161 'add' 'j_2' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155 & !tmp_14) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155 & !tmp_14)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 162 [1/1] (0.00ns)   --->   "br label %.preheader799" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:177]   --->   Operation 162 'br' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155 & !tmp_14) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155 & !tmp_14)> <Delay = 0.00>
+ST_51 : Operation 163 [1/1] (1.97ns)   --->   "br label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189"   --->   Operation 163 'br' <Predicate = (!icmp_ln1498 & icmp_ln63 & !r_is_neg_1 & and_ln155 & tmp_14) | (!icmp_ln1498 & !p_Result_2 & !r_is_neg_1 & and_ln155 & tmp_14)> <Delay = 1.97>
 ST_51 : Operation 164 [1/1] (2.47ns)   --->   "%icmp_ln1499 = icmp eq i32 %r_V_7, 0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:166]   --->   Operation 164 'icmp' 'icmp_ln1499' <Predicate = (!icmp_ln1498 & icmp_ln63 & r_is_neg_1 & !and_ln155) | (!icmp_ln1498 & !p_Result_2 & r_is_neg_1 & !and_ln155)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_51 : Operation 165 [1/1] (1.97ns)   --->   "br i1 %icmp_ln1499, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189, label %_ZNK13ap_fixed_baseILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:166]   --->   Operation 165 'br' <Predicate = (!icmp_ln1498 & icmp_ln63 & r_is_neg_1 & !and_ln155) | (!icmp_ln1498 & !p_Result_2 & r_is_neg_1 & !and_ln155)> <Delay = 1.97>
 ST_51 : Operation 166 [1/1] (2.55ns)   --->   "%r_V_8 = sub i32 0, %r_V_7" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:167]   --->   Operation 166 'sub' 'r_V_8' <Predicate = (!icmp_ln1498 & icmp_ln63 & r_is_neg_1 & !and_ln155 & !icmp_ln1499) | (!icmp_ln1498 & !p_Result_2 & r_is_neg_1 & !and_ln155 & !icmp_ln1499)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_51 : Operation 167 [1/1] (0.00ns)   --->   "%p_Result_10 = call i32 @_ssdm_op_BitSet.i32.i32.i32.i1(i32 %r_V_8, i32 31, i1 true)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:168]   --->   Operation 167 'bitset' 'p_Result_10' <Predicate = (!icmp_ln1498 & icmp_ln63 & r_is_neg_1 & !and_ln155 & !icmp_ln1499) | (!icmp_ln1498 & !p_Result_2 & r_is_neg_1 & !and_ln155 & !icmp_ln1499)> <Delay = 0.00>
 ST_51 : Operation 168 [1/1] (1.97ns)   --->   "br label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:169]   --->   Operation 168 'br' <Predicate = (!icmp_ln1498 & icmp_ln63 & r_is_neg_1 & !and_ln155 & !icmp_ln1499) | (!icmp_ln1498 & !p_Result_2 & r_is_neg_1 & !and_ln155 & !icmp_ln1499)> <Delay = 1.97>
-ST_51 : Operation 169 [1/1] (0.00ns)   --->   "%agg_result_V_0 = phi i32 [ %p_Result_8, %1 ], [ 4096, %_ZeqILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit200 ], [ 0, %_ZgtILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit ], [ 0, %2 ], [ %p_Result_10, %_ZNK13ap_fixed_baseILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit ], [ 0, %_ZneILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit ], [ %r_V_7, %7 ], [ -2147483648, %6 ], [ %p_Val2_6, %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189.loopexit ]"   --->   Operation 169 'phi' 'agg_result_V_0' <Predicate = (tmp_12) | (!and_ln155) | (r_is_neg_1) | (p_Result_2 & !icmp_ln63) | (icmp_ln1498)> <Delay = 0.00>
-ST_51 : Operation 170 [1/1] (0.00ns)   --->   "ret i32 %agg_result_V_0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:186]   --->   Operation 170 'ret' <Predicate = (tmp_12) | (!and_ln155) | (r_is_neg_1) | (p_Result_2 & !icmp_ln63) | (icmp_ln1498)> <Delay = 0.00>
+ST_51 : Operation 169 [1/1] (0.00ns)   --->   "%agg_result_V_0 = phi i32 [ %p_Result_8, %1 ], [ 4096, %_ZeqILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit200 ], [ 0, %_ZgtILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit ], [ 0, %2 ], [ %p_Result_10, %_ZNK13ap_fixed_baseILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit ], [ 0, %_ZneILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit ], [ %r_V_7, %7 ], [ -2147483648, %6 ], [ %p_Val2_6, %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189.loopexit ]"   --->   Operation 169 'phi' 'agg_result_V_0' <Predicate = (tmp_14) | (!and_ln155) | (r_is_neg_1) | (p_Result_2 & !icmp_ln63) | (icmp_ln1498)> <Delay = 0.00>
+ST_51 : Operation 170 [1/1] (0.00ns)   --->   "ret i32 %agg_result_V_0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:186]   --->   Operation 170 'ret' <Predicate = (tmp_14) | (!and_ln155) | (r_is_neg_1) | (p_Result_2 & !icmp_ln63) | (icmp_ln1498)> <Delay = 0.00>
 
 State 52 <SV = 1> <Delay = 1.97>
 ST_52 : Operation 171 [1/1] (0.00ns)   --->   "%p_Val2_s = phi i32 [ %p_Result_7, %0 ], [ 0, %.preheader.preheader ]"   --->   Operation 171 'phi' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
@@ -412,7 +412,7 @@ p_Result_2     (bitselect        ) [ 0111111111111111111111111111111111111111111
 br_ln79        (br               ) [ 01111111111111111111111111111111111110000000000000000]
 br_ln81        (br               ) [ 01111111111111111111111111111111111111111111111111111]
 icmp_ln84      (icmp             ) [ 00000000000000000000000000000000000000000000000000000]
-tmp_6          (bitselect        ) [ 00000000000000000000000000000000000000000000000000000]
+tmp_8          (bitselect        ) [ 00000000000000000000000000000000000000000000000000000]
 and_ln84       (and              ) [ 01111111111111111111111111111111111110000000000000000]
 br_ln84        (br               ) [ 01111111111111111111111111111111111110000000000000000]
 x_e_1_V        (sext             ) [ 00000000000000000000000000000000000000000000000000000]
@@ -438,7 +438,7 @@ phi_ln155      (phi              ) [ 0000000000000000000000000000000000000111111
 index_assign_1 (phi              ) [ 00000000000000000000000000000000000001000000000000000]
 zext_ln134     (zext             ) [ 00000000000000000000000000000000000000000000000000000]
 icmp_ln134     (icmp             ) [ 00000000000000000000000000000000000001000000000000000]
-empty_79       (speclooptripcount) [ 00000000000000000000000000000000000000000000000000000]
+empty_83       (speclooptripcount) [ 00000000000000000000000000000000000000000000000000000]
 br_ln134       (br               ) [ 00000000000000000000000000000000000000000000000000000]
 p_Result_s     (bitselect        ) [ 00000000000000000000000000000000000000000000000000000]
 xor_ln135      (xor              ) [ 00000000000000000000000000000000000000000000000000000]
@@ -450,7 +450,7 @@ mul_y_ln_s_V   (partselect       ) [ 0000000000000000000000000000000000000000000
 exp_r_V        (call             ) [ 00000000000000000000000000000000000000000000000000000]
 br_ln153       (br               ) [ 00000000000000000000000000000000000000000000000000000]
 r_V_7          (phi              ) [ 01000000000000000000000000000000000000111111111111111]
-tmp_10         (bitselect        ) [ 00000000000000000000000000000000000000000000000000000]
+tmp_12         (bitselect        ) [ 00000000000000000000000000000000000000000000000000000]
 xor_ln155      (xor              ) [ 00000000000000000000000000000000000000000000000000000]
 and_ln155      (and              ) [ 00000000000000000000000000000000000000000000000000110]
 br_ln159       (br               ) [ 00000000000000000000000000000000000000000000000000000]
@@ -460,8 +460,8 @@ br_ln161       (br               ) [ 0100000000000000000000000000000000000000000
 p_Val2_6       (phi              ) [ 00000000000000000000000000000000000000000000000000010]
 index_assign_2 (phi              ) [ 00000000000000000000000000000000000000000000000000010]
 sext_ln177     (sext             ) [ 00000000000000000000000000000000000000000000000000000]
-tmp_12         (bitselect        ) [ 00000000000000000000000000000000000000000000000000010]
-empty_80       (speclooptripcount) [ 00000000000000000000000000000000000000000000000000000]
+tmp_14         (bitselect        ) [ 00000000000000000000000000000000000000000000000000010]
+empty_84       (speclooptripcount) [ 00000000000000000000000000000000000000000000000000000]
 br_ln177       (br               ) [ 00000000000000000000000000000000000000000000000000000]
 p_Result_11    (bitset           ) [ 00000000000000000000000000000000000000000000000000110]
 j_2            (add              ) [ 00000000000000000000000000000000000000000000000000110]
@@ -1291,7 +1291,7 @@ br_ln77        (br               ) [ 0100000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="297" class="1004" name="tmp_6_fu_297">
+<comp id="297" class="1004" name="tmp_8_fu_297">
 <pin_list>
 <pin id="298" dir="0" index="0" bw="1" slack="0"/>
 <pin id="299" dir="0" index="1" bw="32" slack="0"/>
@@ -1300,7 +1300,7 @@ br_ln77        (br               ) [ 0100000000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_6/1 "/>
+<opset="tmp_8/1 "/>
 </bind>
 </comp>
 
@@ -1558,7 +1558,7 @@ br_ln77        (br               ) [ 0100000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="431" class="1004" name="tmp_10_fu_431">
+<comp id="431" class="1004" name="tmp_12_fu_431">
 <pin_list>
 <pin id="432" dir="0" index="0" bw="1" slack="0"/>
 <pin id="433" dir="0" index="1" bw="92" slack="14"/>
@@ -1567,7 +1567,7 @@ br_ln77        (br               ) [ 0100000000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_10/50 "/>
+<opset="tmp_12/50 "/>
 </bind>
 </comp>
 
@@ -1606,7 +1606,7 @@ br_ln77        (br               ) [ 0100000000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="454" class="1004" name="tmp_12_fu_454">
+<comp id="454" class="1004" name="tmp_14_fu_454">
 <pin_list>
 <pin id="455" dir="0" index="0" bw="1" slack="0"/>
 <pin id="456" dir="0" index="1" bw="6" slack="0"/>
@@ -1615,7 +1615,7 @@ br_ln77        (br               ) [ 0100000000000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_12/51 "/>
+<opset="tmp_14/51 "/>
 </bind>
 </comp>
 
@@ -2390,7 +2390,7 @@ br_ln77        (br               ) [ 0100000000000000000000000000000000000000000
 		br_ln161 : 1
 	State 51
 		sext_ln177 : 1
-		tmp_12 : 1
+		tmp_14 : 1
 		br_ln177 : 2
 		p_Result_11 : 2
 		j_2 : 1
@@ -2454,11 +2454,11 @@ br_ln77        (br               ) [ 0100000000000000000000000000000000000000000
 |          |         ln_x_s_V_fu_363        |    0    |    0    |    0    |    0    |
 |----------|--------------------------------|---------|---------|---------|---------|
 |          |        p_Result_2_fu_283       |    0    |    0    |    0    |    0    |
-|          |          tmp_6_fu_297          |    0    |    0    |    0    |    0    |
+|          |          tmp_8_fu_297          |    0    |    0    |    0    |    0    |
 | bitselect|           tmp_fu_379           |    0    |    0    |    0    |    0    |
 |          |        p_Result_s_fu_397       |    0    |    0    |    0    |    0    |
-|          |          tmp_10_fu_431         |    0    |    0    |    0    |    0    |
-|          |          tmp_12_fu_454         |    0    |    0    |    0    |    0    |
+|          |          tmp_12_fu_431         |    0    |    0    |    0    |    0    |
+|          |          tmp_14_fu_454         |    0    |    0    |    0    |    0    |
 |----------|--------------------------------|---------|---------|---------|---------|
 |          |         x_e_1_V_fu_311         |    0    |    0    |    0    |    0    |
 |          |        sext_ln703_fu_321       |    0    |    0    |    0    |    0    |
