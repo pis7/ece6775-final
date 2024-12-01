@@ -93,8 +93,6 @@ template <
   sbit8_t quantized_hidden_states[SEQ_LEN][HS_COLS/4][4];
   attn_fixed_t scales[SEQ_LEN];
 
-  init_1d_mem<SEQ_LEN, attn_fixed_t>(scales, 1);
-
   quantize_activation<SEQ_LEN, HS_COLS>(
     hidden_states,
     quantized_hidden_states,
@@ -155,6 +153,7 @@ template <
   cache_update<NUM_HEADS, CACHE_SIZE_INIT, HEAD_DIM>(
     v_cache, v_cache_upd, v_proj
   );
+
   // step 5: transpose K for correct multiplication
   attn_fixed_t k_proj_transposed[NUM_HEADS][HEAD_DIM][CACHE_SIZE_INIT+1];
   transpose_last_two_dims<CACHE_SIZE_INIT+1, NUM_HEADS, HEAD_DIM>(k_cache_upd, k_proj_transposed);
@@ -205,7 +204,6 @@ template <
   );
 
   attn_fixed_t attn_output_2D[SEQ_LEN][PROJ_COLS];
-  init_2d_mem<SEQ_LEN, PROJ_COLS, attn_fixed_t>(attn_output_2D, 0);
   ATTN_2D_LOOP_1: for (int s = 0; s < SEQ_LEN; ++s)
     ATTN_2D_LOOP_2: for (int h = 0; h < NUM_HEADS; ++h)
       ATTN_2D_LOOP_3: for (int d = 0; d < HEAD_DIM; ++d)
@@ -223,7 +221,6 @@ template <
   // quantize attention output before final projection
   sbit8_t quantized_final_output[SEQ_LEN][PROJ_COLS/4][4];
   attn_fixed_t final_scales[SEQ_LEN];
-  init_1d_mem<SEQ_LEN, attn_fixed_t>(final_scales, 1);
   quantize_activation<SEQ_LEN, PROJ_COLS>(
     attn_output_2D,
     quantized_final_output,

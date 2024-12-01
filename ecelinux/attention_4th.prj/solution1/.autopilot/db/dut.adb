@@ -2859,8 +2859,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>89921</mMinLatency>
-        <mMaxLatency>89921</mMaxLatency>
+        <mMinLatency>90385</mMinLatency>
+        <mMaxLatency>90385</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -2926,8 +2926,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>88767</mMinLatency>
-        <mMaxLatency>88767</mMaxLatency>
+        <mMinLatency>89231</mMinLatency>
+        <mMaxLatency>89231</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
       </item>
@@ -3337,11 +3337,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>22299</second>
+              <second>22338</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>35476</second>
+              <second>35667</second>
             </item>
             <item>
               <first>URAM</first>

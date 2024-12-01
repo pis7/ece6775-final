@@ -14,18 +14,6 @@ typedef bit32_t HLS_SIZE_T;
 #include "data_include.h"
 
 //----------------------------------------------------------
-// init_1d_mem
-//----------------------------------------------------------
-template <int C, typename T>
-void init_1d_mem (
-  T mem[C],
-  T val
-) {
-  INIT_1D_MEM_LOOP_1: for (int i = 0; i < C; i++)
-    mem[i] = val;
-}
-
-//----------------------------------------------------------
 // init_2d_mem
 //----------------------------------------------------------
 template <int R, int C, typename T>
@@ -39,40 +27,11 @@ void init_2d_mem (
 }
 
 //----------------------------------------------------------
-// init_3d_mem
-//----------------------------------------------------------
-template <int P, int R, int C, typename T>
-void init_3d_mem (
-  T mem[P][R][C],
-  T val
-) {
-  INIT_3D_MEM_LOOP_1: for (int i = 0; i < P; i++)
-    INIT_3D_MEM_LOOP_2: for (int j = 0; j < R; j++)
-      INIT_3D_MEM_LOOP_3: for (int k = 0; k < C; k++)
-        mem[i][j][k] = val;
-}
-
-//----------------------------------------------------------
 // attention_abs
 //----------------------------------------------------------
 attn_fixed_t attention_abs(attn_fixed_t a) {
   return (a < (attn_fixed_t)0.0) ? (attn_fixed_t)(-a) : a;
 }
-
-//----------------------------------------------------------
-// attention_sqrt
-//----------------------------------------------------------
-// fixed64_t attention_sqrt(fixed64_t in) {
-//     fixed64_t guess = in / (fixed64_t)2.0; // Initial guess
-//     fixed64_t epsilon = 0.0001; // Convergence tolerance
-
-//     ATTENTION_SQRT_LOOP_1: for (int i = 0; i < 10; ++i) {
-//       guess = (guess + in / guess) / (fixed64_t)2.0;
-//       if (attention_abs(guess * guess - in) < epsilon) break;
-//     }
-
-//     return guess;
-// }
 
 //----------------------------------------------------------
 // rms_norm
@@ -313,7 +272,6 @@ void softmax (
       sum = 0.0;
       SOFTMAX_LOOP_4: for (int k = 0; k < C; k++) {
         attn_fixed_t x = input[i][j][k] - max_val;
-        // input[i][j][k] = 1 + x + ((x * x) >> 1);
         input[i][j][k] = hls::exp(x);
         sum += input[i][j][k];
       }

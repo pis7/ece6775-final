@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'dut'
 ================================================================
-* Date:           Sun Dec  1 01:25:23 2024
+* Date:           Sun Dec  1 10:39:44 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_4th.prj
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
     |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
     +---------+---------+----------+----------+-------+-------+---------+
-    |    89921|    89921| 0.899 ms | 0.899 ms |  89921|  89921|   none  |
+    |    90385|    90385| 0.904 ms | 0.904 ms |  90385|  90385|   none  |
     +---------+---------+----------+----------+-------+-------+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                      |           |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
         |       Instance       |   Module  |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
         +----------------------+-----------+---------+---------+----------+----------+-------+-------+---------+
-        |grp_attention_fu_263  |attention  |    88766|    88766| 0.888 ms | 0.888 ms |  88766|  88766|   none  |
+        |grp_attention_fu_263  |attention  |    89230|    89230| 0.892 ms | 0.892 ms |  89230|  89230|   none  |
         +----------------------+-----------+---------+---------+----------+----------+-------+-------+---------+
 
         * Loop: 
@@ -92,8 +92,8 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 3.25>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 6 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%empty_98 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 7 'specinterface' 'empty_98' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_in_V_V), !map !571"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_out_V_V), !map !575"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_in_V_V), !map !573"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_out_V_V), !map !577"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @dut_str) nounwind"   --->   Operation 10 'spectopmodule' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (3.25ns)   --->   "%input_0_V = alloca [384 x i40], align 8" [attention.cpp:14]   --->   Operation 11 'alloca' 'input_0_V' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2304> <RAM>
 ST_1 : Operation 12 [1/1] (3.25ns)   --->   "%output_0 = alloca [384 x i40], align 8"   --->   Operation 12 'alloca' 'output_0' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 2304> <RAM>
@@ -1958,7 +1958,7 @@ br_ln51           (br               ) [ 000111]
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 | Operation|     Functional Unit     |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |   URAM  |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
-|   call   |   grp_attention_fu_263  |    62   |    92   | 262.567 |  22547  |  25745  |    0    |
+|   call   |   grp_attention_fu_263  |    62   |    92   | 260.889 |  22518  |  25897  |    0    |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 |    add   |     add_ln19_fu_421     |    0    |    0    |    0    |    0    |    15   |    0    |
 |          |     add_ln51_fu_453     |    0    |    0    |    0    |    0    |    15   |    0    |
@@ -1981,7 +1981,7 @@ br_ln51           (br               ) [ 000111]
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 |bitconcatenate|      tmp_V_2_fu_468     |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                         |    62   |    92   | 262.567 |  22547  |  25801  |    0    |
+|   Total  |                         |    62   |    92   | 260.889 |  22518  |  25953  |    0    |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -2095,10 +2095,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |   62   |   92   |   262  |  22547 |  25801 |    0   |
+|  Function |   62   |   92   |   260  |  22518 |  25953 |    0   |
 |   Memory  |   155  |    -   |    -   |    0   |    0   |    0   |
 |Multiplexer|    -   |    -   |    1   |    -   |    9   |    -   |
 |  Register |    -   |    -   |    -   |   45   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   217  |   92   |   264  |  22592 |  25810 |    0   |
+|   Total   |   217  |   92   |   262  |  22563 |  25962 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

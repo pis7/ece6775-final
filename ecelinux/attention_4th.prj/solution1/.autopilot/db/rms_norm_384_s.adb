@@ -75,10 +75,10 @@
             <Obj>
               <type>0</type>
               <id>3</id>
-              <name>_ln87</name>
+              <name>_ln60</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>87</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -93,7 +93,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>87</second>
+                      <second>60</second>
                     </item>
                   </second>
                 </item>
@@ -197,10 +197,10 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>icmp_ln87</name>
+              <name>icmp_ln60</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>87</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -215,13 +215,13 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>87</second>
+                      <second>60</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln87_fu_136_p2</rtlName>
+              <rtlName>icmp_ln60_fu_136_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -249,7 +249,7 @@
               <name>i</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>87</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -264,7 +264,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>87</second>
+                      <second>60</second>
                     </item>
                   </second>
                 </item>
@@ -295,10 +295,10 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>_ln87</name>
+              <name>_ln60</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>87</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -313,7 +313,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>87</second>
+                      <second>60</second>
                     </item>
                   </second>
                 </item>
@@ -345,10 +345,10 @@
             <Obj>
               <type>0</type>
               <id>13</id>
-              <name>zext_ln88</name>
+              <name>zext_ln61</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>88</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -363,13 +363,13 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>88</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln88_fu_148_p1</rtlName>
+              <rtlName>zext_ln61_fu_148_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -396,7 +396,7 @@
               <name>input_0_V_addr</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>88</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -411,7 +411,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>88</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
@@ -446,7 +446,7 @@
               <name>input_0_V_load</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>88</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -461,7 +461,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>88</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
@@ -494,7 +494,7 @@
               <name>sext_ln1118_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>88</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -509,7 +509,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>88</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
@@ -542,7 +542,7 @@
               <name>lhs_V</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>88</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -557,7 +557,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>88</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
@@ -592,7 +592,7 @@
               <name>mul_ln1192</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>88</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -607,7 +607,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>88</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
@@ -641,7 +641,7 @@
               <name>ret_V</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>88</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -656,7 +656,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>88</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
@@ -690,7 +690,7 @@
               <name>variance_V</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>88</lineNumber>
+              <lineNumber>61</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -705,7 +705,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>88</second>
+                      <second>61</second>
                     </item>
                   </second>
                 </item>
@@ -738,10 +738,10 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>_ln87</name>
+              <name>_ln60</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>87</lineNumber>
+              <lineNumber>60</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -756,7 +756,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>87</second>
+                      <second>60</second>
                     </item>
                   </second>
                 </item>
@@ -789,7 +789,7 @@
               <name>sext_ln1148</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -804,7 +804,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -837,7 +837,7 @@
               <name>mul_ln1148</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -852,7 +852,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -886,7 +886,7 @@
               <name>sub_ln1148</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -901,7 +901,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -935,7 +935,7 @@
               <name>tmp</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -950,7 +950,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -985,7 +985,7 @@
               <name>tmp_71</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1000,7 +1000,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -1036,7 +1036,7 @@
               <name>tmp_72</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1051,7 +1051,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -1087,7 +1087,7 @@
               <name>select_ln1148</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1102,7 +1102,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -1152,7 +1152,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                     <item>
                       <first>
@@ -1193,7 +1193,7 @@
               <name>select_ln1148_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1208,7 +1208,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -1258,7 +1258,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                     <item>
                       <first>
@@ -1299,7 +1299,7 @@
               <name>zext_ln703</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1314,7 +1314,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -1347,7 +1347,7 @@
               <name>udiv_ln703</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1362,7 +1362,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>91</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -1396,7 +1396,7 @@
               <name>zext_ln1118</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1411,7 +1411,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -1441,10 +1441,10 @@
             <Obj>
               <type>0</type>
               <id>36</id>
-              <name>_ln92</name>
+              <name>_ln65</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>92</lineNumber>
+              <lineNumber>65</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1459,7 +1459,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>92</second>
+                      <second>65</second>
                     </item>
                   </second>
                 </item>
@@ -1526,10 +1526,10 @@
             <Obj>
               <type>0</type>
               <id>39</id>
-              <name>icmp_ln92</name>
+              <name>icmp_ln65</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>92</lineNumber>
+              <lineNumber>65</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1544,13 +1544,13 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>92</second>
+                      <second>65</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln92_fu_262_p2</rtlName>
+              <rtlName>icmp_ln65_fu_262_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1578,7 +1578,7 @@
               <name>i_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>92</lineNumber>
+              <lineNumber>65</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1593,7 +1593,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>92</second>
+                      <second>65</second>
                     </item>
                   </second>
                 </item>
@@ -1624,10 +1624,10 @@
             <Obj>
               <type>0</type>
               <id>42</id>
-              <name>_ln92</name>
+              <name>_ln65</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>92</lineNumber>
+              <lineNumber>65</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1642,7 +1642,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>92</second>
+                      <second>65</second>
                     </item>
                   </second>
                 </item>
@@ -1674,10 +1674,10 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>zext_ln93</name>
+              <name>zext_ln66</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1692,13 +1692,13 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln93_fu_274_p1</rtlName>
+              <rtlName>zext_ln66_fu_274_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1725,7 +1725,7 @@
               <name>weight_V_addr</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1740,7 +1740,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -1775,7 +1775,7 @@
               <name>weight_V_load</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1790,7 +1790,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -1823,7 +1823,7 @@
               <name>sext_ln1118</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1838,7 +1838,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -1871,7 +1871,7 @@
               <name>mul_ln1118</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1886,7 +1886,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -1920,7 +1920,7 @@
               <name>input_0_V_addr_4</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1935,7 +1935,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -1970,7 +1970,7 @@
               <name>input_0_V_load_4</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1985,7 +1985,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -2018,7 +2018,7 @@
               <name>sext_ln1116</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2033,7 +2033,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -2066,7 +2066,7 @@
               <name>r_V</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2081,7 +2081,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -2115,7 +2115,7 @@
               <name>trunc_ln</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2130,7 +2130,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -2163,10 +2163,10 @@
             <Obj>
               <type>0</type>
               <id>55</id>
-              <name>input_0_V_addr_4_write_ln93</name>
+              <name>input_0_V_addr_4_write_ln66</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>66</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2181,7 +2181,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>93</second>
+                      <second>66</second>
                     </item>
                   </second>
                 </item>
@@ -2213,10 +2213,10 @@
             <Obj>
               <type>0</type>
               <id>56</id>
-              <name>_ln92</name>
+              <name>_ln65</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>92</lineNumber>
+              <lineNumber>65</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2231,7 +2231,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>92</second>
+                      <second>65</second>
                     </item>
                   </second>
                 </item>
@@ -2261,10 +2261,10 @@
             <Obj>
               <type>0</type>
               <id>58</id>
-              <name>_ln94</name>
+              <name>_ln67</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>rms_norm&amp;lt;384&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2279,7 +2279,7 @@
                         <first>./layer.h</first>
                         <second>rms_norm&amp;lt;384&amp;gt;</second>
                       </first>
-                      <second>94</second>
+                      <second>67</second>
                     </item>
                   </second>
                 </item>
@@ -6097,7 +6097,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln87_fu_136_p2 ( icmp ) </first>
+          <first>icmp_ln60_fu_136_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6120,7 +6120,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln92_fu_262_p2 ( icmp ) </first>
+          <first>icmp_ln65_fu_262_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6862,7 +6862,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln87_fu_136_p2 ( icmp ) </first>
+          <first>icmp_ln60_fu_136_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6870,7 +6870,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln92_fu_262_p2 ( icmp ) </first>
+          <first>icmp_ln65_fu_262_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -7726,7 +7726,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln87_fu_136</first>
+        <first>icmp_ln60_fu_136</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7734,7 +7734,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln92_fu_262</first>
+        <first>icmp_ln65_fu_262</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7918,15 +7918,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln703_fu_249</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>33</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln88_fu_148</first>
+        <first>zext_ln61_fu_148</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7934,11 +7926,19 @@
         </second>
       </item>
       <item>
-        <first>zext_ln93_fu_274</first>
+        <first>zext_ln66_fu_274</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>45</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln703_fu_249</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>33</item>
         </second>
       </item>
     </dp_fu_nodes_expression>

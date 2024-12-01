@@ -27914,18 +27914,6 @@ const attn_fixed_t hidden_states[1][384] = {
 
 
 
-template <int C, typename T>
-void init_1d_mem (
-  T mem[C],
-  T val
-) {
-  INIT_1D_MEM_LOOP_1: for (int i = 0; i < C; i++)
-    mem[i] = val;
-}
-
-
-
-
 template <int R, int C, typename T>
 void init_2d_mem (
   T mem[R][C],
@@ -27956,7 +27944,10 @@ void init_3d_mem (
 attn_fixed_t attention_abs(attn_fixed_t a) {
   return (a < (attn_fixed_t)0.0) ? (attn_fixed_t)(-a) : a;
 }
-# 80 "./layer.h"
+
+
+
+
 template <int C>
 void rms_norm(
   attn_fixed_t input[C],
@@ -28017,7 +28008,7 @@ void quantize_activation(
           int j = jo * (C/24) + ji;
           QUANTIZE_ACTIVATION_LOOP_5: for (int k = 0; k < 4; k++){
 _ssdm_Unroll(0,0,0, "");
-# 138 "./layer.h"
+# 111 "./layer.h"
 
             sbit32_t quantized_value = attention_round(input[i][(j << 2) + k] * scale);
             sbit8_t quantized_value_clamped = (quantized_value < Qn) ? Qn : ((quantized_value > Qp) ? Qp : quantized_value);
@@ -28044,7 +28035,7 @@ void linear_forward_no_mul (
     LINEAR_FORWARD_NO_MUL_LOOP_2: for (int j = 0; j < OUT_C; j++) {
       LINEAR_FORWARD_NO_MUL_LOOP_3: for (int ko = 0; ko < (IN_C/4)/(IN_C/24); ko++) {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
-# 162 "./layer.h"
+# 135 "./layer.h"
 
         LINEAR_FORWARD_NO_MUL_LOOP_4: for (int ki = 0; ki < (IN_C/24); ki++) {
           int k = ko * (IN_C/24) + ki;
@@ -28163,7 +28154,6 @@ template <
   GEMM_3D_FLOAT_LOOP_1: for (int i = 0; i < P1; i++) {
     GEMM_3D_FLOAT_LOOP_2: for (int j = 0; j < R1; j++) {
       GEMM_3D_FLOAT_LOOP_3: for (int k = 0; k < C2; k++) {
-        output[i][j][k] = 0;
         GEMM_3D_FLOAT_LOOP_4: for (int l = 0; l < C1; l++)
           output[i][j][k] += input_1[i][j][l] * input_2[i][l][k];
       }
@@ -28199,7 +28189,6 @@ void softmax (
       sum = 0.0;
       SOFTMAX_LOOP_4: for (int k = 0; k < C; k++) {
         attn_fixed_t x = input[i][j][k] - max_val;
-
         input[i][j][k] = hls::exp(x);
         sum += input[i][j][k];
       }
@@ -28315,8 +28304,6 @@ _ssdm_SpecArrayPartition( quantized_hidden_states, 2, "CYCLIC", 16, "");
 
   attn_fixed_t scales[SEQ_LEN];
 
-  init_1d_mem<SEQ_LEN, attn_fixed_t>(scales, 1);
-
   quantize_activation<SEQ_LEN, HS_COLS>(
     hidden_states,
     quantized_hidden_states,
@@ -28378,11 +28365,13 @@ _ssdm_SpecArrayPartition( quantized_hidden_states, 2, "CYCLIC", 16, "");
     v_cache, v_cache_upd, v_proj
   );
 
+
   attn_fixed_t k_proj_transposed[NUM_HEADS][HEAD_DIM][CACHE_SIZE_INIT+1];
   transpose_last_two_dims<CACHE_SIZE_INIT+1, NUM_HEADS, HEAD_DIM>(k_cache_upd, k_proj_transposed);
 
 
   attn_fixed_t attn_weights[NUM_HEADS][SEQ_LEN][CACHE_SIZE_INIT+1];
+  init_3d_mem<NUM_HEADS, SEQ_LEN, CACHE_SIZE_INIT+1, attn_fixed_t>(attn_weights, 0);
   GEMM_3D_float<
     NUM_HEADS,
     SEQ_LEN,
@@ -28413,6 +28402,7 @@ _ssdm_SpecArrayPartition( quantized_hidden_states, 2, "CYCLIC", 16, "");
 
 
   attn_fixed_t attn_output[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+  init_3d_mem<NUM_HEADS, SEQ_LEN, HEAD_DIM, attn_fixed_t>(attn_output, 0);
   GEMM_3D_float<
     NUM_HEADS,
     SEQ_LEN,
@@ -28427,7 +28417,6 @@ _ssdm_SpecArrayPartition( quantized_hidden_states, 2, "CYCLIC", 16, "");
   );
 
   attn_fixed_t attn_output_2D[SEQ_LEN][PROJ_COLS];
-  init_2d_mem<SEQ_LEN, PROJ_COLS, attn_fixed_t>(attn_output_2D, 0);
   ATTN_2D_LOOP_1: for (int s = 0; s < SEQ_LEN; ++s)
     ATTN_2D_LOOP_2: for (int h = 0; h < NUM_HEADS; ++h)
       ATTN_2D_LOOP_3: for (int d = 0; d < HEAD_DIM; ++d)
@@ -28451,7 +28440,6 @@ _ssdm_SpecArrayPartition( quantized_final_output, 2, "CYCLIC", 16, "");
 # 224 "attention.cpp"
 
   attn_fixed_t final_scales[SEQ_LEN];
-  init_1d_mem<SEQ_LEN, attn_fixed_t>(final_scales, 1);
   quantize_activation<SEQ_LEN, PROJ_COLS>(
     attn_output_2D,
     quantized_final_output,

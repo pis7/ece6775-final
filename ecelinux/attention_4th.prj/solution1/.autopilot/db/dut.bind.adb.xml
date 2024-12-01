@@ -88,7 +88,7 @@ arrayctor.loop4.preheader:1  %empty_98 = call i32 (...)* @_ssdm_op_SpecInterface
 
 <Node id="151" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-arrayctor.loop4.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_in_V_V), !map !571
+arrayctor.loop4.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_in_V_V), !map !573
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -103,7 +103,7 @@ arrayctor.loop4.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_i
 
 <Node id="152" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-arrayctor.loop4.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_out_V_V), !map !575
+arrayctor.loop4.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_out_V_V), !map !577
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>

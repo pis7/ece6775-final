@@ -58,7 +58,7 @@ struct rms_norm_384_s : public sc_module {
     sc_signal< sc_lv<9> > i_fu_142_p2;
     sc_signal< sc_lv<9> > i_reg_310;
     sc_signal< sc_logic > ap_CS_fsm_state2;
-    sc_signal< sc_lv<1> > icmp_ln87_fu_136_p2;
+    sc_signal< sc_lv<1> > icmp_ln60_fu_136_p2;
     sc_signal< sc_lv<56> > mul_ln1192_fu_167_p2;
     sc_signal< sc_lv<56> > mul_ln1192_reg_325;
     sc_signal< sc_logic > ap_CS_fsm_state4;
@@ -80,7 +80,7 @@ struct rms_norm_384_s : public sc_module {
     sc_signal< sc_lv<9> > i_1_fu_268_p2;
     sc_signal< sc_lv<9> > i_1_reg_369;
     sc_signal< sc_logic > ap_CS_fsm_state64;
-    sc_signal< sc_lv<1> > icmp_ln92_fu_262_p2;
+    sc_signal< sc_lv<1> > icmp_ln65_fu_262_p2;
     sc_signal< sc_lv<9> > input_0_V_addr_4_reg_379;
     sc_signal< sc_lv<40> > weight_V_load_reg_384;
     sc_signal< sc_logic > ap_CS_fsm_state65;
@@ -94,8 +94,8 @@ struct rms_norm_384_s : public sc_module {
     sc_signal< sc_lv<9> > i1_0_reg_116;
     sc_signal< sc_logic > ap_CS_fsm_state72;
     sc_signal< sc_logic > ap_CS_fsm_state8;
-    sc_signal< sc_lv<64> > zext_ln88_fu_148_p1;
-    sc_signal< sc_lv<64> > zext_ln93_fu_274_p1;
+    sc_signal< sc_lv<64> > zext_ln61_fu_148_p1;
+    sc_signal< sc_lv<64> > zext_ln66_fu_274_p1;
     sc_signal< sc_lv<42> > grp_fu_157_p1;
     sc_signal< sc_lv<40> > mul_ln1192_fu_167_p0;
     sc_signal< sc_lv<56> > sext_ln1118_1_fu_163_p1;
@@ -254,8 +254,8 @@ struct rms_norm_384_s : public sc_module {
     void thread_grp_fu_252_p10();
     void thread_i_1_fu_268_p2();
     void thread_i_fu_142_p2();
-    void thread_icmp_ln87_fu_136_p2();
-    void thread_icmp_ln92_fu_262_p2();
+    void thread_icmp_ln60_fu_136_p2();
+    void thread_icmp_ln65_fu_262_p2();
     void thread_input_0_V_address0();
     void thread_input_0_V_ce0();
     void thread_input_0_V_d0();
@@ -278,8 +278,8 @@ struct rms_norm_384_s : public sc_module {
     void thread_weight_V_address0();
     void thread_weight_V_ce0();
     void thread_zext_ln1118_fu_258_p1();
-    void thread_zext_ln88_fu_148_p1();
-    void thread_zext_ln93_fu_274_p1();
+    void thread_zext_ln61_fu_148_p1();
+    void thread_zext_ln66_fu_274_p1();
     void thread_ap_NS_fsm();
 };
 
