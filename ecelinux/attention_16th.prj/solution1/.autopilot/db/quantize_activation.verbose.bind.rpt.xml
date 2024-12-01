@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'quantize_activation'" level="0">
-<item name = "Date">Fri Nov 29 11:42:49 2024
+<item name = "Date">Sun Dec  1 00:59:51 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">812, 812, 8.120 us, 8.120 us, 812, 812, none</column>
+<column name="">488, 488, 4.880 us, 4.880 us, 488, 488, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -36,7 +36,8 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- QUANTIZE_ACTIVATION_LOOP_2">285, 285, 3, -, -, 95, no</column>
-<column name="- QUANTIZE_ACTIVATION_LOOP_3">480, 480, 5, -, -, 96, no</column>
+<column name="- QUANTIZE_ACTIVATION_LOOP_3">156, 156, 26, -, -, 6, no</column>
+<column name=" + QUANTIZE_ACTIVATION_LOOP_4">24, 24, 6, -, -, 4, no</column>
 </table>
 </item>
 </section>

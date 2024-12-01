@@ -424,7 +424,7 @@ struct sqrt_fixed_42_26_s : public sc_module {
     sc_signal< sc_lv<1> > tmp_fu_382_p3;
     sc_signal< sc_lv<29> > x_l_I_V_fu_374_p1;
     sc_signal< sc_lv<3> > select_ln248_fu_390_p3;
-    sc_signal< sc_lv<29> > p_Result_s_79_fu_398_p5;
+    sc_signal< sc_lv<29> > p_Result_s_81_fu_398_p5;
     sc_signal< sc_lv<13> > select_ln488_fu_410_p3;
     sc_signal< sc_lv<2> > p_Result_25_1_fu_426_p4;
     sc_signal< sc_lv<29> > select_ln488_1_fu_418_p3;
@@ -1210,7 +1210,7 @@ struct sqrt_fixed_42_26_s : public sc_module {
     void thread_p_Result_34_6_fu_2268_p4();
     void thread_p_Result_34_7_fu_2387_p4();
     void thread_p_Result_34_8_fu_2513_p4();
-    void thread_p_Result_s_79_fu_398_p5();
+    void thread_p_Result_s_81_fu_398_p5();
     void thread_p_Result_s_fu_4047_p3();
     void thread_p_Val2_s_fu_4226_p3();
     void thread_p_neg_10_fu_2988_p3();

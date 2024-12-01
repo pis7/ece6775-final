@@ -239,7 +239,7 @@ architecture behav of exp_40_24_s is
     signal zext_ln703_4_fu_781_p1 : STD_LOGIC_VECTOR (49 downto 0);
     signal and_ln_fu_793_p4 : STD_LOGIC_VECTOR (39 downto 0);
     signal y_l_V_fu_784_p2 : STD_LOGIC_VECTOR (49 downto 0);
-    signal tmp_59_fu_807_p4 : STD_LOGIC_VECTOR (38 downto 0);
+    signal tmp_58_fu_807_p4 : STD_LOGIC_VECTOR (38 downto 0);
     signal or_ln281_18_fu_789_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal add_ln282_fu_801_p2 : STD_LOGIC_VECTOR (39 downto 0);
     signal zext_ln708_fu_817_p1 : STD_LOGIC_VECTOR (39 downto 0);
@@ -366,7 +366,7 @@ begin
         ce0 => exp_x_msb_1_table_V_ce0,
         q0 => exp_x_msb_1_table_V_q0);
 
-    dut_mul_50ns_47nspcA_U42 : component dut_mul_50ns_47nspcA
+    dut_mul_50ns_47nspcA_U52 : component dut_mul_50ns_47nspcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -381,7 +381,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_692_p2);
 
-    dut_mul_50ns_50nsqcK_U43 : component dut_mul_50ns_50nsqcK
+    dut_mul_50ns_50nsqcK_U53 : component dut_mul_50ns_50nsqcK
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -768,7 +768,7 @@ begin
     rhs_V_1_fu_722_p4 <= ((ret_V_reg_876_pp0_iter3_reg & trunc_ln612_2_reg_882_pp0_iter3_reg) & ap_const_lv6_0);
     rhs_V_3_fu_668_p5 <= (((tmp_V_1_reg_846_pp0_iter1_reg & ap_const_lv7_0) & f_x_msb_3_V_reg_871) & ap_const_lv3_0);
     rhs_V_fu_655_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_V_reg_841),9));
-    tmp_59_fu_807_p4 <= y_l_V_fu_784_p2(49 downto 11);
+    tmp_58_fu_807_p4 <= y_l_V_fu_784_p2(49 downto 11);
     tmp_V_1_fu_501_p1 <= x_V(5 - 1 downto 0);
     tmp_V_fu_491_p4 <= x_V(12 downto 5);
     tmp_fu_207_p3 <= x_V(39 downto 39);
@@ -799,7 +799,7 @@ begin
     zext_ln544_fu_505_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_V_1_fu_501_p1),64));
     zext_ln703_4_fu_781_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(y_lo_s_V_reg_934),50));
     zext_ln703_fu_740_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(rhs_V_3_reg_888_pp0_iter3_reg),57));
-    zext_ln708_fu_817_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_59_fu_807_p4),40));
+    zext_ln708_fu_817_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_58_fu_807_p4),40));
     zext_ln727_fu_181_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(x_V),47));
     zext_ln728_fu_730_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(rhs_V_1_fu_722_p4),57));
 end behav;

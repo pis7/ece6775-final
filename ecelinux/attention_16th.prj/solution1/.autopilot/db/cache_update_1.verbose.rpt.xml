@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'cache_update_1'" level="0">
-<item name = "Date">Fri Nov 29 11:43:02 2024
+<item name = "Date">Sun Dec  1 01:00:09 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -83,21 +83,21 @@
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln203_4_fu_346_p2">+, 0, 0, 13, 11, 11</column>
 <column name="add_ln203_fu_275_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln238_1_fu_240_p2">+, 0, 0, 15, 6, 6</column>
-<column name="add_ln238_2_fu_336_p2">+, 0, 0, 17, 13, 13</column>
-<column name="add_ln238_3_fu_351_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln238_fu_162_p2">+, 0, 0, 15, 6, 6</column>
+<column name="add_ln245_1_fu_240_p2">+, 0, 0, 15, 6, 6</column>
+<column name="add_ln245_2_fu_336_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln245_3_fu_351_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln245_fu_162_p2">+, 0, 0, 15, 6, 6</column>
 <column name="i_fu_140_p2">+, 0, 0, 12, 3, 1</column>
 <column name="j_fu_226_p2">+, 0, 0, 12, 3, 1</column>
 <column name="k_fu_318_p2">+, 0, 0, 15, 5, 1</column>
 <column name="sub_ln203_4_fu_300_p2">-, 0, 0, 13, 11, 11</column>
 <column name="sub_ln203_fu_196_p2">-, 0, 0, 15, 7, 7</column>
-<column name="sub_ln238_1_fu_269_p2">-, 0, 0, 17, 13, 13</column>
-<column name="sub_ln238_fu_214_p2">-, 0, 0, 15, 8, 8</column>
-<column name="icmp_ln235_fu_134_p2">icmp, 0, 0, 9, 3, 4</column>
-<column name="icmp_ln236_fu_220_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="icmp_ln237_fu_312_p2">icmp, 0, 0, 11, 5, 5</column>
-<column name="icmp_ln238_fu_306_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="sub_ln245_1_fu_269_p2">-, 0, 0, 17, 13, 13</column>
+<column name="sub_ln245_fu_214_p2">-, 0, 0, 15, 8, 8</column>
+<column name="icmp_ln242_fu_134_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln243_fu_220_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln244_fu_312_p2">icmp, 0, 0, 11, 5, 5</column>
+<column name="icmp_ln245_fu_306_p2">icmp, 0, 0, 9, 3, 3</column>
 <column name="cache_out_V_d0">select, 0, 0, 40, 1, 40</column>
 </table>
 </item>
@@ -112,19 +112,19 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="add_ln203_4_reg_436">11, 0, 11, 0</column>
-<column name="add_ln238_reg_385">6, 0, 6, 0</column>
+<column name="add_ln245_reg_385">6, 0, 6, 0</column>
 <column name="ap_CS_fsm">5, 0, 5, 0</column>
 <column name="i_0_reg_101">3, 0, 3, 0</column>
 <column name="i_reg_380">3, 0, 3, 0</column>
-<column name="icmp_ln238_reg_418">1, 0, 1, 0</column>
+<column name="icmp_ln245_reg_418">1, 0, 1, 0</column>
 <column name="j_0_reg_112">3, 0, 3, 0</column>
 <column name="j_reg_403">3, 0, 3, 0</column>
 <column name="k_0_reg_123">5, 0, 5, 0</column>
 <column name="k_reg_426">5, 0, 5, 0</column>
 <column name="sext_ln203_reg_390">7, 0, 8, 1</column>
 <column name="sub_ln203_4_reg_413">8, 0, 11, 3</column>
-<column name="sub_ln238_1_reg_408">10, 0, 13, 3</column>
-<column name="sub_ln238_reg_395">5, 0, 8, 3</column>
+<column name="sub_ln245_1_reg_408">10, 0, 13, 3</column>
+<column name="sub_ln245_reg_395">5, 0, 8, 3</column>
 </table>
 </item>
 </section>

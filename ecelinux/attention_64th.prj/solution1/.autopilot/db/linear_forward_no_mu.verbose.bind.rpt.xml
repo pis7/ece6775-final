@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'linear_forward_no_mu'" level="0">
-<item name = "Date">Fri Nov 29 11:44:38 2024
+<item name = "Date">Sun Dec  1 01:11:11 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_64th.prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2737, 4033, 27.370 us, 40.330 us, 2737, 4033, none</column>
+<column name="">510, 510, 5.100 us, 5.100 us, 510, 510, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,9 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- LINEAR_FORWARD_NO_MUL_LOOP_2">2736, 4032, 114 ~ 168, -, -, 24, no</column>
-<column name=" + LINEAR_FORWARD_NO_MUL_LOOP_3">36, 90, 6 ~ 15, -, -, 6, no</column>
-<column name="  ++ LINEAR_FORWARD_NO_MUL_LOOP_4">3, 12, 3, -, -, 1 ~ 4, no</column>
+<column name="- LINEAR_FORWARD_NO_MUL_LOOP_2_LINEAR_FORWARD_NO_MUL_LOOP_3">508, 508, 80, 3, 1, 144, yes</column>
 </table>
 </item>
 </section>

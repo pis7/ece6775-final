@@ -3182,7 +3182,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>r.V</originalName>
-              <rtlName>dut_mul_50ns_47nspcA_U42</rtlName>
+              <rtlName>dut_mul_50ns_47nspcA_U52</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>97</bitwidth>
@@ -3868,7 +3868,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>r.V</originalName>
-              <rtlName>dut_mul_50ns_50nsqcK_U43</rtlName>
+              <rtlName>dut_mul_50ns_50nsqcK_U53</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>100</bitwidth>
@@ -5219,7 +5219,7 @@
             <Obj>
               <type>0</type>
               <id>114</id>
-              <name>tmp_59</name>
+              <name>tmp_58</name>
               <fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>468</lineNumber>
@@ -5243,7 +5243,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_59_fu_807_p4</rtlName>
+              <rtlName>tmp_58_fu_807_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>39</bitwidth>
@@ -8776,7 +8776,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>dut_mul_50ns_47nspcA_U42 (dut_mul_50ns_47nspcA)</first>
+          <first>dut_mul_50ns_47nspcA_U52 (dut_mul_50ns_47nspcA)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -8795,7 +8795,7 @@
           </second>
         </item>
         <item>
-          <first>dut_mul_50ns_50nsqcK_U43 (dut_mul_50ns_50nsqcK)</first>
+          <first>dut_mul_50ns_50nsqcK_U53 (dut_mul_50ns_50nsqcK)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -10530,14 +10530,14 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>dut_mul_50ns_47nspcA_U42</first>
+          <first>dut_mul_50ns_47nspcA_U52</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>dut_mul_50ns_50nsqcK_U43</first>
+          <first>dut_mul_50ns_50nsqcK_U53</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -10548,7 +10548,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>dut_mul_50ns_47nspcA_U42 (dut_mul_50ns_47nspcA)</first>
+          <first>dut_mul_50ns_47nspcA_U52 (dut_mul_50ns_47nspcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10556,7 +10556,7 @@
           </second>
         </item>
         <item>
-          <first>dut_mul_50ns_50nsqcK_U43 (dut_mul_50ns_50nsqcK)</first>
+          <first>dut_mul_50ns_50nsqcK_U53 (dut_mul_50ns_50nsqcK)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13156,7 +13156,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_59_fu_807</first>
+        <first>tmp_58_fu_807</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

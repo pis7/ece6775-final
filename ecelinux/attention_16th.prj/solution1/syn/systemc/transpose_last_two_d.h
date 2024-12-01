@@ -46,7 +46,7 @@ struct transpose_last_two_d : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state2;
     sc_signal< sc_lv<8> > sext_ln203_fu_160_p1;
     sc_signal< sc_lv<8> > sext_ln203_reg_315;
-    sc_signal< sc_lv<1> > icmp_ln249_fu_114_p2;
+    sc_signal< sc_lv<1> > icmp_ln256_fu_114_p2;
     sc_signal< sc_lv<10> > sext_ln203_1_fu_182_p1;
     sc_signal< sc_lv<10> > sext_ln203_1_reg_320;
     sc_signal< sc_lv<3> > j_fu_192_p2;
@@ -54,13 +54,13 @@ struct transpose_last_two_d : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_lv<11> > zext_ln203_4_fu_198_p1;
     sc_signal< sc_lv<11> > zext_ln203_4_reg_333;
-    sc_signal< sc_lv<1> > icmp_ln250_fu_186_p2;
+    sc_signal< sc_lv<1> > icmp_ln257_fu_186_p2;
     sc_signal< sc_lv<11> > sub_ln203_2_fu_231_p2;
     sc_signal< sc_lv<11> > sub_ln203_2_reg_338;
     sc_signal< sc_lv<5> > k_fu_243_p2;
     sc_signal< sc_lv<5> > k_reg_346;
     sc_signal< sc_logic > ap_CS_fsm_state4;
-    sc_signal< sc_lv<1> > icmp_ln251_fu_237_p2;
+    sc_signal< sc_lv<1> > icmp_ln258_fu_237_p2;
     sc_signal< sc_lv<11> > add_ln203_3_fu_298_p2;
     sc_signal< sc_lv<11> > add_ln203_3_reg_356;
     sc_signal< sc_lv<3> > i_0_reg_81;
@@ -129,9 +129,9 @@ struct transpose_last_two_d : public sc_module {
     void thread_ap_idle();
     void thread_ap_ready();
     void thread_i_fu_120_p2();
-    void thread_icmp_ln249_fu_114_p2();
-    void thread_icmp_ln250_fu_186_p2();
-    void thread_icmp_ln251_fu_237_p2();
+    void thread_icmp_ln256_fu_114_p2();
+    void thread_icmp_ln257_fu_186_p2();
+    void thread_icmp_ln258_fu_237_p2();
     void thread_input_V_address0();
     void thread_input_V_ce0();
     void thread_j_fu_192_p2();

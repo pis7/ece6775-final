@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'apply_rotary_pos_emb'" level="0">
-<item name = "Date">Fri Nov 29 11:43:01 2024
+<item name = "Date">Sun Dec  1 01:00:08 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -85,28 +85,28 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="mul_ln1118_1_fu_502_p2">*, 2, 0, 29, 17, 40</column>
-<column name="mul_ln1118_2_fu_512_p2">*, 2, 0, 29, 17, 40</column>
-<column name="mul_ln1118_3_fu_521_p2">*, 2, 0, 29, 17, 40</column>
+<column name="mul_ln1118_4_fu_502_p2">*, 2, 0, 29, 17, 40</column>
+<column name="mul_ln1118_5_fu_512_p2">*, 2, 0, 29, 17, 40</column>
+<column name="mul_ln1118_6_fu_521_p2">*, 2, 0, 29, 17, 40</column>
 <column name="mul_ln1118_fu_490_p2">*, 2, 0, 29, 17, 40</column>
 <column name="add_ln1116_fu_470_p2">+, 0, 0, 15, 8, 8</column>
 <column name="add_ln1192_1_fu_542_p2">+, 0, 0, 63, 56, 56</column>
 <column name="add_ln1192_fu_527_p2">+, 0, 0, 63, 56, 56</column>
 <column name="add_ln1265_fu_385_p2">+, 0, 0, 15, 8, 8</column>
 <column name="add_ln203_fu_364_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln204_fu_354_p2">+, 0, 0, 13, 4, 1</column>
-<column name="add_ln205_fu_375_p2">+, 0, 0, 15, 5, 4</column>
-<column name="add_ln216_fu_454_p2">+, 0, 0, 15, 5, 1</column>
+<column name="add_ln211_fu_354_p2">+, 0, 0, 13, 4, 1</column>
+<column name="add_ln212_fu_375_p2">+, 0, 0, 15, 5, 4</column>
+<column name="add_ln223_fu_454_p2">+, 0, 0, 15, 5, 1</column>
 <column name="i_2_fu_416_p2">+, 0, 0, 12, 3, 1</column>
 <column name="i_fu_312_p2">+, 0, 0, 12, 3, 1</column>
 <column name="sub_ln1116_fu_442_p2">-, 0, 0, 15, 8, 8</column>
 <column name="sub_ln1265_fu_338_p2">-, 0, 0, 15, 8, 8</column>
 <column name="sub_ln703_35_fu_403_p2">-, 0, 0, 47, 1, 40</column>
 <column name="sub_ln703_fu_396_p2">-, 0, 0, 47, 1, 40</column>
-<column name="icmp_ln202_fu_306_p2">icmp, 0, 0, 9, 3, 4</column>
-<column name="icmp_ln204_fu_348_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="icmp_ln214_fu_410_p2">icmp, 0, 0, 9, 3, 4</column>
-<column name="icmp_ln216_fu_448_p2">icmp, 0, 0, 11, 5, 5</column>
+<column name="icmp_ln209_fu_306_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln211_fu_348_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="icmp_ln221_fu_410_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln223_fu_448_p2">icmp, 0, 0, 11, 5, 5</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -126,8 +126,8 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln204_reg_574">4, 0, 4, 0</column>
-<column name="add_ln216_reg_627">5, 0, 5, 0</column>
+<column name="add_ln211_reg_574">4, 0, 4, 0</column>
+<column name="add_ln223_reg_627">5, 0, 5, 0</column>
 <column name="ap_CS_fsm">10, 0, 10, 0</column>
 <column name="cos_tab_V_5_load_reg_668">17, 0, 17, 0</column>
 <column name="i14_0_reg_276">3, 0, 3, 0</column>
@@ -136,9 +136,9 @@
 <column name="i_reg_560">3, 0, 3, 0</column>
 <column name="k16_0_0_reg_287">5, 0, 5, 0</column>
 <column name="k_0_0_reg_265">4, 0, 4, 0</column>
-<column name="mul_ln1118_1_reg_693">56, 0, 56, 0</column>
-<column name="mul_ln1118_2_reg_698">56, 0, 56, 0</column>
-<column name="mul_ln1118_3_reg_703">56, 0, 56, 0</column>
+<column name="mul_ln1118_4_reg_693">56, 0, 56, 0</column>
+<column name="mul_ln1118_5_reg_698">56, 0, 56, 0</column>
+<column name="mul_ln1118_6_reg_703">56, 0, 56, 0</column>
 <column name="mul_ln1118_reg_688">56, 0, 56, 0</column>
 <column name="reg_298">40, 0, 40, 0</column>
 <column name="reg_302">40, 0, 40, 0</column>

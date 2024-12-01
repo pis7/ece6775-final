@@ -41,7 +41,7 @@ VERILOG_DIR="$plusarg.prj/solution1/syn/verilog"
 
 # The generated bitstream file
 GENFILE="$WORKDIR/xillybus/vivado/xillydemo.runs/impl_1/xillydemo.bit"
-OUTFILE="$plusarg.prj/$plusarg.bit"
+OUTFILE="$plusarg.prj/xillydemo.bit"
 
 # Check here for synthesis errors
 LOGFILE="$WORKDIR/xillybus/vivado/xillydemo.runs/synth_1/runme.log"

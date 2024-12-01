@@ -211,7 +211,7 @@ dut_sdiv_56ns_40spcA #(
     .din0_WIDTH( 56 ),
     .din1_WIDTH( 40 ),
     .dout_WIDTH( 40 ))
-dut_sdiv_56ns_40spcA_U57(
+dut_sdiv_56ns_40spcA_U188(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_334_ap_start),

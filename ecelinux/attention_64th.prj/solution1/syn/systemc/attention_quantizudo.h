@@ -19,8 +19,8 @@ using namespace sc_dt;
 struct attention_quantizudo_ram : public sc_core::sc_module {
 
   static const unsigned DataWidth = 8;
-  static const unsigned AddressRange = 24;
-  static const unsigned AddressWidth = 5;
+  static const unsigned AddressRange = 6;
+  static const unsigned AddressWidth = 3;
 
 //latency = 1
 //input_reg = 1
@@ -76,8 +76,8 @@ SC_MODULE(attention_quantizudo) {
 
 
 static const unsigned DataWidth = 8;
-static const unsigned AddressRange = 24;
-static const unsigned AddressWidth = 5;
+static const unsigned AddressRange = 6;
+static const unsigned AddressWidth = 3;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in<sc_logic> ce0;

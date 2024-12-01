@@ -11,8 +11,8 @@ entity attention_quantizudo_ram is
     generic(
             MEM_TYPE    : string := "distributed"; 
             DWIDTH     : integer := 8; 
-            AWIDTH     : integer := 5; 
-            MEM_SIZE    : integer := 24
+            AWIDTH     : integer := 3; 
+            MEM_SIZE    : integer := 6
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -72,8 +72,8 @@ use IEEE.std_logic_1164.all;
 entity attention_quantizudo is
     generic (
         DataWidth : INTEGER := 8;
-        AddressRange : INTEGER := 24;
-        AddressWidth : INTEGER := 5);
+        AddressRange : INTEGER := 6;
+        AddressWidth : INTEGER := 3);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;

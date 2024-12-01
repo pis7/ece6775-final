@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'exp_40_24_s'
 ================================================================
-* Date:           Sat Nov 30 21:05:06 2024
+* Date:           Sun Dec  1 01:25:36 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_4th.prj
@@ -65,14 +65,14 @@
 
 + Detail: 
     * Instance: 
-    +--------------------------+----------------------+---------+-------+-----+----+-----+
-    |         Instance         |        Module        | BRAM_18K| DSP48E|  FF | LUT| URAM|
-    +--------------------------+----------------------+---------+-------+-----+----+-----+
-    |dut_mul_50ns_47nsncg_U49  |dut_mul_50ns_47nsncg  |        0|      9|  237|  87|    0|
-    |dut_mul_50ns_50nsocq_U50  |dut_mul_50ns_50nsocq  |        0|      9|  237|  87|    0|
-    +--------------------------+----------------------+---------+-------+-----+----+-----+
-    |Total                     |                      |        0|     18|  474| 174|    0|
-    +--------------------------+----------------------+---------+-------+-----+----+-----+
+    +---------------------------+----------------------+---------+-------+-----+----+-----+
+    |          Instance         |        Module        | BRAM_18K| DSP48E|  FF | LUT| URAM|
+    +---------------------------+----------------------+---------+-------+-----+----+-----+
+    |dut_mul_50ns_47nsncg_U180  |dut_mul_50ns_47nsncg  |        0|      9|  237|  87|    0|
+    |dut_mul_50ns_50nsocq_U181  |dut_mul_50ns_50nsocq  |        0|      9|  237|  87|    0|
+    +---------------------------+----------------------+---------+-------+-----+----+-----+
+    |Total                      |                      |        0|     18|  474| 174|    0|
+    +---------------------------+----------------------+---------+-------+-----+----+-----+
 
     * DSP48E: 
     N/A
@@ -282,8 +282,8 @@ ST_1 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_6)  
 ST_1 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_6)   --->   "%xor_ln278_8 = xor i1 %tmp, %p_Result_8" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:278]   --->   Operation 32 'xor' 'xor_ln278_8' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_6)   --->   "%p_Result_9 = call i1 @_ssdm_op_BitSelect.i1.i47.i32(i47 %zext_ln727, i32 29)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:278]   --->   Operation 33 'bitselect' 'p_Result_9' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_6)   --->   "%xor_ln278_9 = xor i1 %tmp, %p_Result_9" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:278]   --->   Operation 34 'xor' 'xor_ln278_9' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_12)   --->   "%p_Result_s_101 = call i1 @_ssdm_op_BitSelect.i1.i47.i32(i47 %zext_ln727, i32 30)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:278]   --->   Operation 35 'bitselect' 'p_Result_s_101' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_12)   --->   "%xor_ln278_10 = xor i1 %tmp, %p_Result_s_101" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:278]   --->   Operation 36 'xor' 'xor_ln278_10' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_12)   --->   "%p_Result_s_97 = call i1 @_ssdm_op_BitSelect.i1.i47.i32(i47 %zext_ln727, i32 30)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:278]   --->   Operation 35 'bitselect' 'p_Result_s_97' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_12)   --->   "%xor_ln278_10 = xor i1 %tmp, %p_Result_s_97" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:278]   --->   Operation 36 'xor' 'xor_ln278_10' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_12)   --->   "%p_Result_10 = call i1 @_ssdm_op_BitSelect.i1.i47.i32(i47 %zext_ln727, i32 31)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:278]   --->   Operation 37 'bitselect' 'p_Result_10' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_12)   --->   "%xor_ln278_11 = xor i1 %tmp, %p_Result_10" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:278]   --->   Operation 38 'xor' 'xor_ln278_11' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node or_ln281_11)   --->   "%p_Result_11 = call i1 @_ssdm_op_BitSelect.i1.i47.i32(i47 %zext_ln727, i32 32)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:278]   --->   Operation 39 'bitselect' 'p_Result_11' <Predicate = true> <Delay = 0.00>
@@ -375,14 +375,14 @@ ST_7 : Operation 112 [1/2] (8.62ns)   --->   "%r_V_5 = mul i100 %zext_ln1118_1, 
 ST_7 : Operation 113 [1/1] (0.00ns)   --->   "%y_lo_s_V = call i48 @_ssdm_op_PartSelect.i48.i100.i32.i32(i100 %r_V_5, i32 52, i32 99)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:448]   --->   Operation 113 'partselect' 'y_lo_s_V' <Predicate = true> <Delay = 0.00>
 
 State 8 <SV = 7> <Delay = 4.72>
-ST_8 : Operation 114 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str16) nounwind" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41]   --->   Operation 114 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 114 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41]   --->   Operation 114 'specpipeline' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 115 [1/1] (0.00ns)   --->   "%zext_ln703_4 = zext i48 %y_lo_s_V to i50" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:449]   --->   Operation 115 'zext' 'zext_ln703_4' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 116 [1/1] (3.15ns)   --->   "%y_l_V = add i50 %exp_x_msb_1_V, %zext_ln703_4" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:449]   --->   Operation 116 'add' 'y_l_V' <Predicate = true> <Delay = 3.15> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.15> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 117 [1/1] (0.00ns) (grouped into LUT with out node r_V_3)   --->   "%or_ln281_18 = or i1 %or_ln281_17, %or_ln281_8" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:281]   --->   Operation 117 'or' 'or_ln281_18' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 118 [1/1] (0.00ns)   --->   "%and_ln = call i40 @_ssdm_op_BitConcatenate.i40.i1.i38.i1(i1 %tmp, i38 0, i1 %tmp)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:282]   --->   Operation 118 'bitconcatenate' 'and_ln' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 119 [1/1] (2.87ns)   --->   "%add_ln282 = add i40 549755813887, %and_ln" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:282]   --->   Operation 119 'add' 'add_ln282' <Predicate = true> <Delay = 2.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 3.15> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 120 [1/1] (0.00ns) (grouped into LUT with out node r_V_3)   --->   "%tmp_90 = call i39 @_ssdm_op_PartSelect.i39.i50.i32.i32(i50 %y_l_V, i32 11, i32 49)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:468]   --->   Operation 120 'partselect' 'tmp_90' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 121 [1/1] (0.00ns) (grouped into LUT with out node r_V_3)   --->   "%zext_ln708 = zext i39 %tmp_90 to i40" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:468]   --->   Operation 121 'zext' 'zext_ln708' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 120 [1/1] (0.00ns) (grouped into LUT with out node r_V_3)   --->   "%tmp_58 = call i39 @_ssdm_op_PartSelect.i39.i50.i32.i32(i50 %y_l_V, i32 11, i32 49)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:468]   --->   Operation 120 'partselect' 'tmp_58' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 121 [1/1] (0.00ns) (grouped into LUT with out node r_V_3)   --->   "%zext_ln708 = zext i39 %tmp_58 to i40" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:468]   --->   Operation 121 'zext' 'zext_ln708' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 122 [1/1] (1.56ns) (out node of the LUT)   --->   "%r_V_3 = select i1 %or_ln281_18, i40 %add_ln282, i40 %zext_ln708" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:281]   --->   Operation 122 'select' 'r_V_3' <Predicate = true> <Delay = 1.56> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_8 : Operation 123 [1/1] (0.00ns)   --->   "ret i40 %r_V_3" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:867]   --->   Operation 123 'ret' <Predicate = true> <Delay = 0.00>
 
@@ -434,7 +434,7 @@ p_Result_8            (bitselect     ) [ 000000000]
 xor_ln278_8           (xor           ) [ 000000000]
 p_Result_9            (bitselect     ) [ 000000000]
 xor_ln278_9           (xor           ) [ 000000000]
-p_Result_s_101        (bitselect     ) [ 000000000]
+p_Result_s_97         (bitselect     ) [ 000000000]
 xor_ln278_10          (xor           ) [ 000000000]
 p_Result_10           (bitselect     ) [ 000000000]
 xor_ln278_11          (xor           ) [ 000000000]
@@ -514,7 +514,7 @@ y_l_V                 (add           ) [ 000000000]
 or_ln281_18           (or            ) [ 000000000]
 and_ln                (bitconcatenate) [ 000000000]
 add_ln282             (add           ) [ 000000000]
-tmp_90                (partselect    ) [ 000000000]
+tmp_58                (partselect    ) [ 000000000]
 zext_ln708            (zext          ) [ 000000000]
 r_V_3                 (select        ) [ 000000000]
 ret_ln867             (ret           ) [ 000000000]
@@ -1080,7 +1080,7 @@ ret_ln867             (ret           ) [ 000000000]
 <pin id="123" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str16"/></StgValue>
+<StgValue><ssdm name="p_str15"/></StgValue>
 </bind>
 </comp>
 
@@ -1540,7 +1540,7 @@ ret_ln867             (ret           ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="355" class="1004" name="p_Result_s_101_fu_355">
+<comp id="355" class="1004" name="p_Result_s_97_fu_355">
 <pin_list>
 <pin id="356" dir="0" index="0" bw="1" slack="0"/>
 <pin id="357" dir="0" index="1" bw="40" slack="0"/>
@@ -1549,7 +1549,7 @@ ret_ln867             (ret           ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="p_Result_s_101/1 "/>
+<opset="p_Result_s_97/1 "/>
 </bind>
 </comp>
 
@@ -2431,7 +2431,7 @@ ret_ln867             (ret           ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="807" class="1004" name="tmp_90_fu_807">
+<comp id="807" class="1004" name="tmp_58_fu_807">
 <pin_list>
 <pin id="808" dir="0" index="0" bw="39" slack="0"/>
 <pin id="809" dir="0" index="1" bw="50" slack="0"/>
@@ -2441,7 +2441,7 @@ ret_ln867             (ret           ) [ 000000000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_90/8 "/>
+<opset="tmp_58/8 "/>
 </bind>
 </comp>
 
@@ -3267,7 +3267,7 @@ ret_ln867             (ret           ) [ 000000000]
 		xor_ln278_8 : 2
 		p_Result_9 : 1
 		xor_ln278_9 : 2
-		p_Result_s_101 : 1
+		p_Result_s_97 : 1
 		xor_ln278_10 : 2
 		p_Result_10 : 1
 		xor_ln278_11 : 2
@@ -3338,7 +3338,7 @@ ret_ln867             (ret           ) [ 000000000]
 	State 8
 		y_l_V : 1
 		add_ln282 : 1
-		tmp_90 : 2
+		tmp_58 : 2
 		zext_ln708 : 3
 		r_V_3 : 4
 		ret_ln867 : 5
@@ -3433,7 +3433,7 @@ ret_ln867             (ret           ) [ 000000000]
 |          |         tmp_s_fu_704         |    0    |    0    |    0    |
 |          | exp_x_msb_2_3_4_lsb_s_fu_749 |    0    |    0    |    0    |
 |          |        y_lo_s_V_fu_771       |    0    |    0    |    0    |
-|          |         tmp_90_fu_807        |    0    |    0    |    0    |
+|          |         tmp_58_fu_807        |    0    |    0    |    0    |
 |----------|------------------------------|---------|---------|---------|
 |          |      trunc_ln612_fu_195      |    0    |    0    |    0    |
 |   trunc  |        tmp_V_1_fu_501        |    0    |    0    |    0    |
@@ -3457,7 +3457,7 @@ ret_ln867             (ret           ) [ 000000000]
 |          |       p_Result_7_fu_313      |    0    |    0    |    0    |
 | bitselect|       p_Result_8_fu_327      |    0    |    0    |    0    |
 |          |       p_Result_9_fu_341      |    0    |    0    |    0    |
-|          |     p_Result_s_101_fu_355    |    0    |    0    |    0    |
+|          |     p_Result_s_97_fu_355     |    0    |    0    |    0    |
 |          |      p_Result_10_fu_369      |    0    |    0    |    0    |
 |          |      p_Result_11_fu_383      |    0    |    0    |    0    |
 |          |      p_Result_12_fu_397      |    0    |    0    |    0    |

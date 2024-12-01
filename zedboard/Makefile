@@ -11,32 +11,51 @@
 INC_PATH=/usr/include/vivado_hls
 CFLAGS = -I${INC_PATH} -DHLS_NO_XIL_FPO_LIB -O3
 
+.SILENT:
 .PHONY: all sw fpga
 
 all: sw
 
-attention-arm: attention.cpp attention_test.cpp
+attention-arm_4th: attention.cpp attention_test.cpp
 	@echo "Compiling & executing attention software program on ARM ..."
-	g++ ${CFLAGS} $^ -o $@
+	g++ ${CFLAGS} -DFOURTH $^ -o $@
 
-result/attention_arm_sim.txt: attention-arm
+attention-arm_16th: attention.cpp attention_test.cpp
+	@echo "Compiling & executing attention software program on ARM ..."
+	g++ ${CFLAGS} -DSIXTEENTH $^ -o $@
+
+attention-arm_64th: attention.cpp attention_test.cpp
+	@echo "Compiling & executing attention software program on ARM ..."
+	g++ ${CFLAGS} -DSIXTYFOURTH $^ -o $@
+
+result/attention_arm_sim_%.txt: attention-arm_%
 	mkdir -p result
 	./$< | tee $@
 
-sw: result/attention_arm_sim.txt
+sw_%: result/attention_arm_sim.txt_%
 	@echo "Result saved to $@"
 
-attention-fpga: host.cpp
+build/attention-fpga_4th: host.cpp
+	mkdir -p build
 	@echo "Compiling host program"
-	g++ ${CFLAGS} $^ -o $@
-	@echo "Make sure bitstream is loaded!"
+	g++ ${CFLAGS} -DFOURTH $^ -o $@
 
-fpga: attention-fpga
-	@echo "Running attention accelerator ..."
+build/attention-fpga_16th: host.cpp
+	mkdir -p build
+	@echo "Compiling host program"
+	g++ ${CFLAGS} -DSIXTEENTH $^ -o $@
+
+build/attention-fpga_64th: host.cpp
+	mkdir -p build
+	@echo "Compiling host program"
+	g++ ${CFLAGS} -DSIXTYFOURTH $^ -o $@
+
+fpga_%: build/attention-fpga_%
+	@echo "Running HW accelerator"
 	./$<
 
 # Clean up the directory before submission
 clean:
 	@echo "Clean up output files"
-	rm -rf attention-sw vivado_hls.log *.prj result out.dat *~
+	rm -rf build/ attention-sw vivado_hls.log *.prj result out.dat *~
 	rm -rf attention-fpga

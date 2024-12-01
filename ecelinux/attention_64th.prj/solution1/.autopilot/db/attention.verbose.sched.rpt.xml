@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'attention'" level="0">
-<item name = "Date">Fri Nov 29 11:44:41 2024
+<item name = "Date">Sun Dec  1 01:11:15 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_64th.prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">15546, 20730, 0.155 ms, 0.207 ms, 15546, 20730, none</column>
+<column name="">6422, 6422, 64.220 us, 64.220 us, 6422, 6422, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,12 +35,10 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- INIT_2D_MEM_LOOP_2">24, 24, 1, -, -, 24, no</column>
 <column name="- SF_LOOP_1">88, 88, 44, -, -, 2, no</column>
 <column name=" + SF_LOOP_3">42, 42, 7, -, -, 6, no</column>
 <column name="- ATTN_2D_LOOP_2">52, 52, 26, -, -, 2, no</column>
 <column name=" + ATTN_2D_LOOP_3">24, 24, 2, -, -, 12, no</column>
-<column name="- INIT_2D_MEM_LOOP_2">24, 24, 1, -, -, 24, no</column>
 </table>
 </item>
 </section>

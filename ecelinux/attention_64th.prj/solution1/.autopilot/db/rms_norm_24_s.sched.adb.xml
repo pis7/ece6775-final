@@ -702,7 +702,7 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str) nounwind
+_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str16) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln87"/></StgValue>
@@ -2318,7 +2318,7 @@ _ZN13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi80ELi48ELb1
 
 <Node id="44" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-_ZN13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str24) nounwind
+_ZN13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str27) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln93"/></StgValue>

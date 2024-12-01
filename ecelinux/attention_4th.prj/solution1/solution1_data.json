@@ -16,14 +16,26 @@
     "DirectiveTcl": [
       "set_directive_array_partition attention ",
       "set_directive_array_partition attention ",
-      "set_directive_unroll linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_4 ",
-      "set_directive_unroll linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_5 "
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_unroll quantize_activation\/QUANTIZE_ACTIVATION_LOOP_5 ",
+      "set_directive_pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_3 "
     ],
     "DirectiveInfo": [
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredq_weights} {cyclic positionBoolean0type} {factor 16} {dim 1}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredk_weights} {cyclic positionBoolean0type} {factor 16} {dim 1}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredv_weights} {cyclic positionBoolean0type} {factor 16} {dim 1}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredo_weights} {cyclic positionBoolean0type} {factor 16} {dim 1}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredquantized_hidden_states} {cyclic positionBoolean0type} {factor 16} {dim 2}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredquantized_final_output} {cyclic positionBoolean0type} {factor 16} {dim 2}} {}",
       "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredquantized_hidden_states} {complete positionBoolean0type} {dim 3}} {}",
       "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredquantized_final_output} {complete positionBoolean0type} {dim 3}} {}",
-      "unroll linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_4 {} {}",
-      "unroll linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_5 {} {}"
+      "unroll quantize_activation\/QUANTIZE_ACTIVATION_LOOP_5 {} {}",
+      "pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_3 {} {}"
     ]
   },
   "Args": {
@@ -44,7 +56,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "286217",
+    "Latency": "89921",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -67,24 +79,87 @@
       "impl\/vhdl\/apply_rotary_pos_hbi.vhd",
       "impl\/vhdl\/apply_rotary_pos_ibs.vhd",
       "impl\/vhdl\/attention.vhd",
-      "impl\/vhdl\/attention_attn_weHfu.vhd",
+      "impl\/vhdl\/attention_attn_wecHz.vhd",
       "impl\/vhdl\/attention_k_cache_V.vhd",
-      "impl\/vhdl\/attention_k_cacheEe0.vhd",
-      "impl\/vhdl\/attention_k_weights.vhd",
+      "impl\/vhdl\/attention_k_cachecEy.vhd",
+      "impl\/vhdl\/attention_k_weighHfu.vhd",
+      "impl\/vhdl\/attention_k_weighIfE.vhd",
+      "impl\/vhdl\/attention_k_weighJfO.vhd",
+      "impl\/vhdl\/attention_k_weighKfY.vhd",
+      "impl\/vhdl\/attention_k_weighLf8.vhd",
+      "impl\/vhdl\/attention_k_weighMgi.vhd",
+      "impl\/vhdl\/attention_k_weighNgs.vhd",
+      "impl\/vhdl\/attention_k_weighOgC.vhd",
+      "impl\/vhdl\/attention_k_weighPgM.vhd",
+      "impl\/vhdl\/attention_k_weighQgW.vhd",
+      "impl\/vhdl\/attention_k_weighRg6.vhd",
+      "impl\/vhdl\/attention_k_weighShg.vhd",
+      "impl\/vhdl\/attention_k_weighThq.vhd",
+      "impl\/vhdl\/attention_k_weighUhA.vhd",
+      "impl\/vhdl\/attention_k_weighVhK.vhd",
+      "impl\/vhdl\/attention_k_weighWhU.vhd",
+      "impl\/vhdl\/attention_ln_weigbdk.vhd",
       "impl\/vhdl\/attention_ln_weigqcK.vhd",
-      "impl\/vhdl\/attention_ln_weigrcU.vhd",
-      "impl\/vhdl\/attention_o_weights.vhd",
-      "impl\/vhdl\/attention_q_proj_zec.vhd",
-      "impl\/vhdl\/attention_q_weights.vhd",
-      "impl\/vhdl\/attention_quantizsc4.vhd",
+      "impl\/vhdl\/attention_o_weighbek.vhd",
+      "impl\/vhdl\/attention_o_weighbfk.vhd",
+      "impl\/vhdl\/attention_o_weighbgk.vhd",
+      "impl\/vhdl\/attention_o_weighbhl.vhd",
+      "impl\/vhdl\/attention_o_weighbil.vhd",
+      "impl\/vhdl\/attention_o_weighbjl.vhd",
+      "impl\/vhdl\/attention_o_weighbkl.vhd",
+      "impl\/vhdl\/attention_o_weighbll.vhd",
+      "impl\/vhdl\/attention_o_weighbml.vhd",
+      "impl\/vhdl\/attention_o_weighbnm.vhd",
+      "impl\/vhdl\/attention_o_weighbom.vhd",
+      "impl\/vhdl\/attention_o_weighbpm.vhd",
+      "impl\/vhdl\/attention_o_weighbqm.vhd",
+      "impl\/vhdl\/attention_o_weighbrm.vhd",
+      "impl\/vhdl\/attention_o_weighbsm.vhd",
+      "impl\/vhdl\/attention_o_weighbtn.vhd",
+      "impl\/vhdl\/attention_q_proj_cwx.vhd",
+      "impl\/vhdl\/attention_q_proj_czy.vhd",
+      "impl\/vhdl\/attention_q_weighAem.vhd",
+      "impl\/vhdl\/attention_q_weighBew.vhd",
+      "impl\/vhdl\/attention_q_weighCeG.vhd",
+      "impl\/vhdl\/attention_q_weighDeQ.vhd",
+      "impl\/vhdl\/attention_q_weighEe0.vhd",
+      "impl\/vhdl\/attention_q_weighFfa.vhd",
+      "impl\/vhdl\/attention_q_weighGfk.vhd",
+      "impl\/vhdl\/attention_q_weighrcU.vhd",
+      "impl\/vhdl\/attention_q_weighsc4.vhd",
+      "impl\/vhdl\/attention_q_weightde.vhd",
+      "impl\/vhdl\/attention_q_weighudo.vhd",
+      "impl\/vhdl\/attention_q_weighvdy.vhd",
+      "impl\/vhdl\/attention_q_weighwdI.vhd",
+      "impl\/vhdl\/attention_q_weighxdS.vhd",
+      "impl\/vhdl\/attention_q_weighyd2.vhd",
+      "impl\/vhdl\/attention_q_weighzec.vhd",
+      "impl\/vhdl\/attention_quantizbun.vhd",
       "impl\/vhdl\/attention_v_cache_V.vhd",
-      "impl\/vhdl\/attention_v_weights.vhd",
+      "impl\/vhdl\/attention_v_weigh0iy.vhd",
+      "impl\/vhdl\/attention_v_weigh1iI.vhd",
+      "impl\/vhdl\/attention_v_weigh2iS.vhd",
+      "impl\/vhdl\/attention_v_weigh3i2.vhd",
+      "impl\/vhdl\/attention_v_weigh4jc.vhd",
+      "impl\/vhdl\/attention_v_weigh5jm.vhd",
+      "impl\/vhdl\/attention_v_weigh6jw.vhd",
+      "impl\/vhdl\/attention_v_weigh7jG.vhd",
+      "impl\/vhdl\/attention_v_weigh8jQ.vhd",
+      "impl\/vhdl\/attention_v_weigh9j0.vhd",
+      "impl\/vhdl\/attention_v_weighbak.vhd",
+      "impl\/vhdl\/attention_v_weighbbk.vhd",
+      "impl\/vhdl\/attention_v_weighbck.vhd",
+      "impl\/vhdl\/attention_v_weighXh4.vhd",
+      "impl\/vhdl\/attention_v_weighYie.vhd",
+      "impl\/vhdl\/attention_v_weighZio.vhd",
       "impl\/vhdl\/cache_update.vhd",
+      "impl\/vhdl\/dut_input_0_V.vhd",
       "impl\/vhdl\/dut_mul_40s_42ns_bkb.vhd",
       "impl\/vhdl\/dut_mul_50ns_47nsncg.vhd",
       "impl\/vhdl\/dut_mul_50ns_50nsocq.vhd",
-      "impl\/vhdl\/dut_mul_58ns_56s_OgC.vhd",
+      "impl\/vhdl\/dut_mul_58ns_56s_dMK.vhd",
       "impl\/vhdl\/dut_mul_72s_40s_7dEe.vhd",
+      "impl\/vhdl\/dut_output_0.vhd",
       "impl\/vhdl\/dut_sdiv_56ns_40spcA.vhd",
       "impl\/vhdl\/dut_sdiv_72ns_61sfYi.vhd",
       "impl\/vhdl\/dut_udiv_33s_29nscud.vhd",
@@ -96,7 +171,6 @@
       "impl\/vhdl\/GEMM_3D_float.vhd",
       "impl\/vhdl\/GEMM_3D_float_1.vhd",
       "impl\/vhdl\/init_2d_mem.vhd",
-      "impl\/vhdl\/init_3d_mem.vhd",
       "impl\/vhdl\/linear_forward_no_mu.vhd",
       "impl\/vhdl\/quantize_activation.vhd",
       "impl\/vhdl\/reshape_2D_to_3D.vhd",
@@ -114,32 +188,155 @@
       "impl\/verilog\/apply_rotary_pos_hbi_rom.dat",
       "impl\/verilog\/apply_rotary_pos_ibs.v",
       "impl\/verilog\/attention.v",
-      "impl\/verilog\/attention_attn_weHfu.v",
+      "impl\/verilog\/attention_attn_wecHz.v",
       "impl\/verilog\/attention_k_cache_V.v",
       "impl\/verilog\/attention_k_cache_V_rom.dat",
-      "impl\/verilog\/attention_k_cacheEe0.v",
-      "impl\/verilog\/attention_k_weights.v",
-      "impl\/verilog\/attention_k_weights_rom.dat",
+      "impl\/verilog\/attention_k_cachecEy.v",
+      "impl\/verilog\/attention_k_weighHfu.v",
+      "impl\/verilog\/attention_k_weighHfu_rom.dat",
+      "impl\/verilog\/attention_k_weighIfE.v",
+      "impl\/verilog\/attention_k_weighIfE_rom.dat",
+      "impl\/verilog\/attention_k_weighJfO.v",
+      "impl\/verilog\/attention_k_weighJfO_rom.dat",
+      "impl\/verilog\/attention_k_weighKfY.v",
+      "impl\/verilog\/attention_k_weighKfY_rom.dat",
+      "impl\/verilog\/attention_k_weighLf8.v",
+      "impl\/verilog\/attention_k_weighLf8_rom.dat",
+      "impl\/verilog\/attention_k_weighMgi.v",
+      "impl\/verilog\/attention_k_weighMgi_rom.dat",
+      "impl\/verilog\/attention_k_weighNgs.v",
+      "impl\/verilog\/attention_k_weighNgs_rom.dat",
+      "impl\/verilog\/attention_k_weighOgC.v",
+      "impl\/verilog\/attention_k_weighOgC_rom.dat",
+      "impl\/verilog\/attention_k_weighPgM.v",
+      "impl\/verilog\/attention_k_weighPgM_rom.dat",
+      "impl\/verilog\/attention_k_weighQgW.v",
+      "impl\/verilog\/attention_k_weighQgW_rom.dat",
+      "impl\/verilog\/attention_k_weighRg6.v",
+      "impl\/verilog\/attention_k_weighRg6_rom.dat",
+      "impl\/verilog\/attention_k_weighShg.v",
+      "impl\/verilog\/attention_k_weighShg_rom.dat",
+      "impl\/verilog\/attention_k_weighThq.v",
+      "impl\/verilog\/attention_k_weighThq_rom.dat",
+      "impl\/verilog\/attention_k_weighUhA.v",
+      "impl\/verilog\/attention_k_weighUhA_rom.dat",
+      "impl\/verilog\/attention_k_weighVhK.v",
+      "impl\/verilog\/attention_k_weighVhK_rom.dat",
+      "impl\/verilog\/attention_k_weighWhU.v",
+      "impl\/verilog\/attention_k_weighWhU_rom.dat",
+      "impl\/verilog\/attention_ln_weigbdk.v",
+      "impl\/verilog\/attention_ln_weigbdk_rom.dat",
       "impl\/verilog\/attention_ln_weigqcK.v",
       "impl\/verilog\/attention_ln_weigqcK_rom.dat",
-      "impl\/verilog\/attention_ln_weigrcU.v",
-      "impl\/verilog\/attention_ln_weigrcU_rom.dat",
-      "impl\/verilog\/attention_o_weights.v",
-      "impl\/verilog\/attention_o_weights_rom.dat",
-      "impl\/verilog\/attention_q_proj_zec.v",
-      "impl\/verilog\/attention_q_weights.v",
-      "impl\/verilog\/attention_q_weights_rom.dat",
-      "impl\/verilog\/attention_quantizsc4.v",
+      "impl\/verilog\/attention_o_weighbek.v",
+      "impl\/verilog\/attention_o_weighbek_rom.dat",
+      "impl\/verilog\/attention_o_weighbfk.v",
+      "impl\/verilog\/attention_o_weighbfk_rom.dat",
+      "impl\/verilog\/attention_o_weighbgk.v",
+      "impl\/verilog\/attention_o_weighbgk_rom.dat",
+      "impl\/verilog\/attention_o_weighbhl.v",
+      "impl\/verilog\/attention_o_weighbhl_rom.dat",
+      "impl\/verilog\/attention_o_weighbil.v",
+      "impl\/verilog\/attention_o_weighbil_rom.dat",
+      "impl\/verilog\/attention_o_weighbjl.v",
+      "impl\/verilog\/attention_o_weighbjl_rom.dat",
+      "impl\/verilog\/attention_o_weighbkl.v",
+      "impl\/verilog\/attention_o_weighbkl_rom.dat",
+      "impl\/verilog\/attention_o_weighbll.v",
+      "impl\/verilog\/attention_o_weighbll_rom.dat",
+      "impl\/verilog\/attention_o_weighbml.v",
+      "impl\/verilog\/attention_o_weighbml_rom.dat",
+      "impl\/verilog\/attention_o_weighbnm.v",
+      "impl\/verilog\/attention_o_weighbnm_rom.dat",
+      "impl\/verilog\/attention_o_weighbom.v",
+      "impl\/verilog\/attention_o_weighbom_rom.dat",
+      "impl\/verilog\/attention_o_weighbpm.v",
+      "impl\/verilog\/attention_o_weighbpm_rom.dat",
+      "impl\/verilog\/attention_o_weighbqm.v",
+      "impl\/verilog\/attention_o_weighbqm_rom.dat",
+      "impl\/verilog\/attention_o_weighbrm.v",
+      "impl\/verilog\/attention_o_weighbrm_rom.dat",
+      "impl\/verilog\/attention_o_weighbsm.v",
+      "impl\/verilog\/attention_o_weighbsm_rom.dat",
+      "impl\/verilog\/attention_o_weighbtn.v",
+      "impl\/verilog\/attention_o_weighbtn_rom.dat",
+      "impl\/verilog\/attention_q_proj_cwx.v",
+      "impl\/verilog\/attention_q_proj_czy.v",
+      "impl\/verilog\/attention_q_weighAem.v",
+      "impl\/verilog\/attention_q_weighAem_rom.dat",
+      "impl\/verilog\/attention_q_weighBew.v",
+      "impl\/verilog\/attention_q_weighBew_rom.dat",
+      "impl\/verilog\/attention_q_weighCeG.v",
+      "impl\/verilog\/attention_q_weighCeG_rom.dat",
+      "impl\/verilog\/attention_q_weighDeQ.v",
+      "impl\/verilog\/attention_q_weighDeQ_rom.dat",
+      "impl\/verilog\/attention_q_weighEe0.v",
+      "impl\/verilog\/attention_q_weighEe0_rom.dat",
+      "impl\/verilog\/attention_q_weighFfa.v",
+      "impl\/verilog\/attention_q_weighFfa_rom.dat",
+      "impl\/verilog\/attention_q_weighGfk.v",
+      "impl\/verilog\/attention_q_weighGfk_rom.dat",
+      "impl\/verilog\/attention_q_weighrcU.v",
+      "impl\/verilog\/attention_q_weighrcU_rom.dat",
+      "impl\/verilog\/attention_q_weighsc4.v",
+      "impl\/verilog\/attention_q_weighsc4_rom.dat",
+      "impl\/verilog\/attention_q_weightde.v",
+      "impl\/verilog\/attention_q_weightde_rom.dat",
+      "impl\/verilog\/attention_q_weighudo.v",
+      "impl\/verilog\/attention_q_weighudo_rom.dat",
+      "impl\/verilog\/attention_q_weighvdy.v",
+      "impl\/verilog\/attention_q_weighvdy_rom.dat",
+      "impl\/verilog\/attention_q_weighwdI.v",
+      "impl\/verilog\/attention_q_weighwdI_rom.dat",
+      "impl\/verilog\/attention_q_weighxdS.v",
+      "impl\/verilog\/attention_q_weighxdS_rom.dat",
+      "impl\/verilog\/attention_q_weighyd2.v",
+      "impl\/verilog\/attention_q_weighyd2_rom.dat",
+      "impl\/verilog\/attention_q_weighzec.v",
+      "impl\/verilog\/attention_q_weighzec_rom.dat",
+      "impl\/verilog\/attention_quantizbun.v",
       "impl\/verilog\/attention_v_cache_V.v",
       "impl\/verilog\/attention_v_cache_V_rom.dat",
-      "impl\/verilog\/attention_v_weights.v",
-      "impl\/verilog\/attention_v_weights_rom.dat",
+      "impl\/verilog\/attention_v_weigh0iy.v",
+      "impl\/verilog\/attention_v_weigh0iy_rom.dat",
+      "impl\/verilog\/attention_v_weigh1iI.v",
+      "impl\/verilog\/attention_v_weigh1iI_rom.dat",
+      "impl\/verilog\/attention_v_weigh2iS.v",
+      "impl\/verilog\/attention_v_weigh2iS_rom.dat",
+      "impl\/verilog\/attention_v_weigh3i2.v",
+      "impl\/verilog\/attention_v_weigh3i2_rom.dat",
+      "impl\/verilog\/attention_v_weigh4jc.v",
+      "impl\/verilog\/attention_v_weigh4jc_rom.dat",
+      "impl\/verilog\/attention_v_weigh5jm.v",
+      "impl\/verilog\/attention_v_weigh5jm_rom.dat",
+      "impl\/verilog\/attention_v_weigh6jw.v",
+      "impl\/verilog\/attention_v_weigh6jw_rom.dat",
+      "impl\/verilog\/attention_v_weigh7jG.v",
+      "impl\/verilog\/attention_v_weigh7jG_rom.dat",
+      "impl\/verilog\/attention_v_weigh8jQ.v",
+      "impl\/verilog\/attention_v_weigh8jQ_rom.dat",
+      "impl\/verilog\/attention_v_weigh9j0.v",
+      "impl\/verilog\/attention_v_weigh9j0_rom.dat",
+      "impl\/verilog\/attention_v_weighbak.v",
+      "impl\/verilog\/attention_v_weighbak_rom.dat",
+      "impl\/verilog\/attention_v_weighbbk.v",
+      "impl\/verilog\/attention_v_weighbbk_rom.dat",
+      "impl\/verilog\/attention_v_weighbck.v",
+      "impl\/verilog\/attention_v_weighbck_rom.dat",
+      "impl\/verilog\/attention_v_weighXh4.v",
+      "impl\/verilog\/attention_v_weighXh4_rom.dat",
+      "impl\/verilog\/attention_v_weighYie.v",
+      "impl\/verilog\/attention_v_weighYie_rom.dat",
+      "impl\/verilog\/attention_v_weighZio.v",
+      "impl\/verilog\/attention_v_weighZio_rom.dat",
       "impl\/verilog\/cache_update.v",
+      "impl\/verilog\/dut_input_0_V.v",
       "impl\/verilog\/dut_mul_40s_42ns_bkb.v",
       "impl\/verilog\/dut_mul_50ns_47nsncg.v",
       "impl\/verilog\/dut_mul_50ns_50nsocq.v",
-      "impl\/verilog\/dut_mul_58ns_56s_OgC.v",
+      "impl\/verilog\/dut_mul_58ns_56s_dMK.v",
       "impl\/verilog\/dut_mul_72s_40s_7dEe.v",
+      "impl\/verilog\/dut_output_0.v",
       "impl\/verilog\/dut_sdiv_56ns_40spcA.v",
       "impl\/verilog\/dut_sdiv_72ns_61sfYi.v",
       "impl\/verilog\/dut_udiv_33s_29nscud.v",
@@ -154,7 +351,6 @@
       "impl\/verilog\/GEMM_3D_float.v",
       "impl\/verilog\/GEMM_3D_float_1.v",
       "impl\/verilog\/init_2d_mem.v",
-      "impl\/verilog\/init_3d_mem.v",
       "impl\/verilog\/linear_forward_no_mu.v",
       "impl\/verilog\/quantize_activation.v",
       "impl\/verilog\/reshape_2D_to_3D.v",
@@ -281,23 +477,23 @@
       "ModuleName": "dut",
       "Instances": [{
           "ModuleName": "attention",
-          "InstanceName": "grp_attention_fu_165",
+          "InstanceName": "grp_attention_fu_263",
           "Instances": [
             {
+              "ModuleName": "linear_forward_no_mu",
+              "InstanceName": "grp_linear_forward_no_mu_fu_911"
+            },
+            {
               "ModuleName": "rms_norm_384_s",
-              "InstanceName": "grp_rms_norm_384_s_fu_313",
+              "InstanceName": "grp_rms_norm_384_s_fu_1067",
               "Instances": [{
                   "ModuleName": "sqrt_fixed_42_26_s",
                   "InstanceName": "grp_sqrt_fixed_42_26_s_fu_127"
                 }]
             },
             {
-              "ModuleName": "linear_forward_no_mu",
-              "InstanceName": "grp_linear_forward_no_mu_fu_322"
-            },
-            {
               "ModuleName": "softmax_1_8_6_s",
-              "InstanceName": "grp_softmax_1_8_6_s_fu_343",
+              "InstanceName": "grp_softmax_1_8_6_s_fu_1076",
               "Instances": [{
                   "ModuleName": "exp_40_24_s",
                   "InstanceName": "grp_exp_40_24_s_fu_163"
@@ -305,47 +501,43 @@
             },
             {
               "ModuleName": "quantize_activation",
-              "InstanceName": "grp_quantize_activation_fu_354"
+              "InstanceName": "grp_quantize_activation_fu_1087"
             },
             {
               "ModuleName": "apply_rotary_pos_emb",
-              "InstanceName": "grp_apply_rotary_pos_emb_fu_364"
+              "InstanceName": "grp_apply_rotary_pos_emb_fu_1157"
             },
             {
               "ModuleName": "GEMM_3D_float",
-              "InstanceName": "grp_GEMM_3D_float_fu_376"
+              "InstanceName": "grp_GEMM_3D_float_fu_1169"
             },
             {
               "ModuleName": "GEMM_3D_float_1",
-              "InstanceName": "grp_GEMM_3D_float_1_fu_383"
+              "InstanceName": "grp_GEMM_3D_float_1_fu_1176"
             },
             {
               "ModuleName": "cache_update",
-              "InstanceName": "grp_cache_update_fu_390"
+              "InstanceName": "grp_cache_update_fu_1183"
             },
             {
               "ModuleName": "transpose_last_two_d",
-              "InstanceName": "grp_transpose_last_two_d_fu_399"
+              "InstanceName": "grp_transpose_last_two_d_fu_1192"
             },
             {
               "ModuleName": "reshape_2D_to_3D",
-              "InstanceName": "grp_reshape_2D_to_3D_fu_405"
-            },
-            {
-              "ModuleName": "init_3d_mem",
-              "InstanceName": "grp_init_3d_mem_fu_411"
+              "InstanceName": "grp_reshape_2D_to_3D_fu_1198"
             },
             {
               "ModuleName": "init_2d_mem",
-              "InstanceName": "grp_init_2d_mem_fu_423"
+              "InstanceName": "grp_init_2d_mem_fu_1204"
             },
             {
               "ModuleName": "init_2d_mem",
-              "InstanceName": "grp_init_2d_mem_fu_429"
+              "InstanceName": "grp_init_2d_mem_fu_1210"
             },
             {
               "ModuleName": "init_2d_mem",
-              "InstanceName": "grp_init_2d_mem_fu_435"
+              "InstanceName": "grp_init_2d_mem_fu_1216"
             }
           ]
         }]
@@ -359,13 +551,6 @@
         "isOneStateSeq": "0"
       },
       "rms_norm_384_s": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "1",
-        "isPipelined": "0",
-        "isCombinational": "0",
-        "isOneStateSeq": "0"
-      },
-      "init_3d_mem": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -525,48 +710,12 @@
           "URAM": "0"
         }
       },
-      "init_3d_mem": {
-        "Latency": {
-          "LatencyBest": "577",
-          "LatencyAvg": "577",
-          "LatencyWorst": "577",
-          "PipelineII": "577",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "2.305"
-        },
-        "Loops": [{
-            "Name": "INIT_3D_MEM_LOOP_2",
-            "TripCount": "96",
-            "Latency": "576",
-            "PipelineII": "",
-            "PipelineDepth": "6",
-            "Loops": [{
-                "Name": "INIT_3D_MEM_LOOP_3",
-                "TripCount": "4",
-                "Latency": "4",
-                "PipelineII": "",
-                "PipelineDepth": "1"
-              }]
-          }],
-        "Area": {
-          "FF": "48",
-          "LUT": "86",
-          "BRAM_18K": "0",
-          "DSP48E": "0",
-          "URAM": "0"
-        }
-      },
       "quantize_activation": {
         "Latency": {
-          "LatencyBest": "3320",
-          "LatencyAvg": "3320",
-          "LatencyWorst": "3320",
-          "PipelineII": "3320",
+          "LatencyBest": "1784",
+          "LatencyAvg": "1784",
+          "LatencyWorst": "1784",
+          "PipelineII": "1784",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -586,29 +735,22 @@
           {
             "Name": "QUANTIZE_ACTIVATION_LOOP_3",
             "TripCount": "6",
-            "Latency": "2124",
+            "Latency": "588",
             "PipelineII": "",
-            "PipelineDepth": "354",
+            "PipelineDepth": "98",
             "Loops": [{
                 "Name": "QUANTIZE_ACTIVATION_LOOP_4",
                 "TripCount": "16",
-                "Latency": "352",
+                "Latency": "96",
                 "PipelineII": "",
-                "PipelineDepth": "22",
-                "Loops": [{
-                    "Name": "QUANTIZE_ACTIVATION_LOOP_5",
-                    "TripCount": "4",
-                    "Latency": "20",
-                    "PipelineII": "",
-                    "PipelineDepth": "5"
-                  }]
+                "PipelineDepth": "6"
               }]
           }
         ],
         "Area": {
-          "DSP48E": "5",
-          "FF": "947",
-          "LUT": "1142",
+          "DSP48E": "20",
+          "FF": "1217",
+          "LUT": "1946",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -644,37 +786,30 @@
       },
       "linear_forward_no_mu": {
         "Latency": {
-          "LatencyBest": "57601",
-          "LatencyAvg": "57601",
-          "LatencyWorst": "57601",
-          "PipelineII": "57601",
+          "LatencyBest": "9295",
+          "LatencyAvg": "9295",
+          "LatencyWorst": "9295",
+          "PipelineII": "9295",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.510"
+          "Estimate": "8.526"
         },
         "Loops": [{
-            "Name": "LINEAR_FORWARD_NO_MUL_LOOP_2",
-            "TripCount": "384",
-            "Latency": "57600",
-            "PipelineII": "",
-            "PipelineDepth": "150",
-            "Loops": [{
-                "Name": "LINEAR_FORWARD_NO_MUL_LOOP_3",
-                "TripCount": "6",
-                "Latency": "72",
-                "PipelineII": "",
-                "PipelineDepth": "12"
-              }]
+            "Name": "LINEAR_FORWARD_NO_MUL_LOOP_2_LINEAR_FORWARD_NO_MUL_LOOP_3",
+            "TripCount": "2304",
+            "Latency": "9293",
+            "PipelineII": "4",
+            "PipelineDepth": "82"
           }],
         "Area": {
-          "DSP48E": "3",
-          "FF": "1503",
-          "LUT": "5970",
           "BRAM_18K": "0",
+          "DSP48E": "3",
+          "FF": "10015",
+          "LUT": "12267",
           "URAM": "0"
         }
       },
@@ -1014,10 +1149,10 @@
       },
       "attention": {
         "Latency": {
-          "LatencyBest": "285062",
-          "LatencyAvg": "285062",
-          "LatencyWorst": "285062",
-          "PipelineII": "285062",
+          "LatencyBest": "88766",
+          "LatencyAvg": "88766",
+          "LatencyWorst": "88766",
+          "PipelineII": "88766",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1057,19 +1192,19 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "211",
-          "DSP48E": "77",
-          "FF": "11646",
-          "LUT": "22258",
+          "BRAM_18K": "215",
+          "DSP48E": "92",
+          "FF": "22299",
+          "LUT": "35476",
           "URAM": "0"
         }
       },
       "dut": {
         "Latency": {
-          "LatencyBest": "286217",
-          "LatencyAvg": "286217",
-          "LatencyWorst": "286217",
-          "PipelineII": "286218",
+          "LatencyBest": "89921",
+          "LatencyAvg": "89921",
+          "LatencyWorst": "89921",
+          "PipelineII": "89922",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1095,10 +1230,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "215",
-          "DSP48E": "77",
-          "FF": "11679",
-          "LUT": "22484",
+          "BRAM_18K": "221",
+          "DSP48E": "92",
+          "FF": "22332",
+          "LUT": "35729",
           "URAM": "0"
         }
       }
@@ -1114,7 +1249,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-11-30 21:05:24 EST",
+    "Time": "2024-12-01 01:26:12 EST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

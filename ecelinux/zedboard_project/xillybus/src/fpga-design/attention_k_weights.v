@@ -7,8 +7,8 @@
 addr0, ce0, q0, clk);
 
 parameter DWIDTH = 8;
-parameter AWIDTH = 16;
-parameter MEM_SIZE = 36864;
+parameter AWIDTH = 8;
+parameter MEM_SIZE = 144;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -44,8 +44,8 @@ module attention_k_weights(
     q0);
 
 parameter DataWidth = 32'd8;
-parameter AddressRange = 32'd36864;
-parameter AddressWidth = 32'd16;
+parameter AddressRange = 32'd144;
+parameter AddressWidth = 32'd8;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

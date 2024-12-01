@@ -43,8 +43,8 @@ struct exp_40_24_s : public sc_module {
     exp_40_24_s_f_x_mmb6* f_x_msb_3_table_V_U;
     exp_40_24_s_f_x_mncg* f_x_msb_2_table_V_U;
     exp_40_24_s_exp_xocq* exp_x_msb_1_table_V_U;
-    dut_mul_50ns_47nspcA<1,2,50,47,97>* dut_mul_50ns_47nspcA_U42;
-    dut_mul_50ns_50nsqcK<1,2,50,50,100>* dut_mul_50ns_50nsqcK_U43;
+    dut_mul_50ns_47nspcA<1,2,50,47,97>* dut_mul_50ns_47nspcA_U52;
+    dut_mul_50ns_50nsqcK<1,2,50,50,100>* dut_mul_50ns_50nsqcK_U53;
     sc_signal< sc_lv<1> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_pp0_stage0;
     sc_signal< sc_logic > ap_enable_reg_pp0_iter0;
@@ -210,7 +210,7 @@ struct exp_40_24_s : public sc_module {
     sc_signal< sc_lv<50> > zext_ln703_4_fu_781_p1;
     sc_signal< sc_lv<40> > and_ln_fu_793_p4;
     sc_signal< sc_lv<50> > y_l_V_fu_784_p2;
-    sc_signal< sc_lv<39> > tmp_59_fu_807_p4;
+    sc_signal< sc_lv<39> > tmp_58_fu_807_p4;
     sc_signal< sc_lv<1> > or_ln281_18_fu_789_p2;
     sc_signal< sc_lv<40> > add_ln282_fu_801_p2;
     sc_signal< sc_lv<40> > zext_ln708_fu_817_p1;
@@ -363,7 +363,7 @@ struct exp_40_24_s : public sc_module {
     void thread_rhs_V_1_fu_722_p4();
     void thread_rhs_V_3_fu_668_p5();
     void thread_rhs_V_fu_655_p1();
-    void thread_tmp_59_fu_807_p4();
+    void thread_tmp_58_fu_807_p4();
     void thread_tmp_V_1_fu_501_p1();
     void thread_tmp_V_fu_491_p4();
     void thread_tmp_fu_207_p3();

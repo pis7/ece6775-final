@@ -6391,9 +6391,7 @@ inline bool operator!=(
 # 399 "/opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_fixed.h" 2
 # 368 "/opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_int.h" 2
 # 9 "./typedefs.h" 2
-
-
-
+# 20 "./typedefs.h"
 typedef ap_uint<4> bit4_t;
 typedef ap_uint<6> bit6_t;
 typedef ap_uint<8> bit8_t;
@@ -27729,7 +27727,7 @@ attn_fixed_t attention_round(attn_fixed_t a) {
 template <int R, int C>
 void quantize_activation(
   attn_fixed_t input[R][C],
-  sbit8_t output_states[R][C],
+  sbit8_t output_states[R][C/4][4],
   attn_fixed_t output_scales[R],
   sbit8_t num_bits
 ) {
@@ -27747,10 +27745,18 @@ void quantize_activation(
       output_scales[i] = scale;
 
 
-      QUANTIZE_ACTIVATION_LOOP_3: for (int j = 0; j < C; j++) {
-          sbit32_t quantized_value = attention_round(input[i][j] * scale);
-          sbit8_t quantized_value_clamped = (quantized_value < Qn) ? Qn : ((quantized_value > Qp) ? Qp : quantized_value);
-          output_states[i][j] = (sbit8_t)quantized_value_clamped;
+      QUANTIZE_ACTIVATION_LOOP_3: for (int jo = 0; jo < (C/4)/(C/24); jo++) {
+        QUANTIZE_ACTIVATION_LOOP_4: for (int ji = 0; ji < (C/24); ji++) {
+          int j = jo * (C/24) + ji;
+          QUANTIZE_ACTIVATION_LOOP_5: for (int k = 0; k < 4; k++){
+_ssdm_Unroll(0,0,0, "");
+# 138 "./layer.h"
+
+            sbit32_t quantized_value = attention_round(input[i][(j << 2) + k] * scale);
+            sbit8_t quantized_value_clamped = (quantized_value < Qn) ? Qn : ((quantized_value > Qp) ? Qp : quantized_value);
+            output_states[i][j][k] = (sbit8_t)quantized_value_clamped;
+          }
+        }
       }
   }
 }
@@ -27760,7 +27766,7 @@ void quantize_activation(
 
 template <int R, int IN_C, int OUT_C>
 void linear_forward_no_mul (
-  sbit8_t input[R][IN_C],
+  sbit8_t input[R][IN_C/4][4],
   attn_fixed_t output[R][OUT_C],
   const attn_fixed_t scales[R],
   const uint8_t packed_weights[IN_C/4][OUT_C],
@@ -27769,15 +27775,20 @@ void linear_forward_no_mul (
 
   LINEAR_FORWARD_NO_MUL_LOOP_1: for (int i = 0; i < R; i++) {
     LINEAR_FORWARD_NO_MUL_LOOP_2: for (int j = 0; j < OUT_C; j++) {
-      LINEAR_FORWARD_NO_MUL_LOOP_3: for (int k = 0; k < IN_C; k+=4) {
-        uint8_t packed_val = packed_weights[k/4][j];
+      LINEAR_FORWARD_NO_MUL_LOOP_3: for (int ko = 0; ko < (IN_C/4)/(IN_C/24); ko++) {
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+# 162 "./layer.h"
 
-        LINEAR_FORWARD_NO_MUL_LOOP_4: for (int l = 0; l < 4 && (k + l) < IN_C; l++) {
-          int8_t weight_val = (packed_val >> (2 * l)) & 0b11;
-          sbit8_t new_val = 0;
-          if (weight_val == 0b01) new_val += input[i][k + l];
-          else if (weight_val == 0b10) new_val -= input[i][k + l];
-          output[i][j] += new_val;
+        LINEAR_FORWARD_NO_MUL_LOOP_4: for (int ki = 0; ki < (IN_C/24); ki++) {
+          int k = ko * (IN_C/24) + ki;
+          uint8_t packed_val = packed_weights[k][j];
+          LINEAR_FORWARD_NO_MUL_LOOP_5: for (int l = 0; l < 4; l++) {
+            int8_t weight_val = (packed_val >> (2 * l)) & 0b11;
+            sbit8_t new_val = 0;
+            if (weight_val == 0b01) new_val += input[i][k][l];
+            else if (weight_val == 0b10) new_val -= input[i][k][l];
+            output[i][j] += new_val;
+          }
         }
       }
       output[i][j] /= (scales[i] * w_scale);
@@ -28005,6 +28016,18 @@ template <
   const attn_fixed_t ln_weight[PROJ_COLS],
   const attn_fixed_t p_id
 ) {
+_ssdm_SpecArrayPartition( k_weights, 1, "CYCLIC", 4, "");
+# 81 "attention.cpp"
+
+_ssdm_SpecArrayPartition( o_weights, 1, "CYCLIC", 4, "");
+# 81 "attention.cpp"
+
+_ssdm_SpecArrayPartition( q_weights, 1, "CYCLIC", 4, "");
+# 81 "attention.cpp"
+
+_ssdm_SpecArrayPartition( v_weights, 1, "CYCLIC", 4, "");
+# 81 "attention.cpp"
+
 
 
   RMS_NORM_LOOP_1: for (int s = 0; s < SEQ_LEN; s++) {
@@ -28016,10 +28039,16 @@ template <
   }
 
 
-  sbit8_t quantized_hidden_states[SEQ_LEN][HS_COLS];
+  sbit8_t quantized_hidden_states[SEQ_LEN][HS_COLS/4][4];
+_ssdm_SpecArrayPartition( quantized_hidden_states, 3, "COMPLETE", 0, "");
+# 93 "attention.cpp"
+
+_ssdm_SpecArrayPartition( quantized_hidden_states, 2, "CYCLIC", 4, "");
+# 93 "attention.cpp"
+
   attn_fixed_t scales[SEQ_LEN];
 
-  init_2d_mem<SEQ_LEN, HS_COLS, sbit8_t>(quantized_hidden_states, 0);
+  init_3d_mem<SEQ_LEN, HS_COLS/4, 4, sbit8_t>(quantized_hidden_states, 0);
   init_1d_mem<SEQ_LEN, attn_fixed_t>(scales, 1);
 
   quantize_activation<SEQ_LEN, HS_COLS>(
@@ -28148,9 +28177,15 @@ template <
 
 
 
-  sbit8_t quantized_final_output[SEQ_LEN][PROJ_COLS];
+  sbit8_t quantized_final_output[SEQ_LEN][PROJ_COLS/4][4];
+_ssdm_SpecArrayPartition( quantized_final_output, 3, "COMPLETE", 0, "");
+# 225 "attention.cpp"
+
+_ssdm_SpecArrayPartition( quantized_final_output, 2, "CYCLIC", 4, "");
+# 225 "attention.cpp"
+
   attn_fixed_t final_scales[SEQ_LEN];
-  init_2d_mem<SEQ_LEN, PROJ_COLS, sbit8_t>(quantized_final_output, 0);
+  init_3d_mem<SEQ_LEN, PROJ_COLS/4, 4, sbit8_t>(quantized_final_output, 0);
   init_1d_mem<SEQ_LEN, attn_fixed_t>(final_scales, 1);
   quantize_activation<SEQ_LEN, PROJ_COLS>(
     attn_output_2D,

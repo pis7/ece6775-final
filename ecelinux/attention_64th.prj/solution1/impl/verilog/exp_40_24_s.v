@@ -198,7 +198,7 @@ wire   [99:0] grp_fu_765_p2;
 wire   [49:0] zext_ln703_4_fu_781_p1;
 wire   [39:0] and_ln_fu_793_p4;
 wire   [49:0] y_l_V_fu_784_p2;
-wire   [38:0] tmp_59_fu_807_p4;
+wire   [38:0] tmp_58_fu_807_p4;
 wire   [0:0] or_ln281_18_fu_789_p2;
 wire   [39:0] add_ln282_fu_801_p2;
 wire   [39:0] zext_ln708_fu_817_p1;
@@ -265,7 +265,7 @@ dut_mul_50ns_47nspcA #(
     .din0_WIDTH( 50 ),
     .din1_WIDTH( 47 ),
     .dout_WIDTH( 97 ))
-dut_mul_50ns_47nspcA_U42(
+dut_mul_50ns_47nspcA_U52(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_692_p0),
@@ -280,7 +280,7 @@ dut_mul_50ns_50nsqcK #(
     .din0_WIDTH( 50 ),
     .din1_WIDTH( 50 ),
     .dout_WIDTH( 100 ))
-dut_mul_50ns_50nsqcK_U43(
+dut_mul_50ns_50nsqcK_U53(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_765_p0),
@@ -674,7 +674,7 @@ assign rhs_V_3_fu_668_p5 = {{{{tmp_V_1_reg_846_pp0_iter1_reg}, {7'd0}}, {f_x_msb
 
 assign rhs_V_fu_655_p1 = tmp_V_reg_841;
 
-assign tmp_59_fu_807_p4 = {{y_l_V_fu_784_p2[49:11]}};
+assign tmp_58_fu_807_p4 = {{y_l_V_fu_784_p2[49:11]}};
 
 assign tmp_V_1_fu_501_p1 = x_V[4:0];
 
@@ -736,7 +736,7 @@ assign zext_ln703_4_fu_781_p1 = y_lo_s_V_reg_934;
 
 assign zext_ln703_fu_740_p1 = rhs_V_3_reg_888_pp0_iter3_reg;
 
-assign zext_ln708_fu_817_p1 = tmp_59_fu_807_p4;
+assign zext_ln708_fu_817_p1 = tmp_58_fu_807_p4;
 
 assign zext_ln727_fu_181_p1 = x_V;
 

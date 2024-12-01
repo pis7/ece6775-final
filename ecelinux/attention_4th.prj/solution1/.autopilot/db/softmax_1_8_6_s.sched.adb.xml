@@ -724,7 +724,7 @@ SOFTMAX_LOOP_2_begin:8  %input_0_V_load = load i40* %input_0_V_addr, align 8
 
 <Node id="16" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-SOFTMAX_LOOP_2_begin:0  call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str31) nounwind
+SOFTMAX_LOOP_2_begin:0  call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str32) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln308"/></StgValue>
@@ -739,7 +739,7 @@ SOFTMAX_LOOP_2_begin:0  call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_st
 
 <Node id="23" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-SOFTMAX_LOOP_2_begin:7  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str32)
+SOFTMAX_LOOP_2_begin:7  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str33)
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -832,10 +832,10 @@ SOFTMAX_LOOP_2_begin:9  br label %2
 
 <Node id="30" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:3  %empty_83 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 5, i64 5, i64 5)
+:3  %empty_85 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 5, i64 5, i64 5)
 
 ]]></Node>
-<StgValue><ssdm name="empty_83"/></StgValue>
+<StgValue><ssdm name="empty_85"/></StgValue>
 </operation>
 
 <operation id="99" st_id="4" stage="1" lat="1">
@@ -977,7 +977,7 @@ SOFTMAX_LOOP_2_begin:9  br label %2
 
 <Node id="33" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-._crit_edge.0:0  call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str33) nounwind
+._crit_edge.0:0  call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str34) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln312"/></StgValue>
@@ -1100,10 +1100,10 @@ SOFTMAX_LOOP_2_begin:9  br label %2
 
 <Node id="49" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader:3  %empty_82 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
+.preheader:3  %empty_84 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
 
 ]]></Node>
-<StgValue><ssdm name="empty_82"/></StgValue>
+<StgValue><ssdm name="empty_84"/></StgValue>
 </operation>
 
 <operation id="116" st_id="6" stage="1" lat="1">
@@ -1419,7 +1419,7 @@ _ZN13ap_fixed_baseILi41ELi25ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1
 
 <Node id="53" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-_ZN13ap_fixed_baseILi41ELi25ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i.0:0  call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str34) nounwind
+_ZN13ap_fixed_baseILi41ELi25ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i.0:0  call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str35) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln314"/></StgValue>
@@ -1527,10 +1527,10 @@ _ZN13ap_fixed_baseILi41ELi25ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1
 
 <Node id="70" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader.0:2  %empty_81 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
+.preheader.0:2  %empty_83 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
 
 ]]></Node>
-<StgValue><ssdm name="empty_81"/></StgValue>
+<StgValue><ssdm name="empty_83"/></StgValue>
 </operation>
 
 <operation id="142" st_id="16" stage="1" lat="1">
@@ -1653,10 +1653,10 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi40ELi24ELb
 
 <Node id="86" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-SOFTMAX_LOOP_2_end:0  %empty_80 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str32, i32 %tmp)
+SOFTMAX_LOOP_2_end:0  %empty_82 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str33, i32 %tmp)
 
 ]]></Node>
-<StgValue><ssdm name="empty_80"/></StgValue>
+<StgValue><ssdm name="empty_82"/></StgValue>
 </operation>
 
 <operation id="150" st_id="16" stage="1" lat="1">
@@ -2779,7 +2779,7 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi40ELi24ELb
 
 <Node id="74" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi40ELi24ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.0:0  call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str35) nounwind
+_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi40ELi24ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.0:0  call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str36) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln321"/></StgValue>

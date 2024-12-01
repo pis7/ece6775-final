@@ -702,7 +702,7 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str) nounwind
+_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str16) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln87"/></StgValue>
@@ -2318,7 +2318,7 @@ _ZN13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi80ELi48ELb1
 
 <Node id="44" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-_ZN13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str24) nounwind
+_ZN13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str27) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln93"/></StgValue>
@@ -2446,7 +2446,7 @@ _ZN13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi80ELi48ELb1
 </dataflow>
 <dataflow id="301" from="_ssdm_op_SpecLoopName" to="specloopname_ln87" fromId="300" toId="88">
 </dataflow>
-<dataflow id="303" from="p_str" to="specloopname_ln87" fromId="302" toId="88">
+<dataflow id="303" from="p_str16" to="specloopname_ln87" fromId="302" toId="88">
 </dataflow>
 <dataflow id="305" from="_ssdm_op_BitConcatenate.i56.i40.i16" to="lhs_V" fromId="304" toId="89">
 </dataflow>
@@ -2834,7 +2834,7 @@ _ZN13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi80ELi48ELb1
 </dataflow>
 <dataflow id="509" from="_ssdm_op_SpecLoopName" to="specloopname_ln93" fromId="300" toId="182">
 </dataflow>
-<dataflow id="511" from="p_str24" to="specloopname_ln93" fromId="510" toId="182">
+<dataflow id="511" from="p_str27" to="specloopname_ln93" fromId="510" toId="182">
 </dataflow>
 <dataflow id="512" from="trunc_ln" to="store_ln93" fromId="181" toId="183">
 </dataflow>

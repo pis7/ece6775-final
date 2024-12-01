@@ -491,7 +491,7 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>p_Result_s_79</name>
+						<name>p_Result_s_81</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>286</lineNumber>
@@ -54467,7 +54467,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_Result_s_79_fu_398</first>
+			<first>p_Result_s_81_fu_398</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

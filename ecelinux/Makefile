@@ -95,6 +95,9 @@ vivado_64th:
 	$(XIL_HLS) -f run_64th.tcl
 
 # bitstream
+
+bitstream: bitstream_4th bitstream_16th bitstream_64th
+
 bitstream_full: vivado_full
 	source $(XILINX_VIVADO)/settings64.sh; ./run_bitstream.sh -p "attention_full"
 	@echo "Bitstream saved to $<"

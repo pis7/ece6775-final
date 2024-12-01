@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'init_2d_mem'
 ================================================================
-* Date:           Fri Nov 29 11:44:37 2024
+* Date:           Sun Dec  1 01:11:10 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_64th.prj
@@ -81,7 +81,7 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.76>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str1838)" [./layer.h:37]   --->   Operation 3 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str1841)" [./layer.h:37]   --->   Operation 3 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 4 [1/1] (1.76ns)   --->   "br label %0" [./layer.h:37]   --->   Operation 4 'br' <Predicate = true> <Delay = 1.76>
 
 State 2 <SV = 1> <Delay = 2.32>
@@ -90,12 +90,12 @@ ST_2 : Operation 6 [1/1] (1.36ns)   --->   "%icmp_ln37 = icmp eq i5 %j_0_0, -8" 
 ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%empty_97 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 24, i64 24, i64 24)"   --->   Operation 7 'speclooptripcount' 'empty_97' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 8 [1/1] (1.78ns)   --->   "%add_ln37 = add i5 %j_0_0, 1" [./layer.h:37]   --->   Operation 8 'add' 'add_ln37' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 9 [1/1] (0.00ns)   --->   "br i1 %icmp_ln37, label %INIT_2D_MEM_LOOP_1_end, label %1" [./layer.h:37]   --->   Operation 9 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str1839) nounwind" [./layer.h:38]   --->   Operation 10 'specloopname' <Predicate = (!icmp_ln37)> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str1842) nounwind" [./layer.h:38]   --->   Operation 10 'specloopname' <Predicate = (!icmp_ln37)> <Delay = 0.00>
 ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln38 = zext i5 %j_0_0 to i64" [./layer.h:38]   --->   Operation 11 'zext' 'zext_ln38' <Predicate = (!icmp_ln37)> <Delay = 0.00>
 ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%mem_0_V_addr = getelementptr [24 x i40]* %mem_0_V, i64 0, i64 %zext_ln38" [./layer.h:38]   --->   Operation 12 'getelementptr' 'mem_0_V_addr' <Predicate = (!icmp_ln37)> <Delay = 0.00>
 ST_2 : Operation 13 [1/1] (2.32ns)   --->   "store i40 0, i40* %mem_0_V_addr, align 8" [./layer.h:38]   --->   Operation 13 'store' <Predicate = (!icmp_ln37)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 24> <RAM>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "br label %0" [./layer.h:37]   --->   Operation 14 'br' <Predicate = (!icmp_ln37)> <Delay = 0.00>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([19 x i8]* @p_str1838, i32 %tmp)" [./layer.h:38]   --->   Operation 15 'specregionend' 'empty' <Predicate = (icmp_ln37)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([19 x i8]* @p_str1841, i32 %tmp)" [./layer.h:38]   --->   Operation 15 'specregionend' 'empty' <Predicate = (icmp_ln37)> <Delay = 0.00>
 ST_2 : Operation 16 [1/1] (0.00ns)   --->   "ret void" [./layer.h:39]   --->   Operation 16 'ret' <Predicate = (icmp_ln37)> <Delay = 0.00>
 
 
@@ -160,7 +160,7 @@ ret_ln39          (ret              ) [ 000]
 <pin id="5" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str1838"/></StgValue>
+<StgValue><ssdm name="p_str1841"/></StgValue>
 </bind>
 </comp>
 
@@ -223,7 +223,7 @@ ret_ln39          (ret              ) [ 000]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str1839"/></StgValue>
+<StgValue><ssdm name="p_str1842"/></StgValue>
 </bind>
 </comp>
 

@@ -257,7 +257,7 @@ begin
         x_V => sub_ln703_reg_405,
         ap_return => grp_exp_40_24_s_fu_163_ap_return);
 
-    dut_sdiv_56ns_40spcA_U57 : component dut_sdiv_56ns_40spcA
+    dut_sdiv_56ns_40spcA_U188 : component dut_sdiv_56ns_40spcA
     generic map (
         ID => 1,
         NUM_STAGE => 60,

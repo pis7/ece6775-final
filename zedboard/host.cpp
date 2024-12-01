@@ -37,7 +37,7 @@ int main() {
   // pack images to 32-bit and transmit to dut function
   for (int i = 0; i < SEQ_LEN_DECODE; i++)
     for (int j = 0; j < HS_COLS_BASIC; j++) {
-      input_vector = hidden_states[i][j];
+      input_vector = (st_fixed32_t)hidden_states[i][j];
       nbytes = write(fdw, (void *)&input_vector, sizeof(input_vector));
       assert(nbytes == sizeof(input_vector));
     }
@@ -45,6 +45,7 @@ int main() {
   // check results
   st_fixed32_t result;
   float error_accum  = 0.0;
+  std::cout << "\033[32m";
   for (int i = 0; i < SEQ_LEN_DECODE; i++) {
     for (int j = 0; j < PROJ_COLS_BASIC; j++) {
       nbytes = read(fdr, (void *)&result, sizeof(result));

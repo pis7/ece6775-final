@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'GEMM_3D_float_1'" level="0">
-<item name = "Date">Fri Nov 29 11:43:03 2024
+<item name = "Date">Sun Dec  1 01:00:10 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -85,15 +85,15 @@
 <column name="add_ln1117_fu_293_p2">+, 0, 0, 11, 11, 11</column>
 <column name="add_ln1192_fu_326_p2">+, 0, 0, 63, 56, 56</column>
 <column name="add_ln203_fu_236_p2">+, 0, 0, 15, 6, 6</column>
-<column name="add_ln272_fu_222_p2">+, 0, 0, 12, 3, 1</column>
-<column name="add_ln274_fu_252_p2">+, 0, 0, 15, 5, 1</column>
+<column name="add_ln279_fu_222_p2">+, 0, 0, 12, 3, 1</column>
+<column name="add_ln281_fu_252_p2">+, 0, 0, 15, 5, 1</column>
 <column name="i_fu_158_p2">+, 0, 0, 12, 3, 1</column>
 <column name="sub_ln1116_fu_188_p2">-, 0, 0, 15, 9, 9</column>
 <column name="sub_ln1117_fu_287_p2">-, 0, 0, 11, 11, 11</column>
 <column name="sub_ln203_fu_210_p2">-, 0, 0, 15, 6, 6</column>
-<column name="icmp_ln270_fu_152_p2">icmp, 0, 0, 9, 3, 4</column>
-<column name="icmp_ln272_fu_216_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="icmp_ln274_fu_246_p2">icmp, 0, 0, 11, 5, 5</column>
+<column name="icmp_ln277_fu_152_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln279_fu_216_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln281_fu_246_p2">icmp, 0, 0, 11, 5, 5</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -109,8 +109,8 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="add_ln1116_reg_385">10, 0, 10, 0</column>
 <column name="add_ln1117_reg_390">11, 0, 11, 0</column>
-<column name="add_ln272_reg_362">3, 0, 3, 0</column>
-<column name="add_ln274_reg_380">5, 0, 5, 0</column>
+<column name="add_ln279_reg_362">3, 0, 3, 0</column>
+<column name="add_ln281_reg_380">5, 0, 5, 0</column>
 <column name="ap_CS_fsm">8, 0, 8, 0</column>
 <column name="i_0_reg_106">3, 0, 3, 0</column>
 <column name="i_reg_344">3, 0, 3, 0</column>

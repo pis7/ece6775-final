@@ -94,13 +94,13 @@ reg   [5:0] l_0_0_reg_147;
 wire  signed [63:0] sext_ln203_fu_255_p1;
 wire  signed [63:0] sext_ln1116_1_fu_281_p1;
 wire   [63:0] zext_ln1117_fu_317_p1;
-wire   [9:0] tmp_104_fu_170_p3;
-wire   [7:0] tmp_105_fu_182_p3;
+wire   [9:0] tmp_72_fu_170_p3;
+wire   [7:0] tmp_73_fu_182_p3;
 wire   [10:0] zext_ln1116_fu_178_p1;
 wire   [10:0] zext_ln1116_3_fu_190_p1;
 wire   [10:0] sub_ln1116_fu_194_p2;
-wire   [4:0] tmp_107_fu_212_p3;
-wire   [6:0] tmp_106_fu_204_p3;
+wire   [4:0] tmp_75_fu_212_p3;
+wire   [6:0] tmp_74_fu_204_p3;
 wire   [6:0] zext_ln203_fu_220_p1;
 wire   [6:0] zext_ln203_13_fu_246_p1;
 wire   [6:0] add_ln203_fu_250_p2;
@@ -372,23 +372,23 @@ assign sub_ln1116_fu_194_p2 = (zext_ln1116_fu_178_p1 - zext_ln1116_3_fu_190_p1);
 
 assign sub_ln1117_fu_306_p2 = (p_shl4_cast_fu_290_p3 - p_shl5_cast_fu_298_p3);
 
-assign sub_ln203_fu_224_p2 = (tmp_106_fu_204_p3 - zext_ln203_fu_220_p1);
+assign sub_ln203_fu_224_p2 = (tmp_74_fu_204_p3 - zext_ln203_fu_220_p1);
 
-assign tmp_104_fu_170_p3 = {{i_0_reg_112}, {6'd0}};
+assign tmp_72_fu_170_p3 = {{i_0_reg_112}, {6'd0}};
 
-assign tmp_105_fu_182_p3 = {{i_0_reg_112}, {4'd0}};
+assign tmp_73_fu_182_p3 = {{i_0_reg_112}, {4'd0}};
 
-assign tmp_106_fu_204_p3 = {{i_0_reg_112}, {3'd0}};
+assign tmp_74_fu_204_p3 = {{i_0_reg_112}, {3'd0}};
 
-assign tmp_107_fu_212_p3 = {{i_0_reg_112}, {1'd0}};
+assign tmp_75_fu_212_p3 = {{i_0_reg_112}, {1'd0}};
 
 assign trunc_ln1117_fu_286_p1 = add_ln1116_fu_276_p2[9:0];
 
-assign zext_ln1116_3_fu_190_p1 = tmp_105_fu_182_p3;
+assign zext_ln1116_3_fu_190_p1 = tmp_73_fu_182_p3;
 
 assign zext_ln1116_4_fu_272_p1 = l_0_0_reg_147;
 
-assign zext_ln1116_fu_178_p1 = tmp_104_fu_170_p3;
+assign zext_ln1116_fu_178_p1 = tmp_72_fu_170_p3;
 
 assign zext_ln1117_fu_317_p1 = add_ln1117_fu_312_p2;
 
@@ -396,7 +396,7 @@ assign zext_ln203_12_fu_242_p1 = k_0_0_reg_123;
 
 assign zext_ln203_13_fu_246_p1 = k_0_0_reg_123;
 
-assign zext_ln203_fu_220_p1 = tmp_107_fu_212_p3;
+assign zext_ln203_fu_220_p1 = tmp_75_fu_212_p3;
 
 always @ (posedge ap_clk) begin
     sext_ln1116_reg_365[3:0] <= 4'b0000;
