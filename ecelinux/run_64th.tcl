@@ -34,12 +34,17 @@ set_directive_array_partition -type cyclic -factor [expr $dataset_dim / 24] -dim
 set_directive_array_partition -type cyclic -factor [expr $dataset_dim / 24] -dim 2 attention quantized_final_output
 set_directive_array_partition -type complete -dim 3 attention quantized_hidden_states
 set_directive_array_partition -type complete -dim 3 attention quantized_final_output
+set_directive_array_partition -type cyclic -factor [expr $dataset_dim / 24] -dim 3 attention q_embed
+set_directive_array_partition -type cyclic -factor [expr $dataset_dim / 24] -dim 2 attention k_proj_transposed
 
 # quantize_activation directives
 set_directive_unroll quantize_activation/QUANTIZE_ACTIVATION_LOOP_5
 
 # linear_forward_no_mul directives
 set_directive_pipeline linear_forward_no_mul/LINEAR_FORWARD_NO_MUL_LOOP_3
+
+# GEMM_3D_float directives
+set_directive_unroll -factor [expr $dataset_dim / 24] GEMM_3D_float/GEMM_3D_FLOAT_LOOP_4
 
 ############################################
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'sqrt_fixed_42_26_s'" level="0">
-<item name = "Date">Sun Dec  1 10:39:46 2024
+<item name = "Date">Sun Dec  1 11:18:37 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_4th.prj</item>
@@ -47,14 +47,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 6101, -</column>
+<column name="Expression">-, -, 0, 6717, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">0, -, 3179, 736, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, 2, 12, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 2, 14, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -77,20 +77,20 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln703_10_fu_2786_p2">+, 0, 0, 13, 17, 17</column>
+<column name="add_ln703_10_fu_2786_p2">+, 0, 0, 57, 17, 17</column>
 <column name="add_ln703_11_fu_2791_p2">+, 0, 0, 36, 29, 2</column>
-<column name="add_ln703_12_fu_3002_p2">+, 0, 0, 13, 17, 17</column>
+<column name="add_ln703_12_fu_3002_p2">+, 0, 0, 57, 17, 17</column>
 <column name="add_ln703_13_fu_3008_p2">+, 0, 0, 36, 29, 2</column>
-<column name="add_ln703_14_fu_3215_p2">+, 0, 0, 13, 17, 17</column>
+<column name="add_ln703_14_fu_3215_p2">+, 0, 0, 57, 17, 17</column>
 <column name="add_ln703_15_fu_3220_p2">+, 0, 0, 36, 29, 2</column>
-<column name="add_ln703_16_fu_3426_p2">+, 0, 0, 13, 17, 17</column>
+<column name="add_ln703_16_fu_3426_p2">+, 0, 0, 57, 17, 17</column>
 <column name="add_ln703_17_fu_3431_p2">+, 0, 0, 36, 29, 2</column>
-<column name="add_ln703_18_fu_3619_p2">+, 0, 0, 13, 17, 17</column>
+<column name="add_ln703_18_fu_3619_p2">+, 0, 0, 57, 17, 17</column>
 <column name="add_ln703_19_fu_3624_p2">+, 0, 0, 36, 29, 2</column>
 <column name="add_ln703_1_fu_1704_p2">+, 0, 0, 36, 29, 2</column>
-<column name="add_ln703_20_fu_3831_p2">+, 0, 0, 13, 17, 17</column>
+<column name="add_ln703_20_fu_3831_p2">+, 0, 0, 57, 17, 17</column>
 <column name="add_ln703_21_fu_3836_p2">+, 0, 0, 36, 29, 2</column>
-<column name="add_ln703_22_fu_4009_p2">+, 0, 0, 13, 17, 17</column>
+<column name="add_ln703_22_fu_4009_p2">+, 0, 0, 57, 17, 17</column>
 <column name="add_ln703_23_fu_4015_p2">+, 0, 0, 36, 29, 2</column>
 <column name="add_ln703_24_fu_1429_p2">+, 0, 0, 24, 17, 17</column>
 <column name="add_ln703_2_fu_1823_p2">+, 0, 0, 36, 29, 2</column>
@@ -124,25 +124,25 @@
 <column name="sub_ln703_14_fu_2455_p2">-, 0, 0, 36, 29, 29</column>
 <column name="sub_ln703_15_fu_2600_p2">-, 0, 0, 36, 29, 29</column>
 <column name="sub_ln703_16_fu_2744_p2">-, 0, 0, 24, 17, 17</column>
-<column name="sub_ln703_17_fu_2780_p2">-, 0, 0, 13, 17, 17</column>
+<column name="sub_ln703_17_fu_2780_p2">-, 0, 0, 57, 17, 17</column>
 <column name="sub_ln703_18_fu_2803_p2">-, 0, 0, 36, 29, 29</column>
 <column name="sub_ln703_19_fu_2959_p2">-, 0, 0, 24, 17, 17</column>
 <column name="sub_ln703_1_fu_1699_p2">-, 0, 0, 24, 17, 17</column>
-<column name="sub_ln703_20_fu_2996_p2">-, 0, 0, 13, 17, 17</column>
+<column name="sub_ln703_20_fu_2996_p2">-, 0, 0, 57, 17, 17</column>
 <column name="sub_ln703_21_fu_3020_p2">-, 0, 0, 36, 29, 29</column>
 <column name="sub_ln703_22_fu_3174_p2">-, 0, 0, 24, 17, 17</column>
-<column name="sub_ln703_23_fu_3209_p2">-, 0, 0, 13, 17, 17</column>
+<column name="sub_ln703_23_fu_3209_p2">-, 0, 0, 57, 17, 17</column>
 <column name="sub_ln703_24_fu_3232_p2">-, 0, 0, 36, 29, 29</column>
 <column name="sub_ln703_25_fu_3385_p2">-, 0, 0, 24, 17, 17</column>
-<column name="sub_ln703_26_fu_3420_p2">-, 0, 0, 13, 17, 17</column>
+<column name="sub_ln703_26_fu_3420_p2">-, 0, 0, 57, 17, 17</column>
 <column name="sub_ln703_27_fu_3443_p2">-, 0, 0, 36, 29, 29</column>
 <column name="sub_ln703_28_fu_3589_p2">-, 0, 0, 24, 17, 17</column>
-<column name="sub_ln703_29_fu_3614_p2">-, 0, 0, 13, 17, 17</column>
+<column name="sub_ln703_29_fu_3614_p2">-, 0, 0, 57, 17, 17</column>
 <column name="sub_ln703_2_fu_1716_p2">-, 0, 0, 36, 29, 29</column>
 <column name="sub_ln703_30_fu_3776_p2">-, 0, 0, 24, 17, 17</column>
-<column name="sub_ln703_31_fu_3827_p2">-, 0, 0, 13, 17, 17</column>
+<column name="sub_ln703_31_fu_3827_p2">-, 0, 0, 57, 17, 17</column>
 <column name="sub_ln703_32_fu_3965_p2">-, 0, 0, 24, 17, 17</column>
-<column name="sub_ln703_33_fu_4003_p2">-, 0, 0, 13, 17, 17</column>
+<column name="sub_ln703_33_fu_4003_p2">-, 0, 0, 57, 17, 17</column>
 <column name="sub_ln703_3_fu_1835_p2">-, 0, 0, 24, 17, 17</column>
 <column name="sub_ln703_4_fu_1844_p2">-, 0, 0, 36, 29, 29</column>
 <column name="sub_ln703_5_fu_1942_p2">-, 0, 0, 24, 17, 17</column>

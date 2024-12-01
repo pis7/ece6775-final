@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sqrt_fixed_42_26_s'
 ================================================================
-* Date:           Sun Dec  1 10:39:26 2024
+* Date:           Sun Dec  1 11:18:15 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_4th.prj
@@ -103,9 +103,9 @@ ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%x_l_I_V = zext i26 %sext_ln708 to 
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln731 = trunc i32 %x_V_read to i16" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:236]   --->   Operation 23 'trunc' 'trunc_ln731' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %x_V_read, i32 31)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:281]   --->   Operation 24 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node select_ln488_1)   --->   "%select_ln248 = select i1 %tmp, i3 2, i3 -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:286]   --->   Operation 25 'select' 'select_ln248' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node select_ln488_1)   --->   "%p_Result_s_81 = call i29 @llvm.part.set.i29.i3(i29 %x_l_I_V, i3 %select_ln248, i32 24, i32 26)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:286]   --->   Operation 26 'partset' 'p_Result_s_81' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node select_ln488_1)   --->   "%p_Result_s_83 = call i29 @llvm.part.set.i29.i3(i29 %x_l_I_V, i3 %select_ln248, i32 24, i32 26)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:286]   --->   Operation 26 'partset' 'p_Result_s_83' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 27 [1/1] (0.69ns)   --->   "%select_ln488 = select i1 %tmp, i13 -4096, i13 0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:281]   --->   Operation 27 'select' 'select_ln488' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 28 [1/1] (0.98ns) (out node of the LUT)   --->   "%select_ln488_1 = select i1 %tmp, i29 %p_Result_s_81, i29 %x_l_I_V" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:281]   --->   Operation 28 'select' 'select_ln488_1' <Predicate = true> <Delay = 0.98> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.98ns) (out node of the LUT)   --->   "%select_ln488_1 = select i1 %tmp, i29 %p_Result_s_83, i29 %x_l_I_V" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:281]   --->   Operation 28 'select' 'select_ln488_1' <Predicate = true> <Delay = 0.98> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%p_Result_25_1 = call i2 @_ssdm_op_PartSelect.i2.i13.i32.i32(i13 %select_ln488, i32 11, i32 12)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:272]   --->   Operation 29 'partselect' 'p_Result_25_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_2 = call i3 @_ssdm_op_BitConcatenate.i3.i2.i1(i2 %p_Result_25_1, i1 true)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:276]   --->   Operation 30 'bitconcatenate' 'tmp_2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%p_Result_28_1 = call i4 @_ssdm_op_PartSelect.i4.i29.i32.i32(i29 %select_ln488_1, i32 22, i32 25)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:281]   --->   Operation 31 'partselect' 'p_Result_28_1' <Predicate = true> <Delay = 0.00>
@@ -868,8 +868,7 @@ The critical path consists of the following:
 	'icmp' operation ('icmp_ln1494_16', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [559]  (2.46 ns)
 	'or' operation ('or_ln318_40', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [570]  (0.978 ns)
 	'select' operation ('select_ln318_56', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [571]  (0.781 ns)
-	'add' operation ('res_FH_l.V', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:361) [573]  (2.11 ns)
-	'select' operation ('__Val2__', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:363) [577]  (0 ns)
+	'add' operation ('res_FH.V', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:362) [574]  (2.11 ns)
 	'select' operation ('select_ln98', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:223) [580]  (0.804 ns)
 
 

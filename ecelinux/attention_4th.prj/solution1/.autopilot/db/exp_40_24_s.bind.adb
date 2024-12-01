@@ -1333,7 +1333,7 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>p_Result_s_97</name>
+						<name>p_Result_s_99</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>278</lineNumber>
@@ -10871,7 +10871,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_Result_s_97_fu_355</first>
+			<first>p_Result_s_99_fu_355</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

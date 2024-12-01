@@ -2859,8 +2859,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>90385</mMinLatency>
-			<mMaxLatency>90385</mMaxLatency>
+			<mMinLatency>74129</mMinLatency>
+			<mMaxLatency>74129</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -2926,8 +2926,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>89231</mMinLatency>
-			<mMaxLatency>89231</mMaxLatency>
+			<mMinLatency>72975</mMinLatency>
+			<mMaxLatency>72975</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
