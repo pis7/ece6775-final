@@ -1,5 +1,5 @@
 import allo
-from allo.ir.types import float32, int32, int8, uint8
+from allo.ir.types import float32, int32, int8, uint8, index
 import numpy as np
 from kaixin_data import *
 
@@ -131,7 +131,7 @@ def attention_test():
                     reshaped[h, s, d] = input[s, h * HEAD_DIM + d]
 
     def linear_forward_no_mul(
-        input: int8[SEQ_LEN, HS_COLS],
+        input: int8[SEQ_LEN, HS_COLS // 4, 4],
         scales: float32[SEQ_LEN],
         weights_packed_data: uint8[HS_COLS // 4, HS_COLS],
         weights_scale: float32,
@@ -140,30 +140,30 @@ def attention_test():
         for i in allo.grid(SEQ_LEN):
             for j in allo.grid(HS_COLS):
                 local_acum: float32 = 0
-                for k in allo.grid(HS_COLS // 4):
-                    packed_value: uint8 = weights_packed_data[k, j]
-                    temp: float32 = 0
-                    for l in allo.grid(4):
-                        col_index: int32 = 4 * k + l
-                        if col_index < HS_COLS:
-                            shift: int32 = 2 * l
-                            value: int8 = (packed_value >> shift) & 0b11
-                            weight_value: int8 = 0
-                            if value == 0b01:
-                                weight_value = 1
-                            elif value == 0b10:
-                                weight_value = -1
+                for k0 in allo.grid(HS_COLS // 4 / 24):
+                    for k1 in allo.grid(24):
+                        k: index = k0 * 24 + k1
+                        packed_value: uint8 = weights_packed_data[k, j]
+                        temp: float32 = 0
+                        for l in allo.grid(4):
+                            if l + 4 * k < HS_COLS:
+                                value: int8 = (packed_value >> (2 * l)) & 0b11
+                                weight_value: int8 = 0
+                                if value == 0b01:
+                                    weight_value = 1
+                                elif value == 0b10:
+                                    weight_value = -1
 
-                            temp += input[i, col_index] * weight_value
+                                temp += input[i, k, l] * weight_value
 
-                    local_acum += temp
+                        local_acum += temp
 
                 q_proj_re[i, j] = local_acum / (scales[i] * weights_scale)
 
     def quantize_activation(
         input: float32[SEQ_LEN, HS_COLS],
         num_bits: int32,
-        quantized_input: int8[SEQ_LEN, HS_COLS],
+        quantized_input: int8[SEQ_LEN, HS_COLS // 4, 4],
         scales: float32[SEQ_LEN],
     ):
         Qn: int32 = -(1 << (num_bits - 1))
@@ -180,16 +180,17 @@ def attention_test():
             scale: float32 = Qp / max_v
             scales[i] = scale
 
-            for j in allo.grid(HS_COLS):
-                quantized_value: int32 = (
-                    input[i, j] * scale + 0.5
-                    if input[i, j] * scale > 0
-                    else input[i, j] * scale - 0.5
-                )
-                quantized_value_clamped: int8 = (
-                    Qn if quantized_value < Qn else Qp if quantized_value > Qp else quantized_value
-                )
-                quantized_input[i, j] = quantized_value_clamped
+            for j in allo.grid(HS_COLS // 4):
+                for l in allo.grid(4):
+                    quantized_value: int32 = (
+                        input[i, j * 4 + l] * scale + 0.5
+                        if input[i, j * 4 + l] * scale > 0
+                        else input[i, j * 4 + l] * scale - 0.5
+                    )
+                    quantized_value_clamped: int8 = (
+                        Qn if quantized_value < Qn else Qp if quantized_value > Qp else quantized_value
+                    )
+                    quantized_input[i, j, l] = quantized_value_clamped
 
     def rms_norm(
         hidden_states: float32[SEQ_LEN, HS_COLS],
@@ -231,7 +232,7 @@ def attention_test():
         rms_norm(hidden_states, ln_weight_in, RMS_NORM_EPS, rms_hidden_states)
 
         # Step 2: Quantize the input activations for Q, K, V projections
-        quantized_hidden_states: int8[SEQ_LEN, HS_COLS] = 0
+        quantized_hidden_states: int8[SEQ_LEN, HS_COLS // 4, 4] = 0
         scales: float32[SEQ_LEN] = 0
         quantize_activation(rms_hidden_states, 8, quantized_hidden_states, scales)
 
@@ -305,7 +306,7 @@ def attention_test():
         rms_norm(attn_output_2D, ln_weight, RMS_NORM_EPS, rms_attn_output)
 
         # Step 10: Final output projection using quantized GEMM (forward_no_mul)
-        quantized_final_output: int8[SEQ_LEN, HS_COLS] = 0
+        quantized_final_output: int8[SEQ_LEN, HS_COLS // 4, 4] = 0
         final_scales: float32[SEQ_LEN] = 0
         quantize_activation(rms_attn_output, 8, quantized_final_output, final_scales)
 
@@ -313,11 +314,14 @@ def attention_test():
         linear_forward_no_mul(quantized_final_output, final_scales, o_weights_packed_data, o_weights_scale, final_output)
         return final_output
 
-    s_linear_forward_no_mul = allo.customize(linear_forward_no_mul)
-    s_linear_forward_no_mul.pipeline("k")
-    s_linear_forward_no_mul.pipeline("l")
+    # linear forward no mul directives
+    s_lfnm = allo.customize(linear_forward_no_mul)
+    s_lfnm.unroll("l")
+    s_lfnm.unroll("k1")
+    s_lfnm.pipeline("k0")
+
     s = allo.customize(attention)
-    s.compose(s_linear_forward_no_mul)
+    s.compose(s_lfnm)
     f = s.build(target="vivado_hls", mode="csyn", project="attn_opt.prj")
     outs = f(
         np.array(hidden_states, dtype=np.float32),

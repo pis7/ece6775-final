@@ -1431,7 +1431,7 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>p_Result_s_85</name>
+						<name>p_Result_s_89</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1311</lineNumber>
@@ -2965,7 +2965,7 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>tmp_6</name>
+						<name>tmp_7</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1383</lineNumber>
@@ -3408,7 +3408,7 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>tmp_16</name>
+						<name>tmp_14</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1393</lineNumber>
@@ -3459,7 +3459,7 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>tmp_17</name>
+						<name>tmp_15</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1394</lineNumber>
@@ -5768,7 +5768,7 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>trunc_ln8</name>
+						<name>trunc_ln9</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1506</lineNumber>
@@ -7287,7 +7287,7 @@
 					<Obj>
 						<type>0</type>
 						<id>158</id>
-						<name>add_ln703_9</name>
+						<name>add_ln703_102</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1508</lineNumber>
@@ -7336,7 +7336,7 @@
 					<Obj>
 						<type>0</type>
 						<id>159</id>
-						<name>add_ln703_10</name>
+						<name>add_ln703_103</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1508</lineNumber>
@@ -7385,7 +7385,7 @@
 					<Obj>
 						<type>0</type>
 						<id>160</id>
-						<name>tmp_90</name>
+						<name>tmp_164</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1513</lineNumber>
@@ -7485,7 +7485,7 @@
 					<Obj>
 						<type>0</type>
 						<id>162</id>
-						<name>tmp_91</name>
+						<name>tmp_165</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1513</lineNumber>
@@ -7584,7 +7584,7 @@
 					<Obj>
 						<type>0</type>
 						<id>164</id>
-						<name>tmp_92</name>
+						<name>tmp_166</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1513</lineNumber>
@@ -7782,7 +7782,7 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>tmp_18</name>
+						<name>tmp_16</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/bg372/ece6775-final/allo/attn_opt.prj</fileDirectory>
 						<lineNumber>1525</lineNumber>

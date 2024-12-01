@@ -6,7 +6,7 @@
 
 source /opt/xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'bg372' on host 'en-ec-zhang-23.coecis.cornell.edu' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Thu Nov 28 23:08:21 EST 2024
+INFO: [HLS 200-10] For user 'bg372' on host 'en-ec-zhang-23.coecis.cornell.edu' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Sat Nov 30 20:55:57 EST 2024
 INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.10 (Ootpa)"
 INFO: [HLS 200-10] In directory '/home/bg372/ece6775-final/allo/attn_opt.prj'
 Sourcing Tcl script 'run.tcl'
@@ -19,11 +19,11 @@ INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 INFO: [HLS 200-10] Analyzing design file 'kernel.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 620578 ; free virtual = 758767
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 620578 ; free virtual = 758767
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 621416 ; free virtual = 759738
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 621416 ; free virtual = 759738
 INFO: [HLS 200-10] Starting code transformations ...
 INFO: [XFORM 203-603] Inlining function 'std::max<ap_fixed<32, 20, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'quantize_activation' (kernel.cpp:86).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 1424.152 ; gain = 786.125 ; free physical = 620277 ; free virtual = 758512
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 1424.152 ; gain = 786.125 ; free physical = 621114 ; free virtual = 759483
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fixed<74, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 68, 60>' into 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:348) automatically.
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fixed<74, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 60, 55>' into 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:350) automatically.
@@ -31,49 +31,49 @@ INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fix
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fixed<74, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 50, 45>' into 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:354) automatically.
 INFO: [XFORM 203-602] Inlining function 'fabs_fixed<33, 21>' into 'pow_apfixed_reduce::pow<32, 20>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:94) automatically.
 INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'rms_norm' (kernel.cpp:35) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'softmax' (kernel.cpp:394) automatically.
-INFO: [XFORM 203-602] Inlining function 'causal_mask' into 'attention' (kernel.cpp:591) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'softmax' (kernel.cpp:402) automatically.
+INFO: [XFORM 203-602] Inlining function 'causal_mask' into 'attention' (kernel.cpp:601) automatically.
 WARNING: [SYNCHK 200-23] /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:75: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 1434.117 ; gain = 796.090 ; free physical = 620175 ; free virtual = 758428
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 1434.121 ; gain = 796.094 ; free physical = 621010 ; free virtual = 759396
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'log_apfixed_reduce::log<75, 21>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:500:9).
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'exp_reduce::exp_core<32, 20, 54>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:873:30).
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (kernel.cpp:454) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-2' (kernel.cpp:468) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-3' (kernel.cpp:473) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-4' (kernel.cpp:479) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-5' (kernel.cpp:485) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-6.1' (kernel.cpp:495) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-7.1' (kernel.cpp:503) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-8.1' (kernel.cpp:511) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-9.1' (kernel.cpp:522) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-10.1' (kernel.cpp:530) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-14.1' (kernel.cpp:566) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j9' (kernel.cpp:576) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-16' (kernel.cpp:586) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-16.1' (kernel.cpp:587) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_3_i11' (kernel.cpp:593) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_3_j10' (kernel.cpp:594) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-18.1' (kernel.cpp:604) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-19.1' (kernel.cpp:613) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-20' (kernel.cpp:621) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_6_s4' (kernel.cpp:626) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-22' (kernel.cpp:635) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-23' (kernel.cpp:649) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-24' (kernel.cpp:653) in function 'attention' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i9' (kernel.cpp:417) in function 'GEMM_3D_float2' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j6' (kernel.cpp:368) in function 'softmax' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_3_j7' (kernel.cpp:376) in function 'softmax' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i6' (kernel.cpp:356) in function 'causal_mask' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j5' (kernel.cpp:357) in function 'causal_mask' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i5' (kernel.cpp:338) in function 'GEMM_3D_float' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1.1' (kernel.cpp:254) in function 'apply_rotary_pos_emb' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-2.1' (kernel.cpp:262) in function 'apply_rotary_pos_emb' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s2' (kernel.cpp:271) in function 'apply_rotary_pos_emb' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s1' (kernel.cpp:231) in function 'rotate_half' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s' (kernel.cpp:216) in function 'reshape_2D_to_3D' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i3' (kernel.cpp:133) in function 'linear_forward_no_mul' automatically.
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'l_S_k_0_k' (kernel.cpp:137) in function 'linear_forward_no_mul' for pipelining.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (kernel.cpp:462) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-2' (kernel.cpp:478) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-3' (kernel.cpp:483) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-4' (kernel.cpp:489) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-5' (kernel.cpp:495) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-6.1' (kernel.cpp:505) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-7.1' (kernel.cpp:513) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-8.1' (kernel.cpp:521) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-9.1' (kernel.cpp:532) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-10.1' (kernel.cpp:540) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-14.1' (kernel.cpp:576) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j9' (kernel.cpp:586) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-16' (kernel.cpp:596) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-16.1' (kernel.cpp:597) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_3_i11' (kernel.cpp:603) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_3_j10' (kernel.cpp:604) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-18.1' (kernel.cpp:614) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-19.1' (kernel.cpp:623) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-20' (kernel.cpp:631) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_6_s4' (kernel.cpp:636) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-22' (kernel.cpp:645) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-23' (kernel.cpp:661) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-24' (kernel.cpp:665) in function 'attention' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i9' (kernel.cpp:425) in function 'GEMM_3D_float2' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j6' (kernel.cpp:376) in function 'softmax' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_3_j7' (kernel.cpp:384) in function 'softmax' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i6' (kernel.cpp:364) in function 'causal_mask' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_j_0_j5' (kernel.cpp:365) in function 'causal_mask' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i5' (kernel.cpp:346) in function 'GEMM_3D_float' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1.1' (kernel.cpp:262) in function 'apply_rotary_pos_emb' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-2.1' (kernel.cpp:270) in function 'apply_rotary_pos_emb' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s2' (kernel.cpp:279) in function 'apply_rotary_pos_emb' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s1' (kernel.cpp:239) in function 'rotate_half' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_s_0_s' (kernel.cpp:224) in function 'reshape_2D_to_3D' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i3' (kernel.cpp:136) in function 'linear_forward_no_mul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'l_S_k0_0_k0' (kernel.cpp:140) in function 'linear_forward_no_mul' for pipelining.
 INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_i_0_i2' (kernel.cpp:67) in function 'quantize_activation' automatically.
 INFO: [XFORM 203-502] Unrolling small iteration loop 'l_S_index_0_index' (kernel.cpp:22) in function 'rms_norm' automatically.
 INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:729) in function 'log_apfixed_reduce::log<75, 21>' completely with a factor of 75.
@@ -82,71 +82,262 @@ INFO: [HLS 200-489] Unrolling loop 'Loop-2' (/opt/xilinx/Vivado/2019.2/common/te
 INFO: [HLS 200-489] Unrolling loop 'Loop-3' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:1512) in function 'exp_reduce::exp_core<32, 20, 54>' completely with a factor of 5.
 INFO: [HLS 200-489] Unrolling loop 'Loop-4' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:1518) in function 'exp_reduce::exp_core<32, 20, 54>' completely with a factor of 5.
 INFO: [HLS 200-489] Unrolling loop 'Loop-5' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:1521) in function 'exp_reduce::exp_core<32, 20, 54>' completely with a factor of 42.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (kernel.cpp:454) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2' (kernel.cpp:468) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-3' (kernel.cpp:473) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-4' (kernel.cpp:479) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-5' (kernel.cpp:485) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-6.1' (kernel.cpp:495) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-7.1' (kernel.cpp:503) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-8.1' (kernel.cpp:511) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-9.1' (kernel.cpp:522) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-10.1' (kernel.cpp:530) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-14.1' (kernel.cpp:566) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j9' (kernel.cpp:576) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-16' (kernel.cpp:586) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-16.1' (kernel.cpp:587) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_i_3_i11' (kernel.cpp:593) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_j_3_j10' (kernel.cpp:594) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-18.1' (kernel.cpp:604) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-19.1' (kernel.cpp:613) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-20' (kernel.cpp:621) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_s_6_s4' (kernel.cpp:626) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-22' (kernel.cpp:635) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-23' (kernel.cpp:649) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-24' (kernel.cpp:653) in function 'attention' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i9' (kernel.cpp:417) in function 'GEMM_3D_float2' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j6' (kernel.cpp:368) in function 'softmax' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_j_3_j7' (kernel.cpp:376) in function 'softmax' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i6' (kernel.cpp:356) in function 'causal_mask' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j5' (kernel.cpp:357) in function 'causal_mask' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i5' (kernel.cpp:338) in function 'GEMM_3D_float' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (kernel.cpp:254) in function 'apply_rotary_pos_emb' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (kernel.cpp:262) in function 'apply_rotary_pos_emb' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s2' (kernel.cpp:271) in function 'apply_rotary_pos_emb' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s1' (kernel.cpp:231) in function 'rotate_half' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s' (kernel.cpp:216) in function 'reshape_2D_to_3D' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i3' (kernel.cpp:133) in function 'linear_forward_no_mul' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'l_S_l_0_l' (kernel.cpp:144) in function 'linear_forward_no_mul' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (kernel.cpp:462) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (kernel.cpp:478) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (kernel.cpp:483) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (kernel.cpp:489) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (kernel.cpp:495) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1' (kernel.cpp:505) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1' (kernel.cpp:513) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8.1' (kernel.cpp:521) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-9.1' (kernel.cpp:532) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10.1' (kernel.cpp:540) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-14.1' (kernel.cpp:576) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j9' (kernel.cpp:586) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-16' (kernel.cpp:596) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-16.1' (kernel.cpp:597) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_i_3_i11' (kernel.cpp:603) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_j_3_j10' (kernel.cpp:604) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-18.1' (kernel.cpp:614) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-19.1' (kernel.cpp:623) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-20' (kernel.cpp:631) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_s_6_s4' (kernel.cpp:636) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-22' (kernel.cpp:645) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-23' (kernel.cpp:661) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-24' (kernel.cpp:665) in function 'attention' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i9' (kernel.cpp:425) in function 'GEMM_3D_float2' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j6' (kernel.cpp:376) in function 'softmax' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_j_3_j7' (kernel.cpp:384) in function 'softmax' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i6' (kernel.cpp:364) in function 'causal_mask' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_j_0_j5' (kernel.cpp:365) in function 'causal_mask' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i5' (kernel.cpp:346) in function 'GEMM_3D_float' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (kernel.cpp:262) in function 'apply_rotary_pos_emb' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (kernel.cpp:270) in function 'apply_rotary_pos_emb' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s2' (kernel.cpp:279) in function 'apply_rotary_pos_emb' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s1' (kernel.cpp:239) in function 'rotate_half' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_s_0_s' (kernel.cpp:224) in function 'reshape_2D_to_3D' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i3' (kernel.cpp:136) in function 'linear_forward_no_mul' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'l_S_k1_0_k1' (kernel.cpp:142) in function 'linear_forward_no_mul' completely with a factor of 24.
+INFO: [HLS 200-489] Unrolling loop 'l_S_l_0_l1' (kernel.cpp:158) in function 'linear_forward_no_mul' completely with a factor of 4.
 INFO: [HLS 200-489] Unrolling loop 'l_S_i_0_i2' (kernel.cpp:67) in function 'quantize_activation' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'l_S_index_0_index' (kernel.cpp:22) in function 'rms_norm' completely with a factor of 1.
-INFO: [XFORM 203-102] Partitioning array 'rotated_q.V' (kernel.cpp:252) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'rotated_k.V' (kernel.cpp:260) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'v210.V.0' automatically.
-INFO: [XFORM 203-102] Partitioning array 'rms_hidden_states.V' (kernel.cpp:453) in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'scales.V' (kernel.cpp:467) automatically.
-INFO: [XFORM 203-102] Partitioning array 'q_embed.V' (kernel.cpp:520) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'k_embed.V' (kernel.cpp:528) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'attn_weights.V' (kernel.cpp:564) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'causal_mask_matrix.V' (kernel.cpp:585) in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'softmax_attn_weights.V' (kernel.cpp:602) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'attn_output.V' (kernel.cpp:611) in dimension 2 automatically.
-INFO: [XFORM 203-102] Partitioning array 'rms_attn_output.V' (kernel.cpp:634) in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'final_scales.V' (kernel.cpp:648) automatically.
-INFO: [XFORM 203-102] Partitioning array 'causal_mask_matrix.V.0' (kernel.cpp:585) automatically.
+INFO: [XFORM 203-102] Partitioning array 'rotated_q.V' (kernel.cpp:260) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'rotated_k.V' (kernel.cpp:268) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'v214.V.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'rms_hidden_states.V' (kernel.cpp:461) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'scales.V' (kernel.cpp:477) automatically.
+INFO: [XFORM 203-102] Partitioning array 'q_embed.V' (kernel.cpp:530) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'k_embed.V' (kernel.cpp:538) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'attn_weights.V' (kernel.cpp:574) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'causal_mask_matrix.V' (kernel.cpp:595) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'softmax_attn_weights.V' (kernel.cpp:612) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'attn_output.V' (kernel.cpp:621) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'rms_attn_output.V' (kernel.cpp:644) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'final_scales.V' (kernel.cpp:660) automatically.
+INFO: [XFORM 203-102] Partitioning array 'causal_mask_matrix.V.0' (kernel.cpp:595) automatically.
 INFO: [XFORM 203-102] Partitioning array 'q_proj.V' in dimension 2 automatically.
 INFO: [XFORM 203-102] Partitioning array 'k_proj.V' in dimension 2 automatically.
 INFO: [XFORM 203-102] Partitioning array 'v_proj.V' in dimension 2 automatically.
-INFO: [XFORM 203-101] Partitioning array 'quantized_hidden_states'  in dimension 2 with a cyclic factor 4.
-INFO: [XFORM 203-101] Partitioning array 'quantized_final_output'  in dimension 2 with a cyclic factor 4.
-INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.0' in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.1' in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.2' in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.3' in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.0' in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.1' in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.2' in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.3' in dimension 1 automatically.
+INFO: [XFORM 203-101] Partitioning array 'quantized_hidden_states'  in dimension 2 with a cyclic factor 24.
+INFO: [XFORM 203-101] Partitioning array 'quantized_final_output'  in dimension 2 with a cyclic factor 24.
+INFO: [XFORM 203-101] Partitioning array 'v261' (kernel.cpp:446) in dimension 1 with a cyclic factor 24.
+INFO: [XFORM 203-101] Partitioning array 'v259' (kernel.cpp:444) in dimension 1 with a cyclic factor 24.
+INFO: [XFORM 203-101] Partitioning array 'v257' (kernel.cpp:442) in dimension 1 with a cyclic factor 24.
+INFO: [XFORM 203-101] Partitioning array 'v263' (kernel.cpp:448) in dimension 1 with a cyclic factor 24.
+INFO: [XFORM 203-101] Partitioning array 'quantized_hidden_states'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'quantized_final_output'  in dimension 3 completely.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.0.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.0.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.0.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.0.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.1.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.1.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.1.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.1.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.2.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.2.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.2.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.2.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.3.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.3.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.3.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.3.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.4.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.4.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.4.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.4.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.5.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.5.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.5.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.5.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.6.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.6.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.6.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.6.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.7.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.7.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.7.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.7.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.8.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.8.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.8.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.8.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.9.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.9.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.9.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.9.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.10.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.10.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.10.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.10.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.11.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.11.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.11.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.11.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.12.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.12.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.12.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.12.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.13.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.13.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.13.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.13.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.14.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.14.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.14.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.14.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.15.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.15.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.15.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.15.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.16.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.16.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.16.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.16.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.17.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.17.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.17.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.17.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.18.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.18.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.18.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.18.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.19.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.19.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.19.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.19.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.20.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.20.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.20.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.20.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.21.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.21.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.21.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.21.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.22.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.22.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.22.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.22.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.23.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.23.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.23.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_hidden_states.23.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.0.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.0.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.0.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.0.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.1.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.1.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.1.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.1.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.2.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.2.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.2.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.2.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.3.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.3.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.3.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.3.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.4.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.4.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.4.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.4.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.5.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.5.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.5.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.5.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.6.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.6.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.6.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.6.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.7.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.7.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.7.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.7.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.8.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.8.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.8.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.8.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.9.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.9.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.9.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.9.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.10.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.10.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.10.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.10.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.11.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.11.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.11.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.11.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.12.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.12.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.12.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.12.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.13.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.13.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.13.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.13.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.14.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.14.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.14.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.14.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.15.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.15.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.15.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.15.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.16.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.16.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.16.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.16.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.17.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.17.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.17.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.17.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.18.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.18.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.18.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.18.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.19.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.19.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.19.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.19.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.20.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.20.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.20.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.20.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.21.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.21.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.21.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.21.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.22.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.22.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.22.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.22.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.23.0' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.23.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.23.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'quantized_final_output.23.3' in dimension 1 automatically.
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fixed<74, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 68, 60>' into 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:348) automatically.
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fixed<74, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 60, 55>' into 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:350) automatically.
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fixed<74, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 55, 50>' into 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:352) automatically.
@@ -154,57 +345,57 @@ INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::range_reduce<ap_fix
 INFO: [XFORM 203-602] Inlining function 'log_apfixed_reduce::log_traits<5>::range_reduction<68>' into 'log_apfixed_reduce::log<75, 21>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:771) automatically.
 INFO: [XFORM 203-602] Inlining function 'fabs_fixed<33, 21>' into 'pow_apfixed_reduce::pow<32, 20>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:94) automatically.
 INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'rms_norm' (kernel.cpp:35) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'softmax' (kernel.cpp:394) automatically.
-INFO: [XFORM 203-602] Inlining function 'causal_mask' into 'attention' (kernel.cpp:591) automatically.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kernel.cpp:97:52) to (kernel.cpp:119:7) in function 'quantize_activation'... converting 3 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'hls::pow<32, 20>' into 'softmax' (kernel.cpp:402) automatically.
+INFO: [XFORM 203-602] Inlining function 'causal_mask' into 'attention' (kernel.cpp:601) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kernel.cpp:98:47) to (kernel.cpp:120:9) in function 'quantize_activation'... converting 3 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:727:44) to (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:747:17) in function 'log_apfixed_reduce::log<75, 21>'... converting 76 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kernel.cpp:137:49) to (kernel.cpp:137:43) in function 'linear_forward_no_mul'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kernel.cpp:175:33) to (kernel.cpp:140:46) in function 'linear_forward_no_mul'... converting 669 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:873:1) to (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:1993:5) in function 'exp_reduce::exp_core<32, 20, 54>'... converting 5 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'log_apfixed_reduce::log<75, 21>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:178:90)...11 expression(s) balanced.
-INFO: [XFORM 203-11] Balancing expressions in function 'linear_forward_no_mul' (kernel.cpp:125)...4 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'linear_forward_no_mul' (kernel.cpp:127)...96 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp_core<32, 20, 54>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:873:5)...22 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 1584.156 ; gain = 946.129 ; free physical = 619982 ; free virtual = 758262
-WARNING: [XFORM 203-542] Cannot flatten a loop nest 'l_S_j_0_j2' (kernel.cpp:134:52) in function 'linear_forward_no_mul' : 
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:31 ; elapsed = 00:01:38 . Memory (MB): peak = 1584.156 ; gain = 946.129 ; free physical = 620808 ; free virtual = 759222
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'l_S_j_0_j2' (kernel.cpp:137:52) in function 'linear_forward_no_mul' : 
 
 the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
-WARNING: [XFORM 203-631] Renaming function 'transpose_last_two_dims' to 'transpose_last_two_d' (kernel.cpp:322:45)
+WARNING: [XFORM 203-631] Renaming function 'transpose_last_two_dims' to 'transpose_last_two_d' (kernel.cpp:330:45)
 WARNING: [XFORM 203-631] Renaming function 'pow_apfixed_reduce::pow<32, 20>' to 'pow<32, 20>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_pow_apfixed.h:63:29)
 WARNING: [XFORM 203-631] Renaming function 'log_apfixed_reduce::log<75, 21>' to 'log<75, 21>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_log_apfixed.h:178:90)
-WARNING: [XFORM 203-631] Renaming function 'linear_forward_no_mul' to 'linear_forward_no_mu' (kernel.cpp:133:43)
+WARNING: [XFORM 203-631] Renaming function 'linear_forward_no_mul' to 'linear_forward_no_mu' (kernel.cpp:136:46)
 WARNING: [XFORM 203-631] Renaming function 'exp_reduce::exp_core<32, 20, 54>' to 'exp_core<32, 20, 54>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:873:5)
-INFO: [HLS 200-472] Inferring partial write operation for 'v193.V' (kernel.cpp:326:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v214[0].V' (kernel.cpp:371:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v214[0].V' (kernel.cpp:395:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v214[0].V' (kernel.cpp:405:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v142[0].V' (kernel.cpp:235:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v142[0].V' (kernel.cpp:237:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v197.V' (kernel.cpp:334:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v218[0].V' (kernel.cpp:379:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v218[0].V' (kernel.cpp:403:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v218[0].V' (kernel.cpp:413:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v146[0].V' (kernel.cpp:243:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v146[0].V' (kernel.cpp:245:9)
 INFO: [HLS 200-472] Inferring partial write operation for 'v3[0].V' (kernel.cpp:44:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'v136[0].V' (kernel.cpp:220:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v24[0][0]' (kernel.cpp:119:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'v183.V' (kernel.cpp:306:11)
-INFO: [HLS 200-472] Inferring partial write operation for 'v183.V' (kernel.cpp:311:11)
-INFO: [HLS 200-472] Inferring partial write operation for 'rms_hidden_states[0]' (kernel.cpp:456:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'q_proj_re.V' (kernel.cpp:475:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'k_proj_re.V' (kernel.cpp:481:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'v_proj_re.V' (kernel.cpp:487:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'q_embed[0].V' (kernel.cpp:524:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'k_embed[0].V' (kernel.cpp:532:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'updated_k_cache.V' (kernel.cpp:541:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'updated_v_cache.V' (kernel.cpp:549:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'attn_weights[0].V' (kernel.cpp:568:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'attn_weights[0].V' (kernel.cpp:581:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'softmax_attn_weights' (kernel.cpp:606:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'attn_output[0].V' (kernel.cpp:615:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'attn_output_2D.V' (kernel.cpp:623:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'attn_output_2D.V' (kernel.cpp:630:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'rms_attn_output[0].V' (kernel.cpp:637:7)
-INFO: [HLS 200-472] Inferring partial write operation for 'rotated_q[0].V' (kernel.cpp:256:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'rotated_k[0].V' (kernel.cpp:264:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v153[0].V' (kernel.cpp:280:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v154[0].V' (kernel.cpp:288:9)
-INFO: [HLS 200-472] Inferring partial write operation for 'v242[0].V' (kernel.cpp:425:11)
-INFO: [HLS 200-472] Inferring partial write operation for 'v200[0].V' (kernel.cpp:346:11)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:34 ; elapsed = 00:01:40 . Memory (MB): peak = 1840.156 ; gain = 1202.129 ; free physical = 619792 ; free virtual = 758080
+INFO: [HLS 200-472] Inferring partial write operation for 'v140[0].V' (kernel.cpp:228:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v24[0][0][0]' (kernel.cpp:120:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v187.V' (kernel.cpp:314:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'v187.V' (kernel.cpp:319:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'rms_hidden_states[0]' (kernel.cpp:464:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'q_proj_re.V' (kernel.cpp:485:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'k_proj_re.V' (kernel.cpp:491:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'v_proj_re.V' (kernel.cpp:497:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'q_embed[0].V' (kernel.cpp:534:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'k_embed[0].V' (kernel.cpp:542:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'updated_k_cache.V' (kernel.cpp:551:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'updated_v_cache.V' (kernel.cpp:559:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'attn_weights[0].V' (kernel.cpp:578:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'attn_weights[0].V' (kernel.cpp:591:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'softmax_attn_weights' (kernel.cpp:616:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'attn_output[0].V' (kernel.cpp:625:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'attn_output_2D.V' (kernel.cpp:633:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'attn_output_2D.V' (kernel.cpp:640:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'rms_attn_output[0].V' (kernel.cpp:647:7)
+INFO: [HLS 200-472] Inferring partial write operation for 'rotated_q[0].V' (kernel.cpp:264:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'rotated_k[0].V' (kernel.cpp:272:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v157[0].V' (kernel.cpp:288:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v158[0].V' (kernel.cpp:296:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'v246[0].V' (kernel.cpp:433:11)
+INFO: [HLS 200-472] Inferring partial write operation for 'v204[0].V' (kernel.cpp:354:11)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:20 ; elapsed = 00:02:27 . Memory (MB): peak = 1840.156 ; gain = 1202.129 ; free physical = 620630 ; free virtual = 759052
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'attention' ...
 WARNING: [SYN 201-103] Legalizing function name 'log<75, 21>' to 'log_75_21_s'.
@@ -217,13 +408,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'log<75, 21>'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 30.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 100.24 seconds; current allocated memory: 775.267 MB.
+INFO: [HLS 200-111]  Elapsed time: 147.21 seconds; current allocated memory: 799.484 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 778.904 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.4 seconds; current allocated memory: 803.107 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'exp_core_32_20_54_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -231,171 +422,171 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'exp_core<32, 20, 54>'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 13.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.16 seconds; current allocated memory: 779.988 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.6 seconds; current allocated memory: 804.191 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 780.644 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 804.846 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'pow_32_20_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 781.086 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 805.310 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 781.916 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 806.119 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'rms_norm' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.56 seconds; current allocated memory: 782.624 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 806.845 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 783.085 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 807.303 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'quantize_activation' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 783.839 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 808.960 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 784.237 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.73 seconds; current allocated memory: 810.701 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'linear_forward_no_mu' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k0_0_k0'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 16.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 784.676 MB.
+INFO: [HLS 200-111]  Elapsed time: 4.12 seconds; current allocated memory: 817.767 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 785.190 MB.
+INFO: [HLS 200-111]  Elapsed time: 5.06 seconds; current allocated memory: 836.011 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reshape_2D_to_3D' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 785.359 MB.
+INFO: [HLS 200-111]  Elapsed time: 5.1 seconds; current allocated memory: 837.349 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 785.511 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 837.502 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'rotate_half' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 785.669 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 837.612 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 785.843 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 837.787 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'apply_rotary_pos_emb' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 786.136 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 838.096 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 786.542 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 838.537 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'cache_update' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 786.832 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 838.836 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 787.156 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 839.156 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'transpose_last_two_d' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 787.362 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 839.332 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 787.582 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 839.551 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'GEMM_3D_float' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 787.788 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 839.793 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 788.026 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 840.031 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'softmax' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 788.394 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 840.364 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 789.007 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 840.974 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'GEMM_3D_float2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 789.679 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 841.643 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 789.918 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 841.885 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'attention' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 790.910 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 843.076 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 2.78 seconds; current allocated memory: 794.866 MB.
+INFO: [HLS 200-111]  Elapsed time: 4.56 seconds; current allocated memory: 849.255 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'log_75_21_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -418,7 +609,7 @@ INFO: [RTGEN 206-100] Generating core module 'attention_mul_68nibs': 1 instance(
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_7s_lbW': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_85nhbi': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'log_75_21_s'.
-INFO: [HLS 200-111]  Elapsed time: 1.86 seconds; current allocated memory: 802.788 MB.
+INFO: [HLS 200-111]  Elapsed time: 3.01 seconds; current allocated memory: 858.127 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'exp_core_32_20_54_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -433,14 +624,14 @@ INFO: [RTGEN 206-100] Generating core module 'attention_mul_36nrcU': 1 instance(
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_48nsc4': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_50ntde': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_core_32_20_54_s'.
-INFO: [HLS 200-111]  Elapsed time: 2.42 seconds; current allocated memory: 817.289 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.59 seconds; current allocated memory: 872.695 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'pow_32_20_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'attention_mul_60s_32s_92_5_1' to 'attention_mul_60sudo' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_60sudo': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'pow_32_20_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 820.976 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 876.346 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'rms_norm' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -449,116 +640,398 @@ INFO: [SYN 201-210] Renamed object name 'attention_sdiv_27ns_32ns_32_31_seq_1' t
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_46nvdy': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'attention_sdiv_27wdI': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'rms_norm'.
-INFO: [HLS 200-111]  Elapsed time: 0.98 seconds; current allocated memory: 823.873 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.93 seconds; current allocated memory: 879.279 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'quantize_activation' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'attention_udiv_32ns_32ns_32_36_seq_1' to 'attention_udiv_32xdS' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'attention_udiv_32xdS': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'quantize_activation'.
-INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 826.124 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.98 seconds; current allocated memory: 883.095 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'linear_forward_no_mu' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'attention_sdiv_43ns_32s_32_47_seq_1' to 'attention_sdiv_43yd2' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'attention_sdiv_43yd2': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'attention_urem_7ns_6ns_6_11_1' to 'attention_urem_7nyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_sdiv_43ns_32s_32_47_seq_1' to 'attention_sdiv_43zec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_am_addmul_5ns_7ns_10ns_18_1_1' to 'attention_am_addmAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_am_addmul_6ns_7ns_10ns_18_1_1' to 'attention_am_addmBew' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'attention_am_addmAem': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'attention_am_addmBew': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'attention_sdiv_43zec': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'attention_urem_7nyd2': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_forward_no_mu'.
-INFO: [HLS 200-111]  Elapsed time: 0.56 seconds; current allocated memory: 828.506 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.61 seconds; current allocated memory: 904.021 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reshape_2D_to_3D' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reshape_2D_to_3D'.
-INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 830.548 MB.
+INFO: [HLS 200-111]  Elapsed time: 7.82 seconds; current allocated memory: 943.464 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'rotate_half' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'rotate_half'.
-INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 831.436 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.83 seconds; current allocated memory: 944.323 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'apply_rotary_pos_emb' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_q_0_V' to 'apply_rotary_pos_zec' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_k_0_V' to 'apply_rotary_pos_Aem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_q_0_V' to 'apply_rotary_pos_CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_k_0_V' to 'apply_rotary_pos_DeQ' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'apply_rotary_pos_emb'.
-INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 832.860 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 945.710 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'cache_update' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'cache_update'.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 835.111 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.04 seconds; current allocated memory: 947.910 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'transpose_last_two_d' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'transpose_last_two_d'.
-INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 836.810 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.98 seconds; current allocated memory: 949.590 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'GEMM_3D_float' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'GEMM_3D_float'.
-INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 838.104 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 950.864 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'softmax' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'attention_sdiv_44ns_32s_32_48_seq_1' to 'attention_sdiv_44Bew' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'attention_sdiv_44Bew': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'attention_sdiv_44ns_32s_32_48_seq_1' to 'attention_sdiv_44Ee0' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'attention_sdiv_44Ee0': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'softmax'.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 840.063 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 952.822 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'GEMM_3D_float2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'GEMM_3D_float2'.
-INFO: [HLS 200-111]  Elapsed time: 1.06 seconds; current allocated memory: 842.487 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.38 seconds; current allocated memory: 955.238 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'attention' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v252_V' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v253' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v254_V' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v255' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v256_V' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v256_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_16' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_17' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_18' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_19' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_20' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_21' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_22' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v257_23' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v258_V' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_16' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_17' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_18' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_19' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_20' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_21' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_22' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v259_23' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v260_V' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_V' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v262_V' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_V' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v264_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_16' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_17' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_18' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_19' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_20' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_21' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_22' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v261_23' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v262_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_16' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_17' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_18' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_19' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_20' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_21' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_22' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v263_23' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v264_V' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v265_V' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v266_V' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v267' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v267_V' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v268_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v269_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v270_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v271' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'attention/v272_V' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'attention' to 'ap_ctrl_hs'.
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_3' to 'attention_quantizCeG' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_2' to 'attention_quantizDeQ' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_1' to 'attention_quantizEe0' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta' to 'attention_quantizFfa' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_q_proj_V_0' to 'attention_q_proj_Gfk' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_proj_V_0' to 'attention_k_proj_Hfu' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_v_proj_V_0' to 'attention_v_proj_IfE' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_proj_transposed_V' to 'attention_k_proj_JfO' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_3' to 'attention_quantizKfY' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_2' to 'attention_quantizLf8' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_1' to 'attention_quantizMgi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp' to 'attention_quantizNgs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_rms_hidden_states_0' to 'attention_rms_hidOgC' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_q_proj_re_V' to 'attention_q_proj_PgM' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_proj_re_V' to 'attention_k_proj_QgW' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_v_proj_re_V' to 'attention_v_proj_Rg6' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_q_embed_0_V' to 'attention_q_embedShg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_embed_0_V' to 'attention_k_embedThq' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_updated_k_cache_V' to 'attention_updatedUhA' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_updated_v_cache_V' to 'attention_updatedVhK' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_attn_weights_0_V' to 'attention_attn_weWhU' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_softmax_attn_weights' to 'attention_softmaxXh4' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_attn_output_0_V' to 'attention_attn_ouYie' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_attn_output_2D_V' to 'attention_attn_ouZio' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_rms_attn_output_0_V' to 'attention_rms_att0iy' due to the length limit 20
-WARNING: [RTGEN 206-101] Port 'attention/v267' has no fanin or fanout and is left dangling.
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_95' to 'attention_quantizFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_94' to 'attention_quantizGfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_93' to 'attention_quantizHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_92' to 'attention_quantizIfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_91' to 'attention_quantizJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_90' to 'attention_quantizKfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_89' to 'attention_quantizLf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_88' to 'attention_quantizMgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_47' to 'attention_quantizNgs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_46' to 'attention_quantizOgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_45' to 'attention_quantizPgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_44' to 'attention_quantizQgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_27' to 'attention_quantizRg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_26' to 'attention_quantizShg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_25' to 'attention_quantizThq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_24' to 'attention_quantizUhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_23' to 'attention_quantizVhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_22' to 'attention_quantizWhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_21' to 'attention_quantizXh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_20' to 'attention_quantizYie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_19' to 'attention_quantizZio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_18' to 'attention_quantiz0iy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_17' to 'attention_quantiz1iI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_16' to 'attention_quantiz2iS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_15' to 'attention_quantiz3i2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_14' to 'attention_quantiz4jc' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_13' to 'attention_quantiz5jm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_12' to 'attention_quantiz6jw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_11' to 'attention_quantiz7jG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_10' to 'attention_quantiz8jQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_9' to 'attention_quantiz9j0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_8' to 'attention_quantizbak' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_7' to 'attention_quantizbbk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_6' to 'attention_quantizbck' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_5' to 'attention_quantizbdk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_4' to 'attention_quantizbek' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_3' to 'attention_quantizbfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_2' to 'attention_quantizbgk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_1' to 'attention_quantizbhl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta' to 'attention_quantizbil' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_87' to 'attention_quantizbjl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_86' to 'attention_quantizbkl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_85' to 'attention_quantizbll' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_84' to 'attention_quantizbml' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_83' to 'attention_quantizbnm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_82' to 'attention_quantizbom' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_81' to 'attention_quantizbpm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_80' to 'attention_quantizbqm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_79' to 'attention_quantizbrm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_78' to 'attention_quantizbsm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_77' to 'attention_quantizbtn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_76' to 'attention_quantizbun' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_75' to 'attention_quantizbvn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_74' to 'attention_quantizbwn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_73' to 'attention_quantizbxn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_72' to 'attention_quantizbyn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_71' to 'attention_quantizbzo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_70' to 'attention_quantizbAo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_69' to 'attention_quantizbBo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_68' to 'attention_quantizbCo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_67' to 'attention_quantizbDo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_66' to 'attention_quantizbEo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_65' to 'attention_quantizbFp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_64' to 'attention_quantizbGp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_63' to 'attention_quantizbHp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_62' to 'attention_quantizbIp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_61' to 'attention_quantizbJp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_60' to 'attention_quantizbKp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_59' to 'attention_quantizbLp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_58' to 'attention_quantizbMq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_57' to 'attention_quantizbNq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_56' to 'attention_quantizbOq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_55' to 'attention_quantizbPq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_54' to 'attention_quantizbQq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_53' to 'attention_quantizbRq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_52' to 'attention_quantizbSr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_51' to 'attention_quantizbTr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_50' to 'attention_quantizbUr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_49' to 'attention_quantizbVr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_48' to 'attention_quantizbWr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_43' to 'attention_quantizbXr' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_42' to 'attention_quantizbYs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_41' to 'attention_quantizbZs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_40' to 'attention_quantizb0s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_39' to 'attention_quantizb1s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_38' to 'attention_quantizb2s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_37' to 'attention_quantizb3s' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_36' to 'attention_quantizb4t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_35' to 'attention_quantizb5t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_34' to 'attention_quantizb6t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_33' to 'attention_quantizb7t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_32' to 'attention_quantizb8t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_31' to 'attention_quantizb9t' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_30' to 'attention_quantizcau' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_29' to 'attention_quantizcbu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta_28' to 'attention_quantizccu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_q_proj_V_0' to 'attention_q_proj_cdu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_proj_V_0' to 'attention_k_proj_ceu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_v_proj_V_0' to 'attention_v_proj_cfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_proj_transposed_V' to 'attention_k_proj_cgu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_95' to 'attention_quantizchv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_94' to 'attention_quantizciv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_93' to 'attention_quantizcjv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_92' to 'attention_quantizckv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_91' to 'attention_quantizclv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_90' to 'attention_quantizcmv' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_89' to 'attention_quantizcnw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_88' to 'attention_quantizcow' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_47' to 'attention_quantizcpw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_46' to 'attention_quantizcqw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_45' to 'attention_quantizcrw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_44' to 'attention_quantizcsw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_27' to 'attention_quantizctx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_26' to 'attention_quantizcux' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_25' to 'attention_quantizcvx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_24' to 'attention_quantizcwx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_23' to 'attention_quantizcxx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_22' to 'attention_quantizcyx' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_21' to 'attention_quantizczy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_20' to 'attention_quantizcAy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_19' to 'attention_quantizcBy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_18' to 'attention_quantizcCy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_17' to 'attention_quantizcDy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_16' to 'attention_quantizcEy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_15' to 'attention_quantizcFz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_14' to 'attention_quantizcGz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_13' to 'attention_quantizcHz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_12' to 'attention_quantizcIz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_11' to 'attention_quantizcJz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_10' to 'attention_quantizcKz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_9' to 'attention_quantizcLz' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_8' to 'attention_quantizcMA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_7' to 'attention_quantizcNA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_6' to 'attention_quantizcOA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_5' to 'attention_quantizcPA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_4' to 'attention_quantizcQA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_3' to 'attention_quantizcRA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_2' to 'attention_quantizcSB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_1' to 'attention_quantizcTB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp' to 'attention_quantizcUB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_87' to 'attention_quantizcVB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_86' to 'attention_quantizcWB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_85' to 'attention_quantizcXB' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_84' to 'attention_quantizcYC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_83' to 'attention_quantizcZC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_82' to 'attention_quantizc0C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_81' to 'attention_quantizc1C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_80' to 'attention_quantizc2C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_79' to 'attention_quantizc3C' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_78' to 'attention_quantizc4D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_77' to 'attention_quantizc5D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_76' to 'attention_quantizc6D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_75' to 'attention_quantizc7D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_74' to 'attention_quantizc8D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_73' to 'attention_quantizc9D' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_72' to 'attention_quantizdaE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_71' to 'attention_quantizdbE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_70' to 'attention_quantizdcE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_69' to 'attention_quantizddE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_68' to 'attention_quantizdeE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_67' to 'attention_quantizdfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_66' to 'attention_quantizdgE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_65' to 'attention_quantizdhF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_64' to 'attention_quantizdiF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_63' to 'attention_quantizdjF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_62' to 'attention_quantizdkF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_61' to 'attention_quantizdlF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_60' to 'attention_quantizdmF' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_59' to 'attention_quantizdnG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_58' to 'attention_quantizdoG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_57' to 'attention_quantizdpG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_56' to 'attention_quantizdqG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_55' to 'attention_quantizdrG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_54' to 'attention_quantizdsG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_53' to 'attention_quantizdtH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_52' to 'attention_quantizduH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_51' to 'attention_quantizdvH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_50' to 'attention_quantizdwH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_49' to 'attention_quantizdxH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_48' to 'attention_quantizdyH' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_43' to 'attention_quantizdzI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_42' to 'attention_quantizdAI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_41' to 'attention_quantizdBI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_40' to 'attention_quantizdCI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_39' to 'attention_quantizdDI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_38' to 'attention_quantizdEI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_37' to 'attention_quantizdFJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_36' to 'attention_quantizdGJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_35' to 'attention_quantizdHJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_34' to 'attention_quantizdIJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_33' to 'attention_quantizdJJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_32' to 'attention_quantizdKJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_31' to 'attention_quantizdLJ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_30' to 'attention_quantizdMK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_29' to 'attention_quantizdNK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_28' to 'attention_quantizdOK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_rms_hidden_states_0' to 'attention_rms_hiddPK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_q_proj_re_V' to 'attention_q_proj_dQK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_proj_re_V' to 'attention_k_proj_dRK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_v_proj_re_V' to 'attention_v_proj_dSL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_q_embed_0_V' to 'attention_q_embeddTL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_embed_0_V' to 'attention_k_embeddUL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_updated_k_cache_V' to 'attention_updateddVL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_updated_v_cache_V' to 'attention_updateddWL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_attn_weights_0_V' to 'attention_attn_wedXL' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_softmax_attn_weights' to 'attention_softmaxdYM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_attn_output_0_V' to 'attention_attn_oudZM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_attn_output_2D_V' to 'attention_attn_oud0M' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_rms_attn_output_0_V' to 'attention_rms_attd1M' due to the length limit 20
+WARNING: [RTGEN 206-101] Port 'attention/v271' has no fanin or fanout and is left dangling.
                Please use C simulation to confirm this function argument can be read from or written to.
 INFO: [RTGEN 206-100] Generating core module 'attention_mul_46nvdy': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'attention'.
-INFO: [HLS 200-111]  Elapsed time: 1.27 seconds; current allocated memory: 846.668 MB.
+INFO: [HLS 200-111]  Elapsed time: 5.17 seconds; current allocated memory: 966.964 MB.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 114.29 MHz
 INFO: [RTMG 210-282] Generating pipelined core: 'attention_mul_85nhbi_MulnS_0'
@@ -584,17 +1057,18 @@ INFO: [RTMG 210-282] Generating pipelined core: 'attention_mul_60sudo_MulnS_9'
 INFO: [RTMG 210-282] Generating pipelined core: 'attention_mul_46nvdy_MulnS_10'
 INFO: [RTMG 210-282] Generating pipelined core: 'attention_sdiv_27wdI_div'
 INFO: [RTMG 210-282] Generating pipelined core: 'attention_udiv_32xdS_div'
-INFO: [RTMG 210-282] Generating pipelined core: 'attention_sdiv_43yd2_div'
-INFO: [RTMG 210-278] Implementing memory 'apply_rotary_pos_zec_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-282] Generating pipelined core: 'attention_sdiv_44Bew_div'
-INFO: [RTMG 210-278] Implementing memory 'attention_quantizCeG_ram (RAM)' using block RAMs with power-on initialization.
-INFO: [RTMG 210-278] Implementing memory 'attention_q_proj_Gfk_ram (RAM)' using block RAMs with power-on initialization.
-INFO: [RTMG 210-278] Implementing memory 'attention_v_proj_IfE_ram (RAM)' using block RAMs with power-on initialization.
-INFO: [RTMG 210-278] Implementing memory 'attention_k_proj_JfO_ram (RAM)' using block RAMs with power-on initialization.
-INFO: [RTMG 210-278] Implementing memory 'attention_updatedUhA_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'attention_attn_weWhU_ram (RAM)' using block RAMs.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:57 ; elapsed = 00:02:15 . Memory (MB): peak = 1905.195 ; gain = 1267.168 ; free physical = 619653 ; free virtual = 757985
+INFO: [RTMG 210-282] Generating pipelined core: 'attention_urem_7nyd2_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'attention_sdiv_43zec_div'
+INFO: [RTMG 210-278] Implementing memory 'apply_rotary_pos_CeG_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'attention_sdiv_44Ee0_div'
+INFO: [RTMG 210-278] Implementing memory 'attention_quantizFfa_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'attention_q_proj_cdu_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'attention_v_proj_cfu_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'attention_k_proj_cgu_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'attention_updateddVL_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'attention_attn_wedXL_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:03:17 ; elapsed = 00:03:47 . Memory (MB): peak = 2096.156 ; gain = 1458.129 ; free physical = 620304 ; free virtual = 758818
 INFO: [VHDL 208-304] Generating VHDL RTL for attention.
 INFO: [VLOG 209-307] Generating Verilog RTL for attention.
-INFO: [HLS 200-112] Total elapsed time: 135.26 seconds; peak allocated memory: 846.668 MB.
-INFO: [Common 17-206] Exiting vivado_hls at Thu Nov 28 23:10:36 2024...
+INFO: [HLS 200-112] Total elapsed time: 227.62 seconds; peak allocated memory: 966.964 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sat Nov 30 20:59:44 2024...

@@ -116,7 +116,7 @@ wire    ap_CS_fsm_state50;
 reg   [31:0] p_Result_11_fu_462_p4;
 wire    ap_CS_fsm_state51;
 reg   [0:0] r_is_neg_1_reg_108;
-wire   [0:0] tmp_12_fu_454_p3;
+wire   [0:0] tmp_14_fu_454_p3;
 wire   [5:0] j_2_fu_472_p2;
 wire   [4:0] j_fu_511_p2;
 wire    ap_CS_fsm_state52;
@@ -163,8 +163,8 @@ wire  signed [31:0] trunc_ln1498_fu_273_p0;
 wire   [21:0] trunc_ln1498_fu_273_p1;
 wire  signed [31:0] p_Result_2_fu_283_p1;
 wire  signed [31:0] icmp_ln84_fu_291_p0;
-wire  signed [31:0] tmp_6_fu_297_p1;
-wire   [0:0] tmp_6_fu_297_p3;
+wire  signed [31:0] tmp_8_fu_297_p1;
+wire   [0:0] tmp_8_fu_297_p3;
 wire   [0:0] icmp_ln84_fu_291_p2;
 wire  signed [31:0] x_e_1_V_fu_311_p0;
 wire   [21:0] xs_V_1_fu_315_p2;
@@ -176,7 +176,7 @@ wire  signed [31:0] icmp_ln1494_fu_349_p0;
 wire   [31:0] zext_ln134_fu_387_p1;
 wire   [0:0] p_Result_s_fu_397_p3;
 wire   [0:0] xor_ln135_fu_404_p2;
-wire   [0:0] tmp_10_fu_431_p3;
+wire   [0:0] tmp_12_fu_431_p3;
 wire   [0:0] xor_ln155_fu_438_p2;
 wire  signed [31:0] sext_ln177_fu_450_p1;
 wire   [31:0] r_V_8_fu_484_p2;
@@ -244,7 +244,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_return_preg <= 32'd0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state51) & ((icmp_ln1498_reg_546 == 1'd1) | (((r_is_neg_1_reg_108 == 1'd1) | ((tmp_12_fu_454_p3 == 1'd1) | (1'd0 == and_ln155_reg_610))) | ((p_Result_2_reg_550 == 1'd1) & (icmp_ln63_reg_542 == 1'd0)))))) begin
+        if (((1'b1 == ap_CS_fsm_state51) & ((icmp_ln1498_reg_546 == 1'd1) | (((r_is_neg_1_reg_108 == 1'd1) | ((tmp_14_fu_454_p3 == 1'd1) | (1'd0 == and_ln155_reg_610))) | ((p_Result_2_reg_550 == 1'd1) & (icmp_ln63_reg_542 == 1'd0)))))) begin
             ap_return_preg <= ap_phi_mux_agg_result_V_0_phi_fu_183_p18;
         end
     end
@@ -275,7 +275,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b1 == ap_CS_fsm_state51) & (((tmp_12_fu_454_p3 == 1'd1) & (1'd1 == and_ln155_reg_610) & (r_is_neg_1_reg_108 == 1'd0) & (p_Result_2_reg_550 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0)) | ((tmp_12_fu_454_p3 == 1'd1) & (1'd1 == and_ln155_reg_610) & (r_is_neg_1_reg_108 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0) & (icmp_ln63_reg_542 == 1'd1))))) begin
+    if (((1'b1 == ap_CS_fsm_state51) & (((tmp_14_fu_454_p3 == 1'd1) & (1'd1 == and_ln155_reg_610) & (r_is_neg_1_reg_108 == 1'd0) & (p_Result_2_reg_550 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0)) | ((tmp_14_fu_454_p3 == 1'd1) & (1'd1 == and_ln155_reg_610) & (r_is_neg_1_reg_108 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0) & (icmp_ln63_reg_542 == 1'd1))))) begin
         agg_result_V_0_reg_177 <= p_Val2_6_reg_155;
     end else if (((r_is_neg_1_reg_108 == 1'd1) & (1'd1 == and_ln155_fu_444_p2) & (1'b1 == ap_CS_fsm_state50))) begin
         agg_result_V_0_reg_177 <= 32'd2147483648;
@@ -303,7 +303,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'd1 == and_ln155_fu_444_p2) & (r_is_neg_1_reg_108 == 1'd0) & (1'b1 == ap_CS_fsm_state50))) begin
         index_assign_2_reg_166 <= 6'd30;
-    end else if (((1'b1 == ap_CS_fsm_state51) & (((1'd1 == and_ln155_reg_610) & (tmp_12_fu_454_p3 == 1'd0) & (r_is_neg_1_reg_108 == 1'd0) & (p_Result_2_reg_550 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0)) | ((1'd1 == and_ln155_reg_610) & (tmp_12_fu_454_p3 == 1'd0) & (r_is_neg_1_reg_108 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0) & (icmp_ln63_reg_542 == 1'd1))))) begin
+    end else if (((1'b1 == ap_CS_fsm_state51) & (((1'd1 == and_ln155_reg_610) & (tmp_14_fu_454_p3 == 1'd0) & (r_is_neg_1_reg_108 == 1'd0) & (p_Result_2_reg_550 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0)) | ((1'd1 == and_ln155_reg_610) & (tmp_14_fu_454_p3 == 1'd0) & (r_is_neg_1_reg_108 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0) & (icmp_ln63_reg_542 == 1'd1))))) begin
         index_assign_2_reg_166 <= j_2_fu_472_p2;
     end
 end
@@ -319,7 +319,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'd1 == and_ln155_fu_444_p2) & (r_is_neg_1_reg_108 == 1'd0) & (1'b1 == ap_CS_fsm_state50))) begin
         p_Val2_6_reg_155 <= 32'd0;
-    end else if (((1'b1 == ap_CS_fsm_state51) & (((1'd1 == and_ln155_reg_610) & (tmp_12_fu_454_p3 == 1'd0) & (r_is_neg_1_reg_108 == 1'd0) & (p_Result_2_reg_550 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0)) | ((1'd1 == and_ln155_reg_610) & (tmp_12_fu_454_p3 == 1'd0) & (r_is_neg_1_reg_108 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0) & (icmp_ln63_reg_542 == 1'd1))))) begin
+    end else if (((1'b1 == ap_CS_fsm_state51) & (((1'd1 == and_ln155_reg_610) & (tmp_14_fu_454_p3 == 1'd0) & (r_is_neg_1_reg_108 == 1'd0) & (p_Result_2_reg_550 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0)) | ((1'd1 == and_ln155_reg_610) & (tmp_14_fu_454_p3 == 1'd0) & (r_is_neg_1_reg_108 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0) & (icmp_ln63_reg_542 == 1'd1))))) begin
         p_Val2_6_reg_155 <= p_Result_11_fu_462_p4;
     end
 end
@@ -397,7 +397,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (*) begin
-    if ((((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) | ((1'b1 == ap_CS_fsm_state51) & ((icmp_ln1498_reg_546 == 1'd1) | (((r_is_neg_1_reg_108 == 1'd1) | ((tmp_12_fu_454_p3 == 1'd1) | (1'd0 == and_ln155_reg_610))) | ((p_Result_2_reg_550 == 1'd1) & (icmp_ln63_reg_542 == 1'd0))))))) begin
+    if ((((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) | ((1'b1 == ap_CS_fsm_state51) & ((icmp_ln1498_reg_546 == 1'd1) | (((r_is_neg_1_reg_108 == 1'd1) | ((tmp_14_fu_454_p3 == 1'd1) | (1'd0 == and_ln155_reg_610))) | ((p_Result_2_reg_550 == 1'd1) & (icmp_ln63_reg_542 == 1'd0))))))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -437,7 +437,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state51) & ((icmp_ln1498_reg_546 == 1'd1) | (((r_is_neg_1_reg_108 == 1'd1) | ((tmp_12_fu_454_p3 == 1'd1) | (1'd0 == and_ln155_reg_610))) | ((p_Result_2_reg_550 == 1'd1) & (icmp_ln63_reg_542 == 1'd0)))))) begin
+    if (((1'b1 == ap_CS_fsm_state51) & ((icmp_ln1498_reg_546 == 1'd1) | (((r_is_neg_1_reg_108 == 1'd1) | ((tmp_14_fu_454_p3 == 1'd1) | (1'd0 == and_ln155_reg_610))) | ((p_Result_2_reg_550 == 1'd1) & (icmp_ln63_reg_542 == 1'd0)))))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -445,7 +445,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state51) & ((icmp_ln1498_reg_546 == 1'd1) | (((r_is_neg_1_reg_108 == 1'd1) | ((tmp_12_fu_454_p3 == 1'd1) | (1'd0 == and_ln155_reg_610))) | ((p_Result_2_reg_550 == 1'd1) & (icmp_ln63_reg_542 == 1'd0)))))) begin
+    if (((1'b1 == ap_CS_fsm_state51) & ((icmp_ln1498_reg_546 == 1'd1) | (((r_is_neg_1_reg_108 == 1'd1) | ((tmp_14_fu_454_p3 == 1'd1) | (1'd0 == and_ln155_reg_610))) | ((p_Result_2_reg_550 == 1'd1) & (icmp_ln63_reg_542 == 1'd0)))))) begin
         ap_return = ap_phi_mux_agg_result_V_0_phi_fu_183_p18;
     end else begin
         ap_return = ap_return_preg;
@@ -619,7 +619,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state51;
         end
         ap_ST_fsm_state51 : begin
-            if (((1'b1 == ap_CS_fsm_state51) & ((icmp_ln1498_reg_546 == 1'd1) | (((r_is_neg_1_reg_108 == 1'd1) | ((tmp_12_fu_454_p3 == 1'd1) | (1'd0 == and_ln155_reg_610))) | ((p_Result_2_reg_550 == 1'd1) & (icmp_ln63_reg_542 == 1'd0)))))) begin
+            if (((1'b1 == ap_CS_fsm_state51) & ((icmp_ln1498_reg_546 == 1'd1) | (((r_is_neg_1_reg_108 == 1'd1) | ((tmp_14_fu_454_p3 == 1'd1) | (1'd0 == and_ln155_reg_610))) | ((p_Result_2_reg_550 == 1'd1) & (icmp_ln63_reg_542 == 1'd0)))))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state51;
@@ -640,7 +640,7 @@ end
 
 assign and_ln155_fu_444_p2 = (xor_ln155_fu_438_p2 & phi_ln155_reg_120);
 
-assign and_ln84_fu_305_p2 = (tmp_6_fu_297_p3 & icmp_ln84_fu_291_p2);
+assign and_ln84_fu_305_p2 = (tmp_8_fu_297_p3 & icmp_ln84_fu_291_p2);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -675,7 +675,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_condition_275 = (((tmp_12_fu_454_p3 == 1'd1) & (1'd1 == and_ln155_reg_610) & (r_is_neg_1_reg_108 == 1'd0) & (p_Result_2_reg_550 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0)) | ((tmp_12_fu_454_p3 == 1'd1) & (1'd1 == and_ln155_reg_610) & (r_is_neg_1_reg_108 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0) & (icmp_ln63_reg_542 == 1'd1)));
+    ap_condition_275 = (((tmp_14_fu_454_p3 == 1'd1) & (1'd1 == and_ln155_reg_610) & (r_is_neg_1_reg_108 == 1'd0) & (p_Result_2_reg_550 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0)) | ((tmp_14_fu_454_p3 == 1'd1) & (1'd1 == and_ln155_reg_610) & (r_is_neg_1_reg_108 == 1'd0) & (icmp_ln1498_reg_546 == 1'd0) & (icmp_ln63_reg_542 == 1'd1)));
 end
 
 always @ (*) begin
@@ -763,13 +763,13 @@ assign sext_ln177_fu_450_p1 = index_assign_2_reg_166;
 
 assign sext_ln703_fu_321_p1 = $signed(xs_V_1_fu_315_p2);
 
-assign tmp_10_fu_431_p3 = r_V_reg_585[32'd91];
+assign tmp_12_fu_431_p3 = r_V_reg_585[32'd91];
 
-assign tmp_12_fu_454_p3 = index_assign_2_reg_166[32'd5];
+assign tmp_14_fu_454_p3 = index_assign_2_reg_166[32'd5];
 
-assign tmp_6_fu_297_p1 = y_V;
+assign tmp_8_fu_297_p1 = y_V;
 
-assign tmp_6_fu_297_p3 = tmp_6_fu_297_p1[32'd12];
+assign tmp_8_fu_297_p3 = tmp_8_fu_297_p1[32'd12];
 
 assign trunc_ln1498_fu_273_p0 = x_V;
 
@@ -785,7 +785,7 @@ assign x_e_1_V_fu_311_p1 = x_e_1_V_fu_311_p0;
 
 assign xor_ln135_fu_404_p2 = (tmp_reg_592 ^ p_Result_s_fu_397_p3);
 
-assign xor_ln155_fu_438_p2 = (tmp_10_fu_431_p3 ^ 1'd1);
+assign xor_ln155_fu_438_p2 = (tmp_12_fu_431_p3 ^ 1'd1);
 
 assign xs_V_1_fu_315_p2 = (22'd0 - trunc_ln1498_fu_273_p1);
 

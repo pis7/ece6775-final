@@ -352,12 +352,12 @@
 <literal name="icmp_ln63" val="1"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp><and_exp><literal name="icmp_ln1498" val="0"/>
 <literal name="p_Result_2" val="0"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -567,10 +567,10 @@ _ZeqILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT
 
 <Node id="37" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-_ZeqILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit130:1  %tmp_6 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %y_V_read, i32 12)
+_ZeqILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit130:1  %tmp_8 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %y_V_read, i32 12)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_6"/></StgValue>
+<StgValue><ssdm name="tmp_8"/></StgValue>
 </operation>
 
 <operation id="65" st_id="1" stage="1" lat="1">
@@ -585,7 +585,7 @@ _ZeqILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT
 
 <Node id="38" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-_ZeqILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit130:2  %and_ln84 = and i1 %tmp_6, %icmp_ln84
+_ZeqILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEbRK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EEi.exit130:2  %and_ln84 = and i1 %tmp_8, %icmp_ln84
 
 ]]></Node>
 <StgValue><ssdm name="and_ln84"/></StgValue>
@@ -1595,10 +1595,10 @@ _ZN8ap_fixedILi33ELi21EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi20ELb1ELS0_5ELS1
 
 <Node id="60" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:4  %empty_79 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
+:4  %empty_83 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
 
 ]]></Node>
-<StgValue><ssdm name="empty_79"/></StgValue>
+<StgValue><ssdm name="empty_83"/></StgValue>
 </operation>
 
 <operation id="124" st_id="37" stage="1" lat="1">
@@ -2002,10 +2002,10 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 
 <Node id="76" bw="1" op_0_bw="1" op_1_bw="92" op_2_bw="32">
 <![CDATA[
-._crit_edge798:1  %tmp_10 = call i1 @_ssdm_op_BitSelect.i1.i92.i32(i92 %r_V, i32 91)
+._crit_edge798:1  %tmp_12 = call i1 @_ssdm_op_BitSelect.i1.i92.i32(i92 %r_V, i32 91)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_10"/></StgValue>
+<StgValue><ssdm name="tmp_12"/></StgValue>
 </operation>
 
 <operation id="148" st_id="50" stage="1" lat="1">
@@ -2017,7 +2017,7 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 
 <Node id="77" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-._crit_edge798:2  %xor_ln155 = xor i1 %tmp_10, true
+._crit_edge798:2  %xor_ln155 = xor i1 %tmp_12, true
 
 ]]></Node>
 <StgValue><ssdm name="xor_ln155"/></StgValue>
@@ -2191,10 +2191,10 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 
 <Node id="88" bw="1" op_0_bw="1" op_1_bw="6" op_2_bw="32">
 <![CDATA[
-.preheader799:3  %tmp_12 = call i1 @_ssdm_op_BitSelect.i1.i6.i32(i6 %index_assign_2, i32 5)
+.preheader799:3  %tmp_14 = call i1 @_ssdm_op_BitSelect.i1.i6.i32(i6 %index_assign_2, i32 5)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_12"/></StgValue>
+<StgValue><ssdm name="tmp_14"/></StgValue>
 </operation>
 
 <operation id="158" st_id="51" stage="1" lat="1">
@@ -2214,10 +2214,10 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 
 <Node id="89" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader799:4  %empty_80 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)
+.preheader799:4  %empty_84 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)
 
 ]]></Node>
-<StgValue><ssdm name="empty_80"/></StgValue>
+<StgValue><ssdm name="empty_84"/></StgValue>
 </operation>
 
 <operation id="159" st_id="51" stage="1" lat="1">
@@ -2237,7 +2237,7 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 
 <Node id="90" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader799:5  br i1 %tmp_12, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189.loopexit, label %8
+.preheader799:5  br i1 %tmp_14, label %_ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189.loopexit, label %8
 
 ]]></Node>
 <StgValue><ssdm name="br_ln177"/></StgValue>
@@ -2251,12 +2251,12 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 <literal name="icmp_ln63" val="1"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp><and_exp><literal name="icmp_ln1498" val="0"/>
 <literal name="p_Result_2" val="0"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2276,12 +2276,12 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 <literal name="icmp_ln63" val="1"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp><and_exp><literal name="icmp_ln1498" val="0"/>
 <literal name="p_Result_2" val="0"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2301,12 +2301,12 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 <literal name="icmp_ln63" val="1"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp><and_exp><literal name="icmp_ln1498" val="0"/>
 <literal name="p_Result_2" val="0"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2326,12 +2326,12 @@ _ZN8ap_fixedILi54ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi92ELi26ELb1ELS0_5ELS1
 <literal name="icmp_ln63" val="1"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="1"/>
+<literal name="tmp_14" val="1"/>
 </and_exp><and_exp><literal name="icmp_ln1498" val="0"/>
 <literal name="p_Result_2" val="0"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="1"/>
+<literal name="tmp_14" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -2468,7 +2468,7 @@ _ZNK13ap_fixed_baseILi32ELi20ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit:2  br
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_12" val="1"/>
+<or_exp><and_exp><literal name="tmp_14" val="1"/>
 </and_exp><and_exp><literal name="and_ln155" val="0"/>
 </and_exp><and_exp><literal name="r_is_neg_1" val="1"/>
 </and_exp><and_exp><literal name="p_Result_2" val="1"/>
@@ -2489,7 +2489,7 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:0  %agg_resul
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="tmp_12" val="1"/>
+<or_exp><and_exp><literal name="tmp_14" val="1"/>
 </and_exp><and_exp><literal name="and_ln155" val="0"/>
 </and_exp><and_exp><literal name="r_is_neg_1" val="1"/>
 </and_exp><and_exp><literal name="p_Result_2" val="1"/>
@@ -2768,13 +2768,13 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:1  ret i32 %a
 </dataflow>
 <dataflow id="280" from="StgValue_279" to="icmp_ln84" fromId="279" toId="63">
 </dataflow>
-<dataflow id="281" from="_ssdm_op_BitSelect.i1.i32.i32" to="tmp_6" fromId="271" toId="64">
+<dataflow id="281" from="_ssdm_op_BitSelect.i1.i32.i32" to="tmp_8" fromId="271" toId="64">
 </dataflow>
-<dataflow id="282" from="y_V_read" to="tmp_6" fromId="53" toId="64">
+<dataflow id="282" from="y_V_read" to="tmp_8" fromId="53" toId="64">
 </dataflow>
-<dataflow id="284" from="StgValue_283" to="tmp_6" fromId="283" toId="64">
+<dataflow id="284" from="StgValue_283" to="tmp_8" fromId="283" toId="64">
 </dataflow>
-<dataflow id="285" from="tmp_6" to="and_ln84" fromId="64" toId="65">
+<dataflow id="285" from="tmp_8" to="and_ln84" fromId="64" toId="65">
 </dataflow>
 <dataflow id="286" from="icmp_ln84" to="and_ln84" fromId="63" toId="65">
 </dataflow>
@@ -3389,13 +3389,13 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:1  ret i32 %a
 </dataflow>
 <dataflow id="587" from="StgValue_586" to="icmp_ln134" fromId="586" toId="122">
 </dataflow>
-<dataflow id="589" from="_ssdm_op_SpecLoopTripCount" to="empty_79" fromId="588" toId="123">
+<dataflow id="589" from="_ssdm_op_SpecLoopTripCount" to="empty_83" fromId="588" toId="123">
 </dataflow>
-<dataflow id="591" from="StgValue_590" to="empty_79" fromId="590" toId="123">
+<dataflow id="591" from="StgValue_590" to="empty_83" fromId="590" toId="123">
 </dataflow>
-<dataflow id="592" from="StgValue_590" to="empty_79" fromId="590" toId="123">
+<dataflow id="592" from="StgValue_590" to="empty_83" fromId="590" toId="123">
 </dataflow>
-<dataflow id="593" from="StgValue_590" to="empty_79" fromId="590" toId="123">
+<dataflow id="593" from="StgValue_590" to="empty_83" fromId="590" toId="123">
 </dataflow>
 <dataflow id="594" from="icmp_ln134" to="br_ln134" fromId="122" toId="124">
 </dataflow>
@@ -3600,13 +3600,13 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:1  ret i32 %a
 </dataflow>
 <dataflow id="694" from="br_ln138" to="r_V_7" fromId="130" toId="146">
 </dataflow>
-<dataflow id="695" from="_ssdm_op_BitSelect.i1.i92.i32" to="tmp_10" fromId="570" toId="147">
+<dataflow id="695" from="_ssdm_op_BitSelect.i1.i92.i32" to="tmp_12" fromId="570" toId="147">
 </dataflow>
-<dataflow id="696" from="r_V" to="tmp_10" fromId="116" toId="147">
+<dataflow id="696" from="r_V" to="tmp_12" fromId="116" toId="147">
 </dataflow>
-<dataflow id="697" from="StgValue_573" to="tmp_10" fromId="573" toId="147">
+<dataflow id="697" from="StgValue_573" to="tmp_12" fromId="573" toId="147">
 </dataflow>
-<dataflow id="698" from="tmp_10" to="xor_ln155" fromId="147" toId="148">
+<dataflow id="698" from="tmp_12" to="xor_ln155" fromId="147" toId="148">
 </dataflow>
 <dataflow id="700" from="StgValue_699" to="xor_ln155" fromId="699" toId="148">
 </dataflow>
@@ -3627,12 +3627,12 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:1  ret i32 %a
 <literal name="icmp_ln63" val="1"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp><and_exp><literal name="icmp_ln1498" val="0"/>
 <literal name="p_Result_2" val="0"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp></or_exp>
 </condition>
 </dataflow>
@@ -3655,12 +3655,12 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:1  ret i32 %a
 <literal name="icmp_ln63" val="1"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp><and_exp><literal name="icmp_ln1498" val="0"/>
 <literal name="p_Result_2" val="0"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="0"/>
+<literal name="tmp_14" val="0"/>
 </and_exp></or_exp>
 </condition>
 </dataflow>
@@ -3678,21 +3678,21 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:1  ret i32 %a
 </dataflow>
 <dataflow id="715" from="index_assign_2" to="sext_ln177" fromId="155" toId="156">
 </dataflow>
-<dataflow id="717" from="_ssdm_op_BitSelect.i1.i6.i32" to="tmp_12" fromId="716" toId="157">
+<dataflow id="717" from="_ssdm_op_BitSelect.i1.i6.i32" to="tmp_14" fromId="716" toId="157">
 </dataflow>
-<dataflow id="718" from="index_assign_2" to="tmp_12" fromId="155" toId="157">
+<dataflow id="718" from="index_assign_2" to="tmp_14" fromId="155" toId="157">
 </dataflow>
-<dataflow id="720" from="StgValue_719" to="tmp_12" fromId="719" toId="157">
+<dataflow id="720" from="StgValue_719" to="tmp_14" fromId="719" toId="157">
 </dataflow>
-<dataflow id="721" from="_ssdm_op_SpecLoopTripCount" to="empty_80" fromId="588" toId="158">
+<dataflow id="721" from="_ssdm_op_SpecLoopTripCount" to="empty_84" fromId="588" toId="158">
 </dataflow>
-<dataflow id="723" from="StgValue_722" to="empty_80" fromId="722" toId="158">
+<dataflow id="723" from="StgValue_722" to="empty_84" fromId="722" toId="158">
 </dataflow>
-<dataflow id="724" from="StgValue_722" to="empty_80" fromId="722" toId="158">
+<dataflow id="724" from="StgValue_722" to="empty_84" fromId="722" toId="158">
 </dataflow>
-<dataflow id="725" from="StgValue_722" to="empty_80" fromId="722" toId="158">
+<dataflow id="725" from="StgValue_722" to="empty_84" fromId="722" toId="158">
 </dataflow>
-<dataflow id="726" from="tmp_12" to="br_ln177" fromId="157" toId="159">
+<dataflow id="726" from="tmp_14" to="br_ln177" fromId="157" toId="159">
 </dataflow>
 <dataflow id="728" from="_ssdm_op_BitSet.i32.i32.i32.i1" to="p_Result_11" fromId="727" toId="160">
 </dataflow>
@@ -3819,12 +3819,12 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:1  ret i32 %a
 <literal name="icmp_ln63" val="1"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="1"/>
+<literal name="tmp_14" val="1"/>
 </and_exp><and_exp><literal name="icmp_ln1498" val="0"/>
 <literal name="p_Result_2" val="0"/>
 <literal name="r_is_neg_1" val="0"/>
 <literal name="and_ln155" val="1"/>
-<literal name="tmp_12" val="1"/>
+<literal name="tmp_14" val="1"/>
 </and_exp></or_exp>
 </condition>
 </dataflow>
@@ -3936,7 +3936,7 @@ _ZN8ap_fixedILi32ELi20EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit189:1  ret i32 %a
 </dataflow>
 <dataflow id="808" from="and_ln155" to="StgValue_51" fromId="149" toId="51">
 </dataflow>
-<dataflow id="809" from="tmp_12" to="StgValue_51" fromId="157" toId="51">
+<dataflow id="809" from="tmp_14" to="StgValue_51" fromId="157" toId="51">
 </dataflow>
 <dataflow id="810" from="icmp_ln1499" to="StgValue_51" fromId="164" toId="51">
 </dataflow>
