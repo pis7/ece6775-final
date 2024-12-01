@@ -12,7 +12,7 @@ exp_40_24_s_f_x_mkbM
 exp_40_24_s_f_x_mlbW
 exp_40_24_s_exp_xmb6
 dut_sdiv_56ns_40spcA
-dut_mul_58ns_56s_IfE
+dut_mul_58ns_56s_OgC
 attention_ln_weigqcK
 attention_q_weights
 attention_k_weights
@@ -22,11 +22,12 @@ attention_v_cache_V
 attention_ln_weigrcU
 attention_o_weights
 attention_quantizsc4
-attention_q_proj_wdI
-attention_k_cacheBew
-attention_attn_weEe0
+attention_q_proj_zec
+attention_k_cacheEe0
+attention_attn_weHfu
 sqrt_fixed_42_26_s
 rms_norm_384_s
+init_3d_mem
 quantize_activation
 init_2d_mem
 linear_forward_no_mu

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'rms_norm_384_s'
 ================================================================
-* Date:           Fri Nov 29 11:41:02 2024
+* Date:           Sat Nov 30 21:04:57 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_4th.prj
@@ -536,7 +536,7 @@ ST_71 : Operation 180 [1/5] (6.97ns)   --->   "%r_V = mul i72 %mul_ln1118, %sext
 ST_71 : Operation 181 [1/1] (0.00ns)   --->   "%trunc_ln = call i40 @_ssdm_op_PartSelect.i40.i72.i32.i32(i72 %r_V, i32 32, i32 71)" [./layer.h:93]   --->   Operation 181 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
 
 State 72 <SV = 68> <Delay = 3.25>
-ST_72 : Operation 182 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str24) nounwind" [./layer.h:93]   --->   Operation 182 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 182 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str26) nounwind" [./layer.h:93]   --->   Operation 182 'specloopname' <Predicate = true> <Delay = 0.00>
 ST_72 : Operation 183 [1/1] (3.25ns)   --->   "store i40 %trunc_ln, i40* %input_0_V_addr_4, align 8" [./layer.h:93]   --->   Operation 183 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 36864> <RAM>
 ST_72 : Operation 184 [1/1] (0.00ns)   --->   "br label %2" [./layer.h:92]   --->   Operation 184 'br' <Predicate = true> <Delay = 0.00>
 
@@ -883,7 +883,7 @@ br_ln92           (br               ) [ 0000000000000000000000000000000000000000
 <pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str24"/></StgValue>
+<StgValue><ssdm name="p_str26"/></StgValue>
 </bind>
 </comp>
 

@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 53
-set name dut_mul_58ns_56s_IfE
+set id 63
+set name dut_mul_58ns_56s_OgC
 set corename simcore_mul
 set op mul
 set stage_num 3
@@ -86,7 +86,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 
 
 # Memory (RAM/ROM)  definition:
-set ID 55
+set ID 65
 set hasByteEnable 0
 set MemName attention_ln_weigqcK
 set CoreName ap_simcore_mem
@@ -172,11 +172,11 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 56
+set ID 66
 set hasByteEnable 0
 set MemName attention_q_weights
 set CoreName ap_simcore_mem
-set PortList { 1 3 }
+set PortList { 1 1 }
 set DataWd 8
 set AddrRange 36864
 set AddrWd 16
@@ -258,11 +258,11 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 57
+set ID 67
 set hasByteEnable 0
 set MemName attention_k_weights
 set CoreName ap_simcore_mem
-set PortList { 1 3 }
+set PortList { 1 1 }
 set DataWd 8
 set AddrRange 36864
 set AddrWd 16
@@ -344,11 +344,11 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 58
+set ID 68
 set hasByteEnable 0
 set MemName attention_v_weights
 set CoreName ap_simcore_mem
-set PortList { 1 3 }
+set PortList { 1 1 }
 set DataWd 8
 set AddrRange 36864
 set AddrWd 16
@@ -430,7 +430,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 59
+set ID 69
 set hasByteEnable 0
 set MemName attention_k_cache_V
 set CoreName ap_simcore_mem
@@ -516,7 +516,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 60
+set ID 70
 set hasByteEnable 0
 set MemName attention_v_cache_V
 set CoreName ap_simcore_mem
@@ -602,7 +602,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 61
+set ID 71
 set hasByteEnable 0
 set MemName attention_ln_weigrcU
 set CoreName ap_simcore_mem
@@ -688,11 +688,11 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 62
+set ID 72
 set hasByteEnable 0
 set MemName attention_o_weights
 set CoreName ap_simcore_mem
-set PortList { 1 3 }
+set PortList { 1 1 }
 set DataWd 8
 set AddrRange 36864
 set AddrWd 16
@@ -774,14 +774,14 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 63
+set ID 73
 set hasByteEnable 0
 set MemName attention_quantizsc4
 set CoreName ap_simcore_mem
-set PortList { 2 3 }
+set PortList { 2 1 }
 set DataWd 8
-set AddrRange 384
-set AddrWd 9
+set AddrRange 96
+set AddrWd 7
 set impl_style block
 set TrueReset 0
 set HasInitializer 0
@@ -789,7 +789,7 @@ set IsROM 0
 set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 3.254
+set DelayBudget 2.305
 set ClkPeriod 10
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
@@ -859,9 +859,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 64
+set ID 74
 set hasByteEnable 0
-set MemName attention_q_proj_wdI
+set MemName attention_q_proj_zec
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 40
@@ -944,9 +944,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 65
+set ID 75
 set hasByteEnable 0
-set MemName attention_k_cacheBew
+set MemName attention_k_cacheEe0
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 40
@@ -1029,9 +1029,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 66
+set ID 76
 set hasByteEnable 0
-set MemName attention_attn_weEe0
+set MemName attention_attn_weHfu
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 40
@@ -1124,7 +1124,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 67 \
+    id 77 \
     name hidden_states_0_V \
     reset_level 1 \
     sync_rst true \
@@ -1143,7 +1143,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 68 \
+    id 78 \
     name final_output_0_V \
     reset_level 1 \
     sync_rst true \

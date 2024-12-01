@@ -90,10 +90,10 @@ template <
   }
 
   // step 2: quantize input activations
-  sbit8_t quantized_hidden_states[SEQ_LEN][HS_COLS];
+  sbit8_t quantized_hidden_states[SEQ_LEN][HS_COLS/4][4];
   attn_fixed_t scales[SEQ_LEN];
 
-  init_2d_mem<SEQ_LEN, HS_COLS, sbit8_t>(quantized_hidden_states, 0);
+  init_3d_mem<SEQ_LEN, HS_COLS/4, 4, sbit8_t>(quantized_hidden_states, 0);
   init_1d_mem<SEQ_LEN, attn_fixed_t>(scales, 1);
 
   quantize_activation<SEQ_LEN, HS_COLS>(
@@ -222,9 +222,9 @@ template <
   
   // step 10: final output projection using quantized GEMM (forward_no_mul)
   // quantize attention output before final projection
-  sbit8_t quantized_final_output[SEQ_LEN][PROJ_COLS];
+  sbit8_t quantized_final_output[SEQ_LEN][PROJ_COLS/4][4];
   attn_fixed_t final_scales[SEQ_LEN];
-  init_2d_mem<SEQ_LEN, PROJ_COLS, sbit8_t>(quantized_final_output, 0);
+  init_3d_mem<SEQ_LEN, PROJ_COLS/4, 4, sbit8_t>(quantized_final_output, 0);
   init_1d_mem<SEQ_LEN, attn_fixed_t>(final_scales, 1);
   quantize_activation<SEQ_LEN, PROJ_COLS>(
     attn_output_2D,

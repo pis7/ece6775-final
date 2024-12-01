@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'apply_rotary_pos_emb'" level="0">
-<item name = "Date">Fri Nov 29 11:41:05 2024
+<item name = "Date">Sat Nov 30 21:05:03 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_4th.prj</item>
@@ -94,19 +94,19 @@
 <column name="add_ln1192_fu_527_p2">+, 0, 0, 63, 56, 56</column>
 <column name="add_ln1265_fu_385_p2">+, 0, 0, 14, 10, 10</column>
 <column name="add_ln203_fu_364_p2">+, 0, 0, 14, 10, 10</column>
-<column name="add_ln204_fu_354_p2">+, 0, 0, 15, 5, 1</column>
-<column name="add_ln205_fu_375_p2">+, 0, 0, 15, 6, 5</column>
-<column name="add_ln216_fu_454_p2">+, 0, 0, 15, 6, 1</column>
+<column name="add_ln211_fu_354_p2">+, 0, 0, 15, 5, 1</column>
+<column name="add_ln212_fu_375_p2">+, 0, 0, 15, 6, 5</column>
+<column name="add_ln223_fu_454_p2">+, 0, 0, 15, 6, 1</column>
 <column name="i_2_fu_416_p2">+, 0, 0, 13, 4, 1</column>
 <column name="i_fu_312_p2">+, 0, 0, 13, 4, 1</column>
 <column name="sub_ln1116_fu_442_p2">-, 0, 0, 14, 10, 10</column>
 <column name="sub_ln1265_fu_338_p2">-, 0, 0, 14, 10, 10</column>
 <column name="sub_ln703_35_fu_403_p2">-, 0, 0, 47, 1, 40</column>
 <column name="sub_ln703_fu_396_p2">-, 0, 0, 47, 1, 40</column>
-<column name="icmp_ln202_fu_306_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="icmp_ln204_fu_348_p2">icmp, 0, 0, 11, 5, 5</column>
-<column name="icmp_ln214_fu_410_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="icmp_ln216_fu_448_p2">icmp, 0, 0, 11, 6, 6</column>
+<column name="icmp_ln209_fu_306_p2">icmp, 0, 0, 11, 4, 5</column>
+<column name="icmp_ln211_fu_348_p2">icmp, 0, 0, 11, 5, 5</column>
+<column name="icmp_ln221_fu_410_p2">icmp, 0, 0, 11, 4, 5</column>
+<column name="icmp_ln223_fu_448_p2">icmp, 0, 0, 11, 6, 6</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -126,8 +126,8 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln204_reg_574">5, 0, 5, 0</column>
-<column name="add_ln216_reg_627">6, 0, 6, 0</column>
+<column name="add_ln211_reg_574">5, 0, 5, 0</column>
+<column name="add_ln223_reg_627">6, 0, 6, 0</column>
 <column name="ap_CS_fsm">10, 0, 10, 0</column>
 <column name="cos_tab_V_5_load_reg_668">17, 0, 17, 0</column>
 <column name="i14_0_reg_276">4, 0, 4, 0</column>

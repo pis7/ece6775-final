@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'attention'
 ================================================================
-* Date:           Fri Nov 29 11:40:56 2024
+* Date:           Sat Nov 30 21:04:49 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_4th.prj
@@ -25,29 +25,27 @@
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+---------+---------+---------+
-    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
-    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
-    +---------+---------+-----------+-----------+---------+---------+---------+
-    |  1059566|  2386670| 10.596 ms | 23.867 ms |  1059566|  2386670|   none  |
-    +---------+---------+-----------+-----------+---------+---------+---------+
+    +---------+---------+----------+----------+--------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+    +---------+---------+----------+----------+--------+--------+---------+
+    |   285062|   285062| 2.851 ms | 2.851 ms |  285062|  285062|   none  |
+    +---------+---------+----------+----------+--------+--------+---------+
 
     + Detail: 
         * Instance: 
         N/A
 
         * Loop: 
-        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |                      |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
-        |       Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
-        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- INIT_2D_MEM_LOOP_2  |      384|      384|         1|          -|          -|   384|    no    |
-        |- SF_LOOP_1           |      352|      352|        44|          -|          -|     8|    no    |
-        | + SF_LOOP_3          |       42|       42|         7|          -|          -|     6|    no    |
-        |- ATTN_2D_LOOP_2      |      784|      784|        98|          -|          -|     8|    no    |
-        | + ATTN_2D_LOOP_3     |       96|       96|         2|          -|          -|    48|    no    |
-        |- INIT_2D_MEM_LOOP_2  |      384|      384|         1|          -|          -|   384|    no    |
-        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- SF_LOOP_1        |      352|      352|        44|          -|          -|     8|    no    |
+        | + SF_LOOP_3       |       42|       42|         7|          -|          -|     6|    no    |
+        |- ATTN_2D_LOOP_2   |      784|      784|        98|          -|          -|     8|    no    |
+        | + ATTN_2D_LOOP_3  |       96|       96|         2|          -|          -|    48|    no    |
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -82,7 +80,7 @@ IsGatedGlobalClock: 0
 * FSM state transitions: 
 1 --> 2 
 2 --> 3 
-3 --> 4 3 
+3 --> 4 
 4 --> 5 
 5 --> 6 
 6 --> 7 
@@ -113,259 +111,243 @@ IsGatedGlobalClock: 0
 31 --> 32 30 
 32 --> 31 
 33 --> 34 
-34 --> 35 34 
+34 --> 35 
 35 --> 36 
 36 --> 37 
 37 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 1.76>
-ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%quantized_hidden_sta = alloca [384 x i8], align 1" [attention.cpp:93]   --->   Operation 38 'alloca' 'quantized_hidden_sta' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%q_proj_re_0_V = alloca [384 x i40], align 8" [attention.cpp:107]   --->   Operation 39 'alloca' 'q_proj_re_0_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%k_proj_re_0_V = alloca [384 x i40], align 8" [attention.cpp:108]   --->   Operation 40 'alloca' 'k_proj_re_0_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%v_proj_re_0_V = alloca [384 x i40], align 8" [attention.cpp:109]   --->   Operation 41 'alloca' 'v_proj_re_0_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%q_proj_0_V = alloca [384 x i40], align 8" [attention.cpp:137]   --->   Operation 42 'alloca' 'q_proj_0_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%k_proj_0_V = alloca [384 x i40], align 8" [attention.cpp:138]   --->   Operation 43 'alloca' 'k_proj_0_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%v_proj_0_V = alloca [384 x i40], align 8" [attention.cpp:139]   --->   Operation 44 'alloca' 'v_proj_0_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%q_embed_0_V = alloca [384 x i40], align 8" [attention.cpp:146]   --->   Operation 45 'alloca' 'q_embed_0_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%k_embed_0_V = alloca [384 x i40], align 8" [attention.cpp:147]   --->   Operation 46 'alloca' 'k_embed_0_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%k_cache_upd_V = alloca [2304 x i40], align 8" [attention.cpp:151]   --->   Operation 47 'alloca' 'k_cache_upd_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%v_cache_upd_V = alloca [2304 x i40], align 8" [attention.cpp:152]   --->   Operation 48 'alloca' 'v_cache_upd_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%k_proj_transposed_V = alloca [2304 x i40], align 8" [attention.cpp:160]   --->   Operation 49 'alloca' 'k_proj_transposed_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%attn_weights_0_V = alloca [48 x i40], align 8" [attention.cpp:164]   --->   Operation 50 'alloca' 'attn_weights_0_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%attn_output_0 = alloca [384 x i40], align 8"   --->   Operation 51 'alloca' 'attn_output_0' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%attn_output_2D_0_V = alloca [384 x i40], align 8" [attention.cpp:208]   --->   Operation 52 'alloca' 'attn_output_2D_0_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%quantized_final_outp = alloca [384 x i8], align 1" [attention.cpp:225]   --->   Operation 53 'alloca' 'quantized_final_outp' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_1 : Operation 54 [2/2] (1.76ns)   --->   "call fastcc void @"rms_norm<384>"([384 x i40]* %hidden_states_0_V, [384 x i40]* @ln_weight_in_V)" [attention.cpp:85]   --->   Operation 54 'call' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 1 <SV = 0> <Delay = 1.90>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%quantized_hidden_sta = alloca [96 x i8], align 1" [attention.cpp:93]   --->   Operation 38 'alloca' 'quantized_hidden_sta' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%quantized_hidden_sta_1 = alloca [96 x i8], align 1" [attention.cpp:93]   --->   Operation 39 'alloca' 'quantized_hidden_sta_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%quantized_hidden_sta_2 = alloca [96 x i8], align 1" [attention.cpp:93]   --->   Operation 40 'alloca' 'quantized_hidden_sta_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%quantized_hidden_sta_3 = alloca [96 x i8], align 1" [attention.cpp:93]   --->   Operation 41 'alloca' 'quantized_hidden_sta_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%q_proj_re_0_V = alloca [384 x i40], align 8" [attention.cpp:107]   --->   Operation 42 'alloca' 'q_proj_re_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%k_proj_re_0_V = alloca [384 x i40], align 8" [attention.cpp:108]   --->   Operation 43 'alloca' 'k_proj_re_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%v_proj_re_0_V = alloca [384 x i40], align 8" [attention.cpp:109]   --->   Operation 44 'alloca' 'v_proj_re_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%q_proj_0_V = alloca [384 x i40], align 8" [attention.cpp:137]   --->   Operation 45 'alloca' 'q_proj_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%k_proj_0_V = alloca [384 x i40], align 8" [attention.cpp:138]   --->   Operation 46 'alloca' 'k_proj_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%v_proj_0_V = alloca [384 x i40], align 8" [attention.cpp:139]   --->   Operation 47 'alloca' 'v_proj_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%q_embed_0_V = alloca [384 x i40], align 8" [attention.cpp:146]   --->   Operation 48 'alloca' 'q_embed_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%k_embed_0_V = alloca [384 x i40], align 8" [attention.cpp:147]   --->   Operation 49 'alloca' 'k_embed_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%k_cache_upd_V = alloca [2304 x i40], align 8" [attention.cpp:151]   --->   Operation 50 'alloca' 'k_cache_upd_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%v_cache_upd_V = alloca [2304 x i40], align 8" [attention.cpp:152]   --->   Operation 51 'alloca' 'v_cache_upd_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%k_proj_transposed_V = alloca [2304 x i40], align 8" [attention.cpp:160]   --->   Operation 52 'alloca' 'k_proj_transposed_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%attn_weights_0_V = alloca [48 x i40], align 8" [attention.cpp:164]   --->   Operation 53 'alloca' 'attn_weights_0_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 384> <RAM>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%attn_output_0 = alloca [384 x i40], align 8"   --->   Operation 54 'alloca' 'attn_output_0' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 384> <RAM>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%attn_output_2D_0_V = alloca [384 x i40], align 8" [attention.cpp:208]   --->   Operation 55 'alloca' 'attn_output_2D_0_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 384> <RAM>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%quantized_final_outp = alloca [96 x i8], align 1" [attention.cpp:225]   --->   Operation 56 'alloca' 'quantized_final_outp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%quantized_final_outp_1 = alloca [96 x i8], align 1" [attention.cpp:225]   --->   Operation 57 'alloca' 'quantized_final_outp_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%quantized_final_outp_2 = alloca [96 x i8], align 1" [attention.cpp:225]   --->   Operation 58 'alloca' 'quantized_final_outp_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%quantized_final_outp_3 = alloca [96 x i8], align 1" [attention.cpp:225]   --->   Operation 59 'alloca' 'quantized_final_outp_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [2/2] (1.76ns)   --->   "call fastcc void @"rms_norm<384>"([384 x i40]* %hidden_states_0_V, [384 x i40]* @ln_weight_in_V)" [attention.cpp:85]   --->   Operation 60 'call' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 61 [2/2] (1.76ns)   --->   "call fastcc void @init_3d_mem([96 x i8]* %quantized_hidden_sta, [96 x i8]* %quantized_hidden_sta_1, [96 x i8]* %quantized_hidden_sta_2, [96 x i8]* %quantized_hidden_sta_3)" [attention.cpp:96]   --->   Operation 61 'call' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 62 [2/2] (1.90ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %q_proj_re_0_V)" [attention.cpp:111]   --->   Operation 62 'call' <Predicate = true> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 63 [2/2] (1.90ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %k_proj_re_0_V)" [attention.cpp:112]   --->   Operation 63 'call' <Predicate = true> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 64 [2/2] (1.90ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %v_proj_re_0_V)" [attention.cpp:113]   --->   Operation 64 'call' <Predicate = true> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 2 <SV = 1> <Delay = 1.76>
-ST_2 : Operation 55 [1/2] (0.00ns)   --->   "call fastcc void @"rms_norm<384>"([384 x i40]* %hidden_states_0_V, [384 x i40]* @ln_weight_in_V)" [attention.cpp:85]   --->   Operation 55 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str1838)" [./layer.h:37->attention.cpp:96]   --->   Operation 56 'specregionbegin' 'tmp_i' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 57 [1/1] (1.76ns)   --->   "br label %0" [./layer.h:37->attention.cpp:96]   --->   Operation 57 'br' <Predicate = true> <Delay = 1.76>
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 65 [1/2] (0.00ns)   --->   "call fastcc void @"rms_norm<384>"([384 x i40]* %hidden_states_0_V, [384 x i40]* @ln_weight_in_V)" [attention.cpp:85]   --->   Operation 65 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 66 [1/2] (0.00ns)   --->   "call fastcc void @init_3d_mem([96 x i8]* %quantized_hidden_sta, [96 x i8]* %quantized_hidden_sta_1, [96 x i8]* %quantized_hidden_sta_2, [96 x i8]* %quantized_hidden_sta_3)" [attention.cpp:96]   --->   Operation 66 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 67 [1/2] (0.00ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %q_proj_re_0_V)" [attention.cpp:111]   --->   Operation 67 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 68 [1/2] (0.00ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %k_proj_re_0_V)" [attention.cpp:112]   --->   Operation 68 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 69 [1/2] (0.00ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %v_proj_re_0_V)" [attention.cpp:113]   --->   Operation 69 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 3 <SV = 2> <Delay = 3.25>
-ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%j_0_0_i = phi i9 [ 0, %INIT_2D_MEM_LOOP_1_begin ], [ %add_ln37, %1 ]" [./layer.h:37->attention.cpp:96]   --->   Operation 58 'phi' 'j_0_0_i' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 59 [1/1] (1.66ns)   --->   "%icmp_ln37 = icmp eq i9 %j_0_0_i, -128" [./layer.h:37->attention.cpp:96]   --->   Operation 59 'icmp' 'icmp_ln37' <Predicate = true> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)"   --->   Operation 60 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 61 [1/1] (1.82ns)   --->   "%add_ln37 = add i9 %j_0_0_i, 1" [./layer.h:37->attention.cpp:96]   --->   Operation 61 'add' 'add_ln37' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 62 [1/1] (0.00ns)   --->   "br i1 %icmp_ln37, label %INIT_2D_MEM_LOOP_1_end, label %1" [./layer.h:37->attention.cpp:96]   --->   Operation 62 'br' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str1839) nounwind" [./layer.h:38->attention.cpp:96]   --->   Operation 63 'specloopname' <Predicate = (!icmp_ln37)> <Delay = 0.00>
-ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%zext_ln38 = zext i9 %j_0_0_i to i64" [./layer.h:38->attention.cpp:96]   --->   Operation 64 'zext' 'zext_ln38' <Predicate = (!icmp_ln37)> <Delay = 0.00>
-ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%quantized_hidden_sta_1 = getelementptr [384 x i8]* %quantized_hidden_sta, i64 0, i64 %zext_ln38" [./layer.h:38->attention.cpp:96]   --->   Operation 65 'getelementptr' 'quantized_hidden_sta_1' <Predicate = (!icmp_ln37)> <Delay = 0.00>
-ST_3 : Operation 66 [1/1] (3.25ns)   --->   "store i8 0, i8* %quantized_hidden_sta_1, align 1" [./layer.h:38->attention.cpp:96]   --->   Operation 66 'store' <Predicate = (!icmp_ln37)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_3 : Operation 67 [1/1] (0.00ns)   --->   "br label %0" [./layer.h:37->attention.cpp:96]   --->   Operation 67 'br' <Predicate = (!icmp_ln37)> <Delay = 0.00>
-ST_3 : Operation 68 [2/2] (1.76ns)   --->   "%scales_0_V = call fastcc i40 @quantize_activation([384 x i40]* %hidden_states_0_V, [384 x i8]* %quantized_hidden_sta)" [attention.cpp:99]   --->   Operation 68 'call' 'scales_0_V' <Predicate = (icmp_ln37)> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_3 : Operation 69 [2/2] (1.90ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %q_proj_re_0_V)" [attention.cpp:111]   --->   Operation 69 'call' <Predicate = (icmp_ln37)> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_3 : Operation 70 [2/2] (1.90ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %k_proj_re_0_V)" [attention.cpp:112]   --->   Operation 70 'call' <Predicate = (icmp_ln37)> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_3 : Operation 71 [2/2] (1.90ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %v_proj_re_0_V)" [attention.cpp:113]   --->   Operation 71 'call' <Predicate = (icmp_ln37)> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 3 <SV = 2> <Delay = 1.76>
+ST_3 : Operation 70 [2/2] (1.76ns)   --->   "%scales_0_V = call fastcc i40 @quantize_activation([384 x i40]* %hidden_states_0_V, [96 x i8]* %quantized_hidden_sta, [96 x i8]* %quantized_hidden_sta_1, [96 x i8]* %quantized_hidden_sta_2, [96 x i8]* %quantized_hidden_sta_3)" [attention.cpp:99]   --->   Operation 70 'call' 'scales_0_V' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 72 [1/2] (0.00ns)   --->   "%scales_0_V = call fastcc i40 @quantize_activation([384 x i40]* %hidden_states_0_V, [384 x i8]* %quantized_hidden_sta)" [attention.cpp:99]   --->   Operation 72 'call' 'scales_0_V' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_4 : Operation 73 [1/2] (0.00ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %q_proj_re_0_V)" [attention.cpp:111]   --->   Operation 73 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_4 : Operation 74 [1/2] (0.00ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %k_proj_re_0_V)" [attention.cpp:112]   --->   Operation 74 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_4 : Operation 75 [1/2] (0.00ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %v_proj_re_0_V)" [attention.cpp:113]   --->   Operation 75 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 71 [1/2] (0.00ns)   --->   "%scales_0_V = call fastcc i40 @quantize_activation([384 x i40]* %hidden_states_0_V, [96 x i8]* %quantized_hidden_sta, [96 x i8]* %quantized_hidden_sta_1, [96 x i8]* %quantized_hidden_sta_2, [96 x i8]* %quantized_hidden_sta_3)" [attention.cpp:99]   --->   Operation 71 'call' 'scales_0_V' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 8.75>
-ST_5 : Operation 76 [2/2] (8.75ns)   --->   "call fastcc void @linear_forward_no_mu([384 x i8]* %quantized_hidden_sta, [384 x i40]* %q_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @q_weights, i22 1256162)" [attention.cpp:115]   --->   Operation 76 'call' <Predicate = true> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 72 [2/2] (8.75ns)   --->   "call fastcc void @linear_forward_no_mu([96 x i8]* %quantized_hidden_sta, [96 x i8]* %quantized_hidden_sta_1, [96 x i8]* %quantized_hidden_sta_2, [96 x i8]* %quantized_hidden_sta_3, [384 x i40]* %q_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @q_weights, i22 1256162)" [attention.cpp:115]   --->   Operation 72 'call' <Predicate = true> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 77 [1/2] (0.00ns)   --->   "call fastcc void @linear_forward_no_mu([384 x i8]* %quantized_hidden_sta, [384 x i40]* %q_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @q_weights, i22 1256162)" [attention.cpp:115]   --->   Operation 77 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 73 [1/2] (0.00ns)   --->   "call fastcc void @linear_forward_no_mu([96 x i8]* %quantized_hidden_sta, [96 x i8]* %quantized_hidden_sta_1, [96 x i8]* %quantized_hidden_sta_2, [96 x i8]* %quantized_hidden_sta_3, [384 x i40]* %q_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @q_weights, i22 1256162)" [attention.cpp:115]   --->   Operation 73 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 7 <SV = 6> <Delay = 8.75>
-ST_7 : Operation 78 [2/2] (8.75ns)   --->   "call fastcc void @linear_forward_no_mu([384 x i8]* %quantized_hidden_sta, [384 x i40]* %k_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @k_weights, i22 1234323)" [attention.cpp:122]   --->   Operation 78 'call' <Predicate = true> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_7 : Operation 79 [2/2] (1.81ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %q_proj_re_0_V, [384 x i40]* %q_proj_0_V)" [attention.cpp:141]   --->   Operation 79 'call' <Predicate = true> <Delay = 1.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 74 [2/2] (8.75ns)   --->   "call fastcc void @linear_forward_no_mu([96 x i8]* %quantized_hidden_sta, [96 x i8]* %quantized_hidden_sta_1, [96 x i8]* %quantized_hidden_sta_2, [96 x i8]* %quantized_hidden_sta_3, [384 x i40]* %k_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @k_weights, i22 1234323)" [attention.cpp:122]   --->   Operation 74 'call' <Predicate = true> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 75 [2/2] (1.81ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %q_proj_re_0_V, [384 x i40]* %q_proj_0_V)" [attention.cpp:141]   --->   Operation 75 'call' <Predicate = true> <Delay = 1.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 80 [1/2] (0.00ns)   --->   "call fastcc void @linear_forward_no_mu([384 x i8]* %quantized_hidden_sta, [384 x i40]* %k_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @k_weights, i22 1234323)" [attention.cpp:122]   --->   Operation 80 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_8 : Operation 81 [1/2] (0.00ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %q_proj_re_0_V, [384 x i40]* %q_proj_0_V)" [attention.cpp:141]   --->   Operation 81 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 76 [1/2] (0.00ns)   --->   "call fastcc void @linear_forward_no_mu([96 x i8]* %quantized_hidden_sta, [96 x i8]* %quantized_hidden_sta_1, [96 x i8]* %quantized_hidden_sta_2, [96 x i8]* %quantized_hidden_sta_3, [384 x i40]* %k_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @k_weights, i22 1234323)" [attention.cpp:122]   --->   Operation 76 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 77 [1/2] (0.00ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %q_proj_re_0_V, [384 x i40]* %q_proj_0_V)" [attention.cpp:141]   --->   Operation 77 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 9 <SV = 8> <Delay = 8.75>
-ST_9 : Operation 82 [2/2] (8.75ns)   --->   "call fastcc void @linear_forward_no_mu([384 x i8]* %quantized_hidden_sta, [384 x i40]* %v_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @v_weights, i22 716061)" [attention.cpp:129]   --->   Operation 82 'call' <Predicate = true> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_9 : Operation 83 [2/2] (1.81ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %k_proj_re_0_V, [384 x i40]* %k_proj_0_V)" [attention.cpp:142]   --->   Operation 83 'call' <Predicate = true> <Delay = 1.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 78 [2/2] (8.75ns)   --->   "call fastcc void @linear_forward_no_mu([96 x i8]* %quantized_hidden_sta, [96 x i8]* %quantized_hidden_sta_1, [96 x i8]* %quantized_hidden_sta_2, [96 x i8]* %quantized_hidden_sta_3, [384 x i40]* %v_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @v_weights, i22 716061)" [attention.cpp:129]   --->   Operation 78 'call' <Predicate = true> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 79 [2/2] (1.81ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %k_proj_re_0_V, [384 x i40]* %k_proj_0_V)" [attention.cpp:142]   --->   Operation 79 'call' <Predicate = true> <Delay = 1.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 84 [1/2] (0.00ns)   --->   "call fastcc void @linear_forward_no_mu([384 x i8]* %quantized_hidden_sta, [384 x i40]* %v_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @v_weights, i22 716061)" [attention.cpp:129]   --->   Operation 84 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_10 : Operation 85 [1/2] (0.00ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %k_proj_re_0_V, [384 x i40]* %k_proj_0_V)" [attention.cpp:142]   --->   Operation 85 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 80 [1/2] (0.00ns)   --->   "call fastcc void @linear_forward_no_mu([96 x i8]* %quantized_hidden_sta, [96 x i8]* %quantized_hidden_sta_1, [96 x i8]* %quantized_hidden_sta_2, [96 x i8]* %quantized_hidden_sta_3, [384 x i40]* %v_proj_re_0_V, i40 %scales_0_V, [36864 x i8]* @v_weights, i22 716061)" [attention.cpp:129]   --->   Operation 80 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 81 [1/2] (0.00ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %k_proj_re_0_V, [384 x i40]* %k_proj_0_V)" [attention.cpp:142]   --->   Operation 81 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 11 <SV = 10> <Delay = 1.81>
-ST_11 : Operation 86 [2/2] (1.81ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %v_proj_re_0_V, [384 x i40]* %v_proj_0_V)" [attention.cpp:143]   --->   Operation 86 'call' <Predicate = true> <Delay = 1.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_11 : Operation 87 [2/2] (0.00ns)   --->   "call fastcc void @apply_rotary_pos_emb([384 x i40]* %q_proj_0_V, [384 x i40]* %k_proj_0_V, [384 x i40]* %q_embed_0_V, [384 x i40]* %k_embed_0_V)" [attention.cpp:148]   --->   Operation 87 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 82 [2/2] (1.81ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %v_proj_re_0_V, [384 x i40]* %v_proj_0_V)" [attention.cpp:143]   --->   Operation 82 'call' <Predicate = true> <Delay = 1.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 83 [2/2] (0.00ns)   --->   "call fastcc void @apply_rotary_pos_emb([384 x i40]* %q_proj_0_V, [384 x i40]* %k_proj_0_V, [384 x i40]* %q_embed_0_V, [384 x i40]* %k_embed_0_V)" [attention.cpp:148]   --->   Operation 83 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 12 <SV = 11> <Delay = 0.00>
-ST_12 : Operation 88 [1/2] (0.00ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %v_proj_re_0_V, [384 x i40]* %v_proj_0_V)" [attention.cpp:143]   --->   Operation 88 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_12 : Operation 89 [1/2] (0.00ns)   --->   "call fastcc void @apply_rotary_pos_emb([384 x i40]* %q_proj_0_V, [384 x i40]* %k_proj_0_V, [384 x i40]* %q_embed_0_V, [384 x i40]* %k_embed_0_V)" [attention.cpp:148]   --->   Operation 89 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 84 [1/2] (0.00ns)   --->   "call fastcc void @reshape_2D_to_3D([384 x i40]* %v_proj_re_0_V, [384 x i40]* %v_proj_0_V)" [attention.cpp:143]   --->   Operation 84 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 85 [1/2] (0.00ns)   --->   "call fastcc void @apply_rotary_pos_emb([384 x i40]* %q_proj_0_V, [384 x i40]* %k_proj_0_V, [384 x i40]* %q_embed_0_V, [384 x i40]* %k_embed_0_V)" [attention.cpp:148]   --->   Operation 85 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 13 <SV = 12> <Delay = 1.76>
-ST_13 : Operation 90 [2/2] (1.76ns)   --->   "call fastcc void @cache_update([1920 x i40]* @k_cache_V, [2304 x i40]* %k_cache_upd_V, [384 x i40]* %k_embed_0_V)" [attention.cpp:153]   --->   Operation 90 'call' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 86 [2/2] (1.76ns)   --->   "call fastcc void @cache_update([1920 x i40]* @k_cache_V, [2304 x i40]* %k_cache_upd_V, [384 x i40]* %k_embed_0_V)" [attention.cpp:153]   --->   Operation 86 'call' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 14 <SV = 13> <Delay = 0.00>
-ST_14 : Operation 91 [1/2] (0.00ns)   --->   "call fastcc void @cache_update([1920 x i40]* @k_cache_V, [2304 x i40]* %k_cache_upd_V, [384 x i40]* %k_embed_0_V)" [attention.cpp:153]   --->   Operation 91 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 87 [1/2] (0.00ns)   --->   "call fastcc void @cache_update([1920 x i40]* @k_cache_V, [2304 x i40]* %k_cache_upd_V, [384 x i40]* %k_embed_0_V)" [attention.cpp:153]   --->   Operation 87 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 15 <SV = 14> <Delay = 1.76>
-ST_15 : Operation 92 [2/2] (1.76ns)   --->   "call fastcc void @cache_update([1920 x i40]* @v_cache_V, [2304 x i40]* %v_cache_upd_V, [384 x i40]* %v_proj_0_V)" [attention.cpp:156]   --->   Operation 92 'call' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_15 : Operation 93 [2/2] (0.00ns)   --->   "call fastcc void @transpose_last_two_d([2304 x i40]* %k_cache_upd_V, [2304 x i40]* %k_proj_transposed_V)" [attention.cpp:161]   --->   Operation 93 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 88 [2/2] (1.76ns)   --->   "call fastcc void @cache_update([1920 x i40]* @v_cache_V, [2304 x i40]* %v_cache_upd_V, [384 x i40]* %v_proj_0_V)" [attention.cpp:156]   --->   Operation 88 'call' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 89 [2/2] (0.00ns)   --->   "call fastcc void @transpose_last_two_d([2304 x i40]* %k_cache_upd_V, [2304 x i40]* %k_proj_transposed_V)" [attention.cpp:161]   --->   Operation 89 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 16 <SV = 15> <Delay = 0.00>
-ST_16 : Operation 94 [1/2] (0.00ns)   --->   "call fastcc void @cache_update([1920 x i40]* @v_cache_V, [2304 x i40]* %v_cache_upd_V, [384 x i40]* %v_proj_0_V)" [attention.cpp:156]   --->   Operation 94 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_16 : Operation 95 [1/2] (0.00ns)   --->   "call fastcc void @transpose_last_two_d([2304 x i40]* %k_cache_upd_V, [2304 x i40]* %k_proj_transposed_V)" [attention.cpp:161]   --->   Operation 95 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 90 [1/2] (0.00ns)   --->   "call fastcc void @cache_update([1920 x i40]* @v_cache_V, [2304 x i40]* %v_cache_upd_V, [384 x i40]* %v_proj_0_V)" [attention.cpp:156]   --->   Operation 90 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 91 [1/2] (0.00ns)   --->   "call fastcc void @transpose_last_two_d([2304 x i40]* %k_cache_upd_V, [2304 x i40]* %k_proj_transposed_V)" [attention.cpp:161]   --->   Operation 91 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 17 <SV = 16> <Delay = 0.00>
-ST_17 : Operation 96 [2/2] (0.00ns)   --->   "call fastcc void @GEMM_3D_float.1([384 x i40]* %q_embed_0_V, [2304 x i40]* %k_proj_transposed_V, [48 x i40]* %attn_weights_0_V)" [attention.cpp:165]   --->   Operation 96 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 92 [2/2] (0.00ns)   --->   "call fastcc void @GEMM_3D_float.1([384 x i40]* %q_embed_0_V, [2304 x i40]* %k_proj_transposed_V, [48 x i40]* %attn_weights_0_V)" [attention.cpp:165]   --->   Operation 92 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 18 <SV = 17> <Delay = 1.76>
-ST_18 : Operation 97 [1/1] (0.00ns)   --->   "%empty_104 = call i32 (...)* @_ssdm_op_SpecRegionEnd([19 x i8]* @p_str1838, i32 %tmp_i)" [./layer.h:38->attention.cpp:96]   --->   Operation 97 'specregionend' 'empty_104' <Predicate = true> <Delay = 0.00>
-ST_18 : Operation 98 [1/2] (0.00ns)   --->   "call fastcc void @GEMM_3D_float.1([384 x i40]* %q_embed_0_V, [2304 x i40]* %k_proj_transposed_V, [48 x i40]* %attn_weights_0_V)" [attention.cpp:165]   --->   Operation 98 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_18 : Operation 99 [1/1] (1.76ns)   --->   "br label %2" [attention.cpp:178]   --->   Operation 99 'br' <Predicate = true> <Delay = 1.76>
+ST_18 : Operation 93 [1/2] (0.00ns)   --->   "call fastcc void @GEMM_3D_float.1([384 x i40]* %q_embed_0_V, [2304 x i40]* %k_proj_transposed_V, [48 x i40]* %attn_weights_0_V)" [attention.cpp:165]   --->   Operation 93 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 94 [1/1] (1.76ns)   --->   "br label %0" [attention.cpp:178]   --->   Operation 94 'br' <Predicate = true> <Delay = 1.76>
 
 State 19 <SV = 18> <Delay = 1.90>
-ST_19 : Operation 100 [1/1] (0.00ns)   --->   "%h_0 = phi i4 [ 0, %INIT_2D_MEM_LOOP_1_end ], [ %h, %SF_LOOP_2_end ]"   --->   Operation 100 'phi' 'h_0' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 101 [1/1] (1.30ns)   --->   "%icmp_ln178 = icmp eq i4 %h_0, -8" [attention.cpp:178]   --->   Operation 101 'icmp' 'icmp_ln178' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_19 : Operation 102 [1/1] (0.00ns)   --->   "%empty_105 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 102 'speclooptripcount' 'empty_105' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 103 [1/1] (1.73ns)   --->   "%h = add i4 %h_0, 1" [attention.cpp:178]   --->   Operation 103 'add' 'h' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_19 : Operation 104 [1/1] (0.00ns)   --->   "br i1 %icmp_ln178, label %ATTN_2D_LOOP_1_begin, label %SF_LOOP_2_begin" [attention.cpp:178]   --->   Operation 104 'br' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 105 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str15) nounwind" [attention.cpp:179]   --->   Operation 105 'specloopname' <Predicate = (!icmp_ln178)> <Delay = 0.00>
-ST_19 : Operation 106 [1/1] (0.00ns)   --->   "%tmp_65 = call i7 @_ssdm_op_BitConcatenate.i7.i4.i3(i4 %h_0, i3 0)" [attention.cpp:181]   --->   Operation 106 'bitconcatenate' 'tmp_65' <Predicate = (!icmp_ln178)> <Delay = 0.00>
-ST_19 : Operation 107 [1/1] (0.00ns)   --->   "%tmp_66 = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %h_0, i1 false)" [attention.cpp:181]   --->   Operation 107 'bitconcatenate' 'tmp_66' <Predicate = (!icmp_ln178)> <Delay = 0.00>
-ST_19 : Operation 108 [1/1] (0.00ns)   --->   "%zext_ln1265 = zext i5 %tmp_66 to i7" [attention.cpp:181]   --->   Operation 108 'zext' 'zext_ln1265' <Predicate = (!icmp_ln178)> <Delay = 0.00>
-ST_19 : Operation 109 [1/1] (1.87ns)   --->   "%sub_ln1265 = sub i7 %tmp_65, %zext_ln1265" [attention.cpp:181]   --->   Operation 109 'sub' 'sub_ln1265' <Predicate = (!icmp_ln178)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_19 : Operation 110 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str16)" [attention.cpp:180]   --->   Operation 110 'specregionbegin' 'tmp' <Predicate = (!icmp_ln178)> <Delay = 0.00>
-ST_19 : Operation 111 [1/1] (1.76ns)   --->   "br label %3" [attention.cpp:180]   --->   Operation 111 'br' <Predicate = (!icmp_ln178)> <Delay = 1.76>
-ST_19 : Operation 112 [2/2] (0.00ns)   --->   "call fastcc void @"softmax<1, 8, 6>"([48 x i40]* %attn_weights_0_V)" [attention.cpp:191]   --->   Operation 112 'call' <Predicate = (icmp_ln178)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_19 : Operation 113 [2/2] (1.90ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %attn_output_2D_0_V)" [attention.cpp:209]   --->   Operation 113 'call' <Predicate = (icmp_ln178)> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 95 [1/1] (0.00ns)   --->   "%h_0 = phi i4 [ 0, %arrayctor.loop.preheader ], [ %h, %SF_LOOP_2_end ]"   --->   Operation 95 'phi' 'h_0' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 96 [1/1] (1.30ns)   --->   "%icmp_ln178 = icmp eq i4 %h_0, -8" [attention.cpp:178]   --->   Operation 96 'icmp' 'icmp_ln178' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 97 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 97 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 98 [1/1] (1.73ns)   --->   "%h = add i4 %h_0, 1" [attention.cpp:178]   --->   Operation 98 'add' 'h' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 99 [1/1] (0.00ns)   --->   "br i1 %icmp_ln178, label %ATTN_2D_LOOP_1_begin, label %SF_LOOP_2_begin" [attention.cpp:178]   --->   Operation 99 'br' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 100 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str17) nounwind" [attention.cpp:179]   --->   Operation 100 'specloopname' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_19 : Operation 101 [1/1] (0.00ns)   --->   "%tmp_96 = call i7 @_ssdm_op_BitConcatenate.i7.i4.i3(i4 %h_0, i3 0)" [attention.cpp:181]   --->   Operation 101 'bitconcatenate' 'tmp_96' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_19 : Operation 102 [1/1] (0.00ns)   --->   "%tmp_97 = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %h_0, i1 false)" [attention.cpp:181]   --->   Operation 102 'bitconcatenate' 'tmp_97' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_19 : Operation 103 [1/1] (0.00ns)   --->   "%zext_ln1265 = zext i5 %tmp_97 to i7" [attention.cpp:181]   --->   Operation 103 'zext' 'zext_ln1265' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_19 : Operation 104 [1/1] (1.87ns)   --->   "%sub_ln1265 = sub i7 %tmp_96, %zext_ln1265" [attention.cpp:181]   --->   Operation 104 'sub' 'sub_ln1265' <Predicate = (!icmp_ln178)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 105 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str18)" [attention.cpp:180]   --->   Operation 105 'specregionbegin' 'tmp' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_19 : Operation 106 [1/1] (1.76ns)   --->   "br label %1" [attention.cpp:180]   --->   Operation 106 'br' <Predicate = (!icmp_ln178)> <Delay = 1.76>
+ST_19 : Operation 107 [2/2] (0.00ns)   --->   "call fastcc void @"softmax<1, 8, 6>"([48 x i40]* %attn_weights_0_V)" [attention.cpp:191]   --->   Operation 107 'call' <Predicate = (icmp_ln178)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 108 [2/2] (1.90ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %attn_output_2D_0_V)" [attention.cpp:209]   --->   Operation 108 'call' <Predicate = (icmp_ln178)> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 20 <SV = 19> <Delay = 5.12>
-ST_20 : Operation 114 [1/1] (0.00ns)   --->   "%d_0_0 = phi i3 [ 0, %SF_LOOP_2_begin ], [ %add_ln180, %_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi40ELi24ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.0 ]" [attention.cpp:180]   --->   Operation 114 'phi' 'd_0_0' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 115 [1/1] (1.13ns)   --->   "%icmp_ln180 = icmp eq i3 %d_0_0, -2" [attention.cpp:180]   --->   Operation 115 'icmp' 'icmp_ln180' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_20 : Operation 116 [1/1] (0.00ns)   --->   "%empty_107 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)"   --->   Operation 116 'speclooptripcount' 'empty_107' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 117 [1/1] (1.65ns)   --->   "%add_ln180 = add i3 %d_0_0, 1" [attention.cpp:180]   --->   Operation 117 'add' 'add_ln180' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_20 : Operation 118 [1/1] (0.00ns)   --->   "br i1 %icmp_ln180, label %SF_LOOP_2_end, label %_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi40ELi24ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.0" [attention.cpp:180]   --->   Operation 118 'br' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 119 [1/1] (0.00ns)   --->   "%zext_ln1265_2 = zext i3 %d_0_0 to i7" [attention.cpp:181]   --->   Operation 119 'zext' 'zext_ln1265_2' <Predicate = (!icmp_ln180)> <Delay = 0.00>
-ST_20 : Operation 120 [1/1] (1.87ns)   --->   "%add_ln1265 = add i7 %sub_ln1265, %zext_ln1265_2" [attention.cpp:181]   --->   Operation 120 'add' 'add_ln1265' <Predicate = (!icmp_ln180)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_20 : Operation 121 [1/1] (0.00ns)   --->   "%sext_ln1265 = sext i7 %add_ln1265 to i64" [attention.cpp:181]   --->   Operation 121 'sext' 'sext_ln1265' <Predicate = (!icmp_ln180)> <Delay = 0.00>
-ST_20 : Operation 122 [1/1] (0.00ns)   --->   "%attn_weights_0_V_ad = getelementptr [48 x i40]* %attn_weights_0_V, i64 0, i64 %sext_ln1265" [attention.cpp:181]   --->   Operation 122 'getelementptr' 'attn_weights_0_V_ad' <Predicate = (!icmp_ln180)> <Delay = 0.00>
-ST_20 : Operation 123 [2/2] (3.25ns)   --->   "%attn_weights_0_V_lo = load i40* %attn_weights_0_V_ad, align 8" [attention.cpp:181]   --->   Operation 123 'load' 'attn_weights_0_V_lo' <Predicate = (!icmp_ln180)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_20 : Operation 124 [1/1] (0.00ns)   --->   "%empty_106 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str16, i32 %tmp)" [attention.cpp:181]   --->   Operation 124 'specregionend' 'empty_106' <Predicate = (icmp_ln180)> <Delay = 0.00>
-ST_20 : Operation 125 [1/1] (0.00ns)   --->   "br label %2" [attention.cpp:178]   --->   Operation 125 'br' <Predicate = (icmp_ln180)> <Delay = 0.00>
+ST_20 : Operation 109 [1/1] (0.00ns)   --->   "%d_0_0 = phi i3 [ 0, %SF_LOOP_2_begin ], [ %add_ln180, %_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi40ELi24ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.0 ]" [attention.cpp:180]   --->   Operation 109 'phi' 'd_0_0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 110 [1/1] (1.13ns)   --->   "%icmp_ln180 = icmp eq i3 %d_0_0, -2" [attention.cpp:180]   --->   Operation 110 'icmp' 'icmp_ln180' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 111 [1/1] (0.00ns)   --->   "%empty_110 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)"   --->   Operation 111 'speclooptripcount' 'empty_110' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 112 [1/1] (1.65ns)   --->   "%add_ln180 = add i3 %d_0_0, 1" [attention.cpp:180]   --->   Operation 112 'add' 'add_ln180' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 113 [1/1] (0.00ns)   --->   "br i1 %icmp_ln180, label %SF_LOOP_2_end, label %_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEdvILi40ELi24ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE3divERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.0" [attention.cpp:180]   --->   Operation 113 'br' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 114 [1/1] (0.00ns)   --->   "%zext_ln1265_2 = zext i3 %d_0_0 to i7" [attention.cpp:181]   --->   Operation 114 'zext' 'zext_ln1265_2' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_20 : Operation 115 [1/1] (1.87ns)   --->   "%add_ln1265 = add i7 %sub_ln1265, %zext_ln1265_2" [attention.cpp:181]   --->   Operation 115 'add' 'add_ln1265' <Predicate = (!icmp_ln180)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 116 [1/1] (0.00ns)   --->   "%sext_ln1265 = sext i7 %add_ln1265 to i64" [attention.cpp:181]   --->   Operation 116 'sext' 'sext_ln1265' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_20 : Operation 117 [1/1] (0.00ns)   --->   "%attn_weights_0_V_ad = getelementptr [48 x i40]* %attn_weights_0_V, i64 0, i64 %sext_ln1265" [attention.cpp:181]   --->   Operation 117 'getelementptr' 'attn_weights_0_V_ad' <Predicate = (!icmp_ln180)> <Delay = 0.00>
+ST_20 : Operation 118 [2/2] (3.25ns)   --->   "%attn_weights_0_V_lo = load i40* %attn_weights_0_V_ad, align 8" [attention.cpp:181]   --->   Operation 118 'load' 'attn_weights_0_V_lo' <Predicate = (!icmp_ln180)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 384> <RAM>
+ST_20 : Operation 119 [1/1] (0.00ns)   --->   "%empty_109 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str18, i32 %tmp)" [attention.cpp:181]   --->   Operation 119 'specregionend' 'empty_109' <Predicate = (icmp_ln180)> <Delay = 0.00>
+ST_20 : Operation 120 [1/1] (0.00ns)   --->   "br label %0" [attention.cpp:178]   --->   Operation 120 'br' <Predicate = (icmp_ln180)> <Delay = 0.00>
 
 State 21 <SV = 20> <Delay = 3.25>
-ST_21 : Operation 126 [1/2] (3.25ns)   --->   "%attn_weights_0_V_lo = load i40* %attn_weights_0_V_ad, align 8" [attention.cpp:181]   --->   Operation 126 'load' 'attn_weights_0_V_lo' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_21 : Operation 127 [1/1] (0.00ns)   --->   "%tmp_78 = call i1 @_ssdm_op_BitSelect.i1.i40.i32(i40 %attn_weights_0_V_lo, i32 39)" [attention.cpp:181]   --->   Operation 127 'bitselect' 'tmp_78' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 121 [1/2] (3.25ns)   --->   "%attn_weights_0_V_lo = load i40* %attn_weights_0_V_ad, align 8" [attention.cpp:181]   --->   Operation 121 'load' 'attn_weights_0_V_lo' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 384> <RAM>
+ST_21 : Operation 122 [1/1] (0.00ns)   --->   "%tmp_111 = call i1 @_ssdm_op_BitSelect.i1.i40.i32(i40 %attn_weights_0_V_lo, i32 39)" [attention.cpp:181]   --->   Operation 122 'bitselect' 'tmp_111' <Predicate = true> <Delay = 0.00>
 
 State 22 <SV = 21> <Delay = 8.22>
-ST_22 : Operation 128 [1/1] (0.00ns)   --->   "%shl_ln3 = call i56 @_ssdm_op_BitConcatenate.i56.i40.i16(i40 %attn_weights_0_V_lo, i16 0)" [attention.cpp:181]   --->   Operation 128 'bitconcatenate' 'shl_ln3' <Predicate = true> <Delay = 0.00>
-ST_22 : Operation 129 [1/1] (0.00ns)   --->   "%sext_ln1148 = sext i56 %shl_ln3 to i113" [attention.cpp:181]   --->   Operation 129 'sext' 'sext_ln1148' <Predicate = true> <Delay = 0.00>
-ST_22 : Operation 130 [3/3] (8.22ns)   --->   "%mul_ln1148 = mul i113 83205075835834171, %sext_ln1148" [attention.cpp:181]   --->   Operation 130 'mul' 'mul_ln1148' <Predicate = true> <Delay = 8.22> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 8.22> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 123 [1/1] (0.00ns)   --->   "%shl_ln4 = call i56 @_ssdm_op_BitConcatenate.i56.i40.i16(i40 %attn_weights_0_V_lo, i16 0)" [attention.cpp:181]   --->   Operation 123 'bitconcatenate' 'shl_ln4' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 124 [1/1] (0.00ns)   --->   "%sext_ln1148 = sext i56 %shl_ln4 to i113" [attention.cpp:181]   --->   Operation 124 'sext' 'sext_ln1148' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 125 [3/3] (8.22ns)   --->   "%mul_ln1148 = mul i113 83205075835834171, %sext_ln1148" [attention.cpp:181]   --->   Operation 125 'mul' 'mul_ln1148' <Predicate = true> <Delay = 8.22> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 8.22> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
 State 23 <SV = 22> <Delay = 8.22>
-ST_23 : Operation 131 [2/3] (8.22ns)   --->   "%mul_ln1148 = mul i113 83205075835834171, %sext_ln1148" [attention.cpp:181]   --->   Operation 131 'mul' 'mul_ln1148' <Predicate = true> <Delay = 8.22> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 8.22> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 126 [2/3] (8.22ns)   --->   "%mul_ln1148 = mul i113 83205075835834171, %sext_ln1148" [attention.cpp:181]   --->   Operation 126 'mul' 'mul_ln1148' <Predicate = true> <Delay = 8.22> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 8.22> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
 State 24 <SV = 23> <Delay = 8.22>
-ST_24 : Operation 132 [1/3] (8.22ns)   --->   "%mul_ln1148 = mul i113 83205075835834171, %sext_ln1148" [attention.cpp:181]   --->   Operation 132 'mul' 'mul_ln1148' <Predicate = true> <Delay = 8.22> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 8.22> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_24 : Operation 133 [1/1] (0.00ns)   --->   "%tmp_80 = call i38 @_ssdm_op_PartSelect.i38.i113.i32.i32(i113 %mul_ln1148, i32 75, i32 112)" [attention.cpp:181]   --->   Operation 133 'partselect' 'tmp_80' <Predicate = (!tmp_78)> <Delay = 0.00>
+ST_24 : Operation 127 [1/3] (8.22ns)   --->   "%mul_ln1148 = mul i113 83205075835834171, %sext_ln1148" [attention.cpp:181]   --->   Operation 127 'mul' 'mul_ln1148' <Predicate = true> <Delay = 8.22> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 8.22> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 128 [1/1] (0.00ns)   --->   "%tmp_113 = call i38 @_ssdm_op_PartSelect.i38.i113.i32.i32(i113 %mul_ln1148, i32 75, i32 112)" [attention.cpp:181]   --->   Operation 128 'partselect' 'tmp_113' <Predicate = (!tmp_111)> <Delay = 0.00>
 
 State 25 <SV = 24> <Delay = 6.26>
-ST_25 : Operation 134 [1/1] (4.92ns)   --->   "%sub_ln1148 = sub i113 0, %mul_ln1148" [attention.cpp:181]   --->   Operation 134 'sub' 'sub_ln1148' <Predicate = (tmp_78)> <Delay = 4.92> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 135 [1/1] (0.00ns)   --->   "%tmp_79 = call i38 @_ssdm_op_PartSelect.i38.i113.i32.i32(i113 %sub_ln1148, i32 75, i32 112)" [attention.cpp:181]   --->   Operation 135 'partselect' 'tmp_79' <Predicate = (tmp_78)> <Delay = 0.00>
-ST_25 : Operation 136 [1/1] (1.34ns)   --->   "%select_ln1148 = select i1 %tmp_78, i38 %tmp_79, i38 %tmp_80" [attention.cpp:181]   --->   Operation 136 'select' 'select_ln1148' <Predicate = true> <Delay = 1.34> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_25 : Operation 129 [1/1] (4.92ns)   --->   "%sub_ln1148 = sub i113 0, %mul_ln1148" [attention.cpp:181]   --->   Operation 129 'sub' 'sub_ln1148' <Predicate = (tmp_111)> <Delay = 4.92> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 130 [1/1] (0.00ns)   --->   "%tmp_112 = call i38 @_ssdm_op_PartSelect.i38.i113.i32.i32(i113 %sub_ln1148, i32 75, i32 112)" [attention.cpp:181]   --->   Operation 130 'partselect' 'tmp_112' <Predicate = (tmp_111)> <Delay = 0.00>
+ST_25 : Operation 131 [1/1] (1.34ns)   --->   "%select_ln1148 = select i1 %tmp_111, i38 %tmp_112, i38 %tmp_113" [attention.cpp:181]   --->   Operation 131 'select' 'select_ln1148' <Predicate = true> <Delay = 1.34> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 26 <SV = 25> <Delay = 7.61>
-ST_26 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str17) nounwind" [attention.cpp:181]   --->   Operation 137 'specloopname' <Predicate = true> <Delay = 0.00>
-ST_26 : Operation 138 [1/1] (0.00ns)   --->   "%sext_ln703 = sext i38 %select_ln1148 to i40" [attention.cpp:181]   --->   Operation 138 'sext' 'sext_ln703' <Predicate = (tmp_78)> <Delay = 0.00>
-ST_26 : Operation 139 [1/1] (2.79ns)   --->   "%sub_ln703 = sub i40 0, %sext_ln703" [attention.cpp:181]   --->   Operation 139 'sub' 'sub_ln703' <Predicate = (tmp_78)> <Delay = 2.79> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 140 [1/1] (0.00ns)   --->   "%sext_ln703_1 = sext i38 %select_ln1148 to i40" [attention.cpp:181]   --->   Operation 140 'sext' 'sext_ln703_1' <Predicate = (!tmp_78)> <Delay = 0.00>
-ST_26 : Operation 141 [1/1] (1.56ns)   --->   "%select_ln1148_2 = select i1 %tmp_78, i40 %sub_ln703, i40 %sext_ln703_1" [attention.cpp:181]   --->   Operation 141 'select' 'select_ln1148_2' <Predicate = true> <Delay = 1.56> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_26 : Operation 142 [1/1] (3.25ns)   --->   "store i40 %select_ln1148_2, i40* %attn_weights_0_V_ad, align 8" [attention.cpp:181]   --->   Operation 142 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_26 : Operation 143 [1/1] (0.00ns)   --->   "br label %3" [attention.cpp:180]   --->   Operation 143 'br' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 132 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str19) nounwind" [attention.cpp:181]   --->   Operation 132 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 133 [1/1] (0.00ns)   --->   "%sext_ln703 = sext i38 %select_ln1148 to i40" [attention.cpp:181]   --->   Operation 133 'sext' 'sext_ln703' <Predicate = (tmp_111)> <Delay = 0.00>
+ST_26 : Operation 134 [1/1] (2.79ns)   --->   "%sub_ln703 = sub i40 0, %sext_ln703" [attention.cpp:181]   --->   Operation 134 'sub' 'sub_ln703' <Predicate = (tmp_111)> <Delay = 2.79> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 135 [1/1] (0.00ns)   --->   "%sext_ln703_122 = sext i38 %select_ln1148 to i40" [attention.cpp:181]   --->   Operation 135 'sext' 'sext_ln703_122' <Predicate = (!tmp_111)> <Delay = 0.00>
+ST_26 : Operation 136 [1/1] (1.56ns)   --->   "%select_ln1148_2 = select i1 %tmp_111, i40 %sub_ln703, i40 %sext_ln703_122" [attention.cpp:181]   --->   Operation 136 'select' 'select_ln1148_2' <Predicate = true> <Delay = 1.56> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_26 : Operation 137 [1/1] (3.25ns)   --->   "store i40 %select_ln1148_2, i40* %attn_weights_0_V_ad, align 8" [attention.cpp:181]   --->   Operation 137 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 384> <RAM>
+ST_26 : Operation 138 [1/1] (0.00ns)   --->   "br label %1" [attention.cpp:180]   --->   Operation 138 'br' <Predicate = true> <Delay = 0.00>
 
 State 27 <SV = 19> <Delay = 0.00>
-ST_27 : Operation 144 [1/2] (0.00ns)   --->   "call fastcc void @"softmax<1, 8, 6>"([48 x i40]* %attn_weights_0_V)" [attention.cpp:191]   --->   Operation 144 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_27 : Operation 145 [1/2] (0.00ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %attn_output_2D_0_V)" [attention.cpp:209]   --->   Operation 145 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 139 [1/2] (0.00ns)   --->   "call fastcc void @"softmax<1, 8, 6>"([48 x i40]* %attn_weights_0_V)" [attention.cpp:191]   --->   Operation 139 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 140 [1/2] (0.00ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %attn_output_2D_0_V)" [attention.cpp:209]   --->   Operation 140 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 28 <SV = 20> <Delay = 0.00>
-ST_28 : Operation 146 [2/2] (0.00ns)   --->   "call fastcc void @GEMM_3D_float([48 x i40]* %attn_weights_0_V, [2304 x i40]* %v_cache_upd_V, [384 x i40]* %attn_output_0)" [attention.cpp:195]   --->   Operation 146 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_28 : Operation 141 [2/2] (0.00ns)   --->   "call fastcc void @GEMM_3D_float([48 x i40]* %attn_weights_0_V, [2304 x i40]* %v_cache_upd_V, [384 x i40]* %attn_output_0)" [attention.cpp:195]   --->   Operation 141 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 29 <SV = 21> <Delay = 1.76>
-ST_29 : Operation 147 [1/2] (0.00ns)   --->   "call fastcc void @GEMM_3D_float([48 x i40]* %attn_weights_0_V, [2304 x i40]* %v_cache_upd_V, [384 x i40]* %attn_output_0)" [attention.cpp:195]   --->   Operation 147 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_29 : Operation 148 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str21)" [attention.cpp:211]   --->   Operation 148 'specregionbegin' 'tmp_s' <Predicate = true> <Delay = 0.00>
-ST_29 : Operation 149 [1/1] (1.76ns)   --->   "br label %6" [attention.cpp:211]   --->   Operation 149 'br' <Predicate = true> <Delay = 1.76>
+ST_29 : Operation 142 [1/2] (0.00ns)   --->   "call fastcc void @GEMM_3D_float([48 x i40]* %attn_weights_0_V, [2304 x i40]* %v_cache_upd_V, [384 x i40]* %attn_output_0)" [attention.cpp:195]   --->   Operation 142 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_29 : Operation 143 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str23)" [attention.cpp:211]   --->   Operation 143 'specregionbegin' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 144 [1/1] (1.76ns)   --->   "br label %2" [attention.cpp:211]   --->   Operation 144 'br' <Predicate = true> <Delay = 1.76>
 
-State 30 <SV = 22> <Delay = 1.82>
-ST_30 : Operation 150 [1/1] (0.00ns)   --->   "%h100_0_0 = phi i4 [ 0, %ATTN_2D_LOOP_1_begin ], [ %add_ln211, %ATTN_2D_LOOP_2_end ]" [attention.cpp:211]   --->   Operation 150 'phi' 'h100_0_0' <Predicate = true> <Delay = 0.00>
-ST_30 : Operation 151 [1/1] (1.30ns)   --->   "%icmp_ln211 = icmp eq i4 %h100_0_0, -8" [attention.cpp:211]   --->   Operation 151 'icmp' 'icmp_ln211' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_30 : Operation 152 [1/1] (0.00ns)   --->   "%empty_111 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 152 'speclooptripcount' 'empty_111' <Predicate = true> <Delay = 0.00>
-ST_30 : Operation 153 [1/1] (1.73ns)   --->   "%add_ln211 = add i4 %h100_0_0, 1" [attention.cpp:211]   --->   Operation 153 'add' 'add_ln211' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_30 : Operation 154 [1/1] (0.00ns)   --->   "br i1 %icmp_ln211, label %INIT_2D_MEM_LOOP_1_begin1, label %ATTN_2D_LOOP_2_begin" [attention.cpp:211]   --->   Operation 154 'br' <Predicate = true> <Delay = 0.00>
-ST_30 : Operation 155 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str22) nounwind" [attention.cpp:212]   --->   Operation 155 'specloopname' <Predicate = (!icmp_ln211)> <Delay = 0.00>
-ST_30 : Operation 156 [1/1] (0.00ns)   --->   "%tmp_20 = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str22)" [attention.cpp:212]   --->   Operation 156 'specregionbegin' 'tmp_20' <Predicate = (!icmp_ln211)> <Delay = 0.00>
-ST_30 : Operation 157 [1/1] (0.00ns)   --->   "%trunc_ln213 = trunc i4 %h100_0_0 to i3" [attention.cpp:213]   --->   Operation 157 'trunc' 'trunc_ln213' <Predicate = (!icmp_ln211)> <Delay = 0.00>
-ST_30 : Operation 158 [1/1] (0.00ns)   --->   "%shl_ln = call i9 @_ssdm_op_BitConcatenate.i9.i3.i6(i3 %trunc_ln213, i6 0)" [attention.cpp:213]   --->   Operation 158 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln211)> <Delay = 0.00>
-ST_30 : Operation 159 [1/1] (0.00ns)   --->   "%zext_ln213 = zext i9 %shl_ln to i10" [attention.cpp:213]   --->   Operation 159 'zext' 'zext_ln213' <Predicate = (!icmp_ln211)> <Delay = 0.00>
-ST_30 : Operation 160 [1/1] (0.00ns)   --->   "%shl_ln213_1 = call i7 @_ssdm_op_BitConcatenate.i7.i3.i4(i3 %trunc_ln213, i4 0)" [attention.cpp:213]   --->   Operation 160 'bitconcatenate' 'shl_ln213_1' <Predicate = (!icmp_ln211)> <Delay = 0.00>
-ST_30 : Operation 161 [1/1] (0.00ns)   --->   "%zext_ln213_2 = zext i7 %shl_ln213_1 to i10" [attention.cpp:213]   --->   Operation 161 'zext' 'zext_ln213_2' <Predicate = (!icmp_ln211)> <Delay = 0.00>
-ST_30 : Operation 162 [1/1] (1.82ns)   --->   "%sub_ln213 = sub i10 %zext_ln213, %zext_ln213_2" [attention.cpp:213]   --->   Operation 162 'sub' 'sub_ln213' <Predicate = (!icmp_ln211)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_30 : Operation 163 [1/1] (0.00ns)   --->   "%tmp_67 = call i10 @_ssdm_op_BitConcatenate.i10.i4.i6(i4 %h100_0_0, i6 0)" [attention.cpp:213]   --->   Operation 163 'bitconcatenate' 'tmp_67' <Predicate = (!icmp_ln211)> <Delay = 0.00>
-ST_30 : Operation 164 [1/1] (0.00ns)   --->   "%tmp_68 = call i8 @_ssdm_op_BitConcatenate.i8.i4.i4(i4 %h100_0_0, i4 0)" [attention.cpp:213]   --->   Operation 164 'bitconcatenate' 'tmp_68' <Predicate = (!icmp_ln211)> <Delay = 0.00>
-ST_30 : Operation 165 [1/1] (0.00ns)   --->   "%zext_ln203 = zext i8 %tmp_68 to i10" [attention.cpp:213]   --->   Operation 165 'zext' 'zext_ln203' <Predicate = (!icmp_ln211)> <Delay = 0.00>
-ST_30 : Operation 166 [1/1] (1.73ns)   --->   "%sub_ln203 = sub i10 %tmp_67, %zext_ln203" [attention.cpp:213]   --->   Operation 166 'sub' 'sub_ln203' <Predicate = (!icmp_ln211)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_30 : Operation 167 [1/1] (1.76ns)   --->   "br label %7" [attention.cpp:212]   --->   Operation 167 'br' <Predicate = (!icmp_ln211)> <Delay = 1.76>
-ST_30 : Operation 168 [2/2] (1.76ns)   --->   "call fastcc void @"rms_norm<384>"([384 x i40]* %attn_output_2D_0_V, [384 x i40]* @ln_weight_V)" [attention.cpp:217]   --->   Operation 168 'call' <Predicate = (icmp_ln211)> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 30 <SV = 22> <Delay = 1.90>
+ST_30 : Operation 145 [1/1] (0.00ns)   --->   "%h106_0_0 = phi i4 [ 0, %ATTN_2D_LOOP_1_begin ], [ %add_ln211, %ATTN_2D_LOOP_2_end ]" [attention.cpp:211]   --->   Operation 145 'phi' 'h106_0_0' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 146 [1/1] (1.30ns)   --->   "%icmp_ln211 = icmp eq i4 %h106_0_0, -8" [attention.cpp:211]   --->   Operation 146 'icmp' 'icmp_ln211' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 147 [1/1] (0.00ns)   --->   "%empty_112 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 147 'speclooptripcount' 'empty_112' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 148 [1/1] (1.73ns)   --->   "%add_ln211 = add i4 %h106_0_0, 1" [attention.cpp:211]   --->   Operation 148 'add' 'add_ln211' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 149 [1/1] (0.00ns)   --->   "br i1 %icmp_ln211, label %ATTN_2D_LOOP_1_end, label %ATTN_2D_LOOP_2_begin" [attention.cpp:211]   --->   Operation 149 'br' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 150 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str24) nounwind" [attention.cpp:212]   --->   Operation 150 'specloopname' <Predicate = (!icmp_ln211)> <Delay = 0.00>
+ST_30 : Operation 151 [1/1] (0.00ns)   --->   "%tmp_20 = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str24)" [attention.cpp:212]   --->   Operation 151 'specregionbegin' 'tmp_20' <Predicate = (!icmp_ln211)> <Delay = 0.00>
+ST_30 : Operation 152 [1/1] (0.00ns)   --->   "%trunc_ln213 = trunc i4 %h106_0_0 to i3" [attention.cpp:213]   --->   Operation 152 'trunc' 'trunc_ln213' <Predicate = (!icmp_ln211)> <Delay = 0.00>
+ST_30 : Operation 153 [1/1] (0.00ns)   --->   "%shl_ln = call i9 @_ssdm_op_BitConcatenate.i9.i3.i6(i3 %trunc_ln213, i6 0)" [attention.cpp:213]   --->   Operation 153 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln211)> <Delay = 0.00>
+ST_30 : Operation 154 [1/1] (0.00ns)   --->   "%zext_ln213 = zext i9 %shl_ln to i10" [attention.cpp:213]   --->   Operation 154 'zext' 'zext_ln213' <Predicate = (!icmp_ln211)> <Delay = 0.00>
+ST_30 : Operation 155 [1/1] (0.00ns)   --->   "%shl_ln213_1 = call i7 @_ssdm_op_BitConcatenate.i7.i3.i4(i3 %trunc_ln213, i4 0)" [attention.cpp:213]   --->   Operation 155 'bitconcatenate' 'shl_ln213_1' <Predicate = (!icmp_ln211)> <Delay = 0.00>
+ST_30 : Operation 156 [1/1] (0.00ns)   --->   "%zext_ln213_2 = zext i7 %shl_ln213_1 to i10" [attention.cpp:213]   --->   Operation 156 'zext' 'zext_ln213_2' <Predicate = (!icmp_ln211)> <Delay = 0.00>
+ST_30 : Operation 157 [1/1] (1.82ns)   --->   "%sub_ln213 = sub i10 %zext_ln213, %zext_ln213_2" [attention.cpp:213]   --->   Operation 157 'sub' 'sub_ln213' <Predicate = (!icmp_ln211)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 158 [1/1] (0.00ns)   --->   "%tmp_98 = call i10 @_ssdm_op_BitConcatenate.i10.i4.i6(i4 %h106_0_0, i6 0)" [attention.cpp:213]   --->   Operation 158 'bitconcatenate' 'tmp_98' <Predicate = (!icmp_ln211)> <Delay = 0.00>
+ST_30 : Operation 159 [1/1] (0.00ns)   --->   "%tmp_99 = call i8 @_ssdm_op_BitConcatenate.i8.i4.i4(i4 %h106_0_0, i4 0)" [attention.cpp:213]   --->   Operation 159 'bitconcatenate' 'tmp_99' <Predicate = (!icmp_ln211)> <Delay = 0.00>
+ST_30 : Operation 160 [1/1] (0.00ns)   --->   "%zext_ln203 = zext i8 %tmp_99 to i10" [attention.cpp:213]   --->   Operation 160 'zext' 'zext_ln203' <Predicate = (!icmp_ln211)> <Delay = 0.00>
+ST_30 : Operation 161 [1/1] (1.73ns)   --->   "%sub_ln203 = sub i10 %tmp_98, %zext_ln203" [attention.cpp:213]   --->   Operation 161 'sub' 'sub_ln203' <Predicate = (!icmp_ln211)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 162 [1/1] (1.76ns)   --->   "br label %3" [attention.cpp:212]   --->   Operation 162 'br' <Predicate = (!icmp_ln211)> <Delay = 1.76>
+ST_30 : Operation 163 [2/2] (1.76ns)   --->   "call fastcc void @"rms_norm<384>"([384 x i40]* %attn_output_2D_0_V, [384 x i40]* @ln_weight_V)" [attention.cpp:217]   --->   Operation 163 'call' <Predicate = (icmp_ln211)> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_30 : Operation 164 [2/2] (1.76ns)   --->   "call fastcc void @init_3d_mem([96 x i8]* %quantized_final_outp, [96 x i8]* %quantized_final_outp_1, [96 x i8]* %quantized_final_outp_2, [96 x i8]* %quantized_final_outp_3)" [attention.cpp:227]   --->   Operation 164 'call' <Predicate = (icmp_ln211)> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_30 : Operation 165 [2/2] (1.90ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %final_output_0_V)" [attention.cpp:236]   --->   Operation 165 'call' <Predicate = (icmp_ln211)> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 31 <SV = 23> <Delay = 4.98>
-ST_31 : Operation 169 [1/1] (0.00ns)   --->   "%d101_0_0 = phi i6 [ 0, %ATTN_2D_LOOP_2_begin ], [ %add_ln212, %8 ]" [attention.cpp:212]   --->   Operation 169 'phi' 'd101_0_0' <Predicate = true> <Delay = 0.00>
-ST_31 : Operation 170 [1/1] (0.00ns)   --->   "%zext_ln212 = zext i6 %d101_0_0 to i10" [attention.cpp:212]   --->   Operation 170 'zext' 'zext_ln212' <Predicate = true> <Delay = 0.00>
-ST_31 : Operation 171 [1/1] (1.42ns)   --->   "%icmp_ln212 = icmp eq i6 %d101_0_0, -16" [attention.cpp:212]   --->   Operation 171 'icmp' 'icmp_ln212' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_31 : Operation 172 [1/1] (0.00ns)   --->   "%empty_113 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 48, i64 48, i64 48)"   --->   Operation 172 'speclooptripcount' 'empty_113' <Predicate = true> <Delay = 0.00>
-ST_31 : Operation 173 [1/1] (1.82ns)   --->   "%add_ln212 = add i6 %d101_0_0, 1" [attention.cpp:212]   --->   Operation 173 'add' 'add_ln212' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_31 : Operation 174 [1/1] (0.00ns)   --->   "br i1 %icmp_ln212, label %ATTN_2D_LOOP_2_end, label %8" [attention.cpp:212]   --->   Operation 174 'br' <Predicate = true> <Delay = 0.00>
-ST_31 : Operation 175 [1/1] (1.73ns)   --->   "%add_ln213 = add i10 %zext_ln212, %sub_ln213" [attention.cpp:213]   --->   Operation 175 'add' 'add_ln213' <Predicate = (!icmp_ln212)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_31 : Operation 176 [1/1] (1.73ns)   --->   "%add_ln203 = add i10 %sub_ln203, %zext_ln212" [attention.cpp:213]   --->   Operation 176 'add' 'add_ln203' <Predicate = (!icmp_ln212)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_31 : Operation 177 [1/1] (0.00ns)   --->   "%sext_ln203 = sext i10 %add_ln203 to i64" [attention.cpp:213]   --->   Operation 177 'sext' 'sext_ln203' <Predicate = (!icmp_ln212)> <Delay = 0.00>
-ST_31 : Operation 178 [1/1] (0.00ns)   --->   "%attn_output_0_addr = getelementptr [384 x i40]* %attn_output_0, i64 0, i64 %sext_ln203" [attention.cpp:213]   --->   Operation 178 'getelementptr' 'attn_output_0_addr' <Predicate = (!icmp_ln212)> <Delay = 0.00>
-ST_31 : Operation 179 [2/2] (3.25ns)   --->   "%attn_output_0_load = load i40* %attn_output_0_addr, align 8" [attention.cpp:213]   --->   Operation 179 'load' 'attn_output_0_load' <Predicate = (!icmp_ln212)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_31 : Operation 180 [1/1] (0.00ns)   --->   "%empty_112 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str22, i32 %tmp_20)" [attention.cpp:213]   --->   Operation 180 'specregionend' 'empty_112' <Predicate = (icmp_ln212)> <Delay = 0.00>
-ST_31 : Operation 181 [1/1] (0.00ns)   --->   "br label %6" [attention.cpp:211]   --->   Operation 181 'br' <Predicate = (icmp_ln212)> <Delay = 0.00>
+ST_31 : Operation 166 [1/1] (0.00ns)   --->   "%d107_0_0 = phi i6 [ 0, %ATTN_2D_LOOP_2_begin ], [ %add_ln212, %4 ]" [attention.cpp:212]   --->   Operation 166 'phi' 'd107_0_0' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 167 [1/1] (0.00ns)   --->   "%zext_ln212 = zext i6 %d107_0_0 to i10" [attention.cpp:212]   --->   Operation 167 'zext' 'zext_ln212' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 168 [1/1] (1.42ns)   --->   "%icmp_ln212 = icmp eq i6 %d107_0_0, -16" [attention.cpp:212]   --->   Operation 168 'icmp' 'icmp_ln212' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 169 [1/1] (0.00ns)   --->   "%empty_114 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 48, i64 48, i64 48)"   --->   Operation 169 'speclooptripcount' 'empty_114' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 170 [1/1] (1.82ns)   --->   "%add_ln212 = add i6 %d107_0_0, 1" [attention.cpp:212]   --->   Operation 170 'add' 'add_ln212' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 171 [1/1] (0.00ns)   --->   "br i1 %icmp_ln212, label %ATTN_2D_LOOP_2_end, label %4" [attention.cpp:212]   --->   Operation 171 'br' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 172 [1/1] (1.73ns)   --->   "%add_ln213 = add i10 %zext_ln212, %sub_ln213" [attention.cpp:213]   --->   Operation 172 'add' 'add_ln213' <Predicate = (!icmp_ln212)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 173 [1/1] (1.73ns)   --->   "%add_ln203 = add i10 %sub_ln203, %zext_ln212" [attention.cpp:213]   --->   Operation 173 'add' 'add_ln203' <Predicate = (!icmp_ln212)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 174 [1/1] (0.00ns)   --->   "%sext_ln203 = sext i10 %add_ln203 to i64" [attention.cpp:213]   --->   Operation 174 'sext' 'sext_ln203' <Predicate = (!icmp_ln212)> <Delay = 0.00>
+ST_31 : Operation 175 [1/1] (0.00ns)   --->   "%attn_output_0_addr = getelementptr [384 x i40]* %attn_output_0, i64 0, i64 %sext_ln203" [attention.cpp:213]   --->   Operation 175 'getelementptr' 'attn_output_0_addr' <Predicate = (!icmp_ln212)> <Delay = 0.00>
+ST_31 : Operation 176 [2/2] (3.25ns)   --->   "%attn_output_0_load = load i40* %attn_output_0_addr, align 8" [attention.cpp:213]   --->   Operation 176 'load' 'attn_output_0_load' <Predicate = (!icmp_ln212)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 384> <RAM>
+ST_31 : Operation 177 [1/1] (0.00ns)   --->   "%empty_113 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str24, i32 %tmp_20)" [attention.cpp:213]   --->   Operation 177 'specregionend' 'empty_113' <Predicate = (icmp_ln212)> <Delay = 0.00>
+ST_31 : Operation 178 [1/1] (0.00ns)   --->   "br label %2" [attention.cpp:211]   --->   Operation 178 'br' <Predicate = (icmp_ln212)> <Delay = 0.00>
 
 State 32 <SV = 24> <Delay = 6.50>
-ST_32 : Operation 182 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str23) nounwind" [attention.cpp:213]   --->   Operation 182 'specloopname' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 183 [1/1] (0.00ns)   --->   "%sext_ln213 = sext i10 %add_ln213 to i32" [attention.cpp:213]   --->   Operation 183 'sext' 'sext_ln213' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 184 [1/1] (0.00ns)   --->   "%zext_ln213_1 = zext i32 %sext_ln213 to i64" [attention.cpp:213]   --->   Operation 184 'zext' 'zext_ln213_1' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 185 [1/2] (3.25ns)   --->   "%attn_output_0_load = load i40* %attn_output_0_addr, align 8" [attention.cpp:213]   --->   Operation 185 'load' 'attn_output_0_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_32 : Operation 186 [1/1] (0.00ns)   --->   "%attn_output_2D_0_V_s = getelementptr [384 x i40]* %attn_output_2D_0_V, i64 0, i64 %zext_ln213_1" [attention.cpp:213]   --->   Operation 186 'getelementptr' 'attn_output_2D_0_V_s' <Predicate = true> <Delay = 0.00>
-ST_32 : Operation 187 [1/1] (3.25ns)   --->   "store i40 %attn_output_0_load, i40* %attn_output_2D_0_V_s, align 8" [attention.cpp:213]   --->   Operation 187 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_32 : Operation 188 [1/1] (0.00ns)   --->   "br label %7" [attention.cpp:212]   --->   Operation 188 'br' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 179 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str25) nounwind" [attention.cpp:213]   --->   Operation 179 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 180 [1/1] (0.00ns)   --->   "%sext_ln213 = sext i10 %add_ln213 to i32" [attention.cpp:213]   --->   Operation 180 'sext' 'sext_ln213' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 181 [1/1] (0.00ns)   --->   "%zext_ln213_1 = zext i32 %sext_ln213 to i64" [attention.cpp:213]   --->   Operation 181 'zext' 'zext_ln213_1' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 182 [1/2] (3.25ns)   --->   "%attn_output_0_load = load i40* %attn_output_0_addr, align 8" [attention.cpp:213]   --->   Operation 182 'load' 'attn_output_0_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 384> <RAM>
+ST_32 : Operation 183 [1/1] (0.00ns)   --->   "%attn_output_2D_0_V_s = getelementptr [384 x i40]* %attn_output_2D_0_V, i64 0, i64 %zext_ln213_1" [attention.cpp:213]   --->   Operation 183 'getelementptr' 'attn_output_2D_0_V_s' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 184 [1/1] (3.25ns)   --->   "store i40 %attn_output_0_load, i40* %attn_output_2D_0_V_s, align 8" [attention.cpp:213]   --->   Operation 184 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 384> <RAM>
+ST_32 : Operation 185 [1/1] (0.00ns)   --->   "br label %3" [attention.cpp:212]   --->   Operation 185 'br' <Predicate = true> <Delay = 0.00>
 
-State 33 <SV = 23> <Delay = 1.76>
-ST_33 : Operation 189 [1/1] (0.00ns)   --->   "%empty_108 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str21, i32 %tmp_s)" [attention.cpp:213]   --->   Operation 189 'specregionend' 'empty_108' <Predicate = true> <Delay = 0.00>
-ST_33 : Operation 190 [1/2] (0.00ns)   --->   "call fastcc void @"rms_norm<384>"([384 x i40]* %attn_output_2D_0_V, [384 x i40]* @ln_weight_V)" [attention.cpp:217]   --->   Operation 190 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_33 : Operation 191 [1/1] (0.00ns)   --->   "%tmp_i1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str1838)" [./layer.h:37->attention.cpp:227]   --->   Operation 191 'specregionbegin' 'tmp_i1' <Predicate = true> <Delay = 0.00>
-ST_33 : Operation 192 [1/1] (1.76ns)   --->   "br label %4" [./layer.h:37->attention.cpp:227]   --->   Operation 192 'br' <Predicate = true> <Delay = 1.76>
+State 33 <SV = 23> <Delay = 0.00>
+ST_33 : Operation 186 [1/2] (0.00ns)   --->   "call fastcc void @"rms_norm<384>"([384 x i40]* %attn_output_2D_0_V, [384 x i40]* @ln_weight_V)" [attention.cpp:217]   --->   Operation 186 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_33 : Operation 187 [1/2] (0.00ns)   --->   "call fastcc void @init_3d_mem([96 x i8]* %quantized_final_outp, [96 x i8]* %quantized_final_outp_1, [96 x i8]* %quantized_final_outp_2, [96 x i8]* %quantized_final_outp_3)" [attention.cpp:227]   --->   Operation 187 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_33 : Operation 188 [1/2] (0.00ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %final_output_0_V)" [attention.cpp:236]   --->   Operation 188 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 34 <SV = 24> <Delay = 3.25>
-ST_34 : Operation 193 [1/1] (0.00ns)   --->   "%j_0_0_i2 = phi i9 [ 0, %INIT_2D_MEM_LOOP_1_begin1 ], [ %add_ln37_1, %5 ]" [./layer.h:37->attention.cpp:227]   --->   Operation 193 'phi' 'j_0_0_i2' <Predicate = true> <Delay = 0.00>
-ST_34 : Operation 194 [1/1] (1.66ns)   --->   "%icmp_ln37_1 = icmp eq i9 %j_0_0_i2, -128" [./layer.h:37->attention.cpp:227]   --->   Operation 194 'icmp' 'icmp_ln37_1' <Predicate = true> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_34 : Operation 195 [1/1] (0.00ns)   --->   "%empty_109 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)"   --->   Operation 195 'speclooptripcount' 'empty_109' <Predicate = true> <Delay = 0.00>
-ST_34 : Operation 196 [1/1] (1.82ns)   --->   "%add_ln37_1 = add i9 %j_0_0_i2, 1" [./layer.h:37->attention.cpp:227]   --->   Operation 196 'add' 'add_ln37_1' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_34 : Operation 197 [1/1] (0.00ns)   --->   "br i1 %icmp_ln37_1, label %INIT_2D_MEM_LOOP_1_end1, label %5" [./layer.h:37->attention.cpp:227]   --->   Operation 197 'br' <Predicate = true> <Delay = 0.00>
-ST_34 : Operation 198 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str1839) nounwind" [./layer.h:38->attention.cpp:227]   --->   Operation 198 'specloopname' <Predicate = (!icmp_ln37_1)> <Delay = 0.00>
-ST_34 : Operation 199 [1/1] (0.00ns)   --->   "%zext_ln38_1 = zext i9 %j_0_0_i2 to i64" [./layer.h:38->attention.cpp:227]   --->   Operation 199 'zext' 'zext_ln38_1' <Predicate = (!icmp_ln37_1)> <Delay = 0.00>
-ST_34 : Operation 200 [1/1] (0.00ns)   --->   "%quantized_final_outp_1 = getelementptr [384 x i8]* %quantized_final_outp, i64 0, i64 %zext_ln38_1" [./layer.h:38->attention.cpp:227]   --->   Operation 200 'getelementptr' 'quantized_final_outp_1' <Predicate = (!icmp_ln37_1)> <Delay = 0.00>
-ST_34 : Operation 201 [1/1] (3.25ns)   --->   "store i8 0, i8* %quantized_final_outp_1, align 1" [./layer.h:38->attention.cpp:227]   --->   Operation 201 'store' <Predicate = (!icmp_ln37_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 384> <RAM>
-ST_34 : Operation 202 [1/1] (0.00ns)   --->   "br label %4" [./layer.h:37->attention.cpp:227]   --->   Operation 202 'br' <Predicate = (!icmp_ln37_1)> <Delay = 0.00>
-ST_34 : Operation 203 [2/2] (1.76ns)   --->   "%final_scales_0_V = call fastcc i40 @quantize_activation([384 x i40]* %attn_output_2D_0_V, [384 x i8]* %quantized_final_outp)" [attention.cpp:229]   --->   Operation 203 'call' 'final_scales_0_V' <Predicate = (icmp_ln37_1)> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_34 : Operation 204 [2/2] (1.90ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %final_output_0_V)" [attention.cpp:236]   --->   Operation 204 'call' <Predicate = (icmp_ln37_1)> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 34 <SV = 24> <Delay = 1.76>
+ST_34 : Operation 189 [2/2] (1.76ns)   --->   "%final_scales_0_V = call fastcc i40 @quantize_activation([384 x i40]* %attn_output_2D_0_V, [96 x i8]* %quantized_final_outp, [96 x i8]* %quantized_final_outp_1, [96 x i8]* %quantized_final_outp_2, [96 x i8]* %quantized_final_outp_3)" [attention.cpp:229]   --->   Operation 189 'call' 'final_scales_0_V' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 35 <SV = 25> <Delay = 0.00>
-ST_35 : Operation 205 [1/2] (0.00ns)   --->   "%final_scales_0_V = call fastcc i40 @quantize_activation([384 x i40]* %attn_output_2D_0_V, [384 x i8]* %quantized_final_outp)" [attention.cpp:229]   --->   Operation 205 'call' 'final_scales_0_V' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_35 : Operation 206 [1/2] (0.00ns)   --->   "call fastcc void @init_2d_mem([384 x i40]* %final_output_0_V)" [attention.cpp:236]   --->   Operation 206 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_35 : Operation 190 [1/2] (0.00ns)   --->   "%final_scales_0_V = call fastcc i40 @quantize_activation([384 x i40]* %attn_output_2D_0_V, [96 x i8]* %quantized_final_outp, [96 x i8]* %quantized_final_outp_1, [96 x i8]* %quantized_final_outp_2, [96 x i8]* %quantized_final_outp_3)" [attention.cpp:229]   --->   Operation 190 'call' 'final_scales_0_V' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 36 <SV = 26> <Delay = 8.75>
-ST_36 : Operation 207 [2/2] (8.75ns)   --->   "call fastcc void @linear_forward_no_mu([384 x i8]* %quantized_final_outp, [384 x i40]* %final_output_0_V, i40 %final_scales_0_V, [36864 x i8]* @o_weights, i22 728135)" [attention.cpp:237]   --->   Operation 207 'call' <Predicate = true> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_36 : Operation 191 [2/2] (8.75ns)   --->   "call fastcc void @linear_forward_no_mu([96 x i8]* %quantized_final_outp, [96 x i8]* %quantized_final_outp_1, [96 x i8]* %quantized_final_outp_2, [96 x i8]* %quantized_final_outp_3, [384 x i40]* %final_output_0_V, i40 %final_scales_0_V, [36864 x i8]* @o_weights, i22 728135)" [attention.cpp:237]   --->   Operation 191 'call' <Predicate = true> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 37 <SV = 27> <Delay = 0.00>
-ST_37 : Operation 208 [1/1] (0.00ns)   --->   "%empty_110 = call i32 (...)* @_ssdm_op_SpecRegionEnd([19 x i8]* @p_str1838, i32 %tmp_i1)" [./layer.h:38->attention.cpp:227]   --->   Operation 208 'specregionend' 'empty_110' <Predicate = true> <Delay = 0.00>
-ST_37 : Operation 209 [1/2] (0.00ns)   --->   "call fastcc void @linear_forward_no_mu([384 x i8]* %quantized_final_outp, [384 x i40]* %final_output_0_V, i40 %final_scales_0_V, [36864 x i8]* @o_weights, i22 728135)" [attention.cpp:237]   --->   Operation 209 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_37 : Operation 210 [1/1] (0.00ns)   --->   "ret void" [attention.cpp:244]   --->   Operation 210 'ret' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 192 [1/1] (0.00ns)   --->   "%empty_111 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str23, i32 %tmp_s)" [attention.cpp:213]   --->   Operation 192 'specregionend' 'empty_111' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 193 [1/2] (0.00ns)   --->   "call fastcc void @linear_forward_no_mu([96 x i8]* %quantized_final_outp, [96 x i8]* %quantized_final_outp_1, [96 x i8]* %quantized_final_outp_2, [96 x i8]* %quantized_final_outp_3, [384 x i40]* %final_output_0_V, i40 %final_scales_0_V, [36864 x i8]* @o_weights, i22 728135)" [attention.cpp:237]   --->   Operation 193 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_37 : Operation 194 [1/1] (0.00ns)   --->   "ret void" [attention.cpp:244]   --->   Operation 194 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -373,61 +355,59 @@ ST_37 : Operation 210 [1/1] (0.00ns)   --->   "ret void" [attention.cpp:244]   -
 ============================================================
 Target clock period: 10ns, clock uncertainty: 1.25ns.
 
- <State 1>: 1.77ns
+ <State 1>: 1.91ns
 The critical path consists of the following:
-	'call' operation ('call_ln85', attention.cpp:85) to 'rms_norm<384>' [45]  (1.77 ns)
+	'alloca' operation ('q_proj_re[0].V', attention.cpp:107) [33]  (0 ns)
+	'call' operation ('call_ln111', attention.cpp:111) to 'init_2d_mem' [54]  (1.91 ns)
 
- <State 2>: 1.77ns
+ <State 2>: 0ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('j_0_0_i', ./layer.h:37->attention.cpp:96) with incoming values : ('add_ln37', ./layer.h:37->attention.cpp:96) [49]  (1.77 ns)
 
- <State 3>: 3.25ns
+ <State 3>: 1.77ns
 The critical path consists of the following:
-	'phi' operation ('j_0_0_i', ./layer.h:37->attention.cpp:96) with incoming values : ('add_ln37', ./layer.h:37->attention.cpp:96) [49]  (0 ns)
-	'getelementptr' operation ('quantized_hidden_sta_1', ./layer.h:38->attention.cpp:96) [57]  (0 ns)
-	'store' operation ('store_ln38', ./layer.h:38->attention.cpp:96) of constant 0 on array 'quantized_hidden_states[0].V', attention.cpp:93 [58]  (3.25 ns)
+	'call' operation ('scales[0].V', attention.cpp:99) to 'quantize_activation' [53]  (1.77 ns)
 
  <State 4>: 0ns
 The critical path consists of the following:
 
  <State 5>: 8.75ns
 The critical path consists of the following:
-	'call' operation ('call_ln115', attention.cpp:115) to 'linear_forward_no_mu' [66]  (8.75 ns)
+	'call' operation ('call_ln115', attention.cpp:115) to 'linear_forward_no_mu' [57]  (8.75 ns)
 
  <State 6>: 0ns
 The critical path consists of the following:
 
  <State 7>: 8.75ns
 The critical path consists of the following:
-	'call' operation ('call_ln122', attention.cpp:122) to 'linear_forward_no_mu' [67]  (8.75 ns)
+	'call' operation ('call_ln122', attention.cpp:122) to 'linear_forward_no_mu' [58]  (8.75 ns)
 
  <State 8>: 0ns
 The critical path consists of the following:
 
  <State 9>: 8.75ns
 The critical path consists of the following:
-	'call' operation ('call_ln129', attention.cpp:129) to 'linear_forward_no_mu' [68]  (8.75 ns)
+	'call' operation ('call_ln129', attention.cpp:129) to 'linear_forward_no_mu' [59]  (8.75 ns)
 
  <State 10>: 0ns
 The critical path consists of the following:
 
  <State 11>: 1.81ns
 The critical path consists of the following:
-	'call' operation ('call_ln143', attention.cpp:143) to 'reshape_2D_to_3D' [71]  (1.81 ns)
+	'call' operation ('call_ln143', attention.cpp:143) to 'reshape_2D_to_3D' [62]  (1.81 ns)
 
  <State 12>: 0ns
 The critical path consists of the following:
 
  <State 13>: 1.77ns
 The critical path consists of the following:
-	'call' operation ('call_ln153', attention.cpp:153) to 'cache_update' [73]  (1.77 ns)
+	'call' operation ('call_ln153', attention.cpp:153) to 'cache_update' [64]  (1.77 ns)
 
  <State 14>: 0ns
 The critical path consists of the following:
 
  <State 15>: 1.77ns
 The critical path consists of the following:
-	'call' operation ('call_ln156', attention.cpp:156) to 'cache_update' [74]  (1.77 ns)
+	'call' operation ('call_ln156', attention.cpp:156) to 'cache_update' [65]  (1.77 ns)
 
  <State 16>: 0ns
 The critical path consists of the following:
@@ -437,45 +417,45 @@ The critical path consists of the following:
 
  <State 18>: 1.77ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('h') with incoming values : ('h', attention.cpp:178) [79]  (1.77 ns)
+	multiplexor before 'phi' operation ('h') with incoming values : ('h', attention.cpp:178) [70]  (1.77 ns)
 
  <State 19>: 1.91ns
 The critical path consists of the following:
-	'call' operation ('call_ln209', attention.cpp:209) to 'init_2d_mem' [125]  (1.91 ns)
+	'call' operation ('call_ln209', attention.cpp:209) to 'init_2d_mem' [116]  (1.91 ns)
 
  <State 20>: 5.12ns
 The critical path consists of the following:
-	'phi' operation ('d_0_0', attention.cpp:180) with incoming values : ('add_ln180', attention.cpp:180) [93]  (0 ns)
-	'add' operation ('add_ln1265', attention.cpp:181) [101]  (1.87 ns)
-	'getelementptr' operation ('attn_weights_0_V_ad', attention.cpp:181) [103]  (0 ns)
-	'load' operation ('attn_weights_0_V_lo', attention.cpp:181) on array 'attn_weights[0].V', attention.cpp:164 [104]  (3.25 ns)
+	'phi' operation ('d_0_0', attention.cpp:180) with incoming values : ('add_ln180', attention.cpp:180) [84]  (0 ns)
+	'add' operation ('add_ln1265', attention.cpp:181) [92]  (1.87 ns)
+	'getelementptr' operation ('attn_weights_0_V_ad', attention.cpp:181) [94]  (0 ns)
+	'load' operation ('attn_weights_0_V_lo', attention.cpp:181) on array 'attn_weights[0].V', attention.cpp:164 [95]  (3.25 ns)
 
  <State 21>: 3.25ns
 The critical path consists of the following:
-	'load' operation ('attn_weights_0_V_lo', attention.cpp:181) on array 'attn_weights[0].V', attention.cpp:164 [104]  (3.25 ns)
+	'load' operation ('attn_weights_0_V_lo', attention.cpp:181) on array 'attn_weights[0].V', attention.cpp:164 [95]  (3.25 ns)
 
  <State 22>: 8.22ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln1148', attention.cpp:181) [107]  (8.22 ns)
+	'mul' operation ('mul_ln1148', attention.cpp:181) [98]  (8.22 ns)
 
  <State 23>: 8.22ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln1148', attention.cpp:181) [107]  (8.22 ns)
+	'mul' operation ('mul_ln1148', attention.cpp:181) [98]  (8.22 ns)
 
  <State 24>: 8.22ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln1148', attention.cpp:181) [107]  (8.22 ns)
+	'mul' operation ('mul_ln1148', attention.cpp:181) [98]  (8.22 ns)
 
  <State 25>: 6.27ns
 The critical path consists of the following:
-	'sub' operation ('sub_ln1148', attention.cpp:181) [108]  (4.92 ns)
-	'select' operation ('select_ln1148', attention.cpp:181) [112]  (1.35 ns)
+	'sub' operation ('sub_ln1148', attention.cpp:181) [99]  (4.92 ns)
+	'select' operation ('select_ln1148', attention.cpp:181) [103]  (1.35 ns)
 
  <State 26>: 7.61ns
 The critical path consists of the following:
-	'sub' operation ('sub_ln703', attention.cpp:181) [114]  (2.8 ns)
-	'select' operation ('select_ln1148_2', attention.cpp:181) [116]  (1.56 ns)
-	'store' operation ('store_ln181', attention.cpp:181) of variable 'select_ln1148_2', attention.cpp:181 on array 'attn_weights[0].V', attention.cpp:164 [117]  (3.25 ns)
+	'sub' operation ('sub_ln703', attention.cpp:181) [105]  (2.8 ns)
+	'select' operation ('select_ln1148_2', attention.cpp:181) [107]  (1.56 ns)
+	'store' operation ('store_ln181', attention.cpp:181) of variable 'select_ln1148_2', attention.cpp:181 on array 'attn_weights[0].V', attention.cpp:164 [108]  (3.25 ns)
 
  <State 27>: 0ns
 The critical path consists of the following:
@@ -485,41 +465,37 @@ The critical path consists of the following:
 
  <State 29>: 1.77ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('h100_0_0', attention.cpp:211) with incoming values : ('add_ln211', attention.cpp:211) [129]  (1.77 ns)
+	multiplexor before 'phi' operation ('h106_0_0', attention.cpp:211) with incoming values : ('add_ln211', attention.cpp:211) [120]  (1.77 ns)
 
- <State 30>: 1.82ns
+ <State 30>: 1.91ns
 The critical path consists of the following:
-	'phi' operation ('h100_0_0', attention.cpp:211) with incoming values : ('add_ln211', attention.cpp:211) [129]  (0 ns)
-	'sub' operation ('sub_ln213', attention.cpp:213) [142]  (1.82 ns)
+	'call' operation ('call_ln236', attention.cpp:236) to 'init_2d_mem' [166]  (1.91 ns)
 
  <State 31>: 4.98ns
 The critical path consists of the following:
-	'phi' operation ('d101_0_0', attention.cpp:212) with incoming values : ('add_ln212', attention.cpp:212) [149]  (0 ns)
-	'add' operation ('add_ln203', attention.cpp:213) [160]  (1.73 ns)
-	'getelementptr' operation ('attn_output_0_addr', attention.cpp:213) [162]  (0 ns)
-	'load' operation ('attn_output_0_load', attention.cpp:213) on array 'attn_output_0' [163]  (3.25 ns)
+	'phi' operation ('d107_0_0', attention.cpp:212) with incoming values : ('add_ln212', attention.cpp:212) [140]  (0 ns)
+	'add' operation ('add_ln203', attention.cpp:213) [151]  (1.73 ns)
+	'getelementptr' operation ('attn_output_0_addr', attention.cpp:213) [153]  (0 ns)
+	'load' operation ('attn_output_0_load', attention.cpp:213) on array 'attn_output_0' [154]  (3.25 ns)
 
  <State 32>: 6.51ns
 The critical path consists of the following:
-	'load' operation ('attn_output_0_load', attention.cpp:213) on array 'attn_output_0' [163]  (3.25 ns)
-	'store' operation ('store_ln213', attention.cpp:213) of variable 'attn_output_0_load', attention.cpp:213 on array 'attn_output_2D[0].V', attention.cpp:208 [165]  (3.25 ns)
+	'load' operation ('attn_output_0_load', attention.cpp:213) on array 'attn_output_0' [154]  (3.25 ns)
+	'store' operation ('store_ln213', attention.cpp:213) of variable 'attn_output_0_load', attention.cpp:213 on array 'attn_output_2D[0].V', attention.cpp:208 [156]  (3.25 ns)
 
- <State 33>: 1.77ns
+ <State 33>: 0ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('j_0_0_i2', ./layer.h:37->attention.cpp:227) with incoming values : ('add_ln37_1', ./layer.h:37->attention.cpp:227) [176]  (1.77 ns)
 
- <State 34>: 3.25ns
+ <State 34>: 1.77ns
 The critical path consists of the following:
-	'phi' operation ('j_0_0_i2', ./layer.h:37->attention.cpp:227) with incoming values : ('add_ln37_1', ./layer.h:37->attention.cpp:227) [176]  (0 ns)
-	'getelementptr' operation ('quantized_final_outp_1', ./layer.h:38->attention.cpp:227) [184]  (0 ns)
-	'store' operation ('store_ln38', ./layer.h:38->attention.cpp:227) of constant 0 on array 'quantized_final_output[0].V', attention.cpp:225 [185]  (3.25 ns)
+	'call' operation ('final_scales[0].V', attention.cpp:229) to 'quantize_activation' [165]  (1.77 ns)
 
  <State 35>: 0ns
 The critical path consists of the following:
 
  <State 36>: 8.75ns
 The critical path consists of the following:
-	'call' operation ('call_ln237', attention.cpp:237) to 'linear_forward_no_mu' [191]  (8.75 ns)
+	'call' operation ('call_ln237', attention.cpp:237) to 'linear_forward_no_mu' [167]  (8.75 ns)
 
  <State 37>: 0ns
 The critical path consists of the following:

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'dut'
 ================================================================
-* Date:           Fri Nov 29 11:41:11 2024
+* Date:           Sat Nov 30 21:05:12 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_4th.prj
@@ -25,21 +25,21 @@
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+---------+---------+---------+
-    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
-    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
-    +---------+---------+-----------+-----------+---------+---------+---------+
-    |  1060721|  2387825| 10.607 ms | 23.878 ms |  1060721|  2387825|   none  |
-    +---------+---------+-----------+-----------+---------+---------+---------+
+    +---------+---------+----------+----------+--------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+    +---------+---------+----------+----------+--------+--------+---------+
+    |   286217|   286217| 2.862 ms | 2.862 ms |  286217|  286217|   none  |
+    +---------+---------+----------+----------+--------+--------+---------+
 
     + Detail: 
         * Instance: 
-        +----------------------+-----------+---------+---------+-----------+-----------+---------+---------+---------+
-        |                      |           |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
-        |       Instance       |   Module  |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
-        +----------------------+-----------+---------+---------+-----------+-----------+---------+---------+---------+
-        |grp_attention_fu_165  |attention  |  1059566|  2386670| 10.596 ms | 23.867 ms |  1059566|  2386670|   none  |
-        +----------------------+-----------+---------+---------+-----------+-----------+---------+---------+---------+
+        +----------------------+-----------+---------+---------+----------+----------+--------+--------+---------+
+        |                      |           |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+        |       Instance       |   Module  |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+        +----------------------+-----------+---------+---------+----------+----------+--------+--------+---------+
+        |grp_attention_fu_165  |attention  |   285062|   285062| 2.851 ms | 2.851 ms |  285062|  285062|   none  |
+        +----------------------+-----------+---------+---------+----------+----------+--------+--------+---------+
 
         * Loop: 
         +----------+---------+---------+----------+-----------+-----------+------+----------+
@@ -62,16 +62,16 @@
 |DSP              |        -|      -|       -|      -|    -|
 |Expression       |        -|      -|       0|     58|    -|
 |FIFO             |        -|      -|       -|      -|    -|
-|Instance         |      213|     77|   10982|  16570|    0|
+|Instance         |      211|     77|   11646|  22258|    0|
 |Memory           |        4|      -|       0|      0|    0|
 |Multiplexer      |        -|      -|       -|    168|    -|
 |Register         |        -|      -|      33|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |      217|     77|   11015|  16796|    0|
+|Total            |      215|     77|   11679|  22484|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
-|Utilization (%)  |       77|     35|      10|     31|    0|
+|Utilization (%)  |       76|     35|      10|     42|    0|
 +-----------------+---------+-------+--------+-------+-----+
 
 + Detail: 
@@ -79,9 +79,9 @@
     +----------------------+-----------+---------+-------+-------+-------+-----+
     |       Instance       |   Module  | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
     +----------------------+-----------+---------+-------+-------+-------+-----+
-    |grp_attention_fu_165  |attention  |      213|     77|  10982|  16570|    0|
+    |grp_attention_fu_165  |attention  |      211|     77|  11646|  22258|    0|
     +----------------------+-----------+---------+-------+-------+-------+-----+
-    |Total                 |           |      213|     77|  10982|  16570|    0|
+    |Total                 |           |      211|     77|  11646|  22258|    0|
     +----------------------+-----------+---------+-------+-------+-------+-----+
 
     * DSP48E: 
@@ -209,8 +209,8 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.25>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str217, i32 0, i32 0, [1 x i8]* @p_str218, [1 x i8]* @p_str219, [1 x i8]* @p_str220, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str221, [1 x i8]* @p_str222)"   --->   Operation 6 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%empty_97 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str211, i32 0, i32 0, [1 x i8]* @p_str212, [1 x i8]* @p_str213, [1 x i8]* @p_str214, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str215, [1 x i8]* @p_str216)"   --->   Operation 7 'specinterface' 'empty_97' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str242, i32 0, i32 0, [1 x i8]* @p_str243, [1 x i8]* @p_str244, [1 x i8]* @p_str245, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str246, [1 x i8]* @p_str247)"   --->   Operation 6 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%empty_102 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str236, i32 0, i32 0, [1 x i8]* @p_str237, [1 x i8]* @p_str238, [1 x i8]* @p_str239, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str240, [1 x i8]* @p_str241)"   --->   Operation 7 'specinterface' 'empty_102' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_in_V_V), !map !573"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_out_V_V), !map !577"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @dut_str) nounwind"   --->   Operation 10 'spectopmodule' <Predicate = true> <Delay = 0.00>
@@ -221,7 +221,7 @@ ST_1 : Operation 13 [1/1] (1.76ns)   --->   "br label %.preheader75.0" [attentio
 State 2 <SV = 1> <Delay = 6.88>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%j_0_0 = phi i9 [ %add_ln19, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %arrayctor.loop4.preheader ]" [attention.cpp:19]   --->   Operation 14 'phi' 'j_0_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 15 [1/1] (1.66ns)   --->   "%icmp_ln19 = icmp eq i9 %j_0_0, -128" [attention.cpp:19]   --->   Operation 15 'icmp' 'icmp_ln19' <Predicate = true> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%empty_98 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)"   --->   Operation 16 'speclooptripcount' 'empty_98' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%empty_103 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)"   --->   Operation 16 'speclooptripcount' 'empty_103' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 17 [1/1] (1.82ns)   --->   "%add_ln19 = add i9 %j_0_0, 1" [attention.cpp:19]   --->   Operation 17 'add' 'add_ln19' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %icmp_ln19, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0" [attention.cpp:19]   --->   Operation 18 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln20 = zext i9 %j_0_0 to i64" [attention.cpp:20]   --->   Operation 19 'zext' 'zext_ln20' <Predicate = (!icmp_ln19)> <Delay = 0.00>
@@ -240,7 +240,7 @@ ST_3 : Operation 28 [1/1] (1.76ns)   --->   "br label %.preheader.0" [attention.
 State 4 <SV = 3> <Delay = 3.25>
 ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%j9_0_0 = phi i9 [ %add_ln51, %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit ]" [attention.cpp:51]   --->   Operation 29 'phi' 'j9_0_0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 30 [1/1] (1.66ns)   --->   "%icmp_ln51 = icmp eq i9 %j9_0_0, -128" [attention.cpp:51]   --->   Operation 30 'icmp' 'icmp_ln51' <Predicate = true> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%empty_99 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)"   --->   Operation 31 'speclooptripcount' 'empty_99' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%empty_104 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)"   --->   Operation 31 'speclooptripcount' 'empty_104' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 32 [1/1] (1.82ns)   --->   "%add_ln51 = add i9 %j9_0_0, 1" [attention.cpp:51]   --->   Operation 32 'add' 'add_ln51' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 33 [1/1] (0.00ns)   --->   "br i1 %icmp_ln51, label %0, label %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0" [attention.cpp:51]   --->   Operation 33 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln52 = zext i9 %j9_0_0 to i64" [attention.cpp:52]   --->   Operation 34 'zext' 'zext_ln52' <Predicate = (!icmp_ln51)> <Delay = 0.00>
@@ -270,9 +270,9 @@ Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ strm_in_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
 Port [ strm_out_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
 Port [ ln_weight_in_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[13]; IO mode=ap_memory:ce=0
-Port [ q_weights]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[13]; IO mode=ap_memory:ce=0
-Port [ k_weights]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[13]; IO mode=ap_memory:ce=0
-Port [ v_weights]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ q_weights]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ k_weights]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ v_weights]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[11]; IO mode=ap_memory:ce=0
 Port [ cos_tab_V_5]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ sin_tab_V_5]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ k_cache_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[13]; IO mode=ap_memory:ce=0
@@ -281,7 +281,7 @@ Port [ f_x_msb_3_table_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; st
 Port [ f_x_msb_2_table_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ exp_x_msb_1_table_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ ln_weight_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[13]; IO mode=ap_memory:ce=0
-Port [ o_weights]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ o_weights]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[11]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -289,7 +289,7 @@ Port [ o_weights]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; 
 <LifeTime>
 <method=bitvector/>
 empty             (specinterface    ) [ 000000]
-empty_97          (specinterface    ) [ 000000]
+empty_102         (specinterface    ) [ 000000]
 specbitsmap_ln0   (specbitsmap      ) [ 000000]
 specbitsmap_ln0   (specbitsmap      ) [ 000000]
 spectopmodule_ln0 (spectopmodule    ) [ 000000]
@@ -298,7 +298,7 @@ output_0          (alloca           ) [ 001111]
 br_ln19           (br               ) [ 011000]
 j_0_0             (phi              ) [ 001000]
 icmp_ln19         (icmp             ) [ 001000]
-empty_98          (speclooptripcount) [ 000000]
+empty_103         (speclooptripcount) [ 000000]
 add_ln19          (add              ) [ 011000]
 br_ln19           (br               ) [ 000000]
 zext_ln20         (zext             ) [ 000000]
@@ -312,7 +312,7 @@ call_ln24         (call             ) [ 000000]
 br_ln51           (br               ) [ 000111]
 j9_0_0            (phi              ) [ 000010]
 icmp_ln51         (icmp             ) [ 000011]
-empty_99          (speclooptripcount) [ 000000]
+empty_104         (speclooptripcount) [ 000000]
 add_ln51          (add              ) [ 000111]
 br_ln51           (br               ) [ 000000]
 zext_ln52         (zext             ) [ 000000]
@@ -361,7 +361,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="q_weights"/><MemPortTyVec>1 3 </MemPortTyVec>
+<StgValue><ssdm name="q_weights"/><MemPortTyVec>1 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -371,7 +371,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="9" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="k_weights"/><MemPortTyVec>1 3 </MemPortTyVec>
+<StgValue><ssdm name="k_weights"/><MemPortTyVec>1 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -381,7 +381,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="11" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="v_weights"/><MemPortTyVec>1 3 </MemPortTyVec>
+<StgValue><ssdm name="v_weights"/><MemPortTyVec>1 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -471,7 +471,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="29" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="o_weights"/><MemPortTyVec>1 3 </MemPortTyVec>
+<StgValue><ssdm name="o_weights"/><MemPortTyVec>1 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -508,7 +508,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str217"/></StgValue>
+<StgValue><ssdm name="p_str242"/></StgValue>
 </bind>
 </comp>
 
@@ -517,7 +517,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str218"/></StgValue>
+<StgValue><ssdm name="p_str243"/></StgValue>
 </bind>
 </comp>
 
@@ -526,7 +526,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str219"/></StgValue>
+<StgValue><ssdm name="p_str244"/></StgValue>
 </bind>
 </comp>
 
@@ -535,7 +535,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str220"/></StgValue>
+<StgValue><ssdm name="p_str245"/></StgValue>
 </bind>
 </comp>
 
@@ -562,7 +562,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str221"/></StgValue>
+<StgValue><ssdm name="p_str246"/></StgValue>
 </bind>
 </comp>
 
@@ -571,7 +571,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str222"/></StgValue>
+<StgValue><ssdm name="p_str247"/></StgValue>
 </bind>
 </comp>
 
@@ -580,7 +580,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str211"/></StgValue>
+<StgValue><ssdm name="p_str236"/></StgValue>
 </bind>
 </comp>
 
@@ -589,7 +589,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str212"/></StgValue>
+<StgValue><ssdm name="p_str237"/></StgValue>
 </bind>
 </comp>
 
@@ -598,7 +598,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str213"/></StgValue>
+<StgValue><ssdm name="p_str238"/></StgValue>
 </bind>
 </comp>
 
@@ -607,7 +607,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str214"/></StgValue>
+<StgValue><ssdm name="p_str239"/></StgValue>
 </bind>
 </comp>
 
@@ -616,7 +616,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str215"/></StgValue>
+<StgValue><ssdm name="p_str240"/></StgValue>
 </bind>
 </comp>
 
@@ -625,7 +625,7 @@ br_ln51           (br               ) [ 000111]
 <pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str216"/></StgValue>
+<StgValue><ssdm name="p_str241"/></StgValue>
 </bind>
 </comp>
 
@@ -1276,7 +1276,7 @@ br_ln51           (br               ) [ 000111]
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 | Operation|     Functional Unit     |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |   URAM  |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
-|   call   |   grp_attention_fu_165  |    60   |    77   | 89.4602 |  10490  |  12729  |    0    |
+|   call   |   grp_attention_fu_165  |    58   |    77   | 114.988 |  12327  |  17686  |    0    |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 |    add   |     add_ln19_fu_203     |    0    |    0    |    0    |    0    |    15   |    0    |
 |          |     add_ln51_fu_235     |    0    |    0    |    0    |    0    |    15   |    0    |
@@ -1299,7 +1299,7 @@ br_ln51           (br               ) [ 000111]
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 |bitconcatenate|      tmp_V_2_fu_250     |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                         |    60   |    77   | 89.4602 |  10490  |  12785  |    0    |
+|   Total  |                         |    58   |    77   | 114.988 |  12327  |  17742  |    0    |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -1353,10 +1353,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |   60   |   77   |   89   |  10490 |  12785 |    0   |
+|  Function |   58   |   77   |   114  |  12327 |  17742 |    0   |
 |   Memory  |   153  |    -   |    -   |    0   |    0   |    0   |
 |Multiplexer|    -   |    -   |    1   |    -   |    9   |    -   |
 |  Register |    -   |    -   |    -   |   45   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   213  |   77   |   91   |  10535 |  12794 |    0   |
+|   Total   |   211  |   77   |   116  |  12372 |  17751 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

@@ -32,8 +32,8 @@ create_clock -period 10
 # set_directive_array_reshape -type block -factor 2 -dim 1 attention k_weights
 # set_directive_array_reshape -type block -factor 2 -dim 1 attention v_weights
 # set_directive_array_reshape -type block -factor 2 -dim 1 attention o_weights
-# set_directive_array_partition -type cyclic -factor 256 -dim 2 attention quantized_hidden_states
-# set_directive_array_partition -type cyclic -factor 256 -dim 2 attention quantized_final_output
+set_directive_array_partition -type complete -dim 3 attention quantized_hidden_states
+set_directive_array_partition -type complete -dim 3 attention quantized_final_output
 # set_directive_array_partition -type complete -dim 3 attention q_embed
 # set_directive_array_partition -type complete -dim 3 attention k_embed
 # set_directive_array_partition -type complete -dim 3 attention k_cache
@@ -58,11 +58,11 @@ create_clock -period 10
 # set_directive_pipeline rms_norm/RMS_NORM_LOOP_2
 
 # # quantize_activation directives
-# set_directive_pipeline quantize_activation/QUANTIZE_ACTIVATION_LOOP_2
-# set_directive_unroll quantize_activation/QUANTIZE_ACTIVATION_LOOP_3
+# set_directive_unroll quantize_activation/QUANTIZE_ACTIVATION_LOOP_5
 
 # linear_forward_no_mul directives
-# set_directive_unroll linear_forward_no_mul/LINEAR_FORWARD_NO_MUL_LOOP_4
+set_directive_unroll linear_forward_no_mul/LINEAR_FORWARD_NO_MUL_LOOP_4
+set_directive_unroll linear_forward_no_mul/LINEAR_FORWARD_NO_MUL_LOOP_5
 
 # # reshape_2D_to_3D directives
 # set_directive_pipeline reshape_2D_to_3D/RESHAPE_2D_TO_3D_LOOP_3

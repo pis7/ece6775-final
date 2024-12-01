@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sqrt_fixed_42_26_s'
 ================================================================
-* Date:           Fri Nov 29 11:40:50 2024
+* Date:           Sat Nov 30 21:04:38 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_4th.prj
@@ -676,7 +676,7 @@ ST_17 : Operation 563 [1/1] (0.00ns) (grouped into LUT with out node or_ln318_37
 ST_17 : Operation 564 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln318_37 = or i1 %or_ln318_36, %icmp_ln1494_15" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318]   --->   Operation 564 'or' 'or_ln318_37' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 
 State 18 <SV = 17> <Delay = 7.93>
-ST_18 : Operation 565 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str34) nounwind" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:44]   --->   Operation 565 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 565 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str16) nounwind" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:44]   --->   Operation 565 'specpipeline' <Predicate = true> <Delay = 0.00>
 ST_18 : Operation 566 [1/1] (0.00ns) (grouped into LUT with out node select_ln98)   --->   "%p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %x_V_read, i32 31)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:223]   --->   Operation 566 'bitselect' 'p_Result_s' <Predicate = true> <Delay = 0.00>
 ST_18 : Operation 567 [1/1] (0.00ns)   --->   "%tmp_67 = call i17 @_ssdm_op_BitSet.i17.i17.i32.i1(i17 %select_ln318_48, i32 1, i1 true)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:352]   --->   Operation 567 'bitset' 'tmp_67' <Predicate = (or_ln318_37)> <Delay = 0.00>
 ST_18 : Operation 568 [1/1] (0.78ns)   --->   "%select_ln318_52 = select i1 %or_ln318_37, i17 %tmp_67, i17 %select_ln318_48" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318]   --->   Operation 568 'select' 'select_ln318_52' <Predicate = true> <Delay = 0.78> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
@@ -2823,7 +2823,7 @@ ret_ln372         (ret           ) [ 0000000000000000000]
 <pin id="335" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str34"/></StgValue>
+<StgValue><ssdm name="p_str16"/></StgValue>
 </bind>
 </comp>
 

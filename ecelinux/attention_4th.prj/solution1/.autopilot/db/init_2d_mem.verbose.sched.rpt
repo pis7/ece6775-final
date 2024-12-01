@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'init_2d_mem'
 ================================================================
-* Date:           Fri Nov 29 11:40:52 2024
+* Date:           Sat Nov 30 21:04:41 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_4th.prj
@@ -81,21 +81,21 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.76>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str1838)" [./layer.h:37]   --->   Operation 3 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str1840)" [./layer.h:37]   --->   Operation 3 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 4 [1/1] (1.76ns)   --->   "br label %0" [./layer.h:37]   --->   Operation 4 'br' <Predicate = true> <Delay = 1.76>
 
 State 2 <SV = 1> <Delay = 3.25>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%j_0_0 = phi i9 [ 0, %INIT_2D_MEM_LOOP_1_begin ], [ %add_ln37, %1 ]" [./layer.h:37]   --->   Operation 5 'phi' 'j_0_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 6 [1/1] (1.66ns)   --->   "%icmp_ln37 = icmp eq i9 %j_0_0, -128" [./layer.h:37]   --->   Operation 6 'icmp' 'icmp_ln37' <Predicate = true> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%empty_95 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)"   --->   Operation 7 'speclooptripcount' 'empty_95' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%empty_100 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)"   --->   Operation 7 'speclooptripcount' 'empty_100' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 8 [1/1] (1.82ns)   --->   "%add_ln37 = add i9 %j_0_0, 1" [./layer.h:37]   --->   Operation 8 'add' 'add_ln37' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 9 [1/1] (0.00ns)   --->   "br i1 %icmp_ln37, label %INIT_2D_MEM_LOOP_1_end, label %1" [./layer.h:37]   --->   Operation 9 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str1839) nounwind" [./layer.h:38]   --->   Operation 10 'specloopname' <Predicate = (!icmp_ln37)> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str1841) nounwind" [./layer.h:38]   --->   Operation 10 'specloopname' <Predicate = (!icmp_ln37)> <Delay = 0.00>
 ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln38 = zext i9 %j_0_0 to i64" [./layer.h:38]   --->   Operation 11 'zext' 'zext_ln38' <Predicate = (!icmp_ln37)> <Delay = 0.00>
 ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%mem_0_V_addr = getelementptr [384 x i40]* %mem_0_V, i64 0, i64 %zext_ln38" [./layer.h:38]   --->   Operation 12 'getelementptr' 'mem_0_V_addr' <Predicate = (!icmp_ln37)> <Delay = 0.00>
 ST_2 : Operation 13 [1/1] (3.25ns)   --->   "store i40 0, i40* %mem_0_V_addr, align 8" [./layer.h:38]   --->   Operation 13 'store' <Predicate = (!icmp_ln37)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 384> <RAM>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "br label %0" [./layer.h:37]   --->   Operation 14 'br' <Predicate = (!icmp_ln37)> <Delay = 0.00>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([19 x i8]* @p_str1838, i32 %tmp)" [./layer.h:38]   --->   Operation 15 'specregionend' 'empty' <Predicate = (icmp_ln37)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([19 x i8]* @p_str1840, i32 %tmp)" [./layer.h:38]   --->   Operation 15 'specregionend' 'empty' <Predicate = (icmp_ln37)> <Delay = 0.00>
 ST_2 : Operation 16 [1/1] (0.00ns)   --->   "ret void" [./layer.h:39]   --->   Operation 16 'ret' <Predicate = (icmp_ln37)> <Delay = 0.00>
 
 
