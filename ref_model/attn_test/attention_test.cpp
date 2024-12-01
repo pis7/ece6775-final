@@ -3,27 +3,37 @@
 #include <vector>
 #include <string>
 #include "../src_c/attention.h"
-#include "../data_quarter/cos_tab.h"
-#include "../data_quarter/sin_tab.h"
-#include "../data_quarter/q_weights.h"
-#include "../data_quarter/k_weights.h"
-#include "../data_quarter/v_weights.h"
-#include "../data_quarter/o_weights.h"
-#include "../data_quarter/ln_weight_in.h"
-#include "../data_quarter/ln_weight.h"
-#include "../data_quarter/k_cache.h"
-#include "../data_quarter/v_cache.h"
-#include "../data_quarter/hidden_states.h"
+#include "timer.h"
+#include "data_include.h"
 
 int main() {
 
     // Model parameter sizes
     size_t seq_len = 1;
-    size_t num_heads = 8;
-    size_t head_dim = 48;
-    size_t hidden_size = num_heads*head_dim;
-    size_t trig_dim_1 = 10;
     size_t p_id = 5;
+    size_t trig_dim_1 = 10;
+
+    #ifdef FULL
+        size_t num_heads = 16;
+        size_t head_dim = 96;
+    #endif
+
+    #ifdef FOURTH
+        size_t num_heads = 8;
+        size_t head_dim = 48;
+    #endif
+
+    #ifdef SIXTEENTH
+        size_t num_heads = 4;
+        size_t head_dim = 24;
+    #endif
+
+    #ifdef SIXTYFOURTH
+        size_t num_heads = 2;
+        size_t head_dim = 12;
+    #endif
+
+    size_t hidden_size = num_heads*head_dim;
 
     std::vector<std::vector<float>> l_hidden_states;
     for (int i = 0; i < seq_len; i++) {
@@ -86,6 +96,10 @@ int main() {
         l_v_cache.push_back(temp_v);
     }
 
+    // Timer
+    Timer timer("attention_ref");
+    timer.start();
+
     // Call the attention function
     auto result = bitnet_attention(
         l_hidden_states,
@@ -103,15 +117,17 @@ int main() {
         p_id,
         "decoding"
     );
+    
+    timer.stop();
 
     // Print the result
-    std::cout << std::endl;
+    std::cout << "\033[32m" << std::endl;
     for (int i = 0; i < seq_len; i++) {
         for (int j = 0; j < hidden_size; j++) {
             if (j != hidden_size - 1) std::cout << result[i][j] << ", ";
             else std::cout << result[i][j];
         }
-        std::cout << std::endl;
+        std::cout << "\033[0m" << std::endl << std::endl;
     }
 
     return 0;

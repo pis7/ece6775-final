@@ -5,14 +5,7 @@
 
 #include "attention.h"
 #include "layer.h"
-#include "data_quarter/q_weights.h"
-#include "data_quarter/k_weights.h"
-#include "data_quarter/v_weights.h"
-#include "data_quarter/o_weights.h"
-#include "data_quarter/ln_weight_in.h"
-#include "data_quarter/ln_weight.h"
-#include "data_quarter/k_cache.h"
-#include "data_quarter/v_cache.h"
+#include "data_include.h"
 
 //----------------------------------------------------------
 // dut

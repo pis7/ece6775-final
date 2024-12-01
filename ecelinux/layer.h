@@ -11,8 +11,7 @@ typedef bit32_t HLS_SIZE_T;
 #include <stdint.h>
 #include <hls_math.h>
 #include "model.h"
-#include "data_quarter/cos_tab.h"
-#include "data_quarter/sin_tab.h"
+#include "data_include.h"
 
 //----------------------------------------------------------
 // init_1d_mem

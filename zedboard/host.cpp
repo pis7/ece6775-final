@@ -12,8 +12,7 @@
 #include <string>
 #include "attention.h"
 #include "timer.h"
-#include "data_short/hidden_states.h"
-#include "data_short/ground_truth.h"
+#include "data_include.h"
 
 using namespace std;
 
@@ -32,7 +31,7 @@ int main() {
   st_fixed32_t input_vector;
 
   // Timer
-  Timer timer("attention");
+  Timer timer("attention_fpga");
   timer.start();
 
   // pack images to 32-bit and transmit to dut function
@@ -60,7 +59,8 @@ int main() {
  
   // calculate RMSE
   float rmse = sqrt(error_accum / (SEQ_LEN_DECODE * PROJ_COLS_BASIC));
-  cout << "\033[32mRMSE: \033[0m" << rmse << endl;
+  cout << "BUS_TOT_W=" << BUS_TOT_W << " BUS_INT_W=" << BUS_INT_W << " RMSE=" << rmse << endl;
+  cout << "\033[0m";
 
   return 0;
 }
