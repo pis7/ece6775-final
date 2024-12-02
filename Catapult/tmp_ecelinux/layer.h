@@ -34,6 +34,21 @@ attn_fixed_t attention_abs(attn_fixed_t a) {
   return (a < (attn_fixed_t)0.0) ? (attn_fixed_t)(-a) : a;
 }
 
+attn_fixed_t compute_sqrt(attn_fixed_t input) {
+
+    attn_fixed_t input_abs = attention_abs(input);
+    attn_fixed_t guess = input_abs >> 1;  // Equivalent to input_abs / 2
+
+    // Newton's method iterations
+    const int max_iterations = 10;
+    for (int i = 0; i < max_iterations; ++i) {
+        attn_fixed_t guess_inv = input_abs * (1 / guess);  // Reciprocal multiplication
+        guess = (guess + guess_inv) >> 1;  // Equivalent to dividing by 2
+    }
+
+    return guess;
+}
+
 //----------------------------------------------------------
 // rms_norm
 //----------------------------------------------------------
@@ -47,9 +62,11 @@ void rms_norm(
   RMS_NORM_LOOP_1: for (int i = 0; i < C; i++){
     variance += input[i] * input[i];
   }
-  double variance_double = variance.to_double();
-  double var_sqrt = sqrt(variance_double / C + epsilon);
-  variance = (attn_fixed_t)1.0 / (attn_fixed_t)var_sqrt;
+  attn_fixed_t val = variance / C + epsilon ; 
+  // int val_double = val.to_int();
+  // int var_sqrt = sqrt(val_double);
+  attn_fixed_t var_sqrt = compute_sqrt(val);
+  variance = (attn_fixed_t)1.0 / var_sqrt;
   RMS_NORM_LOOP_2: for (int i = 0; i < C; i++)
     input[i] *= variance * (attn_fixed_t)weight[i];
 }
@@ -277,7 +294,8 @@ void softmax (
       sum = 0.0;
       SOFTMAX_LOOP_4: for (int k = 0; k < C; k++) {
         attn_fixed_t x = input[i][j][k] - max_val;
-        input[i][j][k] = hls::exp(x);
+        double x_double = x.to_double();
+        input[i][j][k] = 1 + x + ((x * x) >> 1);
         sum += input[i][j][k];
       }
       SOFTMAX_LOOP_5: for (int k = 0; k < C; k++)

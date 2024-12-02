@@ -22,12 +22,14 @@ solution options set Output/OutputVerilog true
 solution options set Output/OutputVHDL true
 
 # Include search paths
+# solution options set /Input/SearchPath { $WORKING_DIR $WORKING_DIR/data_4th }
 solution options set /Input/SearchPath $WORKING_DIR
+solution options set /Input/CompilerFlags {-DFOURTH}
 
 # Add source and testbench files, associating testbench with "data_4th"
-solution file add $WORKING_DIR/attention.cpp -type C++ -cflags "-DFOURTH"
-solution file add $WORKING_DIR/attention_test.cpp -type C++ -cflags "-DFOURTH" -exclude true
-solution file add $WORKING_DIR/data_4th -tb
+solution file add $WORKING_DIR/attention.cpp -type C++ 
+solution file add $WORKING_DIR/attention_test.cpp -type C++ -exclude true
+# solution file add $WORKING_DIR/data_4th
 
 # Set top-level module
 solution design set dut -top
