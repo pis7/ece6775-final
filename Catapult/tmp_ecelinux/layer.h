@@ -37,7 +37,24 @@ attn_fixed_t attention_abs(attn_fixed_t a) {
   return (a < (attn_fixed_t)0.0) ? (attn_fixed_t)(-a) : a;
 }
 
-attn_fixed_t compute_sqrt(attn_fixed_t input) {
+//----------------------------------------------------------
+// attention_exp
+//----------------------------------------------------------
+
+attn_fixed_t attention_exp(attn_fixed_t x) {
+    attn_fixed_t x_half = x >> 1; // Fixed-point division by 2
+    attn_fixed_t exp_half = 1 + x_half + ((x_half * x_half) >> 1)
+                            + ((x_half * x_half * x_half) >> 2)
+                            + ((x_half * x_half * x_half * x_half) >> 3 )
+                            + ((x_half * x_half * x_half * x_half * x_half) >> 4 );
+    return exp_half * exp_half; // Multiply results for e^x
+}
+
+
+//----------------------------------------------------------
+// attention_sqrt
+//----------------------------------------------------------
+attn_fixed_t attention_sqrt(attn_fixed_t input) {
 
     attn_fixed_t input_abs = attention_abs(input);
     attn_fixed_t guess = input_abs >> 1;  // Equivalent to input_abs / 2
@@ -68,7 +85,7 @@ void rms_norm(
   attn_fixed_t val = variance / C + epsilon ; 
   // int val_double = val.to_int();
   // int var_sqrt = sqrt(val_double);
-  attn_fixed_t var_sqrt = compute_sqrt(val);
+  attn_fixed_t var_sqrt = attention_sqrt(val);
   variance = (attn_fixed_t)1.0 / var_sqrt;
   RMS_NORM_LOOP_2: for (int i = 0; i < C; i++)
   {
@@ -125,7 +142,6 @@ void quantize_activation(
             sbit32_t quantized_value = (sbit32_t)quantized_val_int;
             sbit8_t quantized_value_clamped = (quantized_value < Qn) ? Qn : ((quantized_value > Qp) ? Qp : quantized_value);
             output_states[i][j][k] = (sbit8_t)quantized_value_clamped;
-            cout<<"output_states["<<i<<"]["<<j<<"]["<<k<<"]="<<output_states[i][j][k]<<endl;
           }
         }
       }
@@ -149,9 +165,11 @@ void linear_forward_no_mul (
       LINEAR_FORWARD_NO_MUL_LOOP_3: for (int ko = 0; ko < (IN_C/4)/(IN_C/24); ko++) {
         LINEAR_FORWARD_NO_MUL_LOOP_4: for (int ki = 0; ki < (IN_C/24); ki++) {
           int k = ko * (IN_C/24) + ki;
+          // cout<<"LF: k = "<<k<<endl;
           uint8_t packed_val = packed_weights[k][j];
+          // cout<<"LF: packed_val = "<<packed_val<<endl;
           LINEAR_FORWARD_NO_MUL_LOOP_5: for (int l = 0; l < 4; l++) {
-            int8_t weight_val = (packed_val >> (2 * l)) & 0b11;
+            int8_t weight_val = (packed_val / (1 << (2 * l))) % 4;
             sbit8_t new_val = 0;
             if (weight_val == 0b01) new_val += input[i][k][l];
             else if (weight_val == 0b10) new_val -= input[i][k][l];
@@ -159,7 +177,9 @@ void linear_forward_no_mul (
           }
         }
       }
+      // cout<<"LF: output["<<i<<"]["<<j<<"]"<<output[i][j]<<endl;
       output[i][j] /= (scales[i] * w_scale);
+      //cout<<"LF: output["<<i<<"]["<<j<<"]/values = "<<output[i][j]<<endl;
     }
   }
 }
@@ -232,7 +252,10 @@ void cache_update (
   CACHE_UPDATE_LOOP_1: for (int i = 0; i < P; i++)
     CACHE_UPDATE_LOOP_2: for (int j = 0; j < R+1; j++)
       CACHE_UPDATE_LOOP_3: for (int k = 0; k < C; k++)
+      {
         cache_out[i][j][k] = (j != R) ? cache_in[i][j][k] : update[i][0][k];
+        // cout<<"CacheUpdate["<<i<<"]["<<j<<"]["<<k<<"]="<<cache_out[i][j][k]<<endl;
+      }
 }
 
 //----------------------------------------------------------
@@ -270,6 +293,7 @@ template <
         output[i][j][k] = 0;
         GEMM_3D_FLOAT_LOOP_4: for (int l = 0; l < C1; l++)
           output[i][j][k] += input_1[i][j][l] * input_2[i][l][k];
+          // cout<<"GEMM: output["<<i<<"]["<<j<<"]["<<k<<"]="<<output[i][j][k]<<endl;
       }
     }
   }
@@ -295,21 +319,28 @@ void softmax (
   attn_fixed_t input[R][P][C]
 ) {
   attn_fixed_t max_val, sum;
+  // attn_fixed_t log2e = 1.4425;
   SOFTMAX_LOOP_1: for (int i = 0; i < R; i++) {
     SOFTMAX_LOOP_2: for (int j = 0; j < P; j++) {
       max_val = input[i][j][0];
-      SOFTMAX_LOOP_3: for (int k = 1; k < C; k++)
+      SOFTMAX_LOOP_3: for (int k = 1; k < C; k++){
         if (input[i][j][k] > max_val) max_val = input[i][j][k];
+      }
       sum = 0.0;
       SOFTMAX_LOOP_4: for (int k = 0; k < C; k++) {
         attn_fixed_t x = input[i][j][k] - max_val;
-        double x_double = x.to_double();
-        input[i][j][k] = 1 + x + ((x * x) >> 1);
-        // cout<<"Softmax: input["<<i<<"]["<<j<<"]["<<k<<"]="<<input[i][j][k]<<endl;
+        // Clip x to avoid overflow in exponential computation
+        if (x > 10) x = 10;
+        else if (x < -10) x = -10;
+        input[i][j][k] = attention_exp(x);    
+        cout<<"Softmax: input["<<i<<"]["<<j<<"]["<<k<<"]="<<input[i][j][k]<<endl;
         sum += input[i][j][k];
       }
       SOFTMAX_LOOP_5: for (int k = 0; k < C; k++)
+      {
         input[i][j][k] /= sum;
+        cout<<"Softmax:input/sum["<<i<<"]["<<j<<"]["<<k<<"]="<<input[i][j][k]<<endl;
+      }
     }
   }
 }

@@ -75,4 +75,5 @@ solution library add Xilinx_RAMS
 solution library add Xilinx_ROMS
 solution library add amba
 solution library add Xilinx_FIFO
-go compile
+go libraries
+go assembly
