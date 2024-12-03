@@ -41,13 +41,13 @@ int main() {
   st_fixed32_t result;
   double error_accum = 0.0;
   double result_double, gndtruth_double;
-  std::cout<<"\033[32m]"
+  std::cout<<"\033[32m]";
   for (int i = 0; i < SEQ_LEN_DECODE; i++) {
     for (int j = 0; j < PROJ_COLS_BASIC; j++) {
       result = (st_fixed32_t)attention_out.read();
       result_double = result.to_double();
       gndtruth_double = ground_truth[i][j].to_double();
-      cout << "result: " << result_double << ", ground_truth: " << gndtruth_double[i][j] << endl;
+      cout << "result: " << result_double << ", ground_truth: " << gndtruth_double << endl;
       error_accum += pow(fabs(result_double - gndtruth_double), 2.0);
     }
     cout << endl;

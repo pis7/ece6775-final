@@ -9,10 +9,13 @@
 typedef bit32_t HLS_SIZE_T;
 
 #include <stdint.h>
+#include <iostream>
 #include <ac_math.h>
 #include <cmath>  // Include standard math library for sqrt
 #include "model.h"
 #include "data_include.h"
+
+using namespace std;
 
 //----------------------------------------------------------
 // init_2d_mem
@@ -68,7 +71,10 @@ void rms_norm(
   attn_fixed_t var_sqrt = compute_sqrt(val);
   variance = (attn_fixed_t)1.0 / var_sqrt;
   RMS_NORM_LOOP_2: for (int i = 0; i < C; i++)
+  {
     input[i] *= variance * (attn_fixed_t)weight[i];
+    // cout<<"input["<<i<<"]"<<input[i]<<endl;
+  }
 }
 
 //----------------------------------------------------------
@@ -115,10 +121,11 @@ void quantize_activation(
           int j = jo * (C/24) + ji;
           QUANTIZE_ACTIVATION_LOOP_5: for (int k = 0; k < 4; k++){
             attn_fixed_t quant_val = attention_round(input[i][(j << 2) + k] * scale);
-            double quant_val_double = quant_val.to_double();
-            sbit32_t quantized_value = (sbit32_t)quant_val_double;
+            int quantized_val_int = quant_val.to_int();
+            sbit32_t quantized_value = (sbit32_t)quantized_val_int;
             sbit8_t quantized_value_clamped = (quantized_value < Qn) ? Qn : ((quantized_value > Qp) ? Qp : quantized_value);
             output_states[i][j][k] = (sbit8_t)quantized_value_clamped;
+            cout<<"output_states["<<i<<"]["<<j<<"]["<<k<<"]="<<output_states[i][j][k]<<endl;
           }
         }
       }
@@ -206,6 +213,8 @@ void apply_rotary_pos_emb (
         attn_fixed_t cosval = cos_tab[p_id_int][k];
         output_q[i][j][k] = attn_fixed_t((input_q[i][j][k]*cosval) + (rotated_q[i][j][k]*sinval));
         output_k[i][j][k] = attn_fixed_t((input_k[i][j][k]*cosval) + (rotated_k[i][j][k]*sinval));
+        // cout<<"output_k["<<i<<"]["<<j<<"]["<<k<<"]="<<output_k[i][j][k]<<endl;
+        // cout<<"output_q["<<i<<"]["<<j<<"]["<<k<<"]="<<output_k[i][j][k]<<endl;
       }
     }
   }
@@ -296,6 +305,7 @@ void softmax (
         attn_fixed_t x = input[i][j][k] - max_val;
         double x_double = x.to_double();
         input[i][j][k] = 1 + x + ((x * x) >> 1);
+        // cout<<"Softmax: input["<<i<<"]["<<j<<"]["<<k<<"]="<<input[i][j][k]<<endl;
         sum += input[i][j][k];
       }
       SOFTMAX_LOOP_5: for (int k = 0; k < C; k++)

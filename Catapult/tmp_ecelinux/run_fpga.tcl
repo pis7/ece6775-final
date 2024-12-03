@@ -63,6 +63,8 @@ go new
 go compile
 
 # Assemble and prepare the design
-go assembly
-go architect
-go extract
+# go assembly
+# go architect
+# go extract
+
+# flow run /SCVerify/launch_make ./scverify/Verify_orig_cxx_osci.mk {} SIMTOOL=osci sim
