@@ -19,7 +19,7 @@ typedef bit32_t HLS_SIZE_T;
 template <int R, int C, typename T>
 void init_2d_mem (
   T mem[R][C],
-  T val
+  const T val
 ) {
   INIT_2D_MEM_LOOP_1: for (int i = 0; i < R; i++)
     INIT_2D_MEM_LOOP_2: for (int j = 0; j < C; j++)
@@ -29,7 +29,7 @@ void init_2d_mem (
 //----------------------------------------------------------
 // attention_abs
 //----------------------------------------------------------
-attn_fixed_t attention_abs(attn_fixed_t a) {
+attn_fixed_t attention_abs(const attn_fixed_t a) {
   return (a < (attn_fixed_t)0.0) ? (attn_fixed_t)(-a) : a;
 }
 
@@ -40,7 +40,7 @@ template <int C>
 void rms_norm(
   attn_fixed_t input[C],
   const attn_fixed_t weight[C],
-  attn_fixed_t epsilon
+  const attn_fixed_t epsilon
 ) {
   attn_fixed_t variance = 0.0;
   RMS_NORM_LOOP_1: for (int i = 0; i < C; i++){
@@ -72,10 +72,10 @@ attn_fixed_t attention_round(attn_fixed_t a) {
 //----------------------------------------------------------
 template <int R, int C>
 void quantize_activation(
-  attn_fixed_t input[R][C],
+  const attn_fixed_t input[R][C],
   sbit8_t output_states[R][C/4][4],
   attn_fixed_t output_scales[R],
-  sbit8_t num_bits
+  const sbit8_t num_bits
 ) {
   sbit32_t Qn = -(1 << (num_bits - 1));
   sbit32_t Qp = (1 << (num_bits - 1)) - 1;
@@ -109,7 +109,7 @@ void quantize_activation(
 //----------------------------------------------------------
 template <int R, int IN_C, int OUT_C>
 void linear_forward_no_mul (
-  sbit8_t input[R][IN_C/4][4],
+  const sbit8_t input[R][IN_C/4][4],
   attn_fixed_t output[R][OUT_C],
   const attn_fixed_t scales[R],
   const uint8_t packed_weights[IN_C/4][OUT_C],
@@ -141,7 +141,7 @@ void linear_forward_no_mul (
 //----------------------------------------------------------
 template <int P, int R, int C>
 void reshape_2D_to_3D (
-  attn_fixed_t input[P][R*C],
+  const attn_fixed_t input[P][R*C],
   attn_fixed_t output[R][P][C]
 ) {
   RESHAPE_2D_TO_3D_LOOP_1: for (int j = 0; j < P; j++)
@@ -155,11 +155,11 @@ void reshape_2D_to_3D (
 //----------------------------------------------------------
 template <int P, int R, int C>
 void apply_rotary_pos_emb (
-  attn_fixed_t input_q[R][P][C],
-  attn_fixed_t input_k[R][P][C],
+  const attn_fixed_t input_q[R][P][C],
+  const attn_fixed_t input_k[R][P][C],
   attn_fixed_t output_q[R][P][C],
   attn_fixed_t output_k[R][P][C],
-  attn_fixed_t p_id
+  const uint8_t p_id
 ) {
   
   // half rotate
@@ -196,7 +196,7 @@ template <int P, int R, int C>
 void cache_update (
   const attn_fixed_t cache_in[P][R][C],
   attn_fixed_t cache_out[P][R+1][C],
-  attn_fixed_t update[P][1][C]
+  const attn_fixed_t update[P][1][C]
 ) {
   CACHE_UPDATE_LOOP_1: for (int i = 0; i < P; i++)
     CACHE_UPDATE_LOOP_2: for (int j = 0; j < R+1; j++)
@@ -209,7 +209,7 @@ void cache_update (
 //----------------------------------------------------------
 template <int P, int R, int C>
 void transpose_last_two_dims (
-  attn_fixed_t input[R][P][C],
+  const attn_fixed_t input[R][P][C],
   attn_fixed_t output[R][C][P]
 ) {
   TRANSPOSE_LAST_TWO_DIMS_LOOP_1: for (int i = 0; i < R; i++)
@@ -229,8 +229,8 @@ template <
   int R2,
   int C2
 > void GEMM_3D_float (
-  attn_fixed_t input_1[P1][R1][C1],
-  attn_fixed_t input_2[P2][R2][C2],
+  const attn_fixed_t input_1[P1][R1][C1],
+  const attn_fixed_t input_2[P2][R2][C2],
   attn_fixed_t output[P1][R1][C2]
 ) {
   GEMM_3D_FLOAT_LOOP_1: for (int i = 0; i < P1; i++) {

@@ -77,7 +77,7 @@ template <
   const attn_fixed_t v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
   const attn_fixed_t ln_weight_in[HS_COLS],
   const attn_fixed_t ln_weight[PROJ_COLS],
-  const attn_fixed_t p_id
+  const uint8_t p_id
 ) {
 
   // step 1: apply layer normalization
