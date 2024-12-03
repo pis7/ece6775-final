@@ -1,0 +1,83 @@
+
+# Messages from "go new"
+
+# Info: Branching solution 'solution.v2' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v3' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v4' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v5' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v6' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v7' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v8' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v9' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v10' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v11' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v11' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v12' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v13' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v13' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v14' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v14' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v14' at state 'initial' (PRJ-2)
+# Info: Branching solution 'solution.v15' at state 'initial' (PRJ-2)
+
+# Messages from "go analyze"
+
+solution.v15
+solution options defaults
+solution options set Output/OutputVerilog true
+true
+solution options set Output/OutputVHDL true
+true
+solution options set /Input/SearchPath $WORKING_DIR
+/home/as4329/ece6775-final/Catapult/tmp_ecelinux
+solution options set /Input/CompilerFlags {-DFOURTH}
+-DFOURTH
+solution file add $WORKING_DIR/attention.cpp -type C++ 
+/INPUTFILES/1
+solution file add $WORKING_DIR/attention_test.cpp -type C++ -exclude true
+/INPUTFILES/2
+solution design set dut -top
+solution design set dut -top (HC-8)
+solution library add mgc_Xilinx-ZYNQ-1_beh -- -rtlsyntool Vivado -manufacturer Xilinx -family ZYNQ -speed -1 -part xc7z020clg484-1
+solution library add Xilinx_RAMS
+solution library add Xilinx_ROMS
+solution library add amba
+solution library add Xilinx_FIFO
+directive set SCHED_USE_MULTICYCLE true
+/SCHED_USE_MULTICYCLE true
+directive set -CLOCKS {clk {
+    -CLOCK_PERIOD 10.0
+    -CLOCK_EDGE rising
+    -CLOCK_HIGH_TIME 5.0
+    -CLOCK_OFFSET 0.000000
+    -CLOCK_UNCERTAINTY 0.0
+    -RESET_KIND sync
+    -RESET_SYNC_NAME rst
+    -RESET_SYNC_ACTIVE high
+    -RESET_ASYNC_NAME arst_n
+    -RESET_ASYNC_ACTIVE low
+    -ENABLE_NAME en
+    -ENABLE_ACTIVE high
+}}
+/CLOCKS {clk {
+    -CLOCK_PERIOD 10.0
+    -CLOCK_EDGE rising
+    -CLOCK_HIGH_TIME 5.0
+    -CLOCK_OFFSET 0.000000
+    -CLOCK_UNCERTAINTY 0.0
+    -RESET_KIND sync
+    -RESET_SYNC_NAME rst
+    -RESET_SYNC_ACTIVE high
+    -RESET_ASYNC_NAME arst_n
+    -RESET_ASYNC_ACTIVE low
+    -ENABLE_NAME en
+    -ENABLE_ACTIVE high
+}}
+go new
+go compile
+# Info: Starting transformation 'analyze' on solution 'solution.v15' (SOL-8)
+Front End called with arguments: -I/home/as4329/ece6775-final/Catapult/tmp_ecelinux -- /home/as4329/ece6775-final/Catapult/tmp_ecelinux/attention.cpp (CIN-69)
+Edison Design Group C++/C Front End - Version 6.3 (CIN-1)
+Pragma 'hls_design<>' detected on routine 'ac::fx_div<8>' (CIN-6)
+Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v15': elapsed time 4.76 seconds, memory usage 2809648kB, peak memory usage 2842016kB (SOL-9)
