@@ -373,9 +373,9 @@
       "impl\/verilog\/dut.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/pis7\/ece6775-final\/ecelinux\/attention_4th.prj\/solution1\/.autopilot\/db\/dut.design.xml",
-    "DebugDir": "\/home\/pis7\/ece6775-final\/ecelinux\/attention_4th.prj\/solution1\/.debug",
-    "ProtoInst": ["\/home\/pis7\/ece6775-final\/ecelinux\/attention_4th.prj\/solution1\/.debug\/dut.protoinst"]
+    "DesignXml": "\/home\/pis7\/ece6775\/ece6775-final\/ecelinux\/attention_4th.prj\/solution1\/.autopilot\/db\/dut.design.xml",
+    "DebugDir": "\/home\/pis7\/ece6775\/ece6775-final\/ecelinux\/attention_4th.prj\/solution1\/.debug",
+    "ProtoInst": ["\/home\/pis7\/ece6775\/ece6775-final\/ecelinux\/attention_4th.prj\/solution1\/.debug\/dut.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -1254,7 +1254,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-12-01 11:19:34 EST",
+    "Time": "2024-12-03 18:02:58 EST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

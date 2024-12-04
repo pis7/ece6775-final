@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'init_2d_mem'" level="0">
-<item name = "Date">Sun Dec  1 01:00:05 2024
+<item name = "Date">Tue Dec  3 18:13:24 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -78,8 +78,8 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln37_fu_57_p2">+, 0, 0, 15, 7, 1</column>
-<column name="icmp_ln37_fu_51_p2">icmp, 0, 0, 11, 7, 7</column>
+<column name="add_ln25_fu_57_p2">+, 0, 0, 15, 7, 1</column>
+<column name="icmp_ln25_fu_51_p2">icmp, 0, 0, 11, 7, 7</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">

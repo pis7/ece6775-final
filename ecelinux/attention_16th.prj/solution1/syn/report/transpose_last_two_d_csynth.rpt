@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'transpose_last_two_d'
 ================================================================
-* Date:           Sun Dec  1 01:00:09 2024
+* Date:           Tue Dec  3 18:13:26 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_16th.prj
@@ -56,14 +56,14 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
 +-----------------+---------+-------+--------+-------+-----+
 |DSP              |        -|      -|       -|      -|    -|
-|Expression       |        -|      -|       0|    175|    -|
+|Expression       |        -|      -|       0|    161|    -|
 |FIFO             |        -|      -|       -|      -|    -|
 |Instance         |        -|      -|       -|      -|    -|
 |Memory           |        -|      -|       -|      -|    -|
 |Multiplexer      |        -|      -|       -|     60|    -|
-|Register         |        -|      -|      63|      -|    -|
+|Register         |        -|      -|      56|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |        0|      0|      63|    235|    0|
+|Total            |        0|      0|      56|    221|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
@@ -87,22 +87,21 @@
     +-----------------------+----------+-------+---+----+------------+------------+
     |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------+----------+-------+---+----+------------+------------+
-    |add_ln203_1_fu_257_p2  |     +    |      0|  0|  13|          11|          11|
-    |add_ln203_2_fu_267_p2  |     +    |      0|  0|  14|          10|          10|
-    |add_ln203_3_fu_298_p2  |     +    |      0|  0|  11|          11|          11|
-    |add_ln203_fu_206_p2    |     +    |      0|  0|  15|           8|           8|
-    |i_fu_120_p2            |     +    |      0|  0|  12|           3|           1|
-    |j_fu_192_p2            |     +    |      0|  0|  12|           3|           1|
-    |k_fu_243_p2            |     +    |      0|  0|  15|           5|           1|
-    |sub_ln203_1_fu_176_p2  |     -    |      0|  0|  15|           9|           9|
-    |sub_ln203_2_fu_231_p2  |     -    |      0|  0|  13|          11|          11|
-    |sub_ln203_3_fu_292_p2  |     -    |      0|  0|  11|          11|          11|
-    |sub_ln203_fu_154_p2    |     -    |      0|  0|  15|           7|           7|
-    |icmp_ln256_fu_114_p2   |   icmp   |      0|  0|   9|           3|           4|
-    |icmp_ln257_fu_186_p2   |   icmp   |      0|  0|   9|           3|           3|
-    |icmp_ln258_fu_237_p2   |   icmp   |      0|  0|  11|           5|           5|
+    |add_ln203_1_fu_287_p2  |     +    |      0|  0|  13|          11|          11|
+    |add_ln203_2_fu_315_p2  |     +    |      0|  0|  15|           8|           8|
+    |add_ln203_3_fu_346_p2  |     +    |      0|  0|  11|           9|           9|
+    |add_ln203_fu_240_p2    |     +    |      0|  0|  15|           8|           8|
+    |i_fu_180_p2            |     +    |      0|  0|  12|           3|           1|
+    |j_fu_226_p2            |     +    |      0|  0|  12|           3|           1|
+    |k_fu_277_p2            |     +    |      0|  0|  15|           5|           1|
+    |sub_ln203_1_fu_265_p2  |     -    |      0|  0|  13|          11|          11|
+    |sub_ln203_2_fu_340_p2  |     -    |      0|  0|  11|           9|           9|
+    |sub_ln203_fu_210_p2    |     -    |      0|  0|  15|           7|           7|
+    |icmp_ln215_fu_174_p2   |   icmp   |      0|  0|   9|           3|           4|
+    |icmp_ln216_fu_220_p2   |   icmp   |      0|  0|   9|           3|           3|
+    |icmp_ln217_fu_271_p2   |   icmp   |      0|  0|  11|           5|           5|
     +-----------------------+----------+-------+---+----+------------+------------+
-    |Total                  |          |      0|  0| 175|         100|          93|
+    |Total                  |          |      0|  0| 161|          85|          78|
     +-----------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
@@ -110,32 +109,32 @@
     |     Name    | LUT| Input Size| Bits| Total Bits|
     +-------------+----+-----------+-----+-----------+
     |ap_NS_fsm    |  33|          6|    1|          6|
-    |i_0_reg_81   |   9|          2|    3|          6|
-    |j_0_reg_92   |   9|          2|    3|          6|
-    |k_0_reg_103  |   9|          2|    5|         10|
+    |i_0_reg_141  |   9|          2|    3|          6|
+    |j_0_reg_152  |   9|          2|    3|          6|
+    |k_0_reg_163  |   9|          2|    5|         10|
     +-------------+----+-----------+-----+-----------+
     |Total        |  60|         12|   12|         28|
     +-------------+----+-----------+-----+-----------+
 
     * Register: 
-    +----------------------+----+----+-----+-----------+
-    |         Name         | FF | LUT| Bits| Const Bits|
-    +----------------------+----+----+-----+-----------+
-    |add_ln203_3_reg_356   |  11|   0|   11|          0|
-    |ap_CS_fsm             |   5|   0|    5|          0|
-    |i_0_reg_81            |   3|   0|    3|          0|
-    |i_reg_310             |   3|   0|    3|          0|
-    |j_0_reg_92            |   3|   0|    3|          0|
-    |j_reg_328             |   3|   0|    3|          0|
-    |k_0_reg_103           |   5|   0|    5|          0|
-    |k_reg_346             |   5|   0|    5|          0|
-    |sext_ln203_1_reg_320  |   7|   0|   10|          3|
-    |sext_ln203_reg_315    |   7|   0|    8|          1|
-    |sub_ln203_2_reg_338   |   8|   0|   11|          3|
-    |zext_ln203_4_reg_333  |   3|   0|   11|          8|
-    +----------------------+----+----+-----+-----------+
-    |Total                 |  63|   0|   78|         15|
-    +----------------------+----+----+-----+-----------+
+    +-----------------------+---+----+-----+-----------+
+    |          Name         | FF| LUT| Bits| Const Bits|
+    +-----------------------+---+----+-----+-----------+
+    |add_ln203_3_reg_407    |  9|   0|    9|          0|
+    |ap_CS_fsm              |  5|   0|    5|          0|
+    |i_0_reg_141            |  3|   0|    3|          0|
+    |i_reg_361              |  3|   0|    3|          0|
+    |j_0_reg_152            |  3|   0|    3|          0|
+    |j_reg_375              |  3|   0|    3|          0|
+    |k_0_reg_163            |  5|   0|    5|          0|
+    |k_reg_393              |  5|   0|    5|          0|
+    |sext_ln203_reg_366     |  7|   0|    8|          1|
+    |sub_ln203_1_reg_385    |  8|   0|   11|          3|
+    |trunc_ln203_1_reg_403  |  2|   0|    2|          0|
+    |zext_ln203_2_reg_380   |  3|   0|    9|          6|
+    +-----------------------+---+----+-----+-----------+
+    |Total                  | 56|   0|   66|         10|
+    +-----------------------+---+----+-----+-----------+
 
 
 
@@ -143,21 +142,33 @@
 == Interface
 ================================================================
 * Summary: 
-+-------------------+-----+-----+------------+----------------------+--------------+
-|     RTL Ports     | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
-+-------------------+-----+-----+------------+----------------------+--------------+
-|ap_clk             |  in |    1| ap_ctrl_hs | transpose_last_two_d | return value |
-|ap_rst             |  in |    1| ap_ctrl_hs | transpose_last_two_d | return value |
-|ap_start           |  in |    1| ap_ctrl_hs | transpose_last_two_d | return value |
-|ap_done            | out |    1| ap_ctrl_hs | transpose_last_two_d | return value |
-|ap_idle            | out |    1| ap_ctrl_hs | transpose_last_two_d | return value |
-|ap_ready           | out |    1| ap_ctrl_hs | transpose_last_two_d | return value |
-|input_V_address0   | out |   10|  ap_memory |        input_V       |     array    |
-|input_V_ce0        | out |    1|  ap_memory |        input_V       |     array    |
-|input_V_q0         |  in |   40|  ap_memory |        input_V       |     array    |
-|output_V_address0  | out |   10|  ap_memory |       output_V       |     array    |
-|output_V_ce0       | out |    1|  ap_memory |       output_V       |     array    |
-|output_V_we0       | out |    1|  ap_memory |       output_V       |     array    |
-|output_V_d0        | out |   40|  ap_memory |       output_V       |     array    |
-+-------------------+-----+-----+------------+----------------------+--------------+
++---------------------+-----+-----+------------+----------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++---------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk               |  in |    1| ap_ctrl_hs | transpose_last_two_d | return value |
+|ap_rst               |  in |    1| ap_ctrl_hs | transpose_last_two_d | return value |
+|ap_start             |  in |    1| ap_ctrl_hs | transpose_last_two_d | return value |
+|ap_done              | out |    1| ap_ctrl_hs | transpose_last_two_d | return value |
+|ap_idle              | out |    1| ap_ctrl_hs | transpose_last_two_d | return value |
+|ap_ready             | out |    1| ap_ctrl_hs | transpose_last_two_d | return value |
+|input_V_address0     | out |   10|  ap_memory |        input_V       |     array    |
+|input_V_ce0          | out |    1|  ap_memory |        input_V       |     array    |
+|input_V_q0           |  in |   40|  ap_memory |        input_V       |     array    |
+|output_0_V_address0  | out |    8|  ap_memory |      output_0_V      |     array    |
+|output_0_V_ce0       | out |    1|  ap_memory |      output_0_V      |     array    |
+|output_0_V_we0       | out |    1|  ap_memory |      output_0_V      |     array    |
+|output_0_V_d0        | out |   40|  ap_memory |      output_0_V      |     array    |
+|output_1_V_address0  | out |    8|  ap_memory |      output_1_V      |     array    |
+|output_1_V_ce0       | out |    1|  ap_memory |      output_1_V      |     array    |
+|output_1_V_we0       | out |    1|  ap_memory |      output_1_V      |     array    |
+|output_1_V_d0        | out |   40|  ap_memory |      output_1_V      |     array    |
+|output_2_V_address0  | out |    8|  ap_memory |      output_2_V      |     array    |
+|output_2_V_ce0       | out |    1|  ap_memory |      output_2_V      |     array    |
+|output_2_V_we0       | out |    1|  ap_memory |      output_2_V      |     array    |
+|output_2_V_d0        | out |   40|  ap_memory |      output_2_V      |     array    |
+|output_3_V_address0  | out |    8|  ap_memory |      output_3_V      |     array    |
+|output_3_V_ce0       | out |    1|  ap_memory |      output_3_V      |     array    |
+|output_3_V_we0       | out |    1|  ap_memory |      output_3_V      |     array    |
+|output_3_V_d0        | out |   40|  ap_memory |      output_3_V      |     array    |
++---------------------+-----+-----+------------+----------------------+--------------+
 

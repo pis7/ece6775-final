@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'softmax_1_4_6_s'" level="0">
-<item name = "Date">Sun Dec  1 01:00:12 2024
+<item name = "Date">Tue Dec  3 18:13:27 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -66,7 +66,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="dut_sdiv_56ns_40srcU_U99">dut_sdiv_56ns_40srcU, 0, 0, 683, 413, 0</column>
+<column name="dut_sdiv_56ns_40srcU_U95">dut_sdiv_56ns_40srcU, 0, 0, 683, 413, 0</column>
 <column name="grp_exp_40_24_s_fu_159">exp_40_24_s, 9, 18, 1181, 628, 0</column>
 </table>
 </item>
@@ -87,19 +87,19 @@
 <column name="add_ln1265_1_fu_312_p2">+, 0, 0, 15, 6, 6</column>
 <column name="add_ln1265_fu_270_p2">+, 0, 0, 15, 6, 6</column>
 <column name="add_ln1494_fu_224_p2">+, 0, 0, 15, 6, 6</column>
-<column name="add_ln311_fu_234_p2">+, 0, 0, 12, 3, 1</column>
-<column name="add_ln314_fu_260_p2">+, 0, 0, 12, 3, 1</column>
-<column name="add_ln320_fu_302_p2">+, 0, 0, 12, 3, 1</column>
+<column name="add_ln270_fu_234_p2">+, 0, 0, 12, 3, 1</column>
+<column name="add_ln273_fu_260_p2">+, 0, 0, 12, 3, 1</column>
+<column name="add_ln278_fu_302_p2">+, 0, 0, 12, 3, 1</column>
 <column name="add_ln703_fu_290_p2">+, 0, 0, 47, 40, 40</column>
 <column name="i_fu_177_p2">+, 0, 0, 12, 3, 1</column>
 <column name="sub_ln203_fu_203_p2">-, 0, 0, 15, 6, 6</column>
 <column name="sub_ln703_fu_284_p2">-, 0, 0, 47, 40, 40</column>
 <column name="icmp_ln1494_fu_240_p2">icmp, 0, 0, 21, 40, 40</column>
-<column name="icmp_ln308_fu_171_p2">icmp, 0, 0, 9, 3, 4</column>
-<column name="icmp_ln311_fu_214_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="icmp_ln314_fu_254_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="icmp_ln320_fu_296_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="select_ln312_fu_246_p3">select, 0, 0, 40, 1, 40</column>
+<column name="icmp_ln267_fu_171_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln270_fu_214_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln273_fu_254_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln278_fu_296_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="select_ln271_fu_246_p3">select, 0, 0, 40, 1, 40</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -117,9 +117,9 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln311_reg_373">3, 0, 3, 0</column>
-<column name="add_ln314_reg_386">3, 0, 3, 0</column>
-<column name="add_ln320_reg_414">3, 0, 3, 0</column>
+<column name="add_ln270_reg_373">3, 0, 3, 0</column>
+<column name="add_ln273_reg_386">3, 0, 3, 0</column>
+<column name="add_ln278_reg_414">3, 0, 3, 0</column>
 <column name="ap_CS_fsm">76, 0, 76, 0</column>
 <column name="grp_exp_40_24_s_fu_159_ap_start_reg">1, 0, 1, 0</column>
 <column name="i_0_reg_93">3, 0, 3, 0</column>

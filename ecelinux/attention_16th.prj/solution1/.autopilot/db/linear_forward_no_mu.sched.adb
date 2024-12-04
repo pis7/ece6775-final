@@ -665,14 +665,14 @@
 						<id>24</id>
 						<name>w_scale_V_read</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>153</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -681,7 +681,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>153</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -714,14 +714,14 @@
 						<id>25</id>
 						<name>scales_0_V_read_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>153</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -730,7 +730,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>153</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -761,16 +761,16 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>zext_ln160</name>
+						<name>zext_ln119</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>160</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -779,7 +779,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>160</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -811,14 +811,14 @@
 						<id>28</id>
 						<name>sext_ln1148</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>175</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -827,7 +827,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>175</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -859,14 +859,14 @@
 						<id>29</id>
 						<name>mul_ln1148</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>175</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -875,7 +875,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>175</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -906,16 +906,16 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>sext_ln161</name>
+						<name>sext_ln120</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -924,7 +924,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>161</second>
+										<second>120</second>
 									</item>
 								</second>
 							</item>
@@ -954,16 +954,16 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>_ln161</name>
+						<name>_ln120</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -972,7 +972,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>161</second>
+										<second>120</second>
 									</item>
 								</second>
 							</item>
@@ -1004,14 +1004,14 @@
 						<id>33</id>
 						<name>indvar_flatten</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1020,7 +1020,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>161</second>
+										<second>120</second>
 									</item>
 								</second>
 							</item>
@@ -1055,14 +1055,14 @@
 						<id>34</id>
 						<name>j_0_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1071,7 +1071,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1106,14 +1106,14 @@
 						<id>35</id>
 						<name>ko_0_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1122,7 +1122,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>162</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1155,16 +1155,16 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>icmp_ln161</name>
+						<name>icmp_ln120</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1173,7 +1173,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>161</second>
+										<second>120</second>
 									</item>
 								</second>
 							</item>
@@ -1204,16 +1204,16 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>add_ln161_1</name>
+						<name>add_ln120_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1222,7 +1222,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>161</second>
+										<second>120</second>
 									</item>
 								</second>
 							</item>
@@ -1253,16 +1253,16 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>_ln161</name>
+						<name>_ln120</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1271,7 +1271,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>161</second>
+										<second>120</second>
 									</item>
 								</second>
 							</item>
@@ -1303,16 +1303,16 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>add_ln161</name>
+						<name>add_ln120</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1321,7 +1321,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>161</second>
+										<second>120</second>
 									</item>
 								</second>
 							</item>
@@ -1352,16 +1352,16 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>icmp_ln162</name>
+						<name>icmp_ln121</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1370,7 +1370,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>162</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1401,16 +1401,16 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>select_ln165</name>
+						<name>select_ln124</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1419,7 +1419,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1451,16 +1451,16 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>select_ln165_1</name>
+						<name>select_ln124_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1469,7 +1469,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1501,16 +1501,16 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>zext_ln165</name>
+						<name>zext_ln124</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1519,7 +1519,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1549,16 +1549,16 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>zext_ln162</name>
+						<name>zext_ln121</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1567,7 +1567,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>162</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -1597,16 +1597,16 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>zext_ln165_1</name>
+						<name>zext_ln124_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1615,7 +1615,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1647,14 +1647,14 @@
 						<id>52</id>
 						<name>tmp_56</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1663,7 +1663,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1695,16 +1695,16 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>zext_ln165_2</name>
+						<name>zext_ln124_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1713,7 +1713,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1745,14 +1745,14 @@
 						<id>54</id>
 						<name>tmp_57</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1761,7 +1761,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1793,16 +1793,16 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>zext_ln165_3</name>
+						<name>zext_ln124_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1811,7 +1811,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1841,16 +1841,16 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>sub_ln165</name>
+						<name>sub_ln124</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1859,7 +1859,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1890,16 +1890,16 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>add_ln165</name>
+						<name>add_ln124</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1908,7 +1908,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1939,16 +1939,16 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>sext_ln165</name>
+						<name>sext_ln124</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1957,7 +1957,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1989,14 +1989,14 @@
 						<id>59</id>
 						<name>packed_weights_0_ad</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2005,7 +2005,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -2039,14 +2039,14 @@
 						<id>60</id>
 						<name>packed_weights_1_ad</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2055,7 +2055,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -2089,14 +2089,14 @@
 						<id>61</id>
 						<name>packed_weights_2_ad</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2105,7 +2105,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -2139,14 +2139,14 @@
 						<id>62</id>
 						<name>packed_weights_3_ad</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2155,7 +2155,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -2189,14 +2189,14 @@
 						<id>63</id>
 						<name>packed_weights_0_lo</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2205,7 +2205,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -2235,16 +2235,16 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>trunc_ln167</name>
+						<name>trunc_ln126</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2253,7 +2253,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -2283,16 +2283,16 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>icmp_ln169</name>
+						<name>icmp_ln128</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2301,7 +2301,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2334,14 +2334,14 @@
 						<id>66</id>
 						<name>input_0_0_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2350,7 +2350,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2384,14 +2384,14 @@
 						<id>67</id>
 						<name>input_0_0_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2400,7 +2400,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2430,16 +2430,16 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>icmp_ln170</name>
+						<name>icmp_ln129</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2448,7 +2448,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -2481,14 +2481,14 @@
 						<id>69</id>
 						<name>sub_ln701</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2497,7 +2497,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -2528,16 +2528,16 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>xor_ln169</name>
+						<name>xor_ln128</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2546,7 +2546,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2577,16 +2577,16 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>and_ln170</name>
+						<name>and_ln129</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2595,7 +2595,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -2628,14 +2628,14 @@
 						<id>72</id>
 						<name>output_0_V_addr</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2644,7 +2644,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -2678,14 +2678,14 @@
 						<id>73</id>
 						<name>output_0_V_load</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2694,7 +2694,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -2725,16 +2725,16 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>select_ln169</name>
+						<name>select_ln128</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2743,7 +2743,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -2775,16 +2775,16 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>select_ln170</name>
+						<name>select_ln129</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2793,7 +2793,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -2827,14 +2827,14 @@
 						<id>76</id>
 						<name>shl_ln</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2843,7 +2843,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -2877,14 +2877,14 @@
 						<id>77</id>
 						<name>sext_ln703</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2893,7 +2893,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -2923,16 +2923,16 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>trunc_ln167_3</name>
+						<name>trunc_ln126_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2941,7 +2941,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -2974,16 +2974,16 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>icmp_ln169_1</name>
+						<name>icmp_ln128_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2992,7 +2992,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -3025,14 +3025,14 @@
 						<id>80</id>
 						<name>input_0_1_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3041,7 +3041,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -3075,14 +3075,14 @@
 						<id>81</id>
 						<name>input_0_1_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3091,7 +3091,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -3121,16 +3121,16 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>icmp_ln170_1</name>
+						<name>icmp_ln129_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3139,7 +3139,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -3172,14 +3172,14 @@
 						<id>83</id>
 						<name>sub_ln701_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3188,7 +3188,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -3219,16 +3219,16 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>xor_ln169_1</name>
+						<name>xor_ln128_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3237,7 +3237,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -3268,16 +3268,16 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>and_ln170_1</name>
+						<name>and_ln129_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3286,7 +3286,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -3317,16 +3317,16 @@
 					<Obj>
 						<type>0</type>
 						<id>86</id>
-						<name>select_ln169_1</name>
+						<name>select_ln128_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3335,7 +3335,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -3367,16 +3367,16 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>select_ln170_1</name>
+						<name>select_ln129_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3385,7 +3385,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -3419,14 +3419,14 @@
 						<id>88</id>
 						<name>shl_ln703_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3435,7 +3435,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -3469,14 +3469,14 @@
 						<id>89</id>
 						<name>sext_ln703_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3485,7 +3485,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -3515,16 +3515,16 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>trunc_ln167_4</name>
+						<name>trunc_ln126_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3533,7 +3533,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -3566,16 +3566,16 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>icmp_ln169_2</name>
+						<name>icmp_ln128_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3584,7 +3584,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -3617,14 +3617,14 @@
 						<id>92</id>
 						<name>input_0_2_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3633,7 +3633,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -3667,14 +3667,14 @@
 						<id>93</id>
 						<name>input_0_2_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3683,7 +3683,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -3713,16 +3713,16 @@
 					<Obj>
 						<type>0</type>
 						<id>94</id>
-						<name>icmp_ln170_2</name>
+						<name>icmp_ln129_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3731,7 +3731,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -3764,14 +3764,14 @@
 						<id>95</id>
 						<name>sub_ln701_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3780,7 +3780,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -3811,16 +3811,16 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>xor_ln169_2</name>
+						<name>xor_ln128_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3829,7 +3829,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -3860,16 +3860,16 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>and_ln170_2</name>
+						<name>and_ln129_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3878,7 +3878,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -3909,16 +3909,16 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>select_ln169_2</name>
+						<name>select_ln128_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3927,7 +3927,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -3959,16 +3959,16 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>select_ln170_2</name>
+						<name>select_ln129_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3977,7 +3977,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -4011,14 +4011,14 @@
 						<id>100</id>
 						<name>shl_ln703_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4027,7 +4027,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -4061,14 +4061,14 @@
 						<id>101</id>
 						<name>sext_ln703_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4077,7 +4077,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -4109,14 +4109,14 @@
 						<id>102</id>
 						<name>trunc_ln</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4125,7 +4125,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -4158,16 +4158,16 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>icmp_ln169_3</name>
+						<name>icmp_ln128_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4176,7 +4176,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -4209,14 +4209,14 @@
 						<id>104</id>
 						<name>input_0_3_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4225,7 +4225,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -4259,14 +4259,14 @@
 						<id>105</id>
 						<name>input_0_3_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4275,7 +4275,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -4305,16 +4305,16 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>icmp_ln170_3</name>
+						<name>icmp_ln129_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4323,7 +4323,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -4356,14 +4356,14 @@
 						<id>107</id>
 						<name>sub_ln701_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4372,7 +4372,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -4403,16 +4403,16 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>xor_ln169_3</name>
+						<name>xor_ln128_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4421,7 +4421,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -4452,16 +4452,16 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>and_ln170_3</name>
+						<name>and_ln129_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4470,7 +4470,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -4501,16 +4501,16 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>select_ln169_3</name>
+						<name>select_ln128_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4519,7 +4519,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -4551,16 +4551,16 @@
 					<Obj>
 						<type>0</type>
 						<id>111</id>
-						<name>select_ln170_3</name>
+						<name>select_ln129_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4569,7 +4569,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -4603,14 +4603,14 @@
 						<id>112</id>
 						<name>shl_ln703_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4619,7 +4619,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -4653,14 +4653,14 @@
 						<id>113</id>
 						<name>sext_ln703_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4669,7 +4669,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -4701,14 +4701,14 @@
 						<id>114</id>
 						<name>packed_weights_1_lo</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4717,7 +4717,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -4747,16 +4747,16 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>trunc_ln167_2</name>
+						<name>trunc_ln126_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4765,7 +4765,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -4795,16 +4795,16 @@
 					<Obj>
 						<type>0</type>
 						<id>116</id>
-						<name>icmp_ln169_4</name>
+						<name>icmp_ln128_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4813,7 +4813,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -4846,14 +4846,14 @@
 						<id>117</id>
 						<name>input_1_0_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4862,7 +4862,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -4896,14 +4896,14 @@
 						<id>118</id>
 						<name>input_1_0_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4912,7 +4912,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -4942,16 +4942,16 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>icmp_ln170_4</name>
+						<name>icmp_ln129_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4960,7 +4960,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -4993,14 +4993,14 @@
 						<id>120</id>
 						<name>sub_ln701_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5009,7 +5009,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -5040,16 +5040,16 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>xor_ln169_4</name>
+						<name>xor_ln128_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5058,7 +5058,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -5089,16 +5089,16 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>and_ln170_4</name>
+						<name>and_ln129_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5107,7 +5107,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -5138,16 +5138,16 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>select_ln169_4</name>
+						<name>select_ln128_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5156,7 +5156,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -5188,16 +5188,16 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>select_ln170_4</name>
+						<name>select_ln129_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5206,7 +5206,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -5240,14 +5240,14 @@
 						<id>125</id>
 						<name>shl_ln703_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5256,7 +5256,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -5290,14 +5290,14 @@
 						<id>126</id>
 						<name>sext_ln703_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5306,7 +5306,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -5336,16 +5336,16 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>trunc_ln167_8</name>
+						<name>trunc_ln126_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5354,7 +5354,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -5387,16 +5387,16 @@
 					<Obj>
 						<type>0</type>
 						<id>128</id>
-						<name>icmp_ln169_5</name>
+						<name>icmp_ln128_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5405,7 +5405,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -5438,14 +5438,14 @@
 						<id>129</id>
 						<name>input_1_1_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5454,7 +5454,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -5488,14 +5488,14 @@
 						<id>130</id>
 						<name>input_1_1_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5504,7 +5504,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -5534,16 +5534,16 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>icmp_ln170_5</name>
+						<name>icmp_ln129_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5552,7 +5552,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -5585,14 +5585,14 @@
 						<id>132</id>
 						<name>sub_ln701_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5601,7 +5601,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -5632,16 +5632,16 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>xor_ln169_5</name>
+						<name>xor_ln128_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5650,7 +5650,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -5681,16 +5681,16 @@
 					<Obj>
 						<type>0</type>
 						<id>134</id>
-						<name>and_ln170_5</name>
+						<name>and_ln129_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5699,7 +5699,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -5730,16 +5730,16 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>select_ln169_5</name>
+						<name>select_ln128_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5748,7 +5748,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -5780,16 +5780,16 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>select_ln170_5</name>
+						<name>select_ln129_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5798,7 +5798,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -5832,14 +5832,14 @@
 						<id>137</id>
 						<name>shl_ln703_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5848,7 +5848,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -5882,14 +5882,14 @@
 						<id>138</id>
 						<name>sext_ln703_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5898,7 +5898,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -5928,16 +5928,16 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>trunc_ln167_9</name>
+						<name>trunc_ln126_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5946,7 +5946,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -5979,16 +5979,16 @@
 					<Obj>
 						<type>0</type>
 						<id>140</id>
-						<name>icmp_ln169_6</name>
+						<name>icmp_ln128_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5997,7 +5997,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6030,14 +6030,14 @@
 						<id>141</id>
 						<name>input_1_2_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6046,7 +6046,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6080,14 +6080,14 @@
 						<id>142</id>
 						<name>input_1_2_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6096,7 +6096,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6126,16 +6126,16 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>icmp_ln170_6</name>
+						<name>icmp_ln129_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6144,7 +6144,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -6177,14 +6177,14 @@
 						<id>144</id>
 						<name>sub_ln701_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6193,7 +6193,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -6224,16 +6224,16 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>xor_ln169_6</name>
+						<name>xor_ln128_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6242,7 +6242,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6273,16 +6273,16 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>and_ln170_6</name>
+						<name>and_ln129_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6291,7 +6291,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -6322,16 +6322,16 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>select_ln169_6</name>
+						<name>select_ln128_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6340,7 +6340,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6372,16 +6372,16 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>select_ln170_6</name>
+						<name>select_ln129_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6390,7 +6390,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -6424,14 +6424,14 @@
 						<id>149</id>
 						<name>shl_ln703_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6440,7 +6440,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -6474,14 +6474,14 @@
 						<id>150</id>
 						<name>sext_ln703_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6490,7 +6490,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -6520,16 +6520,16 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>trunc_ln169_1</name>
+						<name>trunc_ln128_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6538,7 +6538,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6571,16 +6571,16 @@
 					<Obj>
 						<type>0</type>
 						<id>152</id>
-						<name>icmp_ln169_7</name>
+						<name>icmp_ln128_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6589,7 +6589,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6622,14 +6622,14 @@
 						<id>153</id>
 						<name>input_1_3_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6638,7 +6638,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6672,14 +6672,14 @@
 						<id>154</id>
 						<name>input_1_3_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6688,7 +6688,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6718,16 +6718,16 @@
 					<Obj>
 						<type>0</type>
 						<id>155</id>
-						<name>icmp_ln170_7</name>
+						<name>icmp_ln129_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6736,7 +6736,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -6769,14 +6769,14 @@
 						<id>156</id>
 						<name>sub_ln701_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6785,7 +6785,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -6816,16 +6816,16 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>xor_ln169_7</name>
+						<name>xor_ln128_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6834,7 +6834,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6865,16 +6865,16 @@
 					<Obj>
 						<type>0</type>
 						<id>158</id>
-						<name>and_ln170_7</name>
+						<name>and_ln129_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6883,7 +6883,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -6914,16 +6914,16 @@
 					<Obj>
 						<type>0</type>
 						<id>159</id>
-						<name>select_ln169_7</name>
+						<name>select_ln128_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6932,7 +6932,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6964,16 +6964,16 @@
 					<Obj>
 						<type>0</type>
 						<id>160</id>
-						<name>select_ln170_7</name>
+						<name>select_ln129_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6982,7 +6982,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -7016,14 +7016,14 @@
 						<id>161</id>
 						<name>shl_ln703_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7032,7 +7032,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -7066,14 +7066,14 @@
 						<id>162</id>
 						<name>sext_ln703_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7082,7 +7082,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -7114,14 +7114,14 @@
 						<id>163</id>
 						<name>packed_weights_2_lo</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7130,7 +7130,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -7160,16 +7160,16 @@
 					<Obj>
 						<type>0</type>
 						<id>164</id>
-						<name>trunc_ln167_6</name>
+						<name>trunc_ln126_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7178,7 +7178,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -7208,16 +7208,16 @@
 					<Obj>
 						<type>0</type>
 						<id>165</id>
-						<name>icmp_ln169_8</name>
+						<name>icmp_ln128_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7226,7 +7226,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -7259,14 +7259,14 @@
 						<id>166</id>
 						<name>input_2_0_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7275,7 +7275,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -7309,14 +7309,14 @@
 						<id>167</id>
 						<name>input_2_0_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7325,7 +7325,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -7355,16 +7355,16 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>icmp_ln170_8</name>
+						<name>icmp_ln129_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7373,7 +7373,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -7406,14 +7406,14 @@
 						<id>169</id>
 						<name>sub_ln701_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7422,7 +7422,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -7453,16 +7453,16 @@
 					<Obj>
 						<type>0</type>
 						<id>170</id>
-						<name>xor_ln169_8</name>
+						<name>xor_ln128_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7471,7 +7471,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -7502,16 +7502,16 @@
 					<Obj>
 						<type>0</type>
 						<id>171</id>
-						<name>and_ln170_8</name>
+						<name>and_ln129_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7520,7 +7520,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -7551,16 +7551,16 @@
 					<Obj>
 						<type>0</type>
 						<id>172</id>
-						<name>select_ln169_8</name>
+						<name>select_ln128_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7569,7 +7569,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -7601,16 +7601,16 @@
 					<Obj>
 						<type>0</type>
 						<id>173</id>
-						<name>select_ln170_8</name>
+						<name>select_ln129_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7619,7 +7619,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -7653,14 +7653,14 @@
 						<id>174</id>
 						<name>shl_ln703_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7669,7 +7669,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -7703,14 +7703,14 @@
 						<id>175</id>
 						<name>sext_ln703_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7719,7 +7719,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -7749,16 +7749,16 @@
 					<Obj>
 						<type>0</type>
 						<id>176</id>
-						<name>trunc_ln167_1</name>
+						<name>trunc_ln126_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7767,7 +7767,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -7800,16 +7800,16 @@
 					<Obj>
 						<type>0</type>
 						<id>177</id>
-						<name>icmp_ln169_9</name>
+						<name>icmp_ln128_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7818,7 +7818,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -7851,14 +7851,14 @@
 						<id>178</id>
 						<name>input_2_1_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7867,7 +7867,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -7901,14 +7901,14 @@
 						<id>179</id>
 						<name>input_2_1_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7917,7 +7917,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -7947,16 +7947,16 @@
 					<Obj>
 						<type>0</type>
 						<id>180</id>
-						<name>icmp_ln170_9</name>
+						<name>icmp_ln129_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7965,7 +7965,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -7998,14 +7998,14 @@
 						<id>181</id>
 						<name>sub_ln701_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8014,7 +8014,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8045,16 +8045,16 @@
 					<Obj>
 						<type>0</type>
 						<id>182</id>
-						<name>xor_ln169_9</name>
+						<name>xor_ln128_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8063,7 +8063,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -8094,16 +8094,16 @@
 					<Obj>
 						<type>0</type>
 						<id>183</id>
-						<name>and_ln170_9</name>
+						<name>and_ln129_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8112,7 +8112,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8143,16 +8143,16 @@
 					<Obj>
 						<type>0</type>
 						<id>184</id>
-						<name>select_ln169_9</name>
+						<name>select_ln128_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8161,7 +8161,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -8193,16 +8193,16 @@
 					<Obj>
 						<type>0</type>
 						<id>185</id>
-						<name>select_ln170_9</name>
+						<name>select_ln129_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8211,7 +8211,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8245,14 +8245,14 @@
 						<id>186</id>
 						<name>shl_ln703_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8261,7 +8261,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -8295,14 +8295,14 @@
 						<id>187</id>
 						<name>sext_ln703_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8311,7 +8311,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -8341,16 +8341,16 @@
 					<Obj>
 						<type>0</type>
 						<id>188</id>
-						<name>trunc_ln167_5</name>
+						<name>trunc_ln126_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8359,7 +8359,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -8392,16 +8392,16 @@
 					<Obj>
 						<type>0</type>
 						<id>189</id>
-						<name>icmp_ln169_10</name>
+						<name>icmp_ln128_10</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8410,7 +8410,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -8443,14 +8443,14 @@
 						<id>190</id>
 						<name>input_2_2_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8459,7 +8459,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -8493,14 +8493,14 @@
 						<id>191</id>
 						<name>input_2_2_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8509,7 +8509,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -8539,16 +8539,16 @@
 					<Obj>
 						<type>0</type>
 						<id>192</id>
-						<name>icmp_ln170_10</name>
+						<name>icmp_ln129_10</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8557,7 +8557,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8590,14 +8590,14 @@
 						<id>193</id>
 						<name>sub_ln701_10</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8606,7 +8606,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8637,16 +8637,16 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>xor_ln169_10</name>
+						<name>xor_ln128_10</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8655,7 +8655,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -8686,16 +8686,16 @@
 					<Obj>
 						<type>0</type>
 						<id>195</id>
-						<name>and_ln170_10</name>
+						<name>and_ln129_10</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8704,7 +8704,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8735,16 +8735,16 @@
 					<Obj>
 						<type>0</type>
 						<id>196</id>
-						<name>select_ln169_10</name>
+						<name>select_ln128_10</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8753,7 +8753,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -8785,16 +8785,16 @@
 					<Obj>
 						<type>0</type>
 						<id>197</id>
-						<name>select_ln170_10</name>
+						<name>select_ln129_10</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8803,7 +8803,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -8837,14 +8837,14 @@
 						<id>198</id>
 						<name>shl_ln703_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8853,7 +8853,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -8887,14 +8887,14 @@
 						<id>199</id>
 						<name>sext_ln703_10</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8903,7 +8903,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -8933,16 +8933,16 @@
 					<Obj>
 						<type>0</type>
 						<id>200</id>
-						<name>trunc_ln169_2</name>
+						<name>trunc_ln128_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8951,7 +8951,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -8984,16 +8984,16 @@
 					<Obj>
 						<type>0</type>
 						<id>201</id>
-						<name>icmp_ln169_11</name>
+						<name>icmp_ln128_11</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9002,7 +9002,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -9035,14 +9035,14 @@
 						<id>202</id>
 						<name>input_2_3_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9051,7 +9051,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -9085,14 +9085,14 @@
 						<id>203</id>
 						<name>input_2_3_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9101,7 +9101,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -9131,16 +9131,16 @@
 					<Obj>
 						<type>0</type>
 						<id>204</id>
-						<name>icmp_ln170_11</name>
+						<name>icmp_ln129_11</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9149,7 +9149,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -9182,14 +9182,14 @@
 						<id>205</id>
 						<name>sub_ln701_11</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9198,7 +9198,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -9229,16 +9229,16 @@
 					<Obj>
 						<type>0</type>
 						<id>206</id>
-						<name>xor_ln169_11</name>
+						<name>xor_ln128_11</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9247,7 +9247,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -9278,16 +9278,16 @@
 					<Obj>
 						<type>0</type>
 						<id>207</id>
-						<name>and_ln170_11</name>
+						<name>and_ln129_11</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9296,7 +9296,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -9327,16 +9327,16 @@
 					<Obj>
 						<type>0</type>
 						<id>208</id>
-						<name>select_ln169_11</name>
+						<name>select_ln128_11</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9345,7 +9345,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -9377,16 +9377,16 @@
 					<Obj>
 						<type>0</type>
 						<id>209</id>
-						<name>select_ln170_11</name>
+						<name>select_ln129_11</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9395,7 +9395,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -9429,14 +9429,14 @@
 						<id>210</id>
 						<name>shl_ln703_10</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9445,7 +9445,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -9479,14 +9479,14 @@
 						<id>211</id>
 						<name>sext_ln703_11</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9495,7 +9495,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -9527,14 +9527,14 @@
 						<id>212</id>
 						<name>packed_weights_3_lo</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9543,7 +9543,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>165</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -9573,16 +9573,16 @@
 					<Obj>
 						<type>0</type>
 						<id>213</id>
-						<name>trunc_ln167_7</name>
+						<name>trunc_ln126_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9591,7 +9591,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -9621,16 +9621,16 @@
 					<Obj>
 						<type>0</type>
 						<id>214</id>
-						<name>icmp_ln169_12</name>
+						<name>icmp_ln128_12</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9639,7 +9639,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -9672,14 +9672,14 @@
 						<id>215</id>
 						<name>input_3_0_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9688,7 +9688,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -9722,14 +9722,14 @@
 						<id>216</id>
 						<name>input_3_0_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9738,7 +9738,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -9768,16 +9768,16 @@
 					<Obj>
 						<type>0</type>
 						<id>217</id>
-						<name>icmp_ln170_12</name>
+						<name>icmp_ln129_12</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9786,7 +9786,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -9819,14 +9819,14 @@
 						<id>218</id>
 						<name>sub_ln701_12</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9835,7 +9835,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -9866,16 +9866,16 @@
 					<Obj>
 						<type>0</type>
 						<id>219</id>
-						<name>xor_ln169_12</name>
+						<name>xor_ln128_12</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9884,7 +9884,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -9915,16 +9915,16 @@
 					<Obj>
 						<type>0</type>
 						<id>220</id>
-						<name>and_ln170_12</name>
+						<name>and_ln129_12</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9933,7 +9933,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -9964,16 +9964,16 @@
 					<Obj>
 						<type>0</type>
 						<id>221</id>
-						<name>select_ln169_12</name>
+						<name>select_ln128_12</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9982,7 +9982,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -10014,16 +10014,16 @@
 					<Obj>
 						<type>0</type>
 						<id>222</id>
-						<name>select_ln170_12</name>
+						<name>select_ln129_12</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10032,7 +10032,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -10066,14 +10066,14 @@
 						<id>223</id>
 						<name>shl_ln703_11</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10082,7 +10082,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -10116,14 +10116,14 @@
 						<id>224</id>
 						<name>sext_ln703_12</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10132,7 +10132,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -10162,16 +10162,16 @@
 					<Obj>
 						<type>0</type>
 						<id>225</id>
-						<name>trunc_ln167_s</name>
+						<name>trunc_ln126_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10180,7 +10180,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -10213,16 +10213,16 @@
 					<Obj>
 						<type>0</type>
 						<id>226</id>
-						<name>icmp_ln169_13</name>
+						<name>icmp_ln128_13</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10231,7 +10231,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -10264,14 +10264,14 @@
 						<id>227</id>
 						<name>input_3_1_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10280,7 +10280,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -10314,14 +10314,14 @@
 						<id>228</id>
 						<name>input_3_1_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10330,7 +10330,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -10360,16 +10360,16 @@
 					<Obj>
 						<type>0</type>
 						<id>229</id>
-						<name>icmp_ln170_13</name>
+						<name>icmp_ln129_13</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10378,7 +10378,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -10411,14 +10411,14 @@
 						<id>230</id>
 						<name>sub_ln701_13</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10427,7 +10427,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -10458,16 +10458,16 @@
 					<Obj>
 						<type>0</type>
 						<id>231</id>
-						<name>xor_ln169_13</name>
+						<name>xor_ln128_13</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10476,7 +10476,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -10507,16 +10507,16 @@
 					<Obj>
 						<type>0</type>
 						<id>232</id>
-						<name>and_ln170_13</name>
+						<name>and_ln129_13</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10525,7 +10525,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -10556,16 +10556,16 @@
 					<Obj>
 						<type>0</type>
 						<id>233</id>
-						<name>select_ln169_13</name>
+						<name>select_ln128_13</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10574,7 +10574,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -10606,16 +10606,16 @@
 					<Obj>
 						<type>0</type>
 						<id>234</id>
-						<name>select_ln170_13</name>
+						<name>select_ln129_13</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10624,7 +10624,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -10658,14 +10658,14 @@
 						<id>235</id>
 						<name>shl_ln703_12</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10674,7 +10674,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -10708,14 +10708,14 @@
 						<id>236</id>
 						<name>sext_ln703_13</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10724,7 +10724,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -10754,16 +10754,16 @@
 					<Obj>
 						<type>0</type>
 						<id>237</id>
-						<name>trunc_ln167_10</name>
+						<name>trunc_ln126_10</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>167</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10772,7 +10772,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>167</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -10805,16 +10805,16 @@
 					<Obj>
 						<type>0</type>
 						<id>238</id>
-						<name>icmp_ln169_14</name>
+						<name>icmp_ln128_14</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10823,7 +10823,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -10856,14 +10856,14 @@
 						<id>239</id>
 						<name>input_3_2_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10872,7 +10872,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -10906,14 +10906,14 @@
 						<id>240</id>
 						<name>input_3_2_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10922,7 +10922,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -10952,16 +10952,16 @@
 					<Obj>
 						<type>0</type>
 						<id>241</id>
-						<name>icmp_ln170_14</name>
+						<name>icmp_ln129_14</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10970,7 +10970,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -11003,14 +11003,14 @@
 						<id>242</id>
 						<name>sub_ln701_14</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11019,7 +11019,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -11050,16 +11050,16 @@
 					<Obj>
 						<type>0</type>
 						<id>243</id>
-						<name>xor_ln169_14</name>
+						<name>xor_ln128_14</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11068,7 +11068,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -11099,16 +11099,16 @@
 					<Obj>
 						<type>0</type>
 						<id>244</id>
-						<name>and_ln170_14</name>
+						<name>and_ln129_14</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11117,7 +11117,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -11148,16 +11148,16 @@
 					<Obj>
 						<type>0</type>
 						<id>245</id>
-						<name>select_ln169_14</name>
+						<name>select_ln128_14</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11166,7 +11166,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -11198,16 +11198,16 @@
 					<Obj>
 						<type>0</type>
 						<id>246</id>
-						<name>select_ln170_14</name>
+						<name>select_ln129_14</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11216,7 +11216,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -11250,14 +11250,14 @@
 						<id>247</id>
 						<name>shl_ln703_13</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11266,7 +11266,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -11300,14 +11300,14 @@
 						<id>248</id>
 						<name>sext_ln703_14</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11316,7 +11316,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -11346,16 +11346,16 @@
 					<Obj>
 						<type>0</type>
 						<id>249</id>
-						<name>trunc_ln169_3</name>
+						<name>trunc_ln128_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11364,7 +11364,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -11397,16 +11397,16 @@
 					<Obj>
 						<type>0</type>
 						<id>250</id>
-						<name>icmp_ln169_15</name>
+						<name>icmp_ln128_15</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11415,7 +11415,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -11448,14 +11448,14 @@
 						<id>251</id>
 						<name>input_3_3_0_V_add</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11464,7 +11464,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -11498,14 +11498,14 @@
 						<id>252</id>
 						<name>input_3_3_0_V_loa</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11514,7 +11514,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -11544,16 +11544,16 @@
 					<Obj>
 						<type>0</type>
 						<id>253</id>
-						<name>icmp_ln170_15</name>
+						<name>icmp_ln129_15</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11562,7 +11562,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -11595,14 +11595,14 @@
 						<id>254</id>
 						<name>sub_ln701_15</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11611,7 +11611,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -11642,16 +11642,16 @@
 					<Obj>
 						<type>0</type>
 						<id>255</id>
-						<name>xor_ln169_15</name>
+						<name>xor_ln128_15</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11660,7 +11660,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -11691,16 +11691,16 @@
 					<Obj>
 						<type>0</type>
 						<id>256</id>
-						<name>and_ln170_15</name>
+						<name>and_ln129_15</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11709,7 +11709,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -11740,16 +11740,16 @@
 					<Obj>
 						<type>0</type>
 						<id>257</id>
-						<name>select_ln169_15</name>
+						<name>select_ln128_15</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11758,7 +11758,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>169</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -11790,16 +11790,16 @@
 					<Obj>
 						<type>0</type>
 						<id>258</id>
-						<name>select_ln170_15</name>
+						<name>select_ln129_15</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>170</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>129</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11808,7 +11808,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>170</second>
+										<second>129</second>
 									</item>
 								</second>
 							</item>
@@ -11842,14 +11842,14 @@
 						<id>259</id>
 						<name>shl_ln703_14</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11858,7 +11858,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -11892,14 +11892,14 @@
 						<id>260</id>
 						<name>sext_ln703_15</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11908,7 +11908,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -11940,14 +11940,14 @@
 						<id>261</id>
 						<name>add_ln703</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11956,7 +11956,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -11989,14 +11989,14 @@
 						<id>262</id>
 						<name>add_ln703_27</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12005,7 +12005,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12038,14 +12038,14 @@
 						<id>263</id>
 						<name>sext_ln703_16</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12054,7 +12054,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12086,14 +12086,14 @@
 						<id>264</id>
 						<name>add_ln703_28</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12102,7 +12102,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12135,14 +12135,14 @@
 						<id>265</id>
 						<name>add_ln703_29</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12151,7 +12151,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12184,14 +12184,14 @@
 						<id>266</id>
 						<name>sext_ln703_17</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12200,7 +12200,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12232,14 +12232,14 @@
 						<id>267</id>
 						<name>add_ln703_30</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12248,7 +12248,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12281,14 +12281,14 @@
 						<id>268</id>
 						<name>sext_ln703_18</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12297,7 +12297,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12329,14 +12329,14 @@
 						<id>269</id>
 						<name>add_ln703_31</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12345,7 +12345,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12378,14 +12378,14 @@
 						<id>270</id>
 						<name>sext_ln703_19</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12394,7 +12394,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12426,14 +12426,14 @@
 						<id>271</id>
 						<name>add_ln703_32</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12442,7 +12442,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12475,14 +12475,14 @@
 						<id>272</id>
 						<name>add_ln703_33</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12491,7 +12491,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12524,14 +12524,14 @@
 						<id>273</id>
 						<name>sext_ln703_20</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12540,7 +12540,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12572,14 +12572,14 @@
 						<id>274</id>
 						<name>add_ln703_34</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12588,7 +12588,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12621,14 +12621,14 @@
 						<id>275</id>
 						<name>sext_ln703_21</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12637,7 +12637,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12669,14 +12669,14 @@
 						<id>276</id>
 						<name>add_ln703_35</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12685,7 +12685,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12718,14 +12718,14 @@
 						<id>277</id>
 						<name>sext_ln703_22</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12734,7 +12734,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12766,14 +12766,14 @@
 						<id>278</id>
 						<name>add_ln703_36</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12782,7 +12782,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12815,14 +12815,14 @@
 						<id>279</id>
 						<name>sext_ln703_23</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12831,7 +12831,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12863,14 +12863,14 @@
 						<id>280</id>
 						<name>add_ln703_37</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12879,7 +12879,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12912,14 +12912,14 @@
 						<id>281</id>
 						<name>sext_ln703_24</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12928,7 +12928,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -12960,14 +12960,14 @@
 						<id>282</id>
 						<name>add_ln703_38</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12976,7 +12976,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -13009,14 +13009,14 @@
 						<id>283</id>
 						<name>sext_ln703_25</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13025,7 +13025,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -13057,14 +13057,14 @@
 						<id>284</id>
 						<name>add_ln703_39</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13073,7 +13073,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -13106,14 +13106,14 @@
 						<id>285</id>
 						<name>sext_ln703_26</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13122,7 +13122,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -13154,14 +13154,14 @@
 						<id>286</id>
 						<name>add_ln703_40</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13170,7 +13170,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -13203,14 +13203,14 @@
 						<id>287</id>
 						<name>sext_ln703_27</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13219,7 +13219,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -13251,14 +13251,14 @@
 						<id>288</id>
 						<name>add_ln703_41</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13267,7 +13267,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -13298,16 +13298,16 @@
 					<Obj>
 						<type>0</type>
 						<id>289</id>
-						<name>output_0_V_addr_write_ln171</name>
+						<name>output_0_V_addr_write_ln130</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>171</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13316,7 +13316,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>171</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -13349,16 +13349,16 @@
 					<Obj>
 						<type>0</type>
 						<id>291</id>
-						<name>add_ln162</name>
+						<name>add_ln121</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13367,7 +13367,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>162</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -13398,16 +13398,16 @@
 					<Obj>
 						<type>0</type>
 						<id>292</id>
-						<name>icmp_ln162_1</name>
+						<name>icmp_ln121_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13416,7 +13416,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>162</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -13447,16 +13447,16 @@
 					<Obj>
 						<type>0</type>
 						<id>293</id>
-						<name>_ln162</name>
+						<name>_ln121</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>121</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13465,7 +13465,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>162</second>
+										<second>121</second>
 									</item>
 								</second>
 							</item>
@@ -13499,14 +13499,14 @@
 						<id>295</id>
 						<name>shl_ln2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>175</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13515,7 +13515,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>175</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -13549,14 +13549,14 @@
 						<id>296</id>
 						<name>sdiv_ln1148</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>175</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13565,7 +13565,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>175</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -13598,14 +13598,14 @@
 						<id>297</id>
 						<name>trunc_ln703</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>175</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13614,7 +13614,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>175</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -13644,16 +13644,16 @@
 					<Obj>
 						<type>0</type>
 						<id>298</id>
-						<name>output_0_V_addr_write_ln175</name>
+						<name>output_0_V_addr_write_ln134</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>175</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13662,7 +13662,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>175</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -13763,16 +13763,16 @@
 					<Obj>
 						<type>0</type>
 						<id>304</id>
-						<name>_ln178</name>
+						<name>_ln137</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>178</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>137</lineNumber>
 						<contextFuncName>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13781,7 +13781,7 @@
 											<first>./layer.h</first>
 											<second>linear_forward_no_mul&amp;lt;1, 96, 96&amp;gt;</second>
 										</first>
-										<second>178</second>
+										<second>137</second>
 									</item>
 								</second>
 							</item>

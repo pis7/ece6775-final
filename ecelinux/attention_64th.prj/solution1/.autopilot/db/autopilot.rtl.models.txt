@@ -29,7 +29,6 @@ attention_attn_weJfO
 dut_input_0_V
 sqrt_fixed_42_26_s
 rms_norm_24_s
-init_3d_mem
 quantize_activation
 init_2d_mem
 linear_forward_no_mu

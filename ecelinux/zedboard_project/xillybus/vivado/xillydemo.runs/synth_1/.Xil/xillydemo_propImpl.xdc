@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:/home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_processing_system7_0_0/vivado_system_processing_system7_0_0.xdc rfile:../../../../../vivado-essentials/vivado_system/ip/vivado_system_processing_system7_0_0/vivado_system_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:xillybus_ins/system_i/vivado_system_i/processing_system7_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc rfile:../../../../../vivado-essentials/xillydemo.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_processing_system7_0_0/vivado_system_processing_system7_0_0.xdc rfile:../../../../../vivado-essentials/vivado_system/ip/vivado_system_processing_system7_0_0/vivado_system_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:xillybus_ins/system_i/vivado_system_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc rfile:../../../../../vivado-essentials/xillydemo.xdc id:2} [current_design]
 current_instance xillybus_ins/system_i/vivado_system_i/processing_system7_0/inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_1 0.3

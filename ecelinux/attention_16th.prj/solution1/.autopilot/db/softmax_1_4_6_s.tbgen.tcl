@@ -92,9 +92,9 @@ set RtlHierarchyInfo {[
 	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_exp_40_24_s_fu_159.f_x_msb_3_table_V_U", "Parent" : "1"},
 	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_exp_40_24_s_fu_159.f_x_msb_2_table_V_U", "Parent" : "1"},
 	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_exp_40_24_s_fu_159.exp_x_msb_1_table_V_U", "Parent" : "1"},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_exp_40_24_s_fu_159.dut_mul_50ns_47nspcA_U91", "Parent" : "1"},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_exp_40_24_s_fu_159.dut_mul_50ns_50nsqcK_U92", "Parent" : "1"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_sdiv_56ns_40srcU_U99", "Parent" : "0"}]}
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_exp_40_24_s_fu_159.dut_mul_50ns_47nspcA_U87", "Parent" : "1"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_exp_40_24_s_fu_159.dut_mul_50ns_50nsqcK_U88", "Parent" : "1"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_sdiv_56ns_40srcU_U95", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

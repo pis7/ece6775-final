@@ -111,7 +111,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_states_1_0_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "output_states_2_0_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "output_states_3_0_V", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_udiv_40ns_40neOg_U14", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_udiv_40ns_40neOg_U10", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

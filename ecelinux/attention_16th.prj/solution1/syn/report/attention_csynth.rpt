@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'attention'
 ================================================================
-* Date:           Sun Dec  1 01:00:15 2024
+* Date:           Tue Dec  3 18:13:29 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_16th.prj
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
     |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
     +---------+---------+----------+----------+-------+-------+---------+
-    |    21970|    21970| 0.220 ms | 0.220 ms |  21970|  21970|   none  |
+    |    19042|    19042| 0.190 ms | 0.190 ms |  19042|  19042|   none  |
     +---------+---------+----------+----------+-------+-------+---------+
 
     + Detail: 
@@ -38,21 +38,20 @@
         |                                 |                      |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
         |             Instance            |        Module        |   min   |   max   |    min    |    max    |  min |  max |   Type  |
         +---------------------------------+----------------------+---------+---------+-----------+-----------+------+------+---------+
-        |grp_linear_forward_no_mu_fu_429  |linear_forward_no_mu  |     1807|     1807| 18.070 us | 18.070 us |  1807|  1807|   none  |
-        |grp_rms_norm_96_s_fu_477         |rms_norm_96_s         |     1308|     1308| 13.080 us | 13.080 us |  1308|  1308|   none  |
-        |grp_softmax_1_4_6_s_fu_486       |softmax_1_4_6_s       |     1765|     1765| 17.650 us | 17.650 us |  1765|  1765|   none  |
-        |grp_quantize_activation_fu_497   |quantize_activation   |      488|      488|  4.880 us |  4.880 us |   488|   488|   none  |
-        |grp_apply_rotary_pos_emb_fu_519  |apply_rotary_pos_emb  |      546|      546|  5.460 us |  5.460 us |   546|   546|   none  |
-        |grp_GEMM_3D_float_1_fu_531       |GEMM_3D_float_1       |     2937|     2937| 29.370 us | 29.370 us |  2937|  2937|   none  |
-        |grp_GEMM_3D_float_fu_538         |GEMM_3D_float         |     3081|     3081| 30.810 us | 30.810 us |  3081|  3081|   none  |
-        |grp_cache_update_1_fu_545        |cache_update_1        |     1209|     1209| 12.090 us | 12.090 us |  1209|  1209|   none  |
-        |grp_cache_update_fu_553          |cache_update          |     1209|     1209| 12.090 us | 12.090 us |  1209|  1209|   none  |
-        |grp_transpose_last_two_d_fu_561  |transpose_last_two_d  |     1209|     1209| 12.090 us | 12.090 us |  1209|  1209|   none  |
-        |grp_reshape_2D_to_3D_fu_567      |reshape_2D_to_3D      |      201|      201|  2.010 us |  2.010 us |   201|   201|   none  |
-        |grp_init_3d_mem_fu_573           |init_3d_mem           |      145|      145|  1.450 us |  1.450 us |   145|   145|   none  |
-        |grp_init_2d_mem_fu_609           |init_2d_mem           |       97|       97|  0.970 us |  0.970 us |    97|    97|   none  |
-        |grp_init_2d_mem_fu_615           |init_2d_mem           |       97|       97|  0.970 us |  0.970 us |    97|    97|   none  |
-        |grp_init_2d_mem_fu_621           |init_2d_mem           |       97|       97|  0.970 us |  0.970 us |    97|    97|   none  |
+        |grp_linear_forward_no_mu_fu_451  |linear_forward_no_mu  |     1807|     1807| 18.070 us | 18.070 us |  1807|  1807|   none  |
+        |grp_rms_norm_96_s_fu_499         |rms_norm_96_s         |     1308|     1308| 13.080 us | 13.080 us |  1308|  1308|   none  |
+        |grp_softmax_1_4_6_s_fu_508       |softmax_1_4_6_s       |     1765|     1765| 17.650 us | 17.650 us |  1765|  1765|   none  |
+        |grp_quantize_activation_fu_519   |quantize_activation   |      488|      488|  4.880 us |  4.880 us |   488|   488|   none  |
+        |grp_apply_rotary_pos_emb_fu_541  |apply_rotary_pos_emb  |      834|      834|  8.340 us |  8.340 us |   834|   834|   none  |
+        |grp_GEMM_3D_float_fu_556         |GEMM_3D_float         |     1737|     1737| 17.370 us | 17.370 us |  1737|  1737|   none  |
+        |grp_GEMM_3D_float_1_fu_563       |GEMM_3D_float_1       |     1065|     1065| 10.650 us | 10.650 us |  1065|  1065|   none  |
+        |grp_cache_update_1_fu_576        |cache_update_1        |     1209|     1209| 12.090 us | 12.090 us |  1209|  1209|   none  |
+        |grp_cache_update_fu_584          |cache_update          |     1209|     1209| 12.090 us | 12.090 us |  1209|  1209|   none  |
+        |grp_transpose_last_two_d_fu_592  |transpose_last_two_d  |     1209|     1209| 12.090 us | 12.090 us |  1209|  1209|   none  |
+        |grp_reshape_2D_to_3D_fu_601      |reshape_2D_to_3D      |      201|      201|  2.010 us |  2.010 us |   201|   201|   none  |
+        |grp_init_2d_mem_fu_607           |init_2d_mem           |       97|       97|  0.970 us |  0.970 us |    97|    97|   none  |
+        |grp_init_2d_mem_fu_613           |init_2d_mem           |       97|       97|  0.970 us |  0.970 us |    97|    97|   none  |
+        |grp_init_2d_mem_fu_619           |init_2d_mem           |       97|       97|  0.970 us |  0.970 us |    97|    97|   none  |
         +---------------------------------+----------------------+---------+---------+-----------+-----------+------+------+---------+
 
         * Loop: 
@@ -76,18 +75,18 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
 +-----------------+---------+-------+--------+-------+-----+
 |DSP              |        -|      -|       -|      -|    -|
-|Expression       |        -|      -|       0|    436|    -|
+|Expression       |        -|      -|       0|    434|    -|
 |FIFO             |        -|      -|       -|      -|    -|
-|Instance         |       22|     92|   19237|  22858|    0|
-|Memory           |       55|      -|     592|     47|    0|
-|Multiplexer      |        -|      -|       -|   4126|    -|
-|Register         |        -|      -|     378|      -|    -|
+|Instance         |       22|    122|   20116|  23562|    0|
+|Memory           |       58|      -|     912|    107|    0|
+|Multiplexer      |        -|      -|       -|   3298|    -|
+|Register         |        -|      -|     377|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |       77|     92|   20207|  27467|    0|
+|Total            |       80|    122|   21405|  27401|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
-|Utilization (%)  |       27|     41|      18|     51|    0|
+|Utilization (%)  |       28|     55|      20|     51|    0|
 +-----------------+---------+-------+--------+-------+-----+
 
 + Detail: 
@@ -95,24 +94,23 @@
     +---------------------------------+----------------------+---------+-------+------+------+-----+
     |             Instance            |        Module        | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
     +---------------------------------+----------------------+---------+-------+------+------+-----+
-    |grp_GEMM_3D_float_fu_538         |GEMM_3D_float         |        0|      5|   249|   322|    0|
-    |grp_GEMM_3D_float_1_fu_531       |GEMM_3D_float_1       |        0|      5|   247|   321|    0|
-    |grp_apply_rotary_pos_emb_fu_519  |apply_rotary_pos_emb  |        6|      8|   660|   704|    0|
-    |grp_cache_update_fu_553          |cache_update          |        1|      0|    72|   321|    0|
-    |grp_cache_update_1_fu_545        |cache_update_1        |        6|      0|    75|   327|    0|
-    |dut_mul_58ns_56s_bun_U105        |dut_mul_58ns_56s_bun  |        0|     10|   230|   165|    0|
-    |grp_init_2d_mem_fu_609           |init_2d_mem           |        0|      0|     9|    50|    0|
-    |grp_init_2d_mem_fu_615           |init_2d_mem           |        0|      0|     9|    50|    0|
-    |grp_init_2d_mem_fu_621           |init_2d_mem           |        0|      0|     9|    50|    0|
-    |grp_init_3d_mem_fu_573           |init_3d_mem           |        0|      0|    66|    86|    0|
-    |grp_linear_forward_no_mu_fu_429  |linear_forward_no_mu  |        0|      3|  9308|  8217|    0|
-    |grp_quantize_activation_fu_497   |quantize_activation   |        0|     20|  1205|  1933|    0|
-    |grp_reshape_2D_to_3D_fu_567      |reshape_2D_to_3D      |        0|      0|    38|   152|    0|
-    |grp_rms_norm_96_s_fu_477         |rms_norm_96_s         |        0|     23|  4841|  8137|    0|
-    |grp_softmax_1_4_6_s_fu_486       |softmax_1_4_6_s       |        9|     18|  2156|  1788|    0|
-    |grp_transpose_last_two_d_fu_561  |transpose_last_two_d  |        0|      0|    63|   235|    0|
+    |grp_GEMM_3D_float_fu_556         |GEMM_3D_float         |        0|     20|   630|   798|    0|
+    |grp_GEMM_3D_float_1_fu_563       |GEMM_3D_float_1       |        0|     20|   733|   610|    0|
+    |grp_apply_rotary_pos_emb_fu_541  |apply_rotary_pos_emb  |        6|      8|   745|   743|    0|
+    |grp_cache_update_fu_584          |cache_update          |        1|      0|    72|   321|    0|
+    |grp_cache_update_1_fu_576        |cache_update_1        |        6|      0|    75|   327|    0|
+    |dut_mul_58ns_56s_bAo_U101        |dut_mul_58ns_56s_bAo  |        0|     10|   230|   165|    0|
+    |grp_init_2d_mem_fu_607           |init_2d_mem           |        0|      0|     9|    50|    0|
+    |grp_init_2d_mem_fu_613           |init_2d_mem           |        0|      0|     9|    50|    0|
+    |grp_init_2d_mem_fu_619           |init_2d_mem           |        0|      0|     9|    50|    0|
+    |grp_linear_forward_no_mu_fu_451  |linear_forward_no_mu  |        0|      3|  9308|  8217|    0|
+    |grp_quantize_activation_fu_519   |quantize_activation   |        0|     20|  1205|  1933|    0|
+    |grp_reshape_2D_to_3D_fu_601      |reshape_2D_to_3D      |        0|      0|    38|   152|    0|
+    |grp_rms_norm_96_s_fu_499         |rms_norm_96_s         |        0|     23|  4841|  8137|    0|
+    |grp_softmax_1_4_6_s_fu_508       |softmax_1_4_6_s       |        9|     18|  2156|  1788|    0|
+    |grp_transpose_last_two_d_fu_592  |transpose_last_two_d  |        0|      0|    56|   221|    0|
     +---------------------------------+----------------------+---------+-------+------+------+-----+
-    |Total                            |                      |       22|     92| 19237| 22858|    0|
+    |Total                            |                      |       22|    122| 20116| 23562|    0|
     +---------------------------------+----------------------+---------+-------+------+------+-----+
 
     * DSP48E: 
@@ -123,13 +121,14 @@
     |           Memory          |        Module        | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +---------------------------+----------------------+---------+----+----+-----+------+-----+------+-------------+
     |v_proj_0_V_U               |apply_rotary_pos_ibs  |        2|   0|   0|    0|    96|   40|     1|         3840|
-    |q_embed_0_V_U              |apply_rotary_pos_ibs  |        2|   0|   0|    0|    96|   40|     1|         3840|
     |k_embed_0_V_U              |apply_rotary_pos_ibs  |        2|   0|   0|    0|    96|   40|     1|         3840|
     |attn_output_0_U            |apply_rotary_pos_ibs  |        2|   0|   0|    0|    96|   40|     1|         3840|
-    |attn_weights_0_V_U         |attention_attn_webbk  |        0|  80|  15|    0|    24|   40|     1|          960|
-    |k_cache_upd_V_U            |attention_k_cache8jQ  |        3|   0|   0|    0|   576|   40|     1|        23040|
-    |v_cache_upd_V_U            |attention_k_cache8jQ  |        3|   0|   0|    0|   576|   40|     1|        23040|
-    |k_proj_transposed_V_U      |attention_k_cache8jQ  |        3|   0|   0|    0|   576|   40|     1|        23040|
+    |attn_weights_0_V_U         |attention_attn_webhl  |        0|  80|  15|    0|    24|   40|     1|          960|
+    |k_cache_upd_V_U            |attention_k_cachebbk  |        3|   0|   0|    0|   576|   40|     1|        23040|
+    |k_proj_transposed_0_U      |attention_k_proj_bdk  |        2|   0|   0|    0|   144|   40|     1|         5760|
+    |k_proj_transposed_1_U      |attention_k_proj_bdk  |        2|   0|   0|    0|   144|   40|     1|         5760|
+    |k_proj_transposed_2_U      |attention_k_proj_bdk  |        2|   0|   0|    0|   144|   40|     1|         5760|
+    |k_proj_transposed_3_U      |attention_k_proj_bdk  |        2|   0|   0|    0|   144|   40|     1|         5760|
     |k_weights_3_U              |attention_k_weighAem  |        1|   0|   0|    0|   576|    8|     1|         4608|
     |k_weights_0_U              |attention_k_weighxdS  |        1|   0|   0|    0|   576|    8|     1|         4608|
     |k_weights_1_U              |attention_k_weighyd2  |        1|   0|   0|    0|   576|    8|     1|         4608|
@@ -140,6 +139,10 @@
     |o_weights_1_U              |attention_o_weighHfu  |        1|   0|   0|    0|   576|    8|     1|         4608|
     |o_weights_2_U              |attention_o_weighIfE  |        1|   0|   0|    0|   576|    8|     1|         4608|
     |o_weights_3_U              |attention_o_weighJfO  |        1|   0|   0|    0|   576|    8|     1|         4608|
+    |q_embed_0_0_V_U            |attention_q_embed6jw  |        0|  80|  15|    0|    24|   40|     1|          960|
+    |q_embed_1_0_V_U            |attention_q_embed6jw  |        0|  80|  15|    0|    24|   40|     1|          960|
+    |q_embed_2_0_V_U            |attention_q_embed6jw  |        0|  80|  15|    0|    24|   40|     1|          960|
+    |q_embed_3_0_V_U            |attention_q_embed6jw  |        0|  80|  15|    0|    24|   40|     1|          960|
     |q_proj_re_0_V_U            |attention_q_proj_0iy  |        3|   0|   0|    0|    96|   40|     1|         3840|
     |k_proj_re_0_V_U            |attention_q_proj_0iy  |        3|   0|   0|    0|    96|   40|     1|         3840|
     |v_proj_re_0_V_U            |attention_q_proj_0iy  |        3|   0|   0|    0|    96|   40|     1|         3840|
@@ -182,12 +185,13 @@
     |quantized_final_outp_13_U  |attention_quantizKfY  |        0|  16|   1|    0|     6|    8|     1|           48|
     |quantized_final_outp_14_U  |attention_quantizKfY  |        0|  16|   1|    0|     6|    8|     1|           48|
     |quantized_final_outp_15_U  |attention_quantizKfY  |        0|  16|   1|    0|     6|    8|     1|           48|
+    |v_cache_upd_V_U            |attention_v_cachebck  |        3|   0|   0|    0|   576|   40|     1|        23040|
     |v_weights_0_U              |attention_v_weighBew  |        1|   0|   0|    0|   576|    8|     1|         4608|
     |v_weights_1_U              |attention_v_weighCeG  |        1|   0|   0|    0|   576|    8|     1|         4608|
     |v_weights_2_U              |attention_v_weighDeQ  |        1|   0|   0|    0|   576|    8|     1|         4608|
     |v_weights_3_U              |attention_v_weighEe0  |        1|   0|   0|    0|   576|    8|     1|         4608|
     +---------------------------+----------------------+---------+----+----+-----+------+-----+------+-------------+
-    |Total                      |                      |       55| 592|  47|    0| 12312| 1024|    64|       191424|
+    |Total                      |                      |       58| 912| 107|    0| 12312| 1264|    70|       191424|
     +---------------------------+----------------------+---------+----+----+-----+------+-----+------+-------------+
 
     * FIFO: 
@@ -197,32 +201,31 @@
     +----------------------------------+----------+-------+---+-----+------------+------------+
     |           Variable Name          | Operation| DSP48E| FF| LUT | Bitwidth P0| Bitwidth P1|
     +----------------------------------+----------+-------+---+-----+------------+------------+
-    |add_ln1265_fu_687_p2              |     +    |      0|  0|   15|           6|           6|
-    |add_ln180_fu_677_p2               |     +    |      0|  0|   12|           3|           1|
-    |add_ln203_fu_866_p2               |     +    |      0|  0|   15|           8|           8|
-    |add_ln211_fu_779_p2               |     +    |      0|  0|   12|           3|           1|
-    |add_ln212_fu_855_p2               |     +    |      0|  0|   15|           5|           1|
-    |add_ln213_fu_861_p2               |     +    |      0|  0|   15|           8|           8|
-    |h_fu_639_p2                       |     +    |      0|  0|   12|           3|           1|
-    |sub_ln1148_fu_732_p2              |     -    |      0|  0|  120|           1|         113|
-    |sub_ln1265_fu_665_p2              |     -    |      0|  0|   15|           6|           6|
-    |sub_ln203_fu_839_p2               |     -    |      0|  0|   15|           8|           8|
-    |sub_ln213_fu_813_p2               |     -    |      0|  0|   15|           8|           8|
-    |sub_ln703_fu_756_p2               |     -    |      0|  0|   47|           1|          40|
-    |icmp_ln178_fu_633_p2              |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln180_fu_671_p2              |   icmp   |      0|  0|    9|           3|           3|
-    |icmp_ln211_fu_773_p2              |   icmp   |      0|  0|    9|           3|           4|
-    |icmp_ln212_fu_849_p2              |   icmp   |      0|  0|   11|           5|           5|
+    |add_ln1265_fu_685_p2              |     +    |      0|  0|   15|           6|           6|
+    |add_ln178_fu_675_p2               |     +    |      0|  0|   12|           3|           1|
+    |add_ln203_fu_864_p2               |     +    |      0|  0|   15|           8|           8|
+    |add_ln208_fu_777_p2               |     +    |      0|  0|   12|           3|           1|
+    |add_ln209_fu_853_p2               |     +    |      0|  0|   15|           5|           1|
+    |add_ln210_fu_859_p2               |     +    |      0|  0|   15|           8|           8|
+    |h_fu_637_p2                       |     +    |      0|  0|   12|           3|           1|
+    |sub_ln1148_fu_730_p2              |     -    |      0|  0|  120|           1|         113|
+    |sub_ln1265_fu_663_p2              |     -    |      0|  0|   15|           6|           6|
+    |sub_ln203_fu_837_p2               |     -    |      0|  0|   15|           8|           8|
+    |sub_ln210_fu_811_p2               |     -    |      0|  0|   15|           8|           8|
+    |sub_ln703_fu_754_p2               |     -    |      0|  0|   47|           1|          40|
+    |icmp_ln176_fu_631_p2              |   icmp   |      0|  0|    9|           3|           4|
+    |icmp_ln178_fu_669_p2              |   icmp   |      0|  0|    9|           3|           3|
+    |icmp_ln208_fu_771_p2              |   icmp   |      0|  0|    9|           3|           4|
+    |icmp_ln209_fu_847_p2              |   icmp   |      0|  0|   11|           5|           5|
     |ap_block_state10_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
     |ap_block_state12_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
     |ap_block_state14_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
-    |ap_block_state27_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
     |ap_block_state2_on_subcall_done   |    or    |      0|  0|    2|           1|           1|
     |ap_block_state33_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
-    |select_ln1148_2_fu_765_p3         |  select  |      0|  0|   40|           1|          40|
-    |select_ln1148_fu_747_p3           |  select  |      0|  0|   38|           1|          38|
+    |select_ln1148_2_fu_763_p3         |  select  |      0|  0|   40|           1|          40|
+    |select_ln1148_fu_745_p3           |  select  |      0|  0|   38|           1|          38|
     +----------------------------------+----------+-------+---+-----+------------+------------+
-    |Total                             |          |      0|  0|  436|          82|         301|
+    |Total                             |          |      0|  0|  434|          81|         300|
     +----------------------------------+----------+-------+---+-----+------------+------------+
 
     * Multiplexer: 
@@ -233,52 +236,53 @@
     |attn_output_0_address0                               |   15|          3|    7|         21|
     |attn_output_0_ce0                                    |   15|          3|    1|          3|
     |attn_output_0_we0                                    |    9|          2|    1|          2|
-    |attn_output_2D_0_V_address0                          |   27|          5|    7|         35|
-    |attn_output_2D_0_V_ce0                               |   27|          5|    1|          5|
+    |attn_output_2D_0_V_address0                          |   21|          4|    7|         28|
+    |attn_output_2D_0_V_ce0                               |   21|          4|    1|          4|
     |attn_output_2D_0_V_ce1                               |    9|          2|    1|          2|
-    |attn_output_2D_0_V_d0                                |   21|          4|   40|        160|
-    |attn_output_2D_0_V_we0                               |   21|          4|    1|          4|
+    |attn_output_2D_0_V_d0                                |   15|          3|   40|        120|
+    |attn_output_2D_0_V_we0                               |   15|          3|    1|          3|
     |attn_weights_0_V_address0                            |   33|          6|    5|         30|
     |attn_weights_0_V_ce0                                 |   27|          5|    1|          5|
+    |attn_weights_0_V_ce1                                 |    9|          2|    1|          2|
     |attn_weights_0_V_d0                                  |   21|          4|   40|        160|
     |attn_weights_0_V_we0                                 |   21|          4|    1|          4|
-    |d107_0_0_reg_418                                     |    9|          2|    5|         10|
-    |d_0_0_reg_396                                        |    9|          2|    3|          6|
+    |d107_0_0_reg_440                                     |    9|          2|    5|         10|
+    |d_0_0_reg_418                                        |    9|          2|    3|          6|
     |final_output_0_V_address0                            |   15|          3|    7|         21|
     |final_output_0_V_ce0                                 |   15|          3|    1|          3|
     |final_output_0_V_ce1                                 |    9|          2|    1|          2|
     |final_output_0_V_d0                                  |   15|          3|   40|        120|
     |final_output_0_V_we0                                 |   15|          3|    1|          3|
     |final_output_0_V_we1                                 |    9|          2|    1|          2|
-    |grp_linear_forward_no_mu_fu_429_input_0_0_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_0_1_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_0_2_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_0_3_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_1_0_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_1_1_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_1_2_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_1_3_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_2_0_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_2_1_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_2_2_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_2_3_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_3_0_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_3_1_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_3_2_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_input_3_3_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_429_output_0_V_q0        |   27|          5|   40|        200|
-    |grp_linear_forward_no_mu_fu_429_packed_weights_0_q0  |   27|          5|    8|         40|
-    |grp_linear_forward_no_mu_fu_429_packed_weights_1_q0  |   27|          5|    8|         40|
-    |grp_linear_forward_no_mu_fu_429_packed_weights_2_q0  |   27|          5|    8|         40|
-    |grp_linear_forward_no_mu_fu_429_packed_weights_3_q0  |   27|          5|    8|         40|
-    |grp_linear_forward_no_mu_fu_429_w_scale_V            |   27|          5|   22|        110|
-    |grp_quantize_activation_fu_497_input_0_V_q0          |   15|          3|   40|        120|
-    |grp_quantize_activation_fu_497_input_0_V_q1          |   15|          3|   40|        120|
-    |grp_reshape_2D_to_3D_fu_567_input_0_V_q0             |   21|          4|   40|        160|
-    |grp_rms_norm_96_s_fu_477_input_0_V_q0                |   15|          3|   40|        120|
-    |grp_rms_norm_96_s_fu_477_weight_V_q0                 |   15|          3|   40|        120|
-    |h106_0_0_reg_407                                     |    9|          2|    3|          6|
-    |h_0_reg_385                                          |    9|          2|    3|          6|
+    |grp_linear_forward_no_mu_fu_451_input_0_0_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_0_1_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_0_2_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_0_3_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_1_0_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_1_1_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_1_2_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_1_3_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_2_0_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_2_1_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_2_2_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_2_3_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_3_0_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_3_1_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_3_2_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_input_3_3_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_451_output_0_V_q0        |   27|          5|   40|        200|
+    |grp_linear_forward_no_mu_fu_451_packed_weights_0_q0  |   27|          5|    8|         40|
+    |grp_linear_forward_no_mu_fu_451_packed_weights_1_q0  |   27|          5|    8|         40|
+    |grp_linear_forward_no_mu_fu_451_packed_weights_2_q0  |   27|          5|    8|         40|
+    |grp_linear_forward_no_mu_fu_451_packed_weights_3_q0  |   27|          5|    8|         40|
+    |grp_linear_forward_no_mu_fu_451_w_scale_V            |   27|          5|   22|        110|
+    |grp_quantize_activation_fu_519_input_0_V_q0          |   15|          3|   40|        120|
+    |grp_quantize_activation_fu_519_input_0_V_q1          |   15|          3|   40|        120|
+    |grp_reshape_2D_to_3D_fu_601_input_0_V_q0             |   21|          4|   40|        160|
+    |grp_rms_norm_96_s_fu_499_input_0_V_q0                |   15|          3|   40|        120|
+    |grp_rms_norm_96_s_fu_499_weight_V_q0                 |   15|          3|   40|        120|
+    |h106_0_0_reg_429                                     |    9|          2|    3|          6|
+    |h_0_reg_407                                          |    9|          2|    3|          6|
     |hidden_states_0_V_address0                           |   15|          3|    7|         21|
     |hidden_states_0_V_ce0                                |   15|          3|    1|          3|
     |hidden_states_0_V_ce1                                |    9|          2|    1|          2|
@@ -299,9 +303,18 @@
     |k_proj_re_0_V_d0                                     |   15|          3|   40|        120|
     |k_proj_re_0_V_we0                                    |   15|          3|    1|          3|
     |k_proj_re_0_V_we1                                    |    9|          2|    1|          2|
-    |k_proj_transposed_V_address0                         |   15|          3|   10|         30|
-    |k_proj_transposed_V_ce0                              |   15|          3|    1|          3|
-    |k_proj_transposed_V_we0                              |    9|          2|    1|          2|
+    |k_proj_transposed_0_address0                         |   15|          3|    8|         24|
+    |k_proj_transposed_0_ce0                              |   15|          3|    1|          3|
+    |k_proj_transposed_0_we0                              |    9|          2|    1|          2|
+    |k_proj_transposed_1_address0                         |   15|          3|    8|         24|
+    |k_proj_transposed_1_ce0                              |   15|          3|    1|          3|
+    |k_proj_transposed_1_we0                              |    9|          2|    1|          2|
+    |k_proj_transposed_2_address0                         |   15|          3|    8|         24|
+    |k_proj_transposed_2_ce0                              |   15|          3|    1|          3|
+    |k_proj_transposed_2_we0                              |    9|          2|    1|          2|
+    |k_proj_transposed_3_address0                         |   15|          3|    8|         24|
+    |k_proj_transposed_3_ce0                              |   15|          3|    1|          3|
+    |k_proj_transposed_3_we0                              |    9|          2|    1|          2|
     |k_weights_0_ce0                                      |    9|          2|    1|          2|
     |k_weights_1_ce0                                      |    9|          2|    1|          2|
     |k_weights_2_ce0                                      |    9|          2|    1|          2|
@@ -312,9 +325,18 @@
     |o_weights_1_ce0                                      |    9|          2|    1|          2|
     |o_weights_2_ce0                                      |    9|          2|    1|          2|
     |o_weights_3_ce0                                      |    9|          2|    1|          2|
-    |q_embed_0_V_address0                                 |   15|          3|    7|         21|
-    |q_embed_0_V_ce0                                      |   15|          3|    1|          3|
-    |q_embed_0_V_we0                                      |    9|          2|    1|          2|
+    |q_embed_0_0_V_address0                               |   15|          3|    5|         15|
+    |q_embed_0_0_V_ce0                                    |   15|          3|    1|          3|
+    |q_embed_0_0_V_we0                                    |    9|          2|    1|          2|
+    |q_embed_1_0_V_address0                               |   15|          3|    5|         15|
+    |q_embed_1_0_V_ce0                                    |   15|          3|    1|          3|
+    |q_embed_1_0_V_we0                                    |    9|          2|    1|          2|
+    |q_embed_2_0_V_address0                               |   15|          3|    5|         15|
+    |q_embed_2_0_V_ce0                                    |   15|          3|    1|          3|
+    |q_embed_2_0_V_we0                                    |    9|          2|    1|          2|
+    |q_embed_3_0_V_address0                               |   15|          3|    5|         15|
+    |q_embed_3_0_V_ce0                                    |   15|          3|    1|          3|
+    |q_embed_3_0_V_we0                                    |    9|          2|    1|          2|
     |q_proj_0_V_address0                                  |   15|          3|    7|         21|
     |q_proj_0_V_ce0                                       |   15|          3|    1|          3|
     |q_proj_0_V_ce1                                       |    9|          2|    1|          2|
@@ -329,136 +351,105 @@
     |q_weights_1_ce0                                      |    9|          2|    1|          2|
     |q_weights_2_ce0                                      |    9|          2|    1|          2|
     |q_weights_3_ce0                                      |    9|          2|    1|          2|
-    |quantized_final_outp_10_address0                     |   21|          4|    3|         12|
-    |quantized_final_outp_10_ce0                          |   21|          4|    1|          4|
-    |quantized_final_outp_10_d0                           |   15|          3|    8|         24|
-    |quantized_final_outp_10_we0                          |   15|          3|    1|          3|
-    |quantized_final_outp_11_address0                     |   21|          4|    3|         12|
-    |quantized_final_outp_11_ce0                          |   21|          4|    1|          4|
-    |quantized_final_outp_11_d0                           |   15|          3|    8|         24|
-    |quantized_final_outp_11_we0                          |   15|          3|    1|          3|
-    |quantized_final_outp_12_address0                     |   21|          4|    3|         12|
-    |quantized_final_outp_12_ce0                          |   21|          4|    1|          4|
-    |quantized_final_outp_12_d0                           |   15|          3|    8|         24|
-    |quantized_final_outp_12_we0                          |   15|          3|    1|          3|
-    |quantized_final_outp_13_address0                     |   21|          4|    3|         12|
-    |quantized_final_outp_13_ce0                          |   21|          4|    1|          4|
-    |quantized_final_outp_13_d0                           |   15|          3|    8|         24|
-    |quantized_final_outp_13_we0                          |   15|          3|    1|          3|
-    |quantized_final_outp_14_address0                     |   21|          4|    3|         12|
-    |quantized_final_outp_14_ce0                          |   21|          4|    1|          4|
-    |quantized_final_outp_14_d0                           |   15|          3|    8|         24|
-    |quantized_final_outp_14_we0                          |   15|          3|    1|          3|
-    |quantized_final_outp_15_address0                     |   21|          4|    3|         12|
-    |quantized_final_outp_15_ce0                          |   21|          4|    1|          4|
-    |quantized_final_outp_15_d0                           |   15|          3|    8|         24|
-    |quantized_final_outp_15_we0                          |   15|          3|    1|          3|
-    |quantized_final_outp_1_address0                      |   21|          4|    3|         12|
-    |quantized_final_outp_1_ce0                           |   21|          4|    1|          4|
-    |quantized_final_outp_1_d0                            |   15|          3|    8|         24|
-    |quantized_final_outp_1_we0                           |   15|          3|    1|          3|
-    |quantized_final_outp_2_address0                      |   21|          4|    3|         12|
-    |quantized_final_outp_2_ce0                           |   21|          4|    1|          4|
-    |quantized_final_outp_2_d0                            |   15|          3|    8|         24|
-    |quantized_final_outp_2_we0                           |   15|          3|    1|          3|
-    |quantized_final_outp_3_address0                      |   21|          4|    3|         12|
-    |quantized_final_outp_3_ce0                           |   21|          4|    1|          4|
-    |quantized_final_outp_3_d0                            |   15|          3|    8|         24|
-    |quantized_final_outp_3_we0                           |   15|          3|    1|          3|
-    |quantized_final_outp_4_address0                      |   21|          4|    3|         12|
-    |quantized_final_outp_4_ce0                           |   21|          4|    1|          4|
-    |quantized_final_outp_4_d0                            |   15|          3|    8|         24|
-    |quantized_final_outp_4_we0                           |   15|          3|    1|          3|
-    |quantized_final_outp_5_address0                      |   21|          4|    3|         12|
-    |quantized_final_outp_5_ce0                           |   21|          4|    1|          4|
-    |quantized_final_outp_5_d0                            |   15|          3|    8|         24|
-    |quantized_final_outp_5_we0                           |   15|          3|    1|          3|
-    |quantized_final_outp_6_address0                      |   21|          4|    3|         12|
-    |quantized_final_outp_6_ce0                           |   21|          4|    1|          4|
-    |quantized_final_outp_6_d0                            |   15|          3|    8|         24|
-    |quantized_final_outp_6_we0                           |   15|          3|    1|          3|
-    |quantized_final_outp_7_address0                      |   21|          4|    3|         12|
-    |quantized_final_outp_7_ce0                           |   21|          4|    1|          4|
-    |quantized_final_outp_7_d0                            |   15|          3|    8|         24|
-    |quantized_final_outp_7_we0                           |   15|          3|    1|          3|
-    |quantized_final_outp_8_address0                      |   21|          4|    3|         12|
-    |quantized_final_outp_8_ce0                           |   21|          4|    1|          4|
-    |quantized_final_outp_8_d0                            |   15|          3|    8|         24|
-    |quantized_final_outp_8_we0                           |   15|          3|    1|          3|
-    |quantized_final_outp_9_address0                      |   21|          4|    3|         12|
-    |quantized_final_outp_9_ce0                           |   21|          4|    1|          4|
-    |quantized_final_outp_9_d0                            |   15|          3|    8|         24|
-    |quantized_final_outp_9_we0                           |   15|          3|    1|          3|
-    |quantized_final_outp_address0                        |   21|          4|    3|         12|
-    |quantized_final_outp_ce0                             |   21|          4|    1|          4|
-    |quantized_final_outp_d0                              |   15|          3|    8|         24|
-    |quantized_final_outp_we0                             |   15|          3|    1|          3|
-    |quantized_hidden_sta_10_address0                     |   21|          4|    3|         12|
-    |quantized_hidden_sta_10_ce0                          |   21|          4|    1|          4|
-    |quantized_hidden_sta_10_d0                           |   15|          3|    8|         24|
-    |quantized_hidden_sta_10_we0                          |   15|          3|    1|          3|
-    |quantized_hidden_sta_11_address0                     |   21|          4|    3|         12|
-    |quantized_hidden_sta_11_ce0                          |   21|          4|    1|          4|
-    |quantized_hidden_sta_11_d0                           |   15|          3|    8|         24|
-    |quantized_hidden_sta_11_we0                          |   15|          3|    1|          3|
-    |quantized_hidden_sta_12_address0                     |   21|          4|    3|         12|
-    |quantized_hidden_sta_12_ce0                          |   21|          4|    1|          4|
-    |quantized_hidden_sta_12_d0                           |   15|          3|    8|         24|
-    |quantized_hidden_sta_12_we0                          |   15|          3|    1|          3|
-    |quantized_hidden_sta_13_address0                     |   21|          4|    3|         12|
-    |quantized_hidden_sta_13_ce0                          |   21|          4|    1|          4|
-    |quantized_hidden_sta_13_d0                           |   15|          3|    8|         24|
-    |quantized_hidden_sta_13_we0                          |   15|          3|    1|          3|
-    |quantized_hidden_sta_14_address0                     |   21|          4|    3|         12|
-    |quantized_hidden_sta_14_ce0                          |   21|          4|    1|          4|
-    |quantized_hidden_sta_14_d0                           |   15|          3|    8|         24|
-    |quantized_hidden_sta_14_we0                          |   15|          3|    1|          3|
-    |quantized_hidden_sta_15_address0                     |   21|          4|    3|         12|
-    |quantized_hidden_sta_15_ce0                          |   21|          4|    1|          4|
-    |quantized_hidden_sta_15_d0                           |   15|          3|    8|         24|
-    |quantized_hidden_sta_15_we0                          |   15|          3|    1|          3|
-    |quantized_hidden_sta_1_address0                      |   21|          4|    3|         12|
-    |quantized_hidden_sta_1_ce0                           |   21|          4|    1|          4|
-    |quantized_hidden_sta_1_d0                            |   15|          3|    8|         24|
-    |quantized_hidden_sta_1_we0                           |   15|          3|    1|          3|
-    |quantized_hidden_sta_2_address0                      |   21|          4|    3|         12|
-    |quantized_hidden_sta_2_ce0                           |   21|          4|    1|          4|
-    |quantized_hidden_sta_2_d0                            |   15|          3|    8|         24|
-    |quantized_hidden_sta_2_we0                           |   15|          3|    1|          3|
-    |quantized_hidden_sta_3_address0                      |   21|          4|    3|         12|
-    |quantized_hidden_sta_3_ce0                           |   21|          4|    1|          4|
-    |quantized_hidden_sta_3_d0                            |   15|          3|    8|         24|
-    |quantized_hidden_sta_3_we0                           |   15|          3|    1|          3|
-    |quantized_hidden_sta_4_address0                      |   21|          4|    3|         12|
-    |quantized_hidden_sta_4_ce0                           |   21|          4|    1|          4|
-    |quantized_hidden_sta_4_d0                            |   15|          3|    8|         24|
-    |quantized_hidden_sta_4_we0                           |   15|          3|    1|          3|
-    |quantized_hidden_sta_5_address0                      |   21|          4|    3|         12|
-    |quantized_hidden_sta_5_ce0                           |   21|          4|    1|          4|
-    |quantized_hidden_sta_5_d0                            |   15|          3|    8|         24|
-    |quantized_hidden_sta_5_we0                           |   15|          3|    1|          3|
-    |quantized_hidden_sta_6_address0                      |   21|          4|    3|         12|
-    |quantized_hidden_sta_6_ce0                           |   21|          4|    1|          4|
-    |quantized_hidden_sta_6_d0                            |   15|          3|    8|         24|
-    |quantized_hidden_sta_6_we0                           |   15|          3|    1|          3|
-    |quantized_hidden_sta_7_address0                      |   21|          4|    3|         12|
-    |quantized_hidden_sta_7_ce0                           |   21|          4|    1|          4|
-    |quantized_hidden_sta_7_d0                            |   15|          3|    8|         24|
-    |quantized_hidden_sta_7_we0                           |   15|          3|    1|          3|
-    |quantized_hidden_sta_8_address0                      |   21|          4|    3|         12|
-    |quantized_hidden_sta_8_ce0                           |   21|          4|    1|          4|
-    |quantized_hidden_sta_8_d0                            |   15|          3|    8|         24|
-    |quantized_hidden_sta_8_we0                           |   15|          3|    1|          3|
-    |quantized_hidden_sta_9_address0                      |   21|          4|    3|         12|
-    |quantized_hidden_sta_9_ce0                           |   21|          4|    1|          4|
-    |quantized_hidden_sta_9_d0                            |   15|          3|    8|         24|
-    |quantized_hidden_sta_9_we0                           |   15|          3|    1|          3|
-    |quantized_hidden_sta_address0                        |   21|          4|    3|         12|
-    |quantized_hidden_sta_ce0                             |   21|          4|    1|          4|
-    |quantized_hidden_sta_d0                              |   15|          3|    8|         24|
-    |quantized_hidden_sta_we0                             |   15|          3|    1|          3|
+    |quantized_final_outp_10_address0                     |   15|          3|    3|          9|
+    |quantized_final_outp_10_ce0                          |   15|          3|    1|          3|
+    |quantized_final_outp_10_we0                          |    9|          2|    1|          2|
+    |quantized_final_outp_11_address0                     |   15|          3|    3|          9|
+    |quantized_final_outp_11_ce0                          |   15|          3|    1|          3|
+    |quantized_final_outp_11_we0                          |    9|          2|    1|          2|
+    |quantized_final_outp_12_address0                     |   15|          3|    3|          9|
+    |quantized_final_outp_12_ce0                          |   15|          3|    1|          3|
+    |quantized_final_outp_12_we0                          |    9|          2|    1|          2|
+    |quantized_final_outp_13_address0                     |   15|          3|    3|          9|
+    |quantized_final_outp_13_ce0                          |   15|          3|    1|          3|
+    |quantized_final_outp_13_we0                          |    9|          2|    1|          2|
+    |quantized_final_outp_14_address0                     |   15|          3|    3|          9|
+    |quantized_final_outp_14_ce0                          |   15|          3|    1|          3|
+    |quantized_final_outp_14_we0                          |    9|          2|    1|          2|
+    |quantized_final_outp_15_address0                     |   15|          3|    3|          9|
+    |quantized_final_outp_15_ce0                          |   15|          3|    1|          3|
+    |quantized_final_outp_15_we0                          |    9|          2|    1|          2|
+    |quantized_final_outp_1_address0                      |   15|          3|    3|          9|
+    |quantized_final_outp_1_ce0                           |   15|          3|    1|          3|
+    |quantized_final_outp_1_we0                           |    9|          2|    1|          2|
+    |quantized_final_outp_2_address0                      |   15|          3|    3|          9|
+    |quantized_final_outp_2_ce0                           |   15|          3|    1|          3|
+    |quantized_final_outp_2_we0                           |    9|          2|    1|          2|
+    |quantized_final_outp_3_address0                      |   15|          3|    3|          9|
+    |quantized_final_outp_3_ce0                           |   15|          3|    1|          3|
+    |quantized_final_outp_3_we0                           |    9|          2|    1|          2|
+    |quantized_final_outp_4_address0                      |   15|          3|    3|          9|
+    |quantized_final_outp_4_ce0                           |   15|          3|    1|          3|
+    |quantized_final_outp_4_we0                           |    9|          2|    1|          2|
+    |quantized_final_outp_5_address0                      |   15|          3|    3|          9|
+    |quantized_final_outp_5_ce0                           |   15|          3|    1|          3|
+    |quantized_final_outp_5_we0                           |    9|          2|    1|          2|
+    |quantized_final_outp_6_address0                      |   15|          3|    3|          9|
+    |quantized_final_outp_6_ce0                           |   15|          3|    1|          3|
+    |quantized_final_outp_6_we0                           |    9|          2|    1|          2|
+    |quantized_final_outp_7_address0                      |   15|          3|    3|          9|
+    |quantized_final_outp_7_ce0                           |   15|          3|    1|          3|
+    |quantized_final_outp_7_we0                           |    9|          2|    1|          2|
+    |quantized_final_outp_8_address0                      |   15|          3|    3|          9|
+    |quantized_final_outp_8_ce0                           |   15|          3|    1|          3|
+    |quantized_final_outp_8_we0                           |    9|          2|    1|          2|
+    |quantized_final_outp_9_address0                      |   15|          3|    3|          9|
+    |quantized_final_outp_9_ce0                           |   15|          3|    1|          3|
+    |quantized_final_outp_9_we0                           |    9|          2|    1|          2|
+    |quantized_final_outp_address0                        |   15|          3|    3|          9|
+    |quantized_final_outp_ce0                             |   15|          3|    1|          3|
+    |quantized_final_outp_we0                             |    9|          2|    1|          2|
+    |quantized_hidden_sta_10_address0                     |   15|          3|    3|          9|
+    |quantized_hidden_sta_10_ce0                          |   15|          3|    1|          3|
+    |quantized_hidden_sta_10_we0                          |    9|          2|    1|          2|
+    |quantized_hidden_sta_11_address0                     |   15|          3|    3|          9|
+    |quantized_hidden_sta_11_ce0                          |   15|          3|    1|          3|
+    |quantized_hidden_sta_11_we0                          |    9|          2|    1|          2|
+    |quantized_hidden_sta_12_address0                     |   15|          3|    3|          9|
+    |quantized_hidden_sta_12_ce0                          |   15|          3|    1|          3|
+    |quantized_hidden_sta_12_we0                          |    9|          2|    1|          2|
+    |quantized_hidden_sta_13_address0                     |   15|          3|    3|          9|
+    |quantized_hidden_sta_13_ce0                          |   15|          3|    1|          3|
+    |quantized_hidden_sta_13_we0                          |    9|          2|    1|          2|
+    |quantized_hidden_sta_14_address0                     |   15|          3|    3|          9|
+    |quantized_hidden_sta_14_ce0                          |   15|          3|    1|          3|
+    |quantized_hidden_sta_14_we0                          |    9|          2|    1|          2|
+    |quantized_hidden_sta_15_address0                     |   15|          3|    3|          9|
+    |quantized_hidden_sta_15_ce0                          |   15|          3|    1|          3|
+    |quantized_hidden_sta_15_we0                          |    9|          2|    1|          2|
+    |quantized_hidden_sta_1_address0                      |   15|          3|    3|          9|
+    |quantized_hidden_sta_1_ce0                           |   15|          3|    1|          3|
+    |quantized_hidden_sta_1_we0                           |    9|          2|    1|          2|
+    |quantized_hidden_sta_2_address0                      |   15|          3|    3|          9|
+    |quantized_hidden_sta_2_ce0                           |   15|          3|    1|          3|
+    |quantized_hidden_sta_2_we0                           |    9|          2|    1|          2|
+    |quantized_hidden_sta_3_address0                      |   15|          3|    3|          9|
+    |quantized_hidden_sta_3_ce0                           |   15|          3|    1|          3|
+    |quantized_hidden_sta_3_we0                           |    9|          2|    1|          2|
+    |quantized_hidden_sta_4_address0                      |   15|          3|    3|          9|
+    |quantized_hidden_sta_4_ce0                           |   15|          3|    1|          3|
+    |quantized_hidden_sta_4_we0                           |    9|          2|    1|          2|
+    |quantized_hidden_sta_5_address0                      |   15|          3|    3|          9|
+    |quantized_hidden_sta_5_ce0                           |   15|          3|    1|          3|
+    |quantized_hidden_sta_5_we0                           |    9|          2|    1|          2|
+    |quantized_hidden_sta_6_address0                      |   15|          3|    3|          9|
+    |quantized_hidden_sta_6_ce0                           |   15|          3|    1|          3|
+    |quantized_hidden_sta_6_we0                           |    9|          2|    1|          2|
+    |quantized_hidden_sta_7_address0                      |   15|          3|    3|          9|
+    |quantized_hidden_sta_7_ce0                           |   15|          3|    1|          3|
+    |quantized_hidden_sta_7_we0                           |    9|          2|    1|          2|
+    |quantized_hidden_sta_8_address0                      |   15|          3|    3|          9|
+    |quantized_hidden_sta_8_ce0                           |   15|          3|    1|          3|
+    |quantized_hidden_sta_8_we0                           |    9|          2|    1|          2|
+    |quantized_hidden_sta_9_address0                      |   15|          3|    3|          9|
+    |quantized_hidden_sta_9_ce0                           |   15|          3|    1|          3|
+    |quantized_hidden_sta_9_we0                           |    9|          2|    1|          2|
+    |quantized_hidden_sta_address0                        |   15|          3|    3|          9|
+    |quantized_hidden_sta_ce0                             |   15|          3|    1|          3|
+    |quantized_hidden_sta_we0                             |    9|          2|    1|          2|
     |v_cache_upd_V_address0                               |   15|          3|   10|         30|
     |v_cache_upd_V_ce0                                    |   15|          3|    1|          3|
+    |v_cache_upd_V_ce1                                    |    9|          2|    1|          2|
     |v_cache_upd_V_we0                                    |    9|          2|    1|          2|
     |v_proj_0_V_address0                                  |   15|          3|    7|         21|
     |v_proj_0_V_ce0                                       |   15|          3|    1|          3|
@@ -474,50 +465,49 @@
     |v_weights_2_ce0                                      |    9|          2|    1|          2|
     |v_weights_3_ce0                                      |    9|          2|    1|          2|
     +-----------------------------------------------------+-----+-----------+-----+-----------+
-    |Total                                                | 4126|        819| 1274|       4298|
+    |Total                                                | 3298|        675| 1067|       3460|
     +-----------------------------------------------------+-----+-----------+-----+-----------+
 
     * Register: 
     +----------------------------------------------+-----+----+-----+-----------+
     |                     Name                     |  FF | LUT| Bits| Const Bits|
     +----------------------------------------------+-----+----+-----+-----------+
-    |add_ln180_reg_900                             |    3|   0|    3|          0|
-    |add_ln211_reg_945                             |    3|   0|    3|          0|
-    |add_ln212_reg_963                             |    5|   0|    5|          0|
-    |add_ln213_reg_968                             |    8|   0|    8|          0|
+    |add_ln178_reg_898                             |    3|   0|    3|          0|
+    |add_ln208_reg_943                             |    3|   0|    3|          0|
+    |add_ln209_reg_961                             |    5|   0|    5|          0|
+    |add_ln210_reg_966                             |    8|   0|    8|          0|
     |ap_CS_fsm                                     |   37|   0|   37|          0|
-    |attn_weights_0_V_ad_reg_905                   |    5|   0|    5|          0|
-    |attn_weights_0_V_lo_reg_910                   |   40|   0|   40|          0|
-    |d107_0_0_reg_418                              |    5|   0|    5|          0|
-    |d_0_0_reg_396                                 |    3|   0|    3|          0|
-    |grp_GEMM_3D_float_1_fu_531_ap_start_reg       |    1|   0|    1|          0|
-    |grp_GEMM_3D_float_fu_538_ap_start_reg         |    1|   0|    1|          0|
-    |grp_apply_rotary_pos_emb_fu_519_ap_start_reg  |    1|   0|    1|          0|
-    |grp_cache_update_1_fu_545_ap_start_reg        |    1|   0|    1|          0|
-    |grp_cache_update_fu_553_ap_start_reg          |    1|   0|    1|          0|
-    |grp_init_2d_mem_fu_609_ap_start_reg           |    1|   0|    1|          0|
-    |grp_init_2d_mem_fu_615_ap_start_reg           |    1|   0|    1|          0|
-    |grp_init_2d_mem_fu_621_ap_start_reg           |    1|   0|    1|          0|
-    |grp_init_3d_mem_fu_573_ap_start_reg           |    1|   0|    1|          0|
-    |grp_linear_forward_no_mu_fu_429_ap_start_reg  |    1|   0|    1|          0|
-    |grp_quantize_activation_fu_497_ap_start_reg   |    1|   0|    1|          0|
-    |grp_reshape_2D_to_3D_fu_567_ap_start_reg      |    1|   0|    1|          0|
-    |grp_rms_norm_96_s_fu_477_ap_start_reg         |    1|   0|    1|          0|
-    |grp_softmax_1_4_6_s_fu_486_ap_start_reg       |    1|   0|    1|          0|
-    |grp_transpose_last_two_d_fu_561_ap_start_reg  |    1|   0|    1|          0|
-    |h106_0_0_reg_407                              |    3|   0|    3|          0|
-    |h_0_reg_385                                   |    3|   0|    3|          0|
-    |h_reg_887                                     |    3|   0|    3|          0|
-    |mul_ln1148_reg_926                            |  113|   0|  113|          0|
-    |reg_628                                       |   40|   0|   40|          0|
-    |select_ln1148_reg_936                         |   38|   0|   38|          0|
-    |sub_ln1265_reg_892                            |    5|   0|    6|          1|
-    |sub_ln203_reg_955                             |    5|   0|    8|          3|
-    |sub_ln213_reg_950                             |    5|   0|    8|          3|
-    |tmp_86_reg_915                                |    1|   0|    1|          0|
-    |tmp_88_reg_931                                |   38|   0|   38|          0|
+    |attn_weights_0_V_ad_reg_903                   |    5|   0|    5|          0|
+    |attn_weights_0_V_lo_reg_908                   |   40|   0|   40|          0|
+    |d107_0_0_reg_440                              |    5|   0|    5|          0|
+    |d_0_0_reg_418                                 |    3|   0|    3|          0|
+    |grp_GEMM_3D_float_1_fu_563_ap_start_reg       |    1|   0|    1|          0|
+    |grp_GEMM_3D_float_fu_556_ap_start_reg         |    1|   0|    1|          0|
+    |grp_apply_rotary_pos_emb_fu_541_ap_start_reg  |    1|   0|    1|          0|
+    |grp_cache_update_1_fu_576_ap_start_reg        |    1|   0|    1|          0|
+    |grp_cache_update_fu_584_ap_start_reg          |    1|   0|    1|          0|
+    |grp_init_2d_mem_fu_607_ap_start_reg           |    1|   0|    1|          0|
+    |grp_init_2d_mem_fu_613_ap_start_reg           |    1|   0|    1|          0|
+    |grp_init_2d_mem_fu_619_ap_start_reg           |    1|   0|    1|          0|
+    |grp_linear_forward_no_mu_fu_451_ap_start_reg  |    1|   0|    1|          0|
+    |grp_quantize_activation_fu_519_ap_start_reg   |    1|   0|    1|          0|
+    |grp_reshape_2D_to_3D_fu_601_ap_start_reg      |    1|   0|    1|          0|
+    |grp_rms_norm_96_s_fu_499_ap_start_reg         |    1|   0|    1|          0|
+    |grp_softmax_1_4_6_s_fu_508_ap_start_reg       |    1|   0|    1|          0|
+    |grp_transpose_last_two_d_fu_592_ap_start_reg  |    1|   0|    1|          0|
+    |h106_0_0_reg_429                              |    3|   0|    3|          0|
+    |h_0_reg_407                                   |    3|   0|    3|          0|
+    |h_reg_885                                     |    3|   0|    3|          0|
+    |mul_ln1148_reg_924                            |  113|   0|  113|          0|
+    |reg_626                                       |   40|   0|   40|          0|
+    |select_ln1148_reg_934                         |   38|   0|   38|          0|
+    |sub_ln1265_reg_890                            |    5|   0|    6|          1|
+    |sub_ln203_reg_953                             |    5|   0|    8|          3|
+    |sub_ln210_reg_948                             |    5|   0|    8|          3|
+    |tmp_86_reg_913                                |    1|   0|    1|          0|
+    |tmp_88_reg_929                                |   38|   0|   38|          0|
     +----------------------------------------------+-----+----+-----+-----------+
-    |Total                                         |  378|   0|  385|          7|
+    |Total                                         |  377|   0|  384|          7|
     +----------------------------------------------+-----+----+-----+-----------+
 
 

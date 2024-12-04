@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'exp_40_24_s'" level="0">
-<item name = "Date">Sun Dec  1 01:00:11 2024
+<item name = "Date">Tue Dec  3 18:13:26 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -61,8 +61,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="dut_mul_50ns_47nspcA_U91">dut_mul_50ns_47nspcA, 0, 9, 237, 87, 0</column>
-<column name="dut_mul_50ns_50nsqcK_U92">dut_mul_50ns_50nsqcK, 0, 9, 237, 87, 0</column>
+<column name="dut_mul_50ns_47nspcA_U87">dut_mul_50ns_47nspcA, 0, 9, 237, 87, 0</column>
+<column name="dut_mul_50ns_50nsqcK_U88">dut_mul_50ns_50nsqcK, 0, 9, 237, 87, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

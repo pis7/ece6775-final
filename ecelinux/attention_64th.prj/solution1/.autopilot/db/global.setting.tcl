@@ -42,7 +42,7 @@ set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c ../../attention.cpp}
 set SourceFlags {sc {} c -DSIXTYFOURTH}
-set DirectiveFile /home/pis7/ece6775-final/ecelinux/attention_64th.prj/solution1/solution1.directive
+set DirectiveFile /home/pis7/ece6775/ece6775-final/ecelinux/attention_64th.prj/solution1/solution1.directive
 set TBFiles {verilog {../../data_64th ../../attention_test.cpp} bc {../../data_64th ../../attention_test.cpp} sc {../../data_64th ../../attention_test.cpp} vhdl {../../data_64th ../../attention_test.cpp} c {} cas {../../data_64th ../../attention_test.cpp}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

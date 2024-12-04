@@ -279,15 +279,15 @@ architecture behav of apply_rotary_pos_emb is
     signal add_ln1116_fu_744_p2 : STD_LOGIC_VECTOR (9 downto 0);
     signal tmp_88_fu_762_p4 : STD_LOGIC_VECTOR (1 downto 0);
     signal zext_ln203_11_fu_772_p1 : STD_LOGIC_VECTOR (5 downto 0);
-    signal mul_ln1118_fu_788_p0 : STD_LOGIC_VECTOR (39 downto 0);
-    signal mul_ln1118_fu_788_p1 : STD_LOGIC_VECTOR (16 downto 0);
-    signal mul_ln1118_4_fu_800_p0 : STD_LOGIC_VECTOR (39 downto 0);
-    signal mul_ln1118_4_fu_800_p1 : STD_LOGIC_VECTOR (16 downto 0);
+    signal mul_ln1118_fu_788_p0 : STD_LOGIC_VECTOR (16 downto 0);
+    signal mul_ln1118_fu_788_p1 : STD_LOGIC_VECTOR (39 downto 0);
+    signal mul_ln1118_4_fu_800_p0 : STD_LOGIC_VECTOR (16 downto 0);
+    signal mul_ln1118_4_fu_800_p1 : STD_LOGIC_VECTOR (39 downto 0);
     signal add_ln1192_fu_806_p2 : STD_LOGIC_VECTOR (55 downto 0);
-    signal mul_ln1118_5_fu_859_p0 : STD_LOGIC_VECTOR (39 downto 0);
-    signal mul_ln1118_5_fu_859_p1 : STD_LOGIC_VECTOR (16 downto 0);
-    signal mul_ln1118_6_fu_867_p0 : STD_LOGIC_VECTOR (39 downto 0);
-    signal mul_ln1118_6_fu_867_p1 : STD_LOGIC_VECTOR (16 downto 0);
+    signal mul_ln1118_5_fu_859_p0 : STD_LOGIC_VECTOR (16 downto 0);
+    signal mul_ln1118_5_fu_859_p1 : STD_LOGIC_VECTOR (39 downto 0);
+    signal mul_ln1118_6_fu_867_p0 : STD_LOGIC_VECTOR (16 downto 0);
+    signal mul_ln1118_6_fu_867_p1 : STD_LOGIC_VECTOR (39 downto 0);
     signal add_ln1192_1_fu_872_p2 : STD_LOGIC_VECTOR (55 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (12 downto 0);
 
@@ -629,8 +629,8 @@ begin
         end case;
     end process;
     add_ln1116_fu_744_p2 <= std_logic_vector(unsigned(sub_ln1116_reg_949) + unsigned(zext_ln1116_3_fu_740_p1));
-    add_ln1192_1_fu_872_p2 <= std_logic_vector(unsigned(mul_ln1118_6_reg_1056) + unsigned(mul_ln1118_5_reg_1051));
-    add_ln1192_fu_806_p2 <= std_logic_vector(unsigned(mul_ln1118_4_reg_1041) + unsigned(mul_ln1118_reg_1031));
+    add_ln1192_1_fu_872_p2 <= std_logic_vector(unsigned(mul_ln1118_5_reg_1051) + unsigned(mul_ln1118_6_reg_1056));
+    add_ln1192_fu_806_p2 <= std_logic_vector(unsigned(mul_ln1118_reg_1031) + unsigned(mul_ln1118_4_reg_1041));
     add_ln1265_fu_641_p2 <= std_logic_vector(unsigned(sub_ln1265_reg_895) + unsigned(zext_ln1265_3_fu_637_p1));
     add_ln170_fu_610_p2 <= std_logic_vector(unsigned(k_0_0_reg_521) + unsigned(ap_const_lv5_1));
     add_ln171_fu_631_p2 <= std_logic_vector(unsigned(zext_ln170_fu_600_p1) + unsigned(ap_const_lv6_18));
@@ -763,17 +763,17 @@ begin
         end if; 
     end process;
 
-    mul_ln1118_4_fu_800_p0 <= rotated_q_0_V_load_reg_1021;
-    mul_ln1118_4_fu_800_p1 <= sin_tab_V_5_load_reg_1016;
+    mul_ln1118_4_fu_800_p0 <= sin_tab_V_5_load_reg_1016;
+    mul_ln1118_4_fu_800_p1 <= rotated_q_0_V_load_reg_1021;
     mul_ln1118_4_fu_800_p2 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(signed(mul_ln1118_4_fu_800_p0) * signed(mul_ln1118_4_fu_800_p1))), 56));
-    mul_ln1118_5_fu_859_p0 <= reg_558;
-    mul_ln1118_5_fu_859_p1 <= sext_ln1118_5_reg_1026(17 - 1 downto 0);
+    mul_ln1118_5_fu_859_p0 <= sext_ln1118_5_reg_1026(17 - 1 downto 0);
+    mul_ln1118_5_fu_859_p1 <= reg_558;
     mul_ln1118_5_fu_859_p2 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(signed(mul_ln1118_5_fu_859_p0) * signed(mul_ln1118_5_fu_859_p1))), 56));
-    mul_ln1118_6_fu_867_p0 <= rotated_k_0_V_load_reg_1046;
-    mul_ln1118_6_fu_867_p1 <= sext_ln1118_7_reg_1036(17 - 1 downto 0);
+    mul_ln1118_6_fu_867_p0 <= sext_ln1118_7_reg_1036(17 - 1 downto 0);
+    mul_ln1118_6_fu_867_p1 <= rotated_k_0_V_load_reg_1046;
     mul_ln1118_6_fu_867_p2 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(signed(mul_ln1118_6_fu_867_p0) * signed(mul_ln1118_6_fu_867_p1))), 56));
-    mul_ln1118_fu_788_p0 <= reg_554;
-    mul_ln1118_fu_788_p1 <= cos_tab_V_5_load_reg_1011;
+    mul_ln1118_fu_788_p0 <= cos_tab_V_5_load_reg_1011;
+    mul_ln1118_fu_788_p1 <= reg_554;
     mul_ln1118_fu_788_p2 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(signed(mul_ln1118_fu_788_p0) * signed(mul_ln1118_fu_788_p1))), 56));
     output_k_0_V_address0 <= output_k_0_V_addr_reg_977;
 

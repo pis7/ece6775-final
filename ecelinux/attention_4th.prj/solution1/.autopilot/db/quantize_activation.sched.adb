@@ -1841,14 +1841,14 @@
 						<id>67</id>
 						<name>input_0_V_addr</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1891,14 +1891,14 @@
 						<id>68</id>
 						<name>p_Val2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>86</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1939,14 +1939,14 @@
 						<id>69</id>
 						<name>tmp_73</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>33</lineNumber>
 						<contextFuncName>attention_abs</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1996,14 +1996,14 @@
 						<id>70</id>
 						<name>sub_ln703</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>33</lineNumber>
 						<contextFuncName>attention_abs</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2052,14 +2052,14 @@
 						<id>71</id>
 						<name>p_Val2_13</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>33</lineNumber>
 						<contextFuncName>attention_abs</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2109,14 +2109,14 @@
 						<id>72</id>
 						<name>_ln87</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>87</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2194,14 +2194,14 @@
 						<id>75</id>
 						<name>j_0_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>87</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2245,14 +2245,14 @@
 						<id>76</id>
 						<name>icmp_ln87</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>87</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2294,14 +2294,14 @@
 						<id>78</id>
 						<name>_ln87</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>87</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2344,14 +2344,14 @@
 						<id>81</id>
 						<name>zext_ln88</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>88</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2392,14 +2392,14 @@
 						<id>82</id>
 						<name>input_0_V_addr_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>88</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2442,14 +2442,14 @@
 						<id>83</id>
 						<name>p_Val2_14</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>88</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2490,14 +2490,14 @@
 						<id>84</id>
 						<name>tmp_74</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>33</lineNumber>
 						<contextFuncName>attention_abs</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2547,14 +2547,14 @@
 						<id>85</id>
 						<name>sub_ln703_34</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>33</lineNumber>
 						<contextFuncName>attention_abs</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2603,14 +2603,14 @@
 						<id>86</id>
 						<name>p_Val2_15</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>33</lineNumber>
 						<contextFuncName>attention_abs</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -2660,14 +2660,14 @@
 						<id>87</id>
 						<name>icmp_ln1494</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>88</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2709,14 +2709,14 @@
 						<id>88</id>
 						<name>p_Val2_16</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>88</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2759,14 +2759,14 @@
 						<id>89</id>
 						<name>add_ln87</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>87</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2808,14 +2808,14 @@
 						<id>90</id>
 						<name>_ln87</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>87</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2856,14 +2856,14 @@
 						<id>92</id>
 						<name>udiv_ln1148</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>90</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2905,14 +2905,14 @@
 						<id>93</id>
 						<name>zext_ln94</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2953,14 +2953,14 @@
 						<id>94</id>
 						<name>_ln94</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3001,14 +3001,14 @@
 						<id>96</id>
 						<name>jo_0_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3052,14 +3052,14 @@
 						<id>97</id>
 						<name>icmp_ln94</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3101,14 +3101,14 @@
 						<id>99</id>
 						<name>add_ln94</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3150,14 +3150,14 @@
 						<id>100</id>
 						<name>_ln94</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3200,14 +3200,14 @@
 						<id>104</id>
 						<name>shl_ln</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>96</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3250,14 +3250,14 @@
 						<id>105</id>
 						<name>_ln95</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>95</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3298,14 +3298,14 @@
 						<id>107</id>
 						<name>ji_0_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>95</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3349,14 +3349,14 @@
 						<id>108</id>
 						<name>zext_ln95</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>95</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3397,14 +3397,14 @@
 						<id>109</id>
 						<name>icmp_ln95</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>95</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3446,14 +3446,14 @@
 						<id>111</id>
 						<name>add_ln95</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>95</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3495,14 +3495,14 @@
 						<id>112</id>
 						<name>_ln95</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>95</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3545,14 +3545,14 @@
 						<id>115</id>
 						<name>trunc_ln96</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>96</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3593,14 +3593,14 @@
 						<id>116</id>
 						<name>add_ln96</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>96</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3642,14 +3642,14 @@
 						<id>117</id>
 						<name>shl_ln1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3692,14 +3692,14 @@
 						<id>118</id>
 						<name>zext_ln98</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3740,14 +3740,14 @@
 						<id>119</id>
 						<name>input_0_V_addr_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3790,14 +3790,14 @@
 						<id>120</id>
 						<name>input_0_V_load</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3838,14 +3838,14 @@
 						<id>121</id>
 						<name>sext_ln1118</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3886,14 +3886,14 @@
 						<id>122</id>
 						<name>mul_ln1118</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3935,14 +3935,14 @@
 						<id>123</id>
 						<name>p_Val2_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3986,14 +3986,14 @@
 						<id>124</id>
 						<name>icmp_ln1494_26</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -4042,14 +4042,14 @@
 						<id>125</id>
 						<name>select_ln67</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -4099,14 +4099,14 @@
 						<id>126</id>
 						<name>add_ln67</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -4155,14 +4155,14 @@
 						<id>127</id>
 						<name>p_Result_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4206,14 +4206,14 @@
 						<id>128</id>
 						<name>tmp_75</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4256,14 +4256,14 @@
 						<id>129</id>
 						<name>trunc_ln851</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4304,14 +4304,14 @@
 						<id>130</id>
 						<name>icmp_ln851</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4353,14 +4353,14 @@
 						<id>131</id>
 						<name>add_ln700</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4402,14 +4402,14 @@
 						<id>132</id>
 						<name>select_ln851</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4452,14 +4452,14 @@
 						<id>133</id>
 						<name>select_ln850</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4502,14 +4502,14 @@
 						<id>134</id>
 						<name>icmp_ln887</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4551,14 +4551,14 @@
 						<id>135</id>
 						<name>tmp_76</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4602,14 +4602,14 @@
 						<id>136</id>
 						<name>icmp_ln895</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4651,14 +4651,14 @@
 						<id>137</id>
 						<name>trunc_ln99</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4699,14 +4699,14 @@
 						<id>138</id>
 						<name>select_ln887</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4749,14 +4749,14 @@
 						<id>139</id>
 						<name>or_ln887</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4798,14 +4798,14 @@
 						<id>140</id>
 						<name>select_ln887_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4848,14 +4848,14 @@
 						<id>141</id>
 						<name>lshr_ln</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4899,14 +4899,14 @@
 						<id>142</id>
 						<name>zext_ln180</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4947,14 +4947,14 @@
 						<id>143</id>
 						<name>output_states_0_0_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4997,14 +4997,14 @@
 						<id>144</id>
 						<name>output_states_1_0_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5047,14 +5047,14 @@
 						<id>145</id>
 						<name>output_states_2_0_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5097,14 +5097,14 @@
 						<id>146</id>
 						<name>output_states_3_0_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5147,14 +5147,14 @@
 						<id>147</id>
 						<name>output_states_4_0_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5197,14 +5197,14 @@
 						<id>148</id>
 						<name>output_states_5_0_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5247,14 +5247,14 @@
 						<id>149</id>
 						<name>output_states_6_0_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5297,14 +5297,14 @@
 						<id>150</id>
 						<name>output_states_7_0_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5347,14 +5347,14 @@
 						<id>151</id>
 						<name>output_states_8_0_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5397,14 +5397,14 @@
 						<id>152</id>
 						<name>output_states_9_0_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5447,14 +5447,14 @@
 						<id>153</id>
 						<name>output_states_10_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5497,14 +5497,14 @@
 						<id>154</id>
 						<name>output_states_11_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5547,14 +5547,14 @@
 						<id>155</id>
 						<name>output_states_12_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5597,14 +5597,14 @@
 						<id>156</id>
 						<name>output_states_13_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5647,14 +5647,14 @@
 						<id>157</id>
 						<name>output_states_14_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5697,14 +5697,14 @@
 						<id>158</id>
 						<name>output_states_15_0</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5747,14 +5747,14 @@
 						<id>159</id>
 						<name>or_ln98</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5796,14 +5796,14 @@
 						<id>160</id>
 						<name>zext_ln98_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5844,14 +5844,14 @@
 						<id>161</id>
 						<name>input_0_V_addr_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5894,14 +5894,14 @@
 						<id>162</id>
 						<name>input_0_V_load_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5942,14 +5942,14 @@
 						<id>163</id>
 						<name>sext_ln1118_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5990,14 +5990,14 @@
 						<id>164</id>
 						<name>mul_ln1118_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6039,14 +6039,14 @@
 						<id>165</id>
 						<name>p_Val2_17</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6090,14 +6090,14 @@
 						<id>166</id>
 						<name>icmp_ln1494_27</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -6146,14 +6146,14 @@
 						<id>167</id>
 						<name>select_ln67_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -6203,14 +6203,14 @@
 						<id>168</id>
 						<name>add_ln67_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -6259,14 +6259,14 @@
 						<id>169</id>
 						<name>p_Result_0_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6310,14 +6310,14 @@
 						<id>170</id>
 						<name>tmp_77</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6360,14 +6360,14 @@
 						<id>171</id>
 						<name>trunc_ln851_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6408,14 +6408,14 @@
 						<id>172</id>
 						<name>icmp_ln851_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6457,14 +6457,14 @@
 						<id>173</id>
 						<name>add_ln700_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6506,14 +6506,14 @@
 						<id>174</id>
 						<name>select_ln851_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6556,14 +6556,14 @@
 						<id>175</id>
 						<name>select_ln850_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6606,14 +6606,14 @@
 						<id>176</id>
 						<name>icmp_ln887_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6655,14 +6655,14 @@
 						<id>177</id>
 						<name>tmp_78</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6706,14 +6706,14 @@
 						<id>178</id>
 						<name>icmp_ln895_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6755,14 +6755,14 @@
 						<id>179</id>
 						<name>trunc_ln99_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6803,14 +6803,14 @@
 						<id>180</id>
 						<name>select_ln887_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6853,14 +6853,14 @@
 						<id>181</id>
 						<name>or_ln887_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6902,14 +6902,14 @@
 						<id>182</id>
 						<name>select_ln887_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6952,14 +6952,14 @@
 						<id>183</id>
 						<name>output_states_0_1_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7002,14 +7002,14 @@
 						<id>184</id>
 						<name>output_states_1_1_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7052,14 +7052,14 @@
 						<id>185</id>
 						<name>output_states_2_1_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7102,14 +7102,14 @@
 						<id>186</id>
 						<name>output_states_3_1_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7152,14 +7152,14 @@
 						<id>187</id>
 						<name>output_states_4_1_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7202,14 +7202,14 @@
 						<id>188</id>
 						<name>output_states_5_1_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7252,14 +7252,14 @@
 						<id>189</id>
 						<name>output_states_6_1_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7302,14 +7302,14 @@
 						<id>190</id>
 						<name>output_states_7_1_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7352,14 +7352,14 @@
 						<id>191</id>
 						<name>output_states_8_1_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7402,14 +7402,14 @@
 						<id>192</id>
 						<name>output_states_9_1_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7452,14 +7452,14 @@
 						<id>193</id>
 						<name>output_states_10_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7502,14 +7502,14 @@
 						<id>194</id>
 						<name>output_states_11_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7552,14 +7552,14 @@
 						<id>195</id>
 						<name>output_states_12_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7602,14 +7602,14 @@
 						<id>196</id>
 						<name>output_states_13_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7652,14 +7652,14 @@
 						<id>197</id>
 						<name>output_states_14_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7702,14 +7702,14 @@
 						<id>198</id>
 						<name>output_states_15_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7752,14 +7752,14 @@
 						<id>199</id>
 						<name>or_ln98_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7801,14 +7801,14 @@
 						<id>200</id>
 						<name>zext_ln98_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7849,14 +7849,14 @@
 						<id>201</id>
 						<name>input_0_V_addr_8</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7899,14 +7899,14 @@
 						<id>202</id>
 						<name>input_0_V_load_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7947,14 +7947,14 @@
 						<id>203</id>
 						<name>sext_ln1118_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7995,14 +7995,14 @@
 						<id>204</id>
 						<name>mul_ln1118_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8044,14 +8044,14 @@
 						<id>205</id>
 						<name>p_Val2_18</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8095,14 +8095,14 @@
 						<id>206</id>
 						<name>icmp_ln1494_28</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -8151,14 +8151,14 @@
 						<id>207</id>
 						<name>select_ln67_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -8208,14 +8208,14 @@
 						<id>208</id>
 						<name>add_ln67_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -8264,14 +8264,14 @@
 						<id>209</id>
 						<name>p_Result_0_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8315,14 +8315,14 @@
 						<id>210</id>
 						<name>tmp_79</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8365,14 +8365,14 @@
 						<id>211</id>
 						<name>trunc_ln851_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8413,14 +8413,14 @@
 						<id>212</id>
 						<name>icmp_ln851_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8462,14 +8462,14 @@
 						<id>213</id>
 						<name>add_ln700_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8511,14 +8511,14 @@
 						<id>214</id>
 						<name>select_ln851_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8561,14 +8561,14 @@
 						<id>215</id>
 						<name>select_ln850_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8611,14 +8611,14 @@
 						<id>216</id>
 						<name>icmp_ln887_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8660,14 +8660,14 @@
 						<id>217</id>
 						<name>tmp_80</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8711,14 +8711,14 @@
 						<id>218</id>
 						<name>icmp_ln895_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8760,14 +8760,14 @@
 						<id>219</id>
 						<name>trunc_ln99_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8808,14 +8808,14 @@
 						<id>220</id>
 						<name>select_ln887_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8858,14 +8858,14 @@
 						<id>221</id>
 						<name>or_ln887_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8907,14 +8907,14 @@
 						<id>222</id>
 						<name>select_ln887_5</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8957,14 +8957,14 @@
 						<id>223</id>
 						<name>output_states_0_2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9007,14 +9007,14 @@
 						<id>224</id>
 						<name>output_states_1_2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9057,14 +9057,14 @@
 						<id>225</id>
 						<name>output_states_2_2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9107,14 +9107,14 @@
 						<id>226</id>
 						<name>output_states_3_2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9157,14 +9157,14 @@
 						<id>227</id>
 						<name>output_states_4_2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9207,14 +9207,14 @@
 						<id>228</id>
 						<name>output_states_5_2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9257,14 +9257,14 @@
 						<id>229</id>
 						<name>output_states_6_2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9307,14 +9307,14 @@
 						<id>230</id>
 						<name>output_states_7_2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9357,14 +9357,14 @@
 						<id>231</id>
 						<name>output_states_8_2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9407,14 +9407,14 @@
 						<id>232</id>
 						<name>output_states_9_2_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9457,14 +9457,14 @@
 						<id>233</id>
 						<name>output_states_10_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9507,14 +9507,14 @@
 						<id>234</id>
 						<name>output_states_11_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9557,14 +9557,14 @@
 						<id>235</id>
 						<name>output_states_12_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9607,14 +9607,14 @@
 						<id>236</id>
 						<name>output_states_13_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9657,14 +9657,14 @@
 						<id>237</id>
 						<name>output_states_14_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9707,14 +9707,14 @@
 						<id>238</id>
 						<name>output_states_15_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9757,14 +9757,14 @@
 						<id>239</id>
 						<name>or_ln98_2</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9806,14 +9806,14 @@
 						<id>240</id>
 						<name>zext_ln98_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9854,14 +9854,14 @@
 						<id>241</id>
 						<name>input_0_V_addr_9</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9904,14 +9904,14 @@
 						<id>242</id>
 						<name>input_0_V_load_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9952,14 +9952,14 @@
 						<id>243</id>
 						<name>sext_ln1118_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10000,14 +10000,14 @@
 						<id>244</id>
 						<name>mul_ln1118_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10049,14 +10049,14 @@
 						<id>245</id>
 						<name>p_Val2_19</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10100,14 +10100,14 @@
 						<id>246</id>
 						<name>icmp_ln1494_29</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -10156,14 +10156,14 @@
 						<id>247</id>
 						<name>select_ln67_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -10213,14 +10213,14 @@
 						<id>248</id>
 						<name>add_ln67_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>67</lineNumber>
 						<contextFuncName>attention_round</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -10269,14 +10269,14 @@
 						<id>249</id>
 						<name>p_Result_0_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10320,14 +10320,14 @@
 						<id>250</id>
 						<name>tmp_81</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10370,14 +10370,14 @@
 						<id>251</id>
 						<name>trunc_ln851_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10418,14 +10418,14 @@
 						<id>252</id>
 						<name>icmp_ln851_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10467,14 +10467,14 @@
 						<id>253</id>
 						<name>add_ln700_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10516,14 +10516,14 @@
 						<id>254</id>
 						<name>select_ln851_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10566,14 +10566,14 @@
 						<id>255</id>
 						<name>select_ln850_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>98</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10616,14 +10616,14 @@
 						<id>256</id>
 						<name>icmp_ln887_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10665,14 +10665,14 @@
 						<id>257</id>
 						<name>tmp_82</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10716,14 +10716,14 @@
 						<id>258</id>
 						<name>icmp_ln895_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10765,14 +10765,14 @@
 						<id>259</id>
 						<name>trunc_ln99_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10813,14 +10813,14 @@
 						<id>260</id>
 						<name>select_ln887_6</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10863,14 +10863,14 @@
 						<id>261</id>
 						<name>or_ln887_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10912,14 +10912,14 @@
 						<id>262</id>
 						<name>select_ln887_7</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10962,14 +10962,14 @@
 						<id>263</id>
 						<name>output_states_0_3_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11012,14 +11012,14 @@
 						<id>264</id>
 						<name>output_states_1_3_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11062,14 +11062,14 @@
 						<id>265</id>
 						<name>output_states_2_3_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11112,14 +11112,14 @@
 						<id>266</id>
 						<name>output_states_3_3_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11162,14 +11162,14 @@
 						<id>267</id>
 						<name>output_states_4_3_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11212,14 +11212,14 @@
 						<id>268</id>
 						<name>output_states_5_3_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11262,14 +11262,14 @@
 						<id>269</id>
 						<name>output_states_6_3_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11312,14 +11312,14 @@
 						<id>270</id>
 						<name>output_states_7_3_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11362,14 +11362,14 @@
 						<id>271</id>
 						<name>output_states_8_3_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11412,14 +11412,14 @@
 						<id>272</id>
 						<name>output_states_9_3_s</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11462,14 +11462,14 @@
 						<id>273</id>
 						<name>output_states_10_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11512,14 +11512,14 @@
 						<id>274</id>
 						<name>output_states_11_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11562,14 +11562,14 @@
 						<id>275</id>
 						<name>output_states_12_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11612,14 +11612,14 @@
 						<id>276</id>
 						<name>output_states_13_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11662,14 +11662,14 @@
 						<id>277</id>
 						<name>output_states_14_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11712,14 +11712,14 @@
 						<id>278</id>
 						<name>output_states_15_3</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11762,14 +11762,14 @@
 						<id>279</id>
 						<name>_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11841,14 +11841,14 @@
 						<id>281</id>
 						<name>output_states_14_0_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11890,14 +11890,14 @@
 						<id>282</id>
 						<name>output_states_14_1_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11939,14 +11939,14 @@
 						<id>283</id>
 						<name>output_states_14_2_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11988,14 +11988,14 @@
 						<id>284</id>
 						<name>output_states_14_3_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12071,14 +12071,14 @@
 						<id>287</id>
 						<name>output_states_13_0_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12120,14 +12120,14 @@
 						<id>288</id>
 						<name>output_states_13_1_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12169,14 +12169,14 @@
 						<id>289</id>
 						<name>output_states_13_2_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12218,14 +12218,14 @@
 						<id>290</id>
 						<name>output_states_13_3_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12301,14 +12301,14 @@
 						<id>293</id>
 						<name>output_states_12_0_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12350,14 +12350,14 @@
 						<id>294</id>
 						<name>output_states_12_1_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12399,14 +12399,14 @@
 						<id>295</id>
 						<name>output_states_12_2_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12448,14 +12448,14 @@
 						<id>296</id>
 						<name>output_states_12_3_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12531,14 +12531,14 @@
 						<id>299</id>
 						<name>output_states_11_0_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12580,14 +12580,14 @@
 						<id>300</id>
 						<name>output_states_11_1_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12629,14 +12629,14 @@
 						<id>301</id>
 						<name>output_states_11_2_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12678,14 +12678,14 @@
 						<id>302</id>
 						<name>output_states_11_3_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12761,14 +12761,14 @@
 						<id>305</id>
 						<name>output_states_10_0_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12810,14 +12810,14 @@
 						<id>306</id>
 						<name>output_states_10_1_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12859,14 +12859,14 @@
 						<id>307</id>
 						<name>output_states_10_2_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12908,14 +12908,14 @@
 						<id>308</id>
 						<name>output_states_10_3_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12991,14 +12991,14 @@
 						<id>311</id>
 						<name>output_states_9_0_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13040,14 +13040,14 @@
 						<id>312</id>
 						<name>output_states_9_1_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13089,14 +13089,14 @@
 						<id>313</id>
 						<name>output_states_9_2_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13138,14 +13138,14 @@
 						<id>314</id>
 						<name>output_states_9_3_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13221,14 +13221,14 @@
 						<id>317</id>
 						<name>output_states_8_0_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13270,14 +13270,14 @@
 						<id>318</id>
 						<name>output_states_8_1_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13319,14 +13319,14 @@
 						<id>319</id>
 						<name>output_states_8_2_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13368,14 +13368,14 @@
 						<id>320</id>
 						<name>output_states_8_3_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13451,14 +13451,14 @@
 						<id>323</id>
 						<name>output_states_7_0_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13500,14 +13500,14 @@
 						<id>324</id>
 						<name>output_states_7_1_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13549,14 +13549,14 @@
 						<id>325</id>
 						<name>output_states_7_2_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13598,14 +13598,14 @@
 						<id>326</id>
 						<name>output_states_7_3_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13681,14 +13681,14 @@
 						<id>329</id>
 						<name>output_states_6_0_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13730,14 +13730,14 @@
 						<id>330</id>
 						<name>output_states_6_1_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13779,14 +13779,14 @@
 						<id>331</id>
 						<name>output_states_6_2_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13828,14 +13828,14 @@
 						<id>332</id>
 						<name>output_states_6_3_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13911,14 +13911,14 @@
 						<id>335</id>
 						<name>output_states_5_0_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13960,14 +13960,14 @@
 						<id>336</id>
 						<name>output_states_5_1_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14009,14 +14009,14 @@
 						<id>337</id>
 						<name>output_states_5_2_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14058,14 +14058,14 @@
 						<id>338</id>
 						<name>output_states_5_3_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14141,14 +14141,14 @@
 						<id>341</id>
 						<name>output_states_4_0_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14190,14 +14190,14 @@
 						<id>342</id>
 						<name>output_states_4_1_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14239,14 +14239,14 @@
 						<id>343</id>
 						<name>output_states_4_2_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14288,14 +14288,14 @@
 						<id>344</id>
 						<name>output_states_4_3_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14371,14 +14371,14 @@
 						<id>347</id>
 						<name>output_states_3_0_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14420,14 +14420,14 @@
 						<id>348</id>
 						<name>output_states_3_1_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14469,14 +14469,14 @@
 						<id>349</id>
 						<name>output_states_3_2_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14518,14 +14518,14 @@
 						<id>350</id>
 						<name>output_states_3_3_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14601,14 +14601,14 @@
 						<id>353</id>
 						<name>output_states_2_0_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14650,14 +14650,14 @@
 						<id>354</id>
 						<name>output_states_2_1_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14699,14 +14699,14 @@
 						<id>355</id>
 						<name>output_states_2_2_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14748,14 +14748,14 @@
 						<id>356</id>
 						<name>output_states_2_3_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14831,14 +14831,14 @@
 						<id>359</id>
 						<name>output_states_1_0_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14880,14 +14880,14 @@
 						<id>360</id>
 						<name>output_states_1_1_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14929,14 +14929,14 @@
 						<id>361</id>
 						<name>output_states_1_2_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14978,14 +14978,14 @@
 						<id>362</id>
 						<name>output_states_1_3_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15061,14 +15061,14 @@
 						<id>365</id>
 						<name>output_states_0_0_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15110,14 +15110,14 @@
 						<id>366</id>
 						<name>output_states_0_1_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15159,14 +15159,14 @@
 						<id>367</id>
 						<name>output_states_0_2_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15208,14 +15208,14 @@
 						<id>368</id>
 						<name>output_states_0_3_s_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15291,14 +15291,14 @@
 						<id>371</id>
 						<name>output_states_15_0_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15340,14 +15340,14 @@
 						<id>372</id>
 						<name>output_states_15_1_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15389,14 +15389,14 @@
 						<id>373</id>
 						<name>output_states_15_2_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15438,14 +15438,14 @@
 						<id>374</id>
 						<name>output_states_15_3_write_ln100</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15521,14 +15521,14 @@
 						<id>377</id>
 						<name>_ln95</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>95</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15569,14 +15569,14 @@
 						<id>380</id>
 						<name>_ln94</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15617,14 +15617,14 @@
 						<id>383</id>
 						<name>_ln105</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>105</lineNumber>
 						<contextFuncName>quantize_activation&amp;lt;1, 384&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>

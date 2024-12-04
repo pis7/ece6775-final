@@ -52,7 +52,7 @@ const attn_fixed_t HEAD_DIM_BASIC_SQRT = 3.46410162; // sqrt(HEAD_DIM)
 #endif
 
 const attn_fixed_t NORM_EPSILON = 1e-5;
-const uint8_t P_ID              = CACHE_SIZE_INIT; // based on Kaixin's prefill prompt
+const int P_ID                  = CACHE_SIZE_INIT; // based on Kaixin's prefill prompt
 const attn_fixed_t FIXED32_MIN  = -32768.0;
 
 #endif

@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 81
+set ID 77
 set hasByteEnable 0
 set MemName dut_input_0_V
 set CoreName ap_simcore_mem
@@ -96,7 +96,7 @@ set axilite_register_dict [dict create]
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 82 \
+    id 78 \
     name strm_in_V_V \
     type fifo \
     dir I \
@@ -111,7 +111,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 83 \
+    id 79 \
     name strm_out_V_V \
     type fifo \
     dir O \

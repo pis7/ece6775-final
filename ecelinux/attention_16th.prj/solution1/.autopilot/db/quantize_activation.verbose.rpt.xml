@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'quantize_activation'" level="0">
-<item name = "Date">Sun Dec  1 01:00:05 2024
+<item name = "Date">Tue Dec  3 18:13:23 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -64,7 +64,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="dut_udiv_40ns_40neOg_U26">dut_udiv_40ns_40neOg, 0, 0, 490, 296, 0</column>
+<column name="dut_udiv_40ns_40neOg_U10">dut_udiv_40ns_40neOg, 0, 0, 490, 296, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -85,22 +85,19 @@
 <column name="mul_ln1118_2_fu_805_p2">*, 5, 0, 29, 40, 40</column>
 <column name="mul_ln1118_3_fu_824_p2">*, 5, 0, 29, 40, 40</column>
 <column name="mul_ln1118_fu_611_p2">*, 5, 0, 29, 40, 40</column>
-<column name="add_ln108_1_fu_736_p2">+, 0, 0, 47, 40, 40</column>
-<column name="add_ln108_2_fu_922_p2">+, 0, 0, 47, 40, 40</column>
-<column name="add_ln108_3_fu_1000_p2">+, 0, 0, 47, 40, 40</column>
-<column name="add_ln108_fu_658_p2">+, 0, 0, 47, 40, 40</column>
-<column name="add_ln128_fu_480_p2">+, 0, 0, 15, 7, 1</column>
-<column name="add_ln135_fu_514_p2">+, 0, 0, 12, 3, 1</column>
-<column name="add_ln136_fu_538_p2">+, 0, 0, 12, 3, 1</column>
-<column name="add_ln137_fu_548_p2">+, 0, 0, 15, 5, 5</column>
+<column name="add_ln67_1_fu_736_p2">+, 0, 0, 47, 40, 40</column>
+<column name="add_ln67_2_fu_922_p2">+, 0, 0, 47, 40, 40</column>
+<column name="add_ln67_3_fu_1000_p2">+, 0, 0, 47, 40, 40</column>
+<column name="add_ln67_fu_658_p2">+, 0, 0, 47, 40, 40</column>
 <column name="add_ln700_1_fu_769_p2">+, 0, 0, 31, 1, 24</column>
 <column name="add_ln700_2_fu_955_p2">+, 0, 0, 31, 1, 24</column>
 <column name="add_ln700_3_fu_1033_p2">+, 0, 0, 31, 1, 24</column>
 <column name="add_ln700_fu_691_p2">+, 0, 0, 31, 1, 24</column>
+<column name="add_ln87_fu_480_p2">+, 0, 0, 15, 7, 1</column>
+<column name="add_ln94_fu_514_p2">+, 0, 0, 12, 3, 1</column>
+<column name="add_ln95_fu_538_p2">+, 0, 0, 12, 3, 1</column>
+<column name="add_ln96_fu_548_p2">+, 0, 0, 15, 5, 5</column>
 <column name="grp_fu_445_p2">-, 0, 0, 47, 1, 40</column>
-<column name="icmp_ln128_fu_469_p2">icmp, 0, 0, 11, 7, 7</column>
-<column name="icmp_ln135_fu_508_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="icmp_ln136_fu_532_p2">icmp, 0, 0, 9, 3, 4</column>
 <column name="icmp_ln1494_26_fu_645_p2">icmp, 0, 0, 21, 40, 1</column>
 <column name="icmp_ln1494_27_fu_723_p2">icmp, 0, 0, 21, 40, 1</column>
 <column name="icmp_ln1494_28_fu_909_p2">icmp, 0, 0, 21, 40, 1</column>
@@ -110,6 +107,7 @@
 <column name="icmp_ln851_2_fu_949_p2">icmp, 0, 0, 13, 16, 1</column>
 <column name="icmp_ln851_3_fu_1027_p2">icmp, 0, 0, 13, 16, 1</column>
 <column name="icmp_ln851_fu_685_p2">icmp, 0, 0, 13, 16, 1</column>
+<column name="icmp_ln87_fu_469_p2">icmp, 0, 0, 11, 7, 7</column>
 <column name="icmp_ln887_1_fu_874_p2">icmp, 0, 0, 18, 24, 9</column>
 <column name="icmp_ln887_2_fu_1084_p2">icmp, 0, 0, 18, 24, 9</column>
 <column name="icmp_ln887_3_fu_1123_p2">icmp, 0, 0, 18, 24, 9</column>
@@ -118,19 +116,21 @@
 <column name="icmp_ln895_2_fu_1089_p2">icmp, 0, 0, 18, 17, 1</column>
 <column name="icmp_ln895_3_fu_1128_p2">icmp, 0, 0, 18, 17, 1</column>
 <column name="icmp_ln895_fu_844_p2">icmp, 0, 0, 18, 17, 1</column>
-<column name="or_ln139_1_fu_587_p2">or, 0, 0, 7, 7, 2</column>
-<column name="or_ln139_2_fu_597_p2">or, 0, 0, 7, 7, 2</column>
-<column name="or_ln139_fu_576_p2">or, 0, 0, 7, 7, 1</column>
+<column name="icmp_ln94_fu_508_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln95_fu_532_p2">icmp, 0, 0, 9, 3, 4</column>
 <column name="or_ln887_1_fu_895_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln887_2_fu_1105_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln887_3_fu_1144_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln887_fu_860_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln98_1_fu_587_p2">or, 0, 0, 7, 7, 2</column>
+<column name="or_ln98_2_fu_597_p2">or, 0, 0, 7, 7, 2</column>
+<column name="or_ln98_fu_576_p2">or, 0, 0, 7, 7, 1</column>
 <column name="grp_fu_451_p3">select, 0, 0, 40, 1, 40</column>
 <column name="p_Val2_16_fu_497_p3">select, 0, 0, 40, 1, 40</column>
-<column name="select_ln108_1_fu_728_p3">select, 0, 0, 17, 1, 16</column>
-<column name="select_ln108_2_fu_914_p3">select, 0, 0, 17, 1, 16</column>
-<column name="select_ln108_3_fu_992_p3">select, 0, 0, 17, 1, 16</column>
-<column name="select_ln108_fu_650_p3">select, 0, 0, 17, 1, 16</column>
+<column name="select_ln67_1_fu_728_p3">select, 0, 0, 17, 1, 16</column>
+<column name="select_ln67_2_fu_914_p3">select, 0, 0, 17, 1, 16</column>
+<column name="select_ln67_3_fu_992_p3">select, 0, 0, 17, 1, 16</column>
+<column name="select_ln67_fu_650_p3">select, 0, 0, 17, 1, 16</column>
 <column name="select_ln850_1_fu_783_p3">select, 0, 0, 24, 1, 24</column>
 <column name="select_ln850_2_fu_969_p3">select, 0, 0, 24, 1, 24</column>
 <column name="select_ln850_3_fu_1047_p3">select, 0, 0, 24, 1, 24</column>
@@ -164,9 +164,9 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln128_reg_1180">7, 0, 7, 0</column>
-<column name="add_ln135_reg_1211">3, 0, 3, 0</column>
-<column name="add_ln136_reg_1224">3, 0, 3, 0</column>
+<column name="add_ln87_reg_1180">7, 0, 7, 0</column>
+<column name="add_ln94_reg_1211">3, 0, 3, 0</column>
+<column name="add_ln95_reg_1224">3, 0, 3, 0</column>
 <column name="ap_CS_fsm">56, 0, 56, 0</column>
 <column name="j_0_0_reg_404">7, 0, 7, 0</column>
 <column name="ji_0_0_reg_426">3, 0, 3, 0</column>
@@ -193,9 +193,9 @@
 <column name="tmp_78_reg_1293">17, 0, 17, 0</column>
 <column name="tmp_80_reg_1332">17, 0, 17, 0</column>
 <column name="tmp_82_reg_1343">17, 0, 17, 0</column>
-<column name="trunc_ln137_reg_1229">2, 0, 2, 0</column>
+<column name="trunc_ln96_reg_1229">2, 0, 2, 0</column>
 <column name="udiv_ln1148_reg_1196">40, 0, 40, 0</column>
-<column name="zext_ln135_reg_1200">40, 0, 56, 16</column>
+<column name="zext_ln94_reg_1200">40, 0, 56, 16</column>
 </table>
 </item>
 </section>

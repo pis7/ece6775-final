@@ -218,6 +218,62 @@
           }
         },
         {
+          "functionName": "attention",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "q_embed",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "cyclic",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "factor",
+                "value": "1"
+              },
+              {
+                "name": "dim",
+                "value": "3"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "attention",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "k_proj_transposed",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "cyclic",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "factor",
+                "value": "1"
+              },
+              {
+                "name": "dim",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
           "functionName": "quantize_activation",
           "label": "QUANTIZE_ACTIVATION_LOOP_5",
           "functionLabel": "",
@@ -228,6 +284,18 @@
           "label": "LINEAR_FORWARD_NO_MUL_LOOP_3",
           "functionLabel": "",
           "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "GEMM_3D_float",
+          "label": "GEMM_3D_FLOAT_LOOP_4",
+          "functionLabel": "",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "1"
+              }]
+          }
         }
       ]
     }]}

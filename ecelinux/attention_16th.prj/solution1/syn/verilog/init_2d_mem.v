@@ -42,11 +42,11 @@ reg mem_0_V_we0;
 
 (* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [6:0] add_ln37_fu_57_p2;
+wire   [6:0] add_ln25_fu_57_p2;
 wire    ap_CS_fsm_state2;
 reg   [6:0] j_0_0_reg_40;
-wire   [0:0] icmp_ln37_fu_51_p2;
-wire   [63:0] zext_ln38_fu_63_p1;
+wire   [0:0] icmp_ln25_fu_51_p2;
+wire   [63:0] zext_ln26_fu_63_p1;
 reg   [1:0] ap_NS_fsm;
 
 // power-on initialization
@@ -63,15 +63,15 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((icmp_ln37_fu_51_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        j_0_0_reg_40 <= add_ln37_fu_57_p2;
+    if (((icmp_ln25_fu_51_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+        j_0_0_reg_40 <= add_ln25_fu_57_p2;
     end else if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
         j_0_0_reg_40 <= 7'd0;
     end
 end
 
 always @ (*) begin
-    if ((((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln37_fu_51_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2)))) begin
+    if ((((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) | ((icmp_ln25_fu_51_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2)))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -87,7 +87,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln37_fu_51_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((icmp_ln25_fu_51_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -103,7 +103,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln37_fu_51_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((icmp_ln25_fu_51_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
         mem_0_V_we0 = 1'b1;
     end else begin
         mem_0_V_we0 = 1'b0;
@@ -120,7 +120,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((icmp_ln37_fu_51_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((icmp_ln25_fu_51_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
@@ -132,18 +132,18 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln37_fu_57_p2 = (j_0_0_reg_40 + 7'd1);
+assign add_ln25_fu_57_p2 = (j_0_0_reg_40 + 7'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
-assign icmp_ln37_fu_51_p2 = ((j_0_0_reg_40 == 7'd96) ? 1'b1 : 1'b0);
+assign icmp_ln25_fu_51_p2 = ((j_0_0_reg_40 == 7'd96) ? 1'b1 : 1'b0);
 
-assign mem_0_V_address0 = zext_ln38_fu_63_p1;
+assign mem_0_V_address0 = zext_ln26_fu_63_p1;
 
 assign mem_0_V_d0 = 40'd0;
 
-assign zext_ln38_fu_63_p1 = j_0_0_reg_40;
+assign zext_ln26_fu_63_p1 = j_0_0_reg_40;
 
 endmodule //init_2d_mem

@@ -88,7 +88,7 @@ arrayctor.loop4.preheader:1  %empty_100 = call i32 (...)* @_ssdm_op_SpecInterfac
 
 <Node id="151" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-arrayctor.loop4.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_in_V_V), !map !569
+arrayctor.loop4.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_in_V_V), !map !573
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -103,7 +103,7 @@ arrayctor.loop4.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_i
 
 <Node id="152" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-arrayctor.loop4.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_out_V_V), !map !573
+arrayctor.loop4.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_out_V_V), !map !577
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -163,7 +163,7 @@ arrayctor.loop4.preheader:6  %output_0 = alloca [384 x i40], align 8
 
 <Node id="156" bw="0" op_0_bw="0">
 <![CDATA[
-arrayctor.loop4.preheader:7  br label %.preheader75.0
+arrayctor.loop4.preheader:7  br label %.preheader50.0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln19"/></StgValue>
@@ -181,7 +181,7 @@ arrayctor.loop4.preheader:7  br label %.preheader75.0
 
 <Node id="158" bw="9" op_0_bw="9" op_1_bw="0" op_2_bw="9" op_3_bw="0">
 <![CDATA[
-.preheader75.0:0  %j_0_0 = phi i9 [ %add_ln19, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %arrayctor.loop4.preheader ]
+.preheader50.0:0  %j_0_0 = phi i9 [ %add_ln19, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %arrayctor.loop4.preheader ]
 
 ]]></Node>
 <StgValue><ssdm name="j_0_0"/></StgValue>
@@ -196,7 +196,7 @@ arrayctor.loop4.preheader:7  br label %.preheader75.0
 
 <Node id="159" bw="1" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-.preheader75.0:1  %icmp_ln19 = icmp eq i9 %j_0_0, -128
+.preheader50.0:1  %icmp_ln19 = icmp eq i9 %j_0_0, -128
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln19"/></StgValue>
@@ -211,7 +211,7 @@ arrayctor.loop4.preheader:7  br label %.preheader75.0
 
 <Node id="160" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader75.0:2  %empty_101 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)
+.preheader50.0:2  %empty_101 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)
 
 ]]></Node>
 <StgValue><ssdm name="empty_101"/></StgValue>
@@ -226,7 +226,7 @@ arrayctor.loop4.preheader:7  br label %.preheader75.0
 
 <Node id="161" bw="9" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-.preheader75.0:3  %add_ln19 = add i9 %j_0_0, 1
+.preheader50.0:3  %add_ln19 = add i9 %j_0_0, 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln19"/></StgValue>
@@ -241,7 +241,7 @@ arrayctor.loop4.preheader:7  br label %.preheader75.0
 
 <Node id="162" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader75.0:4  br i1 %icmp_ln19, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0
+.preheader50.0:4  br i1 %icmp_ln19, label %.preheader51.1, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln19"/></StgValue>
@@ -353,7 +353,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 
 <Node id="170" bw="0" op_0_bw="0">
 <![CDATA[
-_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:6  br label %.preheader75.0
+_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:6  br label %.preheader50.0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln19"/></StgValue>
@@ -369,7 +369,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 
 <Node id="172" bw="0" op_0_bw="0" op_1_bw="40" op_2_bw="40" op_3_bw="40" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="8" op_34_bw="8" op_35_bw="8" op_36_bw="8" op_37_bw="8" op_38_bw="8" op_39_bw="8" op_40_bw="8" op_41_bw="8" op_42_bw="8" op_43_bw="8" op_44_bw="8" op_45_bw="8" op_46_bw="8" op_47_bw="8" op_48_bw="8" op_49_bw="8" op_50_bw="8" op_51_bw="8" op_52_bw="17" op_53_bw="17" op_54_bw="40" op_55_bw="40" op_56_bw="32" op_57_bw="46" op_58_bw="50" op_59_bw="40" op_60_bw="8" op_61_bw="8" op_62_bw="8" op_63_bw="8" op_64_bw="8" op_65_bw="8" op_66_bw="8" op_67_bw="8" op_68_bw="8" op_69_bw="8" op_70_bw="8" op_71_bw="8" op_72_bw="8" op_73_bw="8" op_74_bw="8" op_75_bw="8">
 <![CDATA[
-_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:0  call fastcc void @attention([384 x i40]* %input_0_V, [384 x i40]* %output_0)
+.preheader51.1:0  call fastcc void @attention([384 x i40]* %input_0_V, [384 x i40]* %output_0)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln24"/></StgValue>
@@ -387,7 +387,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:0  call fastcc v
 
 <Node id="172" bw="0" op_0_bw="0" op_1_bw="40" op_2_bw="40" op_3_bw="40" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="8" op_34_bw="8" op_35_bw="8" op_36_bw="8" op_37_bw="8" op_38_bw="8" op_39_bw="8" op_40_bw="8" op_41_bw="8" op_42_bw="8" op_43_bw="8" op_44_bw="8" op_45_bw="8" op_46_bw="8" op_47_bw="8" op_48_bw="8" op_49_bw="8" op_50_bw="8" op_51_bw="8" op_52_bw="17" op_53_bw="17" op_54_bw="40" op_55_bw="40" op_56_bw="32" op_57_bw="46" op_58_bw="50" op_59_bw="40" op_60_bw="8" op_61_bw="8" op_62_bw="8" op_63_bw="8" op_64_bw="8" op_65_bw="8" op_66_bw="8" op_67_bw="8" op_68_bw="8" op_69_bw="8" op_70_bw="8" op_71_bw="8" op_72_bw="8" op_73_bw="8" op_74_bw="8" op_75_bw="8">
 <![CDATA[
-_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:0  call fastcc void @attention([384 x i40]* %input_0_V, [384 x i40]* %output_0)
+.preheader51.1:0  call fastcc void @attention([384 x i40]* %input_0_V, [384 x i40]* %output_0)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln24"/></StgValue>
@@ -402,7 +402,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:0  call fastcc v
 
 <Node id="173" bw="0" op_0_bw="0">
 <![CDATA[
-_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:1  br label %.preheader.0
+.preheader51.1:1  br label %.preheader.0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln51"/></StgValue>
@@ -420,7 +420,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:1  br label %.pr
 
 <Node id="175" bw="9" op_0_bw="9" op_1_bw="0" op_2_bw="9" op_3_bw="0">
 <![CDATA[
-.preheader.0:0  %j9_0_0 = phi i9 [ %add_ln51, %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit ]
+.preheader.0:0  %j9_0_0 = phi i9 [ %add_ln51, %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %.preheader51.1 ]
 
 ]]></Node>
 <StgValue><ssdm name="j9_0_0"/></StgValue>

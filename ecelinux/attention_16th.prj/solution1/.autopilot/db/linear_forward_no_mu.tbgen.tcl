@@ -260,7 +260,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "packed_weights_2", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "packed_weights_3", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "w_scale_V", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_sdiv_72ns_61sfYi_U46", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_sdiv_72ns_61sfYi_U30", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

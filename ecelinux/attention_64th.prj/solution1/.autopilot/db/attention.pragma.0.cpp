@@ -6864,7 +6864,7 @@ template <
   const attn_fixed_t v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
   const attn_fixed_t ln_weight_in[HS_COLS],
   const attn_fixed_t ln_weight[PROJ_COLS],
-  const attn_fixed_t p_id
+  const uint8_t p_id
 );
 # 7 "attention.cpp" 2
 # 1 "./layer.h" 1
@@ -27542,22 +27542,10 @@ const attn_fixed_t hidden_states[1][24] = {
 
 
 
-template <int C, typename T>
-void init_1d_mem (
-  T mem[C],
-  T val
-) {
-  INIT_1D_MEM_LOOP_1: for (int i = 0; i < C; i++)
-    mem[i] = val;
-}
-
-
-
-
 template <int R, int C, typename T>
 void init_2d_mem (
   T mem[R][C],
-  T val
+  const T val
 ) {
   INIT_2D_MEM_LOOP_1: for (int i = 0; i < R; i++)
     INIT_2D_MEM_LOOP_2: for (int j = 0; j < C; j++)
@@ -27567,29 +27555,18 @@ void init_2d_mem (
 
 
 
-template <int P, int R, int C, typename T>
-void init_3d_mem (
-  T mem[P][R][C],
-  T val
-) {
-  INIT_3D_MEM_LOOP_1: for (int i = 0; i < P; i++)
-    INIT_3D_MEM_LOOP_2: for (int j = 0; j < R; j++)
-      INIT_3D_MEM_LOOP_3: for (int k = 0; k < C; k++)
-        mem[i][j][k] = val;
-}
-
-
-
-
-attn_fixed_t attention_abs(attn_fixed_t a) {
+attn_fixed_t attention_abs(const attn_fixed_t a) {
   return (a < (attn_fixed_t)0.0) ? (attn_fixed_t)(-a) : a;
 }
-# 80 "./layer.h"
+
+
+
+
 template <int C>
 void rms_norm(
   attn_fixed_t input[C],
   const attn_fixed_t weight[C],
-  attn_fixed_t epsilon
+  const attn_fixed_t epsilon
 ) {
   attn_fixed_t variance = 0.0;
   RMS_NORM_LOOP_1: for (int i = 0; i < C; i++){
@@ -27621,10 +27598,10 @@ attn_fixed_t attention_round(attn_fixed_t a) {
 
 template <int R, int C>
 void quantize_activation(
-  attn_fixed_t input[R][C],
+  const attn_fixed_t input[R][C],
   sbit8_t output_states[R][C/4][4],
   attn_fixed_t output_scales[R],
-  sbit8_t num_bits
+  const sbit8_t num_bits
 ) {
   sbit32_t Qn = -(1 << (num_bits - 1));
   sbit32_t Qp = (1 << (num_bits - 1)) - 1;
@@ -27645,7 +27622,7 @@ void quantize_activation(
           int j = jo * (C/24) + ji;
           QUANTIZE_ACTIVATION_LOOP_5: for (int k = 0; k < 4; k++){
 #pragma HLS UNROLL
-# 138 "./layer.h"
+# 97 "./layer.h"
 
             sbit32_t quantized_value = attention_round(input[i][(j << 2) + k] * scale);
             sbit8_t quantized_value_clamped = (quantized_value < Qn) ? Qn : ((quantized_value > Qp) ? Qp : quantized_value);
@@ -27661,7 +27638,7 @@ void quantize_activation(
 
 template <int R, int IN_C, int OUT_C>
 void linear_forward_no_mul (
-  sbit8_t input[R][IN_C/4][4],
+  const sbit8_t input[R][IN_C/4][4],
   attn_fixed_t output[R][OUT_C],
   const attn_fixed_t scales[R],
   const uint8_t packed_weights[IN_C/4][OUT_C],
@@ -27672,7 +27649,7 @@ void linear_forward_no_mul (
     LINEAR_FORWARD_NO_MUL_LOOP_2: for (int j = 0; j < OUT_C; j++) {
       LINEAR_FORWARD_NO_MUL_LOOP_3: for (int ko = 0; ko < (IN_C/4)/(IN_C/24); ko++) {
 #pragma HLS PIPELINE
-# 162 "./layer.h"
+# 121 "./layer.h"
 
         LINEAR_FORWARD_NO_MUL_LOOP_4: for (int ki = 0; ki < (IN_C/24); ki++) {
           int k = ko * (IN_C/24) + ki;
@@ -27696,7 +27673,7 @@ void linear_forward_no_mul (
 
 template <int P, int R, int C>
 void reshape_2D_to_3D (
-  attn_fixed_t input[P][R*C],
+  const attn_fixed_t input[P][R*C],
   attn_fixed_t output[R][P][C]
 ) {
   RESHAPE_2D_TO_3D_LOOP_1: for (int j = 0; j < P; j++)
@@ -27710,11 +27687,11 @@ void reshape_2D_to_3D (
 
 template <int P, int R, int C>
 void apply_rotary_pos_emb (
-  attn_fixed_t input_q[R][P][C],
-  attn_fixed_t input_k[R][P][C],
+  const attn_fixed_t input_q[R][P][C],
+  const attn_fixed_t input_k[R][P][C],
   attn_fixed_t output_q[R][P][C],
   attn_fixed_t output_k[R][P][C],
-  attn_fixed_t p_id
+  const uint8_t p_id
 ) {
 
 
@@ -27751,7 +27728,7 @@ template <int P, int R, int C>
 void cache_update (
   const attn_fixed_t cache_in[P][R][C],
   attn_fixed_t cache_out[P][R+1][C],
-  attn_fixed_t update[P][1][C]
+  const attn_fixed_t update[P][1][C]
 ) {
   CACHE_UPDATE_LOOP_1: for (int i = 0; i < P; i++)
     CACHE_UPDATE_LOOP_2: for (int j = 0; j < R+1; j++)
@@ -27764,7 +27741,7 @@ void cache_update (
 
 template <int P, int R, int C>
 void transpose_last_two_dims (
-  attn_fixed_t input[R][P][C],
+  const attn_fixed_t input[R][P][C],
   attn_fixed_t output[R][C][P]
 ) {
   TRANSPOSE_LAST_TWO_DIMS_LOOP_1: for (int i = 0; i < R; i++)
@@ -27784,8 +27761,8 @@ template <
   int R2,
   int C2
 > void GEMM_3D_float (
-  attn_fixed_t input_1[P1][R1][C1],
-  attn_fixed_t input_2[P2][R2][C2],
+  const attn_fixed_t input_1[P1][R1][C1],
+  const attn_fixed_t input_2[P2][R2][C2],
   attn_fixed_t output[P1][R1][C2]
 ) {
   GEMM_3D_FLOAT_LOOP_1: for (int i = 0; i < P1; i++) {
@@ -27793,6 +27770,9 @@ template <
       GEMM_3D_FLOAT_LOOP_3: for (int k = 0; k < C2; k++) {
         output[i][j][k] = 0;
         GEMM_3D_FLOAT_LOOP_4: for (int l = 0; l < C1; l++)
+#pragma HLS UNROLL factor=1
+# 240 "./layer.h"
+
           output[i][j][k] += input_1[i][j][l] * input_2[i][l][k];
       }
     }
@@ -27827,7 +27807,6 @@ void softmax (
       sum = 0.0;
       SOFTMAX_LOOP_4: for (int k = 0; k < C; k++) {
         attn_fixed_t x = input[i][j][k] - max_val;
-
         input[i][j][k] = hls::exp(x);
         sum += input[i][j][k];
       }
@@ -27909,7 +27888,7 @@ template <
   const attn_fixed_t v_cache[NUM_HEADS][CACHE_SIZE_INIT][HEAD_DIM],
   const attn_fixed_t ln_weight_in[HS_COLS],
   const attn_fixed_t ln_weight[PROJ_COLS],
-  const attn_fixed_t p_id
+  const uint8_t p_id
 ) {
 #pragma HLS ARRAY_PARTITION variable=&k_weights cyclic factor=1 dim=1
 # 81 "attention.cpp"
@@ -27942,9 +27921,6 @@ template <
 # 93 "attention.cpp"
 
   attn_fixed_t scales[SEQ_LEN];
-
-  init_3d_mem<SEQ_LEN, HS_COLS/4, 4, sbit8_t>(quantized_hidden_states, 0);
-  init_1d_mem<SEQ_LEN, attn_fixed_t>(scales, 1);
 
   quantize_activation<SEQ_LEN, HS_COLS>(
     hidden_states,
@@ -27994,6 +27970,9 @@ template <
 
 
   attn_fixed_t q_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
+#pragma HLS ARRAY_PARTITION variable=&q_embed cyclic factor=1 dim=3
+# 143 "attention.cpp"
+
   attn_fixed_t k_embed[NUM_HEADS][SEQ_LEN][HEAD_DIM];
   apply_rotary_pos_emb<SEQ_LEN, NUM_HEADS, HEAD_DIM>(
     q_proj, k_proj, q_embed, k_embed, p_id
@@ -28007,7 +27986,11 @@ template <
     v_cache, v_cache_upd, v_proj
   );
 
+
   attn_fixed_t k_proj_transposed[NUM_HEADS][HEAD_DIM][CACHE_SIZE_INIT+1];
+#pragma HLS ARRAY_PARTITION variable=&k_proj_transposed cyclic factor=1 dim=2
+# 158 "attention.cpp"
+
   transpose_last_two_dims<CACHE_SIZE_INIT+1, NUM_HEADS, HEAD_DIM>(k_cache_upd, k_proj_transposed);
 
 
@@ -28056,7 +28039,6 @@ template <
   );
 
   attn_fixed_t attn_output_2D[SEQ_LEN][PROJ_COLS];
-  init_2d_mem<SEQ_LEN, PROJ_COLS, attn_fixed_t>(attn_output_2D, 0);
   ATTN_2D_LOOP_1: for (int s = 0; s < SEQ_LEN; ++s)
     ATTN_2D_LOOP_2: for (int h = 0; h < NUM_HEADS; ++h)
       ATTN_2D_LOOP_3: for (int d = 0; d < HEAD_DIM; ++d)
@@ -28074,14 +28056,12 @@ template <
 
   sbit8_t quantized_final_output[SEQ_LEN][PROJ_COLS/4][4];
 #pragma HLS ARRAY_PARTITION variable=&quantized_final_output complete dim=3
-# 225 "attention.cpp"
+# 222 "attention.cpp"
 
 #pragma HLS ARRAY_PARTITION variable=&quantized_final_output cyclic factor=1 dim=2
-# 225 "attention.cpp"
+# 222 "attention.cpp"
 
   attn_fixed_t final_scales[SEQ_LEN];
-  init_3d_mem<SEQ_LEN, PROJ_COLS/4, 4, sbit8_t>(quantized_final_output, 0);
-  init_1d_mem<SEQ_LEN, attn_fixed_t>(final_scales, 1);
   quantize_activation<SEQ_LEN, PROJ_COLS>(
     attn_output_2D,
     quantized_final_output,

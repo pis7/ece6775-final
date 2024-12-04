@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'attention'" level="0">
-<item name = "Date">Sun Dec  1 01:11:16 2024
+<item name = "Date">Tue Dec  3 18:23:16 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_64th.prj</item>
@@ -31,21 +31,20 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_linear_forward_no_mu_fu_315">linear_forward_no_mu, 510, 510, 5.100 us, 5.100 us, 510, 510, none</column>
-<column name="grp_rms_norm_24_s_fu_336">rms_norm_24_s, 372, 372, 3.720 us, 3.720 us, 372, 372, none</column>
-<column name="grp_softmax_1_2_6_s_fu_345">softmax_1_2_6_s, 883, 883, 8.830 us, 8.830 us, 883, 883, none</column>
-<column name="grp_quantize_activation_fu_356">quantize_activation, 151, 151, 1.510 us, 1.510 us, 151, 151, none</column>
-<column name="grp_apply_rotary_pos_emb_fu_366">apply_rotary_pos_emb, 130, 130, 1.300 us, 1.300 us, 130, 130, none</column>
-<column name="grp_GEMM_3D_float_1_fu_378">GEMM_3D_float_1, 749, 749, 7.490 us, 7.490 us, 749, 749, none</column>
-<column name="grp_GEMM_3D_float_fu_385">GEMM_3D_float, 773, 773, 7.730 us, 7.730 us, 773, 773, none</column>
-<column name="grp_cache_update_1_fu_392">cache_update_1, 317, 317, 3.170 us, 3.170 us, 317, 317, none</column>
-<column name="grp_cache_update_fu_400">cache_update, 317, 317, 3.170 us, 3.170 us, 317, 317, none</column>
-<column name="grp_transpose_last_two_d_fu_408">transpose_last_two_d, 317, 317, 3.170 us, 3.170 us, 317, 317, none</column>
-<column name="grp_reshape_2D_to_3D_fu_414">reshape_2D_to_3D, 53, 53, 0.530 us, 0.530 us, 53, 53, none</column>
-<column name="grp_init_3d_mem_fu_420">init_3d_mem, 37, 37, 0.370 us, 0.370 us, 37, 37, none</column>
-<column name="grp_init_2d_mem_fu_432">init_2d_mem, 25, 25, 0.250 us, 0.250 us, 25, 25, none</column>
-<column name="grp_init_2d_mem_fu_438">init_2d_mem, 25, 25, 0.250 us, 0.250 us, 25, 25, none</column>
-<column name="grp_init_2d_mem_fu_444">init_2d_mem, 25, 25, 0.250 us, 0.250 us, 25, 25, none</column>
+<column name="grp_linear_forward_no_mu_fu_313">linear_forward_no_mu, 510, 510, 5.100 us, 5.100 us, 510, 510, none</column>
+<column name="grp_rms_norm_24_s_fu_334">rms_norm_24_s, 372, 372, 3.720 us, 3.720 us, 372, 372, none</column>
+<column name="grp_softmax_1_2_6_s_fu_343">softmax_1_2_6_s, 883, 883, 8.830 us, 8.830 us, 883, 883, none</column>
+<column name="grp_quantize_activation_fu_354">quantize_activation, 151, 151, 1.510 us, 1.510 us, 151, 151, none</column>
+<column name="grp_apply_rotary_pos_emb_fu_364">apply_rotary_pos_emb, 130, 130, 1.300 us, 1.300 us, 130, 130, none</column>
+<column name="grp_GEMM_3D_float_1_fu_376">GEMM_3D_float_1, 749, 749, 7.490 us, 7.490 us, 749, 749, none</column>
+<column name="grp_GEMM_3D_float_fu_383">GEMM_3D_float, 773, 773, 7.730 us, 7.730 us, 773, 773, none</column>
+<column name="grp_cache_update_1_fu_390">cache_update_1, 317, 317, 3.170 us, 3.170 us, 317, 317, none</column>
+<column name="grp_cache_update_fu_398">cache_update, 317, 317, 3.170 us, 3.170 us, 317, 317, none</column>
+<column name="grp_transpose_last_two_d_fu_406">transpose_last_two_d, 317, 317, 3.170 us, 3.170 us, 317, 317, none</column>
+<column name="grp_reshape_2D_to_3D_fu_412">reshape_2D_to_3D, 53, 53, 0.530 us, 0.530 us, 53, 53, none</column>
+<column name="grp_init_2d_mem_fu_418">init_2d_mem, 25, 25, 0.250 us, 0.250 us, 25, 25, none</column>
+<column name="grp_init_2d_mem_fu_424">init_2d_mem, 25, 25, 0.250 us, 0.250 us, 25, 25, none</column>
+<column name="grp_init_2d_mem_fu_430">init_2d_mem, 25, 25, 0.250 us, 0.250 us, 25, 25, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

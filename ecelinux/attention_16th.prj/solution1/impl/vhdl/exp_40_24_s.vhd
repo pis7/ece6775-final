@@ -170,7 +170,7 @@ architecture behav of exp_40_24_s is
     signal p_Result_7_fu_313_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal p_Result_8_fu_327_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal p_Result_9_fu_341_p3 : STD_LOGIC_VECTOR (0 downto 0);
-    signal p_Result_s_102_fu_355_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal p_Result_s_99_fu_355_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal p_Result_10_fu_369_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal p_Result_11_fu_383_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal p_Result_12_fu_397_p3 : STD_LOGIC_VECTOR (0 downto 0);
@@ -366,7 +366,7 @@ begin
         ce0 => exp_x_msb_1_table_V_ce0,
         q0 => exp_x_msb_1_table_V_q0);
 
-    dut_mul_50ns_47nspcA_U91 : component dut_mul_50ns_47nspcA
+    dut_mul_50ns_47nspcA_U87 : component dut_mul_50ns_47nspcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -381,7 +381,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_692_p2);
 
-    dut_mul_50ns_50nsqcK_U92 : component dut_mul_50ns_50nsqcK
+    dut_mul_50ns_50nsqcK_U88 : component dut_mul_50ns_50nsqcK
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -760,7 +760,7 @@ begin
     p_Result_7_fu_313_p3 <= zext_ln727_fu_181_p1(27 downto 27);
     p_Result_8_fu_327_p3 <= zext_ln727_fu_181_p1(28 downto 28);
     p_Result_9_fu_341_p3 <= zext_ln727_fu_181_p1(29 downto 29);
-    p_Result_s_102_fu_355_p3 <= zext_ln727_fu_181_p1(30 downto 30);
+    p_Result_s_99_fu_355_p3 <= zext_ln727_fu_181_p1(30 downto 30);
     p_Result_s_fu_215_p3 <= zext_ln727_fu_181_p1(20 downto 20);
     ret_V_4_fu_734_p2 <= std_logic_vector(unsigned(zext_ln728_fu_730_p1) + unsigned(lhs_V_1_fu_719_p1));
     ret_V_5_fu_743_p2 <= std_logic_vector(unsigned(ret_V_4_fu_734_p2) + unsigned(zext_ln703_fu_740_p1));
@@ -774,7 +774,7 @@ begin
     tmp_fu_207_p3 <= x_V(39 downto 39);
     trunc_ln612_2_fu_664_p1 <= f_x_msb_2_table_V_q0(41 - 1 downto 0);
     trunc_ln612_fu_195_p1 <= x_V(16 - 1 downto 0);
-    xor_ln278_10_fu_363_p2 <= (tmp_fu_207_p3 xor p_Result_s_102_fu_355_p3);
+    xor_ln278_10_fu_363_p2 <= (tmp_fu_207_p3 xor p_Result_s_99_fu_355_p3);
     xor_ln278_11_fu_377_p2 <= (tmp_fu_207_p3 xor p_Result_10_fu_369_p3);
     xor_ln278_12_fu_391_p2 <= (tmp_fu_207_p3 xor p_Result_11_fu_383_p3);
     xor_ln278_13_fu_405_p2 <= (tmp_fu_207_p3 xor p_Result_12_fu_397_p3);

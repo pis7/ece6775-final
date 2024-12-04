@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
---------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date                      : Sun Dec  1 11:28:52 2024
-| Host                      : zhang-22.ece.cornell.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Date                      : Tue Dec  3 18:29:40 2024
+| Host                      : ecelinux-14.ece.cornell.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command                   : report_io -file xillydemo_io_placed.rpt
 | Design                    : xillydemo
 | Device                    : xc7z020
@@ -10,7 +10,7 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 | Package                   : clg484
 | Package Version           : FINAL 2012-06-26
 | Package Pin Delay Version : VERS. 2.0 2012-06-26
---------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 IO Information
 

@@ -73,10 +73,10 @@ arrayctor.loop4.preheader:0  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i3
 
 <Node id="30" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-arrayctor.loop4.preheader:1  %empty_99 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+arrayctor.loop4.preheader:1  %empty_96 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ]]></Node>
-<StgValue><ssdm name="empty_99"/></StgValue>
+<StgValue><ssdm name="empty_96"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -165,7 +165,7 @@ arrayctor.loop4.preheader:6  %output_0 = alloca [24 x i40], align 8
 
 <Node id="36" bw="0" op_0_bw="0">
 <![CDATA[
-arrayctor.loop4.preheader:7  br label %.preheader75.0
+arrayctor.loop4.preheader:7  br label %.preheader50.0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln19"/></StgValue>
@@ -183,7 +183,7 @@ arrayctor.loop4.preheader:7  br label %.preheader75.0
 
 <Node id="38" bw="5" op_0_bw="5" op_1_bw="0" op_2_bw="5" op_3_bw="0">
 <![CDATA[
-.preheader75.0:0  %j_0_0 = phi i5 [ %add_ln19, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %arrayctor.loop4.preheader ]
+.preheader50.0:0  %j_0_0 = phi i5 [ %add_ln19, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %arrayctor.loop4.preheader ]
 
 ]]></Node>
 <StgValue><ssdm name="j_0_0"/></StgValue>
@@ -198,7 +198,7 @@ arrayctor.loop4.preheader:7  br label %.preheader75.0
 
 <Node id="39" bw="1" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-.preheader75.0:1  %icmp_ln19 = icmp eq i5 %j_0_0, -8
+.preheader50.0:1  %icmp_ln19 = icmp eq i5 %j_0_0, -8
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln19"/></StgValue>
@@ -213,10 +213,10 @@ arrayctor.loop4.preheader:7  br label %.preheader75.0
 
 <Node id="40" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader75.0:2  %empty_100 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 24, i64 24, i64 24)
+.preheader50.0:2  %empty_97 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 24, i64 24, i64 24)
 
 ]]></Node>
-<StgValue><ssdm name="empty_100"/></StgValue>
+<StgValue><ssdm name="empty_97"/></StgValue>
 </operation>
 
 <operation id="17" st_id="2" stage="1" lat="1">
@@ -228,7 +228,7 @@ arrayctor.loop4.preheader:7  br label %.preheader75.0
 
 <Node id="41" bw="5" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-.preheader75.0:3  %add_ln19 = add i5 %j_0_0, 1
+.preheader50.0:3  %add_ln19 = add i5 %j_0_0, 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln19"/></StgValue>
@@ -243,7 +243,7 @@ arrayctor.loop4.preheader:7  br label %.preheader75.0
 
 <Node id="42" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader75.0:4  br i1 %icmp_ln19, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0
+.preheader50.0:4  br i1 %icmp_ln19, label %.preheader51.1, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln19"/></StgValue>
@@ -355,7 +355,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 
 <Node id="50" bw="0" op_0_bw="0">
 <![CDATA[
-_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:6  br label %.preheader75.0
+_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:6  br label %.preheader50.0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln19"/></StgValue>
@@ -371,7 +371,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 
 <Node id="52" bw="0" op_0_bw="0" op_1_bw="40" op_2_bw="40" op_3_bw="40" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="17" op_8_bw="17" op_9_bw="20" op_10_bw="23" op_11_bw="32" op_12_bw="46" op_13_bw="50" op_14_bw="40" op_15_bw="8">
 <![CDATA[
-_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:0  call fastcc void @attention([24 x i40]* %input_0_V, [24 x i40]* %output_0)
+.preheader51.1:0  call fastcc void @attention([24 x i40]* %input_0_V, [24 x i40]* %output_0)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln24"/></StgValue>
@@ -389,7 +389,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:0  call fastcc v
 
 <Node id="52" bw="0" op_0_bw="0" op_1_bw="40" op_2_bw="40" op_3_bw="40" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="17" op_8_bw="17" op_9_bw="20" op_10_bw="23" op_11_bw="32" op_12_bw="46" op_13_bw="50" op_14_bw="40" op_15_bw="8">
 <![CDATA[
-_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:0  call fastcc void @attention([24 x i40]* %input_0_V, [24 x i40]* %output_0)
+.preheader51.1:0  call fastcc void @attention([24 x i40]* %input_0_V, [24 x i40]* %output_0)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln24"/></StgValue>
@@ -404,7 +404,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:0  call fastcc v
 
 <Node id="53" bw="0" op_0_bw="0">
 <![CDATA[
-_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:1  br label %.preheader.0
+.preheader51.1:1  br label %.preheader.0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln51"/></StgValue>
@@ -422,7 +422,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:1  br label %.pr
 
 <Node id="55" bw="5" op_0_bw="5" op_1_bw="0" op_2_bw="5" op_3_bw="0">
 <![CDATA[
-.preheader.0:0  %j9_0_0 = phi i5 [ %add_ln51, %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit ]
+.preheader.0:0  %j9_0_0 = phi i5 [ %add_ln51, %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %.preheader51.1 ]
 
 ]]></Node>
 <StgValue><ssdm name="j9_0_0"/></StgValue>
@@ -452,10 +452,10 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit:1  br label %.pr
 
 <Node id="57" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader.0:2  %empty_101 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 24, i64 24, i64 24)
+.preheader.0:2  %empty_98 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 24, i64 24, i64 24)
 
 ]]></Node>
-<StgValue><ssdm name="empty_101"/></StgValue>
+<StgValue><ssdm name="empty_98"/></StgValue>
 </operation>
 
 <operation id="32" st_id="4" stage="1" lat="1">
@@ -730,39 +730,39 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 </dataflow>
 <dataflow id="88" from="p_str" to="empty" fromId="74" toId="6">
 </dataflow>
-<dataflow id="89" from="_ssdm_op_SpecInterface" to="empty_99" fromId="66" toId="7">
+<dataflow id="89" from="_ssdm_op_SpecInterface" to="empty_96" fromId="66" toId="7">
 </dataflow>
-<dataflow id="90" from="strm_in_V_V" to="empty_99" fromId="51" toId="7">
+<dataflow id="90" from="strm_in_V_V" to="empty_96" fromId="51" toId="7">
 </dataflow>
-<dataflow id="91" from="ap_fifo_str" to="empty_99" fromId="69" toId="7">
+<dataflow id="91" from="ap_fifo_str" to="empty_96" fromId="69" toId="7">
 </dataflow>
-<dataflow id="92" from="StgValue_71" to="empty_99" fromId="71" toId="7">
+<dataflow id="92" from="StgValue_71" to="empty_96" fromId="71" toId="7">
 </dataflow>
-<dataflow id="93" from="StgValue_71" to="empty_99" fromId="71" toId="7">
+<dataflow id="93" from="StgValue_71" to="empty_96" fromId="71" toId="7">
 </dataflow>
-<dataflow id="94" from="p_str" to="empty_99" fromId="74" toId="7">
+<dataflow id="94" from="p_str" to="empty_96" fromId="74" toId="7">
 </dataflow>
-<dataflow id="95" from="StgValue_71" to="empty_99" fromId="71" toId="7">
+<dataflow id="95" from="StgValue_71" to="empty_96" fromId="71" toId="7">
 </dataflow>
-<dataflow id="96" from="StgValue_71" to="empty_99" fromId="71" toId="7">
+<dataflow id="96" from="StgValue_71" to="empty_96" fromId="71" toId="7">
 </dataflow>
-<dataflow id="97" from="p_str" to="empty_99" fromId="74" toId="7">
+<dataflow id="97" from="p_str" to="empty_96" fromId="74" toId="7">
 </dataflow>
-<dataflow id="98" from="p_str" to="empty_99" fromId="74" toId="7">
+<dataflow id="98" from="p_str" to="empty_96" fromId="74" toId="7">
 </dataflow>
-<dataflow id="99" from="p_str" to="empty_99" fromId="74" toId="7">
+<dataflow id="99" from="p_str" to="empty_96" fromId="74" toId="7">
 </dataflow>
-<dataflow id="100" from="StgValue_81" to="empty_99" fromId="81" toId="7">
+<dataflow id="100" from="StgValue_81" to="empty_96" fromId="81" toId="7">
 </dataflow>
-<dataflow id="101" from="StgValue_81" to="empty_99" fromId="81" toId="7">
+<dataflow id="101" from="StgValue_81" to="empty_96" fromId="81" toId="7">
 </dataflow>
-<dataflow id="102" from="StgValue_84" to="empty_99" fromId="84" toId="7">
+<dataflow id="102" from="StgValue_84" to="empty_96" fromId="84" toId="7">
 </dataflow>
-<dataflow id="103" from="StgValue_84" to="empty_99" fromId="84" toId="7">
+<dataflow id="103" from="StgValue_84" to="empty_96" fromId="84" toId="7">
 </dataflow>
-<dataflow id="104" from="p_str" to="empty_99" fromId="74" toId="7">
+<dataflow id="104" from="p_str" to="empty_96" fromId="74" toId="7">
 </dataflow>
-<dataflow id="105" from="p_str" to="empty_99" fromId="74" toId="7">
+<dataflow id="105" from="p_str" to="empty_96" fromId="74" toId="7">
 </dataflow>
 <dataflow id="107" from="_ssdm_op_SpecBitsMap" to="specbitsmap_ln0" fromId="106" toId="8">
 </dataflow>
@@ -801,13 +801,13 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 </dataflow>
 <dataflow id="125" from="StgValue_124" to="icmp_ln19" fromId="124" toId="15">
 </dataflow>
-<dataflow id="127" from="_ssdm_op_SpecLoopTripCount" to="empty_100" fromId="126" toId="16">
+<dataflow id="127" from="_ssdm_op_SpecLoopTripCount" to="empty_97" fromId="126" toId="16">
 </dataflow>
-<dataflow id="129" from="StgValue_128" to="empty_100" fromId="128" toId="16">
+<dataflow id="129" from="StgValue_128" to="empty_97" fromId="128" toId="16">
 </dataflow>
-<dataflow id="130" from="StgValue_128" to="empty_100" fromId="128" toId="16">
+<dataflow id="130" from="StgValue_128" to="empty_97" fromId="128" toId="16">
 </dataflow>
-<dataflow id="131" from="StgValue_128" to="empty_100" fromId="128" toId="16">
+<dataflow id="131" from="StgValue_128" to="empty_97" fromId="128" toId="16">
 </dataflow>
 <dataflow id="132" from="j_0_0" to="add_ln19" fromId="14" toId="17">
 </dataflow>
@@ -925,13 +925,13 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 </dataflow>
 <dataflow id="191" from="StgValue_124" to="icmp_ln51" fromId="124" toId="30">
 </dataflow>
-<dataflow id="192" from="_ssdm_op_SpecLoopTripCount" to="empty_101" fromId="126" toId="31">
+<dataflow id="192" from="_ssdm_op_SpecLoopTripCount" to="empty_98" fromId="126" toId="31">
 </dataflow>
-<dataflow id="193" from="StgValue_128" to="empty_101" fromId="128" toId="31">
+<dataflow id="193" from="StgValue_128" to="empty_98" fromId="128" toId="31">
 </dataflow>
-<dataflow id="194" from="StgValue_128" to="empty_101" fromId="128" toId="31">
+<dataflow id="194" from="StgValue_128" to="empty_98" fromId="128" toId="31">
 </dataflow>
-<dataflow id="195" from="StgValue_128" to="empty_101" fromId="128" toId="31">
+<dataflow id="195" from="StgValue_128" to="empty_98" fromId="128" toId="31">
 </dataflow>
 <dataflow id="196" from="j9_0_0" to="add_ln51" fromId="29" toId="32">
 </dataflow>

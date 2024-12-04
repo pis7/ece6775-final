@@ -498,13 +498,13 @@
               <name>input_0_V_addr</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>127</lineNumber>
+              <lineNumber>86</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -513,7 +513,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>127</second>
+                      <second>86</second>
                     </item>
                   </second>
                 </item>
@@ -548,13 +548,13 @@
               <name>p_Val2_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>127</lineNumber>
+              <lineNumber>86</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -563,7 +563,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>127</second>
+                      <second>86</second>
                     </item>
                   </second>
                 </item>
@@ -596,13 +596,13 @@
               <name>tmp_73</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>33</lineNumber>
               <contextFuncName>attention_abs</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -611,14 +611,14 @@
                         <first>./layer.h</first>
                         <second>attention_abs</second>
                       </first>
-                      <second>59</second>
+                      <second>33</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>127</second>
+                      <second>86</second>
                     </item>
                   </second>
                 </item>
@@ -653,13 +653,13 @@
               <name>sub_ln703</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>33</lineNumber>
               <contextFuncName>attention_abs</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -668,14 +668,14 @@
                         <first>./layer.h</first>
                         <second>attention_abs</second>
                       </first>
-                      <second>59</second>
+                      <second>33</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>127</second>
+                      <second>86</second>
                     </item>
                   </second>
                 </item>
@@ -709,13 +709,13 @@
               <name>p_Val2_13</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>33</lineNumber>
               <contextFuncName>attention_abs</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -724,14 +724,14 @@
                         <first>./layer.h</first>
                         <second>attention_abs</second>
                       </first>
-                      <second>59</second>
+                      <second>33</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>127</second>
+                      <second>86</second>
                     </item>
                   </second>
                 </item>
@@ -763,16 +763,16 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>_ln128</name>
+              <name>_ln87</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>128</lineNumber>
+              <lineNumber>87</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -781,7 +781,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>128</second>
+                      <second>87</second>
                     </item>
                   </second>
                 </item>
@@ -851,13 +851,13 @@
               <name>j_0_0</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>128</lineNumber>
+              <lineNumber>87</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -866,7 +866,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>128</second>
+                      <second>87</second>
                     </item>
                   </second>
                 </item>
@@ -899,16 +899,16 @@
             <Obj>
               <type>0</type>
               <id>28</id>
-              <name>icmp_ln128</name>
+              <name>icmp_ln87</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>128</lineNumber>
+              <lineNumber>87</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -917,13 +917,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>128</second>
+                      <second>87</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln128_fu_469_p2</rtlName>
+              <rtlName>icmp_ln87_fu_469_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -948,16 +948,16 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>_ln128</name>
+              <name>_ln87</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>128</lineNumber>
+              <lineNumber>87</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -966,7 +966,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>128</second>
+                      <second>87</second>
                     </item>
                   </second>
                 </item>
@@ -998,16 +998,16 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>zext_ln129</name>
+              <name>zext_ln88</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>129</lineNumber>
+              <lineNumber>88</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1016,13 +1016,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>129</second>
+                      <second>88</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln129_fu_475_p1</rtlName>
+              <rtlName>zext_ln88_fu_475_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1049,13 +1049,13 @@
               <name>input_0_V_addr_5</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>129</lineNumber>
+              <lineNumber>88</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1064,7 +1064,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>129</second>
+                      <second>88</second>
                     </item>
                   </second>
                 </item>
@@ -1099,13 +1099,13 @@
               <name>p_Val2_14</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>129</lineNumber>
+              <lineNumber>88</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1114,7 +1114,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>129</second>
+                      <second>88</second>
                     </item>
                   </second>
                 </item>
@@ -1147,13 +1147,13 @@
               <name>tmp_74</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>33</lineNumber>
               <contextFuncName>attention_abs</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1162,14 +1162,14 @@
                         <first>./layer.h</first>
                         <second>attention_abs</second>
                       </first>
-                      <second>59</second>
+                      <second>33</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>129</second>
+                      <second>88</second>
                     </item>
                   </second>
                 </item>
@@ -1204,13 +1204,13 @@
               <name>sub_ln703_34</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>33</lineNumber>
               <contextFuncName>attention_abs</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1219,14 +1219,14 @@
                         <first>./layer.h</first>
                         <second>attention_abs</second>
                       </first>
-                      <second>59</second>
+                      <second>33</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>129</second>
+                      <second>88</second>
                     </item>
                   </second>
                 </item>
@@ -1260,13 +1260,13 @@
               <name>p_Val2_15</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>59</lineNumber>
+              <lineNumber>33</lineNumber>
               <contextFuncName>attention_abs</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1275,14 +1275,14 @@
                         <first>./layer.h</first>
                         <second>attention_abs</second>
                       </first>
-                      <second>59</second>
+                      <second>33</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>129</second>
+                      <second>88</second>
                     </item>
                   </second>
                 </item>
@@ -1317,13 +1317,13 @@
               <name>icmp_ln1494</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>129</lineNumber>
+              <lineNumber>88</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1332,7 +1332,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>129</second>
+                      <second>88</second>
                     </item>
                   </second>
                 </item>
@@ -1366,13 +1366,13 @@
               <name>p_Val2_16</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>129</lineNumber>
+              <lineNumber>88</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1381,7 +1381,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>129</second>
+                      <second>88</second>
                     </item>
                   </second>
                 </item>
@@ -1413,16 +1413,16 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>add_ln128</name>
+              <name>add_ln87</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>128</lineNumber>
+              <lineNumber>87</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1431,13 +1431,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>128</second>
+                      <second>87</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln128_fu_480_p2</rtlName>
+              <rtlName>add_ln87_fu_480_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>7</bitwidth>
@@ -1462,16 +1462,16 @@
             <Obj>
               <type>0</type>
               <id>42</id>
-              <name>_ln128</name>
+              <name>_ln87</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>128</lineNumber>
+              <lineNumber>87</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1480,7 +1480,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>128</second>
+                      <second>87</second>
                     </item>
                   </second>
                 </item>
@@ -1513,13 +1513,13 @@
               <name>udiv_ln1148</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>131</lineNumber>
+              <lineNumber>90</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1528,13 +1528,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>131</second>
+                      <second>90</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>output_scales[0].V</originalName>
-              <rtlName>dut_udiv_40ns_40neOg_U26</rtlName>
+              <rtlName>dut_udiv_40ns_40neOg_U10</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>40</bitwidth>
@@ -1559,16 +1559,16 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>zext_ln135</name>
+              <name>zext_ln94</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>135</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1577,13 +1577,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>135</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln135_fu_504_p1</rtlName>
+              <rtlName>zext_ln94_fu_504_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>56</bitwidth>
@@ -1607,16 +1607,16 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>_ln135</name>
+              <name>_ln94</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>135</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1625,7 +1625,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>135</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
@@ -1658,13 +1658,13 @@
               <name>jo_0_0</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>135</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1673,7 +1673,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>135</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
@@ -1706,16 +1706,16 @@
             <Obj>
               <type>0</type>
               <id>49</id>
-              <name>icmp_ln135</name>
+              <name>icmp_ln94</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>135</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1724,13 +1724,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>135</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln135_fu_508_p2</rtlName>
+              <rtlName>icmp_ln94_fu_508_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1755,16 +1755,16 @@
             <Obj>
               <type>0</type>
               <id>51</id>
-              <name>add_ln135</name>
+              <name>add_ln94</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>135</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1773,13 +1773,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>135</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln135_fu_514_p2</rtlName>
+              <rtlName>add_ln94_fu_514_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>3</bitwidth>
@@ -1804,16 +1804,16 @@
             <Obj>
               <type>0</type>
               <id>52</id>
-              <name>_ln135</name>
+              <name>_ln94</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>135</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1822,7 +1822,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>135</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
@@ -1857,13 +1857,13 @@
               <name>shl_ln</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>137</lineNumber>
+              <lineNumber>96</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1872,7 +1872,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>137</second>
+                      <second>96</second>
                     </item>
                   </second>
                 </item>
@@ -1904,16 +1904,16 @@
             <Obj>
               <type>0</type>
               <id>57</id>
-              <name>_ln136</name>
+              <name>_ln95</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>136</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1922,7 +1922,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>136</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
@@ -1955,13 +1955,13 @@
               <name>ji_0_0</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>136</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1970,7 +1970,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>136</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
@@ -2003,16 +2003,16 @@
             <Obj>
               <type>0</type>
               <id>60</id>
-              <name>zext_ln136</name>
+              <name>zext_ln95</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>136</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2021,13 +2021,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>136</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln136_fu_528_p1</rtlName>
+              <rtlName>zext_ln95_fu_528_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>5</bitwidth>
@@ -2051,16 +2051,16 @@
             <Obj>
               <type>0</type>
               <id>61</id>
-              <name>icmp_ln136</name>
+              <name>icmp_ln95</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>136</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2069,13 +2069,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>136</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln136_fu_532_p2</rtlName>
+              <rtlName>icmp_ln95_fu_532_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2100,16 +2100,16 @@
             <Obj>
               <type>0</type>
               <id>63</id>
-              <name>add_ln136</name>
+              <name>add_ln95</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>136</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2118,13 +2118,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>136</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln136_fu_538_p2</rtlName>
+              <rtlName>add_ln95_fu_538_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>3</bitwidth>
@@ -2149,16 +2149,16 @@
             <Obj>
               <type>0</type>
               <id>64</id>
-              <name>_ln136</name>
+              <name>_ln95</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>136</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2167,7 +2167,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>136</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
@@ -2199,16 +2199,16 @@
             <Obj>
               <type>0</type>
               <id>67</id>
-              <name>trunc_ln137</name>
+              <name>trunc_ln96</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>137</lineNumber>
+              <lineNumber>96</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2217,13 +2217,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>137</second>
+                      <second>96</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln137_fu_544_p1</rtlName>
+              <rtlName>trunc_ln96_fu_544_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>2</bitwidth>
@@ -2247,16 +2247,16 @@
             <Obj>
               <type>0</type>
               <id>68</id>
-              <name>add_ln137</name>
+              <name>add_ln96</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>137</lineNumber>
+              <lineNumber>96</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2265,13 +2265,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>137</second>
+                      <second>96</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln137_fu_548_p2</rtlName>
+              <rtlName>add_ln96_fu_548_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>5</bitwidth>
@@ -2299,13 +2299,13 @@
               <name>shl_ln1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2314,7 +2314,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -2346,16 +2346,16 @@
             <Obj>
               <type>0</type>
               <id>70</id>
-              <name>zext_ln139</name>
+              <name>zext_ln98</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2364,13 +2364,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln139_fu_561_p1</rtlName>
+              <rtlName>zext_ln98_fu_561_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -2397,13 +2397,13 @@
               <name>input_0_V_addr_6</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2412,7 +2412,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -2447,13 +2447,13 @@
               <name>input_0_V_load</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2462,7 +2462,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -2495,13 +2495,13 @@
               <name>sext_ln1118</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2510,7 +2510,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -2543,13 +2543,13 @@
               <name>mul_ln1118</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2558,7 +2558,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -2592,13 +2592,13 @@
               <name>p_Val2_9</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2607,7 +2607,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -2643,13 +2643,13 @@
               <name>icmp_ln1494_26</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2658,14 +2658,14 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -2696,16 +2696,16 @@
             <Obj>
               <type>0</type>
               <id>77</id>
-              <name>select_ln108</name>
+              <name>select_ln67</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2714,20 +2714,20 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln108_fu_650_p3</rtlName>
+              <rtlName>select_ln67_fu_650_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>40</bitwidth>
@@ -2753,16 +2753,16 @@
             <Obj>
               <type>0</type>
               <id>78</id>
-              <name>add_ln108</name>
+              <name>add_ln67</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2771,20 +2771,20 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln108_fu_658_p2</rtlName>
+              <rtlName>add_ln67_fu_658_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>40</bitwidth>
@@ -2812,13 +2812,13 @@
               <name>p_Result_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2827,7 +2827,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -2863,13 +2863,13 @@
               <name>tmp_75</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2878,7 +2878,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -2913,13 +2913,13 @@
               <name>trunc_ln851</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2928,7 +2928,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -2961,13 +2961,13 @@
               <name>icmp_ln851</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -2976,7 +2976,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -3010,13 +3010,13 @@
               <name>add_ln700</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3025,7 +3025,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -3059,13 +3059,13 @@
               <name>select_ln851</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3074,7 +3074,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -3109,13 +3109,13 @@
               <name>select_ln850</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3124,7 +3124,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -3159,13 +3159,13 @@
               <name>icmp_ln887</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3174,7 +3174,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -3208,13 +3208,13 @@
               <name>tmp_76</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3223,7 +3223,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -3259,13 +3259,13 @@
               <name>icmp_ln895</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3274,7 +3274,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -3305,16 +3305,16 @@
             <Obj>
               <type>0</type>
               <id>89</id>
-              <name>trunc_ln140</name>
+              <name>trunc_ln99</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3323,13 +3323,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln140_fu_849_p1</rtlName>
+              <rtlName>trunc_ln99_fu_849_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -3356,13 +3356,13 @@
               <name>select_ln887</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3371,7 +3371,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -3406,13 +3406,13 @@
               <name>or_ln887</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3421,7 +3421,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -3455,13 +3455,13 @@
               <name>select_ln887_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3470,7 +3470,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -3505,13 +3505,13 @@
               <name>lshr_ln</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3520,7 +3520,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -3556,13 +3556,13 @@
               <name>zext_ln180</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3571,7 +3571,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -3604,13 +3604,13 @@
               <name>output_states_0_0_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3619,7 +3619,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -3654,13 +3654,13 @@
               <name>output_states_1_0_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3669,7 +3669,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -3704,13 +3704,13 @@
               <name>output_states_2_0_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3719,7 +3719,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -3754,13 +3754,13 @@
               <name>output_states_3_0_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3769,7 +3769,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -3801,16 +3801,16 @@
             <Obj>
               <type>0</type>
               <id>99</id>
-              <name>or_ln139</name>
+              <name>or_ln98</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3819,13 +3819,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln139_fu_576_p2</rtlName>
+              <rtlName>or_ln98_fu_576_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>7</bitwidth>
@@ -3850,16 +3850,16 @@
             <Obj>
               <type>0</type>
               <id>100</id>
-              <name>zext_ln139_1</name>
+              <name>zext_ln98_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3868,13 +3868,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln139_1_fu_582_p1</rtlName>
+              <rtlName>zext_ln98_1_fu_582_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -3901,13 +3901,13 @@
               <name>input_0_V_addr_7</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3916,7 +3916,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -3951,13 +3951,13 @@
               <name>input_0_V_load_5</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -3966,7 +3966,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -3999,13 +3999,13 @@
               <name>sext_ln1118_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4014,7 +4014,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4047,13 +4047,13 @@
               <name>mul_ln1118_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4062,7 +4062,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4096,13 +4096,13 @@
               <name>p_Val2_17</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4111,7 +4111,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4147,13 +4147,13 @@
               <name>icmp_ln1494_27</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -4162,14 +4162,14 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4200,16 +4200,16 @@
             <Obj>
               <type>0</type>
               <id>107</id>
-              <name>select_ln108_1</name>
+              <name>select_ln67_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -4218,20 +4218,20 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln108_1_fu_728_p3</rtlName>
+              <rtlName>select_ln67_1_fu_728_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>40</bitwidth>
@@ -4257,16 +4257,16 @@
             <Obj>
               <type>0</type>
               <id>108</id>
-              <name>add_ln108_1</name>
+              <name>add_ln67_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -4275,20 +4275,20 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln108_1_fu_736_p2</rtlName>
+              <rtlName>add_ln67_1_fu_736_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>40</bitwidth>
@@ -4316,13 +4316,13 @@
               <name>p_Result_0_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4331,7 +4331,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4367,13 +4367,13 @@
               <name>tmp_77</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4382,7 +4382,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4417,13 +4417,13 @@
               <name>trunc_ln851_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4432,7 +4432,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4465,13 +4465,13 @@
               <name>icmp_ln851_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4480,7 +4480,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4514,13 +4514,13 @@
               <name>add_ln700_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4529,7 +4529,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4563,13 +4563,13 @@
               <name>select_ln851_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4578,7 +4578,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4613,13 +4613,13 @@
               <name>select_ln850_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4628,7 +4628,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -4663,13 +4663,13 @@
               <name>icmp_ln887_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4678,7 +4678,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -4712,13 +4712,13 @@
               <name>tmp_78</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4727,7 +4727,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -4763,13 +4763,13 @@
               <name>icmp_ln895_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4778,7 +4778,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -4809,16 +4809,16 @@
             <Obj>
               <type>0</type>
               <id>119</id>
-              <name>trunc_ln140_1</name>
+              <name>trunc_ln99_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4827,13 +4827,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln140_1_fu_884_p1</rtlName>
+              <rtlName>trunc_ln99_1_fu_884_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4860,13 +4860,13 @@
               <name>select_ln887_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4875,7 +4875,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -4910,13 +4910,13 @@
               <name>or_ln887_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4925,7 +4925,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -4959,13 +4959,13 @@
               <name>select_ln887_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -4974,7 +4974,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -5009,13 +5009,13 @@
               <name>output_states_0_1_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5024,7 +5024,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -5059,13 +5059,13 @@
               <name>output_states_1_1_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5074,7 +5074,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -5109,13 +5109,13 @@
               <name>output_states_2_1_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5124,7 +5124,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -5159,13 +5159,13 @@
               <name>output_states_3_1_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5174,7 +5174,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -5206,16 +5206,16 @@
             <Obj>
               <type>0</type>
               <id>127</id>
-              <name>or_ln139_1</name>
+              <name>or_ln98_1</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5224,13 +5224,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln139_1_fu_587_p2</rtlName>
+              <rtlName>or_ln98_1_fu_587_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>7</bitwidth>
@@ -5255,16 +5255,16 @@
             <Obj>
               <type>0</type>
               <id>128</id>
-              <name>zext_ln139_2</name>
+              <name>zext_ln98_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5273,13 +5273,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln139_2_fu_592_p1</rtlName>
+              <rtlName>zext_ln98_2_fu_592_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -5306,13 +5306,13 @@
               <name>input_0_V_addr_8</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5321,7 +5321,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5356,13 +5356,13 @@
               <name>input_0_V_load_6</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5371,7 +5371,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5404,13 +5404,13 @@
               <name>sext_ln1118_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5419,7 +5419,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5452,13 +5452,13 @@
               <name>mul_ln1118_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5467,7 +5467,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5501,13 +5501,13 @@
               <name>p_Val2_18</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5516,7 +5516,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5552,13 +5552,13 @@
               <name>icmp_ln1494_28</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -5567,14 +5567,14 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5605,16 +5605,16 @@
             <Obj>
               <type>0</type>
               <id>135</id>
-              <name>select_ln108_2</name>
+              <name>select_ln67_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -5623,20 +5623,20 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln108_2_fu_914_p3</rtlName>
+              <rtlName>select_ln67_2_fu_914_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>40</bitwidth>
@@ -5662,16 +5662,16 @@
             <Obj>
               <type>0</type>
               <id>136</id>
-              <name>add_ln108_2</name>
+              <name>add_ln67_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -5680,20 +5680,20 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln108_2_fu_922_p2</rtlName>
+              <rtlName>add_ln67_2_fu_922_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>40</bitwidth>
@@ -5721,13 +5721,13 @@
               <name>p_Result_0_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5736,7 +5736,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5772,13 +5772,13 @@
               <name>tmp_79</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5787,7 +5787,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5822,13 +5822,13 @@
               <name>trunc_ln851_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5837,7 +5837,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5870,13 +5870,13 @@
               <name>icmp_ln851_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5885,7 +5885,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5919,13 +5919,13 @@
               <name>add_ln700_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5934,7 +5934,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -5968,13 +5968,13 @@
               <name>select_ln851_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -5983,7 +5983,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -6018,13 +6018,13 @@
               <name>select_ln850_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6033,7 +6033,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -6068,13 +6068,13 @@
               <name>icmp_ln887_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6083,7 +6083,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -6117,13 +6117,13 @@
               <name>tmp_80</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6132,7 +6132,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -6168,13 +6168,13 @@
               <name>icmp_ln895_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6183,7 +6183,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -6214,16 +6214,16 @@
             <Obj>
               <type>0</type>
               <id>147</id>
-              <name>trunc_ln140_2</name>
+              <name>trunc_ln99_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6232,13 +6232,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln140_2_fu_1094_p1</rtlName>
+              <rtlName>trunc_ln99_2_fu_1094_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -6265,13 +6265,13 @@
               <name>select_ln887_4</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6280,7 +6280,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -6315,13 +6315,13 @@
               <name>or_ln887_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6330,7 +6330,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -6364,13 +6364,13 @@
               <name>select_ln887_5</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6379,7 +6379,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -6414,13 +6414,13 @@
               <name>output_states_0_2_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6429,7 +6429,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -6464,13 +6464,13 @@
               <name>output_states_1_2_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6479,7 +6479,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -6514,13 +6514,13 @@
               <name>output_states_2_2_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6529,7 +6529,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -6564,13 +6564,13 @@
               <name>output_states_3_2_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6579,7 +6579,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -6611,16 +6611,16 @@
             <Obj>
               <type>0</type>
               <id>155</id>
-              <name>or_ln139_2</name>
+              <name>or_ln98_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6629,13 +6629,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>or_ln139_2_fu_597_p2</rtlName>
+              <rtlName>or_ln98_2_fu_597_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>7</bitwidth>
@@ -6660,16 +6660,16 @@
             <Obj>
               <type>0</type>
               <id>156</id>
-              <name>zext_ln139_3</name>
+              <name>zext_ln98_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6678,13 +6678,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln139_3_fu_602_p1</rtlName>
+              <rtlName>zext_ln98_3_fu_602_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -6711,13 +6711,13 @@
               <name>input_0_V_addr_9</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6726,7 +6726,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -6761,13 +6761,13 @@
               <name>input_0_V_load_7</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6776,7 +6776,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -6809,13 +6809,13 @@
               <name>sext_ln1118_4</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6824,7 +6824,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -6857,13 +6857,13 @@
               <name>mul_ln1118_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6872,7 +6872,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -6906,13 +6906,13 @@
               <name>p_Val2_19</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -6921,7 +6921,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -6957,13 +6957,13 @@
               <name>icmp_ln1494_29</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -6972,14 +6972,14 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -7010,16 +7010,16 @@
             <Obj>
               <type>0</type>
               <id>163</id>
-              <name>select_ln108_3</name>
+              <name>select_ln67_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -7028,20 +7028,20 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>select_ln108_3_fu_992_p3</rtlName>
+              <rtlName>select_ln67_3_fu_992_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>40</bitwidth>
@@ -7067,16 +7067,16 @@
             <Obj>
               <type>0</type>
               <id>164</id>
-              <name>add_ln108_3</name>
+              <name>add_ln67_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>108</lineNumber>
+              <lineNumber>67</lineNumber>
               <contextFuncName>attention_round</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -7085,20 +7085,20 @@
                         <first>./layer.h</first>
                         <second>attention_round</second>
                       </first>
-                      <second>108</second>
+                      <second>67</second>
                     </item>
                     <item>
                       <first>
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln108_3_fu_1000_p2</rtlName>
+              <rtlName>add_ln67_3_fu_1000_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>40</bitwidth>
@@ -7126,13 +7126,13 @@
               <name>p_Result_0_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7141,7 +7141,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -7177,13 +7177,13 @@
               <name>tmp_81</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7192,7 +7192,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -7227,13 +7227,13 @@
               <name>trunc_ln851_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7242,7 +7242,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -7275,13 +7275,13 @@
               <name>icmp_ln851_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7290,7 +7290,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -7324,13 +7324,13 @@
               <name>add_ln700_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7339,7 +7339,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -7373,13 +7373,13 @@
               <name>select_ln851_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7388,7 +7388,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -7423,13 +7423,13 @@
               <name>select_ln850_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>139</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7438,7 +7438,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>139</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -7473,13 +7473,13 @@
               <name>icmp_ln887_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7488,7 +7488,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -7522,13 +7522,13 @@
               <name>tmp_82</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7537,7 +7537,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -7573,13 +7573,13 @@
               <name>icmp_ln895_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7588,7 +7588,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -7619,16 +7619,16 @@
             <Obj>
               <type>0</type>
               <id>175</id>
-              <name>trunc_ln140_3</name>
+              <name>trunc_ln99_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7637,13 +7637,13 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>trunc_ln140_3_fu_1133_p1</rtlName>
+              <rtlName>trunc_ln99_3_fu_1133_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -7670,13 +7670,13 @@
               <name>select_ln887_6</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7685,7 +7685,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -7720,13 +7720,13 @@
               <name>or_ln887_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7735,7 +7735,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -7769,13 +7769,13 @@
               <name>select_ln887_7</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>140</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7784,7 +7784,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>140</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -7819,13 +7819,13 @@
               <name>output_states_0_3_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7834,7 +7834,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -7869,13 +7869,13 @@
               <name>output_states_1_3_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7884,7 +7884,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -7919,13 +7919,13 @@
               <name>output_states_2_3_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7934,7 +7934,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -7969,13 +7969,13 @@
               <name>output_states_3_3_s</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -7984,7 +7984,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8016,16 +8016,16 @@
             <Obj>
               <type>0</type>
               <id>183</id>
-              <name>_ln141</name>
+              <name>_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8034,7 +8034,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8071,16 +8071,16 @@
             <Obj>
               <type>0</type>
               <id>185</id>
-              <name>output_states_2_0_s_write_ln141</name>
+              <name>output_states_2_0_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8089,7 +8089,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8120,16 +8120,16 @@
             <Obj>
               <type>0</type>
               <id>186</id>
-              <name>output_states_2_1_s_write_ln141</name>
+              <name>output_states_2_1_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8138,7 +8138,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8169,16 +8169,16 @@
             <Obj>
               <type>0</type>
               <id>187</id>
-              <name>output_states_2_2_s_write_ln141</name>
+              <name>output_states_2_2_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8187,7 +8187,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8218,16 +8218,16 @@
             <Obj>
               <type>0</type>
               <id>188</id>
-              <name>output_states_2_3_s_write_ln141</name>
+              <name>output_states_2_3_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8236,7 +8236,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8301,16 +8301,16 @@
             <Obj>
               <type>0</type>
               <id>191</id>
-              <name>output_states_1_0_s_write_ln141</name>
+              <name>output_states_1_0_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8319,7 +8319,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8350,16 +8350,16 @@
             <Obj>
               <type>0</type>
               <id>192</id>
-              <name>output_states_1_1_s_write_ln141</name>
+              <name>output_states_1_1_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8368,7 +8368,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8399,16 +8399,16 @@
             <Obj>
               <type>0</type>
               <id>193</id>
-              <name>output_states_1_2_s_write_ln141</name>
+              <name>output_states_1_2_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8417,7 +8417,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8448,16 +8448,16 @@
             <Obj>
               <type>0</type>
               <id>194</id>
-              <name>output_states_1_3_s_write_ln141</name>
+              <name>output_states_1_3_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8466,7 +8466,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8531,16 +8531,16 @@
             <Obj>
               <type>0</type>
               <id>197</id>
-              <name>output_states_0_0_s_write_ln141</name>
+              <name>output_states_0_0_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8549,7 +8549,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8580,16 +8580,16 @@
             <Obj>
               <type>0</type>
               <id>198</id>
-              <name>output_states_0_1_s_write_ln141</name>
+              <name>output_states_0_1_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8598,7 +8598,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8629,16 +8629,16 @@
             <Obj>
               <type>0</type>
               <id>199</id>
-              <name>output_states_0_2_s_write_ln141</name>
+              <name>output_states_0_2_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8647,7 +8647,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8678,16 +8678,16 @@
             <Obj>
               <type>0</type>
               <id>200</id>
-              <name>output_states_0_3_s_write_ln141</name>
+              <name>output_states_0_3_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8696,7 +8696,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8761,16 +8761,16 @@
             <Obj>
               <type>0</type>
               <id>203</id>
-              <name>output_states_3_0_s_write_ln141</name>
+              <name>output_states_3_0_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8779,7 +8779,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8810,16 +8810,16 @@
             <Obj>
               <type>0</type>
               <id>204</id>
-              <name>output_states_3_1_s_write_ln141</name>
+              <name>output_states_3_1_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8828,7 +8828,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8859,16 +8859,16 @@
             <Obj>
               <type>0</type>
               <id>205</id>
-              <name>output_states_3_2_s_write_ln141</name>
+              <name>output_states_3_2_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8877,7 +8877,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8908,16 +8908,16 @@
             <Obj>
               <type>0</type>
               <id>206</id>
-              <name>output_states_3_3_s_write_ln141</name>
+              <name>output_states_3_3_s_write_ln100</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>141</lineNumber>
+              <lineNumber>100</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -8926,7 +8926,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>141</second>
+                      <second>100</second>
                     </item>
                   </second>
                 </item>
@@ -8991,16 +8991,16 @@
             <Obj>
               <type>0</type>
               <id>209</id>
-              <name>_ln136</name>
+              <name>_ln95</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>136</lineNumber>
+              <lineNumber>95</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9009,7 +9009,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>136</second>
+                      <second>95</second>
                     </item>
                   </second>
                 </item>
@@ -9039,16 +9039,16 @@
             <Obj>
               <type>0</type>
               <id>212</id>
-              <name>_ln135</name>
+              <name>_ln94</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>135</lineNumber>
+              <lineNumber>94</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9057,7 +9057,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>135</second>
+                      <second>94</second>
                     </item>
                   </second>
                 </item>
@@ -9087,16 +9087,16 @@
             <Obj>
               <type>0</type>
               <id>215</id>
-              <name>_ln146</name>
+              <name>_ln105</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>146</lineNumber>
+              <lineNumber>105</lineNumber>
               <contextFuncName>quantize_activation&amp;lt;1, 96&amp;gt;</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/pis7/ece6775-final/ecelinux</first>
+                  <first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -9105,7 +9105,7 @@
                         <first>./layer.h</first>
                         <second>quantize_activation&amp;lt;1, 96&amp;gt;</second>
                       </first>
-                      <second>146</second>
+                      <second>105</second>
                     </item>
                   </second>
                 </item>
@@ -15843,7 +15843,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>dut_udiv_40ns_40neOg_U26 (dut_udiv_40ns_40neOg)</first>
+          <first>dut_udiv_40ns_40neOg_U10 (dut_udiv_40ns_40neOg)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -15862,7 +15862,7 @@
         <count>66</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln108_1_fu_736_p2 ( + ) </first>
+          <first>add_ln67_1_fu_736_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -15885,7 +15885,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln108_2_fu_922_p2 ( + ) </first>
+          <first>add_ln67_2_fu_922_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -15908,7 +15908,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln108_3_fu_1000_p2 ( + ) </first>
+          <first>add_ln67_3_fu_1000_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -15931,7 +15931,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln108_fu_658_p2 ( + ) </first>
+          <first>add_ln67_fu_658_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -15950,98 +15950,6 @@
             <item>
               <first>LUT</first>
               <second>47</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>add_ln128_fu_480_p2 ( + ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>7</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>15</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>add_ln135_fu_514_p2 ( + ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>12</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>add_ln136_fu_538_p2 ( + ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>12</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>add_ln137_fu_548_p2 ( + ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>5</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>5</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>15</second>
             </item>
           </second>
         </item>
@@ -16138,6 +16046,98 @@
           </second>
         </item>
         <item>
+          <first>add_ln87_fu_480_p2 ( + ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln94_fu_514_p2 ( + ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>12</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln95_fu_538_p2 ( + ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>12</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln96_fu_548_p2 ( + ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>5</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>5</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>15</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>grp_fu_445_p2 ( - ) </first>
           <second>
             <count>4</count>
@@ -16184,75 +16184,6 @@
             <item>
               <first>LUT</first>
               <second>40</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>icmp_ln128_fu_469_p2 ( icmp ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>7</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>7</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>11</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>icmp_ln135_fu_508_p2 ( icmp ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>icmp_ln136_fu_532_p2 ( icmp ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
             </item>
           </second>
         </item>
@@ -16464,6 +16395,29 @@
           </second>
         </item>
         <item>
+          <first>icmp_ln87_fu_469_p2 ( icmp ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>11</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>icmp_ln887_1_fu_874_p2 ( icmp ) </first>
           <second>
             <count>4</count>
@@ -16648,6 +16602,52 @@
           </second>
         </item>
         <item>
+          <first>icmp_ln94_fu_508_p2 ( icmp ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>icmp_ln95_fu_532_p2 ( icmp ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>3</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>mul_ln1118_1_fu_630_p2 ( * ) </first>
           <second>
             <count>5</count>
@@ -16756,75 +16756,6 @@
           </second>
         </item>
         <item>
-          <first>or_ln139_1_fu_587_p2 ( or ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>7</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>7</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>or_ln139_2_fu_597_p2 ( or ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>7</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>7</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>or_ln139_fu_576_p2 ( or ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>7</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>7</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>or_ln887_1_fu_895_p2 ( or ) </first>
           <second>
             <count>4</count>
@@ -16917,6 +16848,75 @@
           </second>
         </item>
         <item>
+          <first>or_ln98_1_fu_587_p2 ( or ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>7</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>or_ln98_2_fu_597_p2 ( or ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>7</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>or_ln98_fu_576_p2 ( or ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>7</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>p_Val2_16_fu_497_p3 ( select ) </first>
           <second>
             <count>5</count>
@@ -16944,7 +16944,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln108_1_fu_728_p3 ( select ) </first>
+          <first>select_ln67_1_fu_728_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -16971,7 +16971,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln108_2_fu_914_p3 ( select ) </first>
+          <first>select_ln67_2_fu_914_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -16998,7 +16998,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln108_3_fu_992_p3 ( select ) </first>
+          <first>select_ln67_3_fu_992_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -17025,7 +17025,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln108_fu_650_p3 ( select ) </first>
+          <first>select_ln67_fu_650_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -17707,7 +17707,7 @@
         <count>32</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln128_reg_1180</first>
+          <first>add_ln87_reg_1180</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -17726,7 +17726,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln135_reg_1211</first>
+          <first>add_ln94_reg_1211</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -17745,7 +17745,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln136_reg_1224</first>
+          <first>add_ln95_reg_1224</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -18258,7 +18258,7 @@
           </second>
         </item>
         <item>
-          <first>trunc_ln137_reg_1229</first>
+          <first>trunc_ln96_reg_1229</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -18296,7 +18296,7 @@
           </second>
         </item>
         <item>
-          <first>zext_ln135_reg_1200</first>
+          <first>zext_ln94_reg_1200</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -18319,7 +18319,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>dut_udiv_40ns_40neOg_U26</first>
+          <first>dut_udiv_40ns_40neOg_U10</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -18330,7 +18330,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>dut_udiv_40ns_40neOg_U26 (dut_udiv_40ns_40neOg)</first>
+          <first>dut_udiv_40ns_40neOg_U10 (dut_udiv_40ns_40neOg)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -18342,7 +18342,7 @@
         <count>66</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln108_1_fu_736_p2 ( + ) </first>
+          <first>add_ln67_1_fu_736_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -18350,7 +18350,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln108_2_fu_922_p2 ( + ) </first>
+          <first>add_ln67_2_fu_922_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -18358,7 +18358,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln108_3_fu_1000_p2 ( + ) </first>
+          <first>add_ln67_3_fu_1000_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -18366,43 +18366,11 @@
           </second>
         </item>
         <item>
-          <first>add_ln108_fu_658_p2 ( + ) </first>
+          <first>add_ln67_fu_658_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
             <item>78</item>
-          </second>
-        </item>
-        <item>
-          <first>add_ln128_fu_480_p2 ( + ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>41</item>
-          </second>
-        </item>
-        <item>
-          <first>add_ln135_fu_514_p2 ( + ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>51</item>
-          </second>
-        </item>
-        <item>
-          <first>add_ln136_fu_538_p2 ( + ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>63</item>
-          </second>
-        </item>
-        <item>
-          <first>add_ln137_fu_548_p2 ( + ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>68</item>
           </second>
         </item>
         <item>
@@ -18438,6 +18406,38 @@
           </second>
         </item>
         <item>
+          <first>add_ln87_fu_480_p2 ( + ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>41</item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln94_fu_514_p2 ( + ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>51</item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln95_fu_538_p2 ( + ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>63</item>
+          </second>
+        </item>
+        <item>
+          <first>add_ln96_fu_548_p2 ( + ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>68</item>
+          </second>
+        </item>
+        <item>
           <first>grp_fu_445_p2 ( - ) </first>
           <second>
             <count>2</count>
@@ -18453,30 +18453,6 @@
             <item_version>0</item_version>
             <item>23</item>
             <item>38</item>
-          </second>
-        </item>
-        <item>
-          <first>icmp_ln128_fu_469_p2 ( icmp ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>28</item>
-          </second>
-        </item>
-        <item>
-          <first>icmp_ln135_fu_508_p2 ( icmp ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>49</item>
-          </second>
-        </item>
-        <item>
-          <first>icmp_ln136_fu_532_p2 ( icmp ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>61</item>
           </second>
         </item>
         <item>
@@ -18552,6 +18528,14 @@
           </second>
         </item>
         <item>
+          <first>icmp_ln87_fu_469_p2 ( icmp ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>28</item>
+          </second>
+        </item>
+        <item>
           <first>icmp_ln887_1_fu_874_p2 ( icmp ) </first>
           <second>
             <count>1</count>
@@ -18616,6 +18600,22 @@
           </second>
         </item>
         <item>
+          <first>icmp_ln94_fu_508_p2 ( icmp ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>49</item>
+          </second>
+        </item>
+        <item>
+          <first>icmp_ln95_fu_532_p2 ( icmp ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>61</item>
+          </second>
+        </item>
+        <item>
           <first>mul_ln1118_1_fu_630_p2 ( * ) </first>
           <second>
             <count>1</count>
@@ -18645,30 +18645,6 @@
             <count>1</count>
             <item_version>0</item_version>
             <item>74</item>
-          </second>
-        </item>
-        <item>
-          <first>or_ln139_1_fu_587_p2 ( or ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>127</item>
-          </second>
-        </item>
-        <item>
-          <first>or_ln139_2_fu_597_p2 ( or ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>155</item>
-          </second>
-        </item>
-        <item>
-          <first>or_ln139_fu_576_p2 ( or ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>99</item>
           </second>
         </item>
         <item>
@@ -18704,6 +18680,30 @@
           </second>
         </item>
         <item>
+          <first>or_ln98_1_fu_587_p2 ( or ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>127</item>
+          </second>
+        </item>
+        <item>
+          <first>or_ln98_2_fu_597_p2 ( or ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>155</item>
+          </second>
+        </item>
+        <item>
+          <first>or_ln98_fu_576_p2 ( or ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>99</item>
+          </second>
+        </item>
+        <item>
           <first>p_Val2_16_fu_497_p3 ( select ) </first>
           <second>
             <count>1</count>
@@ -18712,7 +18712,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln108_1_fu_728_p3 ( select ) </first>
+          <first>select_ln67_1_fu_728_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -18720,7 +18720,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln108_2_fu_914_p3 ( select ) </first>
+          <first>select_ln67_2_fu_914_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -18728,7 +18728,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln108_3_fu_992_p3 ( select ) </first>
+          <first>select_ln67_3_fu_992_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -18736,7 +18736,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln108_fu_650_p3 ( select ) </first>
+          <first>select_ln67_fu_650_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -21489,7 +21489,7 @@
       <count>133</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>add_ln108_1_fu_736</first>
+        <first>add_ln67_1_fu_736</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -21497,7 +21497,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln108_2_fu_922</first>
+        <first>add_ln67_2_fu_922</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -21505,7 +21505,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln108_3_fu_1000</first>
+        <first>add_ln67_3_fu_1000</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -21513,43 +21513,11 @@
         </second>
       </item>
       <item>
-        <first>add_ln108_fu_658</first>
+        <first>add_ln67_fu_658</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>78</item>
-        </second>
-      </item>
-      <item>
-        <first>add_ln128_fu_480</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>41</item>
-        </second>
-      </item>
-      <item>
-        <first>add_ln135_fu_514</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>51</item>
-        </second>
-      </item>
-      <item>
-        <first>add_ln136_fu_538</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>63</item>
-        </second>
-      </item>
-      <item>
-        <first>add_ln137_fu_548</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>68</item>
         </second>
       </item>
       <item>
@@ -21585,6 +21553,38 @@
         </second>
       </item>
       <item>
+        <first>add_ln87_fu_480</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>41</item>
+        </second>
+      </item>
+      <item>
+        <first>add_ln94_fu_514</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>51</item>
+        </second>
+      </item>
+      <item>
+        <first>add_ln95_fu_538</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>63</item>
+        </second>
+      </item>
+      <item>
+        <first>add_ln96_fu_548</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>68</item>
+        </second>
+      </item>
+      <item>
         <first>grp_fu_437</first>
         <second>
           <count>2</count>
@@ -21609,30 +21609,6 @@
           <item_version>0</item_version>
           <item>23</item>
           <item>38</item>
-        </second>
-      </item>
-      <item>
-        <first>icmp_ln128_fu_469</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>28</item>
-        </second>
-      </item>
-      <item>
-        <first>icmp_ln135_fu_508</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>49</item>
-        </second>
-      </item>
-      <item>
-        <first>icmp_ln136_fu_532</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>61</item>
         </second>
       </item>
       <item>
@@ -21708,6 +21684,14 @@
         </second>
       </item>
       <item>
+        <first>icmp_ln87_fu_469</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>28</item>
+        </second>
+      </item>
+      <item>
         <first>icmp_ln887_1_fu_874</first>
         <second>
           <count>1</count>
@@ -21769,6 +21753,22 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>88</item>
+        </second>
+      </item>
+      <item>
+        <first>icmp_ln94_fu_508</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>49</item>
+        </second>
+      </item>
+      <item>
+        <first>icmp_ln95_fu_532</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>61</item>
         </second>
       </item>
       <item>
@@ -21892,30 +21892,6 @@
         </second>
       </item>
       <item>
-        <first>or_ln139_1_fu_587</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>127</item>
-        </second>
-      </item>
-      <item>
-        <first>or_ln139_2_fu_597</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>155</item>
-        </second>
-      </item>
-      <item>
-        <first>or_ln139_fu_576</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>99</item>
-        </second>
-      </item>
-      <item>
         <first>or_ln887_1_fu_895</first>
         <second>
           <count>1</count>
@@ -21945,6 +21921,30 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>91</item>
+        </second>
+      </item>
+      <item>
+        <first>or_ln98_1_fu_587</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>127</item>
+        </second>
+      </item>
+      <item>
+        <first>or_ln98_2_fu_597</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>155</item>
+        </second>
+      </item>
+      <item>
+        <first>or_ln98_fu_576</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>99</item>
         </second>
       </item>
       <item>
@@ -22148,7 +22148,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln108_1_fu_728</first>
+        <first>select_ln67_1_fu_728</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -22156,7 +22156,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln108_2_fu_914</first>
+        <first>select_ln67_2_fu_914</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -22164,7 +22164,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln108_3_fu_992</first>
+        <first>select_ln67_3_fu_992</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -22172,7 +22172,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln108_fu_650</first>
+        <first>select_ln67_fu_650</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -22420,46 +22420,6 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln137_fu_544</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>67</item>
-        </second>
-      </item>
-      <item>
-        <first>trunc_ln140_1_fu_884</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>119</item>
-        </second>
-      </item>
-      <item>
-        <first>trunc_ln140_2_fu_1094</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>147</item>
-        </second>
-      </item>
-      <item>
-        <first>trunc_ln140_3_fu_1133</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>175</item>
-        </second>
-      </item>
-      <item>
-        <first>trunc_ln140_fu_849</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>89</item>
-        </second>
-      </item>
-      <item>
         <first>trunc_ln851_1_fu_759</first>
         <second>
           <count>1</count>
@@ -22492,59 +22452,43 @@
         </second>
       </item>
       <item>
-        <first>zext_ln129_fu_475</first>
+        <first>trunc_ln96_fu_544</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>33</item>
+          <item>67</item>
         </second>
       </item>
       <item>
-        <first>zext_ln135_fu_504</first>
+        <first>trunc_ln99_1_fu_884</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>45</item>
+          <item>119</item>
         </second>
       </item>
       <item>
-        <first>zext_ln136_fu_528</first>
+        <first>trunc_ln99_2_fu_1094</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>60</item>
+          <item>147</item>
         </second>
       </item>
       <item>
-        <first>zext_ln139_1_fu_582</first>
+        <first>trunc_ln99_3_fu_1133</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>100</item>
+          <item>175</item>
         </second>
       </item>
       <item>
-        <first>zext_ln139_2_fu_592</first>
+        <first>trunc_ln99_fu_849</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>128</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln139_3_fu_602</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>156</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln139_fu_561</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>70</item>
+          <item>89</item>
         </second>
       </item>
       <item>
@@ -22553,6 +22497,62 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>94</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln88_fu_475</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>33</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln94_fu_504</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>45</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln95_fu_528</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>60</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln98_1_fu_582</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>100</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln98_2_fu_592</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>128</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln98_3_fu_602</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>156</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln98_fu_561</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>70</item>
         </second>
       </item>
     </dp_fu_nodes_expression>
@@ -23153,7 +23153,7 @@
       <count>38</count>
       <item_version>0</item_version>
       <item>
-        <first>add_ln128_reg_1180</first>
+        <first>add_ln87_reg_1180</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -23161,7 +23161,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln135_reg_1211</first>
+        <first>add_ln94_reg_1211</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -23169,7 +23169,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln136_reg_1224</first>
+        <first>add_ln95_reg_1224</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -23435,7 +23435,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln137_reg_1229</first>
+        <first>trunc_ln96_reg_1229</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -23451,7 +23451,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln135_reg_1200</first>
+        <first>zext_ln94_reg_1200</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

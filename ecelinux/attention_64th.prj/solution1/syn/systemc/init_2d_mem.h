@@ -38,11 +38,11 @@ struct init_2d_mem : public sc_module {
 
     sc_signal< sc_lv<2> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
-    sc_signal< sc_lv<5> > add_ln37_fu_57_p2;
+    sc_signal< sc_lv<5> > add_ln25_fu_57_p2;
     sc_signal< sc_logic > ap_CS_fsm_state2;
     sc_signal< sc_lv<5> > j_0_0_reg_40;
-    sc_signal< sc_lv<1> > icmp_ln37_fu_51_p2;
-    sc_signal< sc_lv<64> > zext_ln38_fu_63_p1;
+    sc_signal< sc_lv<1> > icmp_ln25_fu_51_p2;
+    sc_signal< sc_lv<64> > zext_ln26_fu_63_p1;
     sc_signal< sc_lv<2> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
@@ -59,18 +59,18 @@ struct init_2d_mem : public sc_module {
     static const bool ap_const_boolean_1;
     // Thread declarations
     void thread_ap_clk_no_reset_();
-    void thread_add_ln37_fu_57_p2();
+    void thread_add_ln25_fu_57_p2();
     void thread_ap_CS_fsm_state1();
     void thread_ap_CS_fsm_state2();
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_icmp_ln37_fu_51_p2();
+    void thread_icmp_ln25_fu_51_p2();
     void thread_mem_0_V_address0();
     void thread_mem_0_V_ce0();
     void thread_mem_0_V_d0();
     void thread_mem_0_V_we0();
-    void thread_zext_ln38_fu_63_p1();
+    void thread_zext_ln26_fu_63_p1();
     void thread_ap_NS_fsm();
 };
 

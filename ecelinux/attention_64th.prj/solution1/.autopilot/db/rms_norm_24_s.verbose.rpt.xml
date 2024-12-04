@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'rms_norm_24_s'" level="0">
-<item name = "Date">Sun Dec  1 01:11:21 2024
+<item name = "Date">Tue Dec  3 18:23:19 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_64th.prj</item>
@@ -91,8 +91,8 @@
 <column name="ret_V_fu_181_p2">+, 0, 0, 63, 56, 56</column>
 <column name="sub_ln1148_fu_206_p2">-, 0, 0, 88, 1, 81</column>
 <column name="sub_ln1227_fu_236_p2">-, 0, 0, 43, 1, 36</column>
-<column name="icmp_ln87_fu_136_p2">icmp, 0, 0, 11, 5, 5</column>
-<column name="icmp_ln92_fu_262_p2">icmp, 0, 0, 11, 5, 5</column>
+<column name="icmp_ln46_fu_136_p2">icmp, 0, 0, 11, 5, 5</column>
+<column name="icmp_ln51_fu_262_p2">icmp, 0, 0, 11, 5, 5</column>
 <column name="select_ln1148_1_fu_242_p3">select, 0, 0, 36, 1, 36</column>
 <column name="select_ln1148_fu_229_p3">select, 0, 0, 36, 1, 36</column>
 </table>

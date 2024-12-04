@@ -129,7 +129,7 @@ wire   [0:0] p_Result_6_fu_299_p3;
 wire   [0:0] p_Result_7_fu_313_p3;
 wire   [0:0] p_Result_8_fu_327_p3;
 wire   [0:0] p_Result_9_fu_341_p3;
-wire   [0:0] p_Result_s_102_fu_355_p3;
+wire   [0:0] p_Result_s_99_fu_355_p3;
 wire   [0:0] p_Result_10_fu_369_p3;
 wire   [0:0] p_Result_11_fu_383_p3;
 wire   [0:0] p_Result_12_fu_397_p3;
@@ -265,7 +265,7 @@ dut_mul_50ns_47nspcA #(
     .din0_WIDTH( 50 ),
     .din1_WIDTH( 47 ),
     .dout_WIDTH( 97 ))
-dut_mul_50ns_47nspcA_U91(
+dut_mul_50ns_47nspcA_U87(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_692_p0),
@@ -280,7 +280,7 @@ dut_mul_50ns_50nsqcK #(
     .din0_WIDTH( 50 ),
     .din1_WIDTH( 50 ),
     .dout_WIDTH( 100 ))
-dut_mul_50ns_50nsqcK_U92(
+dut_mul_50ns_50nsqcK_U88(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_765_p0),
@@ -658,7 +658,7 @@ assign p_Result_8_fu_327_p3 = zext_ln727_fu_181_p1[32'd28];
 
 assign p_Result_9_fu_341_p3 = zext_ln727_fu_181_p1[32'd29];
 
-assign p_Result_s_102_fu_355_p3 = zext_ln727_fu_181_p1[32'd30];
+assign p_Result_s_99_fu_355_p3 = zext_ln727_fu_181_p1[32'd30];
 
 assign p_Result_s_fu_215_p3 = zext_ln727_fu_181_p1[32'd20];
 
@@ -686,7 +686,7 @@ assign trunc_ln612_2_fu_664_p1 = f_x_msb_2_table_V_q0[40:0];
 
 assign trunc_ln612_fu_195_p1 = x_V[15:0];
 
-assign xor_ln278_10_fu_363_p2 = (tmp_fu_207_p3 ^ p_Result_s_102_fu_355_p3);
+assign xor_ln278_10_fu_363_p2 = (tmp_fu_207_p3 ^ p_Result_s_99_fu_355_p3);
 
 assign xor_ln278_11_fu_377_p2 = (tmp_fu_207_p3 ^ p_Result_10_fu_369_p3);
 

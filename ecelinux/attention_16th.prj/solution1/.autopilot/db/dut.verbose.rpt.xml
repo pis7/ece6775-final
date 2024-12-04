@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dut'" level="0">
-<item name = "Date">Sun Dec  1 01:00:17 2024
+<item name = "Date">Tue Dec  3 18:13:30 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">22261, 22261, 0.223 ms, 0.223 ms, 22261, 22261, none</column>
+<column name="">19333, 19333, 0.193 ms, 0.193 ms, 19333, 19333, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_attention_fu_167">attention, 21970, 21970, 0.220 ms, 0.220 ms, 21970, 21970, none</column>
+<column name="grp_attention_fu_167">attention, 19042, 19042, 0.190 ms, 0.190 ms, 19042, 19042, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,19 +52,19 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 54, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">77, 92, 20207, 27467, 0</column>
+<column name="Instance">80, 122, 21405, 27401, 0</column>
 <column name="Memory">6, -, 0, 0, 0</column>
 <column name="Multiplexer">-, -, -, 195, -</column>
 <column name="Register">-, -, 27, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">29, 41, 19, 52, 0</specialColumn>
+<specialColumn name="Utilization (%)">30, 55, 20, 51, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_attention_fu_167">attention, 77, 92, 20207, 27467, 0</column>
+<column name="grp_attention_fu_167">attention, 80, 122, 21405, 27401, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

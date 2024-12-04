@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'dut'
 ================================================================
-* Date:           Sun Dec  1 01:00:00 2024
+* Date:           Tue Dec  3 18:13:20 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_16th.prj
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
     |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
     +---------+---------+----------+----------+-------+-------+---------+
-    |    22261|    22261| 0.223 ms | 0.223 ms |  22261|  22261|   none  |
+    |    19333|    19333| 0.193 ms | 0.193 ms |  19333|  19333|   none  |
     +---------+---------+----------+----------+-------+-------+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                      |           |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
         |       Instance       |   Module  |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
         +----------------------+-----------+---------+---------+----------+----------+-------+-------+---------+
-        |grp_attention_fu_167  |attention  |    21970|    21970| 0.220 ms | 0.220 ms |  21970|  21970|   none  |
+        |grp_attention_fu_167  |attention  |    19042|    19042| 0.190 ms | 0.190 ms |  19042|  19042|   none  |
         +----------------------+-----------+---------+---------+----------+----------+-------+-------+---------+
 
         * Loop: 
@@ -91,27 +91,27 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 3.25>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 6 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%empty_103 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 7 'specinterface' 'empty_103' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%empty_100 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 7 'specinterface' 'empty_100' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_in_V_V), !map !573"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_out_V_V), !map !577"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @dut_str) nounwind"   --->   Operation 10 'spectopmodule' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (3.25ns)   --->   "%input_0_V = alloca [96 x i40], align 8" [attention.cpp:14]   --->   Operation 11 'alloca' 'input_0_V' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 576> <RAM>
 ST_1 : Operation 12 [1/1] (3.25ns)   --->   "%output_0 = alloca [96 x i40], align 8"   --->   Operation 12 'alloca' 'output_0' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 576> <RAM>
-ST_1 : Operation 13 [1/1] (1.76ns)   --->   "br label %.preheader75.0" [attention.cpp:19]   --->   Operation 13 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 13 [1/1] (1.76ns)   --->   "br label %.preheader50.0" [attention.cpp:19]   --->   Operation 13 'br' <Predicate = true> <Delay = 1.76>
 
 State 2 <SV = 1> <Delay = 6.88>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%j_0_0 = phi i7 [ %add_ln19, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %arrayctor.loop4.preheader ]" [attention.cpp:19]   --->   Operation 14 'phi' 'j_0_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 15 [1/1] (1.48ns)   --->   "%icmp_ln19 = icmp eq i7 %j_0_0, -32" [attention.cpp:19]   --->   Operation 15 'icmp' 'icmp_ln19' <Predicate = true> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%empty_104 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 96, i64 96, i64 96)"   --->   Operation 16 'speclooptripcount' 'empty_104' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%empty_101 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 96, i64 96, i64 96)"   --->   Operation 16 'speclooptripcount' 'empty_101' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 17 [1/1] (1.87ns)   --->   "%add_ln19 = add i7 %j_0_0, 1" [attention.cpp:19]   --->   Operation 17 'add' 'add_ln19' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %icmp_ln19, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0" [attention.cpp:19]   --->   Operation 18 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %icmp_ln19, label %.preheader51.1, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0" [attention.cpp:19]   --->   Operation 18 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln20 = zext i7 %j_0_0 to i64" [attention.cpp:20]   --->   Operation 19 'zext' 'zext_ln20' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (3.63ns)   --->   "%tmp_V = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %strm_in_V_V)" [attention.cpp:20]   --->   Operation 20 'read' 'tmp_V' <Predicate = (!icmp_ln19)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%trunc_ln = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_V, i32 2, i32 31)" [attention.cpp:20]   --->   Operation 21 'partselect' 'trunc_ln' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%sext_ln708 = sext i30 %trunc_ln to i40" [attention.cpp:20]   --->   Operation 22 'sext' 'sext_ln708' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%input_0_V_addr = getelementptr [96 x i40]* %input_0_V, i64 0, i64 %zext_ln20" [attention.cpp:20]   --->   Operation 23 'getelementptr' 'input_0_V_addr' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_2 : Operation 24 [1/1] (3.25ns)   --->   "store i40 %sext_ln708, i40* %input_0_V_addr, align 8" [attention.cpp:20]   --->   Operation 24 'store' <Predicate = (!icmp_ln19)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 576> <RAM>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "br label %.preheader75.0" [attention.cpp:19]   --->   Operation 25 'br' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "br label %.preheader50.0" [attention.cpp:19]   --->   Operation 25 'br' <Predicate = (!icmp_ln19)> <Delay = 0.00>
 ST_2 : Operation 26 [2/2] (0.00ns)   --->   "call fastcc void @attention([96 x i40]* %input_0_V, [96 x i40]* %output_0)" [attention.cpp:24]   --->   Operation 26 'call' <Predicate = (icmp_ln19)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 1.76>
@@ -119,9 +119,9 @@ ST_3 : Operation 27 [1/2] (0.00ns)   --->   "call fastcc void @attention([96 x i
 ST_3 : Operation 28 [1/1] (1.76ns)   --->   "br label %.preheader.0" [attention.cpp:51]   --->   Operation 28 'br' <Predicate = true> <Delay = 1.76>
 
 State 4 <SV = 3> <Delay = 3.25>
-ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%j9_0_0 = phi i7 [ %add_ln51, %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1Ei.exit ]" [attention.cpp:51]   --->   Operation 29 'phi' 'j9_0_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%j9_0_0 = phi i7 [ %add_ln51, %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %.preheader51.1 ]" [attention.cpp:51]   --->   Operation 29 'phi' 'j9_0_0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 30 [1/1] (1.48ns)   --->   "%icmp_ln51 = icmp eq i7 %j9_0_0, -32" [attention.cpp:51]   --->   Operation 30 'icmp' 'icmp_ln51' <Predicate = true> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%empty_105 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 96, i64 96, i64 96)"   --->   Operation 31 'speclooptripcount' 'empty_105' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%empty_102 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 96, i64 96, i64 96)"   --->   Operation 31 'speclooptripcount' 'empty_102' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 32 [1/1] (1.87ns)   --->   "%add_ln51 = add i7 %j9_0_0, 1" [attention.cpp:51]   --->   Operation 32 'add' 'add_ln51' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 33 [1/1] (0.00ns)   --->   "br i1 %icmp_ln51, label %0, label %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0" [attention.cpp:51]   --->   Operation 33 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln52 = zext i7 %j9_0_0 to i64" [attention.cpp:52]   --->   Operation 34 'zext' 'zext_ln52' <Predicate = (!icmp_ln51)> <Delay = 0.00>
@@ -182,7 +182,7 @@ Port [ o_weights_3]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1
 <LifeTime>
 <method=bitvector/>
 empty             (specinterface    ) [ 000000]
-empty_103         (specinterface    ) [ 000000]
+empty_100         (specinterface    ) [ 000000]
 specbitsmap_ln0   (specbitsmap      ) [ 000000]
 specbitsmap_ln0   (specbitsmap      ) [ 000000]
 spectopmodule_ln0 (spectopmodule    ) [ 000000]
@@ -191,7 +191,7 @@ output_0          (alloca           ) [ 001111]
 br_ln19           (br               ) [ 011000]
 j_0_0             (phi              ) [ 001000]
 icmp_ln19         (icmp             ) [ 001000]
-empty_104         (speclooptripcount) [ 000000]
+empty_101         (speclooptripcount) [ 000000]
 add_ln19          (add              ) [ 011000]
 br_ln19           (br               ) [ 000000]
 zext_ln20         (zext             ) [ 000000]
@@ -205,7 +205,7 @@ call_ln24         (call             ) [ 000000]
 br_ln51           (br               ) [ 000111]
 j9_0_0            (phi              ) [ 000010]
 icmp_ln51         (icmp             ) [ 000011]
-empty_105         (speclooptripcount) [ 000000]
+empty_102         (speclooptripcount) [ 000000]
 add_ln51          (add              ) [ 000111]
 br_ln51           (br               ) [ 000000]
 zext_ln52         (zext             ) [ 000000]
@@ -1238,7 +1238,7 @@ br_ln51           (br               ) [ 000111]
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 | Operation|     Functional Unit     |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |   URAM  |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
-|   call   |   grp_attention_fu_167  |    39   |    92   |  135.87 |  19632  |  21175  |    0    |
+|   call   |   grp_attention_fu_167  |    42   |   122   | 152.111 |  20790  |  21969  |    0    |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 |    add   |     add_ln19_fu_229     |    0    |    0    |    0    |    0    |    15   |    0    |
 |          |     add_ln51_fu_261     |    0    |    0    |    0    |    0    |    15   |    0    |
@@ -1261,7 +1261,7 @@ br_ln51           (br               ) [ 000111]
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 |bitconcatenate|      tmp_V_2_fu_276     |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                         |    39   |    92   |  135.87 |  19632  |  21227  |    0    |
+|   Total  |                         |    42   |   122   | 152.111 |  20790  |  22021  |    0    |
 |----------|-------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -1327,10 +1327,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |   39   |   92   |   135  |  19632 |  21227 |    0   |
+|  Function |   42   |   122  |   152  |  20790 |  22021 |    0   |
 |   Memory  |   40   |    -   |    -   |    0   |    0   |    0   |
 |Multiplexer|    -   |    -   |    1   |    -   |    9   |    -   |
 |  Register |    -   |    -   |    -   |   35   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   79   |   92   |   137  |  19667 |  21236 |    0   |
+|   Total   |   82   |   122  |   153  |  20825 |  22030 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

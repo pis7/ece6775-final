@@ -29,7 +29,7 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [8:0] mem_0_V_address0;
+output  [4:0] mem_0_V_address0;
 output   mem_0_V_ce0;
 output   mem_0_V_we0;
 output  [39:0] mem_0_V_d0;
@@ -42,9 +42,9 @@ reg mem_0_V_we0;
 
 (* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [8:0] add_ln25_fu_57_p2;
+wire   [4:0] add_ln25_fu_57_p2;
 wire    ap_CS_fsm_state2;
-reg   [8:0] j_0_0_reg_40;
+reg   [4:0] j_0_0_reg_40;
 wire   [0:0] icmp_ln25_fu_51_p2;
 wire   [63:0] zext_ln26_fu_63_p1;
 reg   [1:0] ap_NS_fsm;
@@ -66,7 +66,7 @@ always @ (posedge ap_clk) begin
     if (((icmp_ln25_fu_51_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
         j_0_0_reg_40 <= add_ln25_fu_57_p2;
     end else if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        j_0_0_reg_40 <= 9'd0;
+        j_0_0_reg_40 <= 5'd0;
     end
 end
 
@@ -132,13 +132,13 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln25_fu_57_p2 = (j_0_0_reg_40 + 9'd1);
+assign add_ln25_fu_57_p2 = (j_0_0_reg_40 + 5'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
-assign icmp_ln25_fu_51_p2 = ((j_0_0_reg_40 == 9'd384) ? 1'b1 : 1'b0);
+assign icmp_ln25_fu_51_p2 = ((j_0_0_reg_40 == 5'd24) ? 1'b1 : 1'b0);
 
 assign mem_0_V_address0 = zext_ln26_fu_63_p1;
 

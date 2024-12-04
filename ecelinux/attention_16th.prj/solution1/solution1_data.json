@@ -22,8 +22,11 @@
       "set_directive_array_partition attention ",
       "set_directive_array_partition attention ",
       "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
+      "set_directive_array_partition attention ",
       "set_directive_unroll quantize_activation\/QUANTIZE_ACTIVATION_LOOP_5 ",
-      "set_directive_pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_3 "
+      "set_directive_pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_3 ",
+      "set_directive_unroll GEMM_3D_float\/GEMM_3D_FLOAT_LOOP_4 -factor 4"
     ],
     "DirectiveInfo": [
       "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredq_weights} {cyclic positionBoolean0type} {factor 4} {dim 1}} {}",
@@ -34,8 +37,11 @@
       "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredquantized_final_output} {cyclic positionBoolean0type} {factor 4} {dim 2}} {}",
       "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredquantized_hidden_states} {complete positionBoolean0type} {dim 3}} {}",
       "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredquantized_final_output} {complete positionBoolean0type} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredq_embed} {cyclic positionBoolean0type} {factor 4} {dim 3}} {}",
+      "array_partition attention {{partition positionBooleanCmd} {variable positionBooleanTextRequiredk_proj_transposed} {cyclic positionBoolean0type} {factor 4} {dim 2}} {}",
       "unroll quantize_activation\/QUANTIZE_ACTIVATION_LOOP_5 {} {}",
-      "pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_3 {} {}"
+      "pipeline linear_forward_no_mul\/LINEAR_FORWARD_NO_MUL_LOOP_3 {} {}",
+      "unroll GEMM_3D_float\/GEMM_3D_FLOAT_LOOP_4 {{factor 4}} {}"
     ]
   },
   "Args": {
@@ -56,7 +62,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "22261",
+    "Latency": "19333",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -79,8 +85,9 @@
       "impl\/vhdl\/apply_rotary_pos_hbi.vhd",
       "impl\/vhdl\/apply_rotary_pos_ibs.vhd",
       "impl\/vhdl\/attention.vhd",
-      "impl\/vhdl\/attention_attn_webbk.vhd",
-      "impl\/vhdl\/attention_k_cache8jQ.vhd",
+      "impl\/vhdl\/attention_attn_webhl.vhd",
+      "impl\/vhdl\/attention_k_cachebbk.vhd",
+      "impl\/vhdl\/attention_k_proj_bdk.vhd",
       "impl\/vhdl\/attention_k_weighAem.vhd",
       "impl\/vhdl\/attention_k_weighxdS.vhd",
       "impl\/vhdl\/attention_k_weighyd2.vhd",
@@ -91,6 +98,7 @@
       "impl\/vhdl\/attention_o_weighHfu.vhd",
       "impl\/vhdl\/attention_o_weighIfE.vhd",
       "impl\/vhdl\/attention_o_weighJfO.vhd",
+      "impl\/vhdl\/attention_q_embed6jw.vhd",
       "impl\/vhdl\/attention_q_proj_0iy.vhd",
       "impl\/vhdl\/attention_q_proj_3i2.vhd",
       "impl\/vhdl\/attention_q_weightde.vhd",
@@ -98,6 +106,7 @@
       "impl\/vhdl\/attention_q_weighvdy.vhd",
       "impl\/vhdl\/attention_q_weighwdI.vhd",
       "impl\/vhdl\/attention_quantizKfY.vhd",
+      "impl\/vhdl\/attention_v_cachebck.vhd",
       "impl\/vhdl\/attention_v_weighBew.vhd",
       "impl\/vhdl\/attention_v_weighCeG.vhd",
       "impl\/vhdl\/attention_v_weighDeQ.vhd",
@@ -110,7 +119,7 @@
       "impl\/vhdl\/dut_mul_40s_42ns_bkb.vhd",
       "impl\/vhdl\/dut_mul_50ns_47nspcA.vhd",
       "impl\/vhdl\/dut_mul_50ns_50nsqcK.vhd",
-      "impl\/vhdl\/dut_mul_58ns_56s_bun.vhd",
+      "impl\/vhdl\/dut_mul_58ns_56s_bAo.vhd",
       "impl\/vhdl\/dut_mul_72s_40s_7dEe.vhd",
       "impl\/vhdl\/dut_output_0.vhd",
       "impl\/vhdl\/dut_sdiv_56ns_40srcU.vhd",
@@ -124,7 +133,6 @@
       "impl\/vhdl\/GEMM_3D_float.vhd",
       "impl\/vhdl\/GEMM_3D_float_1.vhd",
       "impl\/vhdl\/init_2d_mem.vhd",
-      "impl\/vhdl\/init_3d_mem.vhd",
       "impl\/vhdl\/linear_forward_no_mu.vhd",
       "impl\/vhdl\/quantize_activation.vhd",
       "impl\/vhdl\/reshape_2D_to_3D.vhd",
@@ -142,8 +150,9 @@
       "impl\/verilog\/apply_rotary_pos_hbi_rom.dat",
       "impl\/verilog\/apply_rotary_pos_ibs.v",
       "impl\/verilog\/attention.v",
-      "impl\/verilog\/attention_attn_webbk.v",
-      "impl\/verilog\/attention_k_cache8jQ.v",
+      "impl\/verilog\/attention_attn_webhl.v",
+      "impl\/verilog\/attention_k_cachebbk.v",
+      "impl\/verilog\/attention_k_proj_bdk.v",
       "impl\/verilog\/attention_k_weighAem.v",
       "impl\/verilog\/attention_k_weighAem_rom.dat",
       "impl\/verilog\/attention_k_weighxdS.v",
@@ -164,6 +173,7 @@
       "impl\/verilog\/attention_o_weighIfE_rom.dat",
       "impl\/verilog\/attention_o_weighJfO.v",
       "impl\/verilog\/attention_o_weighJfO_rom.dat",
+      "impl\/verilog\/attention_q_embed6jw.v",
       "impl\/verilog\/attention_q_proj_0iy.v",
       "impl\/verilog\/attention_q_proj_3i2.v",
       "impl\/verilog\/attention_q_weightde.v",
@@ -175,6 +185,7 @@
       "impl\/verilog\/attention_q_weighwdI.v",
       "impl\/verilog\/attention_q_weighwdI_rom.dat",
       "impl\/verilog\/attention_quantizKfY.v",
+      "impl\/verilog\/attention_v_cachebck.v",
       "impl\/verilog\/attention_v_weighBew.v",
       "impl\/verilog\/attention_v_weighBew_rom.dat",
       "impl\/verilog\/attention_v_weighCeG.v",
@@ -193,7 +204,7 @@
       "impl\/verilog\/dut_mul_40s_42ns_bkb.v",
       "impl\/verilog\/dut_mul_50ns_47nspcA.v",
       "impl\/verilog\/dut_mul_50ns_50nsqcK.v",
-      "impl\/verilog\/dut_mul_58ns_56s_bun.v",
+      "impl\/verilog\/dut_mul_58ns_56s_bAo.v",
       "impl\/verilog\/dut_mul_72s_40s_7dEe.v",
       "impl\/verilog\/dut_output_0.v",
       "impl\/verilog\/dut_sdiv_56ns_40srcU.v",
@@ -210,7 +221,6 @@
       "impl\/verilog\/GEMM_3D_float.v",
       "impl\/verilog\/GEMM_3D_float_1.v",
       "impl\/verilog\/init_2d_mem.v",
-      "impl\/verilog\/init_3d_mem.v",
       "impl\/verilog\/linear_forward_no_mu.v",
       "impl\/verilog\/quantize_activation.v",
       "impl\/verilog\/reshape_2D_to_3D.v",
@@ -221,9 +231,9 @@
       "impl\/verilog\/dut.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/pis7\/ece6775-final\/ecelinux\/attention_16th.prj\/solution1\/.autopilot\/db\/dut.design.xml",
-    "DebugDir": "\/home\/pis7\/ece6775-final\/ecelinux\/attention_16th.prj\/solution1\/.debug",
-    "ProtoInst": ["\/home\/pis7\/ece6775-final\/ecelinux\/attention_16th.prj\/solution1\/.debug\/dut.protoinst"]
+    "DesignXml": "\/home\/pis7\/ece6775\/ece6775-final\/ecelinux\/attention_16th.prj\/solution1\/.autopilot\/db\/dut.design.xml",
+    "DebugDir": "\/home\/pis7\/ece6775\/ece6775-final\/ecelinux\/attention_16th.prj\/solution1\/.debug",
+    "ProtoInst": ["\/home\/pis7\/ece6775\/ece6775-final\/ecelinux\/attention_16th.prj\/solution1\/.debug\/dut.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -341,11 +351,11 @@
           "Instances": [
             {
               "ModuleName": "linear_forward_no_mu",
-              "InstanceName": "grp_linear_forward_no_mu_fu_429"
+              "InstanceName": "grp_linear_forward_no_mu_fu_451"
             },
             {
               "ModuleName": "rms_norm_96_s",
-              "InstanceName": "grp_rms_norm_96_s_fu_477",
+              "InstanceName": "grp_rms_norm_96_s_fu_499",
               "Instances": [{
                   "ModuleName": "sqrt_fixed_42_26_s",
                   "InstanceName": "grp_sqrt_fixed_42_26_s_fu_127"
@@ -353,7 +363,7 @@
             },
             {
               "ModuleName": "softmax_1_4_6_s",
-              "InstanceName": "grp_softmax_1_4_6_s_fu_486",
+              "InstanceName": "grp_softmax_1_4_6_s_fu_508",
               "Instances": [{
                   "ModuleName": "exp_40_24_s",
                   "InstanceName": "grp_exp_40_24_s_fu_159"
@@ -361,51 +371,47 @@
             },
             {
               "ModuleName": "quantize_activation",
-              "InstanceName": "grp_quantize_activation_fu_497"
+              "InstanceName": "grp_quantize_activation_fu_519"
             },
             {
               "ModuleName": "apply_rotary_pos_emb",
-              "InstanceName": "grp_apply_rotary_pos_emb_fu_519"
-            },
-            {
-              "ModuleName": "GEMM_3D_float_1",
-              "InstanceName": "grp_GEMM_3D_float_1_fu_531"
+              "InstanceName": "grp_apply_rotary_pos_emb_fu_541"
             },
             {
               "ModuleName": "GEMM_3D_float",
-              "InstanceName": "grp_GEMM_3D_float_fu_538"
+              "InstanceName": "grp_GEMM_3D_float_fu_556"
+            },
+            {
+              "ModuleName": "GEMM_3D_float_1",
+              "InstanceName": "grp_GEMM_3D_float_1_fu_563"
             },
             {
               "ModuleName": "cache_update_1",
-              "InstanceName": "grp_cache_update_1_fu_545"
+              "InstanceName": "grp_cache_update_1_fu_576"
             },
             {
               "ModuleName": "cache_update",
-              "InstanceName": "grp_cache_update_fu_553"
+              "InstanceName": "grp_cache_update_fu_584"
             },
             {
               "ModuleName": "transpose_last_two_d",
-              "InstanceName": "grp_transpose_last_two_d_fu_561"
+              "InstanceName": "grp_transpose_last_two_d_fu_592"
             },
             {
               "ModuleName": "reshape_2D_to_3D",
-              "InstanceName": "grp_reshape_2D_to_3D_fu_567"
-            },
-            {
-              "ModuleName": "init_3d_mem",
-              "InstanceName": "grp_init_3d_mem_fu_573"
+              "InstanceName": "grp_reshape_2D_to_3D_fu_601"
             },
             {
               "ModuleName": "init_2d_mem",
-              "InstanceName": "grp_init_2d_mem_fu_609"
+              "InstanceName": "grp_init_2d_mem_fu_607"
             },
             {
               "ModuleName": "init_2d_mem",
-              "InstanceName": "grp_init_2d_mem_fu_615"
+              "InstanceName": "grp_init_2d_mem_fu_613"
             },
             {
               "ModuleName": "init_2d_mem",
-              "InstanceName": "grp_init_2d_mem_fu_621"
+              "InstanceName": "grp_init_2d_mem_fu_619"
             }
           ]
         }]
@@ -419,13 +425,6 @@
         "isOneStateSeq": "0"
       },
       "rms_norm_96_s": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "1",
-        "isPipelined": "0",
-        "isCombinational": "0",
-        "isOneStateSeq": "0"
-      },
-      "init_3d_mem": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
@@ -592,42 +591,6 @@
           "URAM": "0"
         }
       },
-      "init_3d_mem": {
-        "Latency": {
-          "LatencyBest": "145",
-          "LatencyAvg": "145",
-          "LatencyWorst": "145",
-          "PipelineII": "145",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "2.322"
-        },
-        "Loops": [{
-            "Name": "INIT_3D_MEM_LOOP_2",
-            "TripCount": "24",
-            "Latency": "144",
-            "PipelineII": "",
-            "PipelineDepth": "6",
-            "Loops": [{
-                "Name": "INIT_3D_MEM_LOOP_3",
-                "TripCount": "4",
-                "Latency": "4",
-                "PipelineII": "",
-                "PipelineDepth": "1"
-              }]
-          }],
-        "Area": {
-          "FF": "66",
-          "LUT": "86",
-          "BRAM_18K": "0",
-          "DSP48E": "0",
-          "URAM": "0"
-        }
-      },
       "quantize_activation": {
         "Latency": {
           "LatencyBest": "488",
@@ -769,10 +732,10 @@
       },
       "apply_rotary_pos_emb": {
         "Latency": {
-          "LatencyBest": "546",
-          "LatencyAvg": "546",
-          "LatencyWorst": "546",
-          "PipelineII": "546",
+          "LatencyBest": "834",
+          "LatencyAvg": "834",
+          "LatencyWorst": "834",
+          "PipelineII": "834",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -799,23 +762,23 @@
           {
             "Name": "APPLY_ROTARY_POS_EMB_LOOP_4",
             "TripCount": "4",
-            "Latency": "392",
+            "Latency": "680",
             "PipelineII": "",
-            "PipelineDepth": "98",
+            "PipelineDepth": "170",
             "Loops": [{
                 "Name": "APPLY_ROTARY_POS_EMB_LOOP_6",
                 "TripCount": "24",
-                "Latency": "96",
+                "Latency": "168",
                 "PipelineII": "",
-                "PipelineDepth": "4"
+                "PipelineDepth": "7"
               }]
           }
         ],
         "Area": {
           "BRAM_18K": "6",
           "DSP48E": "8",
-          "FF": "660",
-          "LUT": "704",
+          "FF": "745",
+          "LUT": "743",
           "URAM": "0"
         }
       },
@@ -941,8 +904,8 @@
               }]
           }],
         "Area": {
-          "FF": "63",
-          "LUT": "235",
+          "FF": "56",
+          "LUT": "221",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
@@ -950,10 +913,10 @@
       },
       "GEMM_3D_float_1": {
         "Latency": {
-          "LatencyBest": "2937",
-          "LatencyAvg": "2937",
-          "LatencyWorst": "2937",
-          "PipelineII": "2937",
+          "LatencyBest": "1065",
+          "LatencyAvg": "1065",
+          "LatencyWorst": "1065",
+          "PipelineII": "1065",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -965,28 +928,28 @@
         "Loops": [{
             "Name": "GEMM_3D_FLOAT_LOOP_1",
             "TripCount": "4",
-            "Latency": "2936",
+            "Latency": "1064",
             "PipelineII": "",
-            "PipelineDepth": "734",
+            "PipelineDepth": "266",
             "Loops": [{
                 "Name": "GEMM_3D_FLOAT_LOOP_3",
                 "TripCount": "6",
-                "Latency": "732",
+                "Latency": "264",
                 "PipelineII": "",
-                "PipelineDepth": "122",
+                "PipelineDepth": "44",
                 "Loops": [{
                     "Name": "GEMM_3D_FLOAT_LOOP_4",
-                    "TripCount": "24",
-                    "Latency": "120",
+                    "TripCount": "6",
+                    "Latency": "42",
                     "PipelineII": "",
-                    "PipelineDepth": "5"
+                    "PipelineDepth": "7"
                   }]
               }]
           }],
         "Area": {
-          "DSP48E": "5",
-          "FF": "247",
-          "LUT": "321",
+          "DSP48E": "20",
+          "FF": "733",
+          "LUT": "610",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -1067,10 +1030,10 @@
       },
       "GEMM_3D_float": {
         "Latency": {
-          "LatencyBest": "3081",
-          "LatencyAvg": "3081",
-          "LatencyWorst": "3081",
-          "PipelineII": "3081",
+          "LatencyBest": "1737",
+          "LatencyAvg": "1737",
+          "LatencyWorst": "1737",
+          "PipelineII": "1737",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1082,38 +1045,38 @@
         "Loops": [{
             "Name": "GEMM_3D_FLOAT_LOOP_1",
             "TripCount": "4",
-            "Latency": "3080",
+            "Latency": "1736",
             "PipelineII": "",
-            "PipelineDepth": "770",
+            "PipelineDepth": "434",
             "Loops": [{
                 "Name": "GEMM_3D_FLOAT_LOOP_3",
                 "TripCount": "24",
-                "Latency": "768",
+                "Latency": "432",
                 "PipelineII": "",
-                "PipelineDepth": "32",
+                "PipelineDepth": "18",
                 "Loops": [{
                     "Name": "GEMM_3D_FLOAT_LOOP_4",
-                    "TripCount": "6",
-                    "Latency": "30",
+                    "TripCount": "1",
+                    "Latency": "16",
                     "PipelineII": "",
-                    "PipelineDepth": "5"
+                    "PipelineDepth": "11"
                   }]
               }]
           }],
         "Area": {
-          "DSP48E": "5",
-          "FF": "249",
-          "LUT": "322",
+          "DSP48E": "20",
+          "FF": "630",
+          "LUT": "798",
           "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "attention": {
         "Latency": {
-          "LatencyBest": "21970",
-          "LatencyAvg": "21970",
-          "LatencyWorst": "21970",
-          "PipelineII": "21970",
+          "LatencyBest": "19042",
+          "LatencyAvg": "19042",
+          "LatencyWorst": "19042",
+          "PipelineII": "19042",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1153,19 +1116,19 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "77",
-          "DSP48E": "92",
-          "FF": "20207",
-          "LUT": "27467",
+          "BRAM_18K": "80",
+          "DSP48E": "122",
+          "FF": "21405",
+          "LUT": "27401",
           "URAM": "0"
         }
       },
       "dut": {
         "Latency": {
-          "LatencyBest": "22261",
-          "LatencyAvg": "22261",
-          "LatencyWorst": "22261",
-          "PipelineII": "22262",
+          "LatencyBest": "19333",
+          "LatencyAvg": "19333",
+          "LatencyWorst": "19333",
+          "PipelineII": "19334",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1191,10 +1154,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "83",
-          "DSP48E": "92",
-          "FF": "20234",
-          "LUT": "27716",
+          "BRAM_18K": "86",
+          "DSP48E": "122",
+          "FF": "21432",
+          "LUT": "27650",
           "URAM": "0"
         }
       }
@@ -1210,7 +1173,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-12-01 01:00:28 EST",
+    "Time": "2024-12-03 18:13:38 EST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

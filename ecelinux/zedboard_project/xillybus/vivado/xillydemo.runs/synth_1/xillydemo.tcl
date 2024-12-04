@@ -30,160 +30,97 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.cache/wt [current_project]
-set_property parent.project_path /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.xpr [current_project]
+set_property webtalk.parent_dir /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.cache/wt [current_project]
+set_property parent.project_path /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado-ip [current_project]
+set_property ip_repo_paths /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado-ip [current_project]
 update_ip_catalog
-set_property ip_output_repo /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.cache/ip [current_project]
+set_property ip_output_repo /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/vivado/xillydemo.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/xillydemo.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/xillybus_core.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/xillybus.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/system.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/smbus.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/i2s_audio.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/transpose_last_two_d.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/sqrt_fixed_42_26_s.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/softmax_1_8_6_s.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/rms_norm_384_s.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/reshape_2D_to_3D.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/quantize_activation.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/linear_forward_no_mu.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/init_2d_mem.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/GEMM_3D_float.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/GEMM_3D_float_1.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s_f_x_mlbW.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s_f_x_mkbM.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s_exp_xmb6.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_udiv_40ns_40neOg.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_udiv_33s_29nscud.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_sdiv_72ns_61sfYi.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_sdiv_56ns_40spcA.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_output_0.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_72s_40s_7dEe.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_58ns_56s_egO.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_50ns_50nsocq.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_50ns_47nsncg.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_40s_42ns_bkb.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_input_0_V.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/cache_update.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weighZio.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weighYie.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weighXh4.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weighbck.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weighbbk.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weighbak.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weigh9j0.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weigh8jQ.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weigh7jG.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weigh6jw.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weigh5jm.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weigh4jc.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weigh3i2.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weigh2iS.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weigh1iI.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weigh0iy.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_cache_V.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_cachecUB.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighzec.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighyd2.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighxdS.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighwdI.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighvdy.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighudo.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weightde.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighsc4.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighrcU.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighGfk.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighFfa.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighEe0.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighDeQ.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighCeG.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighBew.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weighAem.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_quantizbun.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_proj_czy.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_proj_cwx.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_embedcCy.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbtn.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbsm.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbrm.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbqm.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbpm.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbom.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbnm.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbml.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbll.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbkl.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbjl.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbil.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbhl.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbgk.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbfk.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weighbek.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_ln_weigqcK.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_ln_weigbdk.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighWhU.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighVhK.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighUhA.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighThq.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighShg.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighRg6.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighQgW.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighPgM.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighOgC.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighNgs.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighMgi.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighLf8.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighKfY.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighJfO.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighIfE.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weighHfu.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_proj_cVB.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_cache_V.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_cachecTB.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_attn_wedbE.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_ibs.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_hbi.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_g8j.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_emb.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fifo_8x2048.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/xillybus/src/fifo_32x512.v
-  /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/system.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/xillydemo.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/xillybus_core.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/xillybus.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/system.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/smbus.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/i2s_audio.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/transpose_last_two_d.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/sqrt_fixed_42_26_s.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/softmax_1_2_6_s.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/rms_norm_24_s.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/reshape_2D_to_3D.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/quantize_activation.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/linear_forward_no_mu.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/init_2d_mem.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/GEMM_3D_float.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/GEMM_3D_float_1.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s_f_x_mncg.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s_f_x_mmb6.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/exp_40_24_s_exp_xocq.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_udiv_40ns_40neOg.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_udiv_33s_29nscud.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_sdiv_72ns_61sfYi.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_sdiv_56ns_40srcU.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_72s_40s_7dEe.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_58ns_56s_QgW.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_50ns_50nsqcK.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_50ns_47nspcA.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_mul_40s_42ns_bkb.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/dut_input_0_V.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/cache_update.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/cache_update_k_cakbM.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/cache_update_1_v_lbW.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/cache_update_1.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_weights.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_v_proj_DeQ.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_weights.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_quantizudo.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_q_proj_Bew.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_o_weights.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_ln_weigtde.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_ln_weigsc4.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_weights.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_k_cacheGfk.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/attention_attn_weJfO.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_ibs.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_hbi.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_g8j.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fpga-design/apply_rotary_pos_emb.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fifo_8x2048.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/xillybus/src/fifo_32x512.v
+  /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/system.v
 }
-read_ip -quiet /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo.xci
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo_ooc.xdc]
+read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo.xci
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vga_fifo/vga_fifo_ooc.xdc]
 
-read_ip -quiet /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_8x2048/fifo_8x2048.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_8x2048/fifo_8x2048_ooc.xdc]
+read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_8x2048/fifo_8x2048.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_8x2048/fifo_8x2048_ooc.xdc]
 
-read_ip -quiet /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512.xci
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512_ooc.xdc]
+read_ip -quiet /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512.xci
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/fifo_32x512/fifo_32x512_ooc.xdc]
 
-add_files /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system.bd
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_processing_system7_0_0/vivado_system_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_xbar_0/vivado_system_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_3/vivado_system_auto_pc_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_0/vivado_system_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_1/vivado_system_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_2/vivado_system_auto_pc_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system_ooc.xdc]
+add_files /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system.bd
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_processing_system7_0_0/vivado_system_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_xbar_0/vivado_system_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_3/vivado_system_auto_pc_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_0/vivado_system_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_1/vivado_system_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_2/vivado_system_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/vivado_system/vivado_system_ooc.xdc]
 
-set_property edif_extra_search_paths /home/pis7/ece6775-final/ecelinux/zedboard_project/cores [current_fileset]
+set_property edif_extra_search_paths /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/cores [current_fileset]
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -192,8 +129,8 @@ set_property edif_extra_search_paths /home/pis7/ece6775-final/ecelinux/zedboard_
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc
-set_property used_in_implementation false [get_files /home/pis7/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc]
+read_xdc /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc
+set_property used_in_implementation false [get_files /home/pis7/ece6775/ece6775-final/ecelinux/zedboard_project/vivado-essentials/xillydemo.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

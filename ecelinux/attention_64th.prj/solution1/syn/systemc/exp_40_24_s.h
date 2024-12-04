@@ -43,8 +43,8 @@ struct exp_40_24_s : public sc_module {
     exp_40_24_s_f_x_mmb6* f_x_msb_3_table_V_U;
     exp_40_24_s_f_x_mncg* f_x_msb_2_table_V_U;
     exp_40_24_s_exp_xocq* exp_x_msb_1_table_V_U;
-    dut_mul_50ns_47nspcA<1,2,50,47,97>* dut_mul_50ns_47nspcA_U52;
-    dut_mul_50ns_50nsqcK<1,2,50,50,100>* dut_mul_50ns_50nsqcK_U53;
+    dut_mul_50ns_47nspcA<1,2,50,47,97>* dut_mul_50ns_47nspcA_U48;
+    dut_mul_50ns_50nsqcK<1,2,50,50,100>* dut_mul_50ns_50nsqcK_U49;
     sc_signal< sc_lv<1> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_pp0_stage0;
     sc_signal< sc_logic > ap_enable_reg_pp0_iter0;
@@ -141,7 +141,7 @@ struct exp_40_24_s : public sc_module {
     sc_signal< sc_lv<1> > p_Result_7_fu_313_p3;
     sc_signal< sc_lv<1> > p_Result_8_fu_327_p3;
     sc_signal< sc_lv<1> > p_Result_9_fu_341_p3;
-    sc_signal< sc_lv<1> > p_Result_s_98_fu_355_p3;
+    sc_signal< sc_lv<1> > p_Result_s_95_fu_355_p3;
     sc_signal< sc_lv<1> > p_Result_10_fu_369_p3;
     sc_signal< sc_lv<1> > p_Result_11_fu_383_p3;
     sc_signal< sc_lv<1> > p_Result_12_fu_397_p3;
@@ -355,7 +355,7 @@ struct exp_40_24_s : public sc_module {
     void thread_p_Result_7_fu_313_p3();
     void thread_p_Result_8_fu_327_p3();
     void thread_p_Result_9_fu_341_p3();
-    void thread_p_Result_s_98_fu_355_p3();
+    void thread_p_Result_s_95_fu_355_p3();
     void thread_p_Result_s_fu_215_p3();
     void thread_ret_V_4_fu_734_p2();
     void thread_ret_V_5_fu_743_p2();
