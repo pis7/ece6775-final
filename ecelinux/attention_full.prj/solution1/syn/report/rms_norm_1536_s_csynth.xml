@@ -49,7 +49,7 @@
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>23</DSP48E>
 <FF>4845</FF>
-<LUT>8181</LUT>
+<LUT>8769</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

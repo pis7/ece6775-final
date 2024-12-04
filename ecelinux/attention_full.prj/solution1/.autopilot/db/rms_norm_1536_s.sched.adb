@@ -75,16 +75,16 @@
 					<Obj>
 						<type>0</type>
 						<id>3</id>
-						<name>_ln87</name>
+						<name>_ln46</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -93,7 +93,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>87</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -197,16 +197,16 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>icmp_ln87</name>
+						<name>icmp_ln46</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -215,7 +215,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>87</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -248,14 +248,14 @@
 						<id>9</id>
 						<name>i</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -264,7 +264,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>87</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -295,16 +295,16 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
-						<name>_ln87</name>
+						<name>_ln46</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -313,7 +313,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>87</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -345,16 +345,16 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>zext_ln88</name>
+						<name>zext_ln47</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -363,7 +363,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>88</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -395,14 +395,14 @@
 						<id>14</id>
 						<name>input_0_V_addr</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -411,7 +411,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>88</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -445,14 +445,14 @@
 						<id>15</id>
 						<name>input_0_V_load</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -461,7 +461,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>88</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -493,14 +493,14 @@
 						<id>16</id>
 						<name>sext_ln1118_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -509,7 +509,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>88</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -541,14 +541,14 @@
 						<id>17</id>
 						<name>lhs_V</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -557,7 +557,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>88</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -591,14 +591,14 @@
 						<id>18</id>
 						<name>mul_ln1192</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -607,7 +607,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>88</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -640,14 +640,14 @@
 						<id>19</id>
 						<name>ret_V</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -656,7 +656,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>88</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -689,14 +689,14 @@
 						<id>20</id>
 						<name>variance_V</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>88</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -705,7 +705,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>88</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -738,16 +738,16 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>_ln87</name>
+						<name>_ln46</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>87</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -756,7 +756,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>87</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -788,14 +788,14 @@
 						<id>23</id>
 						<name>sext_ln1148</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -804,7 +804,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -836,14 +836,14 @@
 						<id>24</id>
 						<name>mul_ln1148</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -852,7 +852,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -885,14 +885,14 @@
 						<id>25</id>
 						<name>sub_ln1148</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -901,7 +901,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -934,14 +934,14 @@
 						<id>26</id>
 						<name>tmp</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -950,7 +950,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -984,14 +984,14 @@
 						<id>27</id>
 						<name>tmp_71</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1000,7 +1000,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -1035,14 +1035,14 @@
 						<id>28</id>
 						<name>tmp_72</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1051,7 +1051,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -1086,14 +1086,14 @@
 						<id>29</id>
 						<name>select_ln1148</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1102,7 +1102,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -1136,14 +1136,14 @@
 						<id>30</id>
 						<name>sub_ln1227</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>1227</lineNumber>
 						<contextFuncName>sqrt&amp;lt;42, 26&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1152,7 +1152,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 									<item>
 										<first>
@@ -1192,14 +1192,14 @@
 						<id>31</id>
 						<name>select_ln1148_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1208,7 +1208,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -1242,14 +1242,14 @@
 						<id>32</id>
 						<name>agg_result_V_i</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>1227</lineNumber>
 						<contextFuncName>sqrt&amp;lt;42, 26&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -1258,7 +1258,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 									<item>
 										<first>
@@ -1298,14 +1298,14 @@
 						<id>33</id>
 						<name>zext_ln703</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1314,7 +1314,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -1346,14 +1346,14 @@
 						<id>34</id>
 						<name>udiv_ln703</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>91</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1362,7 +1362,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>91</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -1395,14 +1395,14 @@
 						<id>35</id>
 						<name>zext_ln1118</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1411,7 +1411,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1441,16 +1441,16 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>_ln92</name>
+						<name>_ln51</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>51</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1459,7 +1459,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>92</second>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -1526,16 +1526,16 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>icmp_ln92</name>
+						<name>icmp_ln51</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>51</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1544,7 +1544,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>92</second>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -1577,14 +1577,14 @@
 						<id>41</id>
 						<name>i_1</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>51</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1593,7 +1593,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>92</second>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -1624,16 +1624,16 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>_ln92</name>
+						<name>_ln51</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>51</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1642,7 +1642,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>92</second>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -1674,16 +1674,16 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>zext_ln93</name>
+						<name>zext_ln52</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1692,7 +1692,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1724,14 +1724,14 @@
 						<id>46</id>
 						<name>weight_V_addr</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1740,7 +1740,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1774,14 +1774,14 @@
 						<id>47</id>
 						<name>weight_V_load</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1790,7 +1790,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1822,14 +1822,14 @@
 						<id>48</id>
 						<name>sext_ln1118</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1838,7 +1838,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1870,14 +1870,14 @@
 						<id>49</id>
 						<name>mul_ln1118</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1886,7 +1886,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1919,14 +1919,14 @@
 						<id>50</id>
 						<name>input_0_V_addr_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1935,7 +1935,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -1969,14 +1969,14 @@
 						<id>51</id>
 						<name>input_0_V_load_4</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1985,7 +1985,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2017,14 +2017,14 @@
 						<id>52</id>
 						<name>sext_ln1116</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2033,7 +2033,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2065,14 +2065,14 @@
 						<id>53</id>
 						<name>r_V</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2081,7 +2081,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2114,14 +2114,14 @@
 						<id>54</id>
 						<name>trunc_ln</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2130,7 +2130,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2163,16 +2163,16 @@
 					<Obj>
 						<type>0</type>
 						<id>55</id>
-						<name>input_0_V_addr_4_write_ln93</name>
+						<name>input_0_V_addr_4_write_ln52</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>93</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2181,7 +2181,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>93</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2213,16 +2213,16 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>_ln92</name>
+						<name>_ln51</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>51</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2231,7 +2231,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>92</second>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -2261,16 +2261,16 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>_ln94</name>
+						<name>_ln53</name>
 						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>53</lineNumber>
 						<contextFuncName>rms_norm&amp;lt;1536&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/pis7/ece6775-final/ecelinux</first>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2279,7 +2279,7 @@
 											<first>./layer.h</first>
 											<second>rms_norm&amp;lt;1536&amp;gt;</second>
 										</first>
-										<second>94</second>
+										<second>53</second>
 									</item>
 								</second>
 							</item>

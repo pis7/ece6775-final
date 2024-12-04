@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sqrt_fixed_42_26_s'
 ================================================================
-* Date:           Fri Nov 29 11:37:50 2024
+* Date:           Tue Dec  3 19:15:22 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_full.prj
@@ -49,18 +49,18 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
 +-----------------+---------+-------+--------+-------+-----+
 |DSP              |        -|      -|       -|      -|    -|
-|Expression       |        -|      -|       0|   6129|    -|
+|Expression       |        -|      -|       0|   6717|    -|
 |FIFO             |        -|      -|       -|      -|    -|
 |Instance         |        -|      -|       -|      -|    -|
 |Memory           |        -|      -|       -|      -|    -|
 |Multiplexer      |        -|      -|       -|      -|    -|
 |Register         |        0|      -|    3175|    736|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |        0|      0|    3175|   6865|    0|
+|Total            |        0|      0|    3175|   7453|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
-|Utilization (%)  |        0|      0|       2|     12|    0|
+|Utilization (%)  |        0|      0|       2|     14|    0|
 +-----------------+---------+-------+--------+-------+-----+
 
 + Detail: 
@@ -80,20 +80,20 @@
     +----------------------------+----------+-------+---+----+------------+------------+
     |        Variable Name       | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------+----------+-------+---+----+------------+------------+
-    |add_ln703_10_fu_2786_p2     |     +    |      0|  0|  15|          17|          17|
+    |add_ln703_10_fu_2786_p2     |     +    |      0|  0|  57|          17|          17|
     |add_ln703_11_fu_2791_p2     |     +    |      0|  0|  36|          29|           2|
-    |add_ln703_12_fu_3002_p2     |     +    |      0|  0|  15|          17|          17|
+    |add_ln703_12_fu_3002_p2     |     +    |      0|  0|  57|          17|          17|
     |add_ln703_13_fu_3008_p2     |     +    |      0|  0|  36|          29|           2|
-    |add_ln703_14_fu_3215_p2     |     +    |      0|  0|  15|          17|          17|
+    |add_ln703_14_fu_3215_p2     |     +    |      0|  0|  57|          17|          17|
     |add_ln703_15_fu_3220_p2     |     +    |      0|  0|  36|          29|           2|
-    |add_ln703_16_fu_3426_p2     |     +    |      0|  0|  15|          17|          17|
+    |add_ln703_16_fu_3426_p2     |     +    |      0|  0|  57|          17|          17|
     |add_ln703_17_fu_3431_p2     |     +    |      0|  0|  36|          29|           2|
-    |add_ln703_18_fu_3619_p2     |     +    |      0|  0|  15|          17|          17|
+    |add_ln703_18_fu_3619_p2     |     +    |      0|  0|  57|          17|          17|
     |add_ln703_19_fu_3624_p2     |     +    |      0|  0|  36|          29|           2|
     |add_ln703_1_fu_1704_p2      |     +    |      0|  0|  36|          29|           2|
-    |add_ln703_20_fu_3831_p2     |     +    |      0|  0|  15|          17|          17|
+    |add_ln703_20_fu_3831_p2     |     +    |      0|  0|  57|          17|          17|
     |add_ln703_21_fu_3836_p2     |     +    |      0|  0|  36|          29|           2|
-    |add_ln703_22_fu_4009_p2     |     +    |      0|  0|  15|          17|          17|
+    |add_ln703_22_fu_4009_p2     |     +    |      0|  0|  57|          17|          17|
     |add_ln703_23_fu_4015_p2     |     +    |      0|  0|  36|          29|           2|
     |add_ln703_24_fu_1429_p2     |     +    |      0|  0|  24|          17|          17|
     |add_ln703_2_fu_1823_p2      |     +    |      0|  0|  36|          29|           2|
@@ -127,25 +127,25 @@
     |sub_ln703_14_fu_2455_p2     |     -    |      0|  0|  36|          29|          29|
     |sub_ln703_15_fu_2600_p2     |     -    |      0|  0|  36|          29|          29|
     |sub_ln703_16_fu_2744_p2     |     -    |      0|  0|  24|          17|          17|
-    |sub_ln703_17_fu_2780_p2     |     -    |      0|  0|  15|          17|          17|
+    |sub_ln703_17_fu_2780_p2     |     -    |      0|  0|  57|          17|          17|
     |sub_ln703_18_fu_2803_p2     |     -    |      0|  0|  36|          29|          29|
     |sub_ln703_19_fu_2959_p2     |     -    |      0|  0|  24|          17|          17|
     |sub_ln703_1_fu_1699_p2      |     -    |      0|  0|  24|          17|          17|
-    |sub_ln703_20_fu_2996_p2     |     -    |      0|  0|  15|          17|          17|
+    |sub_ln703_20_fu_2996_p2     |     -    |      0|  0|  57|          17|          17|
     |sub_ln703_21_fu_3020_p2     |     -    |      0|  0|  36|          29|          29|
     |sub_ln703_22_fu_3174_p2     |     -    |      0|  0|  24|          17|          17|
-    |sub_ln703_23_fu_3209_p2     |     -    |      0|  0|  15|          17|          17|
+    |sub_ln703_23_fu_3209_p2     |     -    |      0|  0|  57|          17|          17|
     |sub_ln703_24_fu_3232_p2     |     -    |      0|  0|  36|          29|          29|
     |sub_ln703_25_fu_3385_p2     |     -    |      0|  0|  24|          17|          17|
-    |sub_ln703_26_fu_3420_p2     |     -    |      0|  0|  15|          17|          17|
+    |sub_ln703_26_fu_3420_p2     |     -    |      0|  0|  57|          17|          17|
     |sub_ln703_27_fu_3443_p2     |     -    |      0|  0|  36|          29|          29|
     |sub_ln703_28_fu_3589_p2     |     -    |      0|  0|  24|          17|          17|
-    |sub_ln703_29_fu_3614_p2     |     -    |      0|  0|  15|          17|          17|
+    |sub_ln703_29_fu_3614_p2     |     -    |      0|  0|  57|          17|          17|
     |sub_ln703_2_fu_1716_p2      |     -    |      0|  0|  36|          29|          29|
     |sub_ln703_30_fu_3776_p2     |     -    |      0|  0|  24|          17|          17|
-    |sub_ln703_31_fu_3827_p2     |     -    |      0|  0|  15|          17|          17|
+    |sub_ln703_31_fu_3827_p2     |     -    |      0|  0|  57|          17|          17|
     |sub_ln703_32_fu_3965_p2     |     -    |      0|  0|  24|          17|          17|
-    |sub_ln703_33_fu_4003_p2     |     -    |      0|  0|  15|          17|          17|
+    |sub_ln703_33_fu_4003_p2     |     -    |      0|  0|  57|          17|          17|
     |sub_ln703_3_fu_1835_p2      |     -    |      0|  0|  24|          17|          17|
     |sub_ln703_4_fu_1844_p2      |     -    |      0|  0|  36|          29|          29|
     |sub_ln703_5_fu_1942_p2      |     -    |      0|  0|  24|          17|          17|
@@ -459,7 +459,7 @@
     |xor_ln331_fu_2569_p2        |    xor   |      0|  0|   2|           1|           2|
     |xor_ln703_fu_2575_p2        |    xor   |      0|  0|  17|          17|           2|
     +----------------------------+----------+-------+---+----+------------+------------+
-    |Total                       |          |      0|  0|6129|        3865|        5258|
+    |Total                       |          |      0|  0|6717|        3865|        5258|
     +----------------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
@@ -710,9 +710,9 @@ ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%x_l_I_V = zext i26 %sext_ln708 to 
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln731 = trunc i30 %x_V_read to i16" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:236]   --->   Operation 23 'trunc' 'trunc_ln731' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i30.i32(i30 %x_V_read, i32 29)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:281]   --->   Operation 24 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node select_ln488_1)   --->   "%select_ln248 = select i1 %tmp, i3 2, i3 -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:286]   --->   Operation 25 'select' 'select_ln248' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node select_ln488_1)   --->   "%p_Result_s_81 = call i29 @llvm.part.set.i29.i3(i29 %x_l_I_V, i3 %select_ln248, i32 24, i32 26)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:286]   --->   Operation 26 'partset' 'p_Result_s_81' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node select_ln488_1)   --->   "%p_Result_s_83 = call i29 @llvm.part.set.i29.i3(i29 %x_l_I_V, i3 %select_ln248, i32 24, i32 26)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:286]   --->   Operation 26 'partset' 'p_Result_s_83' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 27 [1/1] (0.69ns)   --->   "%select_ln488 = select i1 %tmp, i13 -4096, i13 0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:281]   --->   Operation 27 'select' 'select_ln488' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 28 [1/1] (0.98ns) (out node of the LUT)   --->   "%select_ln488_1 = select i1 %tmp, i29 %p_Result_s_81, i29 %x_l_I_V" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:281]   --->   Operation 28 'select' 'select_ln488_1' <Predicate = true> <Delay = 0.98> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.98ns) (out node of the LUT)   --->   "%select_ln488_1 = select i1 %tmp, i29 %p_Result_s_83, i29 %x_l_I_V" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:281]   --->   Operation 28 'select' 'select_ln488_1' <Predicate = true> <Delay = 0.98> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%p_Result_25_1 = call i2 @_ssdm_op_PartSelect.i2.i13.i32.i32(i13 %select_ln488, i32 11, i32 12)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:272]   --->   Operation 29 'partselect' 'p_Result_25_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_2 = call i3 @_ssdm_op_BitConcatenate.i3.i2.i1(i2 %p_Result_25_1, i1 true)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:276]   --->   Operation 30 'bitconcatenate' 'tmp_2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%p_Result_28_1 = call i4 @_ssdm_op_PartSelect.i4.i29.i32.i32(i29 %select_ln488_1, i32 22, i32 25)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:281]   --->   Operation 31 'partselect' 'p_Result_28_1' <Predicate = true> <Delay = 0.00>
@@ -1071,8 +1071,8 @@ ST_12 : Operation 361 [1/1] (2.43ns)   --->   "%icmp_ln1498_17 = icmp eq i17 %se
 ST_12 : Operation 362 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_18)   --->   "%and_ln331 = and i1 %icmp_ln1498_17, %icmp_ln1496" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 362 'and' 'and_ln331' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_12 : Operation 363 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_18)   --->   "%or_ln331 = or i1 %icmp_ln1495_8, %and_ln331" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 363 'or' 'or_ln331' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_12 : Operation 364 [1/1] (0.99ns)   --->   "%p_neg_9 = select i1 %icmp_ln1496, i17 -1, i17 0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318]   --->   Operation 364 'select' 'p_neg_9' <Predicate = true> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_12 : Operation 365 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_17 = sub i17 %p_neg_9, %trunc_ln708_18" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 365 'sub' 'sub_ln703_17' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_12 : Operation 366 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_10 = add i17 %sub_ln703_17, %select_ln318_26" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 366 'add' 'add_ln703_10' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_12 : Operation 365 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_17 = sub i17 %p_neg_9, %trunc_ln708_18" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 365 'sub' 'sub_ln703_17' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_12 : Operation 366 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_10 = add i17 %sub_ln703_17, %select_ln318_26" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 366 'add' 'add_ln703_10' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_12 : Operation 367 [1/1] (2.46ns)   --->   "%add_ln703_11 = add i29 %select_ln318_27, -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 367 'add' 'add_ln703_11' <Predicate = true> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_12 : Operation 368 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_18)   --->   "%select_ln339_9 = select i1 %or_ln331, i29 %add_ln703_11, i29 %select_ln318_27" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 368 'select' 'select_ln339_9' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_12 : Operation 369 [1/1] (2.46ns) (out node of the LUT)   --->   "%sub_ln703_18 = sub i29 %select_ln339_9, %zext_ln1494_9" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:340]   --->   Operation 369 'sub' 'sub_ln703_18' <Predicate = true> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -1107,8 +1107,8 @@ ST_13 : Operation 395 [1/1] (2.43ns)   --->   "%icmp_ln1498_18 = icmp eq i17 %se
 ST_13 : Operation 396 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_21)   --->   "%and_ln331_1 = and i1 %icmp_ln1498_18, %icmp_ln1496_1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 396 'and' 'and_ln331_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_13 : Operation 397 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_21)   --->   "%or_ln331_1 = or i1 %icmp_ln1495_9, %and_ln331_1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 397 'or' 'or_ln331_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_13 : Operation 398 [1/1] (0.99ns)   --->   "%p_neg_10 = select i1 %icmp_ln1496_1, i17 -1, i17 0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318]   --->   Operation 398 'select' 'p_neg_10' <Predicate = true> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_13 : Operation 399 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_20 = sub i17 %p_neg_10, %trunc_ln708_20" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 399 'sub' 'sub_ln703_20' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_13 : Operation 400 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_12 = add i17 %sub_ln703_20, %select_ln318_30" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 400 'add' 'add_ln703_12' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 399 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_20 = sub i17 %p_neg_10, %trunc_ln708_20" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 399 'sub' 'sub_ln703_20' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 400 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_12 = add i17 %sub_ln703_20, %select_ln318_30" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 400 'add' 'add_ln703_12' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_13 : Operation 401 [1/1] (2.46ns)   --->   "%add_ln703_13 = add i29 %select_ln318_31, -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 401 'add' 'add_ln703_13' <Predicate = true> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_13 : Operation 402 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_21)   --->   "%select_ln339_10 = select i1 %or_ln331_1, i29 %add_ln703_13, i29 %select_ln318_31" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 402 'select' 'select_ln339_10' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_13 : Operation 403 [1/1] (2.46ns) (out node of the LUT)   --->   "%sub_ln703_21 = sub i29 %select_ln339_10, %zext_ln1494_10" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:340]   --->   Operation 403 'sub' 'sub_ln703_21' <Predicate = true> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -1143,8 +1143,8 @@ ST_14 : Operation 429 [1/1] (2.43ns)   --->   "%icmp_ln1498_19 = icmp eq i17 %se
 ST_14 : Operation 430 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_24)   --->   "%and_ln331_2 = and i1 %icmp_ln1498_19, %icmp_ln1496_2" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 430 'and' 'and_ln331_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_14 : Operation 431 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_24)   --->   "%or_ln331_2 = or i1 %icmp_ln1495_10, %and_ln331_2" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 431 'or' 'or_ln331_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_14 : Operation 432 [1/1] (0.99ns)   --->   "%p_neg_11 = select i1 %icmp_ln1496_2, i17 -1, i17 0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318]   --->   Operation 432 'select' 'p_neg_11' <Predicate = true> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_14 : Operation 433 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_23 = sub i17 %p_neg_11, %trunc_ln708_22" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 433 'sub' 'sub_ln703_23' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_14 : Operation 434 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_14 = add i17 %sub_ln703_23, %select_ln318_34" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 434 'add' 'add_ln703_14' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_14 : Operation 433 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_23 = sub i17 %p_neg_11, %trunc_ln708_22" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 433 'sub' 'sub_ln703_23' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_14 : Operation 434 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_14 = add i17 %sub_ln703_23, %select_ln318_34" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 434 'add' 'add_ln703_14' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_14 : Operation 435 [1/1] (2.46ns)   --->   "%add_ln703_15 = add i29 %select_ln318_35, -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 435 'add' 'add_ln703_15' <Predicate = true> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_14 : Operation 436 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_24)   --->   "%select_ln339_11 = select i1 %or_ln331_2, i29 %add_ln703_15, i29 %select_ln318_35" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 436 'select' 'select_ln339_11' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_14 : Operation 437 [1/1] (2.46ns) (out node of the LUT)   --->   "%sub_ln703_24 = sub i29 %select_ln339_11, %zext_ln1494_11" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:340]   --->   Operation 437 'sub' 'sub_ln703_24' <Predicate = true> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -1179,8 +1179,8 @@ ST_15 : Operation 463 [1/1] (2.43ns)   --->   "%icmp_ln1498_20 = icmp eq i17 %se
 ST_15 : Operation 464 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_27)   --->   "%and_ln331_3 = and i1 %icmp_ln1498_20, %icmp_ln1496_3" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 464 'and' 'and_ln331_3' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_15 : Operation 465 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_27)   --->   "%or_ln331_3 = or i1 %icmp_ln1495_11, %and_ln331_3" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 465 'or' 'or_ln331_3' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_15 : Operation 466 [1/1] (0.99ns)   --->   "%p_neg_12 = select i1 %icmp_ln1496_3, i17 -1, i17 0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318]   --->   Operation 466 'select' 'p_neg_12' <Predicate = true> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_15 : Operation 467 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_26 = sub i17 %p_neg_12, %trunc_ln708_24" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 467 'sub' 'sub_ln703_26' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_15 : Operation 468 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_16 = add i17 %sub_ln703_26, %select_ln318_38" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 468 'add' 'add_ln703_16' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_15 : Operation 467 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_26 = sub i17 %p_neg_12, %trunc_ln708_24" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 467 'sub' 'sub_ln703_26' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_15 : Operation 468 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_16 = add i17 %sub_ln703_26, %select_ln318_38" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 468 'add' 'add_ln703_16' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_15 : Operation 469 [1/1] (2.46ns)   --->   "%add_ln703_17 = add i29 %select_ln318_39, -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 469 'add' 'add_ln703_17' <Predicate = true> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_15 : Operation 470 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703_27)   --->   "%select_ln339_12 = select i1 %or_ln331_3, i29 %add_ln703_17, i29 %select_ln318_39" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 470 'select' 'select_ln339_12' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_15 : Operation 471 [1/1] (2.46ns) (out node of the LUT)   --->   "%sub_ln703_27 = sub i29 %select_ln339_12, %zext_ln1494_12" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:340]   --->   Operation 471 'sub' 'sub_ln703_27' <Predicate = true> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
@@ -1212,8 +1212,8 @@ ST_16 : Operation 494 [1/1] (2.43ns)   --->   "%icmp_ln1495_12 = icmp ult i17 %s
 ST_16 : Operation 495 [1/1] (2.43ns)   --->   "%icmp_ln1498_21 = icmp eq i17 %select_ln318_42, %trunc_ln708_25" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 495 'icmp' 'icmp_ln1498_21' <Predicate = true> <Delay = 2.43> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_16 : Operation 496 [1/1] (0.00ns) (grouped into LUT with out node select_ln339_13)   --->   "%and_ln331_4 = and i1 %icmp_ln1498_21, %icmp_ln1496_4" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 496 'and' 'and_ln331_4' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_16 : Operation 497 [1/1] (0.00ns) (grouped into LUT with out node select_ln339_13)   --->   "%or_ln331_4 = or i1 %icmp_ln1495_12, %and_ln331_4" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 497 'or' 'or_ln331_4' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_16 : Operation 498 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_29 = sub i17 %p_neg_13, %trunc_ln708_25" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 498 'sub' 'sub_ln703_29' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_16 : Operation 499 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_18 = add i17 %sub_ln703_29, %select_ln318_42" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 499 'add' 'add_ln703_18' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_16 : Operation 498 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_29 = sub i17 %p_neg_13, %trunc_ln708_25" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 498 'sub' 'sub_ln703_29' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_16 : Operation 499 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_18 = add i17 %sub_ln703_29, %select_ln318_42" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 499 'add' 'add_ln703_18' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_16 : Operation 500 [1/1] (2.46ns)   --->   "%add_ln703_19 = add i29 %select_ln318_43, -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 500 'add' 'add_ln703_19' <Predicate = true> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_16 : Operation 501 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln339_13 = select i1 %or_ln331_4, i29 %add_ln703_19, i29 %select_ln318_43" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 501 'select' 'select_ln339_13' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_16 : Operation 502 [1/1] (0.00ns)   --->   "%tmp_65 = call i17 @_ssdm_op_BitSet.i17.i17.i32.i1(i17 %select_ln318_40, i32 3, i1 true)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:352]   --->   Operation 502 'bitset' 'tmp_65' <Predicate = true> <Delay = 0.00>
@@ -1247,8 +1247,8 @@ ST_17 : Operation 527 [1/1] (2.43ns)   --->   "%icmp_ln1495_13 = icmp ult i17 %s
 ST_17 : Operation 528 [1/1] (2.43ns)   --->   "%icmp_ln1498_22 = icmp eq i17 %select_ln318_46, %trunc_ln708_26" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 528 'icmp' 'icmp_ln1498_22' <Predicate = (or_ln318_34)> <Delay = 2.43> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_17 : Operation 529 [1/1] (0.00ns) (grouped into LUT with out node select_ln339_14)   --->   "%and_ln331_5 = and i1 %icmp_ln1498_22, %icmp_ln1496_5" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 529 'and' 'and_ln331_5' <Predicate = (or_ln318_34)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_17 : Operation 530 [1/1] (0.00ns) (grouped into LUT with out node select_ln339_14)   --->   "%or_ln331_5 = or i1 %icmp_ln1495_13, %and_ln331_5" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 530 'or' 'or_ln331_5' <Predicate = (or_ln318_34)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_17 : Operation 531 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_31 = sub i17 %p_neg_14, %trunc_ln708_26" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 531 'sub' 'sub_ln703_31' <Predicate = (or_ln318_34)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_17 : Operation 532 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_20 = add i17 %sub_ln703_31, %select_ln318_46" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 532 'add' 'add_ln703_20' <Predicate = (or_ln318_34)> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_17 : Operation 531 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_31 = sub i17 %p_neg_14, %trunc_ln708_26" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 531 'sub' 'sub_ln703_31' <Predicate = (or_ln318_34)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_17 : Operation 532 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_20 = add i17 %sub_ln703_31, %select_ln318_46" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 532 'add' 'add_ln703_20' <Predicate = (or_ln318_34)> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_17 : Operation 533 [1/1] (2.46ns)   --->   "%add_ln703_21 = add i29 %select_ln318_47, -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 533 'add' 'add_ln703_21' <Predicate = (or_ln318_34)> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_17 : Operation 534 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln339_14 = select i1 %or_ln331_5, i29 %add_ln703_21, i29 %select_ln318_47" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 534 'select' 'select_ln339_14' <Predicate = (or_ln318_34)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_17 : Operation 535 [1/1] (0.00ns)   --->   "%tmp_66 = call i17 @_ssdm_op_BitSet.i17.i17.i32.i1(i17 %select_ln318_44, i32 2, i1 true)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:352]   --->   Operation 535 'bitset' 'tmp_66' <Predicate = (or_ln318_34)> <Delay = 0.00>
@@ -1274,8 +1274,8 @@ ST_17 : Operation 554 [1/1] (2.43ns)   --->   "%icmp_ln1498_23 = icmp eq i17 %se
 ST_17 : Operation 555 [1/1] (0.00ns) (grouped into LUT with out node select_ln339_15)   --->   "%and_ln331_6 = and i1 %icmp_ln1498_23, %icmp_ln1496_6" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 555 'and' 'and_ln331_6' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_17 : Operation 556 [1/1] (0.00ns) (grouped into LUT with out node select_ln339_15)   --->   "%or_ln331_6 = or i1 %icmp_ln1495_14, %and_ln331_6" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:331]   --->   Operation 556 'or' 'or_ln331_6' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_17 : Operation 557 [1/1] (0.99ns)   --->   "%p_neg_15 = select i1 %icmp_ln1496_6, i17 -1, i17 0" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318]   --->   Operation 557 'select' 'p_neg_15' <Predicate = true> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_17 : Operation 558 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_33 = sub i17 %p_neg_15, %trunc_ln708_27" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 558 'sub' 'sub_ln703_33' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_17 : Operation 559 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_22 = add i17 %sub_ln703_33, %select_ln318_50" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 559 'add' 'add_ln703_22' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_17 : Operation 558 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln703_33 = sub i17 %p_neg_15, %trunc_ln708_27" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 558 'sub' 'sub_ln703_33' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_17 : Operation 559 [1/1] (3.93ns) (root node of TernaryAdder)   --->   "%add_ln703_22 = add i17 %sub_ln703_33, %select_ln318_50" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342]   --->   Operation 559 'add' 'add_ln703_22' <Predicate = true> <Delay = 3.93> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.56> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_17 : Operation 560 [1/1] (2.46ns)   --->   "%add_ln703_23 = add i29 %select_ln318_51, -1" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 560 'add' 'add_ln703_23' <Predicate = true> <Delay = 2.46> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_17 : Operation 561 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln339_15 = select i1 %or_ln331_6, i29 %add_ln703_23, i29 %select_ln318_51" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:339]   --->   Operation 561 'select' 'select_ln339_15' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_17 : Operation 562 [1/1] (0.00ns) (grouped into LUT with out node or_ln318_37)   --->   "%xor_ln318_6 = xor i1 %or_ln318_22, true" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318]   --->   Operation 562 'xor' 'xor_ln318_6' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
@@ -1283,7 +1283,7 @@ ST_17 : Operation 563 [1/1] (0.00ns) (grouped into LUT with out node or_ln318_37
 ST_17 : Operation 564 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln318_37 = or i1 %or_ln318_36, %icmp_ln1494_15" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318]   --->   Operation 564 'or' 'or_ln318_37' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 
 State 18 <SV = 17> <Delay = 7.93>
-ST_18 : Operation 565 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str34) nounwind" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:44]   --->   Operation 565 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 565 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:44]   --->   Operation 565 'specpipeline' <Predicate = true> <Delay = 0.00>
 ST_18 : Operation 566 [1/1] (0.00ns) (grouped into LUT with out node select_ln98)   --->   "%p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i30.i32(i30 %x_V_read, i32 29)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:223]   --->   Operation 566 'bitselect' 'p_Result_s' <Predicate = true> <Delay = 0.00>
 ST_18 : Operation 567 [1/1] (0.00ns)   --->   "%tmp_67 = call i17 @_ssdm_op_BitSet.i17.i17.i32.i1(i17 %select_ln318_48, i32 1, i1 true)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:352]   --->   Operation 567 'bitset' 'tmp_67' <Predicate = (or_ln318_37)> <Delay = 0.00>
 ST_18 : Operation 568 [1/1] (0.78ns)   --->   "%select_ln318_52 = select i1 %or_ln318_37, i17 %tmp_67, i17 %select_ln318_48" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318]   --->   Operation 568 'select' 'select_ln318_52' <Predicate = true> <Delay = 0.78> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
@@ -1344,7 +1344,7 @@ x_l_I_V           (zext          ) [ 0000000000000000000]
 trunc_ln731       (trunc         ) [ 0111110000000000000]
 tmp               (bitselect     ) [ 0000000000000000000]
 select_ln248      (select        ) [ 0000000000000000000]
-p_Result_s_81     (partset       ) [ 0000000000000000000]
+p_Result_s_83     (partset       ) [ 0000000000000000000]
 select_ln488      (select        ) [ 0000000000000000000]
 select_ln488_1    (select        ) [ 0000000000000000000]
 p_Result_25_1     (partselect    ) [ 0000000000000000000]
@@ -3430,7 +3430,7 @@ ret_ln372         (ret           ) [ 0000000000000000000]
 <pin id="335" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str34"/></StgValue>
+<StgValue><ssdm name="p_str15"/></StgValue>
 </bind>
 </comp>
 
@@ -3600,7 +3600,7 @@ ret_ln372         (ret           ) [ 0000000000000000000]
 </bind>
 </comp>
 
-<comp id="398" class="1004" name="p_Result_s_81_fu_398">
+<comp id="398" class="1004" name="p_Result_s_83_fu_398">
 <pin_list>
 <pin id="399" dir="0" index="0" bw="29" slack="0"/>
 <pin id="400" dir="0" index="1" bw="26" slack="0"/>
@@ -3611,7 +3611,7 @@ ret_ln372         (ret           ) [ 0000000000000000000]
 </pin_list>
 <bind>
 <opcode="partset(1003) " fcode="partset"/>
-<opset="p_Result_s_81/1 "/>
+<opset="p_Result_s_83/1 "/>
 </bind>
 </comp>
 
@@ -15388,7 +15388,7 @@ ret_ln372         (ret           ) [ 0000000000000000000]
 		sext_ln708 : 1
 		x_l_I_V : 2
 		select_ln248 : 1
-		p_Result_s_81 : 3
+		p_Result_s_83 : 3
 		select_ln488 : 1
 		select_ln488_1 : 4
 		p_Result_25_1 : 2
@@ -16149,23 +16149,23 @@ ret_ln372         (ret           ) [ 0000000000000000000]
 |          |   sub_ln703_14_fu_2455  |    0    |    36   |
 |          |   sub_ln703_15_fu_2600  |    0    |    36   |
 |          |   sub_ln703_16_fu_2744  |    0    |    24   |
-|          |   sub_ln703_17_fu_2780  |    0    |    15   |
+|          |   sub_ln703_17_fu_2780  |    0    |    57   |
 |          |   sub_ln703_18_fu_2803  |    0    |    36   |
 |          |   sub_ln703_19_fu_2959  |    0    |    24   |
-|          |   sub_ln703_20_fu_2996  |    0    |    15   |
+|          |   sub_ln703_20_fu_2996  |    0    |    57   |
 |          |   sub_ln703_21_fu_3020  |    0    |    36   |
 |          |   sub_ln703_22_fu_3174  |    0    |    24   |
-|          |   sub_ln703_23_fu_3209  |    0    |    15   |
+|          |   sub_ln703_23_fu_3209  |    0    |    57   |
 |          |   sub_ln703_24_fu_3232  |    0    |    36   |
 |          |   sub_ln703_25_fu_3385  |    0    |    24   |
-|          |   sub_ln703_26_fu_3420  |    0    |    15   |
+|          |   sub_ln703_26_fu_3420  |    0    |    57   |
 |          |   sub_ln703_27_fu_3443  |    0    |    36   |
 |          |   sub_ln703_28_fu_3589  |    0    |    24   |
-|          |   sub_ln703_29_fu_3614  |    0    |    15   |
+|          |   sub_ln703_29_fu_3614  |    0    |    57   |
 |          |   sub_ln703_30_fu_3776  |    0    |    24   |
-|          |   sub_ln703_31_fu_3827  |    0    |    15   |
+|          |   sub_ln703_31_fu_3827  |    0    |    57   |
 |          |   sub_ln703_32_fu_3965  |    0    |    24   |
-|          |   sub_ln703_33_fu_4003  |    0    |    15   |
+|          |   sub_ln703_33_fu_4003  |    0    |    57   |
 |----------|-------------------------|---------|---------|
 |          |   add_ln703_24_fu_1429  |    0    |    24   |
 |          |    add_ln703_fu_1435    |    0    |    36   |
@@ -16178,19 +16178,19 @@ ret_ln372         (ret           ) [ 0000000000000000000]
 |          |   add_ln703_7_fu_2441   |    0    |    36   |
 |          |   add_ln703_8_fu_2581   |    0    |    24   |
 |          |   add_ln703_9_fu_2586   |    0    |    36   |
-|          |   add_ln703_10_fu_2786  |    0    |    15   |
+|          |   add_ln703_10_fu_2786  |    0    |    57   |
 |          |   add_ln703_11_fu_2791  |    0    |    36   |
-|    add   |   add_ln703_12_fu_3002  |    0    |    15   |
+|    add   |   add_ln703_12_fu_3002  |    0    |    57   |
 |          |   add_ln703_13_fu_3008  |    0    |    36   |
-|          |   add_ln703_14_fu_3215  |    0    |    15   |
+|          |   add_ln703_14_fu_3215  |    0    |    57   |
 |          |   add_ln703_15_fu_3220  |    0    |    36   |
-|          |   add_ln703_16_fu_3426  |    0    |    15   |
+|          |   add_ln703_16_fu_3426  |    0    |    57   |
 |          |   add_ln703_17_fu_3431  |    0    |    36   |
-|          |   add_ln703_18_fu_3619  |    0    |    15   |
+|          |   add_ln703_18_fu_3619  |    0    |    57   |
 |          |   add_ln703_19_fu_3624  |    0    |    36   |
-|          |   add_ln703_20_fu_3831  |    0    |    15   |
+|          |   add_ln703_20_fu_3831  |    0    |    57   |
 |          |   add_ln703_21_fu_3836  |    0    |    36   |
-|          |   add_ln703_22_fu_4009  |    0    |    15   |
+|          |   add_ln703_22_fu_4009  |    0    |    57   |
 |          |   add_ln703_23_fu_4015  |    0    |    36   |
 |          |    res_FH_l_V_fu_4201   |    0    |    24   |
 |          |     res_FH_V_fu_4207    |    0    |    24   |
@@ -16402,7 +16402,7 @@ ret_ln372         (ret           ) [ 0000000000000000000]
 |          |      tmp_68_fu_4096     |    0    |    0    |
 |          |    p_Result_1_fu_4213   |    0    |    0    |
 |----------|-------------------------|---------|---------|
-|          |   p_Result_s_81_fu_398  |    0    |    0    |
+|          |   p_Result_s_83_fu_398  |    0    |    0    |
 |          |   p_Result_30_1_fu_470  |    0    |    0    |
 |          |   p_Result_30_2_fu_552  |    0    |    0    |
 |          |   p_Result_30_3_fu_634  |    0    |    0    |
@@ -16497,7 +16497,7 @@ ret_ln372         (ret           ) [ 0000000000000000000]
 |          |      tmp_67_fu_4054     |    0    |    0    |
 |          |      tmp_69_fu_4161     |    0    |    0    |
 |----------|-------------------------|---------|---------|
-|   Total  |                         |    0    |   6231  |
+|   Total  |                         |    0    |   6819  |
 |----------|-------------------------|---------|---------|
 
 Memories:
@@ -16655,10 +16655,10 @@ N/A
 +-----------+--------+--------+
 |           |   FF   |   LUT  |
 +-----------+--------+--------+
-|  Function |    0   |  6231  |
+|  Function |    0   |  6819  |
 |   Memory  |    -   |    -   |
 |Multiplexer|    -   |    -   |
 |  Register |  1792  |    -   |
 +-----------+--------+--------+
-|   Total   |  1792  |  6231  |
+|   Total   |  1792  |  6819  |
 +-----------+--------+--------+

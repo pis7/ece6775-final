@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'exp_40_24_s'" level="0">
-<item name = "Date">Fri Nov 29 11:37:58 2024
+<item name = "Date">Tue Dec  3 19:15:51 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_full.prj</item>
@@ -47,7 +47,7 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 300, -</column>
+<column name="Expression">-, -, 0, 384, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, 18, 474, 174, -</column>
 <column name="Memory">5, -, 0, 0, -</column>
@@ -61,8 +61,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="dut_mul_50ns_47nsncg_U39">dut_mul_50ns_47nsncg, 0, 9, 237, 87, 0</column>
-<column name="dut_mul_50ns_50nsocq_U40">dut_mul_50ns_50nsocq, 0, 9, 237, 87, 0</column>
+<column name="dut_mul_50ns_47nsncg_U864">dut_mul_50ns_47nsncg, 0, 9, 237, 87, 0</column>
+<column name="dut_mul_50ns_50nsocq_U865">dut_mul_50ns_50nsocq, 0, 9, 237, 87, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -83,8 +83,8 @@
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="add_ln282_fu_801_p2">+, 0, 0, 47, 39, 40</column>
-<column name="ret_V_4_fu_734_p2">+, 0, 0, 15, 57, 57</column>
-<column name="ret_V_5_fu_743_p2">+, 0, 0, 15, 57, 57</column>
+<column name="ret_V_4_fu_734_p2">+, 0, 0, 57, 57, 57</column>
+<column name="ret_V_5_fu_743_p2">+, 0, 0, 57, 57, 57</column>
 <column name="ret_V_fu_658_p2">+, 0, 0, 15, 9, 9</column>
 <column name="y_l_V_fu_784_p2">+, 0, 0, 57, 50, 50</column>
 <column name="and_ln281_fu_527_p2">and, 0, 0, 2, 1, 1</column>
