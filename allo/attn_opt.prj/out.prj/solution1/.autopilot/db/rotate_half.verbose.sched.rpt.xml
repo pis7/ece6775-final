@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'rotate_half'" level="0">
-<item name = "Date">Sat Nov 30 20:58:45 2024
+<item name = "Date">Thu Dec  5 02:39:24 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">out.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.671 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 7.501 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2337, 2337, 23.370 us, 23.370 us, 2337, 2337, none</column>
+<column name="">1569, 1569, 15.690 us, 15.690 us, 1569, 1569, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_S_h_0_h1">2336, 2336, 146, -, -, 16, no</column>
-<column name=" + l_S_d_0_d1">144, 144, 3, -, -, 48, no</column>
+<column name="- l_S_h_0_h1">1568, 1568, 98, -, -, 16, no</column>
+<column name=" + l_S_d_0_d1">96, 96, 2, -, -, 48, no</column>
 </table>
 </item>
 </section>

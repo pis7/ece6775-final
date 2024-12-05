@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 288 \
-    name v145_0_V \
+    id 59 \
+    name v152_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename v145_0_V \
+    corename v152_0 \
     op interface \
-    ports { v145_0_V_address0 { O 11 vector } v145_0_V_ce0 { O 1 bit } v145_0_V_q0 { I 32 vector } v145_0_V_address1 { O 11 vector } v145_0_V_ce1 { O 1 bit } v145_0_V_q1 { I 32 vector } } \
+    ports { v152_0_address0 { O 11 vector } v152_0_ce0 { O 1 bit } v152_0_q0 { I 32 vector } v152_0_address1 { O 11 vector } v152_0_ce1 { O 1 bit } v152_0_q1 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v145_0_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v152_0'"
 }
 }
 
@@ -30,17 +30,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 289 \
-    name v146_0_V \
+    id 60 \
+    name v153_0 \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename v146_0_V \
+    corename v153_0 \
     op interface \
-    ports { v146_0_V_address0 { O 11 vector } v146_0_V_ce0 { O 1 bit } v146_0_V_we0 { O 1 bit } v146_0_V_d0 { O 32 vector } } \
+    ports { v153_0_address0 { O 11 vector } v153_0_ce0 { O 1 bit } v153_0_we0 { O 1 bit } v153_0_d0 { O 32 vector } v153_0_address1 { O 11 vector } v153_0_ce1 { O 1 bit } v153_0_we1 { O 1 bit } v153_0_d1 { O 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v146_0_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v153_0'"
 }
 }
 

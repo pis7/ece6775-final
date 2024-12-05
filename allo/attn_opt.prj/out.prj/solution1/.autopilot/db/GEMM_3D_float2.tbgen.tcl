@@ -14,14 +14,14 @@ set isEnableWaveformDebug 1
 set C_modelName {GEMM_3D_float2}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ v244_0_V int 32 regular {array 96 { 1 3 } 1 1 }  }
-	{ v245_V int 32 regular {array 9216 { 1 3 } 1 1 }  }
-	{ v246_0_V int 32 regular {array 1536 { 2 3 } 1 1 }  }
+	{ v251_0 float 32 regular {array 96 { 1 3 } 1 1 }  }
+	{ v252 float 32 regular {array 9216 { 1 3 } 1 1 }  }
+	{ v253_0 float 32 regular {array 1536 { 2 3 } 1 1 }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "v244_0_V", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "v245_V", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "v246_0_V", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} ]}
+	{ "Name" : "v251_0", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "v252", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "v253_0", "interface" : "memory", "bitwidth" : 32, "direction" : "READWRITE"} ]}
 # RTL Port declarations: 
 set portNum 17
 set portList { 
@@ -31,17 +31,17 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ v244_0_V_address0 sc_out sc_lv 7 signal 0 } 
-	{ v244_0_V_ce0 sc_out sc_logic 1 signal 0 } 
-	{ v244_0_V_q0 sc_in sc_lv 32 signal 0 } 
-	{ v245_V_address0 sc_out sc_lv 14 signal 1 } 
-	{ v245_V_ce0 sc_out sc_logic 1 signal 1 } 
-	{ v245_V_q0 sc_in sc_lv 32 signal 1 } 
-	{ v246_0_V_address0 sc_out sc_lv 11 signal 2 } 
-	{ v246_0_V_ce0 sc_out sc_logic 1 signal 2 } 
-	{ v246_0_V_we0 sc_out sc_logic 1 signal 2 } 
-	{ v246_0_V_d0 sc_out sc_lv 32 signal 2 } 
-	{ v246_0_V_q0 sc_in sc_lv 32 signal 2 } 
+	{ v251_0_address0 sc_out sc_lv 7 signal 0 } 
+	{ v251_0_ce0 sc_out sc_logic 1 signal 0 } 
+	{ v251_0_q0 sc_in sc_lv 32 signal 0 } 
+	{ v252_address0 sc_out sc_lv 14 signal 1 } 
+	{ v252_ce0 sc_out sc_logic 1 signal 1 } 
+	{ v252_q0 sc_in sc_lv 32 signal 1 } 
+	{ v253_0_address0 sc_out sc_lv 11 signal 2 } 
+	{ v253_0_ce0 sc_out sc_logic 1 signal 2 } 
+	{ v253_0_we0 sc_out sc_logic 1 signal 2 } 
+	{ v253_0_d0 sc_out sc_lv 32 signal 2 } 
+	{ v253_0_q0 sc_in sc_lv 32 signal 2 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -50,26 +50,26 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "v244_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "v244_0_V", "role": "address0" }} , 
- 	{ "name": "v244_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v244_0_V", "role": "ce0" }} , 
- 	{ "name": "v244_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v244_0_V", "role": "q0" }} , 
- 	{ "name": "v245_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "v245_V", "role": "address0" }} , 
- 	{ "name": "v245_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v245_V", "role": "ce0" }} , 
- 	{ "name": "v245_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v245_V", "role": "q0" }} , 
- 	{ "name": "v246_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "v246_0_V", "role": "address0" }} , 
- 	{ "name": "v246_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v246_0_V", "role": "ce0" }} , 
- 	{ "name": "v246_0_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v246_0_V", "role": "we0" }} , 
- 	{ "name": "v246_0_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v246_0_V", "role": "d0" }} , 
- 	{ "name": "v246_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v246_0_V", "role": "q0" }}  ]}
+ 	{ "name": "v251_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "v251_0", "role": "address0" }} , 
+ 	{ "name": "v251_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v251_0", "role": "ce0" }} , 
+ 	{ "name": "v251_0_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v251_0", "role": "q0" }} , 
+ 	{ "name": "v252_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "v252", "role": "address0" }} , 
+ 	{ "name": "v252_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v252", "role": "ce0" }} , 
+ 	{ "name": "v252_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v252", "role": "q0" }} , 
+ 	{ "name": "v253_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "v253_0", "role": "address0" }} , 
+ 	{ "name": "v253_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v253_0", "role": "ce0" }} , 
+ 	{ "name": "v253_0_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "v253_0", "role": "we0" }} , 
+ 	{ "name": "v253_0_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v253_0", "role": "d0" }} , 
+ 	{ "name": "v253_0_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "v253_0", "role": "q0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2"],
 		"CDFG" : "GEMM_3D_float2",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "49185", "EstimateLatencyMax" : "49185",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "122913", "EstimateLatencyMax" : "122913",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -77,29 +77,31 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
-			{"Name" : "v244_0_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "v245_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "v246_0_V", "Type" : "Memory", "Direction" : "IO"}]}]}
+			{"Name" : "v251_0", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "v252", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "v253_0", "Type" : "Memory", "Direction" : "IO"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.attention_fadd_32pcA_U90", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.attention_fmul_32qcK_U91", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	GEMM_3D_float2 {
-		v244_0_V {Type I LastRead 4 FirstWrite -1}
-		v245_V {Type I LastRead 4 FirstWrite -1}
-		v246_0_V {Type IO LastRead 5 FirstWrite 7}}}
+		v251_0 {Type I LastRead 4 FirstWrite -1}
+		v252 {Type I LastRead 4 FirstWrite -1}
+		v253_0 {Type IO LastRead 8 FirstWrite 15}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "49185", "Max" : "49185"}
-	, {"Name" : "Interval", "Min" : "49185", "Max" : "49185"}
+	{"Name" : "Latency", "Min" : "122913", "Max" : "122913"}
+	, {"Name" : "Interval", "Min" : "122913", "Max" : "122913"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	v244_0_V { ap_memory {  { v244_0_V_address0 mem_address 1 7 }  { v244_0_V_ce0 mem_ce 1 1 }  { v244_0_V_q0 mem_dout 0 32 } } }
-	v245_V { ap_memory {  { v245_V_address0 mem_address 1 14 }  { v245_V_ce0 mem_ce 1 1 }  { v245_V_q0 mem_dout 0 32 } } }
-	v246_0_V { ap_memory {  { v246_0_V_address0 mem_address 1 11 }  { v246_0_V_ce0 mem_ce 1 1 }  { v246_0_V_we0 mem_we 1 1 }  { v246_0_V_d0 mem_din 1 32 }  { v246_0_V_q0 mem_dout 0 32 } } }
+	v251_0 { ap_memory {  { v251_0_address0 mem_address 1 7 }  { v251_0_ce0 mem_ce 1 1 }  { v251_0_q0 mem_dout 0 32 } } }
+	v252 { ap_memory {  { v252_address0 mem_address 1 14 }  { v252_ce0 mem_ce 1 1 }  { v252_q0 mem_dout 0 32 } } }
+	v253_0 { ap_memory {  { v253_0_address0 mem_address 1 11 }  { v253_0_ce0 mem_ce 1 1 }  { v253_0_we0 mem_we 1 1 }  { v253_0_d0 mem_din 1 32 }  { v253_0_q0 mem_dout 0 32 } } }
 }

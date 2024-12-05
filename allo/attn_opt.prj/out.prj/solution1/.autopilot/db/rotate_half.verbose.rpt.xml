@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'rotate_half'" level="0">
-<item name = "Date">Sat Nov 30 20:59:12 2024
+<item name = "Date">Thu Dec  5 02:39:34 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">out.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.671 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 7.501 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2337, 2337, 23.370 us, 23.370 us, 2337, 2337, none</column>
+<column name="">1569, 1569, 15.690 us, 15.690 us, 1569, 1569, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_S_h_0_h1">2336, 2336, 146, -, -, 16, no</column>
-<column name=" + l_S_d_0_d1">144, 144, 3, -, -, 48, no</column>
+<column name="- l_S_h_0_h1">1568, 1568, 98, -, -, 16, no</column>
+<column name=" + l_S_d_0_d1">96, 96, 2, -, -, 48, no</column>
 </table>
 </item>
 </section>
@@ -49,12 +49,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 154, -</column>
+<column name="Expression">-, -, 0, 136, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 81, -</column>
-<column name="Register">-, -, 194, -, -</column>
+<column name="Multiplexer">-, -, -, 45, -</column>
+<column name="Register">-, -, 161, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
@@ -79,37 +79,34 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln240_fu_173_p2">+, 0, 0, 15, 6, 1</column>
-<column name="add_ln241_1_fu_189_p2">+, 0, 0, 12, 12, 12</column>
-<column name="add_ln241_fu_179_p2">+, 0, 0, 15, 7, 6</column>
-<column name="add_ln244_fu_203_p2">+, 0, 0, 12, 12, 12</column>
-<column name="h1_fu_131_p2">+, 0, 0, 15, 5, 1</column>
-<column name="sub_ln1118_fu_220_p2">-, 0, 0, 51, 1, 44</column>
-<column name="sub_ln241_fu_157_p2">-, 0, 0, 12, 12, 12</column>
-<column name="icmp_ln238_fu_125_p2">icmp, 0, 0, 11, 5, 6</column>
-<column name="icmp_ln240_fu_167_p2">icmp, 0, 0, 11, 6, 6</column>
+<column name="add_ln248_fu_167_p2">+, 0, 0, 15, 6, 1</column>
+<column name="add_ln249_1_fu_183_p2">+, 0, 0, 12, 12, 12</column>
+<column name="add_ln249_fu_173_p2">+, 0, 0, 15, 7, 6</column>
+<column name="add_ln252_fu_197_p2">+, 0, 0, 12, 12, 12</column>
+<column name="h1_fu_125_p2">+, 0, 0, 15, 5, 1</column>
+<column name="sub_ln249_fu_151_p2">-, 0, 0, 12, 12, 12</column>
+<column name="icmp_ln246_fu_119_p2">icmp, 0, 0, 11, 5, 6</column>
+<column name="icmp_ln248_fu_161_p2">icmp, 0, 0, 11, 6, 6</column>
+<column name="xor_ln250_fu_211_p2">xor, 0, 0, 33, 32, 33</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">33, 6, 1, 6</column>
-<column name="d1_0_0_reg_114">9, 2, 6, 12</column>
-<column name="h1_0_reg_103">9, 2, 5, 10</column>
-<column name="v146_0_V_address0">15, 3, 11, 33</column>
-<column name="v146_0_V_d0">15, 3, 32, 96</column>
+<column name="ap_NS_fsm">27, 5, 1, 5</column>
+<column name="d1_0_0_reg_108">9, 2, 6, 12</column>
+<column name="h1_0_reg_97">9, 2, 5, 10</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln240_reg_254">6, 0, 6, 0</column>
-<column name="ap_CS_fsm">5, 0, 5, 0</column>
-<column name="d1_0_0_reg_114">6, 0, 6, 0</column>
-<column name="h1_0_reg_103">5, 0, 5, 0</column>
-<column name="h1_reg_240">5, 0, 5, 0</column>
-<column name="sext_ln241_reg_259">64, 0, 64, 0</column>
-<column name="sext_ln244_reg_269">64, 0, 64, 0</column>
-<column name="sub_ln241_reg_245">7, 0, 12, 5</column>
-<column name="v145_0_V_load_reg_279">32, 0, 32, 0</column>
+<column name="add_ln248_reg_239">6, 0, 6, 0</column>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="d1_0_0_reg_108">6, 0, 6, 0</column>
+<column name="h1_0_reg_97">5, 0, 5, 0</column>
+<column name="h1_reg_225">5, 0, 5, 0</column>
+<column name="sext_ln249_reg_244">64, 0, 64, 0</column>
+<column name="sext_ln252_reg_254">64, 0, 64, 0</column>
+<column name="sub_ln249_reg_230">7, 0, 12, 5</column>
 </table>
 </item>
 </section>
@@ -125,16 +122,20 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, rotate_half, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, rotate_half, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, rotate_half, return value</column>
-<column name="v145_0_V_address0">out, 11, ap_memory, v145_0_V, array</column>
-<column name="v145_0_V_ce0">out, 1, ap_memory, v145_0_V, array</column>
-<column name="v145_0_V_q0">in, 32, ap_memory, v145_0_V, array</column>
-<column name="v145_0_V_address1">out, 11, ap_memory, v145_0_V, array</column>
-<column name="v145_0_V_ce1">out, 1, ap_memory, v145_0_V, array</column>
-<column name="v145_0_V_q1">in, 32, ap_memory, v145_0_V, array</column>
-<column name="v146_0_V_address0">out, 11, ap_memory, v146_0_V, array</column>
-<column name="v146_0_V_ce0">out, 1, ap_memory, v146_0_V, array</column>
-<column name="v146_0_V_we0">out, 1, ap_memory, v146_0_V, array</column>
-<column name="v146_0_V_d0">out, 32, ap_memory, v146_0_V, array</column>
+<column name="v152_0_address0">out, 11, ap_memory, v152_0, array</column>
+<column name="v152_0_ce0">out, 1, ap_memory, v152_0, array</column>
+<column name="v152_0_q0">in, 32, ap_memory, v152_0, array</column>
+<column name="v152_0_address1">out, 11, ap_memory, v152_0, array</column>
+<column name="v152_0_ce1">out, 1, ap_memory, v152_0, array</column>
+<column name="v152_0_q1">in, 32, ap_memory, v152_0, array</column>
+<column name="v153_0_address0">out, 11, ap_memory, v153_0, array</column>
+<column name="v153_0_ce0">out, 1, ap_memory, v153_0, array</column>
+<column name="v153_0_we0">out, 1, ap_memory, v153_0, array</column>
+<column name="v153_0_d0">out, 32, ap_memory, v153_0, array</column>
+<column name="v153_0_address1">out, 11, ap_memory, v153_0, array</column>
+<column name="v153_0_ce1">out, 1, ap_memory, v153_0, array</column>
+<column name="v153_0_we1">out, 1, ap_memory, v153_0, array</column>
+<column name="v153_0_d1">out, 32, ap_memory, v153_0, array</column>
 </table>
 </item>
 </section>
