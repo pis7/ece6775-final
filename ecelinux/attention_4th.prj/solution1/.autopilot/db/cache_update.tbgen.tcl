@@ -14,14 +14,14 @@ set isEnableWaveformDebug 1
 set C_modelName {cache_update}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ cache_in_V int 40 regular {array 1920 { 1 3 } 1 1 }  }
-	{ cache_out_V int 40 regular {array 2304 { 0 3 } 0 1 }  }
-	{ update_0_V int 40 regular {array 384 { 1 3 } 1 1 }  }
+	{ cache_in_V int 38 regular {array 1920 { 1 3 } 1 1 }  }
+	{ cache_out_V int 38 regular {array 2304 { 0 3 } 0 1 }  }
+	{ update_0_V int 38 regular {array 384 { 1 3 } 1 1 }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "cache_in_V", "interface" : "memory", "bitwidth" : 40, "direction" : "READONLY"} , 
- 	{ "Name" : "cache_out_V", "interface" : "memory", "bitwidth" : 40, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "update_0_V", "interface" : "memory", "bitwidth" : 40, "direction" : "READONLY"} ]}
+	{ "Name" : "cache_in_V", "interface" : "memory", "bitwidth" : 38, "direction" : "READONLY"} , 
+ 	{ "Name" : "cache_out_V", "interface" : "memory", "bitwidth" : 38, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "update_0_V", "interface" : "memory", "bitwidth" : 38, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
 set portNum 16
 set portList { 
@@ -33,14 +33,14 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ cache_in_V_address0 sc_out sc_lv 11 signal 0 } 
 	{ cache_in_V_ce0 sc_out sc_logic 1 signal 0 } 
-	{ cache_in_V_q0 sc_in sc_lv 40 signal 0 } 
+	{ cache_in_V_q0 sc_in sc_lv 38 signal 0 } 
 	{ cache_out_V_address0 sc_out sc_lv 12 signal 1 } 
 	{ cache_out_V_ce0 sc_out sc_logic 1 signal 1 } 
 	{ cache_out_V_we0 sc_out sc_logic 1 signal 1 } 
-	{ cache_out_V_d0 sc_out sc_lv 40 signal 1 } 
+	{ cache_out_V_d0 sc_out sc_lv 38 signal 1 } 
 	{ update_0_V_address0 sc_out sc_lv 9 signal 2 } 
 	{ update_0_V_ce0 sc_out sc_logic 1 signal 2 } 
-	{ update_0_V_q0 sc_in sc_lv 40 signal 2 } 
+	{ update_0_V_q0 sc_in sc_lv 38 signal 2 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -51,14 +51,14 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "cache_in_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "cache_in_V", "role": "address0" }} , 
  	{ "name": "cache_in_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "cache_in_V", "role": "ce0" }} , 
- 	{ "name": "cache_in_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "cache_in_V", "role": "q0" }} , 
+ 	{ "name": "cache_in_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "cache_in_V", "role": "q0" }} , 
  	{ "name": "cache_out_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "cache_out_V", "role": "address0" }} , 
  	{ "name": "cache_out_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "cache_out_V", "role": "ce0" }} , 
  	{ "name": "cache_out_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "cache_out_V", "role": "we0" }} , 
- 	{ "name": "cache_out_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "cache_out_V", "role": "d0" }} , 
+ 	{ "name": "cache_out_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "cache_out_V", "role": "d0" }} , 
  	{ "name": "update_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "update_0_V", "role": "address0" }} , 
  	{ "name": "update_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "update_0_V", "role": "ce0" }} , 
- 	{ "name": "update_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "update_0_V", "role": "q0" }}  ]}
+ 	{ "name": "update_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "update_0_V", "role": "q0" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -97,7 +97,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	cache_in_V { ap_memory {  { cache_in_V_address0 mem_address 1 11 }  { cache_in_V_ce0 mem_ce 1 1 }  { cache_in_V_q0 mem_dout 0 40 } } }
-	cache_out_V { ap_memory {  { cache_out_V_address0 mem_address 1 12 }  { cache_out_V_ce0 mem_ce 1 1 }  { cache_out_V_we0 mem_we 1 1 }  { cache_out_V_d0 mem_din 1 40 } } }
-	update_0_V { ap_memory {  { update_0_V_address0 mem_address 1 9 }  { update_0_V_ce0 mem_ce 1 1 }  { update_0_V_q0 mem_dout 0 40 } } }
+	cache_in_V { ap_memory {  { cache_in_V_address0 mem_address 1 11 }  { cache_in_V_ce0 mem_ce 1 1 }  { cache_in_V_q0 mem_dout 0 38 } } }
+	cache_out_V { ap_memory {  { cache_out_V_address0 mem_address 1 12 }  { cache_out_V_ce0 mem_ce 1 1 }  { cache_out_V_we0 mem_we 1 1 }  { cache_out_V_d0 mem_din 1 38 } } }
+	update_0_V { ap_memory {  { update_0_V_address0 mem_address 1 9 }  { update_0_V_ce0 mem_ce 1 1 }  { update_0_V_q0 mem_dout 0 38 } } }
 }

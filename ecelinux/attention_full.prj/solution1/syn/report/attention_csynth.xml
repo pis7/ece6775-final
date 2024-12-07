@@ -21,24 +21,24 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>316534</Best-caseLatency>
-<Average-caseLatency>316534</Average-caseLatency>
-<Worst-caseLatency>316534</Worst-caseLatency>
-<Best-caseRealTimeLatency>3.165 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>3.165 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>3.165 ms</Worst-caseRealTimeLatency>
-<Interval-min>316534</Interval-min>
-<Interval-max>316534</Interval-max>
+<Best-caseLatency>317458</Best-caseLatency>
+<Average-caseLatency>317458</Average-caseLatency>
+<Worst-caseLatency>317458</Worst-caseLatency>
+<Best-caseRealTimeLatency>3.175 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>3.175 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>3.175 ms</Worst-caseRealTimeLatency>
+<Interval-min>317458</Interval-min>
+<Interval-max>317458</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <SF_LOOP_1>
 <TripCount>16</TripCount>
-<Latency>704</Latency>
-<IterationLatency>44</IterationLatency>
+<Latency>896</Latency>
+<IterationLatency>56</IterationLatency>
 <SF_LOOP_3>
 <TripCount>6</TripCount>
-<Latency>42</Latency>
-<IterationLatency>7</IterationLatency>
+<Latency>54</Latency>
+<IterationLatency>9</IterationLatency>
 </SF_LOOP_3>
 </SF_LOOP_1>
 <ATTN_2D_LOOP_2>
@@ -56,10 +56,10 @@
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>2439</BRAM_18K>
-<DSP48E>432</DSP48E>
-<FF>44998</FF>
-<LUT>86272</LUT>
+<BRAM_18K>2435</BRAM_18K>
+<DSP48E>447</DSP48E>
+<FF>45066</FF>
+<LUT>88424</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -179,7 +179,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -190,7 +190,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -223,7 +223,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -267,7 +267,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -278,51 +278,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>final_output_0_V_address1</name>
-<Object>final_output_0_V</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>11</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>final_output_0_V_ce1</name>
-<Object>final_output_0_V</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>final_output_0_V_we1</name>
-<Object>final_output_0_V</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>final_output_0_V_d1</name>
-<Object>final_output_0_V</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

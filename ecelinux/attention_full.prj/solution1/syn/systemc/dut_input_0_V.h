@@ -18,7 +18,7 @@ using namespace sc_dt;
 
 struct dut_input_0_V_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 40;
+  static const unsigned DataWidth = 38;
   static const unsigned AddressRange = 1536;
   static const unsigned AddressWidth = 11;
 
@@ -94,7 +94,7 @@ void prc_write_1()
 SC_MODULE(dut_input_0_V) {
 
 
-static const unsigned DataWidth = 40;
+static const unsigned DataWidth = 38;
 static const unsigned AddressRange = 1536;
 static const unsigned AddressWidth = 11;
 

@@ -1,23 +1,23 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 62
-set name dut_mul_58ns_56s_QgW
+set id 67
+set name dut_mul_60ns_58s_UhA
 set corename simcore_mul
 set op mul
-set stage_num 3
+set stage_num 5
 set max_latency -1
 set registered_input 1
 set clk_width 1
 set clk_signed 0
 set reset_width 1
 set reset_signed 0
-set in0_width 58
+set in0_width 60
 set in0_signed 0
-set in1_width 56
+set in1_width 58
 set in1_signed 1
 set ce_width 1
 set ce_signed 0
-set out_width 113
+set out_width 117
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
 eval "ap_gen_simcore_mul { \
@@ -86,18 +86,18 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 
 
 # Memory (RAM/ROM)  definition:
-set ID 64
+set ID 69
 set hasByteEnable 0
-set MemName attention_ln_weigsc4
+set MemName attention_ln_weigwdI
 set CoreName ap_simcore_mem
 set PortList { 1 3 }
-set DataWd 40
+set DataWd 38
 set AddrRange 24
 set AddrWd 5
 set impl_style block
 set TrueReset 0
 set IsROM 1
-set ROMData { "0000000000000000000000000111100010100000" "0000000000000000000000000111010100100000" "0000000000000000000000001000000101000000" "0000000000000000000000000111000100100000" "0000000000000000000000000111001100100000" "0000000000000000000000001000000111100000" "0000000000000000000000000111011000110000" "0000000000000000000000001000001011000000" "0000000000000000000000000111111101000000" "0000000000000000000000000111000100000000" "0000000000000000000000000111100001010000" "0000000000000000000000001000011101100000" "0000000000000000000000000111011111100000" "0000000000000000000000000111100010100000" "0000000000000000000000001000001110100000" "0000000000000000000000001000010011100000" "0000000000000000000000001000010100000000" "0000000000000000000000001000000011100000" "0000000000000000000000001000100010000000" "0000000000000000000000000111010101100000" "0000000000000000000000001000010011100000" "0000000000000000000000001000000011100000" "0000000000000000000000000111101001110000" "0000000000000000000000000111011111010000" }
+set ROMData { "00000000000000000001111000101000000000" "00000000000000000001110101001000000000" "00000000000000000010000001010000000000" "00000000000000000001110001001000000000" "00000000000000000001110011001000000000" "00000000000000000010000001111000000000" "00000000000000000001110110001100000000" "00000000000000000010000010110000000000" "00000000000000000001111111010000000000" "00000000000000000001110001000000000000" "00000000000000000001111000010100000000" "00000000000000000010000111011000000000" "00000000000000000001110111111000000000" "00000000000000000001111000101000000000" "00000000000000000010000011101000000000" "00000000000000000010000100111000000000" "00000000000000000010000101000000000000" "00000000000000000010000000111000000000" "00000000000000000010001000100000000000" "00000000000000000001110101011000000000" "00000000000000000010000100111000000000" "00000000000000000010000000111000000000" "00000000000000000001111010011100000000" "00000000000000000001110111110100000000" }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
@@ -172,7 +172,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 65
+set ID 70
 set hasByteEnable 0
 set MemName attention_q_weights
 set CoreName ap_simcore_mem
@@ -258,7 +258,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 66
+set ID 71
 set hasByteEnable 0
 set MemName attention_k_weights
 set CoreName ap_simcore_mem
@@ -344,7 +344,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 67
+set ID 72
 set hasByteEnable 0
 set MemName attention_v_weights
 set CoreName ap_simcore_mem
@@ -430,18 +430,18 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 68
+set ID 73
 set hasByteEnable 0
-set MemName attention_ln_weigtde
+set MemName attention_ln_weigxdS
 set CoreName ap_simcore_mem
 set PortList { 1 3 }
-set DataWd 40
+set DataWd 38
 set AddrRange 24
 set AddrWd 5
 set impl_style block
 set TrueReset 0
 set IsROM 1
-set ROMData { "0000000000000000000000000001011011001100" "0000000000000000000000000001001001101100" "0000000000000000000000000001011101011100" "0000000000000000000000000001011100110000" "0000000000000000000000000001011010100011" "0000000000000000000000000001011101100000" "0000000000000000000000000001011011001100" "0000000000000000000000000001011101000111" "0000000000000000000000000001011110000011" "0000000000000000000000000001011010111100" "0000000000000000000000000001011010001100" "0000000000000000000000000001011100000000" "0000000000000000000000000001011011000000" "0000000000000000000000000001011000100111" "0000000000000000000000000001011110111000" "0000000000000000000000000001011101110011" "0000000000000000000000000001011010100111" "0000000000000000000000000001011001011000" "0000000000000000000000000001010111111000" "0000000000000000000000000001011101101100" "0000000000000000000000000001011101000111" "0000000000000000000000000001011011000000" "0000000000000000000000000001011011000000" "0000000000000000000000000001011111010011" }
+set ROMData { "00000000000000000000010110110011000000" "00000000000000000000010010011011000000" "00000000000000000000010111010111000000" "00000000000000000000010111001100000000" "00000000000000000000010110101000111111" "00000000000000000000010111011000000000" "00000000000000000000010110110011000000" "00000000000000000000010111010001111111" "00000000000000000000010111100000111111" "00000000000000000000010110101111000000" "00000000000000000000010110100011000000" "00000000000000000000010111000000000000" "00000000000000000000010110110000000000" "00000000000000000000010110001001111111" "00000000000000000000010111101110000000" "00000000000000000000010111011100111111" "00000000000000000000010110101001111111" "00000000000000000000010110010110000000" "00000000000000000000010101111110000000" "00000000000000000000010111011011000000" "00000000000000000000010111010001111111" "00000000000000000000010110110000000000" "00000000000000000000010110110000000000" "00000000000000000000010111110100111111" }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
@@ -516,7 +516,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 69
+set ID 74
 set hasByteEnable 0
 set MemName attention_o_weights
 set CoreName ap_simcore_mem
@@ -602,9 +602,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 70
+set ID 75
 set hasByteEnable 0
-set MemName attention_quantizudo
+set MemName attention_quantizyd2
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 8
@@ -687,12 +687,12 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 71
+set ID 76
 set hasByteEnable 0
-set MemName attention_q_proj_Bew
+set MemName attention_q_proj_Ffa
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
-set DataWd 40
+set DataWd 38
 set AddrRange 24
 set AddrWd 5
 set impl_style block
@@ -772,12 +772,12 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 72
+set ID 77
 set hasByteEnable 0
-set MemName attention_v_proj_DeQ
+set MemName attention_v_proj_Hfu
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
-set DataWd 40
+set DataWd 38
 set AddrRange 24
 set AddrWd 5
 set impl_style block
@@ -857,12 +857,12 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 73
+set ID 78
 set hasByteEnable 0
-set MemName attention_k_cacheGfk
+set MemName attention_k_cacheKfY
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
-set DataWd 40
+set DataWd 38
 set AddrRange 144
 set AddrWd 8
 set impl_style block
@@ -942,12 +942,12 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 74
+set ID 79
 set hasByteEnable 0
-set MemName attention_attn_weJfO
+set MemName attention_attn_weNgs
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
-set DataWd 40
+set DataWd 38
 set AddrRange 12
 set AddrWd 4
 set impl_style block
@@ -1037,14 +1037,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 75 \
+    id 80 \
     name hidden_states_0_V \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename hidden_states_0_V \
     op interface \
-    ports { hidden_states_0_V_address0 { O 5 vector } hidden_states_0_V_ce0 { O 1 bit } hidden_states_0_V_we0 { O 1 bit } hidden_states_0_V_d0 { O 40 vector } hidden_states_0_V_q0 { I 40 vector } hidden_states_0_V_address1 { O 5 vector } hidden_states_0_V_ce1 { O 1 bit } hidden_states_0_V_q1 { I 40 vector } } \
+    ports { hidden_states_0_V_address0 { O 5 vector } hidden_states_0_V_ce0 { O 1 bit } hidden_states_0_V_we0 { O 1 bit } hidden_states_0_V_d0 { O 38 vector } hidden_states_0_V_q0 { I 38 vector } hidden_states_0_V_address1 { O 5 vector } hidden_states_0_V_ce1 { O 1 bit } hidden_states_0_V_q1 { I 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'hidden_states_0_V'"
@@ -1056,14 +1056,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 76 \
+    id 81 \
     name final_output_0_V \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename final_output_0_V \
     op interface \
-    ports { final_output_0_V_address0 { O 5 vector } final_output_0_V_ce0 { O 1 bit } final_output_0_V_we0 { O 1 bit } final_output_0_V_d0 { O 40 vector } final_output_0_V_q0 { I 40 vector } final_output_0_V_address1 { O 5 vector } final_output_0_V_ce1 { O 1 bit } final_output_0_V_we1 { O 1 bit } final_output_0_V_d1 { O 40 vector } } \
+    ports { final_output_0_V_address0 { O 5 vector } final_output_0_V_ce0 { O 1 bit } final_output_0_V_we0 { O 1 bit } final_output_0_V_d0 { O 38 vector } final_output_0_V_q0 { I 38 vector } final_output_0_V_address1 { O 5 vector } final_output_0_V_ce1 { O 1 bit } final_output_0_V_we1 { O 1 bit } final_output_0_V_d1 { O 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'final_output_0_V'"

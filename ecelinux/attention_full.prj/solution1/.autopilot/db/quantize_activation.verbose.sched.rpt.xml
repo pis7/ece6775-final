@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'quantize_activation'" level="0">
-<item name = "Date">Fri Dec  6 10:13:38 2024
+<item name = "Date">Sat Dec  7 00:20:48 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_full.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.533 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 8.690 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">6968, 6968, 69.680 us, 69.680 us, 6968, 6968, none</column>
+<column name="">6975, 6975, 69.750 us, 69.750 us, 6975, 6975, none</column>
 </table>
 </item>
 <item name = "Detail">

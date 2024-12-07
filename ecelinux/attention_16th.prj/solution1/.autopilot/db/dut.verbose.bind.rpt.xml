@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dut'" level="0">
-<item name = "Date">Fri Dec  6 14:23:38 2024
+<item name = "Date">Fri Dec  6 23:39:29 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">19333, 19333, 0.193 ms, 0.193 ms, 19333, 19333, none</column>
+<column name="">19609, 19609, 0.196 ms, 0.196 ms, 19609, 19609, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_attention_fu_167">attention, 19042, 19042, 0.190 ms, 0.190 ms, 19042, 19042, none</column>
+<column name="grp_attention_fu_173">attention, 19318, 19318, 0.193 ms, 0.193 ms, 19318, 19318, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

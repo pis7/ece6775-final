@@ -1,10 +1,10 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 95
-set name dut_sdiv_56ns_40srcU
+set id 100
+set name dut_sdiv_58ns_38svdy
 set corename simcore_sdiv_seq
 set op sdiv
-set stage_num 60
+set stage_num 62
 set max_latency -1
 set registered_input 1
 set clk_width 1
@@ -14,13 +14,13 @@ set reset_signed 0
 set start_width 1
 set start_signed 0
 set done_width 1
-set in0_width 56
+set in0_width 58
 set in0_signed 0
-set in1_width 40
+set in1_width 38
 set in1_signed 1
 set ce_width 1
 set ce_signed 0
-set out_width 40
+set out_width 38
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_sdiv] == "ap_gen_simcore_sdiv"} {
 eval "ap_gen_simcore_sdiv { \
@@ -105,14 +105,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 97 \
+    id 102 \
     name input_0_V \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename input_0_V \
     op interface \
-    ports { input_0_V_address0 { O 5 vector } input_0_V_ce0 { O 1 bit } input_0_V_we0 { O 1 bit } input_0_V_d0 { O 40 vector } input_0_V_q0 { I 40 vector } } \
+    ports { input_0_V_address0 { O 5 vector } input_0_V_ce0 { O 1 bit } input_0_V_we0 { O 1 bit } input_0_V_d0 { O 38 vector } input_0_V_q0 { I 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_0_V'"

@@ -28,7 +28,7 @@
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -56,7 +56,7 @@
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -322,7 +322,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>tmp_54</name>
+						<name>tmp_49</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>150</lineNumber>
@@ -372,7 +372,7 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>tmp_55</name>
+						<name>tmp_50</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>150</lineNumber>
@@ -1476,7 +1476,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3661,7 +3661,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_54_fu_105</first>
+			<first>tmp_49_fu_105</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3669,7 +3669,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_55_fu_113</first>
+			<first>tmp_50_fu_113</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

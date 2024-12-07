@@ -120,9 +120,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="72" bw="40" op_0_bw="64">
+<Node id="72" bw="38" op_0_bw="64">
 <![CDATA[
-arrayctor.loop7.preheader:0  %rotated_q_0_V = alloca [1536 x i40], align 8
+arrayctor.loop7.preheader:0  %rotated_q_0_V = alloca [1536 x i38], align 8
 
 ]]></Node>
 <StgValue><ssdm name="rotated_q_0_V"/></StgValue>
@@ -135,9 +135,9 @@ arrayctor.loop7.preheader:0  %rotated_q_0_V = alloca [1536 x i40], align 8
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="73" bw="40" op_0_bw="64">
+<Node id="73" bw="38" op_0_bw="64">
 <![CDATA[
-arrayctor.loop7.preheader:1  %rotated_k_0_V = alloca [1536 x i40], align 8
+arrayctor.loop7.preheader:1  %rotated_k_0_V = alloca [1536 x i38], align 8
 
 ]]></Node>
 <StgValue><ssdm name="rotated_k_0_V"/></StgValue>
@@ -262,10 +262,10 @@ APPLY_ROTARY_POS_EMB_LOOP_2_begin:0  call void (...)* @_ssdm_op_SpecLoopName([28
 
 <Node id="83" bw="12" op_0_bw="12" op_1_bw="5" op_2_bw="7">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_2_begin:1  %tmp_68 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %i_0, i7 0)
+APPLY_ROTARY_POS_EMB_LOOP_2_begin:1  %tmp_62 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %i_0, i7 0)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_68"/></StgValue>
+<StgValue><ssdm name="tmp_62"/></StgValue>
 </operation>
 
 <operation id="24" st_id="2" stage="1" lat="1">
@@ -278,10 +278,10 @@ APPLY_ROTARY_POS_EMB_LOOP_2_begin:1  %tmp_68 = call i12 @_ssdm_op_BitConcatenate
 
 <Node id="84" bw="10" op_0_bw="10" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_2_begin:2  %tmp_69 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %i_0, i5 0)
+APPLY_ROTARY_POS_EMB_LOOP_2_begin:2  %tmp_63 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %i_0, i5 0)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_69"/></StgValue>
+<StgValue><ssdm name="tmp_63"/></StgValue>
 </operation>
 
 <operation id="25" st_id="2" stage="1" lat="1">
@@ -294,7 +294,7 @@ APPLY_ROTARY_POS_EMB_LOOP_2_begin:2  %tmp_69 = call i10 @_ssdm_op_BitConcatenate
 
 <Node id="85" bw="12" op_0_bw="10">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_2_begin:3  %zext_ln1265 = zext i10 %tmp_69 to i12
+APPLY_ROTARY_POS_EMB_LOOP_2_begin:3  %zext_ln1265 = zext i10 %tmp_63 to i12
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln1265"/></StgValue>
@@ -310,7 +310,7 @@ APPLY_ROTARY_POS_EMB_LOOP_2_begin:3  %zext_ln1265 = zext i10 %tmp_69 to i12
 
 <Node id="86" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_2_begin:4  %sub_ln1265 = sub i12 %tmp_68, %zext_ln1265
+APPLY_ROTARY_POS_EMB_LOOP_2_begin:4  %sub_ln1265 = sub i12 %tmp_62, %zext_ln1265
 
 ]]></Node>
 <StgValue><ssdm name="sub_ln1265"/></StgValue>
@@ -376,7 +376,7 @@ APPLY_ROTARY_POS_EMB_LOOP_2_begin:6  br label %0
 
 <Node id="90" bw="6" op_0_bw="6" op_1_bw="0" op_2_bw="6" op_3_bw="0">
 <![CDATA[
-:0  %k_0_0 = phi i6 [ 0, %APPLY_ROTARY_POS_EMB_LOOP_2_begin ], [ %add_ln170, %_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0 ]
+:0  %k_0_0 = phi i6 [ 0, %APPLY_ROTARY_POS_EMB_LOOP_2_begin ], [ %add_ln170, %_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0 ]
 
 ]]></Node>
 <StgValue><ssdm name="k_0_0"/></StgValue>
@@ -421,10 +421,10 @@ APPLY_ROTARY_POS_EMB_LOOP_2_begin:6  br label %0
 
 <Node id="93" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:3  %empty_114 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 48, i64 48, i64 48)
+:3  %empty_107 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 48, i64 48, i64 48)
 
 ]]></Node>
-<StgValue><ssdm name="empty_114"/></StgValue>
+<StgValue><ssdm name="empty_107"/></StgValue>
 </operation>
 
 <operation id="34" st_id="3" stage="1" lat="1">
@@ -451,7 +451,7 @@ APPLY_ROTARY_POS_EMB_LOOP_2_begin:6  br label %0
 
 <Node id="95" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:5  br i1 %icmp_ln170, label %APPLY_ROTARY_POS_EMB_LOOP_2_end, label %_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0
+:5  br i1 %icmp_ln170, label %APPLY_ROTARY_POS_EMB_LOOP_2_end, label %_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln170"/></StgValue>
@@ -467,7 +467,7 @@ APPLY_ROTARY_POS_EMB_LOOP_2_begin:6  br label %0
 
 <Node id="98" bw="12" op_0_bw="6">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1  %zext_ln203_9 = zext i6 %k_0_0 to i12
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1  %zext_ln203_9 = zext i6 %k_0_0 to i12
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln203_9"/></StgValue>
@@ -483,7 +483,7 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 
 <Node id="99" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2  %add_ln203 = add i12 %sub_ln1265, %zext_ln203_9
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2  %add_ln203 = add i12 %sub_ln1265, %zext_ln203_9
 
 ]]></Node>
 <StgValue><ssdm name="add_ln203"/></StgValue>
@@ -499,7 +499,7 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2
 
 <Node id="100" bw="64" op_0_bw="12">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:3  %sext_ln203 = sext i12 %add_ln203 to i64
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:3  %sext_ln203 = sext i12 %add_ln203 to i64
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln203"/></StgValue>
@@ -513,9 +513,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:3
 </and_exp></or_exp>
 </condition>
 
-<Node id="101" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="101" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:4  %input_q_0_V_addr_1 = getelementptr [1536 x i40]* %input_q_0_V, i64 0, i64 %sext_ln203
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:4  %input_q_0_V_addr_1 = getelementptr [1536 x i38]* %input_q_0_V, i64 0, i64 %sext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="input_q_0_V_addr_1"/></StgValue>
@@ -529,9 +529,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:4
 </and_exp></or_exp>
 </condition>
 
-<Node id="102" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="102" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:5  %input_k_0_V_addr_1 = getelementptr [1536 x i40]* %input_k_0_V, i64 0, i64 %sext_ln203
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:5  %input_k_0_V_addr_1 = getelementptr [1536 x i38]* %input_k_0_V, i64 0, i64 %sext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="input_k_0_V_addr_1"/></StgValue>
@@ -547,7 +547,7 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:5
 
 <Node id="105" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:8  %add_ln171 = add i7 %zext_ln170, 48
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:8  %add_ln171 = add i7 %zext_ln170, 48
 
 ]]></Node>
 <StgValue><ssdm name="add_ln171"/></StgValue>
@@ -563,7 +563,7 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:8
 
 <Node id="106" bw="12" op_0_bw="7">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:9  %zext_ln1265_3 = zext i7 %add_ln171 to i12
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:9  %zext_ln1265_3 = zext i7 %add_ln171 to i12
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln1265_3"/></StgValue>
@@ -579,7 +579,7 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:9
 
 <Node id="107" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:10  %add_ln1265 = add i12 %sub_ln1265, %zext_ln1265_3
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:10  %add_ln1265 = add i12 %sub_ln1265, %zext_ln1265_3
 
 ]]></Node>
 <StgValue><ssdm name="add_ln1265"/></StgValue>
@@ -595,7 +595,7 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 
 <Node id="108" bw="64" op_0_bw="12">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:11  %sext_ln1265 = sext i12 %add_ln1265 to i64
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:11  %sext_ln1265 = sext i12 %add_ln1265 to i64
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln1265"/></StgValue>
@@ -609,9 +609,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 </and_exp></or_exp>
 </condition>
 
-<Node id="109" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="109" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:12  %input_q_0_V_addr = getelementptr [1536 x i40]* %input_q_0_V, i64 0, i64 %sext_ln1265
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:12  %input_q_0_V_addr = getelementptr [1536 x i38]* %input_q_0_V, i64 0, i64 %sext_ln1265
 
 ]]></Node>
 <StgValue><ssdm name="input_q_0_V_addr"/></StgValue>
@@ -625,9 +625,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 </and_exp></or_exp>
 </condition>
 
-<Node id="110" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="110" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:13  %input_k_0_V_addr = getelementptr [1536 x i40]* %input_k_0_V, i64 0, i64 %sext_ln1265
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:13  %input_k_0_V_addr = getelementptr [1536 x i38]* %input_k_0_V, i64 0, i64 %sext_ln1265
 
 ]]></Node>
 <StgValue><ssdm name="input_k_0_V_addr"/></StgValue>
@@ -641,9 +641,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 </and_exp></or_exp>
 </condition>
 
-<Node id="113" bw="40" op_0_bw="11">
+<Node id="113" bw="38" op_0_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:16  %input_q_0_V_load = load i40* %input_q_0_V_addr, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:16  %input_q_0_V_load = load i38* %input_q_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_q_0_V_load"/></StgValue>
@@ -657,9 +657,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 </and_exp></or_exp>
 </condition>
 
-<Node id="116" bw="40" op_0_bw="11">
+<Node id="116" bw="38" op_0_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:19  %input_k_0_V_load = load i40* %input_k_0_V_addr, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:19  %input_k_0_V_load = load i38* %input_k_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_k_0_V_load"/></StgValue>
@@ -673,9 +673,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 </and_exp></or_exp>
 </condition>
 
-<Node id="119" bw="40" op_0_bw="11">
+<Node id="119" bw="38" op_0_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:22  %input_q_0_V_load_1 = load i40* %input_q_0_V_addr_1, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:22  %input_q_0_V_load_1 = load i38* %input_q_0_V_addr_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_q_0_V_load_1"/></StgValue>
@@ -689,9 +689,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2
 </and_exp></or_exp>
 </condition>
 
-<Node id="121" bw="40" op_0_bw="11">
+<Node id="121" bw="38" op_0_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:24  %input_k_0_V_load_1 = load i40* %input_k_0_V_addr_1, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:24  %input_k_0_V_load_1 = load i38* %input_k_0_V_addr_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_k_0_V_load_1"/></StgValue>
@@ -707,10 +707,10 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2
 
 <Node id="125" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_2_end:0  %empty_113 = call i32 (...)* @_ssdm_op_SpecRegionEnd([28 x i8]* @p_str1828, i32 %tmp)
+APPLY_ROTARY_POS_EMB_LOOP_2_end:0  %empty_106 = call i32 (...)* @_ssdm_op_SpecRegionEnd([28 x i8]* @p_str1828, i32 %tmp)
 
 ]]></Node>
-<StgValue><ssdm name="empty_113"/></StgValue>
+<StgValue><ssdm name="empty_106"/></StgValue>
 </operation>
 
 <operation id="52" st_id="3" stage="1" lat="1">
@@ -739,9 +739,9 @@ APPLY_ROTARY_POS_EMB_LOOP_2_end:1  br label %.preheader401
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="111" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="111" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:14  %rotated_q_0_V_addr_1 = getelementptr [1536 x i40]* %rotated_q_0_V, i64 0, i64 %sext_ln1265
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:14  %rotated_q_0_V_addr_1 = getelementptr [1536 x i38]* %rotated_q_0_V, i64 0, i64 %sext_ln1265
 
 ]]></Node>
 <StgValue><ssdm name="rotated_q_0_V_addr_1"/></StgValue>
@@ -754,9 +754,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="112" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="112" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:15  %rotated_k_0_V_addr_1 = getelementptr [1536 x i40]* %rotated_k_0_V, i64 0, i64 %sext_ln1265
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:15  %rotated_k_0_V_addr_1 = getelementptr [1536 x i38]* %rotated_k_0_V, i64 0, i64 %sext_ln1265
 
 ]]></Node>
 <StgValue><ssdm name="rotated_k_0_V_addr_1"/></StgValue>
@@ -769,9 +769,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="113" bw="40" op_0_bw="11">
+<Node id="113" bw="38" op_0_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:16  %input_q_0_V_load = load i40* %input_q_0_V_addr, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:16  %input_q_0_V_load = load i38* %input_q_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_q_0_V_load"/></StgValue>
@@ -784,9 +784,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="116" bw="40" op_0_bw="11">
+<Node id="116" bw="38" op_0_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:19  %input_k_0_V_load = load i40* %input_k_0_V_addr, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:19  %input_k_0_V_load = load i38* %input_k_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_k_0_V_load"/></StgValue>
@@ -799,9 +799,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="119" bw="40" op_0_bw="11">
+<Node id="119" bw="38" op_0_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:22  %input_q_0_V_load_1 = load i40* %input_q_0_V_addr_1, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:22  %input_q_0_V_load_1 = load i38* %input_q_0_V_addr_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_q_0_V_load_1"/></StgValue>
@@ -814,9 +814,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="120" bw="0" op_0_bw="40" op_1_bw="11">
+<Node id="120" bw="0" op_0_bw="38" op_1_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:23  store i40 %input_q_0_V_load_1, i40* %rotated_q_0_V_addr_1, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:23  store i38 %input_q_0_V_load_1, i38* %rotated_q_0_V_addr_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln173"/></StgValue>
@@ -829,9 +829,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="121" bw="40" op_0_bw="11">
+<Node id="121" bw="38" op_0_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:24  %input_k_0_V_load_1 = load i40* %input_k_0_V_addr_1, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:24  %input_k_0_V_load_1 = load i38* %input_k_0_V_addr_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_k_0_V_load_1"/></StgValue>
@@ -844,9 +844,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="122" bw="0" op_0_bw="40" op_1_bw="11">
+<Node id="122" bw="0" op_0_bw="38" op_1_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:25  store i40 %input_k_0_V_load_1, i40* %rotated_k_0_V_addr_1, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:25  store i38 %input_k_0_V_load_1, i38* %rotated_k_0_V_addr_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln174"/></StgValue>
@@ -864,7 +864,7 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2
 
 <Node id="97" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:0  call void (...)* @_ssdm_op_SpecLoopName([28 x i8]* @p_str1829) nounwind
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:0  call void (...)* @_ssdm_op_SpecLoopName([28 x i8]* @p_str1829) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln170"/></StgValue>
@@ -877,9 +877,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="103" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="103" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:6  %rotated_q_0_V_addr = getelementptr [1536 x i40]* %rotated_q_0_V, i64 0, i64 %sext_ln203
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:6  %rotated_q_0_V_addr = getelementptr [1536 x i38]* %rotated_q_0_V, i64 0, i64 %sext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="rotated_q_0_V_addr"/></StgValue>
@@ -892,9 +892,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:6
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="104" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="104" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:7  %rotated_k_0_V_addr = getelementptr [1536 x i40]* %rotated_k_0_V, i64 0, i64 %sext_ln203
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:7  %rotated_k_0_V_addr = getelementptr [1536 x i38]* %rotated_k_0_V, i64 0, i64 %sext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="rotated_k_0_V_addr"/></StgValue>
@@ -907,9 +907,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:7
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="114" bw="40" op_0_bw="40" op_1_bw="40">
+<Node id="114" bw="38" op_0_bw="38" op_1_bw="38">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:17  %sub_ln703 = sub i40 0, %input_q_0_V_load
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:17  %sub_ln703 = sub i38 0, %input_q_0_V_load
 
 ]]></Node>
 <StgValue><ssdm name="sub_ln703"/></StgValue>
@@ -922,9 +922,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="115" bw="0" op_0_bw="40" op_1_bw="11">
+<Node id="115" bw="0" op_0_bw="38" op_1_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:18  store i40 %sub_ln703, i40* %rotated_q_0_V_addr, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:18  store i38 %sub_ln703, i38* %rotated_q_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln171"/></StgValue>
@@ -937,12 +937,12 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="117" bw="40" op_0_bw="40" op_1_bw="40">
+<Node id="117" bw="38" op_0_bw="38" op_1_bw="38">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:20  %sub_ln703_35 = sub i40 0, %input_k_0_V_load
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:20  %sub_ln703_38 = sub i38 0, %input_k_0_V_load
 
 ]]></Node>
-<StgValue><ssdm name="sub_ln703_35"/></StgValue>
+<StgValue><ssdm name="sub_ln703_38"/></StgValue>
 </operation>
 
 <operation id="67" st_id="5" stage="1" lat="1">
@@ -952,9 +952,9 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="118" bw="0" op_0_bw="40" op_1_bw="11">
+<Node id="118" bw="0" op_0_bw="38" op_1_bw="11">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:21  store i40 %sub_ln703_35, i40* %rotated_k_0_V_addr, align 8
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:21  store i38 %sub_ln703_38, i38* %rotated_k_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln172"/></StgValue>
@@ -969,7 +969,7 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2
 
 <Node id="123" bw="0" op_0_bw="0">
 <![CDATA[
-_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:26  br label %0
+_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:26  br label %0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln170"/></StgValue>
@@ -1017,10 +1017,10 @@ _ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0:2
 
 <Node id="132" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader:2  %empty_115 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16)
+.preheader:2  %empty_108 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16)
 
 ]]></Node>
-<StgValue><ssdm name="empty_115"/></StgValue>
+<StgValue><ssdm name="empty_108"/></StgValue>
 </operation>
 
 <operation id="72" st_id="6" stage="1" lat="1">
@@ -1095,10 +1095,10 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:1  %zext_ln183 = zext i5 %i14_0 to i64
 
 <Node id="138" bw="12" op_0_bw="12" op_1_bw="5" op_2_bw="7">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:2  %tmp_70 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %i14_0, i7 0)
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:2  %tmp_64 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %i14_0, i7 0)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_70"/></StgValue>
+<StgValue><ssdm name="tmp_64"/></StgValue>
 </operation>
 
 <operation id="77" st_id="6" stage="1" lat="1">
@@ -1111,10 +1111,10 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:2  %tmp_70 = call i12 @_ssdm_op_BitConcatenate
 
 <Node id="139" bw="10" op_0_bw="10" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:3  %tmp_71 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %i14_0, i5 0)
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:3  %tmp_65 = call i10 @_ssdm_op_BitConcatenate.i10.i5.i5(i5 %i14_0, i5 0)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_71"/></StgValue>
+<StgValue><ssdm name="tmp_65"/></StgValue>
 </operation>
 
 <operation id="78" st_id="6" stage="1" lat="1">
@@ -1127,7 +1127,7 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:3  %tmp_71 = call i10 @_ssdm_op_BitConcatenate
 
 <Node id="140" bw="12" op_0_bw="10">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:4  %zext_ln1116 = zext i10 %tmp_71 to i12
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:4  %zext_ln1116 = zext i10 %tmp_65 to i12
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln1116"/></StgValue>
@@ -1143,7 +1143,7 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:4  %zext_ln1116 = zext i10 %tmp_71 to i12
 
 <Node id="141" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:5  %sub_ln1116 = sub i12 %tmp_70, %zext_ln1116
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:5  %sub_ln1116 = sub i12 %tmp_64, %zext_ln1116
 
 ]]></Node>
 <StgValue><ssdm name="sub_ln1116"/></StgValue>
@@ -1173,9 +1173,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:6  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegi
 </and_exp></or_exp>
 </condition>
 
-<Node id="143" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="143" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:7  %output_q_32_0_0_V_1 = getelementptr [16 x i40]* %output_q_32_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:7  %output_q_32_0_0_V_1 = getelementptr [16 x i38]* %output_q_32_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_32_0_0_V_1"/></StgValue>
@@ -1189,9 +1189,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:7  %output_q_32_0_0_V_1 = getelementptr [16 x 
 </and_exp></or_exp>
 </condition>
 
-<Node id="144" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="144" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:8  %output_q_33_0_0_V_1 = getelementptr [16 x i40]* %output_q_33_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:8  %output_q_33_0_0_V_1 = getelementptr [16 x i38]* %output_q_33_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_33_0_0_V_1"/></StgValue>
@@ -1205,9 +1205,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:8  %output_q_33_0_0_V_1 = getelementptr [16 x 
 </and_exp></or_exp>
 </condition>
 
-<Node id="145" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="145" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:9  %output_q_34_0_0_V_1 = getelementptr [16 x i40]* %output_q_34_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:9  %output_q_34_0_0_V_1 = getelementptr [16 x i38]* %output_q_34_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_34_0_0_V_1"/></StgValue>
@@ -1221,9 +1221,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:9  %output_q_34_0_0_V_1 = getelementptr [16 x 
 </and_exp></or_exp>
 </condition>
 
-<Node id="146" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="146" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:10  %output_q_35_0_0_V_1 = getelementptr [16 x i40]* %output_q_35_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:10  %output_q_35_0_0_V_1 = getelementptr [16 x i38]* %output_q_35_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_35_0_0_V_1"/></StgValue>
@@ -1237,9 +1237,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:10  %output_q_35_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="147" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="147" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:11  %output_q_36_0_0_V_1 = getelementptr [16 x i40]* %output_q_36_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:11  %output_q_36_0_0_V_1 = getelementptr [16 x i38]* %output_q_36_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_36_0_0_V_1"/></StgValue>
@@ -1253,9 +1253,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:11  %output_q_36_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="148" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="148" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:12  %output_q_37_0_0_V_1 = getelementptr [16 x i40]* %output_q_37_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:12  %output_q_37_0_0_V_1 = getelementptr [16 x i38]* %output_q_37_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_37_0_0_V_1"/></StgValue>
@@ -1269,9 +1269,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:12  %output_q_37_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="149" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="149" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:13  %output_q_38_0_0_V_1 = getelementptr [16 x i40]* %output_q_38_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:13  %output_q_38_0_0_V_1 = getelementptr [16 x i38]* %output_q_38_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_38_0_0_V_1"/></StgValue>
@@ -1285,9 +1285,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:13  %output_q_38_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="150" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="150" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:14  %output_q_39_0_0_V_1 = getelementptr [16 x i40]* %output_q_39_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:14  %output_q_39_0_0_V_1 = getelementptr [16 x i38]* %output_q_39_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_39_0_0_V_1"/></StgValue>
@@ -1301,9 +1301,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:14  %output_q_39_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="151" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="151" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:15  %output_q_40_0_0_V_1 = getelementptr [16 x i40]* %output_q_40_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:15  %output_q_40_0_0_V_1 = getelementptr [16 x i38]* %output_q_40_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_40_0_0_V_1"/></StgValue>
@@ -1317,9 +1317,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:15  %output_q_40_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="152" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="152" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:16  %output_q_41_0_0_V_1 = getelementptr [16 x i40]* %output_q_41_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:16  %output_q_41_0_0_V_1 = getelementptr [16 x i38]* %output_q_41_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_41_0_0_V_1"/></StgValue>
@@ -1333,9 +1333,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:16  %output_q_41_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="153" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="153" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:17  %output_q_42_0_0_V_1 = getelementptr [16 x i40]* %output_q_42_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:17  %output_q_42_0_0_V_1 = getelementptr [16 x i38]* %output_q_42_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_42_0_0_V_1"/></StgValue>
@@ -1349,9 +1349,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:17  %output_q_42_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="154" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="154" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:18  %output_q_43_0_0_V_1 = getelementptr [16 x i40]* %output_q_43_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:18  %output_q_43_0_0_V_1 = getelementptr [16 x i38]* %output_q_43_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_43_0_0_V_1"/></StgValue>
@@ -1365,9 +1365,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:18  %output_q_43_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="155" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="155" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:19  %output_q_44_0_0_V_1 = getelementptr [16 x i40]* %output_q_44_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:19  %output_q_44_0_0_V_1 = getelementptr [16 x i38]* %output_q_44_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_44_0_0_V_1"/></StgValue>
@@ -1381,9 +1381,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:19  %output_q_44_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="156" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="156" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:20  %output_q_45_0_0_V_1 = getelementptr [16 x i40]* %output_q_45_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:20  %output_q_45_0_0_V_1 = getelementptr [16 x i38]* %output_q_45_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_45_0_0_V_1"/></StgValue>
@@ -1397,9 +1397,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:20  %output_q_45_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="157" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="157" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:21  %output_q_46_0_0_V_1 = getelementptr [16 x i40]* %output_q_46_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:21  %output_q_46_0_0_V_1 = getelementptr [16 x i38]* %output_q_46_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_46_0_0_V_1"/></StgValue>
@@ -1413,9 +1413,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:21  %output_q_46_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="158" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="158" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:22  %output_q_47_0_0_V_1 = getelementptr [16 x i40]* %output_q_47_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:22  %output_q_47_0_0_V_1 = getelementptr [16 x i38]* %output_q_47_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_47_0_0_V_1"/></StgValue>
@@ -1429,9 +1429,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:22  %output_q_47_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="159" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="159" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:23  %output_q_48_0_0_V_1 = getelementptr [16 x i40]* %output_q_48_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:23  %output_q_48_0_0_V_1 = getelementptr [16 x i38]* %output_q_48_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_48_0_0_V_1"/></StgValue>
@@ -1445,9 +1445,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:23  %output_q_48_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="160" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="160" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:24  %output_q_49_0_0_V_1 = getelementptr [16 x i40]* %output_q_49_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:24  %output_q_49_0_0_V_1 = getelementptr [16 x i38]* %output_q_49_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_49_0_0_V_1"/></StgValue>
@@ -1461,9 +1461,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:24  %output_q_49_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="161" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="161" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:25  %output_q_50_0_0_V_1 = getelementptr [16 x i40]* %output_q_50_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:25  %output_q_50_0_0_V_1 = getelementptr [16 x i38]* %output_q_50_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_50_0_0_V_1"/></StgValue>
@@ -1477,9 +1477,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:25  %output_q_50_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="162" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="162" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:26  %output_q_51_0_0_V_1 = getelementptr [16 x i40]* %output_q_51_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:26  %output_q_51_0_0_V_1 = getelementptr [16 x i38]* %output_q_51_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_51_0_0_V_1"/></StgValue>
@@ -1493,9 +1493,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:26  %output_q_51_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="163" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="163" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:27  %output_q_52_0_0_V_1 = getelementptr [16 x i40]* %output_q_52_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:27  %output_q_52_0_0_V_1 = getelementptr [16 x i38]* %output_q_52_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_52_0_0_V_1"/></StgValue>
@@ -1509,9 +1509,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:27  %output_q_52_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="164" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="164" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:28  %output_q_53_0_0_V_1 = getelementptr [16 x i40]* %output_q_53_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:28  %output_q_53_0_0_V_1 = getelementptr [16 x i38]* %output_q_53_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_53_0_0_V_1"/></StgValue>
@@ -1525,9 +1525,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:28  %output_q_53_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="165" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="165" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:29  %output_q_54_0_0_V_1 = getelementptr [16 x i40]* %output_q_54_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:29  %output_q_54_0_0_V_1 = getelementptr [16 x i38]* %output_q_54_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_54_0_0_V_1"/></StgValue>
@@ -1541,9 +1541,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:29  %output_q_54_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="166" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="166" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:30  %output_q_55_0_0_V_1 = getelementptr [16 x i40]* %output_q_55_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:30  %output_q_55_0_0_V_1 = getelementptr [16 x i38]* %output_q_55_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_55_0_0_V_1"/></StgValue>
@@ -1557,9 +1557,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:30  %output_q_55_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="167" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="167" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:31  %output_q_56_0_0_V_1 = getelementptr [16 x i40]* %output_q_56_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:31  %output_q_56_0_0_V_1 = getelementptr [16 x i38]* %output_q_56_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_56_0_0_V_1"/></StgValue>
@@ -1573,9 +1573,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:31  %output_q_56_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="168" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="168" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:32  %output_q_57_0_0_V_1 = getelementptr [16 x i40]* %output_q_57_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:32  %output_q_57_0_0_V_1 = getelementptr [16 x i38]* %output_q_57_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_57_0_0_V_1"/></StgValue>
@@ -1589,9 +1589,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:32  %output_q_57_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="169" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="169" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:33  %output_q_58_0_0_V_1 = getelementptr [16 x i40]* %output_q_58_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:33  %output_q_58_0_0_V_1 = getelementptr [16 x i38]* %output_q_58_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_58_0_0_V_1"/></StgValue>
@@ -1605,9 +1605,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:33  %output_q_58_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="170" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="170" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:34  %output_q_59_0_0_V_1 = getelementptr [16 x i40]* %output_q_59_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:34  %output_q_59_0_0_V_1 = getelementptr [16 x i38]* %output_q_59_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_59_0_0_V_1"/></StgValue>
@@ -1621,9 +1621,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:34  %output_q_59_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="171" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="171" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:35  %output_q_60_0_0_V_1 = getelementptr [16 x i40]* %output_q_60_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:35  %output_q_60_0_0_V_1 = getelementptr [16 x i38]* %output_q_60_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_60_0_0_V_1"/></StgValue>
@@ -1637,9 +1637,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:35  %output_q_60_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="172" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="172" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:36  %output_q_61_0_0_V_1 = getelementptr [16 x i40]* %output_q_61_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:36  %output_q_61_0_0_V_1 = getelementptr [16 x i38]* %output_q_61_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_61_0_0_V_1"/></StgValue>
@@ -1653,9 +1653,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:36  %output_q_61_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="173" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="173" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:37  %output_q_62_0_0_V_1 = getelementptr [16 x i40]* %output_q_62_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:37  %output_q_62_0_0_V_1 = getelementptr [16 x i38]* %output_q_62_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_62_0_0_V_1"/></StgValue>
@@ -1669,9 +1669,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:37  %output_q_62_0_0_V_1 = getelementptr [16 x
 </and_exp></or_exp>
 </condition>
 
-<Node id="174" bw="4" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="174" bw="4" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_begin:38  %output_q_63_0_0_V_1 = getelementptr [16 x i40]* %output_q_63_0_0_V, i64 0, i64 %zext_ln183
+APPLY_ROTARY_POS_EMB_LOOP_5_begin:38  %output_q_63_0_0_V_1 = getelementptr [16 x i38]* %output_q_63_0_0_V, i64 0, i64 %zext_ln183
 
 ]]></Node>
 <StgValue><ssdm name="output_q_63_0_0_V_1"/></StgValue>
@@ -1721,7 +1721,7 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:39  br label %1
 
 <Node id="177" bw="7" op_0_bw="7" op_1_bw="0" op_2_bw="7" op_3_bw="0">
 <![CDATA[
-:0  %k16_0_0 = phi i7 [ 0, %APPLY_ROTARY_POS_EMB_LOOP_5_begin ], [ %add_ln182, %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128 ]
+:0  %k16_0_0 = phi i7 [ 0, %APPLY_ROTARY_POS_EMB_LOOP_5_begin ], [ %add_ln182, %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128 ]
 
 ]]></Node>
 <StgValue><ssdm name="k16_0_0"/></StgValue>
@@ -1751,10 +1751,10 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:39  br label %1
 
 <Node id="179" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_117 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 96, i64 96, i64 96)
+:2  %empty_110 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 96, i64 96, i64 96)
 
 ]]></Node>
-<StgValue><ssdm name="empty_117"/></StgValue>
+<StgValue><ssdm name="empty_110"/></StgValue>
 </operation>
 
 <operation id="118" st_id="7" stage="1" lat="1">
@@ -1781,7 +1781,7 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:39  br label %1
 
 <Node id="181" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:4  br i1 %icmp_ln182, label %APPLY_ROTARY_POS_EMB_LOOP_5_end, label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0
+:4  br i1 %icmp_ln182, label %APPLY_ROTARY_POS_EMB_LOOP_5_end, label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0
 
 ]]></Node>
 <StgValue><ssdm name="br_ln182"/></StgValue>
@@ -1797,7 +1797,7 @@ APPLY_ROTARY_POS_EMB_LOOP_5_begin:39  br label %1
 
 <Node id="184" bw="64" op_0_bw="7">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:1  %zext_ln183_1 = zext i7 %k16_0_0 to i64
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:1  %zext_ln183_1 = zext i7 %k16_0_0 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln183_1"/></StgValue>
@@ -1813,10 +1813,10 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="185" bw="12" op_0_bw="7">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:2  %zext_ln1116_2 = zext i7 %k16_0_0 to i12
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:2  %zext_ln1116_1 = zext i7 %k16_0_0 to i12
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln1116_2"/></StgValue>
+<StgValue><ssdm name="zext_ln1116_1"/></StgValue>
 </operation>
 
 <operation id="122" st_id="7" stage="1" lat="1">
@@ -1829,7 +1829,7 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="186" bw="12" op_0_bw="12" op_1_bw="12">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:3  %add_ln1116 = add i12 %zext_ln1116_2, %sub_ln1116
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:3  %add_ln1116 = add i12 %zext_ln1116_1, %sub_ln1116
 
 ]]></Node>
 <StgValue><ssdm name="add_ln1116"/></StgValue>
@@ -1845,7 +1845,7 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="187" bw="64" op_0_bw="12">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:4  %sext_ln1116 = sext i12 %add_ln1116 to i64
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:4  %sext_ln1116 = sext i12 %add_ln1116 to i64
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln1116"/></StgValue>
@@ -1859,9 +1859,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="188" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="188" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:5  %input_q_0_V_addr_2 = getelementptr [1536 x i40]* %input_q_0_V, i64 0, i64 %sext_ln1116
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:5  %input_q_0_V_addr_2 = getelementptr [1536 x i38]* %input_q_0_V, i64 0, i64 %sext_ln1116
 
 ]]></Node>
 <StgValue><ssdm name="input_q_0_V_addr_2"/></StgValue>
@@ -1875,9 +1875,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="189" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="189" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:6  %input_k_0_V_addr_2 = getelementptr [1536 x i40]* %input_k_0_V, i64 0, i64 %sext_ln1116
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:6  %input_k_0_V_addr_2 = getelementptr [1536 x i38]* %input_k_0_V, i64 0, i64 %sext_ln1116
 
 ]]></Node>
 <StgValue><ssdm name="input_k_0_V_addr_2"/></StgValue>
@@ -1891,9 +1891,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="190" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="190" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:7  %output_k_0_V_addr = getelementptr [1536 x i40]* %output_k_0_V, i64 0, i64 %sext_ln1116
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:7  %output_k_0_V_addr = getelementptr [1536 x i38]* %output_k_0_V, i64 0, i64 %sext_ln1116
 
 ]]></Node>
 <StgValue><ssdm name="output_k_0_V_addr"/></StgValue>
@@ -1907,9 +1907,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="191" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="191" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:8  %rotated_q_0_V_addr_2 = getelementptr [1536 x i40]* %rotated_q_0_V, i64 0, i64 %sext_ln1116
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:8  %rotated_q_0_V_addr_2 = getelementptr [1536 x i38]* %rotated_q_0_V, i64 0, i64 %sext_ln1116
 
 ]]></Node>
 <StgValue><ssdm name="rotated_q_0_V_addr_2"/></StgValue>
@@ -1923,9 +1923,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="192" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="192" bw="11" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:9  %rotated_k_0_V_addr_2 = getelementptr [1536 x i40]* %rotated_k_0_V, i64 0, i64 %sext_ln1116
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:9  %rotated_k_0_V_addr_2 = getelementptr [1536 x i38]* %rotated_k_0_V, i64 0, i64 %sext_ln1116
 
 ]]></Node>
 <StgValue><ssdm name="rotated_k_0_V_addr_2"/></StgValue>
@@ -1939,9 +1939,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="193" bw="7" op_0_bw="17" op_1_bw="64" op_2_bw="64">
+<Node id="193" bw="7" op_0_bw="21" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:10  %cos_tab_V_5_addr = getelementptr [96 x i17]* @cos_tab_V_5, i64 0, i64 %zext_ln183_1
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:10  %cos_tab_V_5_addr = getelementptr [96 x i21]* @cos_tab_V_5, i64 0, i64 %zext_ln183_1
 
 ]]></Node>
 <StgValue><ssdm name="cos_tab_V_5_addr"/></StgValue>
@@ -1955,9 +1955,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="194" bw="17" op_0_bw="7">
+<Node id="194" bw="21" op_0_bw="7">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:11  %cos_tab_V_5_load = load i17* %cos_tab_V_5_addr, align 4
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:11  %cos_tab_V_5_load = load i21* %cos_tab_V_5_addr, align 4
 
 ]]></Node>
 <StgValue><ssdm name="cos_tab_V_5_load"/></StgValue>
@@ -1971,9 +1971,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="195" bw="40" op_0_bw="11">
+<Node id="195" bw="38" op_0_bw="11">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:12  %input_q_0_V_load_2 = load i40* %input_q_0_V_addr_2, align 8
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:12  %input_q_0_V_load_2 = load i38* %input_q_0_V_addr_2, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_q_0_V_load_2"/></StgValue>
@@ -1987,9 +1987,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="199" bw="7" op_0_bw="17" op_1_bw="64" op_2_bw="64">
+<Node id="199" bw="7" op_0_bw="21" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:16  %sin_tab_V_5_addr = getelementptr [96 x i17]* @sin_tab_V_5, i64 0, i64 %zext_ln183_1
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:16  %sin_tab_V_5_addr = getelementptr [96 x i21]* @sin_tab_V_5, i64 0, i64 %zext_ln183_1
 
 ]]></Node>
 <StgValue><ssdm name="sin_tab_V_5_addr"/></StgValue>
@@ -2003,9 +2003,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="200" bw="17" op_0_bw="7">
+<Node id="200" bw="21" op_0_bw="7">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:17  %sin_tab_V_5_load = load i17* %sin_tab_V_5_addr, align 4
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:17  %sin_tab_V_5_load = load i21* %sin_tab_V_5_addr, align 4
 
 ]]></Node>
 <StgValue><ssdm name="sin_tab_V_5_load"/></StgValue>
@@ -2019,9 +2019,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="201" bw="40" op_0_bw="11">
+<Node id="201" bw="38" op_0_bw="11">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:18  %rotated_q_0_V_load = load i40* %rotated_q_0_V_addr_2, align 8
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:18  %rotated_q_0_V_load = load i38* %rotated_q_0_V_addr_2, align 8
 
 ]]></Node>
 <StgValue><ssdm name="rotated_q_0_V_load"/></StgValue>
@@ -2037,10 +2037,10 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="448" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-APPLY_ROTARY_POS_EMB_LOOP_5_end:0  %empty_116 = call i32 (...)* @_ssdm_op_SpecRegionEnd([28 x i8]* @p_str1831, i32 %tmp_s)
+APPLY_ROTARY_POS_EMB_LOOP_5_end:0  %empty_109 = call i32 (...)* @_ssdm_op_SpecRegionEnd([28 x i8]* @p_str1831, i32 %tmp_s)
 
 ]]></Node>
-<StgValue><ssdm name="empty_116"/></StgValue>
+<StgValue><ssdm name="empty_109"/></StgValue>
 </operation>
 
 <operation id="136" st_id="7" stage="1" lat="1">
@@ -2069,9 +2069,9 @@ APPLY_ROTARY_POS_EMB_LOOP_5_end:1  br label %.preheader
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="194" bw="17" op_0_bw="7">
+<Node id="194" bw="21" op_0_bw="7">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:11  %cos_tab_V_5_load = load i17* %cos_tab_V_5_addr, align 4
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:11  %cos_tab_V_5_load = load i21* %cos_tab_V_5_addr, align 4
 
 ]]></Node>
 <StgValue><ssdm name="cos_tab_V_5_load"/></StgValue>
@@ -2084,9 +2084,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="195" bw="40" op_0_bw="11">
+<Node id="195" bw="38" op_0_bw="11">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:12  %input_q_0_V_load_2 = load i40* %input_q_0_V_addr_2, align 8
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:12  %input_q_0_V_load_2 = load i38* %input_q_0_V_addr_2, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_q_0_V_load_2"/></StgValue>
@@ -2099,9 +2099,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="200" bw="17" op_0_bw="7">
+<Node id="200" bw="21" op_0_bw="7">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:17  %sin_tab_V_5_load = load i17* %sin_tab_V_5_addr, align 4
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:17  %sin_tab_V_5_load = load i21* %sin_tab_V_5_addr, align 4
 
 ]]></Node>
 <StgValue><ssdm name="sin_tab_V_5_load"/></StgValue>
@@ -2114,9 +2114,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="201" bw="40" op_0_bw="11">
+<Node id="201" bw="38" op_0_bw="11">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:18  %rotated_q_0_V_load = load i40* %rotated_q_0_V_addr_2, align 8
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:18  %rotated_q_0_V_load = load i38* %rotated_q_0_V_addr_2, align 8
 
 ]]></Node>
 <StgValue><ssdm name="rotated_q_0_V_load"/></StgValue>
@@ -2132,9 +2132,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="196" bw="56" op_0_bw="40">
+<Node id="196" bw="58" op_0_bw="38">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:13  %sext_ln1118 = sext i40 %input_q_0_V_load_2 to i56
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:13  %sext_ln1118 = sext i38 %input_q_0_V_load_2 to i58
 
 ]]></Node>
 <StgValue><ssdm name="sext_ln1118"/></StgValue>
@@ -2147,12 +2147,12 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="197" bw="56" op_0_bw="17">
+<Node id="197" bw="58" op_0_bw="21">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:14  %sext_ln1118_5 = sext i17 %cos_tab_V_5_load to i56
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:14  %sext_ln1118_6 = sext i21 %cos_tab_V_5_load to i58
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln1118_5"/></StgValue>
+<StgValue><ssdm name="sext_ln1118_6"/></StgValue>
 </operation>
 
 <operation id="143" st_id="9" stage="1" lat="1">
@@ -2162,9 +2162,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="198" bw="56" op_0_bw="56" op_1_bw="56">
+<Node id="198" bw="58" op_0_bw="58" op_1_bw="58">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:15  %mul_ln1118 = mul i56 %sext_ln1118, %sext_ln1118_5
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:15  %mul_ln1118 = mul i58 %sext_ln1118, %sext_ln1118_6
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln1118"/></StgValue>
@@ -2177,12 +2177,12 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="202" bw="56" op_0_bw="40">
+<Node id="202" bw="58" op_0_bw="38">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:19  %sext_ln1118_6 = sext i40 %rotated_q_0_V_load to i56
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:19  %sext_ln1118_7 = sext i38 %rotated_q_0_V_load to i58
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln1118_6"/></StgValue>
+<StgValue><ssdm name="sext_ln1118_7"/></StgValue>
 </operation>
 
 <operation id="145" st_id="9" stage="1" lat="1">
@@ -2192,12 +2192,12 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="203" bw="56" op_0_bw="17">
+<Node id="203" bw="58" op_0_bw="21">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:20  %sext_ln1118_7 = sext i17 %sin_tab_V_5_load to i56
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:20  %sext_ln1118_8 = sext i21 %sin_tab_V_5_load to i58
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln1118_7"/></StgValue>
+<StgValue><ssdm name="sext_ln1118_8"/></StgValue>
 </operation>
 
 <operation id="146" st_id="9" stage="1" lat="1">
@@ -2207,9 +2207,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="204" bw="56" op_0_bw="56" op_1_bw="56">
+<Node id="204" bw="58" op_0_bw="58" op_1_bw="58">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:21  %mul_ln1118_4 = mul i56 %sext_ln1118_6, %sext_ln1118_7
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:21  %mul_ln1118_4 = mul i58 %sext_ln1118_7, %sext_ln1118_8
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln1118_4"/></StgValue>
@@ -2227,7 +2227,7 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="183" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:0  call void (...)* @_ssdm_op_SpecLoopName([28 x i8]* @p_str1832) nounwind
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:0  call void (...)* @_ssdm_op_SpecLoopName([28 x i8]* @p_str1832) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln182"/></StgValue>
@@ -2240,9 +2240,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="205" bw="56" op_0_bw="56" op_1_bw="56">
+<Node id="205" bw="58" op_0_bw="58" op_1_bw="58">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:22  %add_ln1192 = add i56 %mul_ln1118_4, %mul_ln1118
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:22  %add_ln1192 = add i58 %mul_ln1118_4, %mul_ln1118
 
 ]]></Node>
 <StgValue><ssdm name="add_ln1192"/></StgValue>
@@ -2255,9 +2255,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="206" bw="40" op_0_bw="40" op_1_bw="56" op_2_bw="32" op_3_bw="32">
+<Node id="206" bw="38" op_0_bw="38" op_1_bw="58" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:23  %trunc_ln = call i40 @_ssdm_op_PartSelect.i40.i56.i32.i32(i56 %add_ln1192, i32 16, i32 55)
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:23  %trunc_ln = call i38 @_ssdm_op_PartSelect.i38.i58.i32.i32(i58 %add_ln1192, i32 20, i32 57)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln"/></StgValue>
@@ -2272,7 +2272,7 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="207" bw="6" op_0_bw="7">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:24  %trunc_ln203 = trunc i7 %k16_0_0 to i6
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:24  %trunc_ln203 = trunc i7 %k16_0_0 to i6
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln203"/></StgValue>
@@ -2287,10 +2287,10 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="208" bw="1" op_0_bw="1" op_1_bw="7" op_2_bw="32">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:25  %tmp_88 = call i1 @_ssdm_op_BitSelect.i1.i7.i32(i7 %k16_0_0, i32 6)
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:25  %tmp_89 = call i1 @_ssdm_op_BitSelect.i1.i7.i32(i7 %k16_0_0, i32 6)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_88"/></StgValue>
+<StgValue><ssdm name="tmp_89"/></StgValue>
 </operation>
 
 <operation id="152" st_id="10" stage="1" lat="1">
@@ -2302,10 +2302,10 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="209" bw="7" op_0_bw="7" op_1_bw="1" op_2_bw="5" op_3_bw="1">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:26  %tmp_72 = call i7 @_ssdm_op_BitConcatenate.i7.i1.i5.i1(i1 false, i5 %i14_0, i1 %tmp_88)
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:26  %tmp_66 = call i7 @_ssdm_op_BitConcatenate.i7.i1.i5.i1(i1 false, i5 %i14_0, i1 %tmp_89)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_72"/></StgValue>
+<StgValue><ssdm name="tmp_66"/></StgValue>
 </operation>
 
 <operation id="153" st_id="10" stage="1" lat="1">
@@ -2317,7 +2317,7 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="210" bw="64" op_0_bw="7">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:27  %zext_ln203 = zext i7 %tmp_72 to i64
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:27  %zext_ln203 = zext i7 %tmp_66 to i64
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln203"/></StgValue>
@@ -2330,9 +2330,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="211" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="211" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:28  %output_q_0_0_V_add = getelementptr [32 x i40]* %output_q_0_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:28  %output_q_0_0_V_add = getelementptr [32 x i38]* %output_q_0_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_0_0_V_add"/></StgValue>
@@ -2345,9 +2345,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="212" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="212" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:29  %output_q_1_0_V_add = getelementptr [32 x i40]* %output_q_1_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:29  %output_q_1_0_V_add = getelementptr [32 x i38]* %output_q_1_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_1_0_V_add"/></StgValue>
@@ -2360,9 +2360,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="213" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="213" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:30  %output_q_2_0_V_add = getelementptr [32 x i40]* %output_q_2_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:30  %output_q_2_0_V_add = getelementptr [32 x i38]* %output_q_2_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_2_0_V_add"/></StgValue>
@@ -2375,9 +2375,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="214" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="214" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:31  %output_q_3_0_V_add = getelementptr [32 x i40]* %output_q_3_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:31  %output_q_3_0_V_add = getelementptr [32 x i38]* %output_q_3_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_3_0_V_add"/></StgValue>
@@ -2390,9 +2390,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="215" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="215" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:32  %output_q_4_0_V_add = getelementptr [32 x i40]* %output_q_4_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:32  %output_q_4_0_V_add = getelementptr [32 x i38]* %output_q_4_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_4_0_V_add"/></StgValue>
@@ -2405,9 +2405,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="216" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="216" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:33  %output_q_5_0_V_add = getelementptr [32 x i40]* %output_q_5_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:33  %output_q_5_0_V_add = getelementptr [32 x i38]* %output_q_5_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_5_0_V_add"/></StgValue>
@@ -2420,9 +2420,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="217" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="217" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:34  %output_q_6_0_V_add = getelementptr [32 x i40]* %output_q_6_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:34  %output_q_6_0_V_add = getelementptr [32 x i38]* %output_q_6_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_6_0_V_add"/></StgValue>
@@ -2435,9 +2435,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="218" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="218" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:35  %output_q_7_0_V_add = getelementptr [32 x i40]* %output_q_7_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:35  %output_q_7_0_V_add = getelementptr [32 x i38]* %output_q_7_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_7_0_V_add"/></StgValue>
@@ -2450,9 +2450,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="219" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="219" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:36  %output_q_8_0_V_add = getelementptr [32 x i40]* %output_q_8_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:36  %output_q_8_0_V_add = getelementptr [32 x i38]* %output_q_8_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_8_0_V_add"/></StgValue>
@@ -2465,9 +2465,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="220" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="220" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:37  %output_q_9_0_V_add = getelementptr [32 x i40]* %output_q_9_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:37  %output_q_9_0_V_add = getelementptr [32 x i38]* %output_q_9_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_9_0_V_add"/></StgValue>
@@ -2480,9 +2480,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="221" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="221" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:38  %output_q_10_0_V_ad = getelementptr [32 x i40]* %output_q_10_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:38  %output_q_10_0_V_ad = getelementptr [32 x i38]* %output_q_10_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_10_0_V_ad"/></StgValue>
@@ -2495,9 +2495,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="222" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="222" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:39  %output_q_11_0_V_ad = getelementptr [32 x i40]* %output_q_11_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:39  %output_q_11_0_V_ad = getelementptr [32 x i38]* %output_q_11_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_11_0_V_ad"/></StgValue>
@@ -2510,9 +2510,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="223" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="223" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:40  %output_q_12_0_V_ad = getelementptr [32 x i40]* %output_q_12_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:40  %output_q_12_0_V_ad = getelementptr [32 x i38]* %output_q_12_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_12_0_V_ad"/></StgValue>
@@ -2525,9 +2525,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="224" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="224" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:41  %output_q_13_0_V_ad = getelementptr [32 x i40]* %output_q_13_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:41  %output_q_13_0_V_ad = getelementptr [32 x i38]* %output_q_13_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_13_0_V_ad"/></StgValue>
@@ -2540,9 +2540,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="225" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="225" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:42  %output_q_14_0_V_ad = getelementptr [32 x i40]* %output_q_14_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:42  %output_q_14_0_V_ad = getelementptr [32 x i38]* %output_q_14_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_14_0_V_ad"/></StgValue>
@@ -2555,9 +2555,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="226" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="226" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:43  %output_q_15_0_V_ad = getelementptr [32 x i40]* %output_q_15_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:43  %output_q_15_0_V_ad = getelementptr [32 x i38]* %output_q_15_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_15_0_V_ad"/></StgValue>
@@ -2570,9 +2570,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="227" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="227" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:44  %output_q_16_0_V_ad = getelementptr [32 x i40]* %output_q_16_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:44  %output_q_16_0_V_ad = getelementptr [32 x i38]* %output_q_16_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_16_0_V_ad"/></StgValue>
@@ -2585,9 +2585,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="228" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="228" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:45  %output_q_17_0_V_ad = getelementptr [32 x i40]* %output_q_17_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:45  %output_q_17_0_V_ad = getelementptr [32 x i38]* %output_q_17_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_17_0_V_ad"/></StgValue>
@@ -2600,9 +2600,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="229" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="229" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:46  %output_q_18_0_V_ad = getelementptr [32 x i40]* %output_q_18_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:46  %output_q_18_0_V_ad = getelementptr [32 x i38]* %output_q_18_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_18_0_V_ad"/></StgValue>
@@ -2615,9 +2615,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="230" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="230" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:47  %output_q_19_0_V_ad = getelementptr [32 x i40]* %output_q_19_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:47  %output_q_19_0_V_ad = getelementptr [32 x i38]* %output_q_19_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_19_0_V_ad"/></StgValue>
@@ -2630,9 +2630,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="231" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="231" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:48  %output_q_20_0_V_ad = getelementptr [32 x i40]* %output_q_20_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:48  %output_q_20_0_V_ad = getelementptr [32 x i38]* %output_q_20_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_20_0_V_ad"/></StgValue>
@@ -2645,9 +2645,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="232" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="232" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:49  %output_q_21_0_V_ad = getelementptr [32 x i40]* %output_q_21_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:49  %output_q_21_0_V_ad = getelementptr [32 x i38]* %output_q_21_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_21_0_V_ad"/></StgValue>
@@ -2660,9 +2660,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="233" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="233" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:50  %output_q_22_0_V_ad = getelementptr [32 x i40]* %output_q_22_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:50  %output_q_22_0_V_ad = getelementptr [32 x i38]* %output_q_22_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_22_0_V_ad"/></StgValue>
@@ -2675,9 +2675,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="234" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="234" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:51  %output_q_23_0_V_ad = getelementptr [32 x i40]* %output_q_23_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:51  %output_q_23_0_V_ad = getelementptr [32 x i38]* %output_q_23_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_23_0_V_ad"/></StgValue>
@@ -2690,9 +2690,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="235" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="235" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:52  %output_q_24_0_V_ad = getelementptr [32 x i40]* %output_q_24_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:52  %output_q_24_0_V_ad = getelementptr [32 x i38]* %output_q_24_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_24_0_V_ad"/></StgValue>
@@ -2705,9 +2705,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="236" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="236" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:53  %output_q_25_0_V_ad = getelementptr [32 x i40]* %output_q_25_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:53  %output_q_25_0_V_ad = getelementptr [32 x i38]* %output_q_25_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_25_0_V_ad"/></StgValue>
@@ -2720,9 +2720,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="237" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="237" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:54  %output_q_26_0_V_ad = getelementptr [32 x i40]* %output_q_26_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:54  %output_q_26_0_V_ad = getelementptr [32 x i38]* %output_q_26_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_26_0_V_ad"/></StgValue>
@@ -2735,9 +2735,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="238" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="238" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:55  %output_q_27_0_V_ad = getelementptr [32 x i40]* %output_q_27_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:55  %output_q_27_0_V_ad = getelementptr [32 x i38]* %output_q_27_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_27_0_V_ad"/></StgValue>
@@ -2750,9 +2750,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="239" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="239" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:56  %output_q_28_0_V_ad = getelementptr [32 x i40]* %output_q_28_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:56  %output_q_28_0_V_ad = getelementptr [32 x i38]* %output_q_28_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_28_0_V_ad"/></StgValue>
@@ -2765,9 +2765,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="240" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="240" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:57  %output_q_29_0_V_ad = getelementptr [32 x i40]* %output_q_29_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:57  %output_q_29_0_V_ad = getelementptr [32 x i38]* %output_q_29_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_29_0_V_ad"/></StgValue>
@@ -2780,9 +2780,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="241" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="241" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:58  %output_q_30_0_V_ad = getelementptr [32 x i40]* %output_q_30_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:58  %output_q_30_0_V_ad = getelementptr [32 x i38]* %output_q_30_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_30_0_V_ad"/></StgValue>
@@ -2795,9 +2795,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="242" bw="5" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="242" bw="5" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:59  %output_q_31_0_V_ad = getelementptr [32 x i40]* %output_q_31_0_V, i64 0, i64 %zext_ln203
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:59  %output_q_31_0_V_ad = getelementptr [32 x i38]* %output_q_31_0_V, i64 0, i64 %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_q_31_0_V_ad"/></StgValue>
@@ -2812,7 +2812,7 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="243" bw="0" op_0_bw="6" op_1_bw="0" op_2_bw="6" op_3_bw="0" op_4_bw="6" op_5_bw="0" op_6_bw="6" op_7_bw="0" op_8_bw="6" op_9_bw="0" op_10_bw="6" op_11_bw="0" op_12_bw="6" op_13_bw="0" op_14_bw="6" op_15_bw="0" op_16_bw="6" op_17_bw="0" op_18_bw="6" op_19_bw="0" op_20_bw="6" op_21_bw="0" op_22_bw="6" op_23_bw="0" op_24_bw="6" op_25_bw="0" op_26_bw="6" op_27_bw="0" op_28_bw="6" op_29_bw="0" op_30_bw="6" op_31_bw="0" op_32_bw="6" op_33_bw="0" op_34_bw="6" op_35_bw="0" op_36_bw="6" op_37_bw="0" op_38_bw="6" op_39_bw="0" op_40_bw="6" op_41_bw="0" op_42_bw="6" op_43_bw="0" op_44_bw="6" op_45_bw="0" op_46_bw="6" op_47_bw="0" op_48_bw="6" op_49_bw="0" op_50_bw="6" op_51_bw="0" op_52_bw="6" op_53_bw="0" op_54_bw="6" op_55_bw="0" op_56_bw="6" op_57_bw="0" op_58_bw="6" op_59_bw="0" op_60_bw="6" op_61_bw="0" op_62_bw="6" op_63_bw="0" op_64_bw="6" op_65_bw="0" op_66_bw="6" op_67_bw="0" op_68_bw="6" op_69_bw="0" op_70_bw="6" op_71_bw="0" op_72_bw="6" op_73_bw="0" op_74_bw="6" op_75_bw="0" op_76_bw="6" op_77_bw="0" op_78_bw="6" op_79_bw="0" op_80_bw="6" op_81_bw="0" op_82_bw="6" op_83_bw="0" op_84_bw="6" op_85_bw="0" op_86_bw="6" op_87_bw="0" op_88_bw="6" op_89_bw="0" op_90_bw="6" op_91_bw="0" op_92_bw="6" op_93_bw="0" op_94_bw="6" op_95_bw="0" op_96_bw="6" op_97_bw="0" op_98_bw="6" op_99_bw="0" op_100_bw="6" op_101_bw="0" op_102_bw="6" op_103_bw="0" op_104_bw="6" op_105_bw="0" op_106_bw="6" op_107_bw="0" op_108_bw="6" op_109_bw="0" op_110_bw="6" op_111_bw="0" op_112_bw="6" op_113_bw="0" op_114_bw="6" op_115_bw="0" op_116_bw="6" op_117_bw="0" op_118_bw="6" op_119_bw="0" op_120_bw="6" op_121_bw="0" op_122_bw="6" op_123_bw="0" op_124_bw="6" op_125_bw="0" op_126_bw="6" op_127_bw="0">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:60  switch i6 %trunc_ln203, label %branch63 [
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0:60  switch i6 %trunc_ln203, label %branch63 [
     i6 0, label %branch0
     i6 1, label %branch1
     i6 2, label %branch2
@@ -2890,9 +2890,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 </and_exp></or_exp>
 </condition>
 
-<Node id="245" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="245" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch62:0  store i40 %trunc_ln, i40* %output_q_62_0_0_V_1, align 8
+branch62:0  store i38 %trunc_ln, i38* %output_q_62_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -2908,7 +2908,7 @@ branch62:0  store i40 %trunc_ln, i40* %output_q_62_0_0_V_1, align 8
 
 <Node id="246" bw="0" op_0_bw="0">
 <![CDATA[
-branch62:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch62:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -2922,9 +2922,9 @@ branch62:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="248" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="248" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch61:0  store i40 %trunc_ln, i40* %output_q_61_0_0_V_1, align 8
+branch61:0  store i38 %trunc_ln, i38* %output_q_61_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -2940,7 +2940,7 @@ branch61:0  store i40 %trunc_ln, i40* %output_q_61_0_0_V_1, align 8
 
 <Node id="249" bw="0" op_0_bw="0">
 <![CDATA[
-branch61:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch61:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -2954,9 +2954,9 @@ branch61:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="251" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="251" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch60:0  store i40 %trunc_ln, i40* %output_q_60_0_0_V_1, align 8
+branch60:0  store i38 %trunc_ln, i38* %output_q_60_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -2972,7 +2972,7 @@ branch60:0  store i40 %trunc_ln, i40* %output_q_60_0_0_V_1, align 8
 
 <Node id="252" bw="0" op_0_bw="0">
 <![CDATA[
-branch60:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch60:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -2986,9 +2986,9 @@ branch60:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="254" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="254" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch59:0  store i40 %trunc_ln, i40* %output_q_59_0_0_V_1, align 8
+branch59:0  store i38 %trunc_ln, i38* %output_q_59_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3004,7 +3004,7 @@ branch59:0  store i40 %trunc_ln, i40* %output_q_59_0_0_V_1, align 8
 
 <Node id="255" bw="0" op_0_bw="0">
 <![CDATA[
-branch59:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch59:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3018,9 +3018,9 @@ branch59:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="257" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="257" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch58:0  store i40 %trunc_ln, i40* %output_q_58_0_0_V_1, align 8
+branch58:0  store i38 %trunc_ln, i38* %output_q_58_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3036,7 +3036,7 @@ branch58:0  store i40 %trunc_ln, i40* %output_q_58_0_0_V_1, align 8
 
 <Node id="258" bw="0" op_0_bw="0">
 <![CDATA[
-branch58:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch58:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3050,9 +3050,9 @@ branch58:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="260" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="260" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch57:0  store i40 %trunc_ln, i40* %output_q_57_0_0_V_1, align 8
+branch57:0  store i38 %trunc_ln, i38* %output_q_57_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3068,7 +3068,7 @@ branch57:0  store i40 %trunc_ln, i40* %output_q_57_0_0_V_1, align 8
 
 <Node id="261" bw="0" op_0_bw="0">
 <![CDATA[
-branch57:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch57:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3082,9 +3082,9 @@ branch57:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="263" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="263" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch56:0  store i40 %trunc_ln, i40* %output_q_56_0_0_V_1, align 8
+branch56:0  store i38 %trunc_ln, i38* %output_q_56_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3100,7 +3100,7 @@ branch56:0  store i40 %trunc_ln, i40* %output_q_56_0_0_V_1, align 8
 
 <Node id="264" bw="0" op_0_bw="0">
 <![CDATA[
-branch56:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch56:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3114,9 +3114,9 @@ branch56:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="266" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="266" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch55:0  store i40 %trunc_ln, i40* %output_q_55_0_0_V_1, align 8
+branch55:0  store i38 %trunc_ln, i38* %output_q_55_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3132,7 +3132,7 @@ branch55:0  store i40 %trunc_ln, i40* %output_q_55_0_0_V_1, align 8
 
 <Node id="267" bw="0" op_0_bw="0">
 <![CDATA[
-branch55:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch55:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3146,9 +3146,9 @@ branch55:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="269" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="269" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch54:0  store i40 %trunc_ln, i40* %output_q_54_0_0_V_1, align 8
+branch54:0  store i38 %trunc_ln, i38* %output_q_54_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3164,7 +3164,7 @@ branch54:0  store i40 %trunc_ln, i40* %output_q_54_0_0_V_1, align 8
 
 <Node id="270" bw="0" op_0_bw="0">
 <![CDATA[
-branch54:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch54:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3178,9 +3178,9 @@ branch54:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="272" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="272" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch53:0  store i40 %trunc_ln, i40* %output_q_53_0_0_V_1, align 8
+branch53:0  store i38 %trunc_ln, i38* %output_q_53_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3196,7 +3196,7 @@ branch53:0  store i40 %trunc_ln, i40* %output_q_53_0_0_V_1, align 8
 
 <Node id="273" bw="0" op_0_bw="0">
 <![CDATA[
-branch53:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch53:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3210,9 +3210,9 @@ branch53:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="275" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="275" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch52:0  store i40 %trunc_ln, i40* %output_q_52_0_0_V_1, align 8
+branch52:0  store i38 %trunc_ln, i38* %output_q_52_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3228,7 +3228,7 @@ branch52:0  store i40 %trunc_ln, i40* %output_q_52_0_0_V_1, align 8
 
 <Node id="276" bw="0" op_0_bw="0">
 <![CDATA[
-branch52:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch52:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3242,9 +3242,9 @@ branch52:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="278" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="278" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch51:0  store i40 %trunc_ln, i40* %output_q_51_0_0_V_1, align 8
+branch51:0  store i38 %trunc_ln, i38* %output_q_51_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3260,7 +3260,7 @@ branch51:0  store i40 %trunc_ln, i40* %output_q_51_0_0_V_1, align 8
 
 <Node id="279" bw="0" op_0_bw="0">
 <![CDATA[
-branch51:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch51:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3274,9 +3274,9 @@ branch51:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="281" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="281" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch50:0  store i40 %trunc_ln, i40* %output_q_50_0_0_V_1, align 8
+branch50:0  store i38 %trunc_ln, i38* %output_q_50_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3292,7 +3292,7 @@ branch50:0  store i40 %trunc_ln, i40* %output_q_50_0_0_V_1, align 8
 
 <Node id="282" bw="0" op_0_bw="0">
 <![CDATA[
-branch50:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch50:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3306,9 +3306,9 @@ branch50:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="284" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="284" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch49:0  store i40 %trunc_ln, i40* %output_q_49_0_0_V_1, align 8
+branch49:0  store i38 %trunc_ln, i38* %output_q_49_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3324,7 +3324,7 @@ branch49:0  store i40 %trunc_ln, i40* %output_q_49_0_0_V_1, align 8
 
 <Node id="285" bw="0" op_0_bw="0">
 <![CDATA[
-branch49:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch49:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3338,9 +3338,9 @@ branch49:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="287" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="287" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch48:0  store i40 %trunc_ln, i40* %output_q_48_0_0_V_1, align 8
+branch48:0  store i38 %trunc_ln, i38* %output_q_48_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3356,7 +3356,7 @@ branch48:0  store i40 %trunc_ln, i40* %output_q_48_0_0_V_1, align 8
 
 <Node id="288" bw="0" op_0_bw="0">
 <![CDATA[
-branch48:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch48:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3370,9 +3370,9 @@ branch48:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="290" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="290" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch47:0  store i40 %trunc_ln, i40* %output_q_47_0_0_V_1, align 8
+branch47:0  store i38 %trunc_ln, i38* %output_q_47_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3388,7 +3388,7 @@ branch47:0  store i40 %trunc_ln, i40* %output_q_47_0_0_V_1, align 8
 
 <Node id="291" bw="0" op_0_bw="0">
 <![CDATA[
-branch47:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch47:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3402,9 +3402,9 @@ branch47:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="293" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="293" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch46:0  store i40 %trunc_ln, i40* %output_q_46_0_0_V_1, align 8
+branch46:0  store i38 %trunc_ln, i38* %output_q_46_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3420,7 +3420,7 @@ branch46:0  store i40 %trunc_ln, i40* %output_q_46_0_0_V_1, align 8
 
 <Node id="294" bw="0" op_0_bw="0">
 <![CDATA[
-branch46:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch46:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3434,9 +3434,9 @@ branch46:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="296" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="296" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch45:0  store i40 %trunc_ln, i40* %output_q_45_0_0_V_1, align 8
+branch45:0  store i38 %trunc_ln, i38* %output_q_45_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3452,7 +3452,7 @@ branch45:0  store i40 %trunc_ln, i40* %output_q_45_0_0_V_1, align 8
 
 <Node id="297" bw="0" op_0_bw="0">
 <![CDATA[
-branch45:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch45:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3466,9 +3466,9 @@ branch45:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="299" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="299" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch44:0  store i40 %trunc_ln, i40* %output_q_44_0_0_V_1, align 8
+branch44:0  store i38 %trunc_ln, i38* %output_q_44_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3484,7 +3484,7 @@ branch44:0  store i40 %trunc_ln, i40* %output_q_44_0_0_V_1, align 8
 
 <Node id="300" bw="0" op_0_bw="0">
 <![CDATA[
-branch44:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch44:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3498,9 +3498,9 @@ branch44:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="302" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="302" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch43:0  store i40 %trunc_ln, i40* %output_q_43_0_0_V_1, align 8
+branch43:0  store i38 %trunc_ln, i38* %output_q_43_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3516,7 +3516,7 @@ branch43:0  store i40 %trunc_ln, i40* %output_q_43_0_0_V_1, align 8
 
 <Node id="303" bw="0" op_0_bw="0">
 <![CDATA[
-branch43:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch43:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3530,9 +3530,9 @@ branch43:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="305" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="305" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch42:0  store i40 %trunc_ln, i40* %output_q_42_0_0_V_1, align 8
+branch42:0  store i38 %trunc_ln, i38* %output_q_42_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3548,7 +3548,7 @@ branch42:0  store i40 %trunc_ln, i40* %output_q_42_0_0_V_1, align 8
 
 <Node id="306" bw="0" op_0_bw="0">
 <![CDATA[
-branch42:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch42:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3562,9 +3562,9 @@ branch42:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="308" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="308" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch41:0  store i40 %trunc_ln, i40* %output_q_41_0_0_V_1, align 8
+branch41:0  store i38 %trunc_ln, i38* %output_q_41_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3580,7 +3580,7 @@ branch41:0  store i40 %trunc_ln, i40* %output_q_41_0_0_V_1, align 8
 
 <Node id="309" bw="0" op_0_bw="0">
 <![CDATA[
-branch41:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch41:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3594,9 +3594,9 @@ branch41:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="311" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="311" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch40:0  store i40 %trunc_ln, i40* %output_q_40_0_0_V_1, align 8
+branch40:0  store i38 %trunc_ln, i38* %output_q_40_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3612,7 +3612,7 @@ branch40:0  store i40 %trunc_ln, i40* %output_q_40_0_0_V_1, align 8
 
 <Node id="312" bw="0" op_0_bw="0">
 <![CDATA[
-branch40:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch40:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3626,9 +3626,9 @@ branch40:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="314" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="314" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch39:0  store i40 %trunc_ln, i40* %output_q_39_0_0_V_1, align 8
+branch39:0  store i38 %trunc_ln, i38* %output_q_39_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3644,7 +3644,7 @@ branch39:0  store i40 %trunc_ln, i40* %output_q_39_0_0_V_1, align 8
 
 <Node id="315" bw="0" op_0_bw="0">
 <![CDATA[
-branch39:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch39:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3658,9 +3658,9 @@ branch39:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="317" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="317" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch38:0  store i40 %trunc_ln, i40* %output_q_38_0_0_V_1, align 8
+branch38:0  store i38 %trunc_ln, i38* %output_q_38_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3676,7 +3676,7 @@ branch38:0  store i40 %trunc_ln, i40* %output_q_38_0_0_V_1, align 8
 
 <Node id="318" bw="0" op_0_bw="0">
 <![CDATA[
-branch38:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch38:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3690,9 +3690,9 @@ branch38:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="320" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="320" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch37:0  store i40 %trunc_ln, i40* %output_q_37_0_0_V_1, align 8
+branch37:0  store i38 %trunc_ln, i38* %output_q_37_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3708,7 +3708,7 @@ branch37:0  store i40 %trunc_ln, i40* %output_q_37_0_0_V_1, align 8
 
 <Node id="321" bw="0" op_0_bw="0">
 <![CDATA[
-branch37:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch37:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3722,9 +3722,9 @@ branch37:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="323" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="323" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch36:0  store i40 %trunc_ln, i40* %output_q_36_0_0_V_1, align 8
+branch36:0  store i38 %trunc_ln, i38* %output_q_36_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3740,7 +3740,7 @@ branch36:0  store i40 %trunc_ln, i40* %output_q_36_0_0_V_1, align 8
 
 <Node id="324" bw="0" op_0_bw="0">
 <![CDATA[
-branch36:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch36:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3754,9 +3754,9 @@ branch36:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="326" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="326" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch35:0  store i40 %trunc_ln, i40* %output_q_35_0_0_V_1, align 8
+branch35:0  store i38 %trunc_ln, i38* %output_q_35_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3772,7 +3772,7 @@ branch35:0  store i40 %trunc_ln, i40* %output_q_35_0_0_V_1, align 8
 
 <Node id="327" bw="0" op_0_bw="0">
 <![CDATA[
-branch35:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch35:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3786,9 +3786,9 @@ branch35:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="329" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="329" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch34:0  store i40 %trunc_ln, i40* %output_q_34_0_0_V_1, align 8
+branch34:0  store i38 %trunc_ln, i38* %output_q_34_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3804,7 +3804,7 @@ branch34:0  store i40 %trunc_ln, i40* %output_q_34_0_0_V_1, align 8
 
 <Node id="330" bw="0" op_0_bw="0">
 <![CDATA[
-branch34:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch34:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3818,9 +3818,9 @@ branch34:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="332" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="332" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch33:0  store i40 %trunc_ln, i40* %output_q_33_0_0_V_1, align 8
+branch33:0  store i38 %trunc_ln, i38* %output_q_33_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3836,7 +3836,7 @@ branch33:0  store i40 %trunc_ln, i40* %output_q_33_0_0_V_1, align 8
 
 <Node id="333" bw="0" op_0_bw="0">
 <![CDATA[
-branch33:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch33:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3850,9 +3850,9 @@ branch33:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="335" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="335" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch32:0  store i40 %trunc_ln, i40* %output_q_32_0_0_V_1, align 8
+branch32:0  store i38 %trunc_ln, i38* %output_q_32_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3868,7 +3868,7 @@ branch32:0  store i40 %trunc_ln, i40* %output_q_32_0_0_V_1, align 8
 
 <Node id="336" bw="0" op_0_bw="0">
 <![CDATA[
-branch32:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch32:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3882,9 +3882,9 @@ branch32:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="338" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="338" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch31:0  store i40 %trunc_ln, i40* %output_q_31_0_V_ad, align 8
+branch31:0  store i38 %trunc_ln, i38* %output_q_31_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3900,7 +3900,7 @@ branch31:0  store i40 %trunc_ln, i40* %output_q_31_0_V_ad, align 8
 
 <Node id="339" bw="0" op_0_bw="0">
 <![CDATA[
-branch31:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch31:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3914,9 +3914,9 @@ branch31:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="341" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="341" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch30:0  store i40 %trunc_ln, i40* %output_q_30_0_V_ad, align 8
+branch30:0  store i38 %trunc_ln, i38* %output_q_30_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3932,7 +3932,7 @@ branch30:0  store i40 %trunc_ln, i40* %output_q_30_0_V_ad, align 8
 
 <Node id="342" bw="0" op_0_bw="0">
 <![CDATA[
-branch30:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch30:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3946,9 +3946,9 @@ branch30:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="344" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="344" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch29:0  store i40 %trunc_ln, i40* %output_q_29_0_V_ad, align 8
+branch29:0  store i38 %trunc_ln, i38* %output_q_29_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3964,7 +3964,7 @@ branch29:0  store i40 %trunc_ln, i40* %output_q_29_0_V_ad, align 8
 
 <Node id="345" bw="0" op_0_bw="0">
 <![CDATA[
-branch29:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch29:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -3978,9 +3978,9 @@ branch29:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="347" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="347" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch28:0  store i40 %trunc_ln, i40* %output_q_28_0_V_ad, align 8
+branch28:0  store i38 %trunc_ln, i38* %output_q_28_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -3996,7 +3996,7 @@ branch28:0  store i40 %trunc_ln, i40* %output_q_28_0_V_ad, align 8
 
 <Node id="348" bw="0" op_0_bw="0">
 <![CDATA[
-branch28:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch28:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4010,9 +4010,9 @@ branch28:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="350" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="350" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch27:0  store i40 %trunc_ln, i40* %output_q_27_0_V_ad, align 8
+branch27:0  store i38 %trunc_ln, i38* %output_q_27_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4028,7 +4028,7 @@ branch27:0  store i40 %trunc_ln, i40* %output_q_27_0_V_ad, align 8
 
 <Node id="351" bw="0" op_0_bw="0">
 <![CDATA[
-branch27:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch27:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4042,9 +4042,9 @@ branch27:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="353" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="353" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch26:0  store i40 %trunc_ln, i40* %output_q_26_0_V_ad, align 8
+branch26:0  store i38 %trunc_ln, i38* %output_q_26_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4060,7 +4060,7 @@ branch26:0  store i40 %trunc_ln, i40* %output_q_26_0_V_ad, align 8
 
 <Node id="354" bw="0" op_0_bw="0">
 <![CDATA[
-branch26:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch26:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4074,9 +4074,9 @@ branch26:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="356" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="356" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch25:0  store i40 %trunc_ln, i40* %output_q_25_0_V_ad, align 8
+branch25:0  store i38 %trunc_ln, i38* %output_q_25_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4092,7 +4092,7 @@ branch25:0  store i40 %trunc_ln, i40* %output_q_25_0_V_ad, align 8
 
 <Node id="357" bw="0" op_0_bw="0">
 <![CDATA[
-branch25:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch25:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4106,9 +4106,9 @@ branch25:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="359" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="359" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch24:0  store i40 %trunc_ln, i40* %output_q_24_0_V_ad, align 8
+branch24:0  store i38 %trunc_ln, i38* %output_q_24_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4124,7 +4124,7 @@ branch24:0  store i40 %trunc_ln, i40* %output_q_24_0_V_ad, align 8
 
 <Node id="360" bw="0" op_0_bw="0">
 <![CDATA[
-branch24:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch24:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4138,9 +4138,9 @@ branch24:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="362" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="362" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch23:0  store i40 %trunc_ln, i40* %output_q_23_0_V_ad, align 8
+branch23:0  store i38 %trunc_ln, i38* %output_q_23_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4156,7 +4156,7 @@ branch23:0  store i40 %trunc_ln, i40* %output_q_23_0_V_ad, align 8
 
 <Node id="363" bw="0" op_0_bw="0">
 <![CDATA[
-branch23:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch23:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4170,9 +4170,9 @@ branch23:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="365" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="365" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch22:0  store i40 %trunc_ln, i40* %output_q_22_0_V_ad, align 8
+branch22:0  store i38 %trunc_ln, i38* %output_q_22_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4188,7 +4188,7 @@ branch22:0  store i40 %trunc_ln, i40* %output_q_22_0_V_ad, align 8
 
 <Node id="366" bw="0" op_0_bw="0">
 <![CDATA[
-branch22:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch22:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4202,9 +4202,9 @@ branch22:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="368" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="368" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch21:0  store i40 %trunc_ln, i40* %output_q_21_0_V_ad, align 8
+branch21:0  store i38 %trunc_ln, i38* %output_q_21_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4220,7 +4220,7 @@ branch21:0  store i40 %trunc_ln, i40* %output_q_21_0_V_ad, align 8
 
 <Node id="369" bw="0" op_0_bw="0">
 <![CDATA[
-branch21:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch21:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4234,9 +4234,9 @@ branch21:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="371" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="371" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch20:0  store i40 %trunc_ln, i40* %output_q_20_0_V_ad, align 8
+branch20:0  store i38 %trunc_ln, i38* %output_q_20_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4252,7 +4252,7 @@ branch20:0  store i40 %trunc_ln, i40* %output_q_20_0_V_ad, align 8
 
 <Node id="372" bw="0" op_0_bw="0">
 <![CDATA[
-branch20:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch20:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4266,9 +4266,9 @@ branch20:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="374" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="374" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch19:0  store i40 %trunc_ln, i40* %output_q_19_0_V_ad, align 8
+branch19:0  store i38 %trunc_ln, i38* %output_q_19_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4284,7 +4284,7 @@ branch19:0  store i40 %trunc_ln, i40* %output_q_19_0_V_ad, align 8
 
 <Node id="375" bw="0" op_0_bw="0">
 <![CDATA[
-branch19:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch19:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4298,9 +4298,9 @@ branch19:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="377" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="377" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch18:0  store i40 %trunc_ln, i40* %output_q_18_0_V_ad, align 8
+branch18:0  store i38 %trunc_ln, i38* %output_q_18_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4316,7 +4316,7 @@ branch18:0  store i40 %trunc_ln, i40* %output_q_18_0_V_ad, align 8
 
 <Node id="378" bw="0" op_0_bw="0">
 <![CDATA[
-branch18:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch18:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4330,9 +4330,9 @@ branch18:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="380" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="380" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch17:0  store i40 %trunc_ln, i40* %output_q_17_0_V_ad, align 8
+branch17:0  store i38 %trunc_ln, i38* %output_q_17_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4348,7 +4348,7 @@ branch17:0  store i40 %trunc_ln, i40* %output_q_17_0_V_ad, align 8
 
 <Node id="381" bw="0" op_0_bw="0">
 <![CDATA[
-branch17:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch17:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4362,9 +4362,9 @@ branch17:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="383" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="383" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch16:0  store i40 %trunc_ln, i40* %output_q_16_0_V_ad, align 8
+branch16:0  store i38 %trunc_ln, i38* %output_q_16_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4380,7 +4380,7 @@ branch16:0  store i40 %trunc_ln, i40* %output_q_16_0_V_ad, align 8
 
 <Node id="384" bw="0" op_0_bw="0">
 <![CDATA[
-branch16:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch16:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4394,9 +4394,9 @@ branch16:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="386" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="386" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch15:0  store i40 %trunc_ln, i40* %output_q_15_0_V_ad, align 8
+branch15:0  store i38 %trunc_ln, i38* %output_q_15_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4412,7 +4412,7 @@ branch15:0  store i40 %trunc_ln, i40* %output_q_15_0_V_ad, align 8
 
 <Node id="387" bw="0" op_0_bw="0">
 <![CDATA[
-branch15:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch15:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4426,9 +4426,9 @@ branch15:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="389" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="389" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch14:0  store i40 %trunc_ln, i40* %output_q_14_0_V_ad, align 8
+branch14:0  store i38 %trunc_ln, i38* %output_q_14_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4444,7 +4444,7 @@ branch14:0  store i40 %trunc_ln, i40* %output_q_14_0_V_ad, align 8
 
 <Node id="390" bw="0" op_0_bw="0">
 <![CDATA[
-branch14:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch14:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4458,9 +4458,9 @@ branch14:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="392" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="392" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch13:0  store i40 %trunc_ln, i40* %output_q_13_0_V_ad, align 8
+branch13:0  store i38 %trunc_ln, i38* %output_q_13_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4476,7 +4476,7 @@ branch13:0  store i40 %trunc_ln, i40* %output_q_13_0_V_ad, align 8
 
 <Node id="393" bw="0" op_0_bw="0">
 <![CDATA[
-branch13:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch13:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4490,9 +4490,9 @@ branch13:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="395" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="395" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch12:0  store i40 %trunc_ln, i40* %output_q_12_0_V_ad, align 8
+branch12:0  store i38 %trunc_ln, i38* %output_q_12_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4508,7 +4508,7 @@ branch12:0  store i40 %trunc_ln, i40* %output_q_12_0_V_ad, align 8
 
 <Node id="396" bw="0" op_0_bw="0">
 <![CDATA[
-branch12:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch12:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4522,9 +4522,9 @@ branch12:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="398" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="398" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch11:0  store i40 %trunc_ln, i40* %output_q_11_0_V_ad, align 8
+branch11:0  store i38 %trunc_ln, i38* %output_q_11_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4540,7 +4540,7 @@ branch11:0  store i40 %trunc_ln, i40* %output_q_11_0_V_ad, align 8
 
 <Node id="399" bw="0" op_0_bw="0">
 <![CDATA[
-branch11:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch11:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4554,9 +4554,9 @@ branch11:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="401" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="401" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch10:0  store i40 %trunc_ln, i40* %output_q_10_0_V_ad, align 8
+branch10:0  store i38 %trunc_ln, i38* %output_q_10_0_V_ad, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4572,7 +4572,7 @@ branch10:0  store i40 %trunc_ln, i40* %output_q_10_0_V_ad, align 8
 
 <Node id="402" bw="0" op_0_bw="0">
 <![CDATA[
-branch10:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch10:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4586,9 +4586,9 @@ branch10:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 </and_exp></or_exp>
 </condition>
 
-<Node id="404" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="404" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch9:0  store i40 %trunc_ln, i40* %output_q_9_0_V_add, align 8
+branch9:0  store i38 %trunc_ln, i38* %output_q_9_0_V_add, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4604,7 +4604,7 @@ branch9:0  store i40 %trunc_ln, i40* %output_q_9_0_V_add, align 8
 
 <Node id="405" bw="0" op_0_bw="0">
 <![CDATA[
-branch9:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch9:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4618,9 +4618,9 @@ branch9:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3E
 </and_exp></or_exp>
 </condition>
 
-<Node id="407" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="407" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch8:0  store i40 %trunc_ln, i40* %output_q_8_0_V_add, align 8
+branch8:0  store i38 %trunc_ln, i38* %output_q_8_0_V_add, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4636,7 +4636,7 @@ branch8:0  store i40 %trunc_ln, i40* %output_q_8_0_V_add, align 8
 
 <Node id="408" bw="0" op_0_bw="0">
 <![CDATA[
-branch8:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch8:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4650,9 +4650,9 @@ branch8:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3E
 </and_exp></or_exp>
 </condition>
 
-<Node id="410" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="410" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch7:0  store i40 %trunc_ln, i40* %output_q_7_0_V_add, align 8
+branch7:0  store i38 %trunc_ln, i38* %output_q_7_0_V_add, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4668,7 +4668,7 @@ branch7:0  store i40 %trunc_ln, i40* %output_q_7_0_V_add, align 8
 
 <Node id="411" bw="0" op_0_bw="0">
 <![CDATA[
-branch7:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch7:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4682,9 +4682,9 @@ branch7:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3E
 </and_exp></or_exp>
 </condition>
 
-<Node id="413" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="413" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch6:0  store i40 %trunc_ln, i40* %output_q_6_0_V_add, align 8
+branch6:0  store i38 %trunc_ln, i38* %output_q_6_0_V_add, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4700,7 +4700,7 @@ branch6:0  store i40 %trunc_ln, i40* %output_q_6_0_V_add, align 8
 
 <Node id="414" bw="0" op_0_bw="0">
 <![CDATA[
-branch6:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch6:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4714,9 +4714,9 @@ branch6:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3E
 </and_exp></or_exp>
 </condition>
 
-<Node id="416" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="416" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch5:0  store i40 %trunc_ln, i40* %output_q_5_0_V_add, align 8
+branch5:0  store i38 %trunc_ln, i38* %output_q_5_0_V_add, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4732,7 +4732,7 @@ branch5:0  store i40 %trunc_ln, i40* %output_q_5_0_V_add, align 8
 
 <Node id="417" bw="0" op_0_bw="0">
 <![CDATA[
-branch5:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch5:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4746,9 +4746,9 @@ branch5:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3E
 </and_exp></or_exp>
 </condition>
 
-<Node id="419" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="419" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch4:0  store i40 %trunc_ln, i40* %output_q_4_0_V_add, align 8
+branch4:0  store i38 %trunc_ln, i38* %output_q_4_0_V_add, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4764,7 +4764,7 @@ branch4:0  store i40 %trunc_ln, i40* %output_q_4_0_V_add, align 8
 
 <Node id="420" bw="0" op_0_bw="0">
 <![CDATA[
-branch4:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch4:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4778,9 +4778,9 @@ branch4:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3E
 </and_exp></or_exp>
 </condition>
 
-<Node id="422" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="422" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch3:0  store i40 %trunc_ln, i40* %output_q_3_0_V_add, align 8
+branch3:0  store i38 %trunc_ln, i38* %output_q_3_0_V_add, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4796,7 +4796,7 @@ branch3:0  store i40 %trunc_ln, i40* %output_q_3_0_V_add, align 8
 
 <Node id="423" bw="0" op_0_bw="0">
 <![CDATA[
-branch3:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch3:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4810,9 +4810,9 @@ branch3:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3E
 </and_exp></or_exp>
 </condition>
 
-<Node id="425" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="425" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch2:0  store i40 %trunc_ln, i40* %output_q_2_0_V_add, align 8
+branch2:0  store i38 %trunc_ln, i38* %output_q_2_0_V_add, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4828,7 +4828,7 @@ branch2:0  store i40 %trunc_ln, i40* %output_q_2_0_V_add, align 8
 
 <Node id="426" bw="0" op_0_bw="0">
 <![CDATA[
-branch2:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch2:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4842,9 +4842,9 @@ branch2:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3E
 </and_exp></or_exp>
 </condition>
 
-<Node id="428" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="428" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch1:0  store i40 %trunc_ln, i40* %output_q_1_0_V_add, align 8
+branch1:0  store i38 %trunc_ln, i38* %output_q_1_0_V_add, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4860,7 +4860,7 @@ branch1:0  store i40 %trunc_ln, i40* %output_q_1_0_V_add, align 8
 
 <Node id="429" bw="0" op_0_bw="0">
 <![CDATA[
-branch1:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch1:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4874,9 +4874,9 @@ branch1:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3E
 </and_exp></or_exp>
 </condition>
 
-<Node id="431" bw="0" op_0_bw="40" op_1_bw="5">
+<Node id="431" bw="0" op_0_bw="38" op_1_bw="5">
 <![CDATA[
-branch0:0  store i40 %trunc_ln, i40* %output_q_0_0_V_add, align 8
+branch0:0  store i38 %trunc_ln, i38* %output_q_0_0_V_add, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4892,7 +4892,7 @@ branch0:0  store i40 %trunc_ln, i40* %output_q_0_0_V_add, align 8
 
 <Node id="432" bw="0" op_0_bw="0">
 <![CDATA[
-branch0:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch0:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4906,9 +4906,9 @@ branch0:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3E
 </and_exp></or_exp>
 </condition>
 
-<Node id="434" bw="0" op_0_bw="40" op_1_bw="4">
+<Node id="434" bw="0" op_0_bw="38" op_1_bw="4">
 <![CDATA[
-branch63:0  store i40 %trunc_ln, i40* %output_q_63_0_0_V_1, align 8
+branch63:0  store i38 %trunc_ln, i38* %output_q_63_0_0_V_1, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln184"/></StgValue>
@@ -4924,7 +4924,7 @@ branch63:0  store i40 %trunc_ln, i40* %output_q_63_0_0_V_1, align 8
 
 <Node id="435" bw="0" op_0_bw="0">
 <![CDATA[
-branch63:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
+branch63:1  br label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128
 
 ]]></Node>
 <StgValue><ssdm name="br_ln184"/></StgValue>
@@ -4937,9 +4937,9 @@ branch63:1  br label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="437" bw="40" op_0_bw="11">
+<Node id="437" bw="38" op_0_bw="11">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:0  %input_k_0_V_load_2 = load i40* %input_k_0_V_addr_2, align 8
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:0  %input_k_0_V_load_2 = load i38* %input_k_0_V_addr_2, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_k_0_V_load_2"/></StgValue>
@@ -4952,9 +4952,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="440" bw="40" op_0_bw="11">
+<Node id="440" bw="38" op_0_bw="11">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:3  %rotated_k_0_V_load = load i40* %rotated_k_0_V_addr_2, align 8
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:3  %rotated_k_0_V_load = load i38* %rotated_k_0_V_addr_2, align 8
 
 ]]></Node>
 <StgValue><ssdm name="rotated_k_0_V_load"/></StgValue>
@@ -4970,9 +4970,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="437" bw="40" op_0_bw="11">
+<Node id="437" bw="38" op_0_bw="11">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:0  %input_k_0_V_load_2 = load i40* %input_k_0_V_addr_2, align 8
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:0  %input_k_0_V_load_2 = load i38* %input_k_0_V_addr_2, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_k_0_V_load_2"/></StgValue>
@@ -4985,9 +4985,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="440" bw="40" op_0_bw="11">
+<Node id="440" bw="38" op_0_bw="11">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:3  %rotated_k_0_V_load = load i40* %rotated_k_0_V_addr_2, align 8
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:3  %rotated_k_0_V_load = load i38* %rotated_k_0_V_addr_2, align 8
 
 ]]></Node>
 <StgValue><ssdm name="rotated_k_0_V_load"/></StgValue>
@@ -5003,12 +5003,12 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="438" bw="56" op_0_bw="40">
+<Node id="438" bw="58" op_0_bw="38">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:1  %sext_ln1118_8 = sext i40 %input_k_0_V_load_2 to i56
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:1  %sext_ln1118_9 = sext i38 %input_k_0_V_load_2 to i58
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln1118_8"/></StgValue>
+<StgValue><ssdm name="sext_ln1118_9"/></StgValue>
 </operation>
 
 <operation id="320" st_id="12" stage="1" lat="1">
@@ -5018,9 +5018,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="439" bw="56" op_0_bw="56" op_1_bw="56">
+<Node id="439" bw="58" op_0_bw="58" op_1_bw="58">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:2  %mul_ln1118_5 = mul i56 %sext_ln1118_5, %sext_ln1118_8
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:2  %mul_ln1118_5 = mul i58 %sext_ln1118_6, %sext_ln1118_9
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln1118_5"/></StgValue>
@@ -5033,12 +5033,12 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="441" bw="56" op_0_bw="40">
+<Node id="441" bw="58" op_0_bw="38">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:4  %sext_ln1118_9 = sext i40 %rotated_k_0_V_load to i56
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:4  %sext_ln1118_10 = sext i38 %rotated_k_0_V_load to i58
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln1118_9"/></StgValue>
+<StgValue><ssdm name="sext_ln1118_10"/></StgValue>
 </operation>
 
 <operation id="322" st_id="12" stage="1" lat="1">
@@ -5048,9 +5048,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="442" bw="56" op_0_bw="56" op_1_bw="56">
+<Node id="442" bw="58" op_0_bw="58" op_1_bw="58">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:5  %mul_ln1118_6 = mul i56 %sext_ln1118_7, %sext_ln1118_9
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:5  %mul_ln1118_6 = mul i58 %sext_ln1118_8, %sext_ln1118_10
 
 ]]></Node>
 <StgValue><ssdm name="mul_ln1118_6"/></StgValue>
@@ -5066,9 +5066,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="443" bw="56" op_0_bw="56" op_1_bw="56">
+<Node id="443" bw="58" op_0_bw="58" op_1_bw="58">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:6  %add_ln1192_1 = add i56 %mul_ln1118_5, %mul_ln1118_6
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:6  %add_ln1192_1 = add i58 %mul_ln1118_5, %mul_ln1118_6
 
 ]]></Node>
 <StgValue><ssdm name="add_ln1192_1"/></StgValue>
@@ -5081,9 +5081,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="444" bw="40" op_0_bw="40" op_1_bw="56" op_2_bw="32" op_3_bw="32">
+<Node id="444" bw="38" op_0_bw="38" op_1_bw="58" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:7  %trunc_ln708_s = call i40 @_ssdm_op_PartSelect.i40.i56.i32.i32(i56 %add_ln1192_1, i32 16, i32 55)
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:7  %trunc_ln708_s = call i38 @_ssdm_op_PartSelect.i38.i58.i32.i32(i58 %add_ln1192_1, i32 20, i32 57)
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln708_s"/></StgValue>
@@ -5096,9 +5096,9 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="445" bw="0" op_0_bw="40" op_1_bw="11">
+<Node id="445" bw="0" op_0_bw="38" op_1_bw="11">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:8  store i40 %trunc_ln708_s, i40* %output_k_0_V_addr, align 8
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:8  store i38 %trunc_ln708_s, i38* %output_k_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln186"/></StgValue>
@@ -5113,7 +5113,7 @@ _ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1
 
 <Node id="446" bw="0" op_0_bw="0">
 <![CDATA[
-_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:9  br label %1
+_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128:9  br label %1
 
 ]]></Node>
 <StgValue><ssdm name="br_ln182"/></StgValue>

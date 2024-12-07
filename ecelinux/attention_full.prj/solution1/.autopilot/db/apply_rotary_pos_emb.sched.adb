@@ -28,7 +28,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -56,7 +56,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -84,7 +84,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -112,7 +112,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -140,7 +140,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -168,7 +168,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -196,7 +196,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -224,7 +224,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -252,7 +252,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -280,7 +280,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -308,7 +308,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -336,7 +336,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -364,7 +364,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -392,7 +392,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -420,7 +420,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -448,7 +448,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -476,7 +476,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -504,7 +504,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -532,7 +532,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -560,7 +560,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -588,7 +588,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -616,7 +616,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -644,7 +644,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -672,7 +672,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -700,7 +700,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -728,7 +728,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -756,7 +756,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -784,7 +784,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -812,7 +812,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -840,7 +840,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -868,7 +868,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -896,7 +896,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -924,7 +924,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -952,7 +952,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -980,7 +980,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1008,7 +1008,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1036,7 +1036,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1064,7 +1064,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1092,7 +1092,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1120,7 +1120,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1148,7 +1148,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1176,7 +1176,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1204,7 +1204,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1232,7 +1232,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1260,7 +1260,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1288,7 +1288,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1316,7 +1316,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1344,7 +1344,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1372,7 +1372,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1400,7 +1400,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1428,7 +1428,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1456,7 +1456,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1484,7 +1484,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1512,7 +1512,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1540,7 +1540,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1568,7 +1568,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1596,7 +1596,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1624,7 +1624,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1652,7 +1652,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1680,7 +1680,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1708,7 +1708,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1736,7 +1736,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1764,7 +1764,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1792,7 +1792,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1820,7 +1820,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1848,7 +1848,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1876,7 +1876,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -1922,7 +1922,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1970,7 +1970,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2224,7 +2224,7 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>tmp_68</name>
+						<name>tmp_62</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>171</lineNumber>
@@ -2274,7 +2274,7 @@
 					<Obj>
 						<type>0</type>
 						<id>84</id>
-						<name>tmp_69</name>
+						<name>tmp_63</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>171</lineNumber>
@@ -3482,7 +3482,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3530,7 +3530,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3543,7 +3543,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.87</m_delay>
+				<m_delay>2.79</m_delay>
 				<m_topoIndex>41</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3628,7 +3628,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3649,7 +3649,7 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>sub_ln703_35</name>
+						<name>sub_ln703_38</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>172</lineNumber>
@@ -3676,7 +3676,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3689,7 +3689,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.87</m_delay>
+				<m_delay>2.79</m_delay>
 				<m_topoIndex>43</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3774,7 +3774,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3871,7 +3871,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4318,7 +4318,7 @@
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>tmp_70</name>
+						<name>tmp_64</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>184</lineNumber>
@@ -4368,7 +4368,7 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>tmp_71</name>
+						<name>tmp_65</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>184</lineNumber>
@@ -6410,7 +6410,7 @@
 					<Obj>
 						<type>0</type>
 						<id>185</id>
-						<name>zext_ln1116_2</name>
+						<name>zext_ln1116_1</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>184</lineNumber>
@@ -6882,7 +6882,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>17</bitwidth>
+					<bitwidth>21</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6930,7 +6930,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6978,7 +6978,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6999,7 +6999,7 @@
 					<Obj>
 						<type>0</type>
 						<id>197</id>
-						<name>sext_ln1118_5</name>
+						<name>sext_ln1118_6</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>184</lineNumber>
@@ -7026,7 +7026,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -7074,7 +7074,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -7087,7 +7087,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>8.51</m_delay>
+				<m_delay>8.69</m_delay>
 				<m_topoIndex>111</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -7173,7 +7173,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>17</bitwidth>
+					<bitwidth>21</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -7221,7 +7221,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -7242,54 +7242,6 @@
 					<Obj>
 						<type>0</type>
 						<id>202</id>
-						<name>sext_ln1118_6</name>
-						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>184</lineNumber>
-						<contextFuncName>apply_rotary_pos_emb&amp;lt;1, 16, 96&amp;gt;</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>./layer.h</first>
-											<second>apply_rotary_pos_emb&amp;lt;1, 16, 96&amp;gt;</second>
-										</first>
-										<second>184</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>56</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>721</item>
-				</oprand_edges>
-				<opcode>sext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>112</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_178">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>203</id>
 						<name>sext_ln1118_7</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
@@ -7317,7 +7269,55 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>721</item>
+				</oprand_edges>
+				<opcode>sext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>112</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_178">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>203</id>
+						<name>sext_ln1118_8</name>
+						<fileName>./layer.h</fileName>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>184</lineNumber>
+						<contextFuncName>apply_rotary_pos_emb&amp;lt;1, 16, 96&amp;gt;</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>./layer.h</first>
+											<second>apply_rotary_pos_emb&amp;lt;1, 16, 96&amp;gt;</second>
+										</first>
+										<second>184</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -7365,7 +7365,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -7378,7 +7378,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>8.51</m_delay>
+				<m_delay>8.69</m_delay>
 				<m_topoIndex>114</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -7414,7 +7414,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -7427,7 +7427,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.31</m_delay>
+				<m_delay>3.36</m_delay>
 				<m_topoIndex>115</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -7463,7 +7463,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -7535,7 +7535,7 @@
 					<Obj>
 						<type>0</type>
 						<id>208</id>
-						<name>tmp_88</name>
+						<name>tmp_89</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>184</lineNumber>
@@ -7585,7 +7585,7 @@
 					<Obj>
 						<type>0</type>
 						<id>209</id>
-						<name>tmp_72</name>
+						<name>tmp_66</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>184</lineNumber>
@@ -15694,7 +15694,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -15715,7 +15715,7 @@
 					<Obj>
 						<type>0</type>
 						<id>438</id>
-						<name>sext_ln1118_8</name>
+						<name>sext_ln1118_9</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>186</lineNumber>
@@ -15742,7 +15742,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -15790,7 +15790,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -15803,7 +15803,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>8.51</m_delay>
+				<m_delay>8.69</m_delay>
 				<m_topoIndex>285</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -15839,7 +15839,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -15860,7 +15860,7 @@
 					<Obj>
 						<type>0</type>
 						<id>441</id>
-						<name>sext_ln1118_9</name>
+						<name>sext_ln1118_10</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>186</lineNumber>
@@ -15887,7 +15887,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -15935,7 +15935,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -15948,7 +15948,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>8.51</m_delay>
+				<m_delay>8.69</m_delay>
 				<m_topoIndex>287</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -15984,7 +15984,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>56</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -15997,7 +15997,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.31</m_delay>
+				<m_delay>3.36</m_delay>
 				<m_topoIndex>288</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -16033,7 +16033,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -16496,7 +16496,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -16568,7 +16568,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>16</content>
+				<content>20</content>
 			</item>
 			<item class_id_reference="16" object_id="_373">
 				<Value>
@@ -16591,7 +16591,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>55</content>
+				<content>57</content>
 			</item>
 			<item class_id_reference="16" object_id="_374">
 				<Value>
@@ -18132,7 +18132,7 @@
 				<Obj>
 					<type>3</type>
 					<id>124</id>
-					<name>_ZNK13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0</name>
+					<name>_ZNK13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEngEv.exit79.0</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -18338,7 +18338,7 @@
 				<Obj>
 					<type>3</type>
 					<id>244</id>
-					<name>_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0</name>
+					<name>_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -19956,7 +19956,7 @@
 				<Obj>
 					<type>3</type>
 					<id>447</id>
-					<name>_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128</name>
+					<name>_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i40.0128</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

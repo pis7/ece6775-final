@@ -6401,7 +6401,7 @@ typedef ap_uint<32> bit32_t;
 typedef ap_int<32> sbit32_t;
 typedef ap_uint<64> bit64_t;
 typedef ap_fixed<32, 14> st_fixed32_t;
-typedef ap_fixed<40, 24> attn_fixed_t;
+typedef ap_fixed<38, 18> attn_fixed_t;
 # 10 "./model.h" 2
 
 const int CACHE_SIZE_INIT = 5;

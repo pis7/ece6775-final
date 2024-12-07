@@ -352,10 +352,10 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_1_begin:8  br label %2
 
 <Node id="26" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_79 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
+:2  %empty_72 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
 
 ]]></Node>
-<StgValue><ssdm name="empty_79"/></StgValue>
+<StgValue><ssdm name="empty_72"/></StgValue>
 </operation>
 
 <operation id="25" st_id="3" stage="1" lat="1">
@@ -558,10 +558,10 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_begin:9  br label %3
 
 <Node id="86" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:0  %empty_82 = call i32 (...)* @_ssdm_op_SpecRegionEnd([31 x i8]* @p_str1821, i32 %tmp)
+TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:0  %empty_75 = call i32 (...)* @_ssdm_op_SpecRegionEnd([31 x i8]* @p_str1821, i32 %tmp)
 
 ]]></Node>
-<StgValue><ssdm name="empty_82"/></StgValue>
+<StgValue><ssdm name="empty_75"/></StgValue>
 </operation>
 
 <operation id="38" st_id="3" stage="1" lat="1">
@@ -622,10 +622,10 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:1  br label %1
 
 <Node id="43" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_80 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 24, i64 24, i64 24)
+:2  %empty_73 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 24, i64 24, i64 24)
 
 ]]></Node>
-<StgValue><ssdm name="empty_80"/></StgValue>
+<StgValue><ssdm name="empty_73"/></StgValue>
 </operation>
 
 <operation id="42" st_id="4" stage="1" lat="1">
@@ -714,9 +714,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:1  br label %1
 </and_exp></or_exp>
 </condition>
 
-<Node id="51" bw="10" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="51" bw="10" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:4  %input_V_addr = getelementptr [576 x i40]* %input_V, i64 0, i64 %zext_ln203_5
+:4  %input_V_addr = getelementptr [576 x i38]* %input_V, i64 0, i64 %zext_ln203_5
 
 ]]></Node>
 <StgValue><ssdm name="input_V_addr"/></StgValue>
@@ -730,9 +730,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:1  br label %1
 </and_exp></or_exp>
 </condition>
 
-<Node id="52" bw="40" op_0_bw="10">
+<Node id="52" bw="38" op_0_bw="10">
 <![CDATA[
-:5  %input_V_load = load i40* %input_V_addr, align 8
+:5  %input_V_load = load i38* %input_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_V_load"/></StgValue>
@@ -892,10 +892,10 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:1  br label %1
 
 <Node id="83" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:0  %empty_81 = call i32 (...)* @_ssdm_op_SpecRegionEnd([31 x i8]* @p_str1822, i32 %tmp_1)
+TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:0  %empty_74 = call i32 (...)* @_ssdm_op_SpecRegionEnd([31 x i8]* @p_str1822, i32 %tmp_1)
 
 ]]></Node>
-<StgValue><ssdm name="empty_81"/></StgValue>
+<StgValue><ssdm name="empty_74"/></StgValue>
 </operation>
 
 <operation id="59" st_id="4" stage="1" lat="1">
@@ -939,9 +939,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="52" bw="40" op_0_bw="10">
+<Node id="52" bw="38" op_0_bw="10">
 <![CDATA[
-:5  %input_V_load = load i40* %input_V_addr, align 8
+:5  %input_V_load = load i38* %input_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_V_load"/></StgValue>
@@ -969,9 +969,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="63" bw="8" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="63" bw="8" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:16  %output_0_V_addr = getelementptr [144 x i40]* %output_0_V, i64 0, i64 %zext_ln203_7
+:16  %output_0_V_addr = getelementptr [144 x i38]* %output_0_V, i64 0, i64 %zext_ln203_7
 
 ]]></Node>
 <StgValue><ssdm name="output_0_V_addr"/></StgValue>
@@ -984,9 +984,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="8" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="64" bw="8" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:17  %output_1_V_addr = getelementptr [144 x i40]* %output_1_V, i64 0, i64 %zext_ln203_7
+:17  %output_1_V_addr = getelementptr [144 x i38]* %output_1_V, i64 0, i64 %zext_ln203_7
 
 ]]></Node>
 <StgValue><ssdm name="output_1_V_addr"/></StgValue>
@@ -999,9 +999,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="65" bw="8" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="65" bw="8" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:18  %output_2_V_addr = getelementptr [144 x i40]* %output_2_V, i64 0, i64 %zext_ln203_7
+:18  %output_2_V_addr = getelementptr [144 x i38]* %output_2_V, i64 0, i64 %zext_ln203_7
 
 ]]></Node>
 <StgValue><ssdm name="output_2_V_addr"/></StgValue>
@@ -1014,9 +1014,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="8" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="66" bw="8" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:19  %output_3_V_addr = getelementptr [144 x i40]* %output_3_V, i64 0, i64 %zext_ln203_7
+:19  %output_3_V_addr = getelementptr [144 x i38]* %output_3_V, i64 0, i64 %zext_ln203_7
 
 ]]></Node>
 <StgValue><ssdm name="output_3_V_addr"/></StgValue>
@@ -1049,9 +1049,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 </and_exp></or_exp>
 </condition>
 
-<Node id="69" bw="0" op_0_bw="40" op_1_bw="8">
+<Node id="69" bw="0" op_0_bw="38" op_1_bw="8">
 <![CDATA[
-branch2:0  store i40 %input_V_load, i40* %output_2_V_addr, align 8
+branch2:0  store i38 %input_V_load, i38* %output_2_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln218"/></StgValue>
@@ -1081,9 +1081,9 @@ branch2:1  br label %5
 </and_exp></or_exp>
 </condition>
 
-<Node id="72" bw="0" op_0_bw="40" op_1_bw="8">
+<Node id="72" bw="0" op_0_bw="38" op_1_bw="8">
 <![CDATA[
-branch1:0  store i40 %input_V_load, i40* %output_1_V_addr, align 8
+branch1:0  store i38 %input_V_load, i38* %output_1_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln218"/></StgValue>
@@ -1113,9 +1113,9 @@ branch1:1  br label %5
 </and_exp></or_exp>
 </condition>
 
-<Node id="75" bw="0" op_0_bw="40" op_1_bw="8">
+<Node id="75" bw="0" op_0_bw="38" op_1_bw="8">
 <![CDATA[
-branch0:0  store i40 %input_V_load, i40* %output_0_V_addr, align 8
+branch0:0  store i38 %input_V_load, i38* %output_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln218"/></StgValue>
@@ -1145,9 +1145,9 @@ branch0:1  br label %5
 </and_exp></or_exp>
 </condition>
 
-<Node id="78" bw="0" op_0_bw="40" op_1_bw="8">
+<Node id="78" bw="0" op_0_bw="38" op_1_bw="8">
 <![CDATA[
-branch3:0  store i40 %input_V_load, i40* %output_3_V_addr, align 8
+branch3:0  store i38 %input_V_load, i38* %output_3_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln218"/></StgValue>

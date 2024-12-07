@@ -25,7 +25,7 @@ struct init_2d_mem : public sc_module {
     sc_out< sc_lv<9> > mem_0_V_address0;
     sc_out< sc_logic > mem_0_V_ce0;
     sc_out< sc_logic > mem_0_V_we0;
-    sc_out< sc_lv<40> > mem_0_V_d0;
+    sc_out< sc_lv<38> > mem_0_V_d0;
 
 
     // Module declarations
@@ -52,7 +52,7 @@ struct init_2d_mem : public sc_module {
     static const sc_lv<32> ap_const_lv32_1;
     static const sc_lv<9> ap_const_lv9_0;
     static const sc_lv<1> ap_const_lv1_0;
-    static const sc_lv<40> ap_const_lv40_0;
+    static const sc_lv<38> ap_const_lv38_0;
     static const sc_lv<9> ap_const_lv9_180;
     static const sc_lv<9> ap_const_lv9_1;
     static const sc_lv<1> ap_const_lv1_1;

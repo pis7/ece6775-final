@@ -20,7 +20,7 @@ port (
     mem_0_V_address0 : OUT STD_LOGIC_VECTOR (6 downto 0);
     mem_0_V_ce0 : OUT STD_LOGIC;
     mem_0_V_we0 : OUT STD_LOGIC;
-    mem_0_V_d0 : OUT STD_LOGIC_VECTOR (39 downto 0) );
+    mem_0_V_d0 : OUT STD_LOGIC_VECTOR (37 downto 0) );
 end;
 
 
@@ -33,7 +33,7 @@ architecture behav of init_2d_mem is
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant ap_const_lv7_0 : STD_LOGIC_VECTOR (6 downto 0) := "0000000";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    constant ap_const_lv40_0 : STD_LOGIC_VECTOR (39 downto 0) := "0000000000000000000000000000000000000000";
+    constant ap_const_lv38_0 : STD_LOGIC_VECTOR (37 downto 0) := "00000000000000000000000000000000000000";
     constant ap_const_lv7_60 : STD_LOGIC_VECTOR (6 downto 0) := "1100000";
     constant ap_const_lv7_1 : STD_LOGIC_VECTOR (6 downto 0) := "0000001";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
@@ -145,7 +145,7 @@ begin
         end if; 
     end process;
 
-    mem_0_V_d0 <= ap_const_lv40_0;
+    mem_0_V_d0 <= ap_const_lv38_0;
 
     mem_0_V_we0_assign_proc : process(ap_CS_fsm_state2, icmp_ln25_fu_51_p2)
     begin

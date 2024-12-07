@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'cache_update_1'" level="0">
-<item name = "Date">Fri Dec  6 14:33:06 2024
+<item name = "Date">Fri Dec  6 23:49:07 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_64th.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.069 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 7.853 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -50,7 +50,7 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 257, -</column>
+<column name="Expression">-, -, 0, 255, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">2, -, 0, 0, -</column>
@@ -72,7 +72,7 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="v_cache_V_U">cache_update_1_v_lbW, 2, 0, 0, 0, 720, 23, 1, 16560</column>
+<column name="v_cache_V_U">cache_update_1_v_kbM, 2, 0, 0, 0, 720, 27, 1, 19440</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -98,7 +98,7 @@
 <column name="icmp_ln202_fu_222_p2">icmp, 0, 0, 9, 3, 3</column>
 <column name="icmp_ln203_fu_314_p2">icmp, 0, 0, 9, 4, 4</column>
 <column name="icmp_ln204_fu_308_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="cache_out_V_d0">select, 0, 0, 40, 1, 40</column>
+<column name="cache_out_V_d0">select, 0, 0, 38, 1, 38</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -143,10 +143,10 @@
 <column name="cache_out_V_address0">out, 8, ap_memory, cache_out_V, array</column>
 <column name="cache_out_V_ce0">out, 1, ap_memory, cache_out_V, array</column>
 <column name="cache_out_V_we0">out, 1, ap_memory, cache_out_V, array</column>
-<column name="cache_out_V_d0">out, 40, ap_memory, cache_out_V, array</column>
+<column name="cache_out_V_d0">out, 38, ap_memory, cache_out_V, array</column>
 <column name="update_0_V_address0">out, 5, ap_memory, update_0_V, array</column>
 <column name="update_0_V_ce0">out, 1, ap_memory, update_0_V, array</column>
-<column name="update_0_V_q0">in, 40, ap_memory, update_0_V, array</column>
+<column name="update_0_V_q0">in, 38, ap_memory, update_0_V, array</column>
 </table>
 </item>
 </section>

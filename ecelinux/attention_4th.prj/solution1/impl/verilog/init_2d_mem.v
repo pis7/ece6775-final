@@ -32,7 +32,7 @@ output   ap_ready;
 output  [8:0] mem_0_V_address0;
 output   mem_0_V_ce0;
 output   mem_0_V_we0;
-output  [39:0] mem_0_V_d0;
+output  [37:0] mem_0_V_d0;
 
 reg ap_done;
 reg ap_idle;
@@ -142,7 +142,7 @@ assign icmp_ln25_fu_51_p2 = ((j_0_0_reg_40 == 9'd384) ? 1'b1 : 1'b0);
 
 assign mem_0_V_address0 = zext_ln26_fu_63_p1;
 
-assign mem_0_V_d0 = 40'd0;
+assign mem_0_V_d0 = 38'd0;
 
 assign zext_ln26_fu_63_p1 = j_0_0_reg_40;
 

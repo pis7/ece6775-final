@@ -28,7 +28,7 @@
               <rtlName/>
               <coreName>RAM</coreName>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>1</if_type>
@@ -56,7 +56,7 @@
               <rtlName/>
               <coreName>RAM</coreName>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>1</if_type>
@@ -356,7 +356,7 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>tmp_63</name>
+              <name>tmp_57</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>204</lineNumber>
@@ -380,7 +380,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_63_fu_154_p3</rtlName>
+              <rtlName>tmp_57_fu_154_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -551,7 +551,7 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>tmp_64</name>
+              <name>tmp_58</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>204</lineNumber>
@@ -575,7 +575,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_64_fu_176_p3</rtlName>
+              <rtlName>tmp_58_fu_176_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>5</bitwidth>
@@ -649,7 +649,7 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>tmp_65</name>
+              <name>tmp_59</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>204</lineNumber>
@@ -673,7 +673,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_65_fu_188_p3</rtlName>
+              <rtlName>tmp_59_fu_188_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>3</bitwidth>
@@ -844,7 +844,7 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>tmp_66</name>
+              <name>tmp_60</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>204</lineNumber>
@@ -868,7 +868,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_66_fu_210_p3</rtlName>
+              <rtlName>tmp_60_fu_210_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -1419,7 +1419,7 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>tmp_85</name>
+              <name>tmp_87</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>204</lineNumber>
@@ -1443,7 +1443,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_85_fu_261_p3</rtlName>
+              <rtlName>tmp_87_fu_261_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>7</bitwidth>
@@ -2706,7 +2706,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -2754,7 +2754,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>20</bitwidth>
+            <bitwidth>24</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -2802,7 +2802,7 @@
               <rtlName>sext_ln203_3_fu_369_p1</rtlName>
               <coreName/>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -2850,7 +2850,7 @@
               <rtlName>cache_out_V_d0</rtlName>
               <coreName/>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <oprand_edges>
             <count>3</count>
@@ -2864,7 +2864,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.56</m_delay>
+          <m_delay>1.34</m_delay>
           <m_topoIndex>61</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5492,11 +5492,11 @@
             </item>
             <item>
               <first>(1P1)</first>
-              <second>40</second>
+              <second>38</second>
             </item>
             <item>
               <first>(2P2)</first>
-              <second>40</second>
+              <second>38</second>
             </item>
             <item>
               <first>FF</first>
@@ -5504,7 +5504,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>40</second>
+              <second>38</second>
             </item>
           </second>
         </item>
@@ -5780,7 +5780,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>20</second>
+              <second>24</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -5788,7 +5788,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>2400</second>
+              <second>2880</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -7533,7 +7533,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_63_fu_154</first>
+        <first>tmp_57_fu_154</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7541,7 +7541,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_64_fu_176</first>
+        <first>tmp_58_fu_176</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7549,7 +7549,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_65_fu_188</first>
+        <first>tmp_59_fu_188</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7557,7 +7557,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_66_fu_210</first>
+        <first>tmp_60_fu_210</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7565,7 +7565,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_85_fu_261</first>
+        <first>tmp_87_fu_261</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -11,9 +11,9 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
+#include "apply_rotary_pos_fYi.h"
 #include "apply_rotary_pos_g8j.h"
 #include "apply_rotary_pos_hbi.h"
-#include "apply_rotary_pos_ibs.h"
 
 namespace ap_rtl {
 
@@ -27,24 +27,24 @@ struct apply_rotary_pos_emb : public sc_module {
     sc_out< sc_logic > ap_ready;
     sc_out< sc_lv<5> > input_q_0_V_address0;
     sc_out< sc_logic > input_q_0_V_ce0;
-    sc_in< sc_lv<40> > input_q_0_V_q0;
+    sc_in< sc_lv<38> > input_q_0_V_q0;
     sc_out< sc_lv<5> > input_q_0_V_address1;
     sc_out< sc_logic > input_q_0_V_ce1;
-    sc_in< sc_lv<40> > input_q_0_V_q1;
+    sc_in< sc_lv<38> > input_q_0_V_q1;
     sc_out< sc_lv<5> > input_k_0_V_address0;
     sc_out< sc_logic > input_k_0_V_ce0;
-    sc_in< sc_lv<40> > input_k_0_V_q0;
+    sc_in< sc_lv<38> > input_k_0_V_q0;
     sc_out< sc_lv<5> > input_k_0_V_address1;
     sc_out< sc_logic > input_k_0_V_ce1;
-    sc_in< sc_lv<40> > input_k_0_V_q1;
+    sc_in< sc_lv<38> > input_k_0_V_q1;
     sc_out< sc_lv<5> > output_q_0_V_address0;
     sc_out< sc_logic > output_q_0_V_ce0;
     sc_out< sc_logic > output_q_0_V_we0;
-    sc_out< sc_lv<40> > output_q_0_V_d0;
+    sc_out< sc_lv<38> > output_q_0_V_d0;
     sc_out< sc_lv<5> > output_k_0_V_address0;
     sc_out< sc_logic > output_k_0_V_ce0;
     sc_out< sc_logic > output_k_0_V_we0;
-    sc_out< sc_lv<40> > output_k_0_V_d0;
+    sc_out< sc_lv<38> > output_k_0_V_d0;
 
 
     // Module declarations
@@ -55,18 +55,18 @@ struct apply_rotary_pos_emb : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    apply_rotary_pos_g8j* cos_tab_V_5_U;
-    apply_rotary_pos_hbi* sin_tab_V_5_U;
-    apply_rotary_pos_ibs* rotated_q_0_V_U;
-    apply_rotary_pos_ibs* rotated_k_0_V_U;
+    apply_rotary_pos_fYi* cos_tab_V_5_U;
+    apply_rotary_pos_g8j* sin_tab_V_5_U;
+    apply_rotary_pos_hbi* rotated_q_0_V_U;
+    apply_rotary_pos_hbi* rotated_k_0_V_U;
     sc_signal< sc_lv<9> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<7> > cos_tab_V_5_address0;
     sc_signal< sc_logic > cos_tab_V_5_ce0;
-    sc_signal< sc_lv<17> > cos_tab_V_5_q0;
+    sc_signal< sc_lv<21> > cos_tab_V_5_q0;
     sc_signal< sc_lv<7> > sin_tab_V_5_address0;
     sc_signal< sc_logic > sin_tab_V_5_ce0;
-    sc_signal< sc_lv<17> > sin_tab_V_5_q0;
+    sc_signal< sc_lv<21> > sin_tab_V_5_q0;
     sc_signal< sc_lv<2> > i_fu_312_p2;
     sc_signal< sc_lv<2> > i_reg_558;
     sc_signal< sc_logic > ap_CS_fsm_state2;
@@ -93,35 +93,35 @@ struct apply_rotary_pos_emb : public sc_module {
     sc_signal< sc_lv<64> > sext_ln1116_fu_475_p1;
     sc_signal< sc_lv<64> > sext_ln1116_reg_630;
     sc_signal< sc_lv<1> > icmp_ln182_fu_448_p2;
-    sc_signal< sc_lv<17> > cos_tab_V_5_load_reg_666;
+    sc_signal< sc_lv<21> > cos_tab_V_5_load_reg_666;
     sc_signal< sc_logic > ap_CS_fsm_state7;
-    sc_signal< sc_lv<40> > input_q_0_V_load_2_reg_671;
-    sc_signal< sc_lv<17> > sin_tab_V_5_load_reg_676;
-    sc_signal< sc_lv<40> > rotated_q_0_V_q0;
-    sc_signal< sc_lv<40> > rotated_q_0_V_load_reg_681;
-    sc_signal< sc_lv<40> > input_k_0_V_load_2_reg_686;
-    sc_signal< sc_lv<40> > rotated_k_0_V_q0;
-    sc_signal< sc_lv<40> > rotated_k_0_V_load_reg_691;
-    sc_signal< sc_lv<56> > mul_ln1118_fu_489_p2;
-    sc_signal< sc_lv<56> > mul_ln1118_reg_696;
+    sc_signal< sc_lv<38> > input_q_0_V_load_2_reg_671;
+    sc_signal< sc_lv<21> > sin_tab_V_5_load_reg_676;
+    sc_signal< sc_lv<38> > rotated_q_0_V_q0;
+    sc_signal< sc_lv<38> > rotated_q_0_V_load_reg_681;
+    sc_signal< sc_lv<38> > input_k_0_V_load_2_reg_686;
+    sc_signal< sc_lv<38> > rotated_k_0_V_q0;
+    sc_signal< sc_lv<38> > rotated_k_0_V_load_reg_691;
+    sc_signal< sc_lv<58> > mul_ln1118_fu_489_p2;
+    sc_signal< sc_lv<58> > mul_ln1118_reg_696;
     sc_signal< sc_logic > ap_CS_fsm_state8;
-    sc_signal< sc_lv<56> > mul_ln1118_4_fu_501_p2;
-    sc_signal< sc_lv<56> > mul_ln1118_4_reg_701;
-    sc_signal< sc_lv<56> > mul_ln1118_5_fu_510_p2;
-    sc_signal< sc_lv<56> > mul_ln1118_5_reg_706;
-    sc_signal< sc_lv<56> > mul_ln1118_6_fu_519_p2;
-    sc_signal< sc_lv<56> > mul_ln1118_6_reg_711;
+    sc_signal< sc_lv<58> > mul_ln1118_4_fu_501_p2;
+    sc_signal< sc_lv<58> > mul_ln1118_4_reg_701;
+    sc_signal< sc_lv<58> > mul_ln1118_5_fu_510_p2;
+    sc_signal< sc_lv<58> > mul_ln1118_5_reg_706;
+    sc_signal< sc_lv<58> > mul_ln1118_6_fu_519_p2;
+    sc_signal< sc_lv<58> > mul_ln1118_6_reg_711;
     sc_signal< sc_lv<5> > rotated_q_0_V_address0;
     sc_signal< sc_logic > rotated_q_0_V_ce0;
     sc_signal< sc_logic > rotated_q_0_V_we0;
-    sc_signal< sc_lv<40> > rotated_q_0_V_d0;
+    sc_signal< sc_lv<38> > rotated_q_0_V_d0;
     sc_signal< sc_lv<5> > rotated_q_0_V_address1;
     sc_signal< sc_logic > rotated_q_0_V_ce1;
     sc_signal< sc_logic > rotated_q_0_V_we1;
     sc_signal< sc_lv<5> > rotated_k_0_V_address0;
     sc_signal< sc_logic > rotated_k_0_V_ce0;
     sc_signal< sc_logic > rotated_k_0_V_we0;
-    sc_signal< sc_lv<40> > rotated_k_0_V_d0;
+    sc_signal< sc_lv<38> > rotated_k_0_V_d0;
     sc_signal< sc_lv<5> > rotated_k_0_V_address1;
     sc_signal< sc_logic > rotated_k_0_V_ce1;
     sc_signal< sc_logic > rotated_k_0_V_we1;
@@ -132,8 +132,8 @@ struct apply_rotary_pos_emb : public sc_module {
     sc_signal< sc_lv<4> > k16_0_0_reg_295;
     sc_signal< sc_logic > ap_CS_fsm_state9;
     sc_signal< sc_lv<64> > zext_ln183_fu_460_p1;
-    sc_signal< sc_lv<4> > tmp_72_fu_326_p3;
-    sc_signal< sc_lv<6> > tmp_71_fu_318_p3;
+    sc_signal< sc_lv<4> > tmp_66_fu_326_p3;
+    sc_signal< sc_lv<6> > tmp_65_fu_318_p3;
     sc_signal< sc_lv<6> > zext_ln1265_fu_334_p1;
     sc_signal< sc_lv<6> > zext_ln203_fu_360_p1;
     sc_signal< sc_lv<6> > add_ln203_fu_364_p2;
@@ -141,23 +141,23 @@ struct apply_rotary_pos_emb : public sc_module {
     sc_signal< sc_lv<4> > add_ln171_fu_375_p2;
     sc_signal< sc_lv<6> > zext_ln1265_3_fu_381_p1;
     sc_signal< sc_lv<6> > add_ln1265_fu_385_p2;
-    sc_signal< sc_lv<4> > tmp_74_fu_430_p3;
-    sc_signal< sc_lv<6> > tmp_73_fu_422_p3;
+    sc_signal< sc_lv<4> > tmp_68_fu_430_p3;
+    sc_signal< sc_lv<6> > tmp_67_fu_422_p3;
     sc_signal< sc_lv<6> > zext_ln1116_fu_438_p1;
-    sc_signal< sc_lv<6> > zext_ln1116_2_fu_466_p1;
+    sc_signal< sc_lv<6> > zext_ln1116_1_fu_466_p1;
     sc_signal< sc_lv<6> > add_ln1116_fu_470_p2;
-    sc_signal< sc_lv<40> > mul_ln1118_fu_489_p0;
-    sc_signal< sc_lv<17> > mul_ln1118_fu_489_p1;
-    sc_signal< sc_lv<56> > sext_ln1118_5_fu_486_p1;
-    sc_signal< sc_lv<40> > mul_ln1118_4_fu_501_p0;
-    sc_signal< sc_lv<17> > mul_ln1118_4_fu_501_p1;
-    sc_signal< sc_lv<56> > sext_ln1118_7_fu_498_p1;
-    sc_signal< sc_lv<40> > mul_ln1118_5_fu_510_p0;
-    sc_signal< sc_lv<17> > mul_ln1118_5_fu_510_p1;
-    sc_signal< sc_lv<40> > mul_ln1118_6_fu_519_p0;
-    sc_signal< sc_lv<17> > mul_ln1118_6_fu_519_p1;
-    sc_signal< sc_lv<56> > add_ln1192_fu_525_p2;
-    sc_signal< sc_lv<56> > add_ln1192_1_fu_540_p2;
+    sc_signal< sc_lv<38> > mul_ln1118_fu_489_p0;
+    sc_signal< sc_lv<21> > mul_ln1118_fu_489_p1;
+    sc_signal< sc_lv<58> > sext_ln1118_6_fu_486_p1;
+    sc_signal< sc_lv<38> > mul_ln1118_4_fu_501_p0;
+    sc_signal< sc_lv<21> > mul_ln1118_4_fu_501_p1;
+    sc_signal< sc_lv<58> > sext_ln1118_8_fu_498_p1;
+    sc_signal< sc_lv<38> > mul_ln1118_5_fu_510_p0;
+    sc_signal< sc_lv<21> > mul_ln1118_5_fu_510_p1;
+    sc_signal< sc_lv<38> > mul_ln1118_6_fu_519_p0;
+    sc_signal< sc_lv<21> > mul_ln1118_6_fu_519_p1;
+    sc_signal< sc_lv<58> > add_ln1192_fu_525_p2;
+    sc_signal< sc_lv<58> > add_ln1192_1_fu_540_p2;
     sc_signal< sc_lv<9> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
@@ -189,11 +189,11 @@ struct apply_rotary_pos_emb : public sc_module {
     static const sc_lv<3> ap_const_lv3_6;
     static const sc_lv<3> ap_const_lv3_1;
     static const sc_lv<4> ap_const_lv4_6;
-    static const sc_lv<40> ap_const_lv40_0;
+    static const sc_lv<38> ap_const_lv38_0;
     static const sc_lv<4> ap_const_lv4_C;
     static const sc_lv<4> ap_const_lv4_1;
-    static const sc_lv<32> ap_const_lv32_10;
-    static const sc_lv<32> ap_const_lv32_37;
+    static const sc_lv<32> ap_const_lv32_14;
+    static const sc_lv<32> ap_const_lv32_39;
     static const bool ap_const_boolean_1;
     // Thread declarations
     void thread_ap_clk_no_reset_();
@@ -268,19 +268,19 @@ struct apply_rotary_pos_emb : public sc_module {
     void thread_rotated_q_0_V_we0();
     void thread_rotated_q_0_V_we1();
     void thread_sext_ln1116_fu_475_p1();
-    void thread_sext_ln1118_5_fu_486_p1();
-    void thread_sext_ln1118_7_fu_498_p1();
+    void thread_sext_ln1118_6_fu_486_p1();
+    void thread_sext_ln1118_8_fu_498_p1();
     void thread_sext_ln1265_fu_390_p1();
     void thread_sext_ln203_fu_369_p1();
     void thread_sin_tab_V_5_address0();
     void thread_sin_tab_V_5_ce0();
     void thread_sub_ln1116_fu_442_p2();
     void thread_sub_ln1265_fu_338_p2();
-    void thread_tmp_71_fu_318_p3();
-    void thread_tmp_72_fu_326_p3();
-    void thread_tmp_73_fu_422_p3();
-    void thread_tmp_74_fu_430_p3();
-    void thread_zext_ln1116_2_fu_466_p1();
+    void thread_tmp_65_fu_318_p3();
+    void thread_tmp_66_fu_326_p3();
+    void thread_tmp_67_fu_422_p3();
+    void thread_tmp_68_fu_430_p3();
+    void thread_zext_ln1116_1_fu_466_p1();
     void thread_zext_ln1116_fu_438_p1();
     void thread_zext_ln1265_3_fu_381_p1();
     void thread_zext_ln1265_fu_334_p1();

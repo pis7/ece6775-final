@@ -14,12 +14,12 @@ set isEnableWaveformDebug 1
 set C_modelName {rms_norm<1536>}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ input_0_V int 40 regular {array 1536 { 2 3 } 1 1 }  }
-	{ weight_V int 40 regular {array 1536 { 1 3 } 1 1 }  }
+	{ input_0_V int 38 regular {array 1536 { 2 3 } 1 1 }  }
+	{ weight_V int 38 regular {array 1536 { 1 3 } 1 1 }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "input_0_V", "interface" : "memory", "bitwidth" : 40, "direction" : "READWRITE"} , 
- 	{ "Name" : "weight_V", "interface" : "memory", "bitwidth" : 40, "direction" : "READONLY"} ]}
+	{ "Name" : "input_0_V", "interface" : "memory", "bitwidth" : 38, "direction" : "READWRITE"} , 
+ 	{ "Name" : "weight_V", "interface" : "memory", "bitwidth" : 38, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
 set portNum 14
 set portList { 
@@ -32,11 +32,11 @@ set portList {
 	{ input_0_V_address0 sc_out sc_lv 11 signal 0 } 
 	{ input_0_V_ce0 sc_out sc_logic 1 signal 0 } 
 	{ input_0_V_we0 sc_out sc_logic 1 signal 0 } 
-	{ input_0_V_d0 sc_out sc_lv 40 signal 0 } 
-	{ input_0_V_q0 sc_in sc_lv 40 signal 0 } 
+	{ input_0_V_d0 sc_out sc_lv 38 signal 0 } 
+	{ input_0_V_q0 sc_in sc_lv 38 signal 0 } 
 	{ weight_V_address0 sc_out sc_lv 11 signal 1 } 
 	{ weight_V_ce0 sc_out sc_logic 1 signal 1 } 
-	{ weight_V_q0 sc_in sc_lv 40 signal 1 } 
+	{ weight_V_q0 sc_in sc_lv 38 signal 1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -48,20 +48,20 @@ set NewPortList {[
  	{ "name": "input_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "input_0_V", "role": "address0" }} , 
  	{ "name": "input_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_0_V", "role": "ce0" }} , 
  	{ "name": "input_0_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_0_V", "role": "we0" }} , 
- 	{ "name": "input_0_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "input_0_V", "role": "d0" }} , 
- 	{ "name": "input_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "input_0_V", "role": "q0" }} , 
+ 	{ "name": "input_0_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "input_0_V", "role": "d0" }} , 
+ 	{ "name": "input_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "input_0_V", "role": "q0" }} , 
  	{ "name": "weight_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "weight_V", "role": "address0" }} , 
  	{ "name": "weight_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "weight_V", "role": "ce0" }} , 
- 	{ "name": "weight_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "weight_V", "role": "q0" }}  ]}
+ 	{ "name": "weight_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "weight_V", "role": "q0" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"],
 		"CDFG" : "rms_norm_1536_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "20028", "EstimateLatencyMax" : "20028",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "20039", "EstimateLatencyMax" : "20039",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -71,13 +71,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_0_V", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "weight_V", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_sqrt_fixed_42_26_s_fu_127", "Parent" : "0",
-		"CDFG" : "sqrt_fixed_42_26_s",
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_sqrt_fixed_40_20_s_fu_129", "Parent" : "0",
+		"CDFG" : "sqrt_fixed_40_20_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "1",
-		"VariableLatency" : "0", "ExactLatency" : "17", "EstimateLatencyMin" : "17", "EstimateLatencyMax" : "17",
+		"VariableLatency" : "0", "ExactLatency" : "20", "EstimateLatencyMin" : "20", "EstimateLatencyMax" : "20",
 		"Combinational" : "0",
 		"Datapath" : "1",
 		"ClockEnable" : "0",
@@ -86,29 +86,28 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
 			{"Name" : "x_V", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_mul_40s_42ns_bkb_U2", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_udiv_33s_29nscud_U3", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_mul_72s_40s_7dEe_U4", "Parent" : "0"}]}
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_udiv_41s_30nsbkb_U2", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_mul_76s_38s_7cud_U3", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	rms_norm_1536_s {
-		input_0_V {Type IO LastRead 61 FirstWrite 68}
-		weight_V {Type I LastRead 60 FirstWrite -1}}
-	sqrt_fixed_42_26_s {
+		input_0_V {Type IO LastRead 72 FirstWrite 79}
+		weight_V {Type I LastRead 71 FirstWrite -1}}
+	sqrt_fixed_40_20_s {
 		x_V {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "20028", "Max" : "20028"}
-	, {"Name" : "Interval", "Min" : "20028", "Max" : "20028"}
+	{"Name" : "Latency", "Min" : "20039", "Max" : "20039"}
+	, {"Name" : "Interval", "Min" : "20039", "Max" : "20039"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	input_0_V { ap_memory {  { input_0_V_address0 mem_address 1 11 }  { input_0_V_ce0 mem_ce 1 1 }  { input_0_V_we0 mem_we 1 1 }  { input_0_V_d0 mem_din 1 40 }  { input_0_V_q0 mem_dout 0 40 } } }
-	weight_V { ap_memory {  { weight_V_address0 mem_address 1 11 }  { weight_V_ce0 mem_ce 1 1 }  { weight_V_q0 mem_dout 0 40 } } }
+	input_0_V { ap_memory {  { input_0_V_address0 mem_address 1 11 }  { input_0_V_ce0 mem_ce 1 1 }  { input_0_V_we0 mem_we 1 1 }  { input_0_V_d0 mem_din 1 38 }  { input_0_V_q0 mem_dout 0 38 } } }
+	weight_V { ap_memory {  { weight_V_address0 mem_address 1 11 }  { weight_V_ce0 mem_ce 1 1 }  { weight_V_q0 mem_dout 0 38 } } }
 }

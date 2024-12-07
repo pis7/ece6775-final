@@ -10,7 +10,7 @@ use ieee.std_logic_unsigned.all;
 entity dut_output_0_ram is 
     generic(
             MEM_TYPE    : string := "block"; 
-            DWIDTH     : integer := 40; 
+            DWIDTH     : integer := 38; 
             AWIDTH     : integer := 7; 
             MEM_SIZE    : integer := 96
     ); 
@@ -87,7 +87,7 @@ use IEEE.std_logic_1164.all;
 
 entity dut_output_0 is
     generic (
-        DataWidth : INTEGER := 40;
+        DataWidth : INTEGER := 38;
         AddressRange : INTEGER := 96;
         AddressWidth : INTEGER := 7);
     port (

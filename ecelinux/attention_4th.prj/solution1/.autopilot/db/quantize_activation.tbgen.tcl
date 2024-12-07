@@ -12,9 +12,9 @@ set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
 set C_modelName {quantize_activation}
-set C_modelType { int 40 }
+set C_modelType { int 38 }
 set C_modelArgList {
-	{ input_0_V int 40 regular {array 384 { 1 1 } 1 1 }  }
+	{ input_0_V int 38 regular {array 384 { 1 1 } 1 1 }  }
 	{ output_states_0_0_0_V int 8 regular {array 6 { 0 3 } 0 1 }  }
 	{ output_states_0_1_0_V int 8 regular {array 6 { 0 3 } 0 1 }  }
 	{ output_states_0_2_0_V int 8 regular {array 6 { 0 3 } 0 1 }  }
@@ -81,7 +81,7 @@ set C_modelArgList {
 	{ output_states_15_3_0_V int 8 regular {array 6 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "input_0_V", "interface" : "memory", "bitwidth" : 40, "direction" : "READONLY"} , 
+	{ "Name" : "input_0_V", "interface" : "memory", "bitwidth" : 38, "direction" : "READONLY"} , 
  	{ "Name" : "output_states_0_0_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
  	{ "Name" : "output_states_0_1_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
  	{ "Name" : "output_states_0_2_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
@@ -146,7 +146,7 @@ set C_modelArgMapList {[
  	{ "Name" : "output_states_15_1_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
  	{ "Name" : "output_states_15_2_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
  	{ "Name" : "output_states_15_3_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 40} ]}
+ 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 38} ]}
 # RTL Port declarations: 
 set portNum 269
 set portList { 
@@ -158,10 +158,10 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ input_0_V_address0 sc_out sc_lv 9 signal 0 } 
 	{ input_0_V_ce0 sc_out sc_logic 1 signal 0 } 
-	{ input_0_V_q0 sc_in sc_lv 40 signal 0 } 
+	{ input_0_V_q0 sc_in sc_lv 38 signal 0 } 
 	{ input_0_V_address1 sc_out sc_lv 9 signal 0 } 
 	{ input_0_V_ce1 sc_out sc_logic 1 signal 0 } 
-	{ input_0_V_q1 sc_in sc_lv 40 signal 0 } 
+	{ input_0_V_q1 sc_in sc_lv 38 signal 0 } 
 	{ output_states_0_0_0_V_address0 sc_out sc_lv 3 signal 1 } 
 	{ output_states_0_0_0_V_ce0 sc_out sc_logic 1 signal 1 } 
 	{ output_states_0_0_0_V_we0 sc_out sc_logic 1 signal 1 } 
@@ -418,7 +418,7 @@ set portList {
 	{ output_states_15_3_0_V_ce0 sc_out sc_logic 1 signal 64 } 
 	{ output_states_15_3_0_V_we0 sc_out sc_logic 1 signal 64 } 
 	{ output_states_15_3_0_V_d0 sc_out sc_lv 8 signal 64 } 
-	{ ap_return sc_out sc_lv 40 signal -1 } 
+	{ ap_return sc_out sc_lv 38 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -429,10 +429,10 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "input_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "input_0_V", "role": "address0" }} , 
  	{ "name": "input_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_0_V", "role": "ce0" }} , 
- 	{ "name": "input_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "input_0_V", "role": "q0" }} , 
+ 	{ "name": "input_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "input_0_V", "role": "q0" }} , 
  	{ "name": "input_0_V_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "input_0_V", "role": "address1" }} , 
  	{ "name": "input_0_V_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_0_V", "role": "ce1" }} , 
- 	{ "name": "input_0_V_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "input_0_V", "role": "q1" }} , 
+ 	{ "name": "input_0_V_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "input_0_V", "role": "q1" }} , 
  	{ "name": "output_states_0_0_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "output_states_0_0_0_V", "role": "address0" }} , 
  	{ "name": "output_states_0_0_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_states_0_0_0_V", "role": "ce0" }} , 
  	{ "name": "output_states_0_0_0_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_states_0_0_0_V", "role": "we0" }} , 
@@ -689,7 +689,7 @@ set NewPortList {[
  	{ "name": "output_states_15_3_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_states_15_3_0_V", "role": "ce0" }} , 
  	{ "name": "output_states_15_3_0_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_states_15_3_0_V", "role": "we0" }} , 
  	{ "name": "output_states_15_3_0_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "output_states_15_3_0_V", "role": "d0" }} , 
- 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
+ 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
@@ -698,7 +698,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1784", "EstimateLatencyMax" : "1784",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1791", "EstimateLatencyMax" : "1791",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -771,89 +771,89 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_states_15_1_0_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "output_states_15_2_0_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "output_states_15_3_0_V", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_udiv_40ns_40neOg_U10", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_udiv_47s_37nsdEe_U8", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	quantize_activation {
-		input_0_V {Type I LastRead 50 FirstWrite -1}
-		output_states_0_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_0_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_0_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_0_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_1_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_1_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_1_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_1_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_2_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_2_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_2_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_2_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_3_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_3_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_3_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_3_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_4_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_4_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_4_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_4_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_5_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_5_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_5_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_5_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_6_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_6_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_6_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_6_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_7_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_7_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_7_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_7_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_8_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_8_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_8_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_8_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_9_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_9_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_9_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_9_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_10_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_10_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_10_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_10_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_11_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_11_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_11_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_11_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_12_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_12_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_12_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_12_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_13_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_13_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_13_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_13_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_14_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_14_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_14_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_14_3_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_15_0_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_15_1_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_15_2_0_V {Type O LastRead -1 FirstWrite 53}
-		output_states_15_3_0_V {Type O LastRead -1 FirstWrite 53}}}
+		input_0_V {Type I LastRead 57 FirstWrite -1}
+		output_states_0_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_0_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_0_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_0_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_1_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_1_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_1_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_1_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_2_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_2_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_2_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_2_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_3_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_3_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_3_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_3_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_4_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_4_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_4_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_4_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_5_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_5_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_5_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_5_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_6_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_6_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_6_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_6_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_7_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_7_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_7_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_7_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_8_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_8_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_8_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_8_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_9_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_9_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_9_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_9_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_10_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_10_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_10_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_10_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_11_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_11_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_11_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_11_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_12_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_12_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_12_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_12_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_13_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_13_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_13_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_13_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_14_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_14_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_14_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_14_3_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_15_0_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_15_1_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_15_2_0_V {Type O LastRead -1 FirstWrite 60}
+		output_states_15_3_0_V {Type O LastRead -1 FirstWrite 60}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1784", "Max" : "1784"}
-	, {"Name" : "Interval", "Min" : "1784", "Max" : "1784"}
+	{"Name" : "Latency", "Min" : "1791", "Max" : "1791"}
+	, {"Name" : "Interval", "Min" : "1791", "Max" : "1791"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	input_0_V { ap_memory {  { input_0_V_address0 mem_address 1 9 }  { input_0_V_ce0 mem_ce 1 1 }  { input_0_V_q0 mem_dout 0 40 }  { input_0_V_address1 MemPortADDR2 1 9 }  { input_0_V_ce1 MemPortCE2 1 1 }  { input_0_V_q1 MemPortDOUT2 0 40 } } }
+	input_0_V { ap_memory {  { input_0_V_address0 mem_address 1 9 }  { input_0_V_ce0 mem_ce 1 1 }  { input_0_V_q0 mem_dout 0 38 }  { input_0_V_address1 MemPortADDR2 1 9 }  { input_0_V_ce1 MemPortCE2 1 1 }  { input_0_V_q1 MemPortDOUT2 0 38 } } }
 	output_states_0_0_0_V { ap_memory {  { output_states_0_0_0_V_address0 mem_address 1 3 }  { output_states_0_0_0_V_ce0 mem_ce 1 1 }  { output_states_0_0_0_V_we0 mem_we 1 1 }  { output_states_0_0_0_V_d0 mem_din 1 8 } } }
 	output_states_0_1_0_V { ap_memory {  { output_states_0_1_0_V_address0 mem_address 1 3 }  { output_states_0_1_0_V_ce0 mem_ce 1 1 }  { output_states_0_1_0_V_we0 mem_we 1 1 }  { output_states_0_1_0_V_d0 mem_din 1 8 } } }
 	output_states_0_2_0_V { ap_memory {  { output_states_0_2_0_V_address0 mem_address 1 3 }  { output_states_0_2_0_V_ce0 mem_ce 1 1 }  { output_states_0_2_0_V_we0 mem_we 1 1 }  { output_states_0_2_0_V_d0 mem_din 1 8 } } }

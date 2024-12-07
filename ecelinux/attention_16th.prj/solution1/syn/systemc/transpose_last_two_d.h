@@ -24,23 +24,23 @@ struct transpose_last_two_d : public sc_module {
     sc_out< sc_logic > ap_ready;
     sc_out< sc_lv<10> > input_V_address0;
     sc_out< sc_logic > input_V_ce0;
-    sc_in< sc_lv<40> > input_V_q0;
+    sc_in< sc_lv<38> > input_V_q0;
     sc_out< sc_lv<8> > output_0_V_address0;
     sc_out< sc_logic > output_0_V_ce0;
     sc_out< sc_logic > output_0_V_we0;
-    sc_out< sc_lv<40> > output_0_V_d0;
+    sc_out< sc_lv<38> > output_0_V_d0;
     sc_out< sc_lv<8> > output_1_V_address0;
     sc_out< sc_logic > output_1_V_ce0;
     sc_out< sc_logic > output_1_V_we0;
-    sc_out< sc_lv<40> > output_1_V_d0;
+    sc_out< sc_lv<38> > output_1_V_d0;
     sc_out< sc_lv<8> > output_2_V_address0;
     sc_out< sc_logic > output_2_V_ce0;
     sc_out< sc_logic > output_2_V_we0;
-    sc_out< sc_lv<40> > output_2_V_d0;
+    sc_out< sc_lv<38> > output_2_V_d0;
     sc_out< sc_lv<8> > output_3_V_address0;
     sc_out< sc_logic > output_3_V_ce0;
     sc_out< sc_logic > output_3_V_we0;
-    sc_out< sc_lv<40> > output_3_V_d0;
+    sc_out< sc_lv<38> > output_3_V_d0;
 
 
     // Module declarations

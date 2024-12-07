@@ -24,11 +24,11 @@ struct reshape_2D_to_3D : public sc_module {
     sc_out< sc_logic > ap_ready;
     sc_out< sc_lv<7> > input_0_V_address0;
     sc_out< sc_logic > input_0_V_ce0;
-    sc_in< sc_lv<40> > input_0_V_q0;
+    sc_in< sc_lv<38> > input_0_V_q0;
     sc_out< sc_lv<7> > output_0_V_address0;
     sc_out< sc_logic > output_0_V_ce0;
     sc_out< sc_logic > output_0_V_we0;
-    sc_out< sc_lv<40> > output_0_V_d0;
+    sc_out< sc_lv<38> > output_0_V_d0;
 
 
     // Module declarations
@@ -60,8 +60,8 @@ struct reshape_2D_to_3D : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state4;
     sc_signal< sc_lv<64> > zext_ln150_2_fu_195_p1;
     sc_signal< sc_lv<64> > sext_ln203_fu_200_p1;
-    sc_signal< sc_lv<6> > tmp_55_fu_113_p3;
-    sc_signal< sc_lv<8> > tmp_54_fu_105_p3;
+    sc_signal< sc_lv<6> > tmp_50_fu_113_p3;
+    sc_signal< sc_lv<8> > tmp_49_fu_105_p3;
     sc_signal< sc_lv<8> > zext_ln203_fu_121_p1;
     sc_signal< sc_lv<2> > trunc_ln150_fu_131_p1;
     sc_signal< sc_lv<7> > shl_ln_fu_135_p3;
@@ -118,8 +118,8 @@ struct reshape_2D_to_3D : public sc_module {
     void thread_shl_ln_fu_135_p3();
     void thread_sub_ln150_fu_159_p2();
     void thread_sub_ln203_fu_125_p2();
-    void thread_tmp_54_fu_105_p3();
-    void thread_tmp_55_fu_113_p3();
+    void thread_tmp_49_fu_105_p3();
+    void thread_tmp_50_fu_113_p3();
     void thread_trunc_ln150_fu_131_p1();
     void thread_zext_ln149_fu_165_p1();
     void thread_zext_ln150_1_fu_155_p1();

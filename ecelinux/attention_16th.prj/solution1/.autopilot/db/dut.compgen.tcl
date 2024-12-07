@@ -1,12 +1,12 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 131
+set ID 136
 set hasByteEnable 0
 set MemName dut_input_0_V
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
-set DataWd 40
+set DataWd 38
 set AddrRange 96
 set AddrWd 7
 set impl_style block
@@ -86,12 +86,12 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 132
+set ID 137
 set hasByteEnable 0
 set MemName dut_output_0
 set CoreName ap_simcore_mem
 set PortList { 2 0 }
-set DataWd 40
+set DataWd 38
 set AddrRange 96
 set AddrWd 7
 set impl_style block
@@ -181,7 +181,7 @@ set axilite_register_dict [dict create]
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 133 \
+    id 138 \
     name strm_in_V_V \
     type fifo \
     dir I \
@@ -196,7 +196,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 134 \
+    id 139 \
     name strm_out_V_V \
     type fifo \
     dir O \

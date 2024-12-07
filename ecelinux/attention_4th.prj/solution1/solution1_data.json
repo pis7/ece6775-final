@@ -62,7 +62,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "74129",
+    "Latency": "74621",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -81,18 +81,15 @@
     "CSource": ["..\/..\/attention.cpp"],
     "Vhdl": [
       "impl\/vhdl\/apply_rotary_pos_emb.vhd",
+      "impl\/vhdl\/apply_rotary_pos_fYi.vhd",
       "impl\/vhdl\/apply_rotary_pos_g8j.vhd",
       "impl\/vhdl\/apply_rotary_pos_hbi.vhd",
-      "impl\/vhdl\/apply_rotary_pos_ibs.vhd",
       "impl\/vhdl\/attention.vhd",
-      "impl\/vhdl\/attention_attn_wedbE.vhd",
+      "impl\/vhdl\/attention_attn_wedfE.vhd",
       "impl\/vhdl\/attention_k_cache_V.vhd",
-      "impl\/vhdl\/attention_k_cachecTB.vhd",
-      "impl\/vhdl\/attention_k_proj_cVB.vhd",
-      "impl\/vhdl\/attention_k_weighHfu.vhd",
-      "impl\/vhdl\/attention_k_weighIfE.vhd",
-      "impl\/vhdl\/attention_k_weighJfO.vhd",
-      "impl\/vhdl\/attention_k_weighKfY.vhd",
+      "impl\/vhdl\/attention_k_cachecXB.vhd",
+      "impl\/vhdl\/attention_k_proj_cZC.vhd",
+      "impl\/vhdl\/attention_k_weigh0iy.vhd",
       "impl\/vhdl\/attention_k_weighLf8.vhd",
       "impl\/vhdl\/attention_k_weighMgi.vhd",
       "impl\/vhdl\/attention_k_weighNgs.vhd",
@@ -105,12 +102,11 @@
       "impl\/vhdl\/attention_k_weighUhA.vhd",
       "impl\/vhdl\/attention_k_weighVhK.vhd",
       "impl\/vhdl\/attention_k_weighWhU.vhd",
-      "impl\/vhdl\/attention_ln_weigbdk.vhd",
-      "impl\/vhdl\/attention_ln_weigqcK.vhd",
-      "impl\/vhdl\/attention_o_weighbek.vhd",
-      "impl\/vhdl\/attention_o_weighbfk.vhd",
-      "impl\/vhdl\/attention_o_weighbgk.vhd",
-      "impl\/vhdl\/attention_o_weighbhl.vhd",
+      "impl\/vhdl\/attention_k_weighXh4.vhd",
+      "impl\/vhdl\/attention_k_weighYie.vhd",
+      "impl\/vhdl\/attention_k_weighZio.vhd",
+      "impl\/vhdl\/attention_ln_weigbhl.vhd",
+      "impl\/vhdl\/attention_ln_weigudo.vhd",
       "impl\/vhdl\/attention_o_weighbil.vhd",
       "impl\/vhdl\/attention_o_weighbjl.vhd",
       "impl\/vhdl\/attention_o_weighbkl.vhd",
@@ -123,9 +119,12 @@
       "impl\/vhdl\/attention_o_weighbrm.vhd",
       "impl\/vhdl\/attention_o_weighbsm.vhd",
       "impl\/vhdl\/attention_o_weighbtn.vhd",
-      "impl\/vhdl\/attention_q_embedcCy.vhd",
-      "impl\/vhdl\/attention_q_proj_cwx.vhd",
-      "impl\/vhdl\/attention_q_proj_czy.vhd",
+      "impl\/vhdl\/attention_o_weighbun.vhd",
+      "impl\/vhdl\/attention_o_weighbvn.vhd",
+      "impl\/vhdl\/attention_o_weighbwn.vhd",
+      "impl\/vhdl\/attention_o_weighbxn.vhd",
+      "impl\/vhdl\/attention_q_embedcGz.vhd",
+      "impl\/vhdl\/attention_q_proj_cDy.vhd",
       "impl\/vhdl\/attention_q_weighAem.vhd",
       "impl\/vhdl\/attention_q_weighBew.vhd",
       "impl\/vhdl\/attention_q_weighCeG.vhd",
@@ -133,19 +132,18 @@
       "impl\/vhdl\/attention_q_weighEe0.vhd",
       "impl\/vhdl\/attention_q_weighFfa.vhd",
       "impl\/vhdl\/attention_q_weighGfk.vhd",
-      "impl\/vhdl\/attention_q_weighrcU.vhd",
-      "impl\/vhdl\/attention_q_weighsc4.vhd",
-      "impl\/vhdl\/attention_q_weightde.vhd",
-      "impl\/vhdl\/attention_q_weighudo.vhd",
+      "impl\/vhdl\/attention_q_weighHfu.vhd",
+      "impl\/vhdl\/attention_q_weighIfE.vhd",
+      "impl\/vhdl\/attention_q_weighJfO.vhd",
+      "impl\/vhdl\/attention_q_weighKfY.vhd",
       "impl\/vhdl\/attention_q_weighvdy.vhd",
       "impl\/vhdl\/attention_q_weighwdI.vhd",
       "impl\/vhdl\/attention_q_weighxdS.vhd",
       "impl\/vhdl\/attention_q_weighyd2.vhd",
       "impl\/vhdl\/attention_q_weighzec.vhd",
-      "impl\/vhdl\/attention_quantizbun.vhd",
+      "impl\/vhdl\/attention_quantizbyn.vhd",
       "impl\/vhdl\/attention_v_cache_V.vhd",
-      "impl\/vhdl\/attention_v_cachecUB.vhd",
-      "impl\/vhdl\/attention_v_weigh0iy.vhd",
+      "impl\/vhdl\/attention_v_cachecYC.vhd",
       "impl\/vhdl\/attention_v_weigh1iI.vhd",
       "impl\/vhdl\/attention_v_weigh2iS.vhd",
       "impl\/vhdl\/attention_v_weigh3i2.vhd",
@@ -158,25 +156,29 @@
       "impl\/vhdl\/attention_v_weighbak.vhd",
       "impl\/vhdl\/attention_v_weighbbk.vhd",
       "impl\/vhdl\/attention_v_weighbck.vhd",
-      "impl\/vhdl\/attention_v_weighXh4.vhd",
-      "impl\/vhdl\/attention_v_weighYie.vhd",
-      "impl\/vhdl\/attention_v_weighZio.vhd",
+      "impl\/vhdl\/attention_v_weighbdk.vhd",
+      "impl\/vhdl\/attention_v_weighbek.vhd",
+      "impl\/vhdl\/attention_v_weighbfk.vhd",
+      "impl\/vhdl\/attention_v_weighbgk.vhd",
       "impl\/vhdl\/cache_update.vhd",
       "impl\/vhdl\/dut_input_0_V.vhd",
-      "impl\/vhdl\/dut_mul_40s_42ns_bkb.vhd",
-      "impl\/vhdl\/dut_mul_50ns_47nsncg.vhd",
-      "impl\/vhdl\/dut_mul_50ns_50nsocq.vhd",
-      "impl\/vhdl\/dut_mul_58ns_56s_egO.vhd",
-      "impl\/vhdl\/dut_mul_72s_40s_7dEe.vhd",
-      "impl\/vhdl\/dut_output_0.vhd",
-      "impl\/vhdl\/dut_sdiv_56ns_40spcA.vhd",
-      "impl\/vhdl\/dut_sdiv_72ns_61sfYi.vhd",
-      "impl\/vhdl\/dut_udiv_33s_29nscud.vhd",
-      "impl\/vhdl\/dut_udiv_40ns_40neOg.vhd",
-      "impl\/vhdl\/exp_40_24_s.vhd",
-      "impl\/vhdl\/exp_40_24_s_exp_xmb6.vhd",
-      "impl\/vhdl\/exp_40_24_s_f_x_mkbM.vhd",
-      "impl\/vhdl\/exp_40_24_s_f_x_mlbW.vhd",
+      "impl\/vhdl\/dut_mac_muladd_3nsc4.vhd",
+      "impl\/vhdl\/dut_mul_42ns_44nspcA.vhd",
+      "impl\/vhdl\/dut_mul_48ns_50nsqcK.vhd",
+      "impl\/vhdl\/dut_mul_50ns_50nsrcU.vhd",
+      "impl\/vhdl\/dut_mul_60ns_58s_ekP.vhd",
+      "impl\/vhdl\/dut_mul_76s_38s_7cud.vhd",
+      "impl\/vhdl\/dut_sdiv_58ns_38stde.vhd",
+      "impl\/vhdl\/dut_sdiv_78ns_63seOg.vhd",
+      "impl\/vhdl\/dut_udiv_41s_30nsbkb.vhd",
+      "impl\/vhdl\/dut_udiv_47s_37nsdEe.vhd",
+      "impl\/vhdl\/exp_38_18_s.vhd",
+      "impl\/vhdl\/exp_38_18_s_exp_xocq.vhd",
+      "impl\/vhdl\/exp_38_18_s_f_x_llbW.vhd",
+      "impl\/vhdl\/exp_38_18_s_f_x_mjbC.vhd",
+      "impl\/vhdl\/exp_38_18_s_f_x_mkbM.vhd",
+      "impl\/vhdl\/exp_38_18_s_f_x_mmb6.vhd",
+      "impl\/vhdl\/exp_38_18_s_f_x_mncg.vhd",
       "impl\/vhdl\/GEMM_3D_float.vhd",
       "impl\/vhdl\/GEMM_3D_float_1.vhd",
       "impl\/vhdl\/init_2d_mem.vhd",
@@ -185,31 +187,25 @@
       "impl\/vhdl\/reshape_2D_to_3D.vhd",
       "impl\/vhdl\/rms_norm_384_s.vhd",
       "impl\/vhdl\/softmax_1_8_6_s.vhd",
-      "impl\/vhdl\/sqrt_fixed_42_26_s.vhd",
+      "impl\/vhdl\/sqrt_fixed_40_20_s.vhd",
       "impl\/vhdl\/transpose_last_two_d.vhd",
       "impl\/vhdl\/dut.vhd"
     ],
     "Verilog": [
       "impl\/verilog\/apply_rotary_pos_emb.v",
+      "impl\/verilog\/apply_rotary_pos_fYi.v",
+      "impl\/verilog\/apply_rotary_pos_fYi_rom.dat",
       "impl\/verilog\/apply_rotary_pos_g8j.v",
       "impl\/verilog\/apply_rotary_pos_g8j_rom.dat",
       "impl\/verilog\/apply_rotary_pos_hbi.v",
-      "impl\/verilog\/apply_rotary_pos_hbi_rom.dat",
-      "impl\/verilog\/apply_rotary_pos_ibs.v",
       "impl\/verilog\/attention.v",
-      "impl\/verilog\/attention_attn_wedbE.v",
+      "impl\/verilog\/attention_attn_wedfE.v",
       "impl\/verilog\/attention_k_cache_V.v",
       "impl\/verilog\/attention_k_cache_V_rom.dat",
-      "impl\/verilog\/attention_k_cachecTB.v",
-      "impl\/verilog\/attention_k_proj_cVB.v",
-      "impl\/verilog\/attention_k_weighHfu.v",
-      "impl\/verilog\/attention_k_weighHfu_rom.dat",
-      "impl\/verilog\/attention_k_weighIfE.v",
-      "impl\/verilog\/attention_k_weighIfE_rom.dat",
-      "impl\/verilog\/attention_k_weighJfO.v",
-      "impl\/verilog\/attention_k_weighJfO_rom.dat",
-      "impl\/verilog\/attention_k_weighKfY.v",
-      "impl\/verilog\/attention_k_weighKfY_rom.dat",
+      "impl\/verilog\/attention_k_cachecXB.v",
+      "impl\/verilog\/attention_k_proj_cZC.v",
+      "impl\/verilog\/attention_k_weigh0iy.v",
+      "impl\/verilog\/attention_k_weigh0iy_rom.dat",
       "impl\/verilog\/attention_k_weighLf8.v",
       "impl\/verilog\/attention_k_weighLf8_rom.dat",
       "impl\/verilog\/attention_k_weighMgi.v",
@@ -234,18 +230,16 @@
       "impl\/verilog\/attention_k_weighVhK_rom.dat",
       "impl\/verilog\/attention_k_weighWhU.v",
       "impl\/verilog\/attention_k_weighWhU_rom.dat",
-      "impl\/verilog\/attention_ln_weigbdk.v",
-      "impl\/verilog\/attention_ln_weigbdk_rom.dat",
-      "impl\/verilog\/attention_ln_weigqcK.v",
-      "impl\/verilog\/attention_ln_weigqcK_rom.dat",
-      "impl\/verilog\/attention_o_weighbek.v",
-      "impl\/verilog\/attention_o_weighbek_rom.dat",
-      "impl\/verilog\/attention_o_weighbfk.v",
-      "impl\/verilog\/attention_o_weighbfk_rom.dat",
-      "impl\/verilog\/attention_o_weighbgk.v",
-      "impl\/verilog\/attention_o_weighbgk_rom.dat",
-      "impl\/verilog\/attention_o_weighbhl.v",
-      "impl\/verilog\/attention_o_weighbhl_rom.dat",
+      "impl\/verilog\/attention_k_weighXh4.v",
+      "impl\/verilog\/attention_k_weighXh4_rom.dat",
+      "impl\/verilog\/attention_k_weighYie.v",
+      "impl\/verilog\/attention_k_weighYie_rom.dat",
+      "impl\/verilog\/attention_k_weighZio.v",
+      "impl\/verilog\/attention_k_weighZio_rom.dat",
+      "impl\/verilog\/attention_ln_weigbhl.v",
+      "impl\/verilog\/attention_ln_weigbhl_rom.dat",
+      "impl\/verilog\/attention_ln_weigudo.v",
+      "impl\/verilog\/attention_ln_weigudo_rom.dat",
       "impl\/verilog\/attention_o_weighbil.v",
       "impl\/verilog\/attention_o_weighbil_rom.dat",
       "impl\/verilog\/attention_o_weighbjl.v",
@@ -270,9 +264,16 @@
       "impl\/verilog\/attention_o_weighbsm_rom.dat",
       "impl\/verilog\/attention_o_weighbtn.v",
       "impl\/verilog\/attention_o_weighbtn_rom.dat",
-      "impl\/verilog\/attention_q_embedcCy.v",
-      "impl\/verilog\/attention_q_proj_cwx.v",
-      "impl\/verilog\/attention_q_proj_czy.v",
+      "impl\/verilog\/attention_o_weighbun.v",
+      "impl\/verilog\/attention_o_weighbun_rom.dat",
+      "impl\/verilog\/attention_o_weighbvn.v",
+      "impl\/verilog\/attention_o_weighbvn_rom.dat",
+      "impl\/verilog\/attention_o_weighbwn.v",
+      "impl\/verilog\/attention_o_weighbwn_rom.dat",
+      "impl\/verilog\/attention_o_weighbxn.v",
+      "impl\/verilog\/attention_o_weighbxn_rom.dat",
+      "impl\/verilog\/attention_q_embedcGz.v",
+      "impl\/verilog\/attention_q_proj_cDy.v",
       "impl\/verilog\/attention_q_weighAem.v",
       "impl\/verilog\/attention_q_weighAem_rom.dat",
       "impl\/verilog\/attention_q_weighBew.v",
@@ -287,14 +288,14 @@
       "impl\/verilog\/attention_q_weighFfa_rom.dat",
       "impl\/verilog\/attention_q_weighGfk.v",
       "impl\/verilog\/attention_q_weighGfk_rom.dat",
-      "impl\/verilog\/attention_q_weighrcU.v",
-      "impl\/verilog\/attention_q_weighrcU_rom.dat",
-      "impl\/verilog\/attention_q_weighsc4.v",
-      "impl\/verilog\/attention_q_weighsc4_rom.dat",
-      "impl\/verilog\/attention_q_weightde.v",
-      "impl\/verilog\/attention_q_weightde_rom.dat",
-      "impl\/verilog\/attention_q_weighudo.v",
-      "impl\/verilog\/attention_q_weighudo_rom.dat",
+      "impl\/verilog\/attention_q_weighHfu.v",
+      "impl\/verilog\/attention_q_weighHfu_rom.dat",
+      "impl\/verilog\/attention_q_weighIfE.v",
+      "impl\/verilog\/attention_q_weighIfE_rom.dat",
+      "impl\/verilog\/attention_q_weighJfO.v",
+      "impl\/verilog\/attention_q_weighJfO_rom.dat",
+      "impl\/verilog\/attention_q_weighKfY.v",
+      "impl\/verilog\/attention_q_weighKfY_rom.dat",
       "impl\/verilog\/attention_q_weighvdy.v",
       "impl\/verilog\/attention_q_weighvdy_rom.dat",
       "impl\/verilog\/attention_q_weighwdI.v",
@@ -305,12 +306,10 @@
       "impl\/verilog\/attention_q_weighyd2_rom.dat",
       "impl\/verilog\/attention_q_weighzec.v",
       "impl\/verilog\/attention_q_weighzec_rom.dat",
-      "impl\/verilog\/attention_quantizbun.v",
+      "impl\/verilog\/attention_quantizbyn.v",
       "impl\/verilog\/attention_v_cache_V.v",
       "impl\/verilog\/attention_v_cache_V_rom.dat",
-      "impl\/verilog\/attention_v_cachecUB.v",
-      "impl\/verilog\/attention_v_weigh0iy.v",
-      "impl\/verilog\/attention_v_weigh0iy_rom.dat",
+      "impl\/verilog\/attention_v_cachecYC.v",
       "impl\/verilog\/attention_v_weigh1iI.v",
       "impl\/verilog\/attention_v_weigh1iI_rom.dat",
       "impl\/verilog\/attention_v_weigh2iS.v",
@@ -335,31 +334,39 @@
       "impl\/verilog\/attention_v_weighbbk_rom.dat",
       "impl\/verilog\/attention_v_weighbck.v",
       "impl\/verilog\/attention_v_weighbck_rom.dat",
-      "impl\/verilog\/attention_v_weighXh4.v",
-      "impl\/verilog\/attention_v_weighXh4_rom.dat",
-      "impl\/verilog\/attention_v_weighYie.v",
-      "impl\/verilog\/attention_v_weighYie_rom.dat",
-      "impl\/verilog\/attention_v_weighZio.v",
-      "impl\/verilog\/attention_v_weighZio_rom.dat",
+      "impl\/verilog\/attention_v_weighbdk.v",
+      "impl\/verilog\/attention_v_weighbdk_rom.dat",
+      "impl\/verilog\/attention_v_weighbek.v",
+      "impl\/verilog\/attention_v_weighbek_rom.dat",
+      "impl\/verilog\/attention_v_weighbfk.v",
+      "impl\/verilog\/attention_v_weighbfk_rom.dat",
+      "impl\/verilog\/attention_v_weighbgk.v",
+      "impl\/verilog\/attention_v_weighbgk_rom.dat",
       "impl\/verilog\/cache_update.v",
       "impl\/verilog\/dut_input_0_V.v",
-      "impl\/verilog\/dut_mul_40s_42ns_bkb.v",
-      "impl\/verilog\/dut_mul_50ns_47nsncg.v",
-      "impl\/verilog\/dut_mul_50ns_50nsocq.v",
-      "impl\/verilog\/dut_mul_58ns_56s_egO.v",
-      "impl\/verilog\/dut_mul_72s_40s_7dEe.v",
-      "impl\/verilog\/dut_output_0.v",
-      "impl\/verilog\/dut_sdiv_56ns_40spcA.v",
-      "impl\/verilog\/dut_sdiv_72ns_61sfYi.v",
-      "impl\/verilog\/dut_udiv_33s_29nscud.v",
-      "impl\/verilog\/dut_udiv_40ns_40neOg.v",
-      "impl\/verilog\/exp_40_24_s.v",
-      "impl\/verilog\/exp_40_24_s_exp_xmb6.v",
-      "impl\/verilog\/exp_40_24_s_exp_xmb6_rom.dat",
-      "impl\/verilog\/exp_40_24_s_f_x_mkbM.v",
-      "impl\/verilog\/exp_40_24_s_f_x_mkbM_rom.dat",
-      "impl\/verilog\/exp_40_24_s_f_x_mlbW.v",
-      "impl\/verilog\/exp_40_24_s_f_x_mlbW_rom.dat",
+      "impl\/verilog\/dut_mac_muladd_3nsc4.v",
+      "impl\/verilog\/dut_mul_42ns_44nspcA.v",
+      "impl\/verilog\/dut_mul_48ns_50nsqcK.v",
+      "impl\/verilog\/dut_mul_50ns_50nsrcU.v",
+      "impl\/verilog\/dut_mul_60ns_58s_ekP.v",
+      "impl\/verilog\/dut_mul_76s_38s_7cud.v",
+      "impl\/verilog\/dut_sdiv_58ns_38stde.v",
+      "impl\/verilog\/dut_sdiv_78ns_63seOg.v",
+      "impl\/verilog\/dut_udiv_41s_30nsbkb.v",
+      "impl\/verilog\/dut_udiv_47s_37nsdEe.v",
+      "impl\/verilog\/exp_38_18_s.v",
+      "impl\/verilog\/exp_38_18_s_exp_xocq.v",
+      "impl\/verilog\/exp_38_18_s_exp_xocq_rom.dat",
+      "impl\/verilog\/exp_38_18_s_f_x_llbW.v",
+      "impl\/verilog\/exp_38_18_s_f_x_llbW_rom.dat",
+      "impl\/verilog\/exp_38_18_s_f_x_mjbC.v",
+      "impl\/verilog\/exp_38_18_s_f_x_mjbC_rom.dat",
+      "impl\/verilog\/exp_38_18_s_f_x_mkbM.v",
+      "impl\/verilog\/exp_38_18_s_f_x_mkbM_rom.dat",
+      "impl\/verilog\/exp_38_18_s_f_x_mmb6.v",
+      "impl\/verilog\/exp_38_18_s_f_x_mmb6_rom.dat",
+      "impl\/verilog\/exp_38_18_s_f_x_mncg.v",
+      "impl\/verilog\/exp_38_18_s_f_x_mncg_rom.dat",
       "impl\/verilog\/GEMM_3D_float.v",
       "impl\/verilog\/GEMM_3D_float_1.v",
       "impl\/verilog\/init_2d_mem.v",
@@ -368,7 +375,7 @@
       "impl\/verilog\/reshape_2D_to_3D.v",
       "impl\/verilog\/rms_norm_384_s.v",
       "impl\/verilog\/softmax_1_8_6_s.v",
-      "impl\/verilog\/sqrt_fixed_42_26_s.v",
+      "impl\/verilog\/sqrt_fixed_40_20_s.v",
       "impl\/verilog\/transpose_last_two_d.v",
       "impl\/verilog\/dut.v"
     ],
@@ -489,73 +496,73 @@
       "ModuleName": "dut",
       "Instances": [{
           "ModuleName": "attention",
-          "InstanceName": "grp_attention_fu_263",
+          "InstanceName": "grp_attention_fu_269",
           "Instances": [
             {
               "ModuleName": "linear_forward_no_mu",
-              "InstanceName": "grp_linear_forward_no_mu_fu_1031"
+              "InstanceName": "grp_linear_forward_no_mu_fu_1037"
             },
             {
               "ModuleName": "rms_norm_384_s",
-              "InstanceName": "grp_rms_norm_384_s_fu_1187",
+              "InstanceName": "grp_rms_norm_384_s_fu_1193",
               "Instances": [{
-                  "ModuleName": "sqrt_fixed_42_26_s",
-                  "InstanceName": "grp_sqrt_fixed_42_26_s_fu_127"
+                  "ModuleName": "sqrt_fixed_40_20_s",
+                  "InstanceName": "grp_sqrt_fixed_40_20_s_fu_129"
                 }]
             },
             {
               "ModuleName": "GEMM_3D_float_1",
-              "InstanceName": "grp_GEMM_3D_float_1_fu_1196"
+              "InstanceName": "grp_GEMM_3D_float_1_fu_1202"
             },
             {
               "ModuleName": "softmax_1_8_6_s",
-              "InstanceName": "grp_softmax_1_8_6_s_fu_1233",
+              "InstanceName": "grp_softmax_1_8_6_s_fu_1239",
               "Instances": [{
-                  "ModuleName": "exp_40_24_s",
-                  "InstanceName": "grp_exp_40_24_s_fu_163"
+                  "ModuleName": "exp_38_18_s",
+                  "InstanceName": "grp_exp_38_18_s_fu_169"
                 }]
             },
             {
               "ModuleName": "quantize_activation",
-              "InstanceName": "grp_quantize_activation_fu_1244"
+              "InstanceName": "grp_quantize_activation_fu_1256"
             },
             {
               "ModuleName": "GEMM_3D_float",
-              "InstanceName": "grp_GEMM_3D_float_fu_1314"
+              "InstanceName": "grp_GEMM_3D_float_fu_1326"
             },
             {
               "ModuleName": "apply_rotary_pos_emb",
-              "InstanceName": "grp_apply_rotary_pos_emb_fu_1321"
+              "InstanceName": "grp_apply_rotary_pos_emb_fu_1333"
             },
             {
               "ModuleName": "cache_update",
-              "InstanceName": "grp_cache_update_fu_1348"
+              "InstanceName": "grp_cache_update_fu_1360"
             },
             {
               "ModuleName": "transpose_last_two_d",
-              "InstanceName": "grp_transpose_last_two_d_fu_1357"
+              "InstanceName": "grp_transpose_last_two_d_fu_1369"
             },
             {
               "ModuleName": "reshape_2D_to_3D",
-              "InstanceName": "grp_reshape_2D_to_3D_fu_1378"
-            },
-            {
-              "ModuleName": "init_2d_mem",
-              "InstanceName": "grp_init_2d_mem_fu_1384"
-            },
-            {
-              "ModuleName": "init_2d_mem",
-              "InstanceName": "grp_init_2d_mem_fu_1390"
+              "InstanceName": "grp_reshape_2D_to_3D_fu_1390"
             },
             {
               "ModuleName": "init_2d_mem",
               "InstanceName": "grp_init_2d_mem_fu_1396"
+            },
+            {
+              "ModuleName": "init_2d_mem",
+              "InstanceName": "grp_init_2d_mem_fu_1402"
+            },
+            {
+              "ModuleName": "init_2d_mem",
+              "InstanceName": "grp_init_2d_mem_fu_1408"
             }
           ]
         }]
     },
     "Info": {
-      "sqrt_fixed_42_26_s": {
+      "sqrt_fixed_40_20_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "1",
@@ -625,7 +632,7 @@
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "exp_40_24_s": {
+      "exp_38_18_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "1",
@@ -662,41 +669,41 @@
       }
     },
     "Metrics": {
-      "sqrt_fixed_42_26_s": {
+      "sqrt_fixed_40_20_s": {
         "Latency": {
-          "LatencyBest": "17",
-          "LatencyAvg": "17",
-          "LatencyWorst": "17",
+          "LatencyBest": "20",
+          "LatencyAvg": "20",
+          "LatencyWorst": "20",
           "PipelineII": "1",
-          "PipelineDepth": "18",
+          "PipelineDepth": "21",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.731"
+          "Estimate": "8.693"
         },
         "Area": {
           "BRAM_18K": "0",
-          "FF": "3179",
-          "LUT": "7453",
+          "FF": "2666",
+          "LUT": "7890",
           "DSP48E": "0",
           "URAM": "0"
         }
       },
       "rms_norm_384_s": {
         "Latency": {
-          "LatencyBest": "5052",
-          "LatencyAvg": "5052",
-          "LatencyWorst": "5052",
-          "PipelineII": "5052",
+          "LatencyBest": "5063",
+          "LatencyAvg": "5063",
+          "LatencyWorst": "5063",
+          "PipelineII": "5063",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.731"
+          "Estimate": "8.693"
         },
         "Loops": [
           {
@@ -716,25 +723,25 @@
         ],
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "23",
-          "FF": "4843",
-          "LUT": "8779",
+          "DSP48E": "24",
+          "FF": "4298",
+          "LUT": "9283",
           "URAM": "0"
         }
       },
       "quantize_activation": {
         "Latency": {
-          "LatencyBest": "1784",
-          "LatencyAvg": "1784",
-          "LatencyWorst": "1784",
-          "PipelineII": "1784",
+          "LatencyBest": "1791",
+          "LatencyAvg": "1791",
+          "LatencyWorst": "1791",
+          "PipelineII": "1791",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.533"
+          "Estimate": "8.690"
         },
         "Loops": [
           {
@@ -761,8 +768,8 @@
         ],
         "Area": {
           "DSP48E": "20",
-          "FF": "1217",
-          "LUT": "1946",
+          "FF": "1259",
+          "LUT": "2005",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -798,30 +805,30 @@
       },
       "linear_forward_no_mu": {
         "Latency": {
-          "LatencyBest": "9295",
-          "LatencyAvg": "9295",
-          "LatencyWorst": "9295",
-          "PipelineII": "9295",
+          "LatencyBest": "9301",
+          "LatencyAvg": "9301",
+          "LatencyWorst": "9301",
+          "PipelineII": "9301",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.526"
+          "Estimate": "8.690"
         },
         "Loops": [{
             "Name": "LINEAR_FORWARD_NO_MUL_LOOP_2_LINEAR_FORWARD_NO_MUL_LOOP_3",
             "TripCount": "2304",
-            "Latency": "9293",
+            "Latency": "9299",
             "PipelineII": "4",
-            "PipelineDepth": "82"
+            "PipelineDepth": "88"
           }],
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "3",
-          "FF": "10015",
-          "LUT": "12619",
+          "DSP48E": "4",
+          "FF": "9980",
+          "LUT": "12870",
           "URAM": "0"
         }
       },
@@ -873,7 +880,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.510"
+          "Estimate": "8.690"
         },
         "Loops": [
           {
@@ -907,9 +914,9 @@
         ],
         "Area": {
           "BRAM_18K": "6",
-          "DSP48E": "8",
-          "FF": "764",
-          "LUT": "748",
+          "DSP48E": "12",
+          "FF": "776",
+          "LUT": "740",
           "URAM": "0"
         }
       },
@@ -925,7 +932,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.069"
+          "Estimate": "7.853"
         },
         "Loops": [{
             "Name": "CACHE_UPDATE_LOOP_1",
@@ -950,7 +957,7 @@
           }],
         "Area": {
           "FF": "83",
-          "LUT": "326",
+          "LUT": "324",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
@@ -1011,7 +1018,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.510"
+          "Estimate": "8.690"
         },
         "Loops": [{
             "Name": "GEMM_3D_FLOAT_LOOP_1",
@@ -1036,19 +1043,19 @@
           }],
         "Area": {
           "DSP48E": "80",
-          "FF": "2691",
+          "FF": "2641",
           "LUT": "1859",
           "BRAM_18K": "0",
           "URAM": "0"
         }
       },
-      "exp_40_24_s": {
+      "exp_38_18_s": {
         "Latency": {
-          "LatencyBest": "7",
-          "LatencyAvg": "7",
-          "LatencyWorst": "7",
+          "LatencyBest": "11",
+          "LatencyAvg": "11",
+          "LatencyWorst": "11",
           "PipelineII": "1",
-          "PipelineDepth": "8",
+          "PipelineDepth": "12",
           "PipelineType": "function"
         },
         "Timing": {
@@ -1057,19 +1064,19 @@
           "Estimate": "8.625"
         },
         "Area": {
-          "BRAM_18K": "9",
-          "DSP48E": "18",
-          "FF": "1181",
-          "LUT": "720",
+          "BRAM_18K": "11",
+          "DSP48E": "25",
+          "FF": "1778",
+          "LUT": "1187",
           "URAM": "0"
         }
       },
       "softmax_1_8_6_s": {
         "Latency": {
-          "LatencyBest": "3529",
-          "LatencyAvg": "3529",
-          "LatencyWorst": "3529",
-          "PipelineII": "3529",
+          "LatencyBest": "3865",
+          "LatencyAvg": "3865",
+          "LatencyWorst": "3865",
+          "PipelineII": "3865",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1081,9 +1088,9 @@
         "Loops": [{
             "Name": "SOFTMAX_LOOP_1",
             "TripCount": "8",
-            "Latency": "3528",
+            "Latency": "3864",
             "PipelineII": "",
-            "PipelineDepth": "441",
+            "PipelineDepth": "483",
             "Loops": [
               {
                 "Name": "SOFTMAX_LOOP_3",
@@ -1095,24 +1102,24 @@
               {
                 "Name": "SOFTMAX_LOOP_4",
                 "TripCount": "6",
-                "Latency": "60",
+                "Latency": "90",
                 "PipelineII": "",
-                "PipelineDepth": "10"
+                "PipelineDepth": "15"
               },
               {
                 "Name": "SOFTMAX_LOOP_5",
                 "TripCount": "6",
-                "Latency": "366",
+                "Latency": "378",
                 "PipelineII": "",
-                "PipelineDepth": "61"
+                "PipelineDepth": "63"
               }
             ]
           }],
         "Area": {
-          "BRAM_18K": "9",
-          "DSP48E": "18",
-          "FF": "2161",
-          "LUT": "1883",
+          "BRAM_18K": "11",
+          "DSP48E": "25",
+          "FF": "2823",
+          "LUT": "2386",
           "URAM": "0"
         }
       },
@@ -1128,7 +1135,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.510"
+          "Estimate": "8.690"
         },
         "Loops": [{
             "Name": "GEMM_3D_FLOAT_LOOP_1",
@@ -1146,18 +1153,18 @@
           }],
         "Area": {
           "DSP48E": "30",
-          "FF": "775",
-          "LUT": "1059",
+          "FF": "769",
+          "LUT": "1057",
           "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "attention": {
         "Latency": {
-          "LatencyBest": "72974",
-          "LatencyAvg": "72974",
-          "LatencyWorst": "72974",
-          "PipelineII": "72974",
+          "LatencyBest": "73466",
+          "LatencyAvg": "73466",
+          "LatencyWorst": "73466",
+          "PipelineII": "73466",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1170,15 +1177,15 @@
           {
             "Name": "SF_LOOP_1",
             "TripCount": "8",
-            "Latency": "352",
+            "Latency": "448",
             "PipelineII": "",
-            "PipelineDepth": "44",
+            "PipelineDepth": "56",
             "Loops": [{
                 "Name": "SF_LOOP_3",
                 "TripCount": "6",
-                "Latency": "42",
+                "Latency": "54",
                 "PipelineII": "",
-                "PipelineDepth": "7"
+                "PipelineDepth": "9"
               }]
           },
           {
@@ -1197,19 +1204,19 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "236",
-          "DSP48E": "192",
-          "FF": "26646",
-          "LUT": "40336",
+          "BRAM_18K": "235",
+          "DSP48E": "207",
+          "FF": "26901",
+          "LUT": "41730",
           "URAM": "0"
         }
       },
       "dut": {
         "Latency": {
-          "LatencyBest": "74129",
-          "LatencyAvg": "74129",
-          "LatencyWorst": "74129",
-          "PipelineII": "74130",
+          "LatencyBest": "74621",
+          "LatencyAvg": "74621",
+          "LatencyWorst": "74621",
+          "PipelineII": "74622",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1235,10 +1242,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "242",
-          "DSP48E": "192",
-          "FF": "26679",
-          "LUT": "40589",
+          "BRAM_18K": "240",
+          "DSP48E": "207",
+          "FF": "26934",
+          "LUT": "41965",
           "URAM": "0"
         }
       }
@@ -1254,7 +1261,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-12-06 17:25:57 EST",
+    "Time": "2024-12-06 23:28:56 EST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

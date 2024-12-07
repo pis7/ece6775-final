@@ -14,12 +14,12 @@ set isEnableWaveformDebug 1
 set C_modelName {reshape_2D_to_3D}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ input_0_V int 40 regular {array 24 { 1 3 } 1 1 }  }
-	{ output_0_V int 40 regular {array 24 { 0 3 } 0 1 }  }
+	{ input_0_V int 38 regular {array 24 { 1 3 } 1 1 }  }
+	{ output_0_V int 38 regular {array 24 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "input_0_V", "interface" : "memory", "bitwidth" : 40, "direction" : "READONLY"} , 
- 	{ "Name" : "output_0_V", "interface" : "memory", "bitwidth" : 40, "direction" : "WRITEONLY"} ]}
+	{ "Name" : "input_0_V", "interface" : "memory", "bitwidth" : 38, "direction" : "READONLY"} , 
+ 	{ "Name" : "output_0_V", "interface" : "memory", "bitwidth" : 38, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 13
 set portList { 
@@ -31,11 +31,11 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ input_0_V_address0 sc_out sc_lv 5 signal 0 } 
 	{ input_0_V_ce0 sc_out sc_logic 1 signal 0 } 
-	{ input_0_V_q0 sc_in sc_lv 40 signal 0 } 
+	{ input_0_V_q0 sc_in sc_lv 38 signal 0 } 
 	{ output_0_V_address0 sc_out sc_lv 5 signal 1 } 
 	{ output_0_V_ce0 sc_out sc_logic 1 signal 1 } 
 	{ output_0_V_we0 sc_out sc_logic 1 signal 1 } 
-	{ output_0_V_d0 sc_out sc_lv 40 signal 1 } 
+	{ output_0_V_d0 sc_out sc_lv 38 signal 1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -46,11 +46,11 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "input_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "input_0_V", "role": "address0" }} , 
  	{ "name": "input_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_0_V", "role": "ce0" }} , 
- 	{ "name": "input_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "input_0_V", "role": "q0" }} , 
+ 	{ "name": "input_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "input_0_V", "role": "q0" }} , 
  	{ "name": "output_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "output_0_V", "role": "address0" }} , 
  	{ "name": "output_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_0_V", "role": "ce0" }} , 
  	{ "name": "output_0_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_0_V", "role": "we0" }} , 
- 	{ "name": "output_0_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "output_0_V", "role": "d0" }}  ]}
+ 	{ "name": "output_0_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "output_0_V", "role": "d0" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -87,6 +87,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	input_0_V { ap_memory {  { input_0_V_address0 mem_address 1 5 }  { input_0_V_ce0 mem_ce 1 1 }  { input_0_V_q0 mem_dout 0 40 } } }
-	output_0_V { ap_memory {  { output_0_V_address0 mem_address 1 5 }  { output_0_V_ce0 mem_ce 1 1 }  { output_0_V_we0 mem_we 1 1 }  { output_0_V_d0 mem_din 1 40 } } }
+	input_0_V { ap_memory {  { input_0_V_address0 mem_address 1 5 }  { input_0_V_ce0 mem_ce 1 1 }  { input_0_V_q0 mem_dout 0 38 } } }
+	output_0_V { ap_memory {  { output_0_V_address0 mem_address 1 5 }  { output_0_V_ce0 mem_ce 1 1 }  { output_0_V_we0 mem_we 1 1 }  { output_0_V_d0 mem_din 1 38 } } }
 }

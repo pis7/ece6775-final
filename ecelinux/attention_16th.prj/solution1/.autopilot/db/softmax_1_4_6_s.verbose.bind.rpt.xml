@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'softmax_1_4_6_s'" level="0">
-<item name = "Date">Fri Dec  6 14:23:35 2024
+<item name = "Date">Fri Dec  6 23:39:26 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -24,22 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1765, 1765, 17.650 us, 17.650 us, 1765, 1765, none</column>
+<column name="">1933, 1933, 19.330 us, 19.330 us, 1933, 1933, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_exp_40_24_s_fu_159">exp_40_24_s, 7, 7, 70.000 ns, 70.000 ns, 1, 1, function</column>
+<column name="grp_exp_38_18_s_fu_165">exp_38_18_s, 11, 11, 0.110 us, 0.110 us, 1, 1, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- SOFTMAX_LOOP_1">1764, 1764, 441, -, -, 4, no</column>
+<column name="- SOFTMAX_LOOP_1">1932, 1932, 483, -, -, 4, no</column>
 <column name=" + SOFTMAX_LOOP_3">10, 10, 2, -, -, 5, no</column>
-<column name=" + SOFTMAX_LOOP_4">60, 60, 10, -, -, 6, no</column>
-<column name=" + SOFTMAX_LOOP_5">366, 366, 61, -, -, 6, no</column>
+<column name=" + SOFTMAX_LOOP_4">90, 90, 15, -, -, 6, no</column>
+<column name=" + SOFTMAX_LOOP_5">378, 378, 63, -, -, 6, no</column>
 </table>
 </item>
 </section>

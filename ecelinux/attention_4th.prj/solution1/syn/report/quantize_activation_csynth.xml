@@ -17,18 +17,18 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>8.533</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.690</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1784</Best-caseLatency>
-<Average-caseLatency>1784</Average-caseLatency>
-<Worst-caseLatency>1784</Worst-caseLatency>
-<Best-caseRealTimeLatency>17.840 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>17.840 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>17.840 us</Worst-caseRealTimeLatency>
-<Interval-min>1784</Interval-min>
-<Interval-max>1784</Interval-max>
+<Best-caseLatency>1791</Best-caseLatency>
+<Average-caseLatency>1791</Average-caseLatency>
+<Worst-caseLatency>1791</Worst-caseLatency>
+<Best-caseRealTimeLatency>17.910 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>17.910 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>17.910 us</Worst-caseRealTimeLatency>
+<Interval-min>1791</Interval-min>
+<Interval-max>1791</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <QUANTIZE_ACTIVATION_LOOP_2>
@@ -52,8 +52,8 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>20</DSP48E>
-<FF>1217</FF>
-<LUT>1946</LUT>
+<FF>1259</FF>
+<LUT>2005</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -141,7 +141,7 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -174,7 +174,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -207,7 +207,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

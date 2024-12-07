@@ -28,7 +28,7 @@
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -56,7 +56,7 @@
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -84,7 +84,7 @@
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -384,7 +384,7 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>tmp_59</name>
+						<name>tmp_53</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -531,7 +531,7 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>tmp_60</name>
+						<name>tmp_54</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -629,7 +629,7 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>tmp_61</name>
+						<name>tmp_55</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -824,7 +824,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>tmp_62</name>
+						<name>tmp_56</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -874,7 +874,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>tmp_63</name>
+						<name>tmp_57</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -1497,7 +1497,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>tmp_83</name>
+						<name>tmp_85</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -2784,7 +2784,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2832,7 +2832,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2880,7 +2880,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2894,7 +2894,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.56</m_delay>
+				<m_delay>1.34</m_delay>
 				<m_topoIndex>61</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -6577,7 +6577,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_59_fu_158</first>
+			<first>tmp_53_fu_158</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6585,7 +6585,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_60_fu_176</first>
+			<first>tmp_54_fu_176</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6593,7 +6593,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_61_fu_188</first>
+			<first>tmp_55_fu_188</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6601,7 +6601,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_62_fu_210</first>
+			<first>tmp_56_fu_210</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6609,7 +6609,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_63_fu_218</first>
+			<first>tmp_57_fu_218</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6617,7 +6617,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_83_fu_273</first>
+			<first>tmp_85_fu_273</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

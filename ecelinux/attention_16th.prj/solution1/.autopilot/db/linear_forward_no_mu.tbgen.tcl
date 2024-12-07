@@ -30,13 +30,13 @@ set C_modelArgList {
 	{ input_3_1_0_V int 8 regular {array 6 { 1 3 } 1 1 }  }
 	{ input_3_2_0_V int 8 regular {array 6 { 1 3 } 1 1 }  }
 	{ input_3_3_0_V int 8 regular {array 6 { 1 3 } 1 1 }  }
-	{ output_0_V int 40 regular {array 96 { 2 0 } 1 1 }  }
-	{ scales_0_V_read int 40 regular  }
+	{ output_0_V int 38 regular {array 96 { 2 0 } 1 1 }  }
+	{ scales_0_V_read int 38 regular  }
 	{ packed_weights_0 int 8 regular {array 576 { 1 3 } 1 1 }  }
 	{ packed_weights_1 int 8 regular {array 576 { 1 3 } 1 1 }  }
 	{ packed_weights_2 int 8 regular {array 576 { 1 3 } 1 1 }  }
 	{ packed_weights_3 int 8 regular {array 576 { 1 3 } 1 1 }  }
-	{ w_scale_V int 22 regular  }
+	{ w_scale_V int 26 regular  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "input_0_0_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
@@ -55,13 +55,13 @@ set C_modelArgMapList {[
  	{ "Name" : "input_3_1_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "input_3_2_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "input_3_3_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
- 	{ "Name" : "output_0_V", "interface" : "memory", "bitwidth" : 40, "direction" : "READWRITE"} , 
- 	{ "Name" : "scales_0_V_read", "interface" : "wire", "bitwidth" : 40, "direction" : "READONLY"} , 
+ 	{ "Name" : "output_0_V", "interface" : "memory", "bitwidth" : 38, "direction" : "READWRITE"} , 
+ 	{ "Name" : "scales_0_V_read", "interface" : "wire", "bitwidth" : 38, "direction" : "READONLY"} , 
  	{ "Name" : "packed_weights_0", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "packed_weights_1", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "packed_weights_2", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "packed_weights_3", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
- 	{ "Name" : "w_scale_V", "interface" : "wire", "bitwidth" : 22, "direction" : "READONLY"} ]}
+ 	{ "Name" : "w_scale_V", "interface" : "wire", "bitwidth" : 26, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
 set portNum 77
 set portList { 
@@ -122,13 +122,13 @@ set portList {
 	{ output_0_V_address0 sc_out sc_lv 7 signal 16 } 
 	{ output_0_V_ce0 sc_out sc_logic 1 signal 16 } 
 	{ output_0_V_we0 sc_out sc_logic 1 signal 16 } 
-	{ output_0_V_d0 sc_out sc_lv 40 signal 16 } 
-	{ output_0_V_q0 sc_in sc_lv 40 signal 16 } 
+	{ output_0_V_d0 sc_out sc_lv 38 signal 16 } 
+	{ output_0_V_q0 sc_in sc_lv 38 signal 16 } 
 	{ output_0_V_address1 sc_out sc_lv 7 signal 16 } 
 	{ output_0_V_ce1 sc_out sc_logic 1 signal 16 } 
 	{ output_0_V_we1 sc_out sc_logic 1 signal 16 } 
-	{ output_0_V_d1 sc_out sc_lv 40 signal 16 } 
-	{ scales_0_V_read sc_in sc_lv 40 signal 17 } 
+	{ output_0_V_d1 sc_out sc_lv 38 signal 16 } 
+	{ scales_0_V_read sc_in sc_lv 38 signal 17 } 
 	{ packed_weights_0_address0 sc_out sc_lv 10 signal 18 } 
 	{ packed_weights_0_ce0 sc_out sc_logic 1 signal 18 } 
 	{ packed_weights_0_q0 sc_in sc_lv 8 signal 18 } 
@@ -141,7 +141,7 @@ set portList {
 	{ packed_weights_3_address0 sc_out sc_lv 10 signal 21 } 
 	{ packed_weights_3_ce0 sc_out sc_logic 1 signal 21 } 
 	{ packed_weights_3_q0 sc_in sc_lv 8 signal 21 } 
-	{ w_scale_V sc_in sc_lv 22 signal 22 } 
+	{ w_scale_V sc_in sc_lv 26 signal 22 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -201,13 +201,13 @@ set NewPortList {[
  	{ "name": "output_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "output_0_V", "role": "address0" }} , 
  	{ "name": "output_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_0_V", "role": "ce0" }} , 
  	{ "name": "output_0_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_0_V", "role": "we0" }} , 
- 	{ "name": "output_0_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "output_0_V", "role": "d0" }} , 
- 	{ "name": "output_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "output_0_V", "role": "q0" }} , 
+ 	{ "name": "output_0_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "output_0_V", "role": "d0" }} , 
+ 	{ "name": "output_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "output_0_V", "role": "q0" }} , 
  	{ "name": "output_0_V_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "output_0_V", "role": "address1" }} , 
  	{ "name": "output_0_V_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_0_V", "role": "ce1" }} , 
  	{ "name": "output_0_V_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_0_V", "role": "we1" }} , 
- 	{ "name": "output_0_V_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "output_0_V", "role": "d1" }} , 
- 	{ "name": "scales_0_V_read", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "scales_0_V_read", "role": "default" }} , 
+ 	{ "name": "output_0_V_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "output_0_V", "role": "d1" }} , 
+ 	{ "name": "scales_0_V_read", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "scales_0_V_read", "role": "default" }} , 
  	{ "name": "packed_weights_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "packed_weights_0", "role": "address0" }} , 
  	{ "name": "packed_weights_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "packed_weights_0", "role": "ce0" }} , 
  	{ "name": "packed_weights_0_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "packed_weights_0", "role": "q0" }} , 
@@ -220,7 +220,7 @@ set NewPortList {[
  	{ "name": "packed_weights_3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "packed_weights_3", "role": "address0" }} , 
  	{ "name": "packed_weights_3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "packed_weights_3", "role": "ce0" }} , 
  	{ "name": "packed_weights_3_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "packed_weights_3", "role": "q0" }} , 
- 	{ "name": "w_scale_V", "direction": "in", "datatype": "sc_lv", "bitwidth":22, "type": "signal", "bundle":{"name": "w_scale_V", "role": "default" }}  ]}
+ 	{ "name": "w_scale_V", "direction": "in", "datatype": "sc_lv", "bitwidth":26, "type": "signal", "bundle":{"name": "w_scale_V", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
@@ -229,7 +229,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1807", "EstimateLatencyMax" : "1807",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1813", "EstimateLatencyMax" : "1813",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -260,7 +260,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "packed_weights_2", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "packed_weights_3", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "w_scale_V", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_sdiv_72ns_61sfYi_U30", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_sdiv_78ns_63seOg_U28", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -292,8 +292,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1807", "Max" : "1807"}
-	, {"Name" : "Interval", "Min" : "1807", "Max" : "1807"}
+	{"Name" : "Latency", "Min" : "1813", "Max" : "1813"}
+	, {"Name" : "Interval", "Min" : "1813", "Max" : "1813"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -317,11 +317,11 @@ set Spec2ImplPortList {
 	input_3_1_0_V { ap_memory {  { input_3_1_0_V_address0 mem_address 1 3 }  { input_3_1_0_V_ce0 mem_ce 1 1 }  { input_3_1_0_V_q0 mem_dout 0 8 } } }
 	input_3_2_0_V { ap_memory {  { input_3_2_0_V_address0 mem_address 1 3 }  { input_3_2_0_V_ce0 mem_ce 1 1 }  { input_3_2_0_V_q0 mem_dout 0 8 } } }
 	input_3_3_0_V { ap_memory {  { input_3_3_0_V_address0 mem_address 1 3 }  { input_3_3_0_V_ce0 mem_ce 1 1 }  { input_3_3_0_V_q0 mem_dout 0 8 } } }
-	output_0_V { ap_memory {  { output_0_V_address0 mem_address 1 7 }  { output_0_V_ce0 mem_ce 1 1 }  { output_0_V_we0 mem_we 1 1 }  { output_0_V_d0 mem_din 1 40 }  { output_0_V_q0 mem_dout 0 40 }  { output_0_V_address1 MemPortADDR2 1 7 }  { output_0_V_ce1 MemPortCE2 1 1 }  { output_0_V_we1 MemPortWE2 1 1 }  { output_0_V_d1 MemPortDIN2 1 40 } } }
-	scales_0_V_read { ap_none {  { scales_0_V_read in_data 0 40 } } }
+	output_0_V { ap_memory {  { output_0_V_address0 mem_address 1 7 }  { output_0_V_ce0 mem_ce 1 1 }  { output_0_V_we0 mem_we 1 1 }  { output_0_V_d0 mem_din 1 38 }  { output_0_V_q0 mem_dout 0 38 }  { output_0_V_address1 MemPortADDR2 1 7 }  { output_0_V_ce1 MemPortCE2 1 1 }  { output_0_V_we1 MemPortWE2 1 1 }  { output_0_V_d1 MemPortDIN2 1 38 } } }
+	scales_0_V_read { ap_none {  { scales_0_V_read in_data 0 38 } } }
 	packed_weights_0 { ap_memory {  { packed_weights_0_address0 mem_address 1 10 }  { packed_weights_0_ce0 mem_ce 1 1 }  { packed_weights_0_q0 mem_dout 0 8 } } }
 	packed_weights_1 { ap_memory {  { packed_weights_1_address0 mem_address 1 10 }  { packed_weights_1_ce0 mem_ce 1 1 }  { packed_weights_1_q0 mem_dout 0 8 } } }
 	packed_weights_2 { ap_memory {  { packed_weights_2_address0 mem_address 1 10 }  { packed_weights_2_ce0 mem_ce 1 1 }  { packed_weights_2_q0 mem_dout 0 8 } } }
 	packed_weights_3 { ap_memory {  { packed_weights_3_address0 mem_address 1 10 }  { packed_weights_3_ce0 mem_ce 1 1 }  { packed_weights_3_q0 mem_dout 0 8 } } }
-	w_scale_V { ap_none {  { w_scale_V in_data 0 22 } } }
+	w_scale_V { ap_none {  { w_scale_V in_data 0 26 } } }
 }

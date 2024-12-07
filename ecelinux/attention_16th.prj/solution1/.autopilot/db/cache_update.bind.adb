@@ -28,7 +28,7 @@
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -56,7 +56,7 @@
 						<rtlName></rtlName>
 						<coreName>RAM</coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -356,7 +356,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>tmp_63</name>
+						<name>tmp_57</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -503,7 +503,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>tmp_64</name>
+						<name>tmp_58</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -649,7 +649,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>tmp_65</name>
+						<name>tmp_59</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -844,7 +844,7 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>tmp_66</name>
+						<name>tmp_60</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -1419,7 +1419,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>tmp_85</name>
+						<name>tmp_87</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>204</lineNumber>
@@ -2706,7 +2706,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2754,7 +2754,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>20</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2802,7 +2802,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2850,7 +2850,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2864,7 +2864,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.56</m_delay>
+				<m_delay>1.34</m_delay>
 				<m_topoIndex>61</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -6502,7 +6502,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_63_fu_152</first>
+			<first>tmp_57_fu_152</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6510,7 +6510,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_64_fu_170</first>
+			<first>tmp_58_fu_170</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6518,7 +6518,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_65_fu_186</first>
+			<first>tmp_59_fu_186</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6526,7 +6526,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_66_fu_208</first>
+			<first>tmp_60_fu_208</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6534,7 +6534,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_85_fu_259</first>
+			<first>tmp_87_fu_259</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

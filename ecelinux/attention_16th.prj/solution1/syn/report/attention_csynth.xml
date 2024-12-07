@@ -21,24 +21,24 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>19042</Best-caseLatency>
-<Average-caseLatency>19042</Average-caseLatency>
-<Worst-caseLatency>19042</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.190 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.190 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.190 ms</Worst-caseRealTimeLatency>
-<Interval-min>19042</Interval-min>
-<Interval-max>19042</Interval-max>
+<Best-caseLatency>19318</Best-caseLatency>
+<Average-caseLatency>19318</Average-caseLatency>
+<Worst-caseLatency>19318</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.193 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.193 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.193 ms</Worst-caseRealTimeLatency>
+<Interval-min>19318</Interval-min>
+<Interval-max>19318</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <SF_LOOP_1>
 <TripCount>4</TripCount>
-<Latency>176</Latency>
-<IterationLatency>44</IterationLatency>
+<Latency>224</Latency>
+<IterationLatency>56</IterationLatency>
 <SF_LOOP_3>
 <TripCount>6</TripCount>
-<Latency>42</Latency>
-<IterationLatency>7</IterationLatency>
+<Latency>54</Latency>
+<IterationLatency>9</IterationLatency>
 </SF_LOOP_3>
 </SF_LOOP_1>
 <ATTN_2D_LOOP_2>
@@ -56,10 +56,10 @@
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>80</BRAM_18K>
-<DSP48E>122</DSP48E>
-<FF>21405</FF>
-<LUT>27401</LUT>
+<BRAM_18K>82</BRAM_18K>
+<DSP48E>137</DSP48E>
+<FF>21781</FF>
+<LUT>28480</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -179,7 +179,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -190,7 +190,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -223,7 +223,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -267,7 +267,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -278,7 +278,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -322,7 +322,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

@@ -24,14 +24,14 @@ struct cache_update : public sc_module {
     sc_out< sc_logic > ap_ready;
     sc_out< sc_lv<11> > cache_in_V_address0;
     sc_out< sc_logic > cache_in_V_ce0;
-    sc_in< sc_lv<40> > cache_in_V_q0;
+    sc_in< sc_lv<38> > cache_in_V_q0;
     sc_out< sc_lv<12> > cache_out_V_address0;
     sc_out< sc_logic > cache_out_V_ce0;
     sc_out< sc_logic > cache_out_V_we0;
-    sc_out< sc_lv<40> > cache_out_V_d0;
+    sc_out< sc_lv<38> > cache_out_V_d0;
     sc_out< sc_lv<9> > update_0_V_address0;
     sc_out< sc_logic > update_0_V_ce0;
-    sc_in< sc_lv<40> > update_0_V_q0;
+    sc_in< sc_lv<38> > update_0_V_q0;
 
 
     // Module declarations
@@ -77,21 +77,21 @@ struct cache_update : public sc_module {
     sc_signal< sc_lv<64> > zext_ln204_9_fu_357_p1;
     sc_signal< sc_lv<64> > sext_ln204_fu_372_p1;
     sc_signal< sc_lv<64> > zext_ln203_10_fu_377_p1;
-    sc_signal< sc_lv<6> > tmp_59_fu_158_p3;
+    sc_signal< sc_lv<6> > tmp_53_fu_158_p3;
     sc_signal< sc_lv<7> > zext_ln204_fu_154_p1;
     sc_signal< sc_lv<7> > zext_ln204_1_fu_166_p1;
-    sc_signal< sc_lv<7> > tmp_60_fu_176_p3;
-    sc_signal< sc_lv<5> > tmp_61_fu_188_p3;
+    sc_signal< sc_lv<7> > tmp_54_fu_176_p3;
+    sc_signal< sc_lv<5> > tmp_55_fu_188_p3;
     sc_signal< sc_lv<8> > zext_ln203_fu_184_p1;
     sc_signal< sc_lv<8> > zext_ln203_9_fu_196_p1;
     sc_signal< sc_lv<8> > sub_ln203_fu_200_p2;
-    sc_signal< sc_lv<8> > tmp_63_fu_218_p3;
-    sc_signal< sc_lv<10> > tmp_62_fu_210_p3;
+    sc_signal< sc_lv<8> > tmp_57_fu_218_p3;
+    sc_signal< sc_lv<10> > tmp_56_fu_210_p3;
     sc_signal< sc_lv<10> > zext_ln204_2_fu_226_p1;
     sc_signal< sc_lv<7> > zext_ln204_4_fu_252_p1;
     sc_signal< sc_lv<7> > add_ln204_1_fu_256_p2;
     sc_signal< sc_lv<6> > trunc_ln204_fu_261_p1;
-    sc_signal< sc_lv<11> > tmp_83_fu_273_p3;
+    sc_signal< sc_lv<11> > tmp_85_fu_273_p3;
     sc_signal< sc_lv<12> > p_shl7_cast_fu_265_p3;
     sc_signal< sc_lv<12> > zext_ln204_5_fu_281_p1;
     sc_signal< sc_lv<9> > zext_ln204_3_fu_248_p1;
@@ -169,12 +169,12 @@ struct cache_update : public sc_module {
     void thread_sub_ln203_fu_200_p2();
     void thread_sub_ln204_1_fu_285_p2();
     void thread_sub_ln204_fu_230_p2();
-    void thread_tmp_59_fu_158_p3();
-    void thread_tmp_60_fu_176_p3();
-    void thread_tmp_61_fu_188_p3();
-    void thread_tmp_62_fu_210_p3();
-    void thread_tmp_63_fu_218_p3();
-    void thread_tmp_83_fu_273_p3();
+    void thread_tmp_53_fu_158_p3();
+    void thread_tmp_54_fu_176_p3();
+    void thread_tmp_55_fu_188_p3();
+    void thread_tmp_56_fu_210_p3();
+    void thread_tmp_57_fu_218_p3();
+    void thread_tmp_85_fu_273_p3();
     void thread_trunc_ln203_fu_296_p1();
     void thread_trunc_ln204_fu_261_p1();
     void thread_update_0_V_address0();

@@ -115,10 +115,10 @@ RESHAPE_2D_TO_3D_LOOP_1_begin:1  br label %0
 
 <Node id="8" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_89 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
+:2  %empty_84 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
 
 ]]></Node>
-<StgValue><ssdm name="empty_89"/></StgValue>
+<StgValue><ssdm name="empty_84"/></StgValue>
 </operation>
 
 <operation id="10" st_id="2" stage="1" lat="1">
@@ -193,10 +193,10 @@ RESHAPE_2D_TO_3D_LOOP_2_begin:1  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBe
 
 <Node id="14" bw="10" op_0_bw="10" op_1_bw="4" op_2_bw="6">
 <![CDATA[
-RESHAPE_2D_TO_3D_LOOP_2_begin:2  %tmp_54 = call i10 @_ssdm_op_BitConcatenate.i10.i4.i6(i4 %i_0_0, i6 0)
+RESHAPE_2D_TO_3D_LOOP_2_begin:2  %tmp_49 = call i10 @_ssdm_op_BitConcatenate.i10.i4.i6(i4 %i_0_0, i6 0)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_54"/></StgValue>
+<StgValue><ssdm name="tmp_49"/></StgValue>
 </operation>
 
 <operation id="15" st_id="2" stage="1" lat="1">
@@ -209,10 +209,10 @@ RESHAPE_2D_TO_3D_LOOP_2_begin:2  %tmp_54 = call i10 @_ssdm_op_BitConcatenate.i10
 
 <Node id="15" bw="8" op_0_bw="8" op_1_bw="4" op_2_bw="4">
 <![CDATA[
-RESHAPE_2D_TO_3D_LOOP_2_begin:3  %tmp_55 = call i8 @_ssdm_op_BitConcatenate.i8.i4.i4(i4 %i_0_0, i4 0)
+RESHAPE_2D_TO_3D_LOOP_2_begin:3  %tmp_50 = call i8 @_ssdm_op_BitConcatenate.i8.i4.i4(i4 %i_0_0, i4 0)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_55"/></StgValue>
+<StgValue><ssdm name="tmp_50"/></StgValue>
 </operation>
 
 <operation id="16" st_id="2" stage="1" lat="1">
@@ -225,7 +225,7 @@ RESHAPE_2D_TO_3D_LOOP_2_begin:3  %tmp_55 = call i8 @_ssdm_op_BitConcatenate.i8.i
 
 <Node id="16" bw="10" op_0_bw="8">
 <![CDATA[
-RESHAPE_2D_TO_3D_LOOP_2_begin:4  %zext_ln203 = zext i8 %tmp_55 to i10
+RESHAPE_2D_TO_3D_LOOP_2_begin:4  %zext_ln203 = zext i8 %tmp_50 to i10
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln203"/></StgValue>
@@ -241,7 +241,7 @@ RESHAPE_2D_TO_3D_LOOP_2_begin:4  %zext_ln203 = zext i8 %tmp_55 to i10
 
 <Node id="17" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-RESHAPE_2D_TO_3D_LOOP_2_begin:5  %sub_ln203 = sub i10 %tmp_54, %zext_ln203
+RESHAPE_2D_TO_3D_LOOP_2_begin:5  %sub_ln203 = sub i10 %tmp_49, %zext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="sub_ln203"/></StgValue>
@@ -448,10 +448,10 @@ RESHAPE_2D_TO_3D_LOOP_1_end:1  ret void
 
 <Node id="29" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:3  %empty_91 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 48, i64 48, i64 48)
+:3  %empty_86 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 48, i64 48, i64 48)
 
 ]]></Node>
-<StgValue><ssdm name="empty_91"/></StgValue>
+<StgValue><ssdm name="empty_86"/></StgValue>
 </operation>
 
 <operation id="31" st_id="3" stage="1" lat="1">
@@ -556,9 +556,9 @@ RESHAPE_2D_TO_3D_LOOP_1_end:1  ret void
 </and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="9" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="40" bw="9" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:7  %input_0_V_addr = getelementptr [384 x i40]* %input_0_V, i64 0, i64 %zext_ln150_2
+:7  %input_0_V_addr = getelementptr [384 x i38]* %input_0_V, i64 0, i64 %zext_ln150_2
 
 ]]></Node>
 <StgValue><ssdm name="input_0_V_addr"/></StgValue>
@@ -572,9 +572,9 @@ RESHAPE_2D_TO_3D_LOOP_1_end:1  ret void
 </and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="40" op_0_bw="9">
+<Node id="41" bw="38" op_0_bw="9">
 <![CDATA[
-:8  %input_0_V_load = load i40* %input_0_V_addr, align 8
+:8  %input_0_V_load = load i38* %input_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_0_V_load"/></StgValue>
@@ -590,10 +590,10 @@ RESHAPE_2D_TO_3D_LOOP_1_end:1  ret void
 
 <Node id="45" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-RESHAPE_2D_TO_3D_LOOP_2_end:0  %empty_90 = call i32 (...)* @_ssdm_op_SpecRegionEnd([24 x i8]* @p_str1834, i32 %tmp_s)
+RESHAPE_2D_TO_3D_LOOP_2_end:0  %empty_85 = call i32 (...)* @_ssdm_op_SpecRegionEnd([24 x i8]* @p_str1834, i32 %tmp_s)
 
 ]]></Node>
-<StgValue><ssdm name="empty_90"/></StgValue>
+<StgValue><ssdm name="empty_85"/></StgValue>
 </operation>
 
 <operation id="40" st_id="3" stage="1" lat="1">
@@ -652,9 +652,9 @@ RESHAPE_2D_TO_3D_LOOP_2_end:1  br label %0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="9" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="36" bw="9" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:3  %output_0_V_addr = getelementptr [384 x i40]* %output_0_V, i64 0, i64 %sext_ln203
+:3  %output_0_V_addr = getelementptr [384 x i38]* %output_0_V, i64 0, i64 %sext_ln203
 
 ]]></Node>
 <StgValue><ssdm name="output_0_V_addr"/></StgValue>
@@ -667,9 +667,9 @@ RESHAPE_2D_TO_3D_LOOP_2_end:1  br label %0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="40" op_0_bw="9">
+<Node id="41" bw="38" op_0_bw="9">
 <![CDATA[
-:8  %input_0_V_load = load i40* %input_0_V_addr, align 8
+:8  %input_0_V_load = load i38* %input_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_0_V_load"/></StgValue>
@@ -682,9 +682,9 @@ RESHAPE_2D_TO_3D_LOOP_2_end:1  br label %0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="40" op_1_bw="9">
+<Node id="42" bw="0" op_0_bw="38" op_1_bw="9">
 <![CDATA[
-:9  store i40 %input_0_V_load, i40* %output_0_V_addr, align 8
+:9  store i38 %input_0_V_load, i38* %output_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln150"/></StgValue>

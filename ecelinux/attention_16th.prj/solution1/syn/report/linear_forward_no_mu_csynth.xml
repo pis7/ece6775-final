@@ -17,25 +17,25 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>8.526</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.690</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1807</Best-caseLatency>
-<Average-caseLatency>1807</Average-caseLatency>
-<Worst-caseLatency>1807</Worst-caseLatency>
-<Best-caseRealTimeLatency>18.070 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>18.070 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>18.070 us</Worst-caseRealTimeLatency>
-<Interval-min>1807</Interval-min>
-<Interval-max>1807</Interval-max>
+<Best-caseLatency>1813</Best-caseLatency>
+<Average-caseLatency>1813</Average-caseLatency>
+<Worst-caseLatency>1813</Worst-caseLatency>
+<Best-caseRealTimeLatency>18.130 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>18.130 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>18.130 us</Worst-caseRealTimeLatency>
+<Interval-min>1813</Interval-min>
+<Interval-max>1813</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <LINEAR_FORWARD_NO_MUL_LOOP_2_LINEAR_FORWARD_NO_MUL_LOOP_3>
 <TripCount>576</TripCount>
-<Latency>1805</Latency>
+<Latency>1811</Latency>
 <PipelineII>3</PipelineII>
-<PipelineDepth>81</PipelineDepth>
+<PipelineDepth>87</PipelineDepth>
 </LINEAR_FORWARD_NO_MUL_LOOP_2_LINEAR_FORWARD_NO_MUL_LOOP_3>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -43,9 +43,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<DSP48E>3</DSP48E>
-<FF>9308</FF>
-<LUT>8217</LUT>
+<DSP48E>4</DSP48E>
+<FF>9312</FF>
+<LUT>8263</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -693,7 +693,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -704,7 +704,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -748,7 +748,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -759,7 +759,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>40</Bits>
+<Bits>38</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -902,7 +902,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>22</Bits>
+<Bits>26</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

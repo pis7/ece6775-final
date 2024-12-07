@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'GEMM_3D_float_1'
 ================================================================
-* Date:           Fri Dec  6 14:23:45 2024
+* Date:           Fri Dec  6 23:39:35 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_16th.prj
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  | 10.00 ns | 8.510 ns |   1.25 ns  |
+    |ap_clk  | 10.00 ns | 8.690 ns |   1.25 ns  |
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -61,9 +61,9 @@
 |Instance         |        -|      -|       -|      -|    -|
 |Memory           |        -|      -|       -|      -|    -|
 |Multiplexer      |        -|      -|       -|    107|    -|
-|Register         |        -|      -|     733|      -|    -|
+|Register         |        -|      -|     719|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |        0|     20|     733|    610|    0|
+|Total            |        0|     20|     719|    610|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
@@ -87,16 +87,16 @@
     +------------------------+----------+-------+---+----+------------+------------+
     |      Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +------------------------+----------+-------+---+----+------------+------------+
-    |mul_ln1192_1_fu_407_p2  |     *    |      5|  0|  29|          40|          40|
-    |mul_ln1192_2_fu_419_p2  |     *    |      5|  0|  29|          40|          40|
-    |mul_ln1192_3_fu_431_p2  |     *    |      5|  0|  29|          40|          40|
-    |mul_ln1192_fu_395_p2    |     *    |      5|  0|  29|          40|          40|
+    |mul_ln1192_1_fu_407_p2  |     *    |      5|  0|  27|          38|          38|
+    |mul_ln1192_2_fu_419_p2  |     *    |      5|  0|  27|          38|          38|
+    |mul_ln1192_3_fu_431_p2  |     *    |      5|  0|  27|          38|          38|
+    |mul_ln1192_fu_395_p2    |     *    |      5|  0|  27|          38|          38|
     |add_ln1116_fu_333_p2    |     +    |      0|  0|  15|           8|           8|
     |add_ln1117_fu_364_p2    |     +    |      0|  0|  11|           9|           9|
-    |add_ln1192_2_fu_467_p2  |     +    |      0|  0|  63|          56|          56|
-    |add_ln1192_3_fu_489_p2  |     +    |      0|  0|  63|          56|          56|
-    |add_ln1192_4_fu_512_p2  |     +    |      0|  0|  63|          56|          56|
-    |add_ln1192_fu_444_p2    |     +    |      0|  0|  63|          56|          56|
+    |add_ln1192_2_fu_467_p2  |     +    |      0|  0|  65|          58|          58|
+    |add_ln1192_3_fu_489_p2  |     +    |      0|  0|  65|          58|          58|
+    |add_ln1192_4_fu_512_p2  |     +    |      0|  0|  65|          58|          58|
+    |add_ln1192_fu_444_p2    |     +    |      0|  0|  65|          58|          58|
     |add_ln203_fu_303_p2     |     +    |      0|  0|  15|           6|           6|
     |add_ln238_fu_289_p2     |     +    |      0|  0|  12|           3|           1|
     |add_ln240_fu_369_p2     |     +    |      0|  0|  15|           3|           5|
@@ -119,9 +119,9 @@
     |k_0_0_reg_211        |   9|          2|    3|          6|
     |l_0_0_0_reg_222      |   9|          2|    5|         10|
     |output_0_V_address0  |  15|          3|    5|         15|
-    |output_0_V_d0        |  15|          3|   40|        120|
+    |output_0_V_d0        |  15|          3|   38|        114|
     +---------------------+----+-----------+-----+-----------+
-    |Total                | 107|         23|   57|        168|
+    |Total                | 107|         23|   55|        162|
     +---------------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -135,29 +135,29 @@
     |ap_CS_fsm                   |  10|   0|   10|          0|
     |i_0_reg_200                 |   3|   0|    3|          0|
     |i_reg_530                   |   3|   0|    3|          0|
-    |input_1_0_0_V_load_reg_621  |  40|   0|   40|          0|
-    |input_1_1_0_V_load_reg_631  |  40|   0|   40|          0|
-    |input_1_2_0_V_load_reg_641  |  40|   0|   40|          0|
-    |input_1_3_0_V_load_reg_651  |  40|   0|   40|          0|
-    |input_2_0_V_load_reg_626    |  40|   0|   40|          0|
-    |input_2_1_V_load_reg_636    |  40|   0|   40|          0|
-    |input_2_2_V_load_reg_646    |  40|   0|   40|          0|
-    |input_2_3_V_load_reg_656    |  40|   0|   40|          0|
+    |input_1_0_0_V_load_reg_621  |  38|   0|   38|          0|
+    |input_1_1_0_V_load_reg_631  |  38|   0|   38|          0|
+    |input_1_2_0_V_load_reg_641  |  38|   0|   38|          0|
+    |input_1_3_0_V_load_reg_651  |  38|   0|   38|          0|
+    |input_2_0_V_load_reg_626    |  38|   0|   38|          0|
+    |input_2_1_V_load_reg_636    |  38|   0|   38|          0|
+    |input_2_2_V_load_reg_646    |  38|   0|   38|          0|
+    |input_2_3_V_load_reg_656    |  38|   0|   38|          0|
     |k_0_0_reg_211               |   3|   0|    3|          0|
     |l_0_0_0_reg_222             |   5|   0|    5|          0|
-    |mul_ln1192_1_reg_671        |  56|   0|   56|          0|
-    |mul_ln1192_2_reg_676        |  56|   0|   56|          0|
-    |mul_ln1192_3_reg_681        |  56|   0|   56|          0|
-    |mul_ln1192_reg_661          |  56|   0|   56|          0|
+    |mul_ln1192_1_reg_671        |  58|   0|   58|          0|
+    |mul_ln1192_2_reg_676        |  58|   0|   58|          0|
+    |mul_ln1192_3_reg_681        |  58|   0|   58|          0|
+    |mul_ln1192_reg_661          |  58|   0|   58|          0|
     |output_0_V_addr_reg_558     |   5|   0|    5|          0|
-    |output_0_V_load_reg_666     |  40|   0|   40|          0|
+    |output_0_V_load_reg_666     |  38|   0|   38|          0|
     |sext_ln1116_reg_535         |   7|   0|    8|          1|
-    |tmp_79_reg_686              |  40|   0|   40|          0|
+    |tmp_73_reg_686              |  38|   0|   38|          0|
     |trunc_ln1116_reg_540        |   5|   0|    6|          1|
-    |trunc_ln708_s_reg_691       |  40|   0|   40|          0|
+    |trunc_ln708_s_reg_691       |  38|   0|   38|          0|
     |zext_ln203_reg_553          |   3|   0|    9|          6|
     +----------------------------+----+----+-----+-----------+
-    |Total                       | 733|   0|  741|          8|
+    |Total                       | 719|   0|  727|          8|
     +----------------------------+----+----+-----+-----------+
 
 
@@ -177,32 +177,32 @@
 |ap_ready                | out |    1| ap_ctrl_hs | GEMM_3D_float.1 | return value |
 |input_1_0_0_V_address0  | out |    5|  ap_memory |  input_1_0_0_V  |     array    |
 |input_1_0_0_V_ce0       | out |    1|  ap_memory |  input_1_0_0_V  |     array    |
-|input_1_0_0_V_q0        |  in |   40|  ap_memory |  input_1_0_0_V  |     array    |
+|input_1_0_0_V_q0        |  in |   38|  ap_memory |  input_1_0_0_V  |     array    |
 |input_1_1_0_V_address0  | out |    5|  ap_memory |  input_1_1_0_V  |     array    |
 |input_1_1_0_V_ce0       | out |    1|  ap_memory |  input_1_1_0_V  |     array    |
-|input_1_1_0_V_q0        |  in |   40|  ap_memory |  input_1_1_0_V  |     array    |
+|input_1_1_0_V_q0        |  in |   38|  ap_memory |  input_1_1_0_V  |     array    |
 |input_1_2_0_V_address0  | out |    5|  ap_memory |  input_1_2_0_V  |     array    |
 |input_1_2_0_V_ce0       | out |    1|  ap_memory |  input_1_2_0_V  |     array    |
-|input_1_2_0_V_q0        |  in |   40|  ap_memory |  input_1_2_0_V  |     array    |
+|input_1_2_0_V_q0        |  in |   38|  ap_memory |  input_1_2_0_V  |     array    |
 |input_1_3_0_V_address0  | out |    5|  ap_memory |  input_1_3_0_V  |     array    |
 |input_1_3_0_V_ce0       | out |    1|  ap_memory |  input_1_3_0_V  |     array    |
-|input_1_3_0_V_q0        |  in |   40|  ap_memory |  input_1_3_0_V  |     array    |
+|input_1_3_0_V_q0        |  in |   38|  ap_memory |  input_1_3_0_V  |     array    |
 |input_2_0_V_address0    | out |    8|  ap_memory |   input_2_0_V   |     array    |
 |input_2_0_V_ce0         | out |    1|  ap_memory |   input_2_0_V   |     array    |
-|input_2_0_V_q0          |  in |   40|  ap_memory |   input_2_0_V   |     array    |
+|input_2_0_V_q0          |  in |   38|  ap_memory |   input_2_0_V   |     array    |
 |input_2_1_V_address0    | out |    8|  ap_memory |   input_2_1_V   |     array    |
 |input_2_1_V_ce0         | out |    1|  ap_memory |   input_2_1_V   |     array    |
-|input_2_1_V_q0          |  in |   40|  ap_memory |   input_2_1_V   |     array    |
+|input_2_1_V_q0          |  in |   38|  ap_memory |   input_2_1_V   |     array    |
 |input_2_2_V_address0    | out |    8|  ap_memory |   input_2_2_V   |     array    |
 |input_2_2_V_ce0         | out |    1|  ap_memory |   input_2_2_V   |     array    |
-|input_2_2_V_q0          |  in |   40|  ap_memory |   input_2_2_V   |     array    |
+|input_2_2_V_q0          |  in |   38|  ap_memory |   input_2_2_V   |     array    |
 |input_2_3_V_address0    | out |    8|  ap_memory |   input_2_3_V   |     array    |
 |input_2_3_V_ce0         | out |    1|  ap_memory |   input_2_3_V   |     array    |
-|input_2_3_V_q0          |  in |   40|  ap_memory |   input_2_3_V   |     array    |
+|input_2_3_V_q0          |  in |   38|  ap_memory |   input_2_3_V   |     array    |
 |output_0_V_address0     | out |    5|  ap_memory |    output_0_V   |     array    |
 |output_0_V_ce0          | out |    1|  ap_memory |    output_0_V   |     array    |
 |output_0_V_we0          | out |    1|  ap_memory |    output_0_V   |     array    |
-|output_0_V_d0           | out |   40|  ap_memory |    output_0_V   |     array    |
-|output_0_V_q0           |  in |   40|  ap_memory |    output_0_V   |     array    |
+|output_0_V_d0           | out |   38|  ap_memory |    output_0_V   |     array    |
+|output_0_V_q0           |  in |   38|  ap_memory |    output_0_V   |     array    |
 +------------------------+-----+-----+------------+-----------------+--------------+
 

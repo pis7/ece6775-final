@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'transpose_last_two_d'" level="0">
-<item name = "Date">Fri Dec  6 17:25:24 2024
+<item name = "Date">Fri Dec  6 23:28:28 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_4th.prj</item>
@@ -136,71 +136,71 @@
 <column name="ap_ready">out, 1, ap_ctrl_hs, transpose_last_two_d, return value</column>
 <column name="input_V_address0">out, 12, ap_memory, input_V, array</column>
 <column name="input_V_ce0">out, 1, ap_memory, input_V, array</column>
-<column name="input_V_q0">in, 40, ap_memory, input_V, array</column>
+<column name="input_V_q0">in, 38, ap_memory, input_V, array</column>
 <column name="output_0_V_address0">out, 8, ap_memory, output_0_V, array</column>
 <column name="output_0_V_ce0">out, 1, ap_memory, output_0_V, array</column>
 <column name="output_0_V_we0">out, 1, ap_memory, output_0_V, array</column>
-<column name="output_0_V_d0">out, 40, ap_memory, output_0_V, array</column>
+<column name="output_0_V_d0">out, 38, ap_memory, output_0_V, array</column>
 <column name="output_1_V_address0">out, 8, ap_memory, output_1_V, array</column>
 <column name="output_1_V_ce0">out, 1, ap_memory, output_1_V, array</column>
 <column name="output_1_V_we0">out, 1, ap_memory, output_1_V, array</column>
-<column name="output_1_V_d0">out, 40, ap_memory, output_1_V, array</column>
+<column name="output_1_V_d0">out, 38, ap_memory, output_1_V, array</column>
 <column name="output_2_V_address0">out, 8, ap_memory, output_2_V, array</column>
 <column name="output_2_V_ce0">out, 1, ap_memory, output_2_V, array</column>
 <column name="output_2_V_we0">out, 1, ap_memory, output_2_V, array</column>
-<column name="output_2_V_d0">out, 40, ap_memory, output_2_V, array</column>
+<column name="output_2_V_d0">out, 38, ap_memory, output_2_V, array</column>
 <column name="output_3_V_address0">out, 8, ap_memory, output_3_V, array</column>
 <column name="output_3_V_ce0">out, 1, ap_memory, output_3_V, array</column>
 <column name="output_3_V_we0">out, 1, ap_memory, output_3_V, array</column>
-<column name="output_3_V_d0">out, 40, ap_memory, output_3_V, array</column>
+<column name="output_3_V_d0">out, 38, ap_memory, output_3_V, array</column>
 <column name="output_4_V_address0">out, 8, ap_memory, output_4_V, array</column>
 <column name="output_4_V_ce0">out, 1, ap_memory, output_4_V, array</column>
 <column name="output_4_V_we0">out, 1, ap_memory, output_4_V, array</column>
-<column name="output_4_V_d0">out, 40, ap_memory, output_4_V, array</column>
+<column name="output_4_V_d0">out, 38, ap_memory, output_4_V, array</column>
 <column name="output_5_V_address0">out, 8, ap_memory, output_5_V, array</column>
 <column name="output_5_V_ce0">out, 1, ap_memory, output_5_V, array</column>
 <column name="output_5_V_we0">out, 1, ap_memory, output_5_V, array</column>
-<column name="output_5_V_d0">out, 40, ap_memory, output_5_V, array</column>
+<column name="output_5_V_d0">out, 38, ap_memory, output_5_V, array</column>
 <column name="output_6_V_address0">out, 8, ap_memory, output_6_V, array</column>
 <column name="output_6_V_ce0">out, 1, ap_memory, output_6_V, array</column>
 <column name="output_6_V_we0">out, 1, ap_memory, output_6_V, array</column>
-<column name="output_6_V_d0">out, 40, ap_memory, output_6_V, array</column>
+<column name="output_6_V_d0">out, 38, ap_memory, output_6_V, array</column>
 <column name="output_7_V_address0">out, 8, ap_memory, output_7_V, array</column>
 <column name="output_7_V_ce0">out, 1, ap_memory, output_7_V, array</column>
 <column name="output_7_V_we0">out, 1, ap_memory, output_7_V, array</column>
-<column name="output_7_V_d0">out, 40, ap_memory, output_7_V, array</column>
+<column name="output_7_V_d0">out, 38, ap_memory, output_7_V, array</column>
 <column name="output_8_V_address0">out, 8, ap_memory, output_8_V, array</column>
 <column name="output_8_V_ce0">out, 1, ap_memory, output_8_V, array</column>
 <column name="output_8_V_we0">out, 1, ap_memory, output_8_V, array</column>
-<column name="output_8_V_d0">out, 40, ap_memory, output_8_V, array</column>
+<column name="output_8_V_d0">out, 38, ap_memory, output_8_V, array</column>
 <column name="output_9_V_address0">out, 8, ap_memory, output_9_V, array</column>
 <column name="output_9_V_ce0">out, 1, ap_memory, output_9_V, array</column>
 <column name="output_9_V_we0">out, 1, ap_memory, output_9_V, array</column>
-<column name="output_9_V_d0">out, 40, ap_memory, output_9_V, array</column>
+<column name="output_9_V_d0">out, 38, ap_memory, output_9_V, array</column>
 <column name="output_10_V_address0">out, 8, ap_memory, output_10_V, array</column>
 <column name="output_10_V_ce0">out, 1, ap_memory, output_10_V, array</column>
 <column name="output_10_V_we0">out, 1, ap_memory, output_10_V, array</column>
-<column name="output_10_V_d0">out, 40, ap_memory, output_10_V, array</column>
+<column name="output_10_V_d0">out, 38, ap_memory, output_10_V, array</column>
 <column name="output_11_V_address0">out, 8, ap_memory, output_11_V, array</column>
 <column name="output_11_V_ce0">out, 1, ap_memory, output_11_V, array</column>
 <column name="output_11_V_we0">out, 1, ap_memory, output_11_V, array</column>
-<column name="output_11_V_d0">out, 40, ap_memory, output_11_V, array</column>
+<column name="output_11_V_d0">out, 38, ap_memory, output_11_V, array</column>
 <column name="output_12_V_address0">out, 8, ap_memory, output_12_V, array</column>
 <column name="output_12_V_ce0">out, 1, ap_memory, output_12_V, array</column>
 <column name="output_12_V_we0">out, 1, ap_memory, output_12_V, array</column>
-<column name="output_12_V_d0">out, 40, ap_memory, output_12_V, array</column>
+<column name="output_12_V_d0">out, 38, ap_memory, output_12_V, array</column>
 <column name="output_13_V_address0">out, 8, ap_memory, output_13_V, array</column>
 <column name="output_13_V_ce0">out, 1, ap_memory, output_13_V, array</column>
 <column name="output_13_V_we0">out, 1, ap_memory, output_13_V, array</column>
-<column name="output_13_V_d0">out, 40, ap_memory, output_13_V, array</column>
+<column name="output_13_V_d0">out, 38, ap_memory, output_13_V, array</column>
 <column name="output_14_V_address0">out, 8, ap_memory, output_14_V, array</column>
 <column name="output_14_V_ce0">out, 1, ap_memory, output_14_V, array</column>
 <column name="output_14_V_we0">out, 1, ap_memory, output_14_V, array</column>
-<column name="output_14_V_d0">out, 40, ap_memory, output_14_V, array</column>
+<column name="output_14_V_d0">out, 38, ap_memory, output_14_V, array</column>
 <column name="output_15_V_address0">out, 8, ap_memory, output_15_V, array</column>
 <column name="output_15_V_ce0">out, 1, ap_memory, output_15_V, array</column>
 <column name="output_15_V_we0">out, 1, ap_memory, output_15_V, array</column>
-<column name="output_15_V_d0">out, 40, ap_memory, output_15_V, array</column>
+<column name="output_15_V_d0">out, 38, ap_memory, output_15_V, array</column>
 </table>
 </item>
 </section>

@@ -19,23 +19,23 @@ port (
     ap_ready : OUT STD_LOGIC;
     input_V_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     input_V_ce0 : OUT STD_LOGIC;
-    input_V_q0 : IN STD_LOGIC_VECTOR (39 downto 0);
+    input_V_q0 : IN STD_LOGIC_VECTOR (37 downto 0);
     output_0_V_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
     output_0_V_ce0 : OUT STD_LOGIC;
     output_0_V_we0 : OUT STD_LOGIC;
-    output_0_V_d0 : OUT STD_LOGIC_VECTOR (39 downto 0);
+    output_0_V_d0 : OUT STD_LOGIC_VECTOR (37 downto 0);
     output_1_V_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
     output_1_V_ce0 : OUT STD_LOGIC;
     output_1_V_we0 : OUT STD_LOGIC;
-    output_1_V_d0 : OUT STD_LOGIC_VECTOR (39 downto 0);
+    output_1_V_d0 : OUT STD_LOGIC_VECTOR (37 downto 0);
     output_2_V_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
     output_2_V_ce0 : OUT STD_LOGIC;
     output_2_V_we0 : OUT STD_LOGIC;
-    output_2_V_d0 : OUT STD_LOGIC_VECTOR (39 downto 0);
+    output_2_V_d0 : OUT STD_LOGIC_VECTOR (37 downto 0);
     output_3_V_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
     output_3_V_ce0 : OUT STD_LOGIC;
     output_3_V_we0 : OUT STD_LOGIC;
-    output_3_V_d0 : OUT STD_LOGIC_VECTOR (39 downto 0) );
+    output_3_V_d0 : OUT STD_LOGIC_VECTOR (37 downto 0) );
 end;
 
 

@@ -19,11 +19,11 @@ port (
     ap_ready : OUT STD_LOGIC;
     input_0_V_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
     input_0_V_ce0 : OUT STD_LOGIC;
-    input_0_V_q0 : IN STD_LOGIC_VECTOR (39 downto 0);
+    input_0_V_q0 : IN STD_LOGIC_VECTOR (37 downto 0);
     output_0_V_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
     output_0_V_ce0 : OUT STD_LOGIC;
     output_0_V_we0 : OUT STD_LOGIC;
-    output_0_V_d0 : OUT STD_LOGIC_VECTOR (39 downto 0) );
+    output_0_V_d0 : OUT STD_LOGIC_VECTOR (37 downto 0) );
 end;
 
 
@@ -75,8 +75,8 @@ architecture behav of reshape_2D_to_3D is
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
     signal zext_ln150_2_fu_195_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal sext_ln203_fu_200_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_55_fu_113_p3 : STD_LOGIC_VECTOR (9 downto 0);
-    signal tmp_54_fu_105_p3 : STD_LOGIC_VECTOR (11 downto 0);
+    signal tmp_50_fu_113_p3 : STD_LOGIC_VECTOR (9 downto 0);
+    signal tmp_49_fu_105_p3 : STD_LOGIC_VECTOR (11 downto 0);
     signal zext_ln203_fu_121_p1 : STD_LOGIC_VECTOR (11 downto 0);
     signal trunc_ln150_fu_131_p1 : STD_LOGIC_VECTOR (3 downto 0);
     signal shl_ln_fu_135_p3 : STD_LOGIC_VECTOR (10 downto 0);
@@ -270,13 +270,13 @@ begin
     shl_ln150_1_fu_147_p3 <= (trunc_ln150_fu_131_p1 & ap_const_lv5_0);
     shl_ln_fu_135_p3 <= (trunc_ln150_fu_131_p1 & ap_const_lv7_0);
     sub_ln150_fu_159_p2 <= std_logic_vector(unsigned(zext_ln150_fu_143_p1) - unsigned(zext_ln150_1_fu_155_p1));
-    sub_ln203_fu_125_p2 <= std_logic_vector(unsigned(tmp_54_fu_105_p3) - unsigned(zext_ln203_fu_121_p1));
-    tmp_54_fu_105_p3 <= (i_0_0_reg_71 & ap_const_lv7_0);
-    tmp_55_fu_113_p3 <= (i_0_0_reg_71 & ap_const_lv5_0);
+    sub_ln203_fu_125_p2 <= std_logic_vector(unsigned(tmp_49_fu_105_p3) - unsigned(zext_ln203_fu_121_p1));
+    tmp_49_fu_105_p3 <= (i_0_0_reg_71 & ap_const_lv7_0);
+    tmp_50_fu_113_p3 <= (i_0_0_reg_71 & ap_const_lv5_0);
     trunc_ln150_fu_131_p1 <= i_0_0_reg_71(4 - 1 downto 0);
     zext_ln149_fu_165_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(k_0_0_reg_82),12));
     zext_ln150_1_fu_155_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(shl_ln150_1_fu_147_p3),12));
     zext_ln150_2_fu_195_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sext_ln150_fu_191_p1),64));
     zext_ln150_fu_143_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(shl_ln_fu_135_p3),12));
-    zext_ln203_fu_121_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_55_fu_113_p3),12));
+    zext_ln203_fu_121_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_50_fu_113_p3),12));
 end behav;

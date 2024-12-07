@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'reshape_2D_to_3D'
 ================================================================
-* Date:           Fri Dec  6 10:14:54 2024
+* Date:           Sat Dec  7 00:22:09 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_full.prj
@@ -142,10 +142,10 @@
 |ap_ready             | out |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
 |input_0_V_address0   | out |   11|  ap_memory |     input_0_V    |     array    |
 |input_0_V_ce0        | out |    1|  ap_memory |     input_0_V    |     array    |
-|input_0_V_q0         |  in |   40|  ap_memory |     input_0_V    |     array    |
+|input_0_V_q0         |  in |   38|  ap_memory |     input_0_V    |     array    |
 |output_0_V_address0  | out |   11|  ap_memory |    output_0_V    |     array    |
 |output_0_V_ce0       | out |    1|  ap_memory |    output_0_V    |     array    |
 |output_0_V_we0       | out |    1|  ap_memory |    output_0_V    |     array    |
-|output_0_V_d0        | out |   40|  ap_memory |    output_0_V    |     array    |
+|output_0_V_d0        | out |   38|  ap_memory |    output_0_V    |     array    |
 +---------------------+-----+-----+------------+------------------+--------------+
 

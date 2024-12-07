@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'cache_update'
 ================================================================
-* Date:           Fri Dec  6 17:25:09 2024
+* Date:           Fri Dec  6 23:28:12 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_4th.prj
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  | 10.00 ns | 8.069 ns |   1.25 ns  |
+    |ap_clk  | 10.00 ns | 7.853 ns |   1.25 ns  |
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -97,26 +97,26 @@ ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %icmp_ln201, label %4, label 
 ST_2 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str1824) nounwind" [./layer.h:202]   --->   Operation 12 'specloopname' <Predicate = (!icmp_ln201)> <Delay = 0.00>
 ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str1824)" [./layer.h:202]   --->   Operation 13 'specregionbegin' 'tmp' <Predicate = (!icmp_ln201)> <Delay = 0.00>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln204 = zext i4 %i_0 to i7" [./layer.h:204]   --->   Operation 14 'zext' 'zext_ln204' <Predicate = (!icmp_ln201)> <Delay = 0.00>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_59 = call i6 @_ssdm_op_BitConcatenate.i6.i4.i2(i4 %i_0, i2 0)" [./layer.h:204]   --->   Operation 15 'bitconcatenate' 'tmp_59' <Predicate = (!icmp_ln201)> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln204_1 = zext i6 %tmp_59 to i7" [./layer.h:204]   --->   Operation 16 'zext' 'zext_ln204_1' <Predicate = (!icmp_ln201)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_53 = call i6 @_ssdm_op_BitConcatenate.i6.i4.i2(i4 %i_0, i2 0)" [./layer.h:204]   --->   Operation 15 'bitconcatenate' 'tmp_53' <Predicate = (!icmp_ln201)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln204_1 = zext i6 %tmp_53 to i7" [./layer.h:204]   --->   Operation 16 'zext' 'zext_ln204_1' <Predicate = (!icmp_ln201)> <Delay = 0.00>
 ST_2 : Operation 17 [1/1] (1.82ns)   --->   "%add_ln204 = add i7 %zext_ln204, %zext_ln204_1" [./layer.h:204]   --->   Operation 17 'add' 'add_ln204' <Predicate = (!icmp_ln201)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_60 = call i7 @_ssdm_op_BitConcatenate.i7.i4.i3(i4 %i_0, i3 0)" [./layer.h:204]   --->   Operation 18 'bitconcatenate' 'tmp_60' <Predicate = (!icmp_ln201)> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln203 = zext i7 %tmp_60 to i8" [./layer.h:204]   --->   Operation 19 'zext' 'zext_ln203' <Predicate = (!icmp_ln201)> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_61 = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %i_0, i1 false)" [./layer.h:204]   --->   Operation 20 'bitconcatenate' 'tmp_61' <Predicate = (!icmp_ln201)> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln203_9 = zext i5 %tmp_61 to i8" [./layer.h:204]   --->   Operation 21 'zext' 'zext_ln203_9' <Predicate = (!icmp_ln201)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_54 = call i7 @_ssdm_op_BitConcatenate.i7.i4.i3(i4 %i_0, i3 0)" [./layer.h:204]   --->   Operation 18 'bitconcatenate' 'tmp_54' <Predicate = (!icmp_ln201)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%zext_ln203 = zext i7 %tmp_54 to i8" [./layer.h:204]   --->   Operation 19 'zext' 'zext_ln203' <Predicate = (!icmp_ln201)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_55 = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %i_0, i1 false)" [./layer.h:204]   --->   Operation 20 'bitconcatenate' 'tmp_55' <Predicate = (!icmp_ln201)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln203_9 = zext i5 %tmp_55 to i8" [./layer.h:204]   --->   Operation 21 'zext' 'zext_ln203_9' <Predicate = (!icmp_ln201)> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (1.87ns)   --->   "%sub_ln203 = sub i8 %zext_ln203, %zext_ln203_9" [./layer.h:204]   --->   Operation 22 'sub' 'sub_ln203' <Predicate = (!icmp_ln201)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%sext_ln203 = sext i8 %sub_ln203 to i9" [./layer.h:204]   --->   Operation 23 'sext' 'sext_ln203' <Predicate = (!icmp_ln201)> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_62 = call i10 @_ssdm_op_BitConcatenate.i10.i4.i6(i4 %i_0, i6 0)" [./layer.h:204]   --->   Operation 24 'bitconcatenate' 'tmp_62' <Predicate = (!icmp_ln201)> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_63 = call i8 @_ssdm_op_BitConcatenate.i8.i4.i4(i4 %i_0, i4 0)" [./layer.h:204]   --->   Operation 25 'bitconcatenate' 'tmp_63' <Predicate = (!icmp_ln201)> <Delay = 0.00>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln204_2 = zext i8 %tmp_63 to i10" [./layer.h:204]   --->   Operation 26 'zext' 'zext_ln204_2' <Predicate = (!icmp_ln201)> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (1.73ns)   --->   "%sub_ln204 = sub i10 %tmp_62, %zext_ln204_2" [./layer.h:204]   --->   Operation 27 'sub' 'sub_ln204' <Predicate = (!icmp_ln201)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_56 = call i10 @_ssdm_op_BitConcatenate.i10.i4.i6(i4 %i_0, i6 0)" [./layer.h:204]   --->   Operation 24 'bitconcatenate' 'tmp_56' <Predicate = (!icmp_ln201)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_57 = call i8 @_ssdm_op_BitConcatenate.i8.i4.i4(i4 %i_0, i4 0)" [./layer.h:204]   --->   Operation 25 'bitconcatenate' 'tmp_57' <Predicate = (!icmp_ln201)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln204_2 = zext i8 %tmp_57 to i10" [./layer.h:204]   --->   Operation 26 'zext' 'zext_ln204_2' <Predicate = (!icmp_ln201)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (1.73ns)   --->   "%sub_ln204 = sub i10 %tmp_56, %zext_ln204_2" [./layer.h:204]   --->   Operation 27 'sub' 'sub_ln204' <Predicate = (!icmp_ln201)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 28 [1/1] (1.76ns)   --->   "br label %2" [./layer.h:202]   --->   Operation 28 'br' <Predicate = (!icmp_ln201)> <Delay = 1.76>
 ST_2 : Operation 29 [1/1] (0.00ns)   --->   "ret void" [./layer.h:205]   --->   Operation 29 'ret' <Predicate = (icmp_ln201)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 3.59>
 ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%j_0 = phi i3 [ 0, %CACHE_UPDATE_LOOP_1_begin ], [ %j, %CACHE_UPDATE_LOOP_2_end ]"   --->   Operation 30 'phi' 'j_0' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 31 [1/1] (1.13ns)   --->   "%icmp_ln202 = icmp eq i3 %j_0, -2" [./layer.h:202]   --->   Operation 31 'icmp' 'icmp_ln202' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%empty_103 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)"   --->   Operation 32 'speclooptripcount' 'empty_103' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%empty_98 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)"   --->   Operation 32 'speclooptripcount' 'empty_98' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 33 [1/1] (1.65ns)   --->   "%j = add i3 %j_0, 1" [./layer.h:202]   --->   Operation 33 'add' 'j' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 34 [1/1] (0.00ns)   --->   "br i1 %icmp_ln202, label %CACHE_UPDATE_LOOP_1_end, label %CACHE_UPDATE_LOOP_2_begin" [./layer.h:202]   --->   Operation 34 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str1825) nounwind" [./layer.h:203]   --->   Operation 35 'specloopname' <Predicate = (!icmp_ln202)> <Delay = 0.00>
@@ -126,8 +126,8 @@ ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%zext_ln204_4 = zext i3 %j_0 to i7"
 ST_3 : Operation 39 [1/1] (1.87ns)   --->   "%add_ln204_1 = add i7 %add_ln204, %zext_ln204_4" [./layer.h:204]   --->   Operation 39 'add' 'add_ln204_1' <Predicate = (!icmp_ln202)> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln204 = trunc i7 %add_ln204_1 to i6" [./layer.h:204]   --->   Operation 40 'trunc' 'trunc_ln204' <Predicate = (!icmp_ln202)> <Delay = 0.00>
 ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%p_shl7_cast = call i12 @_ssdm_op_BitConcatenate.i12.i6.i6(i6 %trunc_ln204, i6 0)" [./layer.h:204]   --->   Operation 41 'bitconcatenate' 'p_shl7_cast' <Predicate = (!icmp_ln202)> <Delay = 0.00>
-ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_83 = call i11 @_ssdm_op_BitConcatenate.i11.i7.i4(i7 %add_ln204_1, i4 0)" [./layer.h:204]   --->   Operation 42 'bitconcatenate' 'tmp_83' <Predicate = (!icmp_ln202)> <Delay = 0.00>
-ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln204_5 = zext i11 %tmp_83 to i12" [./layer.h:204]   --->   Operation 43 'zext' 'zext_ln204_5' <Predicate = (!icmp_ln202)> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_85 = call i11 @_ssdm_op_BitConcatenate.i11.i7.i4(i7 %add_ln204_1, i4 0)" [./layer.h:204]   --->   Operation 42 'bitconcatenate' 'tmp_85' <Predicate = (!icmp_ln202)> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln204_5 = zext i11 %tmp_85 to i12" [./layer.h:204]   --->   Operation 43 'zext' 'zext_ln204_5' <Predicate = (!icmp_ln202)> <Delay = 0.00>
 ST_3 : Operation 44 [1/1] (1.54ns)   --->   "%sub_ln204_1 = sub i12 %p_shl7_cast, %zext_ln204_5" [./layer.h:204]   --->   Operation 44 'sub' 'sub_ln204_1' <Predicate = (!icmp_ln202)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 45 [1/1] (1.91ns)   --->   "%add_ln203 = add i9 %sext_ln203, %zext_ln204_3" [./layer.h:204]   --->   Operation 45 'add' 'add_ln203' <Predicate = (!icmp_ln202)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%trunc_ln203 = trunc i9 %add_ln203 to i7" [./layer.h:204]   --->   Operation 46 'trunc' 'trunc_ln203' <Predicate = (!icmp_ln202)> <Delay = 0.00>
@@ -136,13 +136,13 @@ ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%p_shl6_cast = call i13 @_ssdm_op_B
 ST_3 : Operation 49 [1/1] (1.67ns)   --->   "%sub_ln203_4 = sub i13 %p_shl5_cast, %p_shl6_cast" [./layer.h:204]   --->   Operation 49 'sub' 'sub_ln203_4' <Predicate = (!icmp_ln202)> <Delay = 1.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 50 [1/1] (1.13ns)   --->   "%icmp_ln204 = icmp eq i3 %j_0, -3" [./layer.h:204]   --->   Operation 50 'icmp' 'icmp_ln204' <Predicate = (!icmp_ln202)> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 51 [1/1] (1.76ns)   --->   "br label %3" [./layer.h:203]   --->   Operation 51 'br' <Predicate = (!icmp_ln202)> <Delay = 1.76>
-ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%empty_106 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str1824, i32 %tmp)" [./layer.h:204]   --->   Operation 52 'specregionend' 'empty_106' <Predicate = (icmp_ln202)> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%empty_101 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str1824, i32 %tmp)" [./layer.h:204]   --->   Operation 52 'specregionend' 'empty_101' <Predicate = (icmp_ln202)> <Delay = 0.00>
 ST_3 : Operation 53 [1/1] (0.00ns)   --->   "br label %1" [./layer.h:201]   --->   Operation 53 'br' <Predicate = (icmp_ln202)> <Delay = 0.00>
 
 State 4 <SV = 3> <Delay = 4.98>
 ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%k_0 = phi i6 [ 0, %CACHE_UPDATE_LOOP_2_begin ], [ %k, %_ifconv ]"   --->   Operation 54 'phi' 'k_0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 55 [1/1] (1.42ns)   --->   "%icmp_ln203 = icmp eq i6 %k_0, -16" [./layer.h:203]   --->   Operation 55 'icmp' 'icmp_ln203' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%empty_104 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 48, i64 48, i64 48)"   --->   Operation 56 'speclooptripcount' 'empty_104' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%empty_99 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 48, i64 48, i64 48)"   --->   Operation 56 'speclooptripcount' 'empty_99' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 57 [1/1] (1.82ns)   --->   "%k = add i6 %k_0, 1" [./layer.h:203]   --->   Operation 57 'add' 'k' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 58 [1/1] (0.00ns)   --->   "br i1 %icmp_ln203, label %CACHE_UPDATE_LOOP_2_end, label %_ifconv" [./layer.h:203]   --->   Operation 58 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%zext_ln204_6 = zext i6 %k_0 to i10" [./layer.h:204]   --->   Operation 59 'zext' 'zext_ln204_6' <Predicate = (!icmp_ln203 & icmp_ln204)> <Delay = 0.00>
@@ -150,24 +150,24 @@ ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%zext_ln204_7 = zext i6 %k_0 to i13
 ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln204_8 = zext i6 %k_0 to i12" [./layer.h:204]   --->   Operation 61 'zext' 'zext_ln204_8' <Predicate = (!icmp_ln203 & !icmp_ln204)> <Delay = 0.00>
 ST_4 : Operation 62 [1/1] (1.54ns)   --->   "%add_ln204_2 = add i12 %sub_ln204_1, %zext_ln204_8" [./layer.h:204]   --->   Operation 62 'add' 'add_ln204_2' <Predicate = (!icmp_ln203 & !icmp_ln204)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln204_9 = zext i12 %add_ln204_2 to i64" [./layer.h:204]   --->   Operation 63 'zext' 'zext_ln204_9' <Predicate = (!icmp_ln203 & !icmp_ln204)> <Delay = 0.00>
-ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%cache_in_V_addr = getelementptr [1920 x i40]* %cache_in_V, i64 0, i64 %zext_ln204_9" [./layer.h:204]   --->   Operation 64 'getelementptr' 'cache_in_V_addr' <Predicate = (!icmp_ln203 & !icmp_ln204)> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%cache_in_V_addr = getelementptr [1920 x i38]* %cache_in_V, i64 0, i64 %zext_ln204_9" [./layer.h:204]   --->   Operation 64 'getelementptr' 'cache_in_V_addr' <Predicate = (!icmp_ln203 & !icmp_ln204)> <Delay = 0.00>
 ST_4 : Operation 65 [1/1] (1.67ns)   --->   "%add_ln203_4 = add i13 %sub_ln203_4, %zext_ln204_7" [./layer.h:204]   --->   Operation 65 'add' 'add_ln203_4' <Predicate = (!icmp_ln203)> <Delay = 1.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 66 [1/1] (1.73ns)   --->   "%add_ln204_3 = add i10 %sub_ln204, %zext_ln204_6" [./layer.h:204]   --->   Operation 66 'add' 'add_ln204_3' <Predicate = (!icmp_ln203 & icmp_ln204)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 67 [1/1] (0.00ns)   --->   "%sext_ln204 = sext i10 %add_ln204_3 to i64" [./layer.h:204]   --->   Operation 67 'sext' 'sext_ln204' <Predicate = (!icmp_ln203 & icmp_ln204)> <Delay = 0.00>
-ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%update_0_V_addr = getelementptr [384 x i40]* %update_0_V, i64 0, i64 %sext_ln204" [./layer.h:204]   --->   Operation 68 'getelementptr' 'update_0_V_addr' <Predicate = (!icmp_ln203 & icmp_ln204)> <Delay = 0.00>
-ST_4 : Operation 69 [2/2] (3.25ns)   --->   "%update_0_V_load = load i40* %update_0_V_addr, align 8" [./layer.h:204]   --->   Operation 69 'load' 'update_0_V_load' <Predicate = (!icmp_ln203 & icmp_ln204)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 2304> <RAM>
-ST_4 : Operation 70 [2/2] (3.25ns)   --->   "%cache_in_V_load = load i40* %cache_in_V_addr, align 8" [./layer.h:204]   --->   Operation 70 'load' 'cache_in_V_load' <Predicate = (!icmp_ln203 & !icmp_ln204)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 2304> <RAM>
-ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%empty_105 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str1825, i32 %tmp_s)" [./layer.h:204]   --->   Operation 71 'specregionend' 'empty_105' <Predicate = (icmp_ln203)> <Delay = 0.00>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%update_0_V_addr = getelementptr [384 x i38]* %update_0_V, i64 0, i64 %sext_ln204" [./layer.h:204]   --->   Operation 68 'getelementptr' 'update_0_V_addr' <Predicate = (!icmp_ln203 & icmp_ln204)> <Delay = 0.00>
+ST_4 : Operation 69 [2/2] (3.25ns)   --->   "%update_0_V_load = load i38* %update_0_V_addr, align 8" [./layer.h:204]   --->   Operation 69 'load' 'update_0_V_load' <Predicate = (!icmp_ln203 & icmp_ln204)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 2304> <RAM>
+ST_4 : Operation 70 [2/2] (3.25ns)   --->   "%cache_in_V_load = load i38* %cache_in_V_addr, align 8" [./layer.h:204]   --->   Operation 70 'load' 'cache_in_V_load' <Predicate = (!icmp_ln203 & !icmp_ln204)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 2304> <RAM>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%empty_100 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str1825, i32 %tmp_s)" [./layer.h:204]   --->   Operation 71 'specregionend' 'empty_100' <Predicate = (icmp_ln203)> <Delay = 0.00>
 ST_4 : Operation 72 [1/1] (0.00ns)   --->   "br label %2" [./layer.h:202]   --->   Operation 72 'br' <Predicate = (icmp_ln203)> <Delay = 0.00>
 
-State 5 <SV = 4> <Delay = 8.06>
+State 5 <SV = 4> <Delay = 7.85>
 ST_5 : Operation 73 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str1826) nounwind" [./layer.h:204]   --->   Operation 73 'specloopname' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%zext_ln203_10 = zext i13 %add_ln203_4 to i64" [./layer.h:204]   --->   Operation 74 'zext' 'zext_ln203_10' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 75 [1/1] (0.00ns)   --->   "%cache_out_V_addr = getelementptr [2304 x i40]* %cache_out_V, i64 0, i64 %zext_ln203_10" [./layer.h:204]   --->   Operation 75 'getelementptr' 'cache_out_V_addr' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 76 [1/2] (3.25ns)   --->   "%update_0_V_load = load i40* %update_0_V_addr, align 8" [./layer.h:204]   --->   Operation 76 'load' 'update_0_V_load' <Predicate = (icmp_ln204)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 2304> <RAM>
-ST_5 : Operation 77 [1/2] (3.25ns)   --->   "%cache_in_V_load = load i40* %cache_in_V_addr, align 8" [./layer.h:204]   --->   Operation 77 'load' 'cache_in_V_load' <Predicate = (!icmp_ln204)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 2304> <RAM>
-ST_5 : Operation 78 [1/1] (1.56ns)   --->   "%select_ln204 = select i1 %icmp_ln204, i40 %update_0_V_load, i40 %cache_in_V_load" [./layer.h:204]   --->   Operation 78 'select' 'select_ln204' <Predicate = true> <Delay = 1.56> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_5 : Operation 79 [1/1] (3.25ns)   --->   "store i40 %select_ln204, i40* %cache_out_V_addr, align 8" [./layer.h:204]   --->   Operation 79 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 2304> <RAM>
+ST_5 : Operation 75 [1/1] (0.00ns)   --->   "%cache_out_V_addr = getelementptr [2304 x i38]* %cache_out_V, i64 0, i64 %zext_ln203_10" [./layer.h:204]   --->   Operation 75 'getelementptr' 'cache_out_V_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 76 [1/2] (3.25ns)   --->   "%update_0_V_load = load i38* %update_0_V_addr, align 8" [./layer.h:204]   --->   Operation 76 'load' 'update_0_V_load' <Predicate = (icmp_ln204)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 2304> <RAM>
+ST_5 : Operation 77 [1/2] (3.25ns)   --->   "%cache_in_V_load = load i38* %cache_in_V_addr, align 8" [./layer.h:204]   --->   Operation 77 'load' 'cache_in_V_load' <Predicate = (!icmp_ln204)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 2304> <RAM>
+ST_5 : Operation 78 [1/1] (1.34ns)   --->   "%select_ln204 = select i1 %icmp_ln204, i38 %update_0_V_load, i38 %cache_in_V_load" [./layer.h:204]   --->   Operation 78 'select' 'select_ln204' <Predicate = true> <Delay = 1.34> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 79 [1/1] (3.25ns)   --->   "store i38 %select_ln204, i38* %cache_out_V_addr, align 8" [./layer.h:204]   --->   Operation 79 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 2304> <RAM>
 ST_5 : Operation 80 [1/1] (0.00ns)   --->   "br label %3" [./layer.h:203]   --->   Operation 80 'br' <Predicate = true> <Delay = 0.00>
 
 
@@ -198,10 +198,10 @@ The critical path consists of the following:
 	'getelementptr' operation ('update_0_V_addr', ./layer.h:204) [72]  (0 ns)
 	'load' operation ('update_0_V_load', ./layer.h:204) on array 'update_0_V' [73]  (3.25 ns)
 
- <State 5>: 8.07ns
+ <State 5>: 7.85ns
 The critical path consists of the following:
 	'load' operation ('update_0_V_load', ./layer.h:204) on array 'update_0_V' [73]  (3.25 ns)
-	'select' operation ('select_ln204', ./layer.h:204) [75]  (1.56 ns)
+	'select' operation ('select_ln204', ./layer.h:204) [75]  (1.35 ns)
 	'store' operation ('store_ln204', ./layer.h:204) of variable 'select_ln204', ./layer.h:204 on array 'cache_out_V' [76]  (3.25 ns)
 
 

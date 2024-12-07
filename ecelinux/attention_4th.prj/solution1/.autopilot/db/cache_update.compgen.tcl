@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 187 \
+    id 185 \
     name cache_in_V \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename cache_in_V \
     op interface \
-    ports { cache_in_V_address0 { O 11 vector } cache_in_V_ce0 { O 1 bit } cache_in_V_q0 { I 40 vector } } \
+    ports { cache_in_V_address0 { O 11 vector } cache_in_V_ce0 { O 1 bit } cache_in_V_q0 { I 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'cache_in_V'"
@@ -30,14 +30,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 188 \
+    id 186 \
     name cache_out_V \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename cache_out_V \
     op interface \
-    ports { cache_out_V_address0 { O 12 vector } cache_out_V_ce0 { O 1 bit } cache_out_V_we0 { O 1 bit } cache_out_V_d0 { O 40 vector } } \
+    ports { cache_out_V_address0 { O 12 vector } cache_out_V_ce0 { O 1 bit } cache_out_V_we0 { O 1 bit } cache_out_V_d0 { O 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'cache_out_V'"
@@ -49,14 +49,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 189 \
+    id 187 \
     name update_0_V \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename update_0_V \
     op interface \
-    ports { update_0_V_address0 { O 9 vector } update_0_V_ce0 { O 1 bit } update_0_V_q0 { I 40 vector } } \
+    ports { update_0_V_address0 { O 9 vector } update_0_V_ce0 { O 1 bit } update_0_V_q0 { I 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'update_0_V'"

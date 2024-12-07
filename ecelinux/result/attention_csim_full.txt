@@ -1536,5 +1536,5 @@ result: 0.0606995, ground_truth: 0.0611115
 result: 0.0308533, ground_truth: 0.0297394
 
 BUS_TOT_W=40 BUS_INT_W=24 RMSE=0.000651579
-[0m[35mattention_dut       : [0m[35m     1 calls; [0m[35m132.836 msecs total time
+[0m[35mattention_dut       : [0m[35m     1 calls; [0m[35m133.007 msecs total time
 [0m

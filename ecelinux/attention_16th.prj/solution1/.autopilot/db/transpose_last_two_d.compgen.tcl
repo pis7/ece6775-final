@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 73 \
+    id 71 \
     name input_V \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename input_V \
     op interface \
-    ports { input_V_address0 { O 10 vector } input_V_ce0 { O 1 bit } input_V_q0 { I 40 vector } } \
+    ports { input_V_address0 { O 10 vector } input_V_ce0 { O 1 bit } input_V_q0 { I 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_V'"
@@ -30,14 +30,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 74 \
+    id 72 \
     name output_0_V \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename output_0_V \
     op interface \
-    ports { output_0_V_address0 { O 8 vector } output_0_V_ce0 { O 1 bit } output_0_V_we0 { O 1 bit } output_0_V_d0 { O 40 vector } } \
+    ports { output_0_V_address0 { O 8 vector } output_0_V_ce0 { O 1 bit } output_0_V_we0 { O 1 bit } output_0_V_d0 { O 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_0_V'"
@@ -49,14 +49,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 75 \
+    id 73 \
     name output_1_V \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename output_1_V \
     op interface \
-    ports { output_1_V_address0 { O 8 vector } output_1_V_ce0 { O 1 bit } output_1_V_we0 { O 1 bit } output_1_V_d0 { O 40 vector } } \
+    ports { output_1_V_address0 { O 8 vector } output_1_V_ce0 { O 1 bit } output_1_V_we0 { O 1 bit } output_1_V_d0 { O 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_1_V'"
@@ -68,14 +68,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 76 \
+    id 74 \
     name output_2_V \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename output_2_V \
     op interface \
-    ports { output_2_V_address0 { O 8 vector } output_2_V_ce0 { O 1 bit } output_2_V_we0 { O 1 bit } output_2_V_d0 { O 40 vector } } \
+    ports { output_2_V_address0 { O 8 vector } output_2_V_ce0 { O 1 bit } output_2_V_we0 { O 1 bit } output_2_V_d0 { O 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_2_V'"
@@ -87,14 +87,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 77 \
+    id 75 \
     name output_3_V \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename output_3_V \
     op interface \
-    ports { output_3_V_address0 { O 8 vector } output_3_V_ce0 { O 1 bit } output_3_V_we0 { O 1 bit } output_3_V_d0 { O 40 vector } } \
+    ports { output_3_V_address0 { O 8 vector } output_3_V_ce0 { O 1 bit } output_3_V_we0 { O 1 bit } output_3_V_d0 { O 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_3_V'"

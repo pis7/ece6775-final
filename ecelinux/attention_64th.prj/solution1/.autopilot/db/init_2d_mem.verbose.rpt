@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'init_2d_mem'
 ================================================================
-* Date:           Fri Dec  6 14:33:04 2024
+* Date:           Fri Dec  6 23:49:05 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_64th.prj
@@ -129,7 +129,7 @@
 |mem_0_V_address0  | out |    5|  ap_memory |    mem_0_V   |     array    |
 |mem_0_V_ce0       | out |    1|  ap_memory |    mem_0_V   |     array    |
 |mem_0_V_we0       | out |    1|  ap_memory |    mem_0_V   |     array    |
-|mem_0_V_d0        | out |   40|  ap_memory |    mem_0_V   |     array    |
+|mem_0_V_d0        | out |   38|  ap_memory |    mem_0_V   |     array    |
 +------------------+-----+-----+------------+--------------+--------------+
 
 ============================================================
@@ -175,13 +175,13 @@ ST_1 : Operation 4 [1/1] (1.76ns)   --->   "br label %0" [./layer.h:25]   --->  
 State 2 <SV = 1> <Delay = 2.32>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%j_0_0 = phi i5 [ 0, %INIT_2D_MEM_LOOP_1_begin ], [ %add_ln25, %1 ]" [./layer.h:25]   --->   Operation 5 'phi' 'j_0_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 6 [1/1] (1.36ns)   --->   "%icmp_ln25 = icmp eq i5 %j_0_0, -8" [./layer.h:25]   --->   Operation 6 'icmp' 'icmp_ln25' <Predicate = true> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%empty_94 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 24, i64 24, i64 24)"   --->   Operation 7 'speclooptripcount' 'empty_94' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%empty_87 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 24, i64 24, i64 24)"   --->   Operation 7 'speclooptripcount' 'empty_87' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 8 [1/1] (1.78ns)   --->   "%add_ln25 = add i5 %j_0_0, 1" [./layer.h:25]   --->   Operation 8 'add' 'add_ln25' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 9 [1/1] (0.00ns)   --->   "br i1 %icmp_ln25, label %INIT_2D_MEM_LOOP_1_end, label %1" [./layer.h:25]   --->   Operation 9 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str1842) nounwind" [./layer.h:26]   --->   Operation 10 'specloopname' <Predicate = (!icmp_ln25)> <Delay = 0.00>
 ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln26 = zext i5 %j_0_0 to i64" [./layer.h:26]   --->   Operation 11 'zext' 'zext_ln26' <Predicate = (!icmp_ln25)> <Delay = 0.00>
-ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%mem_0_V_addr = getelementptr [24 x i40]* %mem_0_V, i64 0, i64 %zext_ln26" [./layer.h:26]   --->   Operation 12 'getelementptr' 'mem_0_V_addr' <Predicate = (!icmp_ln25)> <Delay = 0.00>
-ST_2 : Operation 13 [1/1] (2.32ns)   --->   "store i40 0, i40* %mem_0_V_addr, align 8" [./layer.h:26]   --->   Operation 13 'store' <Predicate = (!icmp_ln25)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 144> <RAM>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%mem_0_V_addr = getelementptr [24 x i38]* %mem_0_V, i64 0, i64 %zext_ln26" [./layer.h:26]   --->   Operation 12 'getelementptr' 'mem_0_V_addr' <Predicate = (!icmp_ln25)> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (2.32ns)   --->   "store i38 0, i38* %mem_0_V_addr, align 8" [./layer.h:26]   --->   Operation 13 'store' <Predicate = (!icmp_ln25)> <Delay = 2.32> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 144> <RAM>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "br label %0" [./layer.h:25]   --->   Operation 14 'br' <Predicate = (!icmp_ln25)> <Delay = 0.00>
 ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([19 x i8]* @p_str1841, i32 %tmp)" [./layer.h:26]   --->   Operation 15 'specregionend' 'empty' <Predicate = (icmp_ln25)> <Delay = 0.00>
 ST_2 : Operation 16 [1/1] (0.00ns)   --->   "ret void" [./layer.h:27]   --->   Operation 16 'ret' <Predicate = (icmp_ln25)> <Delay = 0.00>
@@ -209,7 +209,7 @@ tmp               (specregionbegin  ) [ 001]
 br_ln25           (br               ) [ 011]
 j_0_0             (phi              ) [ 001]
 icmp_ln25         (icmp             ) [ 001]
-empty_94          (speclooptripcount) [ 000]
+empty_87          (speclooptripcount) [ 000]
 add_ln25          (add              ) [ 011]
 br_ln25           (br               ) [ 000]
 specloopname_ln26 (specloopname     ) [ 000]
@@ -344,7 +344,7 @@ ret_ln27          (ret              ) [ 000]
 
 <comp id="26" class="1004" name="mem_0_V_addr_gep_fu_26">
 <pin_list>
-<pin id="27" dir="0" index="0" bw="40" slack="0"/>
+<pin id="27" dir="0" index="0" bw="38" slack="0"/>
 <pin id="28" dir="0" index="1" bw="1" slack="0"/>
 <pin id="29" dir="0" index="2" bw="5" slack="0"/>
 <pin id="30" dir="1" index="3" bw="5" slack="0"/>
@@ -358,9 +358,9 @@ ret_ln27          (ret              ) [ 000]
 <comp id="33" class="1004" name="store_ln26_access_fu_33">
 <pin_list>
 <pin id="34" dir="0" index="0" bw="5" slack="0"/>
-<pin id="35" dir="0" index="1" bw="40" slack="0"/>
+<pin id="35" dir="0" index="1" bw="38" slack="0"/>
 <pin id="36" dir="0" index="2" bw="0" slack="2147483647"/>
-<pin id="37" dir="1" index="3" bw="40" slack="2147483647"/>
+<pin id="37" dir="1" index="3" bw="38" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>

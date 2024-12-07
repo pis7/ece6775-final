@@ -36,11 +36,11 @@ output   ap_idle;
 output   ap_ready;
 output  [10:0] input_0_V_address0;
 output   input_0_V_ce0;
-input  [39:0] input_0_V_q0;
+input  [37:0] input_0_V_q0;
 output  [10:0] output_0_V_address0;
 output   output_0_V_ce0;
 output   output_0_V_we0;
-output  [39:0] output_0_V_d0;
+output  [37:0] output_0_V_d0;
 
 reg ap_done;
 reg ap_idle;
@@ -70,8 +70,8 @@ reg   [6:0] k_0_0_reg_82;
 wire    ap_CS_fsm_state4;
 wire   [63:0] zext_ln150_2_fu_195_p1;
 wire  signed [63:0] sext_ln203_fu_200_p1;
-wire   [9:0] tmp_55_fu_113_p3;
-wire   [11:0] tmp_54_fu_105_p3;
+wire   [9:0] tmp_50_fu_113_p3;
+wire   [11:0] tmp_49_fu_105_p3;
 wire   [11:0] zext_ln203_fu_121_p1;
 wire   [3:0] trunc_ln150_fu_131_p1;
 wire   [10:0] shl_ln_fu_135_p3;
@@ -253,11 +253,11 @@ assign shl_ln_fu_135_p3 = {{trunc_ln150_fu_131_p1}, {7'd0}};
 
 assign sub_ln150_fu_159_p2 = (zext_ln150_fu_143_p1 - zext_ln150_1_fu_155_p1);
 
-assign sub_ln203_fu_125_p2 = (tmp_54_fu_105_p3 - zext_ln203_fu_121_p1);
+assign sub_ln203_fu_125_p2 = (tmp_49_fu_105_p3 - zext_ln203_fu_121_p1);
 
-assign tmp_54_fu_105_p3 = {{i_0_0_reg_71}, {7'd0}};
+assign tmp_49_fu_105_p3 = {{i_0_0_reg_71}, {7'd0}};
 
-assign tmp_55_fu_113_p3 = {{i_0_0_reg_71}, {5'd0}};
+assign tmp_50_fu_113_p3 = {{i_0_0_reg_71}, {5'd0}};
 
 assign trunc_ln150_fu_131_p1 = i_0_0_reg_71[3:0];
 
@@ -269,7 +269,7 @@ assign zext_ln150_2_fu_195_p1 = $unsigned(sext_ln150_fu_191_p1);
 
 assign zext_ln150_fu_143_p1 = shl_ln_fu_135_p3;
 
-assign zext_ln203_fu_121_p1 = tmp_55_fu_113_p3;
+assign zext_ln203_fu_121_p1 = tmp_50_fu_113_p3;
 
 always @ (posedge ap_clk) begin
     sub_ln203_reg_212[4:0] <= 5'b00000;

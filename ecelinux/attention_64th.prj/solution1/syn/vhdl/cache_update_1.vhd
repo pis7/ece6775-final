@@ -20,10 +20,10 @@ port (
     cache_out_V_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
     cache_out_V_ce0 : OUT STD_LOGIC;
     cache_out_V_we0 : OUT STD_LOGIC;
-    cache_out_V_d0 : OUT STD_LOGIC_VECTOR (39 downto 0);
+    cache_out_V_d0 : OUT STD_LOGIC_VECTOR (37 downto 0);
     update_0_V_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
     update_0_V_ce0 : OUT STD_LOGIC;
-    update_0_V_q0 : IN STD_LOGIC_VECTOR (39 downto 0) );
+    update_0_V_q0 : IN STD_LOGIC_VECTOR (37 downto 0) );
 end;
 
 
@@ -61,7 +61,7 @@ architecture behav of cache_update_1 is
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
     signal v_cache_V_address0 : STD_LOGIC_VECTOR (9 downto 0);
     signal v_cache_V_ce0 : STD_LOGIC;
-    signal v_cache_V_q0 : STD_LOGIC_VECTOR (22 downto 0);
+    signal v_cache_V_q0 : STD_LOGIC_VECTOR (26 downto 0);
     signal i_fu_142_p2 : STD_LOGIC_VECTOR (1 downto 0);
     signal i_reg_382 : STD_LOGIC_VECTOR (1 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
@@ -99,20 +99,20 @@ architecture behav of cache_update_1 is
     signal zext_ln204_10_fu_343_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal sext_ln204_fu_358_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln203_11_fu_363_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_59_fu_152_p3 : STD_LOGIC_VECTOR (3 downto 0);
+    signal tmp_53_fu_152_p3 : STD_LOGIC_VECTOR (3 downto 0);
     signal zext_ln204_fu_148_p1 : STD_LOGIC_VECTOR (4 downto 0);
     signal zext_ln204_1_fu_160_p1 : STD_LOGIC_VECTOR (4 downto 0);
-    signal tmp_60_fu_174_p3 : STD_LOGIC_VECTOR (4 downto 0);
-    signal tmp_61_fu_186_p3 : STD_LOGIC_VECTOR (2 downto 0);
+    signal tmp_54_fu_174_p3 : STD_LOGIC_VECTOR (4 downto 0);
+    signal tmp_55_fu_186_p3 : STD_LOGIC_VECTOR (2 downto 0);
     signal zext_ln203_fu_182_p1 : STD_LOGIC_VECTOR (5 downto 0);
     signal zext_ln203_10_fu_194_p1 : STD_LOGIC_VECTOR (5 downto 0);
     signal sub_ln203_fu_198_p2 : STD_LOGIC_VECTOR (5 downto 0);
-    signal tmp_62_fu_208_p3 : STD_LOGIC_VECTOR (5 downto 0);
+    signal tmp_56_fu_208_p3 : STD_LOGIC_VECTOR (5 downto 0);
     signal zext_ln204_2_fu_164_p1 : STD_LOGIC_VECTOR (5 downto 0);
     signal zext_ln204_4_fu_238_p1 : STD_LOGIC_VECTOR (4 downto 0);
     signal add_ln204_1_fu_242_p2 : STD_LOGIC_VECTOR (4 downto 0);
-    signal tmp_83_fu_247_p3 : STD_LOGIC_VECTOR (8 downto 0);
-    signal tmp_84_fu_259_p3 : STD_LOGIC_VECTOR (6 downto 0);
+    signal tmp_85_fu_247_p3 : STD_LOGIC_VECTOR (8 downto 0);
+    signal tmp_86_fu_259_p3 : STD_LOGIC_VECTOR (6 downto 0);
     signal zext_ln204_5_fu_255_p1 : STD_LOGIC_VECTOR (10 downto 0);
     signal zext_ln204_6_fu_267_p1 : STD_LOGIC_VECTOR (10 downto 0);
     signal zext_ln204_3_fu_234_p1 : STD_LOGIC_VECTOR (6 downto 0);
@@ -125,10 +125,10 @@ architecture behav of cache_update_1 is
     signal zext_ln204_8_fu_330_p1 : STD_LOGIC_VECTOR (8 downto 0);
     signal zext_ln204_7_fu_326_p1 : STD_LOGIC_VECTOR (5 downto 0);
     signal add_ln204_3_fu_353_p2 : STD_LOGIC_VECTOR (5 downto 0);
-    signal sext_ln203_2_fu_367_p1 : STD_LOGIC_VECTOR (39 downto 0);
+    signal sext_ln203_2_fu_367_p1 : STD_LOGIC_VECTOR (37 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (4 downto 0);
 
-    component cache_update_1_v_lbW IS
+    component cache_update_1_v_kbM IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -138,15 +138,15 @@ architecture behav of cache_update_1 is
         reset : IN STD_LOGIC;
         address0 : IN STD_LOGIC_VECTOR (9 downto 0);
         ce0 : IN STD_LOGIC;
-        q0 : OUT STD_LOGIC_VECTOR (22 downto 0) );
+        q0 : OUT STD_LOGIC_VECTOR (26 downto 0) );
     end component;
 
 
 
 begin
-    v_cache_V_U : component cache_update_1_v_lbW
+    v_cache_V_U : component cache_update_1_v_kbM
     generic map (
-        DataWidth => 23,
+        DataWidth => 27,
         AddressRange => 720,
         AddressWidth => 10)
     port map (
@@ -368,7 +368,7 @@ begin
     k_fu_320_p2 <= std_logic_vector(unsigned(k_0_reg_125) + unsigned(ap_const_lv4_1));
     p_shl5_cast_fu_286_p3 <= (trunc_ln203_fu_282_p1 & ap_const_lv4_0);
     p_shl6_cast_fu_294_p3 <= (add_ln203_fu_277_p2 & ap_const_lv2_0);
-        sext_ln203_2_fu_367_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(v_cache_V_q0),40));
+        sext_ln203_2_fu_367_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(v_cache_V_q0),38));
 
         sext_ln203_fu_204_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(sub_ln203_fu_198_p2),7));
 
@@ -377,13 +377,13 @@ begin
     sub_ln203_4_fu_302_p2 <= std_logic_vector(unsigned(p_shl5_cast_fu_286_p3) - unsigned(p_shl6_cast_fu_294_p3));
     sub_ln203_fu_198_p2 <= std_logic_vector(unsigned(zext_ln203_fu_182_p1) - unsigned(zext_ln203_10_fu_194_p1));
     sub_ln204_1_fu_271_p2 <= std_logic_vector(unsigned(zext_ln204_5_fu_255_p1) - unsigned(zext_ln204_6_fu_267_p1));
-    sub_ln204_fu_216_p2 <= std_logic_vector(unsigned(tmp_62_fu_208_p3) - unsigned(zext_ln204_2_fu_164_p1));
-    tmp_59_fu_152_p3 <= (i_0_reg_103 & ap_const_lv2_0);
-    tmp_60_fu_174_p3 <= (i_0_reg_103 & ap_const_lv3_0);
-    tmp_61_fu_186_p3 <= (i_0_reg_103 & ap_const_lv1_0);
-    tmp_62_fu_208_p3 <= (i_0_reg_103 & ap_const_lv4_0);
-    tmp_83_fu_247_p3 <= (add_ln204_1_fu_242_p2 & ap_const_lv4_0);
-    tmp_84_fu_259_p3 <= (add_ln204_1_fu_242_p2 & ap_const_lv2_0);
+    sub_ln204_fu_216_p2 <= std_logic_vector(unsigned(tmp_56_fu_208_p3) - unsigned(zext_ln204_2_fu_164_p1));
+    tmp_53_fu_152_p3 <= (i_0_reg_103 & ap_const_lv2_0);
+    tmp_54_fu_174_p3 <= (i_0_reg_103 & ap_const_lv3_0);
+    tmp_55_fu_186_p3 <= (i_0_reg_103 & ap_const_lv1_0);
+    tmp_56_fu_208_p3 <= (i_0_reg_103 & ap_const_lv4_0);
+    tmp_85_fu_247_p3 <= (add_ln204_1_fu_242_p2 & ap_const_lv4_0);
+    tmp_86_fu_259_p3 <= (add_ln204_1_fu_242_p2 & ap_const_lv2_0);
     trunc_ln203_fu_282_p1 <= add_ln203_fu_277_p2(5 - 1 downto 0);
     update_0_V_address0 <= sext_ln204_fu_358_p1(5 - 1 downto 0);
 
@@ -407,16 +407,16 @@ begin
         end if; 
     end process;
 
-    zext_ln203_10_fu_194_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_61_fu_186_p3),6));
+    zext_ln203_10_fu_194_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_55_fu_186_p3),6));
     zext_ln203_11_fu_363_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln203_4_reg_438),64));
-    zext_ln203_fu_182_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_60_fu_174_p3),6));
+    zext_ln203_fu_182_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_54_fu_174_p3),6));
     zext_ln204_10_fu_343_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln204_2_fu_338_p2),64));
-    zext_ln204_1_fu_160_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_59_fu_152_p3),5));
-    zext_ln204_2_fu_164_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_59_fu_152_p3),6));
+    zext_ln204_1_fu_160_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_53_fu_152_p3),5));
+    zext_ln204_2_fu_164_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_53_fu_152_p3),6));
     zext_ln204_3_fu_234_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(j_0_reg_114),7));
     zext_ln204_4_fu_238_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(j_0_reg_114),5));
-    zext_ln204_5_fu_255_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_83_fu_247_p3),11));
-    zext_ln204_6_fu_267_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_84_fu_259_p3),11));
+    zext_ln204_5_fu_255_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_85_fu_247_p3),11));
+    zext_ln204_6_fu_267_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_86_fu_259_p3),11));
     zext_ln204_7_fu_326_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(k_0_reg_125),6));
     zext_ln204_8_fu_330_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(k_0_reg_125),9));
     zext_ln204_9_fu_334_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(k_0_reg_125),11));

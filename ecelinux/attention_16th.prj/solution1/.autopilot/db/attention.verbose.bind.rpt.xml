@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'attention'" level="0">
-<item name = "Date">Fri Dec  6 14:23:37 2024
+<item name = "Date">Fri Dec  6 23:39:28 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_16th.prj</item>
@@ -24,33 +24,33 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">19042, 19042, 0.190 ms, 0.190 ms, 19042, 19042, none</column>
+<column name="">19318, 19318, 0.193 ms, 0.193 ms, 19318, 19318, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_linear_forward_no_mu_fu_451">linear_forward_no_mu, 1807, 1807, 18.070 us, 18.070 us, 1807, 1807, none</column>
-<column name="grp_rms_norm_96_s_fu_499">rms_norm_96_s, 1308, 1308, 13.080 us, 13.080 us, 1308, 1308, none</column>
-<column name="grp_softmax_1_4_6_s_fu_508">softmax_1_4_6_s, 1765, 1765, 17.650 us, 17.650 us, 1765, 1765, none</column>
-<column name="grp_quantize_activation_fu_519">quantize_activation, 488, 488, 4.880 us, 4.880 us, 488, 488, none</column>
-<column name="grp_apply_rotary_pos_emb_fu_541">apply_rotary_pos_emb, 834, 834, 8.340 us, 8.340 us, 834, 834, none</column>
-<column name="grp_GEMM_3D_float_fu_556">GEMM_3D_float, 1737, 1737, 17.370 us, 17.370 us, 1737, 1737, none</column>
-<column name="grp_GEMM_3D_float_1_fu_563">GEMM_3D_float_1, 1065, 1065, 10.650 us, 10.650 us, 1065, 1065, none</column>
-<column name="grp_cache_update_1_fu_576">cache_update_1, 1209, 1209, 12.090 us, 12.090 us, 1209, 1209, none</column>
-<column name="grp_cache_update_fu_584">cache_update, 1209, 1209, 12.090 us, 12.090 us, 1209, 1209, none</column>
-<column name="grp_transpose_last_two_d_fu_592">transpose_last_two_d, 1209, 1209, 12.090 us, 12.090 us, 1209, 1209, none</column>
-<column name="grp_reshape_2D_to_3D_fu_601">reshape_2D_to_3D, 201, 201, 2.010 us, 2.010 us, 201, 201, none</column>
-<column name="grp_init_2d_mem_fu_607">init_2d_mem, 97, 97, 0.970 us, 0.970 us, 97, 97, none</column>
-<column name="grp_init_2d_mem_fu_613">init_2d_mem, 97, 97, 0.970 us, 0.970 us, 97, 97, none</column>
+<column name="grp_linear_forward_no_mu_fu_457">linear_forward_no_mu, 1813, 1813, 18.130 us, 18.130 us, 1813, 1813, none</column>
+<column name="grp_rms_norm_96_s_fu_505">rms_norm_96_s, 1319, 1319, 13.190 us, 13.190 us, 1319, 1319, none</column>
+<column name="grp_softmax_1_4_6_s_fu_514">softmax_1_4_6_s, 1933, 1933, 19.330 us, 19.330 us, 1933, 1933, none</column>
+<column name="grp_quantize_activation_fu_531">quantize_activation, 495, 495, 4.950 us, 4.950 us, 495, 495, none</column>
+<column name="grp_apply_rotary_pos_emb_fu_553">apply_rotary_pos_emb, 834, 834, 8.340 us, 8.340 us, 834, 834, none</column>
+<column name="grp_GEMM_3D_float_fu_568">GEMM_3D_float, 1737, 1737, 17.370 us, 17.370 us, 1737, 1737, none</column>
+<column name="grp_GEMM_3D_float_1_fu_575">GEMM_3D_float_1, 1065, 1065, 10.650 us, 10.650 us, 1065, 1065, none</column>
+<column name="grp_cache_update_1_fu_588">cache_update_1, 1209, 1209, 12.090 us, 12.090 us, 1209, 1209, none</column>
+<column name="grp_cache_update_fu_596">cache_update, 1209, 1209, 12.090 us, 12.090 us, 1209, 1209, none</column>
+<column name="grp_transpose_last_two_d_fu_604">transpose_last_two_d, 1209, 1209, 12.090 us, 12.090 us, 1209, 1209, none</column>
+<column name="grp_reshape_2D_to_3D_fu_613">reshape_2D_to_3D, 201, 201, 2.010 us, 2.010 us, 201, 201, none</column>
 <column name="grp_init_2d_mem_fu_619">init_2d_mem, 97, 97, 0.970 us, 0.970 us, 97, 97, none</column>
+<column name="grp_init_2d_mem_fu_625">init_2d_mem, 97, 97, 0.970 us, 0.970 us, 97, 97, none</column>
+<column name="grp_init_2d_mem_fu_631">init_2d_mem, 97, 97, 0.970 us, 0.970 us, 97, 97, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- SF_LOOP_1">176, 176, 44, -, -, 4, no</column>
-<column name=" + SF_LOOP_3">42, 42, 7, -, -, 6, no</column>
+<column name="- SF_LOOP_1">224, 224, 56, -, -, 4, no</column>
+<column name=" + SF_LOOP_3">54, 54, 9, -, -, 6, no</column>
 <column name="- ATTN_2D_LOOP_2">200, 200, 50, -, -, 4, no</column>
 <column name=" + ATTN_2D_LOOP_3">48, 48, 2, -, -, 24, no</column>
 </table>

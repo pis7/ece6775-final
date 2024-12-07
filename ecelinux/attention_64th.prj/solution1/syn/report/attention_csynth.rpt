@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'attention'
 ================================================================
-* Date:           Fri Dec  6 14:33:08 2024
+* Date:           Fri Dec  6 23:49:09 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_64th.prj
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
     |   min   |   max   |    min    |    max    |  min |  max |   Type  |
     +---------+---------+-----------+-----------+------+------+---------+
-    |     6422|     6422| 64.220 us | 64.220 us |  6422|  6422|   none  |
+    |     6590|     6590| 65.900 us | 65.900 us |  6590|  6590|   none  |
     +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
@@ -38,20 +38,20 @@
         |                                 |                      |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |             Instance            |        Module        |   min   |   max   |    min   |    max   | min | max |   Type  |
         +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_linear_forward_no_mu_fu_313  |linear_forward_no_mu  |      510|      510| 5.100 us | 5.100 us |  510|  510|   none  |
-        |grp_rms_norm_24_s_fu_334         |rms_norm_24_s         |      372|      372| 3.720 us | 3.720 us |  372|  372|   none  |
-        |grp_softmax_1_2_6_s_fu_343       |softmax_1_2_6_s       |      883|      883| 8.830 us | 8.830 us |  883|  883|   none  |
-        |grp_quantize_activation_fu_354   |quantize_activation   |      151|      151| 1.510 us | 1.510 us |  151|  151|   none  |
-        |grp_apply_rotary_pos_emb_fu_364  |apply_rotary_pos_emb  |      130|      130| 1.300 us | 1.300 us |  130|  130|   none  |
-        |grp_GEMM_3D_float_1_fu_376       |GEMM_3D_float_1       |      749|      749| 7.490 us | 7.490 us |  749|  749|   none  |
-        |grp_GEMM_3D_float_fu_383         |GEMM_3D_float         |      773|      773| 7.730 us | 7.730 us |  773|  773|   none  |
-        |grp_cache_update_1_fu_390        |cache_update_1        |      317|      317| 3.170 us | 3.170 us |  317|  317|   none  |
-        |grp_cache_update_fu_398          |cache_update          |      317|      317| 3.170 us | 3.170 us |  317|  317|   none  |
-        |grp_transpose_last_two_d_fu_406  |transpose_last_two_d  |      317|      317| 3.170 us | 3.170 us |  317|  317|   none  |
-        |grp_reshape_2D_to_3D_fu_412      |reshape_2D_to_3D      |       53|       53| 0.530 us | 0.530 us |   53|   53|   none  |
-        |grp_init_2d_mem_fu_418           |init_2d_mem           |       25|       25| 0.250 us | 0.250 us |   25|   25|   none  |
-        |grp_init_2d_mem_fu_424           |init_2d_mem           |       25|       25| 0.250 us | 0.250 us |   25|   25|   none  |
+        |grp_linear_forward_no_mu_fu_319  |linear_forward_no_mu  |      516|      516| 5.160 us | 5.160 us |  516|  516|   none  |
+        |grp_rms_norm_24_s_fu_340         |rms_norm_24_s         |      383|      383| 3.830 us | 3.830 us |  383|  383|   none  |
+        |grp_softmax_1_2_6_s_fu_349       |softmax_1_2_6_s       |      967|      967| 9.670 us | 9.670 us |  967|  967|   none  |
+        |grp_quantize_activation_fu_366   |quantize_activation   |      158|      158| 1.580 us | 1.580 us |  158|  158|   none  |
+        |grp_apply_rotary_pos_emb_fu_376  |apply_rotary_pos_emb  |      130|      130| 1.300 us | 1.300 us |  130|  130|   none  |
+        |grp_GEMM_3D_float_1_fu_388       |GEMM_3D_float_1       |      749|      749| 7.490 us | 7.490 us |  749|  749|   none  |
+        |grp_GEMM_3D_float_fu_395         |GEMM_3D_float         |      773|      773| 7.730 us | 7.730 us |  773|  773|   none  |
+        |grp_cache_update_1_fu_402        |cache_update_1        |      317|      317| 3.170 us | 3.170 us |  317|  317|   none  |
+        |grp_cache_update_fu_410          |cache_update          |      317|      317| 3.170 us | 3.170 us |  317|  317|   none  |
+        |grp_transpose_last_two_d_fu_418  |transpose_last_two_d  |      317|      317| 3.170 us | 3.170 us |  317|  317|   none  |
+        |grp_reshape_2D_to_3D_fu_424      |reshape_2D_to_3D      |       53|       53| 0.530 us | 0.530 us |   53|   53|   none  |
         |grp_init_2d_mem_fu_430           |init_2d_mem           |       25|       25| 0.250 us | 0.250 us |   25|   25|   none  |
+        |grp_init_2d_mem_fu_436           |init_2d_mem           |       25|       25| 0.250 us | 0.250 us |   25|   25|   none  |
+        |grp_init_2d_mem_fu_442           |init_2d_mem           |       25|       25| 0.250 us | 0.250 us |   25|   25|   none  |
         +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -59,8 +59,8 @@
         |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- SF_LOOP_1        |       88|       88|        44|          -|          -|     2|    no    |
-        | + SF_LOOP_3       |       42|       42|         7|          -|          -|     6|    no    |
+        |- SF_LOOP_1        |      112|      112|        56|          -|          -|     2|    no    |
+        | + SF_LOOP_3       |       54|       54|         9|          -|          -|     6|    no    |
         |- ATTN_2D_LOOP_2   |       52|       52|        26|          -|          -|     2|    no    |
         | + ATTN_2D_LOOP_3  |       24|       24|         2|          -|          -|    12|    no    |
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
@@ -75,18 +75,18 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
 +-----------------+---------+-------+--------+-------+-----+
 |DSP              |        -|      -|       -|      -|    -|
-|Expression       |        -|      -|       0|    427|    -|
+|Expression       |        -|      -|       0|    425|    -|
 |FIFO             |        -|      -|       -|      -|    -|
-|Instance         |       20|     92|   18809|  21605|    0|
-|Memory           |       19|      -|     928|    151|    0|
-|Multiplexer      |        -|      -|       -|   1741|    -|
-|Register         |        -|      -|     367|      -|    -|
+|Instance         |       22|    107|   19221|  22632|    0|
+|Memory           |       19|      -|     888|    151|    0|
+|Multiplexer      |        -|      -|       -|   1749|    -|
+|Register         |        -|      -|     365|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |       39|     92|   20104|  23924|    0|
+|Total            |       41|    107|   20474|  24957|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
-|Utilization (%)  |       13|     41|      18|     44|    0|
+|Utilization (%)  |       14|     48|      19|     46|    0|
 +-----------------+---------+-------+--------+-------+-----+
 
 + Detail: 
@@ -94,23 +94,23 @@
     +---------------------------------+----------------------+---------+-------+------+------+-----+
     |             Instance            |        Module        | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
     +---------------------------------+----------------------+---------+-------+------+------+-----+
-    |grp_GEMM_3D_float_fu_383         |GEMM_3D_float         |        0|      5|   237|   312|    0|
-    |grp_GEMM_3D_float_1_fu_376       |GEMM_3D_float_1       |        0|      5|   236|   312|    0|
-    |grp_apply_rotary_pos_emb_fu_364  |apply_rotary_pos_emb  |        8|      8|   649|   648|    0|
-    |grp_cache_update_fu_398          |cache_update          |        1|      0|    61|   321|    0|
-    |grp_cache_update_1_fu_390        |cache_update_1        |        2|      0|    64|   317|    0|
-    |dut_mul_58ns_56s_QgW_U62         |dut_mul_58ns_56s_QgW  |        0|     10|   230|   165|    0|
-    |grp_init_2d_mem_fu_418           |init_2d_mem           |        0|      0|     7|    50|    0|
-    |grp_init_2d_mem_fu_424           |init_2d_mem           |        0|      0|     7|    50|    0|
+    |grp_GEMM_3D_float_fu_395         |GEMM_3D_float         |        0|      5|   233|   312|    0|
+    |grp_GEMM_3D_float_1_fu_388       |GEMM_3D_float_1       |        0|      5|   232|   312|    0|
+    |grp_apply_rotary_pos_emb_fu_376  |apply_rotary_pos_emb  |        8|     12|   657|   640|    0|
+    |grp_cache_update_fu_410          |cache_update          |        1|      0|    61|   319|    0|
+    |grp_cache_update_1_fu_402        |cache_update_1        |        2|      0|    64|   315|    0|
+    |dut_mul_60ns_58s_UhA_U67         |dut_mul_60ns_58s_UhA  |        0|     12|   471|   320|    0|
     |grp_init_2d_mem_fu_430           |init_2d_mem           |        0|      0|     7|    50|    0|
-    |grp_linear_forward_no_mu_fu_313  |linear_forward_no_mu  |        0|      3|  9094|  7233|    0|
-    |grp_quantize_activation_fu_354   |quantize_activation   |        0|     20|  1143|  1874|    0|
-    |grp_reshape_2D_to_3D_fu_412      |reshape_2D_to_3D      |        0|      0|    30|   146|    0|
-    |grp_rms_norm_24_s_fu_334         |rms_norm_24_s         |        0|     23|  4839|  8115|    0|
-    |grp_softmax_1_2_6_s_fu_343       |softmax_1_2_6_s       |        9|     18|  2151|  1782|    0|
-    |grp_transpose_last_two_d_fu_406  |transpose_last_two_d  |        0|      0|    54|   230|    0|
+    |grp_init_2d_mem_fu_436           |init_2d_mem           |        0|      0|     7|    50|    0|
+    |grp_init_2d_mem_fu_442           |init_2d_mem           |        0|      0|     7|    50|    0|
+    |grp_linear_forward_no_mu_fu_319  |linear_forward_no_mu  |        0|      4|  9100|  7239|    0|
+    |grp_quantize_activation_fu_366   |quantize_activation   |        0|     20|  1187|  1933|    0|
+    |grp_reshape_2D_to_3D_fu_424      |reshape_2D_to_3D      |        0|      0|    30|   146|    0|
+    |grp_rms_norm_24_s_fu_340         |rms_norm_24_s         |        0|     24|  4298|  8431|    0|
+    |grp_softmax_1_2_6_s_fu_349       |softmax_1_2_6_s       |       11|     25|  2813|  2285|    0|
+    |grp_transpose_last_two_d_fu_418  |transpose_last_two_d  |        0|      0|    54|   230|    0|
     +---------------------------------+----------------------+---------+-------+------+------+-----+
-    |Total                            |                      |       20|     92| 18809| 21605|    0|
+    |Total                            |                      |       22|    107| 19221| 22632|    0|
     +---------------------------------+----------------------+---------+-------+------+------+-----+
 
     * DSP48E: 
@@ -120,36 +120,36 @@
     +--------------------------+----------------------+---------+----+----+-----+------+-----+------+-------------+
     |          Memory          |        Module        | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +--------------------------+----------------------+---------+----+----+-----+------+-----+------+-------------+
-    |q_proj_re_0_V_U           |apply_rotary_pos_ibs  |        3|   0|   0|    0|    24|   40|     1|          960|
-    |k_proj_re_0_V_U           |apply_rotary_pos_ibs  |        3|   0|   0|    0|    24|   40|     1|          960|
-    |v_proj_re_0_V_U           |apply_rotary_pos_ibs  |        3|   0|   0|    0|    24|   40|     1|          960|
-    |attn_weights_0_V_U        |attention_attn_weJfO  |        0|  80|   8|    0|    12|   40|     1|          480|
-    |k_cache_upd_V_U           |attention_k_cacheGfk  |        2|   0|   0|    0|   144|   40|     1|         5760|
-    |v_cache_upd_V_U           |attention_k_cacheGfk  |        2|   0|   0|    0|   144|   40|     1|         5760|
-    |k_proj_transposed_V_U     |attention_k_cacheGfk  |        2|   0|   0|    0|   144|   40|     1|         5760|
+    |q_proj_re_0_V_U           |apply_rotary_pos_hbi  |        3|   0|   0|    0|    24|   38|     1|          912|
+    |k_proj_re_0_V_U           |apply_rotary_pos_hbi  |        3|   0|   0|    0|    24|   38|     1|          912|
+    |v_proj_re_0_V_U           |apply_rotary_pos_hbi  |        3|   0|   0|    0|    24|   38|     1|          912|
+    |attn_weights_0_V_U        |attention_attn_weNgs  |        0|  76|   8|    0|    12|   38|     1|          456|
+    |k_cache_upd_V_U           |attention_k_cacheKfY  |        2|   0|   0|    0|   144|   38|     1|         5472|
+    |v_cache_upd_V_U           |attention_k_cacheKfY  |        2|   0|   0|    0|   144|   38|     1|         5472|
+    |k_proj_transposed_V_U     |attention_k_cacheKfY  |        2|   0|   0|    0|   144|   38|     1|         5472|
     |k_weights_U               |attention_k_weights   |        1|   0|   0|    0|   144|    8|     1|         1152|
-    |ln_weight_in_V_U          |attention_ln_weigsc4  |        0|  80|  15|    0|    24|   40|     1|          960|
-    |ln_weight_V_U             |attention_ln_weigtde  |        0|  80|  15|    0|    24|   40|     1|          960|
+    |ln_weight_in_V_U          |attention_ln_weigwdI  |        0|  76|  15|    0|    24|   38|     1|          912|
+    |ln_weight_V_U             |attention_ln_weigxdS  |        0|  76|  15|    0|    24|   38|     1|          912|
     |o_weights_U               |attention_o_weights   |        1|   0|   0|    0|   144|    8|     1|         1152|
-    |q_proj_0_V_U              |attention_q_proj_Bew  |        0|  80|  15|    0|    24|   40|     1|          960|
-    |k_proj_0_V_U              |attention_q_proj_Bew  |        0|  80|  15|    0|    24|   40|     1|          960|
-    |attn_output_2D_0_V_U      |attention_q_proj_Bew  |        0|  80|  15|    0|    24|   40|     1|          960|
+    |q_proj_0_V_U              |attention_q_proj_Ffa  |        0|  76|  15|    0|    24|   38|     1|          912|
+    |k_proj_0_V_U              |attention_q_proj_Ffa  |        0|  76|  15|    0|    24|   38|     1|          912|
+    |attn_output_2D_0_V_U      |attention_q_proj_Ffa  |        0|  76|  15|    0|    24|   38|     1|          912|
     |q_weights_U               |attention_q_weights   |        1|   0|   0|    0|   144|    8|     1|         1152|
-    |quantized_hidden_sta_U    |attention_quantizudo  |        0|  16|   1|    0|     6|    8|     1|           48|
-    |quantized_hidden_sta_1_U  |attention_quantizudo  |        0|  16|   1|    0|     6|    8|     1|           48|
-    |quantized_hidden_sta_2_U  |attention_quantizudo  |        0|  16|   1|    0|     6|    8|     1|           48|
-    |quantized_hidden_sta_3_U  |attention_quantizudo  |        0|  16|   1|    0|     6|    8|     1|           48|
-    |quantized_final_outp_U    |attention_quantizudo  |        0|  16|   1|    0|     6|    8|     1|           48|
-    |quantized_final_outp_1_U  |attention_quantizudo  |        0|  16|   1|    0|     6|    8|     1|           48|
-    |quantized_final_outp_2_U  |attention_quantizudo  |        0|  16|   1|    0|     6|    8|     1|           48|
-    |quantized_final_outp_3_U  |attention_quantizudo  |        0|  16|   1|    0|     6|    8|     1|           48|
-    |v_proj_0_V_U              |attention_v_proj_DeQ  |        0|  80|  15|    0|    24|   40|     1|          960|
-    |q_embed_0_V_U             |attention_v_proj_DeQ  |        0|  80|  15|    0|    24|   40|     1|          960|
-    |k_embed_0_V_U             |attention_v_proj_DeQ  |        0|  80|  15|    0|    24|   40|     1|          960|
-    |attn_output_0_U           |attention_v_proj_DeQ  |        0|  80|  15|    0|    24|   40|     1|          960|
+    |quantized_hidden_sta_U    |attention_quantizyd2  |        0|  16|   1|    0|     6|    8|     1|           48|
+    |quantized_hidden_sta_1_U  |attention_quantizyd2  |        0|  16|   1|    0|     6|    8|     1|           48|
+    |quantized_hidden_sta_2_U  |attention_quantizyd2  |        0|  16|   1|    0|     6|    8|     1|           48|
+    |quantized_hidden_sta_3_U  |attention_quantizyd2  |        0|  16|   1|    0|     6|    8|     1|           48|
+    |quantized_final_outp_U    |attention_quantizyd2  |        0|  16|   1|    0|     6|    8|     1|           48|
+    |quantized_final_outp_1_U  |attention_quantizyd2  |        0|  16|   1|    0|     6|    8|     1|           48|
+    |quantized_final_outp_2_U  |attention_quantizyd2  |        0|  16|   1|    0|     6|    8|     1|           48|
+    |quantized_final_outp_3_U  |attention_quantizyd2  |        0|  16|   1|    0|     6|    8|     1|           48|
+    |v_proj_0_V_U              |attention_v_proj_Hfu  |        0|  76|  15|    0|    24|   38|     1|          912|
+    |q_embed_0_V_U             |attention_v_proj_Hfu  |        0|  76|  15|    0|    24|   38|     1|          912|
+    |k_embed_0_V_U             |attention_v_proj_Hfu  |        0|  76|  15|    0|    24|   38|     1|          912|
+    |attn_output_0_U           |attention_v_proj_Hfu  |        0|  76|  15|    0|    24|   38|     1|          912|
     |v_weights_U               |attention_v_weights   |        1|   0|   0|    0|   144|    8|     1|         1152|
     +--------------------------+----------------------+---------+----+----+-----+------+-----+------+-------------+
-    |Total                     |                      |       19| 928| 151|    0|  1356|  736|    28|        34272|
+    |Total                     |                      |       19| 888| 151|    0|  1356|  704|    28|        32808|
     +--------------------------+----------------------+---------+----+----+-----+------+-----+------+-------------+
 
     * FIFO: 
@@ -159,72 +159,72 @@
     +----------------------------------+----------+-------+---+-----+------------+------------+
     |           Variable Name          | Operation| DSP48E| FF| LUT | Bitwidth P0| Bitwidth P1|
     +----------------------------------+----------+-------+---+-----+------------+------------+
-    |add_ln1265_fu_496_p2              |     +    |      0|  0|   15|           5|           5|
-    |add_ln178_fu_486_p2               |     +    |      0|  0|   12|           3|           1|
-    |add_ln203_fu_675_p2               |     +    |      0|  0|   15|           6|           6|
-    |add_ln208_fu_588_p2               |     +    |      0|  0|   10|           2|           1|
-    |add_ln209_fu_664_p2               |     +    |      0|  0|   13|           4|           1|
-    |add_ln210_fu_670_p2               |     +    |      0|  0|   15|           6|           6|
-    |h_fu_448_p2                       |     +    |      0|  0|   10|           2|           1|
-    |sub_ln1148_fu_541_p2              |     -    |      0|  0|  120|           1|         113|
-    |sub_ln1265_fu_474_p2              |     -    |      0|  0|   15|           5|           5|
-    |sub_ln203_fu_648_p2               |     -    |      0|  0|   15|           6|           6|
-    |sub_ln210_fu_622_p2               |     -    |      0|  0|   15|           6|           6|
-    |sub_ln703_fu_565_p2               |     -    |      0|  0|   47|           1|          40|
-    |icmp_ln176_fu_442_p2              |   icmp   |      0|  0|    9|           2|           3|
-    |icmp_ln178_fu_480_p2              |   icmp   |      0|  0|    9|           3|           3|
-    |icmp_ln208_fu_582_p2              |   icmp   |      0|  0|    9|           2|           3|
-    |icmp_ln209_fu_658_p2              |   icmp   |      0|  0|    9|           4|           4|
+    |add_ln1265_fu_508_p2              |     +    |      0|  0|   15|           5|           5|
+    |add_ln178_fu_498_p2               |     +    |      0|  0|   12|           3|           1|
+    |add_ln203_fu_687_p2               |     +    |      0|  0|   15|           6|           6|
+    |add_ln208_fu_600_p2               |     +    |      0|  0|   10|           2|           1|
+    |add_ln209_fu_676_p2               |     +    |      0|  0|   13|           4|           1|
+    |add_ln210_fu_682_p2               |     +    |      0|  0|   15|           6|           6|
+    |h_fu_460_p2                       |     +    |      0|  0|   10|           2|           1|
+    |sub_ln1148_fu_553_p2              |     -    |      0|  0|  124|           1|         117|
+    |sub_ln1265_fu_486_p2              |     -    |      0|  0|   15|           5|           5|
+    |sub_ln203_fu_660_p2               |     -    |      0|  0|   15|           6|           6|
+    |sub_ln210_fu_634_p2               |     -    |      0|  0|   15|           6|           6|
+    |sub_ln703_fu_577_p2               |     -    |      0|  0|   45|           1|          38|
+    |icmp_ln176_fu_454_p2              |   icmp   |      0|  0|    9|           2|           3|
+    |icmp_ln178_fu_492_p2              |   icmp   |      0|  0|    9|           3|           3|
+    |icmp_ln208_fu_594_p2              |   icmp   |      0|  0|    9|           2|           3|
+    |icmp_ln209_fu_670_p2              |   icmp   |      0|  0|    9|           4|           4|
     |ap_block_state10_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
     |ap_block_state12_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
     |ap_block_state14_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
     |ap_block_state2_on_subcall_done   |    or    |      0|  0|    2|           1|           1|
-    |ap_block_state33_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
-    |select_ln1148_2_fu_574_p3         |  select  |      0|  0|   40|           1|          40|
-    |select_ln1148_fu_556_p3           |  select  |      0|  0|   39|           1|          39|
+    |ap_block_state35_on_subcall_done  |    or    |      0|  0|    2|           1|           1|
+    |select_ln1148_2_fu_586_p3         |  select  |      0|  0|   38|           1|          38|
+    |select_ln1148_fu_568_p3           |  select  |      0|  0|   37|           1|          37|
     +----------------------------------+----------+-------+---+-----+------------+------------+
-    |Total                             |          |      0|  0|  427|          65|         288|
+    |Total                             |          |      0|  0|  425|          65|         286|
     +----------------------------------+----------+-------+---+-----+------------+------------+
 
     * Multiplexer: 
     +---------------------------------------------------+-----+-----------+-----+-----------+
     |                        Name                       | LUT | Input Size| Bits| Total Bits|
     +---------------------------------------------------+-----+-----------+-----+-----------+
-    |ap_NS_fsm                                          |  169|         38|    1|         38|
+    |ap_NS_fsm                                          |  177|         40|    1|         40|
     |attn_output_0_address0                             |   15|          3|    5|         15|
     |attn_output_0_ce0                                  |   15|          3|    1|          3|
     |attn_output_0_we0                                  |    9|          2|    1|          2|
     |attn_output_2D_0_V_address0                        |   21|          4|    5|         20|
     |attn_output_2D_0_V_ce0                             |   21|          4|    1|          4|
     |attn_output_2D_0_V_ce1                             |    9|          2|    1|          2|
-    |attn_output_2D_0_V_d0                              |   15|          3|   40|        120|
+    |attn_output_2D_0_V_d0                              |   15|          3|   38|        114|
     |attn_output_2D_0_V_we0                             |   15|          3|    1|          3|
     |attn_weights_0_V_address0                          |   33|          6|    4|         24|
     |attn_weights_0_V_ce0                               |   27|          5|    1|          5|
-    |attn_weights_0_V_d0                                |   21|          4|   40|        160|
+    |attn_weights_0_V_d0                                |   21|          4|   38|        152|
     |attn_weights_0_V_we0                               |   21|          4|    1|          4|
-    |d107_0_0_reg_302                                   |    9|          2|    4|          8|
-    |d_0_0_reg_280                                      |    9|          2|    3|          6|
+    |d107_0_0_reg_308                                   |    9|          2|    4|          8|
+    |d_0_0_reg_286                                      |    9|          2|    3|          6|
     |final_output_0_V_address0                          |   15|          3|    5|         15|
     |final_output_0_V_ce0                               |   15|          3|    1|          3|
     |final_output_0_V_ce1                               |    9|          2|    1|          2|
-    |final_output_0_V_d0                                |   15|          3|   40|        120|
+    |final_output_0_V_d0                                |   15|          3|   38|        114|
     |final_output_0_V_we0                               |   15|          3|    1|          3|
     |final_output_0_V_we1                               |    9|          2|    1|          2|
-    |grp_linear_forward_no_mu_fu_313_input_0_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_313_input_1_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_313_input_2_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_313_input_3_0_V_q0     |   15|          3|    8|         24|
-    |grp_linear_forward_no_mu_fu_313_output_0_V_q0      |   27|          5|   40|        200|
-    |grp_linear_forward_no_mu_fu_313_packed_weights_q0  |   27|          5|    8|         40|
-    |grp_linear_forward_no_mu_fu_313_w_scale_V          |   27|          5|   22|        110|
-    |grp_quantize_activation_fu_354_input_0_V_q0        |   15|          3|   40|        120|
-    |grp_quantize_activation_fu_354_input_0_V_q1        |   15|          3|   40|        120|
-    |grp_reshape_2D_to_3D_fu_412_input_0_V_q0           |   21|          4|   40|        160|
-    |grp_rms_norm_24_s_fu_334_input_0_V_q0              |   15|          3|   40|        120|
-    |grp_rms_norm_24_s_fu_334_weight_V_q0               |   15|          3|   40|        120|
-    |h106_0_0_reg_291                                   |    9|          2|    2|          4|
-    |h_0_reg_269                                        |    9|          2|    2|          4|
+    |grp_linear_forward_no_mu_fu_319_input_0_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_319_input_1_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_319_input_2_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_319_input_3_0_V_q0     |   15|          3|    8|         24|
+    |grp_linear_forward_no_mu_fu_319_output_0_V_q0      |   27|          5|   38|        190|
+    |grp_linear_forward_no_mu_fu_319_packed_weights_q0  |   27|          5|    8|         40|
+    |grp_linear_forward_no_mu_fu_319_w_scale_V          |   27|          5|   26|        130|
+    |grp_quantize_activation_fu_366_input_0_V_q0        |   15|          3|   38|        114|
+    |grp_quantize_activation_fu_366_input_0_V_q1        |   15|          3|   38|        114|
+    |grp_reshape_2D_to_3D_fu_424_input_0_V_q0           |   21|          4|   38|        152|
+    |grp_rms_norm_24_s_fu_340_input_0_V_q0              |   15|          3|   38|        114|
+    |grp_rms_norm_24_s_fu_340_weight_V_q0               |   15|          3|   38|        114|
+    |h106_0_0_reg_297                                   |    9|          2|    2|          4|
+    |h_0_reg_275                                        |    9|          2|    2|          4|
     |hidden_states_0_V_address0                         |   15|          3|    5|         15|
     |hidden_states_0_V_ce0                              |   15|          3|    1|          3|
     |hidden_states_0_V_ce1                              |    9|          2|    1|          2|
@@ -242,7 +242,7 @@
     |k_proj_re_0_V_address0                             |   21|          4|    5|         20|
     |k_proj_re_0_V_ce0                                  |   21|          4|    1|          4|
     |k_proj_re_0_V_ce1                                  |    9|          2|    1|          2|
-    |k_proj_re_0_V_d0                                   |   15|          3|   40|        120|
+    |k_proj_re_0_V_d0                                   |   15|          3|   38|        114|
     |k_proj_re_0_V_we0                                  |   15|          3|    1|          3|
     |k_proj_re_0_V_we1                                  |    9|          2|    1|          2|
     |k_proj_transposed_V_address0                       |   15|          3|    8|         24|
@@ -262,7 +262,7 @@
     |q_proj_re_0_V_address0                             |   21|          4|    5|         20|
     |q_proj_re_0_V_ce0                                  |   21|          4|    1|          4|
     |q_proj_re_0_V_ce1                                  |    9|          2|    1|          2|
-    |q_proj_re_0_V_d0                                   |   15|          3|   40|        120|
+    |q_proj_re_0_V_d0                                   |   15|          3|   38|        114|
     |q_proj_re_0_V_we0                                  |   15|          3|    1|          3|
     |q_proj_re_0_V_we1                                  |    9|          2|    1|          2|
     |q_weights_ce0                                      |    9|          2|    1|          2|
@@ -299,54 +299,54 @@
     |v_proj_re_0_V_address0                             |   21|          4|    5|         20|
     |v_proj_re_0_V_ce0                                  |   21|          4|    1|          4|
     |v_proj_re_0_V_ce1                                  |    9|          2|    1|          2|
-    |v_proj_re_0_V_d0                                   |   15|          3|   40|        120|
+    |v_proj_re_0_V_d0                                   |   15|          3|   38|        114|
     |v_proj_re_0_V_we0                                  |   15|          3|    1|          3|
     |v_proj_re_0_V_we1                                  |    9|          2|    1|          2|
     |v_weights_ce0                                      |    9|          2|    1|          2|
     +---------------------------------------------------+-----+-----------+-----+-----------+
-    |Total                                              | 1741|        356|  732|       2443|
+    |Total                                              | 1749|        358|  712|       2385|
     +---------------------------------------------------+-----+-----------+-----+-----------+
 
     * Register: 
     +----------------------------------------------+-----+----+-----+-----------+
     |                     Name                     |  FF | LUT| Bits| Const Bits|
     +----------------------------------------------+-----+----+-----+-----------+
-    |add_ln178_reg_709                             |    3|   0|    3|          0|
-    |add_ln208_reg_754                             |    2|   0|    2|          0|
-    |add_ln209_reg_772                             |    4|   0|    4|          0|
-    |add_ln210_reg_777                             |    6|   0|    6|          0|
-    |ap_CS_fsm                                     |   37|   0|   37|          0|
-    |attn_weights_0_V_ad_reg_714                   |    4|   0|    4|          0|
-    |attn_weights_0_V_lo_reg_719                   |   40|   0|   40|          0|
-    |d107_0_0_reg_302                              |    4|   0|    4|          0|
-    |d_0_0_reg_280                                 |    3|   0|    3|          0|
-    |grp_GEMM_3D_float_1_fu_376_ap_start_reg       |    1|   0|    1|          0|
-    |grp_GEMM_3D_float_fu_383_ap_start_reg         |    1|   0|    1|          0|
-    |grp_apply_rotary_pos_emb_fu_364_ap_start_reg  |    1|   0|    1|          0|
-    |grp_cache_update_1_fu_390_ap_start_reg        |    1|   0|    1|          0|
-    |grp_cache_update_fu_398_ap_start_reg          |    1|   0|    1|          0|
-    |grp_init_2d_mem_fu_418_ap_start_reg           |    1|   0|    1|          0|
-    |grp_init_2d_mem_fu_424_ap_start_reg           |    1|   0|    1|          0|
+    |add_ln178_reg_721                             |    3|   0|    3|          0|
+    |add_ln208_reg_766                             |    2|   0|    2|          0|
+    |add_ln209_reg_784                             |    4|   0|    4|          0|
+    |add_ln210_reg_789                             |    6|   0|    6|          0|
+    |ap_CS_fsm                                     |   39|   0|   39|          0|
+    |attn_weights_0_V_ad_reg_726                   |    4|   0|    4|          0|
+    |attn_weights_0_V_lo_reg_731                   |   38|   0|   38|          0|
+    |d107_0_0_reg_308                              |    4|   0|    4|          0|
+    |d_0_0_reg_286                                 |    3|   0|    3|          0|
+    |grp_GEMM_3D_float_1_fu_388_ap_start_reg       |    1|   0|    1|          0|
+    |grp_GEMM_3D_float_fu_395_ap_start_reg         |    1|   0|    1|          0|
+    |grp_apply_rotary_pos_emb_fu_376_ap_start_reg  |    1|   0|    1|          0|
+    |grp_cache_update_1_fu_402_ap_start_reg        |    1|   0|    1|          0|
+    |grp_cache_update_fu_410_ap_start_reg          |    1|   0|    1|          0|
     |grp_init_2d_mem_fu_430_ap_start_reg           |    1|   0|    1|          0|
-    |grp_linear_forward_no_mu_fu_313_ap_start_reg  |    1|   0|    1|          0|
-    |grp_quantize_activation_fu_354_ap_start_reg   |    1|   0|    1|          0|
-    |grp_reshape_2D_to_3D_fu_412_ap_start_reg      |    1|   0|    1|          0|
-    |grp_rms_norm_24_s_fu_334_ap_start_reg         |    1|   0|    1|          0|
-    |grp_softmax_1_2_6_s_fu_343_ap_start_reg       |    1|   0|    1|          0|
-    |grp_transpose_last_two_d_fu_406_ap_start_reg  |    1|   0|    1|          0|
-    |h106_0_0_reg_291                              |    2|   0|    2|          0|
-    |h_0_reg_269                                   |    2|   0|    2|          0|
-    |h_reg_696                                     |    2|   0|    2|          0|
-    |mul_ln1148_reg_735                            |  113|   0|  113|          0|
-    |reg_437                                       |   40|   0|   40|          0|
-    |select_ln1148_reg_745                         |   39|   0|   39|          0|
-    |sub_ln1265_reg_701                            |    4|   0|    5|          1|
-    |sub_ln203_reg_764                             |    4|   0|    6|          2|
-    |sub_ln210_reg_759                             |    4|   0|    6|          2|
-    |tmp_86_reg_724                                |    1|   0|    1|          0|
-    |tmp_88_reg_740                                |   39|   0|   39|          0|
+    |grp_init_2d_mem_fu_436_ap_start_reg           |    1|   0|    1|          0|
+    |grp_init_2d_mem_fu_442_ap_start_reg           |    1|   0|    1|          0|
+    |grp_linear_forward_no_mu_fu_319_ap_start_reg  |    1|   0|    1|          0|
+    |grp_quantize_activation_fu_366_ap_start_reg   |    1|   0|    1|          0|
+    |grp_reshape_2D_to_3D_fu_424_ap_start_reg      |    1|   0|    1|          0|
+    |grp_rms_norm_24_s_fu_340_ap_start_reg         |    1|   0|    1|          0|
+    |grp_softmax_1_2_6_s_fu_349_ap_start_reg       |    1|   0|    1|          0|
+    |grp_transpose_last_two_d_fu_418_ap_start_reg  |    1|   0|    1|          0|
+    |h106_0_0_reg_297                              |    2|   0|    2|          0|
+    |h_0_reg_275                                   |    2|   0|    2|          0|
+    |h_reg_708                                     |    2|   0|    2|          0|
+    |mul_ln1148_reg_747                            |  117|   0|  117|          0|
+    |reg_449                                       |   38|   0|   38|          0|
+    |select_ln1148_reg_757                         |   37|   0|   37|          0|
+    |sub_ln1265_reg_713                            |    4|   0|    5|          1|
+    |sub_ln203_reg_776                             |    4|   0|    6|          2|
+    |sub_ln210_reg_771                             |    4|   0|    6|          2|
+    |tmp_89_reg_736                                |    1|   0|    1|          0|
+    |tmp_91_reg_752                                |   37|   0|   37|          0|
     +----------------------------------------------+-----+----+-----+-----------+
-    |Total                                         |  367|   0|  372|          5|
+    |Total                                         |  365|   0|  370|          5|
     +----------------------------------------------+-----+----+-----+-----------+
 
 
@@ -367,19 +367,19 @@
 |hidden_states_0_V_address0  | out |    5|  ap_memory | hidden_states_0_V |     array    |
 |hidden_states_0_V_ce0       | out |    1|  ap_memory | hidden_states_0_V |     array    |
 |hidden_states_0_V_we0       | out |    1|  ap_memory | hidden_states_0_V |     array    |
-|hidden_states_0_V_d0        | out |   40|  ap_memory | hidden_states_0_V |     array    |
-|hidden_states_0_V_q0        |  in |   40|  ap_memory | hidden_states_0_V |     array    |
+|hidden_states_0_V_d0        | out |   38|  ap_memory | hidden_states_0_V |     array    |
+|hidden_states_0_V_q0        |  in |   38|  ap_memory | hidden_states_0_V |     array    |
 |hidden_states_0_V_address1  | out |    5|  ap_memory | hidden_states_0_V |     array    |
 |hidden_states_0_V_ce1       | out |    1|  ap_memory | hidden_states_0_V |     array    |
-|hidden_states_0_V_q1        |  in |   40|  ap_memory | hidden_states_0_V |     array    |
+|hidden_states_0_V_q1        |  in |   38|  ap_memory | hidden_states_0_V |     array    |
 |final_output_0_V_address0   | out |    5|  ap_memory |  final_output_0_V |     array    |
 |final_output_0_V_ce0        | out |    1|  ap_memory |  final_output_0_V |     array    |
 |final_output_0_V_we0        | out |    1|  ap_memory |  final_output_0_V |     array    |
-|final_output_0_V_d0         | out |   40|  ap_memory |  final_output_0_V |     array    |
-|final_output_0_V_q0         |  in |   40|  ap_memory |  final_output_0_V |     array    |
+|final_output_0_V_d0         | out |   38|  ap_memory |  final_output_0_V |     array    |
+|final_output_0_V_q0         |  in |   38|  ap_memory |  final_output_0_V |     array    |
 |final_output_0_V_address1   | out |    5|  ap_memory |  final_output_0_V |     array    |
 |final_output_0_V_ce1        | out |    1|  ap_memory |  final_output_0_V |     array    |
 |final_output_0_V_we1        | out |    1|  ap_memory |  final_output_0_V |     array    |
-|final_output_0_V_d1         | out |   40|  ap_memory |  final_output_0_V |     array    |
+|final_output_0_V_d1         | out |   38|  ap_memory |  final_output_0_V |     array    |
 +----------------------------+-----+-----+------------+-------------------+--------------+
 

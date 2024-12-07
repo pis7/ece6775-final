@@ -44,6 +44,6 @@ plt.yticks(np.unique(bus_tot_w))
 plt.title('RMSE vs. Bus Integer and Total Widths')
 
 # Save the plot to a file
-plt.savefig('result/accuracy_plot.png')
+plt.savefig('result/accuracy_plot_vivado.png')
 
-print("Plot saved to result/accuracy_plot.png")
+print("Plot saved to result/accuracy_plot_vivado.png")

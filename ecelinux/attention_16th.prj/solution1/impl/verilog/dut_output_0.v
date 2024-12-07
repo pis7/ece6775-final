@@ -5,7 +5,7 @@
 `timescale 1 ns / 1 ps
 module dut_output_0_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1,  clk);
 
-parameter DWIDTH = 40;
+parameter DWIDTH = 38;
 parameter AWIDTH = 7;
 parameter MEM_SIZE = 96;
 
@@ -60,7 +60,7 @@ module dut_output_0(
     we1,
     d1);
 
-parameter DataWidth = 32'd40;
+parameter DataWidth = 32'd38;
 parameter AddressRange = 32'd96;
 parameter AddressWidth = 32'd7;
 input reset;

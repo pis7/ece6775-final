@@ -11,7 +11,7 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "cache_update_1_v_lbW.h"
+#include "cache_update_1_v_kbM.h"
 
 namespace ap_rtl {
 
@@ -26,10 +26,10 @@ struct cache_update_1 : public sc_module {
     sc_out< sc_lv<8> > cache_out_V_address0;
     sc_out< sc_logic > cache_out_V_ce0;
     sc_out< sc_logic > cache_out_V_we0;
-    sc_out< sc_lv<40> > cache_out_V_d0;
+    sc_out< sc_lv<38> > cache_out_V_d0;
     sc_out< sc_lv<5> > update_0_V_address0;
     sc_out< sc_logic > update_0_V_ce0;
-    sc_in< sc_lv<40> > update_0_V_q0;
+    sc_in< sc_lv<38> > update_0_V_q0;
 
 
     // Module declarations
@@ -40,12 +40,12 @@ struct cache_update_1 : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    cache_update_1_v_lbW* v_cache_V_U;
+    cache_update_1_v_kbM* v_cache_V_U;
     sc_signal< sc_lv<5> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<10> > v_cache_V_address0;
     sc_signal< sc_logic > v_cache_V_ce0;
-    sc_signal< sc_lv<23> > v_cache_V_q0;
+    sc_signal< sc_lv<27> > v_cache_V_q0;
     sc_signal< sc_lv<2> > i_fu_142_p2;
     sc_signal< sc_lv<2> > i_reg_382;
     sc_signal< sc_logic > ap_CS_fsm_state2;
@@ -79,20 +79,20 @@ struct cache_update_1 : public sc_module {
     sc_signal< sc_lv<64> > zext_ln204_10_fu_343_p1;
     sc_signal< sc_lv<64> > sext_ln204_fu_358_p1;
     sc_signal< sc_lv<64> > zext_ln203_11_fu_363_p1;
-    sc_signal< sc_lv<4> > tmp_59_fu_152_p3;
+    sc_signal< sc_lv<4> > tmp_53_fu_152_p3;
     sc_signal< sc_lv<5> > zext_ln204_fu_148_p1;
     sc_signal< sc_lv<5> > zext_ln204_1_fu_160_p1;
-    sc_signal< sc_lv<5> > tmp_60_fu_174_p3;
-    sc_signal< sc_lv<3> > tmp_61_fu_186_p3;
+    sc_signal< sc_lv<5> > tmp_54_fu_174_p3;
+    sc_signal< sc_lv<3> > tmp_55_fu_186_p3;
     sc_signal< sc_lv<6> > zext_ln203_fu_182_p1;
     sc_signal< sc_lv<6> > zext_ln203_10_fu_194_p1;
     sc_signal< sc_lv<6> > sub_ln203_fu_198_p2;
-    sc_signal< sc_lv<6> > tmp_62_fu_208_p3;
+    sc_signal< sc_lv<6> > tmp_56_fu_208_p3;
     sc_signal< sc_lv<6> > zext_ln204_2_fu_164_p1;
     sc_signal< sc_lv<5> > zext_ln204_4_fu_238_p1;
     sc_signal< sc_lv<5> > add_ln204_1_fu_242_p2;
-    sc_signal< sc_lv<9> > tmp_83_fu_247_p3;
-    sc_signal< sc_lv<7> > tmp_84_fu_259_p3;
+    sc_signal< sc_lv<9> > tmp_85_fu_247_p3;
+    sc_signal< sc_lv<7> > tmp_86_fu_259_p3;
     sc_signal< sc_lv<11> > zext_ln204_5_fu_255_p1;
     sc_signal< sc_lv<11> > zext_ln204_6_fu_267_p1;
     sc_signal< sc_lv<7> > zext_ln204_3_fu_234_p1;
@@ -105,7 +105,7 @@ struct cache_update_1 : public sc_module {
     sc_signal< sc_lv<9> > zext_ln204_8_fu_330_p1;
     sc_signal< sc_lv<6> > zext_ln204_7_fu_326_p1;
     sc_signal< sc_lv<6> > add_ln204_3_fu_353_p2;
-    sc_signal< sc_lv<40> > sext_ln203_2_fu_367_p1;
+    sc_signal< sc_lv<38> > sext_ln203_2_fu_367_p1;
     sc_signal< sc_lv<5> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
@@ -168,12 +168,12 @@ struct cache_update_1 : public sc_module {
     void thread_sub_ln203_fu_198_p2();
     void thread_sub_ln204_1_fu_271_p2();
     void thread_sub_ln204_fu_216_p2();
-    void thread_tmp_59_fu_152_p3();
-    void thread_tmp_60_fu_174_p3();
-    void thread_tmp_61_fu_186_p3();
-    void thread_tmp_62_fu_208_p3();
-    void thread_tmp_83_fu_247_p3();
-    void thread_tmp_84_fu_259_p3();
+    void thread_tmp_53_fu_152_p3();
+    void thread_tmp_54_fu_174_p3();
+    void thread_tmp_55_fu_186_p3();
+    void thread_tmp_56_fu_208_p3();
+    void thread_tmp_85_fu_247_p3();
+    void thread_tmp_86_fu_259_p3();
     void thread_trunc_ln203_fu_282_p1();
     void thread_update_0_V_address0();
     void thread_update_0_V_ce0();

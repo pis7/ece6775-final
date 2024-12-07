@@ -95,10 +95,10 @@ INIT_2D_MEM_LOOP_1_begin:1  br label %0
 
 <Node id="7" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_98 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)
+:2  %empty_93 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 384, i64 384, i64 384)
 
 ]]></Node>
-<StgValue><ssdm name="empty_98"/></StgValue>
+<StgValue><ssdm name="empty_93"/></StgValue>
 </operation>
 
 <operation id="8" st_id="2" stage="1" lat="1">
@@ -171,9 +171,9 @@ INIT_2D_MEM_LOOP_1_begin:1  br label %0
 </and_exp></or_exp>
 </condition>
 
-<Node id="13" bw="9" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="13" bw="9" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:2  %mem_0_V_addr = getelementptr [384 x i40]* %mem_0_V, i64 0, i64 %zext_ln26
+:2  %mem_0_V_addr = getelementptr [384 x i38]* %mem_0_V, i64 0, i64 %zext_ln26
 
 ]]></Node>
 <StgValue><ssdm name="mem_0_V_addr"/></StgValue>
@@ -187,9 +187,9 @@ INIT_2D_MEM_LOOP_1_begin:1  br label %0
 </and_exp></or_exp>
 </condition>
 
-<Node id="14" bw="0" op_0_bw="40" op_1_bw="9">
+<Node id="14" bw="0" op_0_bw="38" op_1_bw="9">
 <![CDATA[
-:3  store i40 0, i40* %mem_0_V_addr, align 8
+:3  store i38 0, i38* %mem_0_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln26"/></StgValue>
@@ -280,13 +280,13 @@ INIT_2D_MEM_LOOP_1_end:1  ret void
 </dataflow>
 <dataflow id="31" from="StgValue_30" to="icmp_ln25" fromId="30" toId="6">
 </dataflow>
-<dataflow id="33" from="_ssdm_op_SpecLoopTripCount" to="empty_98" fromId="32" toId="7">
+<dataflow id="33" from="_ssdm_op_SpecLoopTripCount" to="empty_93" fromId="32" toId="7">
 </dataflow>
-<dataflow id="35" from="StgValue_34" to="empty_98" fromId="34" toId="7">
+<dataflow id="35" from="StgValue_34" to="empty_93" fromId="34" toId="7">
 </dataflow>
-<dataflow id="36" from="StgValue_34" to="empty_98" fromId="34" toId="7">
+<dataflow id="36" from="StgValue_34" to="empty_93" fromId="34" toId="7">
 </dataflow>
-<dataflow id="37" from="StgValue_34" to="empty_98" fromId="34" toId="7">
+<dataflow id="37" from="StgValue_34" to="empty_93" fromId="34" toId="7">
 </dataflow>
 <dataflow id="38" from="j_0_0" to="add_ln25" fromId="5" toId="8">
 </dataflow>

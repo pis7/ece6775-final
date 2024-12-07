@@ -20,7 +20,7 @@ const sc_lv<32> init_2d_mem::ap_const_lv32_0 = "00000000000000000000000000000000
 const sc_lv<32> init_2d_mem::ap_const_lv32_1 = "1";
 const sc_lv<5> init_2d_mem::ap_const_lv5_0 = "00000";
 const sc_lv<1> init_2d_mem::ap_const_lv1_0 = "0";
-const sc_lv<40> init_2d_mem::ap_const_lv40_0 = "0000000000000000000000000000000000000000";
+const sc_lv<38> init_2d_mem::ap_const_lv38_0 = "00000000000000000000000000000000000000";
 const sc_lv<5> init_2d_mem::ap_const_lv5_18 = "11000";
 const sc_lv<5> init_2d_mem::ap_const_lv5_1 = "1";
 const sc_lv<1> init_2d_mem::ap_const_lv1_1 = "1";
@@ -196,7 +196,7 @@ void init_2d_mem::thread_mem_0_V_ce0() {
 }
 
 void init_2d_mem::thread_mem_0_V_d0() {
-    mem_0_V_d0 = ap_const_lv40_0;
+    mem_0_V_d0 = ap_const_lv38_0;
 }
 
 void init_2d_mem::thread_mem_0_V_we0() {

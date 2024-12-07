@@ -12,21 +12,21 @@ set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
 set C_modelName {quantize_activation}
-set C_modelType { int 40 }
+set C_modelType { int 38 }
 set C_modelArgList {
-	{ input_0_V int 40 regular {array 24 { 1 1 } 1 1 }  }
+	{ input_0_V int 38 regular {array 24 { 1 1 } 1 1 }  }
 	{ output_states_0_0_V int 8 regular {array 6 { 0 3 } 0 1 }  }
 	{ output_states_1_0_V int 8 regular {array 6 { 0 3 } 0 1 }  }
 	{ output_states_2_0_V int 8 regular {array 6 { 0 3 } 0 1 }  }
 	{ output_states_3_0_V int 8 regular {array 6 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "input_0_V", "interface" : "memory", "bitwidth" : 40, "direction" : "READONLY"} , 
+	{ "Name" : "input_0_V", "interface" : "memory", "bitwidth" : 38, "direction" : "READONLY"} , 
  	{ "Name" : "output_states_0_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
  	{ "Name" : "output_states_1_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
  	{ "Name" : "output_states_2_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
  	{ "Name" : "output_states_3_0_V", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 40} ]}
+ 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 38} ]}
 # RTL Port declarations: 
 set portNum 29
 set portList { 
@@ -38,10 +38,10 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ input_0_V_address0 sc_out sc_lv 5 signal 0 } 
 	{ input_0_V_ce0 sc_out sc_logic 1 signal 0 } 
-	{ input_0_V_q0 sc_in sc_lv 40 signal 0 } 
+	{ input_0_V_q0 sc_in sc_lv 38 signal 0 } 
 	{ input_0_V_address1 sc_out sc_lv 5 signal 0 } 
 	{ input_0_V_ce1 sc_out sc_logic 1 signal 0 } 
-	{ input_0_V_q1 sc_in sc_lv 40 signal 0 } 
+	{ input_0_V_q1 sc_in sc_lv 38 signal 0 } 
 	{ output_states_0_0_V_address0 sc_out sc_lv 3 signal 1 } 
 	{ output_states_0_0_V_ce0 sc_out sc_logic 1 signal 1 } 
 	{ output_states_0_0_V_we0 sc_out sc_logic 1 signal 1 } 
@@ -58,7 +58,7 @@ set portList {
 	{ output_states_3_0_V_ce0 sc_out sc_logic 1 signal 4 } 
 	{ output_states_3_0_V_we0 sc_out sc_logic 1 signal 4 } 
 	{ output_states_3_0_V_d0 sc_out sc_lv 8 signal 4 } 
-	{ ap_return sc_out sc_lv 40 signal -1 } 
+	{ ap_return sc_out sc_lv 38 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -69,10 +69,10 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "input_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "input_0_V", "role": "address0" }} , 
  	{ "name": "input_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_0_V", "role": "ce0" }} , 
- 	{ "name": "input_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "input_0_V", "role": "q0" }} , 
+ 	{ "name": "input_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "input_0_V", "role": "q0" }} , 
  	{ "name": "input_0_V_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "input_0_V", "role": "address1" }} , 
  	{ "name": "input_0_V_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "input_0_V", "role": "ce1" }} , 
- 	{ "name": "input_0_V_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "input_0_V", "role": "q1" }} , 
+ 	{ "name": "input_0_V_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "input_0_V", "role": "q1" }} , 
  	{ "name": "output_states_0_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "output_states_0_0_V", "role": "address0" }} , 
  	{ "name": "output_states_0_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_states_0_0_V", "role": "ce0" }} , 
  	{ "name": "output_states_0_0_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_states_0_0_V", "role": "we0" }} , 
@@ -89,7 +89,7 @@ set NewPortList {[
  	{ "name": "output_states_3_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_states_3_0_V", "role": "ce0" }} , 
  	{ "name": "output_states_3_0_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "output_states_3_0_V", "role": "we0" }} , 
  	{ "name": "output_states_3_0_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "output_states_3_0_V", "role": "d0" }} , 
- 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":40, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
+ 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":38, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
@@ -98,7 +98,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "151", "EstimateLatencyMax" : "151",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "158", "EstimateLatencyMax" : "158",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -111,29 +111,29 @@ set RtlHierarchyInfo {[
 			{"Name" : "output_states_1_0_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "output_states_2_0_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "output_states_3_0_V", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_udiv_40ns_40neOg_U10", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dut_udiv_47s_37nsdEe_U8", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	quantize_activation {
-		input_0_V {Type I LastRead 48 FirstWrite -1}
-		output_states_0_0_V {Type O LastRead -1 FirstWrite 51}
-		output_states_1_0_V {Type O LastRead -1 FirstWrite 51}
-		output_states_2_0_V {Type O LastRead -1 FirstWrite 51}
-		output_states_3_0_V {Type O LastRead -1 FirstWrite 51}}}
+		input_0_V {Type I LastRead 55 FirstWrite -1}
+		output_states_0_0_V {Type O LastRead -1 FirstWrite 58}
+		output_states_1_0_V {Type O LastRead -1 FirstWrite 58}
+		output_states_2_0_V {Type O LastRead -1 FirstWrite 58}
+		output_states_3_0_V {Type O LastRead -1 FirstWrite 58}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "151", "Max" : "151"}
-	, {"Name" : "Interval", "Min" : "151", "Max" : "151"}
+	{"Name" : "Latency", "Min" : "158", "Max" : "158"}
+	, {"Name" : "Interval", "Min" : "158", "Max" : "158"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	input_0_V { ap_memory {  { input_0_V_address0 mem_address 1 5 }  { input_0_V_ce0 mem_ce 1 1 }  { input_0_V_q0 mem_dout 0 40 }  { input_0_V_address1 MemPortADDR2 1 5 }  { input_0_V_ce1 MemPortCE2 1 1 }  { input_0_V_q1 MemPortDOUT2 0 40 } } }
+	input_0_V { ap_memory {  { input_0_V_address0 mem_address 1 5 }  { input_0_V_ce0 mem_ce 1 1 }  { input_0_V_q0 mem_dout 0 38 }  { input_0_V_address1 MemPortADDR2 1 5 }  { input_0_V_ce1 MemPortCE2 1 1 }  { input_0_V_q1 MemPortDOUT2 0 38 } } }
 	output_states_0_0_V { ap_memory {  { output_states_0_0_V_address0 mem_address 1 3 }  { output_states_0_0_V_ce0 mem_ce 1 1 }  { output_states_0_0_V_we0 mem_we 1 1 }  { output_states_0_0_V_d0 mem_din 1 8 } } }
 	output_states_1_0_V { ap_memory {  { output_states_1_0_V_address0 mem_address 1 3 }  { output_states_1_0_V_ce0 mem_ce 1 1 }  { output_states_1_0_V_we0 mem_we 1 1 }  { output_states_1_0_V_d0 mem_din 1 8 } } }
 	output_states_2_0_V { ap_memory {  { output_states_2_0_V_address0 mem_address 1 3 }  { output_states_2_0_V_ce0 mem_ce 1 1 }  { output_states_2_0_V_we0 mem_we 1 1 }  { output_states_2_0_V_d0 mem_din 1 8 } } }

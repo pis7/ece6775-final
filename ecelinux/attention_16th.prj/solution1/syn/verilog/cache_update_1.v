@@ -38,10 +38,10 @@ output   ap_ready;
 output  [9:0] cache_out_V_address0;
 output   cache_out_V_ce0;
 output   cache_out_V_we0;
-output  [39:0] cache_out_V_d0;
+output  [37:0] cache_out_V_d0;
 output  [6:0] update_0_V_address0;
 output   update_0_V_ce0;
-input  [39:0] update_0_V_q0;
+input  [37:0] update_0_V_q0;
 
 reg ap_done;
 reg ap_idle;
@@ -54,7 +54,7 @@ reg update_0_V_ce0;
 wire    ap_CS_fsm_state1;
 wire   [11:0] v_cache_V_address0;
 reg    v_cache_V_ce0;
-wire   [22:0] v_cache_V_q0;
+wire   [26:0] v_cache_V_q0;
 wire   [2:0] i_fu_140_p2;
 reg   [2:0] i_reg_380;
 wire    ap_CS_fsm_state2;
@@ -88,20 +88,20 @@ wire    ap_CS_fsm_state5;
 wire   [63:0] zext_ln204_9_fu_341_p1;
 wire  signed [63:0] sext_ln204_fu_356_p1;
 wire   [63:0] zext_ln203_10_fu_361_p1;
-wire   [4:0] tmp_59_fu_150_p3;
+wire   [4:0] tmp_53_fu_150_p3;
 wire   [5:0] zext_ln204_fu_146_p1;
 wire   [5:0] zext_ln204_1_fu_158_p1;
-wire   [5:0] tmp_60_fu_168_p3;
-wire   [3:0] tmp_61_fu_184_p3;
+wire   [5:0] tmp_54_fu_168_p3;
+wire   [3:0] tmp_55_fu_184_p3;
 wire   [6:0] zext_ln203_8_fu_180_p1;
 wire   [6:0] zext_ln203_9_fu_192_p1;
 wire   [6:0] sub_ln203_fu_196_p2;
-wire   [7:0] tmp_62_fu_206_p3;
+wire   [7:0] tmp_56_fu_206_p3;
 wire   [7:0] zext_ln203_fu_176_p1;
 wire   [5:0] zext_ln204_3_fu_236_p1;
 wire   [5:0] add_ln204_1_fu_240_p2;
-wire   [10:0] tmp_83_fu_245_p3;
-wire   [8:0] tmp_84_fu_257_p3;
+wire   [10:0] tmp_85_fu_245_p3;
+wire   [8:0] tmp_86_fu_257_p3;
 wire   [12:0] zext_ln204_4_fu_253_p1;
 wire   [12:0] zext_ln204_5_fu_265_p1;
 wire   [7:0] zext_ln204_2_fu_232_p1;
@@ -114,7 +114,7 @@ wire   [12:0] add_ln204_2_fu_336_p2;
 wire   [10:0] zext_ln204_7_fu_328_p1;
 wire   [7:0] zext_ln204_6_fu_324_p1;
 wire   [7:0] add_ln204_3_fu_351_p2;
-wire  signed [39:0] sext_ln203_1_fu_365_p1;
+wire  signed [37:0] sext_ln203_1_fu_365_p1;
 reg   [4:0] ap_NS_fsm;
 
 // power-on initialization
@@ -122,8 +122,8 @@ initial begin
 #0 ap_CS_fsm = 5'd1;
 end
 
-cache_update_1_v_lbW #(
-    .DataWidth( 23 ),
+cache_update_1_v_kbM #(
+    .DataWidth( 27 ),
     .AddressRange( 2880 ),
     .AddressWidth( 12 ))
 v_cache_V_U(
@@ -357,19 +357,19 @@ assign sub_ln203_fu_196_p2 = (zext_ln203_8_fu_180_p1 - zext_ln203_9_fu_192_p1);
 
 assign sub_ln204_1_fu_269_p2 = (zext_ln204_4_fu_253_p1 - zext_ln204_5_fu_265_p1);
 
-assign sub_ln204_fu_214_p2 = (tmp_62_fu_206_p3 - zext_ln203_fu_176_p1);
+assign sub_ln204_fu_214_p2 = (tmp_56_fu_206_p3 - zext_ln203_fu_176_p1);
 
-assign tmp_59_fu_150_p3 = {{i_0_reg_101}, {2'd0}};
+assign tmp_53_fu_150_p3 = {{i_0_reg_101}, {2'd0}};
 
-assign tmp_60_fu_168_p3 = {{i_0_reg_101}, {3'd0}};
+assign tmp_54_fu_168_p3 = {{i_0_reg_101}, {3'd0}};
 
-assign tmp_61_fu_184_p3 = {{i_0_reg_101}, {1'd0}};
+assign tmp_55_fu_184_p3 = {{i_0_reg_101}, {1'd0}};
 
-assign tmp_62_fu_206_p3 = {{i_0_reg_101}, {5'd0}};
+assign tmp_56_fu_206_p3 = {{i_0_reg_101}, {5'd0}};
 
-assign tmp_83_fu_245_p3 = {{add_ln204_1_fu_240_p2}, {5'd0}};
+assign tmp_85_fu_245_p3 = {{add_ln204_1_fu_240_p2}, {5'd0}};
 
-assign tmp_84_fu_257_p3 = {{add_ln204_1_fu_240_p2}, {3'd0}};
+assign tmp_86_fu_257_p3 = {{add_ln204_1_fu_240_p2}, {3'd0}};
 
 assign trunc_ln203_fu_280_p1 = add_ln203_fu_275_p2[5:0];
 
@@ -379,21 +379,21 @@ assign v_cache_V_address0 = zext_ln204_9_fu_341_p1;
 
 assign zext_ln203_10_fu_361_p1 = add_ln203_4_reg_436;
 
-assign zext_ln203_8_fu_180_p1 = tmp_60_fu_168_p3;
+assign zext_ln203_8_fu_180_p1 = tmp_54_fu_168_p3;
 
-assign zext_ln203_9_fu_192_p1 = tmp_61_fu_184_p3;
+assign zext_ln203_9_fu_192_p1 = tmp_55_fu_184_p3;
 
-assign zext_ln203_fu_176_p1 = tmp_60_fu_168_p3;
+assign zext_ln203_fu_176_p1 = tmp_54_fu_168_p3;
 
-assign zext_ln204_1_fu_158_p1 = tmp_59_fu_150_p3;
+assign zext_ln204_1_fu_158_p1 = tmp_53_fu_150_p3;
 
 assign zext_ln204_2_fu_232_p1 = j_0_reg_112;
 
 assign zext_ln204_3_fu_236_p1 = j_0_reg_112;
 
-assign zext_ln204_4_fu_253_p1 = tmp_83_fu_245_p3;
+assign zext_ln204_4_fu_253_p1 = tmp_85_fu_245_p3;
 
-assign zext_ln204_5_fu_265_p1 = tmp_84_fu_257_p3;
+assign zext_ln204_5_fu_265_p1 = tmp_86_fu_257_p3;
 
 assign zext_ln204_6_fu_324_p1 = k_0_reg_123;
 
