@@ -83,35 +83,35 @@ csim_64th: result/attention_csim_64th.txt
 vivado: vivado_full vivado_4th vivado_16th vivado_64th
 
 vivado_full:
-	$(XIL_HLS) -f run_full.tcl
+	$(XIL_HLS) -f scripts/run_full.tcl
 
 vivado_4th:
-	$(XIL_HLS) -f run_4th.tcl
+	$(XIL_HLS) -f scripts/run_4th.tcl
 
 vivado_16th:
-	$(XIL_HLS) -f run_16th.tcl
+	$(XIL_HLS) -f scripts/run_16th.tcl
 
 vivado_64th:
-	$(XIL_HLS) -f run_64th.tcl
+	$(XIL_HLS) -f scripts/run_64th.tcl
 
 # bitstream
 
 bitstream: bitstream_4th bitstream_16th bitstream_64th
 
 bitstream_full: vivado_full
-	source $(XILINX_VIVADO)/settings64.sh; ./run_bitstream.sh -p "attention_full"
+	source $(XILINX_VIVADO)/settings64.sh; ./scripts/run_bitstream.sh -p "attention_full"
 	@echo "Bitstream saved to $<"
 
 bitstream_4th: vivado_4th
-	source $(XILINX_VIVADO)/settings64.sh; ./run_bitstream.sh -p "attention_4th"
+	source $(XILINX_VIVADO)/settings64.sh; ./scripts/run_bitstream.sh -p "attention_4th"
 	@echo "Bitstream saved to $<"
 
 bitstream_16th: vivado_16th
-	source $(XILINX_VIVADO)/settings64.sh; ./run_bitstream.sh -p "attention_16th"
+	source $(XILINX_VIVADO)/settings64.sh; ./scripts/run_bitstream.sh -p "attention_16th"
 	@echo "Bitstream saved to $<"
 
 bitstream_64th: vivado_64th
-	source $(XILINX_VIVADO)/settings64.sh; ./run_bitstream.sh -p "attention_64th"
+	source $(XILINX_VIVADO)/settings64.sh; ./scripts/run_bitstream.sh -p "attention_64th"
 	@echo "Bitstream saved to $<"
 
 # accuracy test
@@ -124,5 +124,5 @@ accuracy: clean
 
 # clean
 clean:
-	rm -rf attention build result *.dat *.log
+	rm -rf attention build *.dat *.log
 	rm -rf xillydemo.bit

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sqrt_fixed_42_26_s'
 ================================================================
-* Date:           Tue Dec  3 19:14:19 2024
+* Date:           Fri Dec  6 10:13:34 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_full.prj
@@ -865,7 +865,9 @@ The critical path consists of the following:
  <State 18>: 7.94ns
 The critical path consists of the following:
 	'select' operation ('select_ln318_55', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [554]  (0.804 ns)
-	'icmp' operation ('icmp_ln1494_16', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [559]  (2.46 ns)
+	'icmp' operation ('icmp_ln1498_16', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [560]  (2.46 ns)
+	'and' operation ('and_ln318_16', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [562]  (0 ns)
+	'or' operation ('or_ln318_39', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [569]  (0 ns)
 	'or' operation ('or_ln318_40', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [570]  (0.978 ns)
 	'select' operation ('select_ln318_56', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [571]  (0.781 ns)
 	'add' operation ('res_FH_l.V', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:361) [573]  (2.11 ns)

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'quantize_activation'
 ================================================================
-* Date:           Tue Dec  3 19:14:24 2024
+* Date:           Fri Dec  6 10:13:38 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_full.prj
@@ -1336,7 +1336,7 @@ The critical path consists of the following:
 	'icmp' operation ('icmp_ln887_2', ./layer.h:99) [504]  (2.45 ns)
 	'select' operation ('select_ln887_4', ./layer.h:99) [508]  (0 ns)
 	'select' operation ('select_ln887_5', ./layer.h:99) [510]  (1.25 ns)
-	'store' operation ('store_ln100', ./layer.h:100) of variable 'select_ln887_5', ./layer.h:99 on array 'output_states_47_2_0_V' [757]  (2.32 ns)
+	'store' operation ('store_ln100', ./layer.h:100) of variable 'select_ln887_5', ./layer.h:99 on array 'output_states_51_2_0_V' [733]  (2.32 ns)
 
 
 ============================================================

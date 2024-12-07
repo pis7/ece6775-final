@@ -337,8 +337,8 @@ set RtlHierarchyInfo {[
 					{"ID" : "246", "SubInstance" : "grp_rms_norm_384_s_fu_1187", "Port" : "input_0_V"}]},
 			{"Name" : "final_output_0_V", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "271", "SubInstance" : "grp_init_2d_mem_fu_1384", "Port" : "mem_0_V"},
-					{"ID" : "244", "SubInstance" : "grp_linear_forward_no_mu_fu_1031", "Port" : "output_0_V"}]},
+					{"ID" : "244", "SubInstance" : "grp_linear_forward_no_mu_fu_1031", "Port" : "output_0_V"},
+					{"ID" : "271", "SubInstance" : "grp_init_2d_mem_fu_1384", "Port" : "mem_0_V"}]},
 			{"Name" : "ln_weight_in_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "246", "SubInstance" : "grp_rms_norm_384_s_fu_1187", "Port" : "weight_V"}]},

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sqrt_fixed_42_26_s'
 ================================================================
-* Date:           Tue Dec  3 18:13:11 2024
+* Date:           Fri Dec  6 14:23:29 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_16th.prj
@@ -850,8 +850,9 @@ The critical path consists of the following:
 	'sub' operation ('sub_ln703_29', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342) [483]  (0 ns)
 	'add' operation ('add_ln703_18', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:342) [484]  (3.93 ns)
 	'select' operation ('select_ln318_46', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [493]  (0.781 ns)
-	'icmp' operation ('icmp_ln1494_23', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [501]  (2.43 ns)
-	'and' operation ('and_ln318_14', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [502]  (0 ns)
+	'icmp' operation ('icmp_ln318_17', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [503]  (2.43 ns)
+	'or' operation ('or_ln318_21', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [506]  (0 ns)
+	'xor' operation ('xor_ln318_5', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [518]  (0 ns)
 	'or' operation ('or_ln318_33', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [519]  (0 ns)
 	'or' operation ('or_ln318_34', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:318) [520]  (0.978 ns)
 

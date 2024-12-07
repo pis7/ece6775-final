@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'transpose_last_two_d'
 ================================================================
-* Date:           Tue Dec  3 18:13:16 2024
+* Date:           Fri Dec  6 14:23:34 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_16th.prj
@@ -201,7 +201,7 @@ The critical path consists of the following:
  <State 5>: 6.51ns
 The critical path consists of the following:
 	'load' operation ('input_V_load', ./layer.h:218) on array 'input_V' [52]  (3.25 ns)
-	'store' operation ('store_ln218', ./layer.h:218) of variable 'input_V_load', ./layer.h:218 on array 'output_3_V' [78]  (3.25 ns)
+	'store' operation ('store_ln218', ./layer.h:218) of variable 'input_V_load', ./layer.h:218 on array 'output_1_V' [72]  (3.25 ns)
 
 
 ============================================================

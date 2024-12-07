@@ -28027,7 +28027,7 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
           int k = ko * (IN_C/24) + ki;
           uint8_t packed_val = packed_weights[k][j];
           LINEAR_FORWARD_NO_MUL_LOOP_5: for (int l = 0; l < 4; l++) {
-            int8_t weight_val = (packed_val >> (2 * l)) & 0b11;
+            int8_t weight_val = (packed_val >> (l << 1)) & 0b11;
             sbit8_t new_val = 0;
             if (weight_val == 0b01) new_val += input[i][k][l];
             else if (weight_val == 0b10) new_val -= input[i][k][l];

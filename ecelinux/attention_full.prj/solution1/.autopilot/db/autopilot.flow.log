@@ -1,8 +1,8 @@
-INFO-FLOW: Workspace /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1 opened at Tue Dec 03 19:10:12 EST 2024
-Command     open_solution done; 0.54 sec.
+INFO-FLOW: Workspace /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1 opened at Fri Dec 06 10:09:41 EST 2024
+Command     open_solution done; 1.79 sec.
 Execute     set_part xc7z020clg484-1 
 Execute       ap_part_info -name xc7z020clg484-1 -data single -quiet 
-Command       ap_part_info done; 1.57 sec.
+Command       ap_part_info done; 1.72 sec.
 Execute       ap_part_info -name xc7z020clg484-1 -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
 Execute         get_default_platform 
@@ -54,7 +54,7 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data info
 Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info 
 Execute         config_chip_info -quiet -speed slow 
-Command       add_library done; 0.16 sec.
+Command       add_library done; 0.13 sec.
 Execute       add_library xilinx/zynq/zynq_fpv6 
 Execute         get_default_platform 
 Execute         open_platform DefaultPlatform 
@@ -72,7 +72,7 @@ Execute           source /opt/xilinx/Vivado/2019.2/common/technology/xilinx/comm
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       get_default_platform 
-Command     set_part done; 1.8 sec.
+Command     set_part done; 1.92 sec.
 Execute     create_clock -period 10 
 Execute       config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
@@ -206,15 +206,15 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute         clang  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "attention.cpp"   -DFULL  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp" 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E attention.cpp -DFULL -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp
-Command         clang done; 1.52 sec.
+Command         clang done; 1.29 sec.
 Execute         tidy_31 xilinx-xfmat-array-geometry /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command         tidy_31 done; 8.7 sec.
+Command         tidy_31 done; 8.29 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute         clang -syntaxcheck -src /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -DFULL  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp"  -o "/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -DFULL -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/useless.bc
-Command         clang done; 6.42 sec.
-INFO-FLOW: Done: GCC PP time: 16.6 seconds per iteration
+Command         clang done; 5.96 sec.
+INFO-FLOW: Done: GCC PP time: 15.5 seconds per iteration
 INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredq_weights cyclic=positionBoolean0type factor=64 dim=1 
 INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredk_weights cyclic=positionBoolean0type factor=64 dim=1 
 INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredv_weights cyclic=positionBoolean0type factor=64 dim=1 
@@ -247,50 +247,50 @@ INFO-FLOW: Setting directive 'UNROLL' factor=64
 Execute         list_core -type functional_unit 
 Execute         tidy_31 xilinx-systemc-detector /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp std=gnu++98 -directive=/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command         tidy_31 done; 7.95 sec.
+Command         tidy_31 done; 7.69 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute         tidy_31 xilinx-directive2pragma /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp std=gnu++98 -directive=/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command         tidy_31 done; 12.71 sec.
+Command         tidy_31 done; 12.06 sec.
 Execute         get_config_dataflow -strict_mode 
 Execute         ap_eval exec -ignorestderr /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.attention.pp.0.cpp.diag.yml /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.attention.pp.0.cpp.out.log 2> /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.attention.pp.0.cpp.err.log 
-Command         ap_eval done; 9.54 sec.
+Command         ap_eval done; 9.29 sec.
 Execute         tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp std=gnu++98 
 Execute           ap_eval exec -ignorestderr /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/tidy-3.1.attention.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/tidy-3.1.attention.pp.0.cpp.out.log 2> /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/tidy-3.1.attention.pp.0.cpp.err.log 
-Command           ap_eval done; 37.81 sec.
+Command           ap_eval done; 38.33 sec.
 Execute           source /opt/xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
 Execute             source /opt/xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
 Execute           ap_eval exec -ignorestderr /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/xilinx-legacy-rewriter.attention.pp.0.cpp.out.log 2> /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/xilinx-legacy-rewriter.attention.pp.0.cpp.err.log 
-Command           ap_eval done; 6.82 sec.
-Command         tidy_31 done; 45.02 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 67.3 seconds per iteration
+Command           ap_eval done; 6.53 sec.
+Command         tidy_31 done; 45.23 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 66.6 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute         tidy_31 xilinx-ssdm-intrinsics-arguments /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command         tidy_31 done; 28.05 sec.
+Command         tidy_31 done; 26.85 sec.
 Execute         ap_part_info -name xc7z020-clg484-1 -data info 
 INFO-FLOW: Processing labels
 Execute         clang -src /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pragma.2.cpp"  -DFULL  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.bc" 
 INFO-FLOW: exec /opt/xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.pragma.2.cpp -DFULL -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.bc
-Command         clang done; 6.89 sec.
+Command         clang done; 6.55 sec.
 INFO-FLOW: Linking Debug ...
 Execute         llvm-ld /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.g.bc -hls-opt -except-internalize dut -L/opt/xilinx/Vivado/2019.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.g 
-Command         llvm-ld done; 2.1 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:02:03 ; elapsed = 00:02:12 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 3389 ; free virtual = 8791
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:02:03 ; elapsed = 00:02:12 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 3389 ; free virtual = 8791
+Command         llvm-ld done; 1.84 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:02:00 ; elapsed = 00:02:10 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 2946 ; free virtual = 9318
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:02:00 ; elapsed = 00:02:10 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 2946 ; free virtual = 9318
 Execute         get_config_sdx -target 
 Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute           cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute           transform -promote-dbg-pointer /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.pp.bc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.pp.0.bc -f 
-Command           transform done; 0.6 sec.
+Command           transform done; 0.56 sec.
 Execute           llvm-ld /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/xilinx/Vivado/2019.2/lnx64/lib -lfloatconversion -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.g.0 
-Command           llvm-ld done; 2.03 sec.
+Command           llvm-ld done; 1.76 sec.
 INFO-FLOW: Running Standard Transforms...
 Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top dut -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.g.0.bc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
 INFO: [XFORM 203-501] Unrolling loop 'GEMM_3D_FLOAT_LOOP_4' (./layer.h:241) in function 'void GEMM_3D_float<16, 1, 6, 16, 6, 96>(ap_fixed<40, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [FORWARD_REFERENCE][FORWARD_REFERENCE], ap_fixed<40, 24, (ap_q_mode)5, (ap_o_mode)3, 0> const (*) [FORWARD_REFERENCE][FORWARD_REFERENCE], ap_fixed<40, 24, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [FORWARD_REFERENCE][FORWARD_REFERENCE])': changing partial unrolling into complete unrolling since the unrolling factor (=64) is no less than the loop trip count (=6).
-Command           transform done; 7.28 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:02:12 ; elapsed = 00:02:22 . Memory (MB): peak = 1427.121 ; gain = 789.094 ; free physical = 3057 ; free virtual = 8517
+Command           transform done; 6.24 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:02:09 ; elapsed = 00:02:18 . Memory (MB): peak = 1424.152 ; gain = 786.125 ; free physical = 2632 ; free virtual = 9049
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.g.1.bc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.g.2.prechk.bc -f 
@@ -300,14 +300,14 @@ INFO: [XFORM 203-602] Inlining function 'attention_max<ap_fixed<40, 24, (ap_q_mo
 INFO: [XFORM 203-602] Inlining function 'attention_round' into 'quantize_activation<1, 1536>126' (./layer.h:98) automatically.
 INFO: [XFORM 203-602] Inlining function 'hls::exp<40, 24>' into 'softmax<1, 16, 6>' (./layer.h:275) automatically.
 INFO: [XFORM 203-602] Inlining function 'create_causal_mask<1>' into 'attention<5, 1, 1536, 1536, 16, 96>' (attention.cpp:182) automatically.
-Command           transform done; 3.35 sec.
+Command           transform done; 3.2 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute           transform -syn-check /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
 WARNING: [SYNCHK 200-23] /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:272: variable-indexed range selection may cause suboptimal QoR.
 WARNING: [SYNCHK 200-120] ./layer.h:47: multiplication is assumed not to overflow by default, otherwise, please add option '-fwrapv'.
 INFO: [SYNCHK 200-10] 0 error(s), 2 warning(s).
-Command           transform done; 0.61 sec.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:02:16 ; elapsed = 00:02:26 . Memory (MB): peak = 1491.121 ; gain = 853.094 ; free physical = 2968 ; free virtual = 8447
+Command           transform done; 0.5 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:02:12 ; elapsed = 00:02:22 . Memory (MB): peak = 1497.371 ; gain = 859.344 ; free physical = 2544 ; free virtual = 8980
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.g.1.bc to /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -1106,7 +1106,7 @@ INFO: [XFORM 203-602] Inlining function 'attention_max<ap_fixed<40, 24, (ap_q_mo
 INFO: [XFORM 203-602] Inlining function 'attention_round' into 'quantize_activation<1, 1536>' (./layer.h:98) automatically.
 INFO: [XFORM 203-602] Inlining function 'hls::exp<40, 24>' into 'softmax<1, 16, 6>' (./layer.h:275) automatically.
 INFO: [XFORM 203-602] Inlining function 'create_causal_mask<1>' into 'attention<5, 1, 1536, 1536, 16, 96>' (attention.cpp:182) automatically.
-Command           transform done; 21.9 sec.
+Command           transform done; 19.4 sec.
 INFO-FLOW: Presyn 2...
 Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:372:1) in function 'sqrt_fixed<42, 26>'... converting 142 basic blocks.
@@ -1119,8 +1119,8 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/xilinx/V
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./layer.h:204:9) to (./layer.h:203:51) in function 'cache_update<16, 5, 96>'... converting 4 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'linear_forward_no_mul<1, 1536, 1536>' (./layer.h:112)...256 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<40, 24>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41:1)...19 expression(s) balanced.
-Command           transform done; 7.56 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:02:43 ; elapsed = 00:02:56 . Memory (MB): peak = 1629.184 ; gain = 991.156 ; free physical = 2806 ; free virtual = 8314
+Command           transform done; 6.75 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:02:37 ; elapsed = 00:02:48 . Memory (MB): peak = 1565.184 ; gain = 927.156 ; free physical = 2417 ; free virtual = 8881
 INFO-FLOW: Building ssdm...
 Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.o.2.bc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 INFO: [XFORM 203-541] Flattening a loop nest 'LINEAR_FORWARD_NO_MUL_LOOP_2' (./layer.h:120:68) in function 'linear_forward_no_mul<1, 1536, 1536>'.
@@ -1157,11 +1157,11 @@ INFO: [HLS 200-472] Inferring partial write operation for 'output_q[0][0].V' (./
 INFO: [HLS 200-472] Inferring partial write operation for 'output[0].V' (./layer.h:241:30)
 INFO: [HLS 200-472] Inferring partial write operation for 'output[0].V' (./layer.h:241:30)
 INFO: [HLS 200-472] Inferring partial write operation for 'output[0].V' (./layer.h:239:9)
-Command           transform done; 71.12 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:03:53 ; elapsed = 00:04:07 . Memory (MB): peak = 2045.188 ; gain = 1407.160 ; free physical = 2304 ; free virtual = 7823
+Command           transform done; 65.73 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:03:42 ; elapsed = 00:03:54 . Memory (MB): peak = 2045.188 ; gain = 1407.160 ; free physical = 1950 ; free virtual = 8426
 INFO-FLOW: Finish building internal data model.
-Command         opt_and_import_c done; 114.56 sec.
-Command       elaborate done; 243.98 sec.
+Command         opt_and_import_c done; 104.23 sec.
+Command       elaborate done; 229.77 sec.
 Execute       autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -1306,12 +1306,12 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'sqrt_fixed<42, 26>'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.36 sec.
-INFO: [HLS 200-111]  Elapsed time: 247.36 seconds; current allocated memory: 885.219 MB.
+Command         schedule done; 0.35 sec.
+INFO: [HLS 200-111]  Elapsed time: 234.4 seconds; current allocated memory: 885.185 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/sqrt_fixed_42_26_s.verbose.sched.rpt 
-Command         syn_report done; 0.82 sec.
+Command         syn_report done; 0.74 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/sqrt_fixed_42_26_s.sched.adb -f 
-Command         db_write done; 0.7 sec.
+Command         db_write done; 0.66 sec.
 INFO-FLOW: Finish scheduling sqrt_fixed<42, 26>.
 Execute         set_default_model sqrt_fixed<42, 26> 
 Execute         bind -model sqrt_fixed<42, 26> 
@@ -1321,12 +1321,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command         bind done; 0.14 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.66 seconds; current allocated memory: 887.844 MB.
+Command         bind done; 0.13 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.53 seconds; current allocated memory: 887.810 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/sqrt_fixed_42_26_s.verbose.bind.rpt 
-Command         syn_report done; 1.02 sec.
+Command         syn_report done; 1.01 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/sqrt_fixed_42_26_s.bind.adb -f 
-Command         db_write done; 0.68 sec.
+Command         db_write done; 0.65 sec.
 INFO-FLOW: Finish binding sqrt_fixed<42, 26>.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'rms_norm_1536_s' 
@@ -1335,11 +1335,11 @@ Execute         set_default_model rms_norm<1536>
 Execute         schedule -model rms_norm<1536> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.8 seconds; current allocated memory: 888.754 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.76 seconds; current allocated memory: 888.720 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/rms_norm_1536_s.verbose.sched.rpt 
-Command         syn_report done; 0.16 sec.
+Command         syn_report done; 0.15 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/rms_norm_1536_s.sched.adb -f 
-Command         db_write done; 0.13 sec.
+Command         db_write done; 0.14 sec.
 INFO-FLOW: Finish scheduling rms_norm<1536>.
 Execute         set_default_model rms_norm<1536> 
 Execute         bind -model rms_norm<1536> 
@@ -1349,12 +1349,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command         bind done; 0.13 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 889.280 MB.
+Command         bind done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 889.245 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/rms_norm_1536_s.verbose.bind.rpt 
 Command         syn_report done; 0.42 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/rms_norm_1536_s.bind.adb -f 
-Command         db_write done; 0.14 sec.
+Command         db_write done; 0.16 sec.
 INFO-FLOW: Finish binding rms_norm<1536>.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'quantize_activation' 
@@ -1363,12 +1363,12 @@ Execute         set_default_model quantize_activation
 Execute         schedule -model quantize_activation 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.31 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.9 seconds; current allocated memory: 891.658 MB.
+Command         schedule done; 0.3 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.9 seconds; current allocated memory: 891.624 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/quantize_activation.verbose.sched.rpt 
-Command         syn_report done; 1.05 sec.
+Command         syn_report done; 1.02 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/quantize_activation.sched.adb -f 
-Command         db_write done; 0.92 sec.
+Command         db_write done; 0.89 sec.
 INFO-FLOW: Finish scheduling quantize_activation.
 Execute         set_default_model quantize_activation 
 Execute         bind -model quantize_activation 
@@ -1379,11 +1379,11 @@ INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
 Command         bind done; 0.12 sec.
-INFO: [HLS 200-111]  Elapsed time: 2.09 seconds; current allocated memory: 894.795 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.03 seconds; current allocated memory: 894.761 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/quantize_activation.verbose.bind.rpt 
-Command         syn_report done; 1.08 sec.
+Command         syn_report done; 1.06 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/quantize_activation.bind.adb -f 
-Command         db_write done; 0.92 sec.
+Command         db_write done; 0.89 sec.
 INFO-FLOW: Finish binding quantize_activation.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'init_2d_mem' 
@@ -1392,7 +1392,7 @@ Execute         set_default_model init_2d_mem
 Execute         schedule -model init_2d_mem 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 2.05 seconds; current allocated memory: 894.972 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.99 seconds; current allocated memory: 894.937 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/init_2d_mem.verbose.sched.rpt 
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/init_2d_mem.sched.adb -f 
 INFO-FLOW: Finish scheduling init_2d_mem.
@@ -1404,7 +1404,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 895.040 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 895.004 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/init_2d_mem.verbose.bind.rpt 
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/init_2d_mem.bind.adb -f 
 INFO-FLOW: Finish binding init_2d_mem.
@@ -1426,11 +1426,11 @@ WARNING: [SCHED 204-68] The II Violation in module 'linear_forward_no_mu' (Loop:
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 5, Depth = 83.
 INFO: [SCHED 204-11] Finished scheduling.
 Command         schedule done; 2.63 sec.
-INFO: [HLS 200-111]  Elapsed time: 2.7 seconds; current allocated memory: 905.968 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.69 seconds; current allocated memory: 905.933 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/linear_forward_no_mu.verbose.sched.rpt 
-Command         syn_report done; 5.86 sec.
+Command         syn_report done; 5.51 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/linear_forward_no_mu.sched.adb -f 
-Command         db_write done; 4.98 sec.
+Command         db_write done; 4.63 sec.
 INFO-FLOW: Finish scheduling linear_forward_no_mu.
 Execute         set_default_model linear_forward_no_mu 
 Execute         bind -model linear_forward_no_mu 
@@ -1440,12 +1440,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command         bind done; 0.93 sec.
-INFO: [HLS 200-111]  Elapsed time: 11.77 seconds; current allocated memory: 921.760 MB.
+Command         bind done; 0.89 sec.
+INFO: [HLS 200-111]  Elapsed time: 11.04 seconds; current allocated memory: 921.722 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/linear_forward_no_mu.verbose.bind.rpt 
-Command         syn_report done; 6.66 sec.
+Command         syn_report done; 6.49 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/linear_forward_no_mu.bind.adb -f 
-Command         db_write done; 4.82 sec.
+Command         db_write done; 4.83 sec.
 INFO-FLOW: Finish binding linear_forward_no_mu.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reshape_2D_to_3D' 
@@ -1454,7 +1454,7 @@ Execute         set_default_model reshape_2D_to_3D
 Execute         schedule -model reshape_2D_to_3D 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 11.52 seconds; current allocated memory: 924.252 MB.
+INFO: [HLS 200-111]  Elapsed time: 11.36 seconds; current allocated memory: 924.216 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/reshape_2D_to_3D.verbose.sched.rpt 
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/reshape_2D_to_3D.sched.adb -f 
 INFO-FLOW: Finish scheduling reshape_2D_to_3D.
@@ -1466,7 +1466,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 924.403 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 924.368 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/reshape_2D_to_3D.verbose.bind.rpt 
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/reshape_2D_to_3D.bind.adb -f 
 INFO-FLOW: Finish binding reshape_2D_to_3D.
@@ -1477,12 +1477,12 @@ Execute         set_default_model apply_rotary_pos_emb
 Execute         schedule -model apply_rotary_pos_emb 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.14 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 925.297 MB.
+Command         schedule done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 925.261 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/apply_rotary_pos_emb.verbose.sched.rpt 
-Command         syn_report done; 0.44 sec.
+Command         syn_report done; 0.4 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/apply_rotary_pos_emb.sched.adb -f 
-Command         db_write done; 0.38 sec.
+Command         db_write done; 0.35 sec.
 INFO-FLOW: Finish scheduling apply_rotary_pos_emb.
 Execute         set_default_model apply_rotary_pos_emb 
 Execute         bind -model apply_rotary_pos_emb 
@@ -1492,11 +1492,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.89 seconds; current allocated memory: 926.617 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.81 seconds; current allocated memory: 926.580 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/apply_rotary_pos_emb.verbose.bind.rpt 
-Command         syn_report done; 0.44 sec.
+Command         syn_report done; 0.41 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/apply_rotary_pos_emb.bind.adb -f 
-Command         db_write done; 0.38 sec.
+Command         db_write done; 0.35 sec.
 INFO-FLOW: Finish binding apply_rotary_pos_emb.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'cache_update' 
@@ -1505,7 +1505,7 @@ Execute         set_default_model cache_update
 Execute         schedule -model cache_update 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.89 seconds; current allocated memory: 926.855 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.81 seconds; current allocated memory: 926.817 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/cache_update.verbose.sched.rpt 
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/cache_update.sched.adb -f 
 INFO-FLOW: Finish scheduling cache_update.
@@ -1517,9 +1517,8 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 927.113 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 927.076 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/cache_update.verbose.bind.rpt 
-Command         syn_report done; 0.11 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/cache_update.bind.adb -f 
 INFO-FLOW: Finish binding cache_update.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1529,12 +1528,12 @@ Execute         set_default_model transpose_last_two_d
 Execute         schedule -model transpose_last_two_d 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.12 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 927.822 MB.
+Command         schedule done; 0.11 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 927.788 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/transpose_last_two_d.verbose.sched.rpt 
-Command         syn_report done; 0.35 sec.
+Command         syn_report done; 0.33 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/transpose_last_two_d.sched.adb -f 
-Command         db_write done; 0.3 sec.
+Command         db_write done; 0.28 sec.
 INFO-FLOW: Finish scheduling transpose_last_two_d.
 Execute         set_default_model transpose_last_two_d 
 Execute         bind -model transpose_last_two_d 
@@ -1544,11 +1543,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 928.943 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 928.908 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/transpose_last_two_d.verbose.bind.rpt 
-Command         syn_report done; 0.35 sec.
+Command         syn_report done; 0.33 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/transpose_last_two_d.bind.adb -f 
-Command         db_write done; 0.31 sec.
+Command         db_write done; 0.3 sec.
 INFO-FLOW: Finish binding transpose_last_two_d.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'GEMM_3D_float' 
@@ -1557,12 +1556,12 @@ Execute         set_default_model GEMM_3D_float
 Execute         schedule -model GEMM_3D_float 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.32 sec.
-INFO: [HLS 200-111]  Elapsed time: 1 seconds; current allocated memory: 930.964 MB.
+Command         schedule done; 0.3 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 930.928 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float.verbose.sched.rpt 
-Command         syn_report done; 1.12 sec.
+Command         syn_report done; 1.04 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float.sched.adb -f 
-Command         db_write done; 0.95 sec.
+Command         db_write done; 0.88 sec.
 INFO-FLOW: Finish scheduling GEMM_3D_float.
 Execute         set_default_model GEMM_3D_float 
 Execute         bind -model GEMM_3D_float 
@@ -1572,12 +1571,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command         bind done; 0.15 sec.
-INFO: [HLS 200-111]  Elapsed time: 2.22 seconds; current allocated memory: 933.992 MB.
+Command         bind done; 0.13 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.05 seconds; current allocated memory: 933.955 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float.verbose.bind.rpt 
-Command         syn_report done; 1.24 sec.
+Command         syn_report done; 1.17 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float.bind.adb -f 
-Command         db_write done; 0.95 sec.
+Command         db_write done; 0.91 sec.
 INFO-FLOW: Finish binding GEMM_3D_float.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'exp_40_24_s' 
@@ -1588,11 +1587,11 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'exp<40, 24>'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 2.28 seconds; current allocated memory: 934.575 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.16 seconds; current allocated memory: 934.539 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/exp_40_24_s.verbose.sched.rpt 
-Command         syn_report done; 0.15 sec.
+Command         syn_report done; 0.14 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/exp_40_24_s.sched.adb -f 
-Command         db_write done; 0.14 sec.
+Command         db_write done; 0.13 sec.
 INFO-FLOW: Finish scheduling exp<40, 24>.
 Execute         set_default_model exp<40, 24> 
 Execute         bind -model exp<40, 24> 
@@ -1602,11 +1601,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 935.070 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 935.031 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/exp_40_24_s.verbose.bind.rpt 
-Command         syn_report done; 0.19 sec.
+Command         syn_report done; 0.17 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/exp_40_24_s.bind.adb -f 
-Command         db_write done; 0.15 sec.
+Command         db_write done; 0.13 sec.
 INFO-FLOW: Finish binding exp<40, 24>.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'softmax_1_16_6_s' 
@@ -1615,11 +1614,11 @@ Execute         set_default_model softmax<1, 16, 6>
 Execute         schedule -model softmax<1, 16, 6> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 935.444 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 935.400 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s.verbose.sched.rpt 
-Command         syn_report done; 0.2 sec.
+Command         syn_report done; 0.18 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s.sched.adb -f 
-Command         db_write done; 0.17 sec.
+Command         db_write done; 0.15 sec.
 INFO-FLOW: Finish scheduling softmax<1, 16, 6>.
 Execute         set_default_model softmax<1, 16, 6> 
 Execute         bind -model softmax<1, 16, 6> 
@@ -1629,11 +1628,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 935.859 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 935.816 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s.verbose.bind.rpt 
-Command         syn_report done; 0.23 sec.
+Command         syn_report done; 0.22 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s.bind.adb -f 
-Command         db_write done; 0.18 sec.
+Command         db_write done; 0.16 sec.
 INFO-FLOW: Finish binding softmax<1, 16, 6>.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'GEMM_3D_float_1' 
@@ -1642,11 +1641,11 @@ Execute         set_default_model GEMM_3D_float.1
 Execute         schedule -model GEMM_3D_float.1 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 936.326 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 936.281 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1.verbose.sched.rpt 
-Command         syn_report done; 0.21 sec.
+Command         syn_report done; 0.19 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1.sched.adb -f 
-Command         db_write done; 0.22 sec.
+Command         db_write done; 0.17 sec.
 INFO-FLOW: Finish scheduling GEMM_3D_float.1.
 Execute         set_default_model GEMM_3D_float.1 
 Execute         bind -model GEMM_3D_float.1 
@@ -1656,11 +1655,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 936.871 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 936.830 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1.verbose.bind.rpt 
-Command         syn_report done; 0.24 sec.
+Command         syn_report done; 0.22 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1.bind.adb -f 
-Command         db_write done; 0.19 sec.
+Command         db_write done; 0.18 sec.
 INFO-FLOW: Finish binding GEMM_3D_float.1.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'attention' 
@@ -1669,12 +1668,12 @@ Execute         set_default_model attention
 Execute         schedule -model attention 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.16 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 938.876 MB.
+Command         schedule done; 0.15 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 938.832 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.verbose.sched.rpt 
-Command         syn_report done; 0.9 sec.
+Command         syn_report done; 0.85 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.sched.adb -f 
-Command         db_write done; 0.99 sec.
+Command         db_write done; 0.85 sec.
 INFO-FLOW: Finish scheduling attention.
 Execute         set_default_model attention 
 Execute         bind -model attention 
@@ -1684,12 +1683,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command         bind done; 5.19 sec.
-INFO: [HLS 200-111]  Elapsed time: 7.12 seconds; current allocated memory: 948.121 MB.
+Command         bind done; 4.95 sec.
+INFO: [HLS 200-111]  Elapsed time: 6.69 seconds; current allocated memory: 948.081 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.verbose.bind.rpt 
-Command         syn_report done; 3.05 sec.
+Command         syn_report done; 2.82 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.bind.adb -f 
-Command         db_write done; 0.91 sec.
+Command         db_write done; 0.87 sec.
 INFO-FLOW: Finish binding attention.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'dut' 
@@ -1698,7 +1697,7 @@ Execute         set_default_model dut
 Execute         schedule -model dut 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 4.03 seconds; current allocated memory: 951.228 MB.
+INFO: [HLS 200-111]  Elapsed time: 3.76 seconds; current allocated memory: 951.190 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.verbose.sched.rpt 
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.sched.adb -f 
 INFO-FLOW: Finish scheduling dut.
@@ -1710,10 +1709,10 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command         bind done; 1.34 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.46 seconds; current allocated memory: 952.942 MB.
+Command         bind done; 1.24 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.34 seconds; current allocated memory: 952.903 MB.
 Execute         syn_report -verbosereport -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.verbose.bind.rpt 
-Command         syn_report done; 3.03 sec.
+Command         syn_report done; 2.82 sec.
 Execute         db_write -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.bind.adb -f 
 INFO-FLOW: Finish binding dut.
 Execute         get_model_list dut -filter all-wo-channel 
@@ -1741,7 +1740,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model sqrt_fixed<42, 26> -vendor xilinx -mg_file /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/sqrt_fixed_42_26_s.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'sqrt_fixed_42_26_s'.
-INFO: [HLS 200-111]  Elapsed time: 3.22 seconds; current allocated memory: 960.187 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.99 seconds; current allocated memory: 960.150 MB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl sqrt_fixed<42, 26> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/sqrt_fixed_42_26_s -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl sqrt_fixed<42, 26> -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/sqrt_fixed_42_26_s 
@@ -1750,9 +1749,9 @@ Execute         syn_report -csynth -model sqrt_fixed<42, 26> -o /home/pis7/ece67
 Command         syn_report done; 0.19 sec.
 Execute         syn_report -rtlxml -model sqrt_fixed<42, 26> -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/sqrt_fixed_42_26_s_csynth.xml 
 Execute         syn_report -verbosereport -model sqrt_fixed<42, 26> -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/sqrt_fixed_42_26_s.verbose.rpt 
-Command         syn_report done; 1.16 sec.
+Command         syn_report done; 1.04 sec.
 Execute         db_write -model sqrt_fixed<42, 26> -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/sqrt_fixed_42_26_s.adb 
-Command         db_write done; 0.9 sec.
+Command         db_write done; 0.83 sec.
 Execute         gen_tb_info sqrt_fixed<42, 26> -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/sqrt_fixed_42_26_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'rms_norm_1536_s' 
@@ -1767,7 +1766,7 @@ INFO: [RTGEN 206-100] Generating core module 'dut_mul_40s_42ns_bkb': 1 instance(
 INFO: [RTGEN 206-100] Generating core module 'dut_mul_72s_40s_7dEe': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'dut_udiv_33s_29nscud': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'rms_norm_1536_s'.
-INFO: [HLS 200-111]  Elapsed time: 2.53 seconds; current allocated memory: 971.232 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.32 seconds; current allocated memory: 971.194 MB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl rms_norm<1536> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/rms_norm_1536_s -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl rms_norm<1536> -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/rms_norm_1536_s 
@@ -1775,9 +1774,9 @@ Execute         gen_rtl rms_norm<1536> -style xilinx -f -lang vlog -o /home/pis7
 Execute         syn_report -csynth -model rms_norm<1536> -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/rms_norm_1536_s_csynth.rpt 
 Execute         syn_report -rtlxml -model rms_norm<1536> -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/rms_norm_1536_s_csynth.xml 
 Execute         syn_report -verbosereport -model rms_norm<1536> -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/rms_norm_1536_s.verbose.rpt 
-Command         syn_report done; 0.45 sec.
+Command         syn_report done; 0.41 sec.
 Execute         db_write -model rms_norm<1536> -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/rms_norm_1536_s.adb 
-Command         db_write done; 0.22 sec.
+Command         db_write done; 0.21 sec.
 Execute         gen_tb_info rms_norm<1536> -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/rms_norm_1536_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'quantize_activation' 
@@ -1788,7 +1787,7 @@ Execute         create_rtl_model quantize_activation -vendor xilinx -mg_file /ho
 INFO: [SYN 201-210] Renamed object name 'dut_udiv_40ns_40ns_40_44_seq_1' to 'dut_udiv_40ns_40neOg' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'dut_udiv_40ns_40neOg': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'quantize_activation'.
-INFO: [HLS 200-111]  Elapsed time: 0.84 seconds; current allocated memory: 977.650 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.76 seconds; current allocated memory: 977.610 MB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl quantize_activation -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/quantize_activation -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl quantize_activation -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/quantize_activation 
@@ -1796,9 +1795,9 @@ Execute         gen_rtl quantize_activation -style xilinx -f -lang vlog -o /home
 Execute         syn_report -csynth -model quantize_activation -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/quantize_activation_csynth.rpt 
 Execute         syn_report -rtlxml -model quantize_activation -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/quantize_activation_csynth.xml 
 Execute         syn_report -verbosereport -model quantize_activation -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/quantize_activation.verbose.rpt 
-Command         syn_report done; 1.09 sec.
+Command         syn_report done; 1.07 sec.
 Execute         db_write -model quantize_activation -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/quantize_activation.adb 
-Command         db_write done; 1.04 sec.
+Command         db_write done; 0.98 sec.
 Execute         gen_tb_info quantize_activation -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/quantize_activation 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'init_2d_mem' 
@@ -1807,7 +1806,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model init_2d_mem -vendor xilinx -mg_file /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/init_2d_mem.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'init_2d_mem'.
-INFO: [HLS 200-111]  Elapsed time: 2.37 seconds; current allocated memory: 989.728 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.25 seconds; current allocated memory: 989.691 MB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl init_2d_mem -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/init_2d_mem -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl init_2d_mem -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/init_2d_mem 
@@ -1816,7 +1815,6 @@ Execute         syn_report -csynth -model init_2d_mem -o /home/pis7/ece6775/ece6
 Execute         syn_report -rtlxml -model init_2d_mem -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/init_2d_mem_csynth.xml 
 Execute         syn_report -verbosereport -model init_2d_mem -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/init_2d_mem.verbose.rpt 
 Execute         db_write -model init_2d_mem -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/init_2d_mem.adb 
-Command         db_write done; 0.11 sec.
 Execute         gen_tb_info init_2d_mem -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/init_2d_mem 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'linear_forward_no_mu' 
@@ -1827,20 +1825,20 @@ Execute         create_rtl_model linear_forward_no_mu -vendor xilinx -mg_file /h
 INFO: [SYN 201-210] Renamed object name 'dut_sdiv_72ns_61s_40_76_1' to 'dut_sdiv_72ns_61sfYi' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'dut_sdiv_72ns_61sfYi': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_forward_no_mu'.
-Command         create_rtl_model done; 0.58 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.76 seconds; current allocated memory: 1012.985 MB.
+Command         create_rtl_model done; 0.52 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.69 seconds; current allocated memory: 1012.944 MB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl linear_forward_no_mu -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/linear_forward_no_mu -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl linear_forward_no_mu -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/linear_forward_no_mu 
 Execute         gen_rtl linear_forward_no_mu -style xilinx -f -lang vlog -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/verilog/linear_forward_no_mu 
 Execute         syn_report -csynth -model linear_forward_no_mu -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/linear_forward_no_mu_csynth.rpt 
-Command         syn_report done; 0.8 sec.
+Command         syn_report done; 0.72 sec.
 Execute         syn_report -rtlxml -model linear_forward_no_mu -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/linear_forward_no_mu_csynth.xml 
-Command         syn_report done; 0.42 sec.
+Command         syn_report done; 0.35 sec.
 Execute         syn_report -verbosereport -model linear_forward_no_mu -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/linear_forward_no_mu.verbose.rpt 
-Command         syn_report done; 7.18 sec.
+Command         syn_report done; 6.85 sec.
 Execute         db_write -model linear_forward_no_mu -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/linear_forward_no_mu.adb 
-Command         db_write done; 6.2 sec.
+Command         db_write done; 5.97 sec.
 Execute         gen_tb_info linear_forward_no_mu -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/linear_forward_no_mu 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reshape_2D_to_3D' 
@@ -1849,7 +1847,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model reshape_2D_to_3D -vendor xilinx -mg_file /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/reshape_2D_to_3D.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reshape_2D_to_3D'.
-INFO: [HLS 200-111]  Elapsed time: 15.21 seconds; current allocated memory: 1.051 GB.
+INFO: [HLS 200-111]  Elapsed time: 14.46 seconds; current allocated memory: 1.051 GB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl reshape_2D_to_3D -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/reshape_2D_to_3D -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl reshape_2D_to_3D -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/reshape_2D_to_3D 
@@ -1858,7 +1856,7 @@ Execute         syn_report -csynth -model reshape_2D_to_3D -o /home/pis7/ece6775
 Execute         syn_report -rtlxml -model reshape_2D_to_3D -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/reshape_2D_to_3D_csynth.xml 
 Execute         syn_report -verbosereport -model reshape_2D_to_3D -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/reshape_2D_to_3D.verbose.rpt 
 Execute         db_write -model reshape_2D_to_3D -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/reshape_2D_to_3D.adb 
-Command         db_write done; 0.5 sec.
+Command         db_write done; 0.46 sec.
 Execute         gen_tb_info reshape_2D_to_3D -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/reshape_2D_to_3D 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'apply_rotary_pos_emb' 
@@ -1871,7 +1869,7 @@ INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_sin_tab_V_5' to 'a
 INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_q_0_V' to 'apply_rotary_pos_ibs' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_k_0_V' to 'apply_rotary_pos_jbC' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'apply_rotary_pos_emb'.
-INFO: [HLS 200-111]  Elapsed time: 0.69 seconds; current allocated memory: 1.054 GB.
+INFO: [HLS 200-111]  Elapsed time: 0.62 seconds; current allocated memory: 1.054 GB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl apply_rotary_pos_emb -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/apply_rotary_pos_emb -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl apply_rotary_pos_emb -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/apply_rotary_pos_emb 
@@ -1879,9 +1877,9 @@ Execute         gen_rtl apply_rotary_pos_emb -style xilinx -f -lang vlog -o /hom
 Execute         syn_report -csynth -model apply_rotary_pos_emb -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/apply_rotary_pos_emb_csynth.rpt 
 Execute         syn_report -rtlxml -model apply_rotary_pos_emb -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/apply_rotary_pos_emb_csynth.xml 
 Execute         syn_report -verbosereport -model apply_rotary_pos_emb -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/apply_rotary_pos_emb.verbose.rpt 
-Command         syn_report done; 0.48 sec.
+Command         syn_report done; 0.43 sec.
 Execute         db_write -model apply_rotary_pos_emb -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/apply_rotary_pos_emb.adb 
-Command         db_write done; 0.86 sec.
+Command         db_write done; 0.79 sec.
 Execute         gen_tb_info apply_rotary_pos_emb -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/apply_rotary_pos_emb 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'cache_update' 
@@ -1890,7 +1888,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model cache_update -vendor xilinx -mg_file /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/cache_update.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'cache_update'.
-INFO: [HLS 200-111]  Elapsed time: 1.49 seconds; current allocated memory: 1.059 GB.
+INFO: [HLS 200-111]  Elapsed time: 1.35 seconds; current allocated memory: 1.059 GB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl cache_update -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/cache_update -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl cache_update -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/cache_update 
@@ -1898,9 +1896,8 @@ Execute         gen_rtl cache_update -style xilinx -f -lang vlog -o /home/pis7/e
 Execute         syn_report -csynth -model cache_update -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/cache_update_csynth.rpt 
 Execute         syn_report -rtlxml -model cache_update -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/cache_update_csynth.xml 
 Execute         syn_report -verbosereport -model cache_update -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/cache_update.verbose.rpt 
-Command         syn_report done; 0.12 sec.
 Execute         db_write -model cache_update -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/cache_update.adb 
-Command         db_write done; 0.59 sec.
+Command         db_write done; 0.53 sec.
 Execute         gen_tb_info cache_update -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/cache_update 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'transpose_last_two_d' 
@@ -1909,7 +1906,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model transpose_last_two_d -vendor xilinx -mg_file /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/transpose_last_two_d.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'transpose_last_two_d'.
-INFO: [HLS 200-111]  Elapsed time: 0.82 seconds; current allocated memory: 1.061 GB.
+INFO: [HLS 200-111]  Elapsed time: 0.71 seconds; current allocated memory: 1.061 GB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl transpose_last_two_d -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/transpose_last_two_d -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl transpose_last_two_d -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/transpose_last_two_d 
@@ -1917,9 +1914,9 @@ Execute         gen_rtl transpose_last_two_d -style xilinx -f -lang vlog -o /hom
 Execute         syn_report -csynth -model transpose_last_two_d -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/transpose_last_two_d_csynth.rpt 
 Execute         syn_report -rtlxml -model transpose_last_two_d -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/transpose_last_two_d_csynth.xml 
 Execute         syn_report -verbosereport -model transpose_last_two_d -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/transpose_last_two_d.verbose.rpt 
-Command         syn_report done; 0.39 sec.
+Command         syn_report done; 0.34 sec.
 Execute         db_write -model transpose_last_two_d -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/transpose_last_two_d.adb 
-Command         db_write done; 0.78 sec.
+Command         db_write done; 0.74 sec.
 Execute         gen_tb_info transpose_last_two_d -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/transpose_last_two_d 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'GEMM_3D_float' 
@@ -1928,7 +1925,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model GEMM_3D_float -vendor xilinx -mg_file /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'GEMM_3D_float'.
-INFO: [HLS 200-111]  Elapsed time: 1.35 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111]  Elapsed time: 1.24 seconds; current allocated memory: 1.070 GB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl GEMM_3D_float -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/GEMM_3D_float -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl GEMM_3D_float -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/GEMM_3D_float 
@@ -1936,9 +1933,9 @@ Execute         gen_rtl GEMM_3D_float -style xilinx -f -lang vlog -o /home/pis7/
 Execute         syn_report -csynth -model GEMM_3D_float -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/GEMM_3D_float_csynth.rpt 
 Execute         syn_report -rtlxml -model GEMM_3D_float -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/GEMM_3D_float_csynth.xml 
 Execute         syn_report -verbosereport -model GEMM_3D_float -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float.verbose.rpt 
-Command         syn_report done; 1.29 sec.
+Command         syn_report done; 1.23 sec.
 Execute         db_write -model GEMM_3D_float -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float.adb 
-Command         db_write done; 1.47 sec.
+Command         db_write done; 1.45 sec.
 Execute         gen_tb_info GEMM_3D_float -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'exp_40_24_s' 
@@ -1954,7 +1951,7 @@ INFO: [SYN 201-210] Renamed object name 'dut_mul_50ns_50ns_100_2_1' to 'dut_mul_
 INFO: [RTGEN 206-100] Generating core module 'dut_mul_50ns_47nsncg': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'dut_mul_50ns_50nsocq': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_40_24_s'.
-INFO: [HLS 200-111]  Elapsed time: 3.13 seconds; current allocated memory: 1.081 GB.
+INFO: [HLS 200-111]  Elapsed time: 3.02 seconds; current allocated memory: 1.081 GB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl exp<40, 24> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/exp_40_24_s -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl exp<40, 24> -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/exp_40_24_s 
@@ -1964,7 +1961,7 @@ Execute         syn_report -rtlxml -model exp<40, 24> -o /home/pis7/ece6775/ece6
 Execute         syn_report -verbosereport -model exp<40, 24> -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/exp_40_24_s.verbose.rpt 
 Command         syn_report done; 0.19 sec.
 Execute         db_write -model exp<40, 24> -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/exp_40_24_s.adb 
-Command         db_write done; 0.65 sec.
+Command         db_write done; 0.63 sec.
 Execute         gen_tb_info exp<40, 24> -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/exp_40_24_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'softmax_1_16_6_s' 
@@ -1975,7 +1972,7 @@ Execute         create_rtl_model softmax<1, 16, 6> -vendor xilinx -mg_file /home
 INFO: [SYN 201-210] Renamed object name 'dut_sdiv_56ns_40s_40_60_seq_1' to 'dut_sdiv_56ns_40spcA' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'dut_sdiv_56ns_40spcA': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'softmax_1_16_6_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.98 seconds; current allocated memory: 1.084 GB.
+INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 1.084 GB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl softmax<1, 16, 6> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/softmax_1_16_6_s -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl softmax<1, 16, 6> -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/softmax_1_16_6_s 
@@ -1983,9 +1980,9 @@ Execute         gen_rtl softmax<1, 16, 6> -style xilinx -f -lang vlog -o /home/p
 Execute         syn_report -csynth -model softmax<1, 16, 6> -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/softmax_1_16_6_s_csynth.rpt 
 Execute         syn_report -rtlxml -model softmax<1, 16, 6> -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/softmax_1_16_6_s_csynth.xml 
 Execute         syn_report -verbosereport -model softmax<1, 16, 6> -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s.verbose.rpt 
-Command         syn_report done; 0.24 sec.
+Command         syn_report done; 0.23 sec.
 Execute         db_write -model softmax<1, 16, 6> -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s.adb 
-Command         db_write done; 0.66 sec.
+Command         db_write done; 0.64 sec.
 Execute         gen_tb_info softmax<1, 16, 6> -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'GEMM_3D_float_1' 
@@ -1994,7 +1991,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model GEMM_3D_float.1 -vendor xilinx -mg_file /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'GEMM_3D_float_1'.
-INFO: [HLS 200-111]  Elapsed time: 0.99 seconds; current allocated memory: 1.086 GB.
+INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 1.086 GB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl GEMM_3D_float.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/GEMM_3D_float_1 -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl GEMM_3D_float.1 -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/GEMM_3D_float_1 
@@ -2002,9 +1999,9 @@ Execute         gen_rtl GEMM_3D_float.1 -style xilinx -f -lang vlog -o /home/pis
 Execute         syn_report -csynth -model GEMM_3D_float.1 -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/GEMM_3D_float_1_csynth.rpt 
 Execute         syn_report -rtlxml -model GEMM_3D_float.1 -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/GEMM_3D_float_1_csynth.xml 
 Execute         syn_report -verbosereport -model GEMM_3D_float.1 -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1.verbose.rpt 
-Command         syn_report done; 0.24 sec.
+Command         syn_report done; 0.22 sec.
 Execute         db_write -model GEMM_3D_float.1 -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1.adb 
-Command         db_write done; 0.7 sec.
+Command         db_write done; 0.68 sec.
 Execute         gen_tb_info GEMM_3D_float.1 -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'attention' 
@@ -3088,20 +3085,20 @@ INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp_255' to 
 INFO: [SYN 201-210] Renamed object name 'dut_mul_58ns_56s_113_3_1' to 'dut_mul_58ns_56s_o6c' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'dut_mul_58ns_56s_o6c': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'attention'.
-Command         create_rtl_model done; 98.8 sec.
-INFO: [HLS 200-111]  Elapsed time: 99.82 seconds; current allocated memory: 1.121 GB.
+Command         create_rtl_model done; 107.84 sec.
+INFO: [HLS 200-111]  Elapsed time: 108.82 seconds; current allocated memory: 1.121 GB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl attention -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/attention -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl attention -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/attention 
 Execute         gen_rtl attention -style xilinx -f -lang vlog -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/verilog/attention 
 Execute         syn_report -csynth -model attention -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/attention_csynth.rpt 
-Command         syn_report done; 1.56 sec.
+Command         syn_report done; 1.57 sec.
 Execute         syn_report -rtlxml -model attention -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/attention_csynth.xml 
-Command         syn_report done; 0.77 sec.
+Command         syn_report done; 0.79 sec.
 Execute         syn_report -verbosereport -model attention -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.verbose.rpt 
-Command         syn_report done; 3.79 sec.
+Command         syn_report done; 3.76 sec.
 Execute         db_write -model attention -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.adb 
-Command         db_write done; 2.36 sec.
+Command         db_write done; 2.34 sec.
 Execute         gen_tb_info attention -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'dut' 
@@ -3113,7 +3110,7 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'dut/strm_in_V_V' to 'ap_fi
 INFO: [RTGEN 206-500] Setting interface mode on port 'dut/strm_out_V_V' to 'ap_fifo'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'dut' to 'ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dut'.
-INFO: [HLS 200-111]  Elapsed time: 8.89 seconds; current allocated memory: 1.151 GB.
+INFO: [HLS 200-111]  Elapsed time: 8.85 seconds; current allocated memory: 1.151 GB.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.rtl_wrap.cfg.tcl 
 Execute         gen_rtl dut -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/systemc/dut -synmodules {sqrt_fixed<42, 26>} rms_norm<1536> quantize_activation init_2d_mem linear_forward_no_mu reshape_2D_to_3D apply_rotary_pos_emb cache_update transpose_last_two_d GEMM_3D_float {exp<40, 24>} {softmax<1, 16, 6>} GEMM_3D_float.1 attention dut 
 Execute         gen_rtl dut -istop -style xilinx -f -lang vhdl -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/vhdl/dut 
@@ -3121,13 +3118,13 @@ Execute         gen_rtl dut -istop -style xilinx -f -lang vlog -o /home/pis7/ece
 Execute         syn_report -csynth -model dut -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/dut_csynth.rpt 
 Execute         syn_report -rtlxml -model dut -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/syn/report/dut_csynth.xml 
 Execute         syn_report -verbosereport -model dut -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.verbose.rpt 
-Command         syn_report done; 2.95 sec.
+Command         syn_report done; 2.94 sec.
 Execute         db_write -model dut -f -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.adb 
-Command         db_write done; 0.63 sec.
+Command         db_write done; 0.64 sec.
 Execute         gen_tb_info dut -p /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut 
 Execute         export_constraint_db -f -tool general -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.constraint.tcl 
 Execute         syn_report -designview -model dut -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.design.xml 
-Command         syn_report done; 2.79 sec.
+Command         syn_report done; 2.71 sec.
 Execute         get_config_rtl -disable_wave_debug 
 Execute         syn_report -wcfg -model dut -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut_dataflow_ana.wcfg 
 Execute         syn_report -protoinst -model dut -o /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.protoinst 
@@ -4118,7 +4115,7 @@ Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_72s_40s_7dEe_MulnS_1'
-Command         ap_source done; 0.17 sec.
+Command         ap_source done; 0.29 sec.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/quantize_activation.compgen.tcl 
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -4147,7 +4144,7 @@ Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet
 INFO: [RTMG 210-278] Implementing memory 'apply_rotary_pos_ibs_ram (RAM)' using block RAMs.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command         ap_source done; 0.16 sec.
+Command         ap_source done; 0.22 sec.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/cache_update.compgen.tcl 
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/transpose_last_two_d.compgen.tcl 
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float.compgen.tcl 
@@ -4183,7 +4180,7 @@ Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command         ap_source done; 0.34 sec.
+Command         ap_source done; 0.46 sec.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s.compgen.tcl 
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -6305,7 +6302,7 @@ Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet
 INFO: [RTMG 210-278] Implementing memory 'attention_attn_wekVb_ram (RAM)' using block RAMs.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Command         ap_source done; 74.46 sec.
+Command         ap_source done; 74.69 sec.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.compgen.tcl 
 INFO: [RTMG 210-278] Implementing memory 'dut_input_0_V_ram (RAM)' using block RAMs.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
@@ -6362,7 +6359,7 @@ Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s.compgen.tcl 
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1.compgen.tcl 
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.compgen.tcl 
-Command         ap_source done; 0.11 sec.
+Command         ap_source done; 0.12 sec.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/global.setting.tcl 
@@ -6380,7 +6377,7 @@ Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s.compgen.tcl 
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1.compgen.tcl 
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.compgen.tcl 
-Command         ap_source done; 0.11 sec.
+Command         ap_source done; 0.12 sec.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.compgen.tcl 
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -6418,7 +6415,7 @@ Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/softmax_1_16_6_s.compgen.tcl 
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/GEMM_3D_float_1.compgen.tcl 
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/attention.compgen.tcl 
-Command         ap_source done; 0.12 sec.
+Command         ap_source done; 0.11 sec.
 Execute         source /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/dut.compgen.tcl 
 Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
@@ -6474,10 +6471,10 @@ Execute         get_config_rtl -stall_sig_gen
 Execute         get_config_rtl -profile 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/pis7/ece6775/ece6775-final/ecelinux/attention_full.prj/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:07:33 ; elapsed = 00:09:19 . Memory (MB): peak = 2301.188 ; gain = 1663.160 ; free physical = 1909 ; free virtual = 7798
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:07:23 ; elapsed = 00:09:06 . Memory (MB): peak = 2301.188 ; gain = 1663.160 ; free physical = 1416 ; free virtual = 8160
 INFO: [VHDL 208-304] Generating VHDL RTL for dut.
 INFO: [VLOG 209-307] Generating Verilog RTL for dut.
-Command       autosyn done; 312.15 sec.
-Command     csynth_design done; 556.13 sec.
+Command       autosyn done; 312.38 sec.
+Command     csynth_design done; 542.15 sec.
 Execute     cleanup_all 
-Command     cleanup_all done; 0.21 sec.
+Command     cleanup_all done; 0.23 sec.
