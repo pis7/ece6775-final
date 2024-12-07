@@ -124,15 +124,15 @@ softmax_1_16_6_s::softmax_1_16_6_s(sc_module_name name) : sc_module(name), mVcdF
     grp_exp_40_24_s_fu_163->ap_ready(grp_exp_40_24_s_fu_163_ap_ready);
     grp_exp_40_24_s_fu_163->x_V(sub_ln703_reg_405);
     grp_exp_40_24_s_fu_163->ap_return(grp_exp_40_24_s_fu_163_ap_return);
-    dut_sdiv_56ns_40spcA_U872 = new dut_sdiv_56ns_40spcA<1,60,56,40,40>("dut_sdiv_56ns_40spcA_U872");
-    dut_sdiv_56ns_40spcA_U872->clk(ap_clk);
-    dut_sdiv_56ns_40spcA_U872->reset(ap_rst);
-    dut_sdiv_56ns_40spcA_U872->start(grp_fu_334_ap_start);
-    dut_sdiv_56ns_40spcA_U872->done(grp_fu_334_ap_done);
-    dut_sdiv_56ns_40spcA_U872->din0(grp_fu_334_p0);
-    dut_sdiv_56ns_40spcA_U872->din1(grp_fu_334_p1);
-    dut_sdiv_56ns_40spcA_U872->ce(ap_var_for_const0);
-    dut_sdiv_56ns_40spcA_U872->dout(grp_fu_334_p2);
+    dut_sdiv_56ns_40spcA_U47 = new dut_sdiv_56ns_40spcA<1,60,56,40,40>("dut_sdiv_56ns_40spcA_U47");
+    dut_sdiv_56ns_40spcA_U47->clk(ap_clk);
+    dut_sdiv_56ns_40spcA_U47->reset(ap_rst);
+    dut_sdiv_56ns_40spcA_U47->start(grp_fu_334_ap_start);
+    dut_sdiv_56ns_40spcA_U47->done(grp_fu_334_ap_done);
+    dut_sdiv_56ns_40spcA_U47->din0(grp_fu_334_p0);
+    dut_sdiv_56ns_40spcA_U47->din1(grp_fu_334_p1);
+    dut_sdiv_56ns_40spcA_U47->ce(ap_var_for_const0);
+    dut_sdiv_56ns_40spcA_U47->dout(grp_fu_334_p2);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -452,7 +452,7 @@ softmax_1_16_6_s::~softmax_1_16_6_s() {
         sc_close_vcd_trace_file(mVcdFile);
 
     delete grp_exp_40_24_s_fu_163;
-    delete dut_sdiv_56ns_40spcA_U872;
+    delete dut_sdiv_56ns_40spcA_U47;
 }
 
 void softmax_1_16_6_s::thread_ap_var_for_const0() {

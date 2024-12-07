@@ -1333,7 +1333,7 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>p_Result_s_99</name>
+						<name>p_Result_s_102</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>278</lineNumber>
@@ -5219,7 +5219,7 @@
 					<Obj>
 						<type>0</type>
 						<id>114</id>
-						<name>tmp_58</name>
+						<name>tmp_59</name>
 						<fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>468</lineNumber>

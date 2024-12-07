@@ -2719,7 +2719,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>dut_sdiv_56ns_40spcA_U872</rtlName>
+              <rtlName>dut_sdiv_56ns_40spcA_U47</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>40</bitwidth>
@@ -7298,7 +7298,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>dut_sdiv_56ns_40spcA_U872 (dut_sdiv_56ns_40spcA)</first>
+          <first>dut_sdiv_56ns_40spcA_U47 (dut_sdiv_56ns_40spcA)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -7331,7 +7331,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>720</second>
+              <second>636</second>
             </item>
           </second>
         </item>
@@ -8262,7 +8262,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>dut_sdiv_56ns_40spcA_U872</first>
+          <first>dut_sdiv_56ns_40spcA_U47</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -8280,7 +8280,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>dut_sdiv_56ns_40spcA_U872 (dut_sdiv_56ns_40spcA)</first>
+          <first>dut_sdiv_56ns_40spcA_U47 (dut_sdiv_56ns_40spcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

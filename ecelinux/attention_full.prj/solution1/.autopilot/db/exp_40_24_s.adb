@@ -1333,7 +1333,7 @@
             <Obj>
               <type>0</type>
               <id>35</id>
-              <name>p_Result_s_99</name>
+              <name>p_Result_s_102</name>
               <fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>278</lineNumber>
@@ -1357,7 +1357,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>p_Result_s_99_fu_355_p3</rtlName>
+              <rtlName>p_Result_s_102_fu_355_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3182,7 +3182,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>r.V</originalName>
-              <rtlName>dut_mul_50ns_47nsncg_U864</rtlName>
+              <rtlName>dut_mul_50ns_47nsncg_U39</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>97</bitwidth>
@@ -3868,7 +3868,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>r.V</originalName>
-              <rtlName>dut_mul_50ns_50nsocq_U865</rtlName>
+              <rtlName>dut_mul_50ns_50nsocq_U40</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>100</bitwidth>
@@ -5219,7 +5219,7 @@
             <Obj>
               <type>0</type>
               <id>114</id>
-              <name>tmp_58</name>
+              <name>tmp_59</name>
               <fileName>/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>468</lineNumber>
@@ -5243,7 +5243,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_58_fu_807_p4</rtlName>
+              <rtlName>tmp_59_fu_807_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>39</bitwidth>
@@ -8776,7 +8776,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>dut_mul_50ns_47nsncg_U864 (dut_mul_50ns_47nsncg)</first>
+          <first>dut_mul_50ns_47nsncg_U39 (dut_mul_50ns_47nsncg)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -8795,7 +8795,7 @@
           </second>
         </item>
         <item>
-          <first>dut_mul_50ns_50nsocq_U865 (dut_mul_50ns_50nsocq)</first>
+          <first>dut_mul_50ns_50nsocq_U40 (dut_mul_50ns_50nsocq)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9438,7 +9438,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>57</second>
+              <second>15</second>
             </item>
           </second>
         </item>
@@ -9461,7 +9461,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>57</second>
+              <second>15</second>
             </item>
           </second>
         </item>
@@ -10530,14 +10530,14 @@
         <count>2</count>
         <item_version>0</item_version>
         <item>
-          <first>dut_mul_50ns_47nsncg_U864</first>
+          <first>dut_mul_50ns_47nsncg_U39</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>dut_mul_50ns_50nsocq_U865</first>
+          <first>dut_mul_50ns_50nsocq_U40</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -10548,7 +10548,7 @@
         <count>2</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>dut_mul_50ns_47nsncg_U864 (dut_mul_50ns_47nsncg)</first>
+          <first>dut_mul_50ns_47nsncg_U39 (dut_mul_50ns_47nsncg)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10556,7 +10556,7 @@
           </second>
         </item>
         <item>
-          <first>dut_mul_50ns_50nsocq_U865 (dut_mul_50ns_50nsocq)</first>
+          <first>dut_mul_50ns_50nsocq_U40 (dut_mul_50ns_50nsocq)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13076,7 +13076,7 @@
         </second>
       </item>
       <item>
-        <first>p_Result_s_99_fu_355</first>
+        <first>p_Result_s_102_fu_355</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13156,7 +13156,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_58_fu_807</first>
+        <first>tmp_59_fu_807</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

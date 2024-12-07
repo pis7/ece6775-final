@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'rms_norm_1536_s'" level="0">
-<item name = "Date">Fri Dec  6 10:14:36 2024
+<item name = "Date">Fri Dec  6 22:01:04 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_full.prj</item>
@@ -52,12 +52,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, 9, 0, 358, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 14, 4227, 8044, -</column>
+<column name="Instance">0, 14, 4227, 7456, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 367, -</column>
 <column name="Register">-, -, 618, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 10, 4, 16, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 10, 4, 15, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -67,7 +67,7 @@
 <column name="dut_mul_40s_42ns_bkb_U2">dut_mul_40s_42ns_bkb, 0, 5, 205, 88, 0</column>
 <column name="dut_mul_72s_40s_7dEe_U4">dut_mul_72s_40s_7dEe, 0, 9, 441, 256, 0</column>
 <column name="dut_udiv_33s_29nscud_U3">dut_udiv_33s_29nscud, 0, 0, 406, 247, 0</column>
-<column name="grp_sqrt_fixed_42_26_s_fu_127">sqrt_fixed_42_26_s, 0, 0, 3175, 7453, 0</column>
+<column name="grp_sqrt_fixed_42_26_s_fu_127">sqrt_fixed_42_26_s, 0, 0, 3175, 6865, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

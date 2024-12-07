@@ -488,7 +488,7 @@ architecture behav of sqrt_fixed_42_26_s is
     signal tmp_fu_382_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal x_l_I_V_fu_374_p1 : STD_LOGIC_VECTOR (28 downto 0);
     signal select_ln248_fu_390_p3 : STD_LOGIC_VECTOR (2 downto 0);
-    signal p_Result_s_83_fu_398_p5 : STD_LOGIC_VECTOR (28 downto 0);
+    signal p_Result_s_79_fu_398_p5 : STD_LOGIC_VECTOR (28 downto 0);
     signal select_ln488_fu_410_p3 : STD_LOGIC_VECTOR (12 downto 0);
     signal p_Result_25_1_fu_426_p4 : STD_LOGIC_VECTOR (1 downto 0);
     signal select_ln488_1_fu_418_p3 : STD_LOGIC_VECTOR (28 downto 0);
@@ -1506,7 +1506,7 @@ begin
     p_Result_34_6_fu_2268_p4 <= select_ln318_15_fu_2247_p3(16 downto 10);
     p_Result_34_7_fu_2387_p4 <= select_ln318_18_fu_2366_p3(16 downto 9);
     p_Result_34_8_fu_2513_p4 <= select_ln318_21_fu_2502_p3(16 downto 8);
-    p_Result_s_83_fu_398_p5 <= (x_l_I_V_fu_374_p1(28 downto 27) & select_ln248_fu_390_p3 & x_l_I_V_fu_374_p1(23 downto 0));
+    p_Result_s_79_fu_398_p5 <= (x_l_I_V_fu_374_p1(28 downto 27) & select_ln248_fu_390_p3 & x_l_I_V_fu_374_p1(23 downto 0));
     p_Result_s_fu_4047_p3 <= x_V_read_reg_4259_pp0_iter16_reg(29 downto 29);
     p_Val2_s_fu_4226_p3 <= 
         res_I_V_fu_4221_p2 when (p_Result_1_fu_4213_p3(0) = '1') else 
@@ -1789,7 +1789,7 @@ begin
         select_ln488_17_fu_1092_p3 when (icmp_ln488_8_fu_1132_p2(0) = '1') else 
         p_Result_30_9_fu_1144_p5;
     select_ln488_1_fu_418_p3 <= 
-        p_Result_s_83_fu_398_p5 when (tmp_fu_382_p3(0) = '1') else 
+        p_Result_s_79_fu_398_p5 when (tmp_fu_382_p3(0) = '1') else 
         x_l_I_V_fu_374_p1;
     select_ln488_20_fu_1243_p3 <= 
         select_ln488_18_reg_4325 when (icmp_ln488_9_fu_1213_p2(0) = '1') else 

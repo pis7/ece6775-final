@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'attention'" level="0">
-<item name = "Date">Fri Dec  6 10:14:25 2024
+<item name = "Date">Fri Dec  6 22:01:01 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_full.prj</item>
@@ -24,26 +24,26 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">316534, 316534, 3.165 ms, 3.165 ms, 316534, 316534, none</column>
+<column name="">38520190, 38520190, 0.385 sec, 0.385 sec, 38520190, 38520190, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_linear_forward_no_mu_fu_3335">linear_forward_no_mu, 46159, 46159, 0.462 ms, 0.462 ms, 46159, 46159, none</column>
-<column name="grp_GEMM_3D_float_fu_3923">GEMM_3D_float, 5793, 5793, 57.930 us, 57.930 us, 5793, 5793, none</column>
-<column name="grp_rms_norm_1536_s_fu_4056">rms_norm_1536_s, 20028, 20028, 0.200 ms, 0.200 ms, 20028, 20028, none</column>
-<column name="grp_softmax_1_16_6_s_fu_4065">softmax_1_16_6_s, 7057, 7057, 70.570 us, 70.570 us, 7057, 7057, none</column>
-<column name="grp_quantize_activation_fu_4076">quantize_activation, 6968, 6968, 69.680 us, 69.680 us, 6968, 6968, none</column>
-<column name="grp_GEMM_3D_float_1_fu_4338">GEMM_3D_float_1, 10785, 10785, 0.108 ms, 0.108 ms, 10785, 10785, none</column>
-<column name="grp_apply_rotary_pos_emb_fu_4345">apply_rotary_pos_emb, 13122, 13122, 0.131 ms, 0.131 ms, 13122, 13122, none</column>
-<column name="grp_transpose_last_two_d_fu_4420">transpose_last_two_d, 18657, 18657, 0.187 ms, 0.187 ms, 18657, 18657, none</column>
-<column name="grp_cache_update_fu_4489">cache_update, 18657, 18657, 0.187 ms, 0.187 ms, 18657, 18657, none</column>
-<column name="grp_reshape_2D_to_3D_fu_4498">reshape_2D_to_3D, 3105, 3105, 31.050 us, 31.050 us, 3105, 3105, none</column>
-<column name="grp_init_2d_mem_fu_4504">init_2d_mem, 1537, 1537, 15.370 us, 15.370 us, 1537, 1537, none</column>
-<column name="grp_init_2d_mem_fu_4510">init_2d_mem, 1537, 1537, 15.370 us, 15.370 us, 1537, 1537, none</column>
-<column name="grp_init_2d_mem_fu_4516">init_2d_mem, 1537, 1537, 15.370 us, 15.370 us, 1537, 1537, none</column>
+<column name="grp_rms_norm_1536_s_fu_287">rms_norm_1536_s, 20028, 20028, 0.200 ms, 0.200 ms, 20028, 20028, none</column>
+<column name="grp_softmax_1_16_6_s_fu_296">softmax_1_16_6_s, 7057, 7057, 70.570 us, 70.570 us, 7057, 7057, none</column>
+<column name="grp_linear_forward_no_mu_fu_307">linear_forward_no_mu, 9575425, 9575425, 95.754 ms, 95.754 ms, 9575425, 9575425, none</column>
+<column name="grp_quantize_activation_fu_325">quantize_activation, 13112, 13112, 0.131 ms, 0.131 ms, 13112, 13112, none</column>
+<column name="grp_apply_rotary_pos_emb_fu_332">apply_rotary_pos_emb, 8514, 8514, 85.140 us, 85.140 us, 8514, 8514, none</column>
+<column name="grp_GEMM_3D_float_fu_344">GEMM_3D_float, 46305, 46305, 0.463 ms, 0.463 ms, 46305, 46305, none</column>
+<column name="grp_GEMM_3D_float_1_fu_351">GEMM_3D_float_1, 49185, 49185, 0.492 ms, 0.492 ms, 49185, 49185, none</column>
+<column name="grp_cache_update_fu_358">cache_update, 18657, 18657, 0.187 ms, 0.187 ms, 18657, 18657, none</column>
+<column name="grp_transpose_last_two_d_fu_367">transpose_last_two_d, 18657, 18657, 0.187 ms, 0.187 ms, 18657, 18657, none</column>
+<column name="grp_reshape_2D_to_3D_fu_373">reshape_2D_to_3D, 3105, 3105, 31.050 us, 31.050 us, 3105, 3105, none</column>
+<column name="grp_init_2d_mem_fu_379">init_2d_mem, 1537, 1537, 15.370 us, 15.370 us, 1537, 1537, none</column>
+<column name="grp_init_2d_mem_fu_385">init_2d_mem, 1537, 1537, 15.370 us, 15.370 us, 1537, 1537, none</column>
+<column name="grp_init_2d_mem_fu_391">init_2d_mem, 1537, 1537, 15.370 us, 15.370 us, 1537, 1537, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

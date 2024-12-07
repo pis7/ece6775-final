@@ -56,9 +56,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="533" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="29" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-arrayctor.loop4.preheader:0  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+arrayctor.loop4.preheader:0  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str203, i32 0, i32 0, [1 x i8]* @p_str204, [1 x i8]* @p_str205, [1 x i8]* @p_str206, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str207, [1 x i8]* @p_str208)
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -71,12 +71,12 @@ arrayctor.loop4.preheader:0  %empty = call i32 (...)* @_ssdm_op_SpecInterface(i3
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="534" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="30" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-arrayctor.loop4.preheader:1  %empty_100 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+arrayctor.loop4.preheader:1  %empty_103 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %strm_in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str197, i32 0, i32 0, [1 x i8]* @p_str198, [1 x i8]* @p_str199, [1 x i8]* @p_str200, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str201, [1 x i8]* @p_str202)
 
 ]]></Node>
-<StgValue><ssdm name="empty_100"/></StgValue>
+<StgValue><ssdm name="empty_103"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -86,7 +86,7 @@ arrayctor.loop4.preheader:1  %empty_100 = call i32 (...)* @_ssdm_op_SpecInterfac
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="535" bw="0" op_0_bw="0" op_1_bw="32">
+<Node id="31" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
 arrayctor.loop4.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_in_V_V), !map !573
 
@@ -101,7 +101,7 @@ arrayctor.loop4.preheader:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="536" bw="0" op_0_bw="0" op_1_bw="32">
+<Node id="32" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
 arrayctor.loop4.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_out_V_V), !map !577
 
@@ -116,7 +116,7 @@ arrayctor.loop4.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %strm_o
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="537" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="33" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
 arrayctor.loop4.preheader:4  call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @dut_str) nounwind
 
@@ -131,7 +131,7 @@ arrayctor.loop4.preheader:4  call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="538" bw="40" op_0_bw="64">
+<Node id="34" bw="40" op_0_bw="64">
 <![CDATA[
 arrayctor.loop4.preheader:5  %input_0_V = alloca [1536 x i40], align 8
 
@@ -146,7 +146,7 @@ arrayctor.loop4.preheader:5  %input_0_V = alloca [1536 x i40], align 8
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="539" bw="40" op_0_bw="64">
+<Node id="35" bw="40" op_0_bw="64">
 <![CDATA[
 arrayctor.loop4.preheader:6  %output_0 = alloca [1536 x i40], align 8
 
@@ -161,7 +161,7 @@ arrayctor.loop4.preheader:6  %output_0 = alloca [1536 x i40], align 8
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="540" bw="0" op_0_bw="0">
+<Node id="36" bw="0" op_0_bw="0">
 <![CDATA[
 arrayctor.loop4.preheader:7  br label %.preheader50.0
 
@@ -179,7 +179,7 @@ arrayctor.loop4.preheader:7  br label %.preheader50.0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="542" bw="11" op_0_bw="11" op_1_bw="0" op_2_bw="11" op_3_bw="0">
+<Node id="38" bw="11" op_0_bw="11" op_1_bw="0" op_2_bw="11" op_3_bw="0">
 <![CDATA[
 .preheader50.0:0  %j_0_0 = phi i11 [ %add_ln19, %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %arrayctor.loop4.preheader ]
 
@@ -194,7 +194,7 @@ arrayctor.loop4.preheader:7  br label %.preheader50.0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="543" bw="1" op_0_bw="11" op_1_bw="11">
+<Node id="39" bw="1" op_0_bw="11" op_1_bw="11">
 <![CDATA[
 .preheader50.0:1  %icmp_ln19 = icmp eq i11 %j_0_0, -512
 
@@ -209,12 +209,12 @@ arrayctor.loop4.preheader:7  br label %.preheader50.0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="544" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="40" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader50.0:2  %empty_101 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)
+.preheader50.0:2  %empty_104 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)
 
 ]]></Node>
-<StgValue><ssdm name="empty_101"/></StgValue>
+<StgValue><ssdm name="empty_104"/></StgValue>
 </operation>
 
 <operation id="17" st_id="2" stage="1" lat="1">
@@ -224,7 +224,7 @@ arrayctor.loop4.preheader:7  br label %.preheader50.0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="545" bw="11" op_0_bw="11" op_1_bw="11">
+<Node id="41" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
 .preheader50.0:3  %add_ln19 = add i11 %j_0_0, 1
 
@@ -239,7 +239,7 @@ arrayctor.loop4.preheader:7  br label %.preheader50.0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="546" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="42" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 .preheader50.0:4  br i1 %icmp_ln19, label %.preheader51.1, label %_ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0
 
@@ -255,7 +255,7 @@ arrayctor.loop4.preheader:7  br label %.preheader50.0
 </and_exp></or_exp>
 </condition>
 
-<Node id="548" bw="64" op_0_bw="11">
+<Node id="44" bw="64" op_0_bw="11">
 <![CDATA[
 _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:0  %zext_ln20 = zext i11 %j_0_0 to i64
 
@@ -271,7 +271,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="549" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="45" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
 _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:1  %tmp_V = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %strm_in_V_V)
 
@@ -287,7 +287,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="550" bw="30" op_0_bw="30" op_1_bw="32" op_2_bw="32" op_3_bw="32">
+<Node id="46" bw="30" op_0_bw="30" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
 _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:2  %trunc_ln = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %tmp_V, i32 2, i32 31)
 
@@ -303,7 +303,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="551" bw="40" op_0_bw="30">
+<Node id="47" bw="40" op_0_bw="30">
 <![CDATA[
 _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:3  %sext_ln708 = sext i30 %trunc_ln to i40
 
@@ -319,7 +319,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="552" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="48" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:4  %input_0_V_addr = getelementptr [1536 x i40]* %input_0_V, i64 0, i64 %zext_ln20
 
@@ -335,7 +335,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="553" bw="0" op_0_bw="40" op_1_bw="11">
+<Node id="49" bw="0" op_0_bw="40" op_1_bw="11">
 <![CDATA[
 _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:5  store i40 %sext_ln708, i40* %input_0_V_addr, align 8
 
@@ -351,7 +351,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="554" bw="0" op_0_bw="0">
+<Node id="50" bw="0" op_0_bw="0">
 <![CDATA[
 _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:6  br label %.preheader50.0
 
@@ -367,7 +367,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="556" bw="0" op_0_bw="0" op_1_bw="40" op_2_bw="40" op_3_bw="40" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="8" op_34_bw="8" op_35_bw="8" op_36_bw="8" op_37_bw="8" op_38_bw="8" op_39_bw="8" op_40_bw="8" op_41_bw="8" op_42_bw="8" op_43_bw="8" op_44_bw="8" op_45_bw="8" op_46_bw="8" op_47_bw="8" op_48_bw="8" op_49_bw="8" op_50_bw="8" op_51_bw="8" op_52_bw="8" op_53_bw="8" op_54_bw="8" op_55_bw="8" op_56_bw="8" op_57_bw="8" op_58_bw="8" op_59_bw="8" op_60_bw="8" op_61_bw="8" op_62_bw="8" op_63_bw="8" op_64_bw="8" op_65_bw="8" op_66_bw="8" op_67_bw="8" op_68_bw="8" op_69_bw="8" op_70_bw="8" op_71_bw="8" op_72_bw="8" op_73_bw="8" op_74_bw="8" op_75_bw="8" op_76_bw="8" op_77_bw="8" op_78_bw="8" op_79_bw="8" op_80_bw="8" op_81_bw="8" op_82_bw="8" op_83_bw="8" op_84_bw="8" op_85_bw="8" op_86_bw="8" op_87_bw="8" op_88_bw="8" op_89_bw="8" op_90_bw="8" op_91_bw="8" op_92_bw="8" op_93_bw="8" op_94_bw="8" op_95_bw="8" op_96_bw="8" op_97_bw="8" op_98_bw="8" op_99_bw="8" op_100_bw="8" op_101_bw="8" op_102_bw="8" op_103_bw="8" op_104_bw="8" op_105_bw="8" op_106_bw="8" op_107_bw="8" op_108_bw="8" op_109_bw="8" op_110_bw="8" op_111_bw="8" op_112_bw="8" op_113_bw="8" op_114_bw="8" op_115_bw="8" op_116_bw="8" op_117_bw="8" op_118_bw="8" op_119_bw="8" op_120_bw="8" op_121_bw="8" op_122_bw="8" op_123_bw="8" op_124_bw="8" op_125_bw="8" op_126_bw="8" op_127_bw="8" op_128_bw="8" op_129_bw="8" op_130_bw="8" op_131_bw="8" op_132_bw="8" op_133_bw="8" op_134_bw="8" op_135_bw="8" op_136_bw="8" op_137_bw="8" op_138_bw="8" op_139_bw="8" op_140_bw="8" op_141_bw="8" op_142_bw="8" op_143_bw="8" op_144_bw="8" op_145_bw="8" op_146_bw="8" op_147_bw="8" op_148_bw="8" op_149_bw="8" op_150_bw="8" op_151_bw="8" op_152_bw="8" op_153_bw="8" op_154_bw="8" op_155_bw="8" op_156_bw="8" op_157_bw="8" op_158_bw="8" op_159_bw="8" op_160_bw="8" op_161_bw="8" op_162_bw="8" op_163_bw="8" op_164_bw="8" op_165_bw="8" op_166_bw="8" op_167_bw="8" op_168_bw="8" op_169_bw="8" op_170_bw="8" op_171_bw="8" op_172_bw="8" op_173_bw="8" op_174_bw="8" op_175_bw="8" op_176_bw="8" op_177_bw="8" op_178_bw="8" op_179_bw="8" op_180_bw="8" op_181_bw="8" op_182_bw="8" op_183_bw="8" op_184_bw="8" op_185_bw="8" op_186_bw="8" op_187_bw="8" op_188_bw="8" op_189_bw="8" op_190_bw="8" op_191_bw="8" op_192_bw="8" op_193_bw="8" op_194_bw="8" op_195_bw="8" op_196_bw="17" op_197_bw="17" op_198_bw="40" op_199_bw="40" op_200_bw="32" op_201_bw="46" op_202_bw="50" op_203_bw="40" op_204_bw="8" op_205_bw="8" op_206_bw="8" op_207_bw="8" op_208_bw="8" op_209_bw="8" op_210_bw="8" op_211_bw="8" op_212_bw="8" op_213_bw="8" op_214_bw="8" op_215_bw="8" op_216_bw="8" op_217_bw="8" op_218_bw="8" op_219_bw="8" op_220_bw="8" op_221_bw="8" op_222_bw="8" op_223_bw="8" op_224_bw="8" op_225_bw="8" op_226_bw="8" op_227_bw="8" op_228_bw="8" op_229_bw="8" op_230_bw="8" op_231_bw="8" op_232_bw="8" op_233_bw="8" op_234_bw="8" op_235_bw="8" op_236_bw="8" op_237_bw="8" op_238_bw="8" op_239_bw="8" op_240_bw="8" op_241_bw="8" op_242_bw="8" op_243_bw="8" op_244_bw="8" op_245_bw="8" op_246_bw="8" op_247_bw="8" op_248_bw="8" op_249_bw="8" op_250_bw="8" op_251_bw="8" op_252_bw="8" op_253_bw="8" op_254_bw="8" op_255_bw="8" op_256_bw="8" op_257_bw="8" op_258_bw="8" op_259_bw="8" op_260_bw="8" op_261_bw="8" op_262_bw="8" op_263_bw="8" op_264_bw="8" op_265_bw="8" op_266_bw="8" op_267_bw="8">
+<Node id="52" bw="0" op_0_bw="0" op_1_bw="40" op_2_bw="40" op_3_bw="40" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="17" op_8_bw="17" op_9_bw="40" op_10_bw="40" op_11_bw="32" op_12_bw="46" op_13_bw="50" op_14_bw="40" op_15_bw="8">
 <![CDATA[
 .preheader51.1:0  call fastcc void @attention([1536 x i40]* %input_0_V, [1536 x i40]* %output_0)
 
@@ -385,7 +385,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="556" bw="0" op_0_bw="0" op_1_bw="40" op_2_bw="40" op_3_bw="40" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="8" op_34_bw="8" op_35_bw="8" op_36_bw="8" op_37_bw="8" op_38_bw="8" op_39_bw="8" op_40_bw="8" op_41_bw="8" op_42_bw="8" op_43_bw="8" op_44_bw="8" op_45_bw="8" op_46_bw="8" op_47_bw="8" op_48_bw="8" op_49_bw="8" op_50_bw="8" op_51_bw="8" op_52_bw="8" op_53_bw="8" op_54_bw="8" op_55_bw="8" op_56_bw="8" op_57_bw="8" op_58_bw="8" op_59_bw="8" op_60_bw="8" op_61_bw="8" op_62_bw="8" op_63_bw="8" op_64_bw="8" op_65_bw="8" op_66_bw="8" op_67_bw="8" op_68_bw="8" op_69_bw="8" op_70_bw="8" op_71_bw="8" op_72_bw="8" op_73_bw="8" op_74_bw="8" op_75_bw="8" op_76_bw="8" op_77_bw="8" op_78_bw="8" op_79_bw="8" op_80_bw="8" op_81_bw="8" op_82_bw="8" op_83_bw="8" op_84_bw="8" op_85_bw="8" op_86_bw="8" op_87_bw="8" op_88_bw="8" op_89_bw="8" op_90_bw="8" op_91_bw="8" op_92_bw="8" op_93_bw="8" op_94_bw="8" op_95_bw="8" op_96_bw="8" op_97_bw="8" op_98_bw="8" op_99_bw="8" op_100_bw="8" op_101_bw="8" op_102_bw="8" op_103_bw="8" op_104_bw="8" op_105_bw="8" op_106_bw="8" op_107_bw="8" op_108_bw="8" op_109_bw="8" op_110_bw="8" op_111_bw="8" op_112_bw="8" op_113_bw="8" op_114_bw="8" op_115_bw="8" op_116_bw="8" op_117_bw="8" op_118_bw="8" op_119_bw="8" op_120_bw="8" op_121_bw="8" op_122_bw="8" op_123_bw="8" op_124_bw="8" op_125_bw="8" op_126_bw="8" op_127_bw="8" op_128_bw="8" op_129_bw="8" op_130_bw="8" op_131_bw="8" op_132_bw="8" op_133_bw="8" op_134_bw="8" op_135_bw="8" op_136_bw="8" op_137_bw="8" op_138_bw="8" op_139_bw="8" op_140_bw="8" op_141_bw="8" op_142_bw="8" op_143_bw="8" op_144_bw="8" op_145_bw="8" op_146_bw="8" op_147_bw="8" op_148_bw="8" op_149_bw="8" op_150_bw="8" op_151_bw="8" op_152_bw="8" op_153_bw="8" op_154_bw="8" op_155_bw="8" op_156_bw="8" op_157_bw="8" op_158_bw="8" op_159_bw="8" op_160_bw="8" op_161_bw="8" op_162_bw="8" op_163_bw="8" op_164_bw="8" op_165_bw="8" op_166_bw="8" op_167_bw="8" op_168_bw="8" op_169_bw="8" op_170_bw="8" op_171_bw="8" op_172_bw="8" op_173_bw="8" op_174_bw="8" op_175_bw="8" op_176_bw="8" op_177_bw="8" op_178_bw="8" op_179_bw="8" op_180_bw="8" op_181_bw="8" op_182_bw="8" op_183_bw="8" op_184_bw="8" op_185_bw="8" op_186_bw="8" op_187_bw="8" op_188_bw="8" op_189_bw="8" op_190_bw="8" op_191_bw="8" op_192_bw="8" op_193_bw="8" op_194_bw="8" op_195_bw="8" op_196_bw="17" op_197_bw="17" op_198_bw="40" op_199_bw="40" op_200_bw="32" op_201_bw="46" op_202_bw="50" op_203_bw="40" op_204_bw="8" op_205_bw="8" op_206_bw="8" op_207_bw="8" op_208_bw="8" op_209_bw="8" op_210_bw="8" op_211_bw="8" op_212_bw="8" op_213_bw="8" op_214_bw="8" op_215_bw="8" op_216_bw="8" op_217_bw="8" op_218_bw="8" op_219_bw="8" op_220_bw="8" op_221_bw="8" op_222_bw="8" op_223_bw="8" op_224_bw="8" op_225_bw="8" op_226_bw="8" op_227_bw="8" op_228_bw="8" op_229_bw="8" op_230_bw="8" op_231_bw="8" op_232_bw="8" op_233_bw="8" op_234_bw="8" op_235_bw="8" op_236_bw="8" op_237_bw="8" op_238_bw="8" op_239_bw="8" op_240_bw="8" op_241_bw="8" op_242_bw="8" op_243_bw="8" op_244_bw="8" op_245_bw="8" op_246_bw="8" op_247_bw="8" op_248_bw="8" op_249_bw="8" op_250_bw="8" op_251_bw="8" op_252_bw="8" op_253_bw="8" op_254_bw="8" op_255_bw="8" op_256_bw="8" op_257_bw="8" op_258_bw="8" op_259_bw="8" op_260_bw="8" op_261_bw="8" op_262_bw="8" op_263_bw="8" op_264_bw="8" op_265_bw="8" op_266_bw="8" op_267_bw="8">
+<Node id="52" bw="0" op_0_bw="0" op_1_bw="40" op_2_bw="40" op_3_bw="40" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="17" op_8_bw="17" op_9_bw="40" op_10_bw="40" op_11_bw="32" op_12_bw="46" op_13_bw="50" op_14_bw="40" op_15_bw="8">
 <![CDATA[
 .preheader51.1:0  call fastcc void @attention([1536 x i40]* %input_0_V, [1536 x i40]* %output_0)
 
@@ -400,7 +400,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="557" bw="0" op_0_bw="0">
+<Node id="53" bw="0" op_0_bw="0">
 <![CDATA[
 .preheader51.1:1  br label %.preheader.0
 
@@ -418,7 +418,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="559" bw="11" op_0_bw="11" op_1_bw="0" op_2_bw="11" op_3_bw="0">
+<Node id="55" bw="11" op_0_bw="11" op_1_bw="0" op_2_bw="11" op_3_bw="0">
 <![CDATA[
 .preheader.0:0  %j9_0_0 = phi i11 [ %add_ln51, %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0 ], [ 0, %.preheader51.1 ]
 
@@ -433,7 +433,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="560" bw="1" op_0_bw="11" op_1_bw="11">
+<Node id="56" bw="1" op_0_bw="11" op_1_bw="11">
 <![CDATA[
 .preheader.0:1  %icmp_ln51 = icmp eq i11 %j9_0_0, -512
 
@@ -448,12 +448,12 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="561" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="57" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader.0:2  %empty_102 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)
+.preheader.0:2  %empty_105 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)
 
 ]]></Node>
-<StgValue><ssdm name="empty_102"/></StgValue>
+<StgValue><ssdm name="empty_105"/></StgValue>
 </operation>
 
 <operation id="32" st_id="4" stage="1" lat="1">
@@ -463,7 +463,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="562" bw="11" op_0_bw="11" op_1_bw="11">
+<Node id="58" bw="11" op_0_bw="11" op_1_bw="11">
 <![CDATA[
 .preheader.0:3  %add_ln51 = add i11 %j9_0_0, 1
 
@@ -478,7 +478,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="563" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="59" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 .preheader.0:4  br i1 %icmp_ln51, label %0, label %_ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0
 
@@ -494,7 +494,7 @@ _ZN8ap_fixedILi40ELi24EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi32ELi14ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="565" bw="64" op_0_bw="11">
+<Node id="61" bw="64" op_0_bw="11">
 <![CDATA[
 _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:0  %zext_ln52 = zext i11 %j9_0_0 to i64
 
@@ -510,7 +510,7 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="566" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="62" bw="11" op_0_bw="40" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:1  %output_0_addr = getelementptr [1536 x i40]* %output_0, i64 0, i64 %zext_ln52
 
@@ -526,7 +526,7 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="567" bw="40" op_0_bw="11">
+<Node id="63" bw="40" op_0_bw="11">
 <![CDATA[
 _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:2  %output_0_load = load i40* %output_0_addr, align 8
 
@@ -542,7 +542,7 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 </and_exp></or_exp>
 </condition>
 
-<Node id="573" bw="0">
+<Node id="69" bw="0">
 <![CDATA[
 :0  ret void
 
@@ -560,7 +560,7 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="567" bw="40" op_0_bw="11">
+<Node id="63" bw="40" op_0_bw="11">
 <![CDATA[
 _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:2  %output_0_load = load i40* %output_0_addr, align 8
 
@@ -575,7 +575,7 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="568" bw="30" op_0_bw="40">
+<Node id="64" bw="30" op_0_bw="40">
 <![CDATA[
 _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:3  %trunc_ln731 = trunc i40 %output_0_load to i30
 
@@ -590,7 +590,7 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="569" bw="32" op_0_bw="32" op_1_bw="30" op_2_bw="2">
+<Node id="65" bw="32" op_0_bw="32" op_1_bw="30" op_2_bw="2">
 <![CDATA[
 _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:4  %tmp_V_2 = call i32 @_ssdm_op_BitConcatenate.i32.i30.i2(i30 %trunc_ln731, i2 0)
 
@@ -605,7 +605,7 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="570" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
+<Node id="66" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
 _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:5  call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %strm_out_V_V, i32 %tmp_V_2)
 
@@ -620,7 +620,7 @@ _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="571" bw="0" op_0_bw="0">
+<Node id="67" bw="0" op_0_bw="0">
 <![CDATA[
 _ZN8ap_fixedILi32ELi14EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.0:6  br label %.preheader.0
 

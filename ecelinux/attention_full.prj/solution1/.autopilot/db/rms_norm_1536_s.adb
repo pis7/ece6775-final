@@ -6042,7 +6042,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>7453</second>
+              <second>6865</second>
             </item>
           </second>
         </item>

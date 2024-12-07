@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'softmax_1_16_6_s'" level="0">
-<item name = "Date">Fri Dec  6 10:15:02 2024
+<item name = "Date">Fri Dec  6 22:01:09 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_full.prj</item>
@@ -54,7 +54,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 304, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">9, 18, 1864, 1133, -</column>
+<column name="Instance">9, 18, 1864, 1049, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 448, -</column>
 <column name="Register">-, -, 302, -, -</column>
@@ -66,8 +66,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="dut_sdiv_56ns_40spcA_U872">dut_sdiv_56ns_40spcA, 0, 0, 683, 413, 0</column>
-<column name="grp_exp_40_24_s_fu_163">exp_40_24_s, 9, 18, 1181, 720, 0</column>
+<column name="dut_sdiv_56ns_40spcA_U47">dut_sdiv_56ns_40spcA, 0, 0, 683, 413, 0</column>
+<column name="grp_exp_40_24_s_fu_163">exp_40_24_s, 9, 18, 1181, 636, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

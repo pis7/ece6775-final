@@ -41,7 +41,7 @@ struct softmax_1_16_6_s : public sc_module {
     sc_trace_file* mVcdFile;
 
     exp_40_24_s* grp_exp_40_24_s_fu_163;
-    dut_sdiv_56ns_40spcA<1,60,56,40,40>* dut_sdiv_56ns_40spcA_U872;
+    dut_sdiv_56ns_40spcA<1,60,56,40,40>* dut_sdiv_56ns_40spcA_U47;
     sc_signal< sc_lv<76> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<5> > i_fu_181_p2;
