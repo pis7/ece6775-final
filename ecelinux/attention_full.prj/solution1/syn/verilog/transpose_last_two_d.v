@@ -37,11 +37,11 @@ output   ap_idle;
 output   ap_ready;
 output  [13:0] input_V_address0;
 output   input_V_ce0;
-input  [39:0] input_V_q0;
+input  [37:0] input_V_q0;
 output  [13:0] output_V_address0;
 output   output_V_ce0;
 output   output_V_we0;
-output  [39:0] output_V_d0;
+output  [37:0] output_V_d0;
 
 reg ap_done;
 reg ap_idle;

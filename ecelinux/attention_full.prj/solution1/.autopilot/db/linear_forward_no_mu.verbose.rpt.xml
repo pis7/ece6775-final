@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'linear_forward_no_mu'" level="0">
-<item name = "Date">Fri Dec  6 22:01:06 2024
+<item name = "Date">Sat Dec  7 00:53:07 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_full.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.510 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 8.690 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">9575425, 9575425, 95.754 ms, 95.754 ms, 9575425, 9575425, none</column>
+<column name="">9584641, 9584641, 95.846 ms, 95.846 ms, 9584641, 9584641, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- LINEAR_FORWARD_NO_MUL_LOOP_2">9575424, 9575424, 6234, -, -, 1536, no</column>
+<column name="- LINEAR_FORWARD_NO_MUL_LOOP_2">9584640, 9584640, 6240, -, -, 1536, no</column>
 <column name=" + LINEAR_FORWARD_NO_MUL_LOOP_3">6156, 6156, 1026, -, -, 6, no</column>
 <column name="  ++ LINEAR_FORWARD_NO_MUL_LOOP_4">1024, 1024, 16, -, -, 64, no</column>
 <column name="   +++ LINEAR_FORWARD_NO_MUL_LOOP_5">12, 12, 3, -, -, 4, no</column>
@@ -51,12 +51,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, 3, 0, 298, -</column>
+<column name="Expression">-, 4, 0, 294, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, 779, 469, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 428, -</column>
-<column name="Register">-, -, 298, -, -</column>
+<column name="Multiplexer">-, -, -, 452, -</column>
+<column name="Register">-, -, 308, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 1, 1, 2, 0</specialColumn>
 </table>
@@ -65,7 +65,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="dut_sdiv_72ns_61sfYi_U15">dut_sdiv_72ns_61sfYi, 0, 0, 779, 469, 0</column>
+<column name="dut_sdiv_78ns_63seOg_U13">dut_sdiv_78ns_63seOg, 0, 0, 779, 469, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -82,7 +82,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="mul_ln1148_fu_194_p2">*, 3, 0, 29, 22, 40</column>
+<column name="mul_ln1118_fu_194_p2">*, 4, 0, 27, 26, 38</column>
 <column name="add_ln120_fu_210_p2">+, 0, 0, 13, 11, 1</column>
 <column name="add_ln121_fu_231_p2">+, 0, 0, 12, 3, 1</column>
 <column name="add_ln122_fu_255_p2">+, 0, 0, 15, 7, 1</column>
@@ -90,7 +90,7 @@
 <column name="add_ln124_fu_294_p2">+, 0, 0, 15, 21, 21</column>
 <column name="add_ln125_fu_321_p2">+, 0, 0, 12, 3, 1</column>
 <column name="add_ln700_fu_350_p2">+, 0, 0, 12, 12, 12</column>
-<column name="add_ln703_fu_416_p2">+, 0, 0, 47, 40, 40</column>
+<column name="add_ln703_fu_416_p2">+, 0, 0, 45, 38, 38</column>
 <column name="sub_ln124_fu_288_p2">-, 0, 0, 15, 21, 21</column>
 <column name="sub_ln701_fu_370_p2">-, 0, 0, 15, 1, 8</column>
 <column name="and_ln129_fu_382_p2">and, 0, 0, 2, 1, 1</column>
@@ -108,12 +108,12 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">377, 86, 1, 86</column>
+<column name="ap_NS_fsm">401, 92, 1, 92</column>
 <column name="j_0_0_reg_142">9, 2, 11, 22</column>
 <column name="ki_0_0_reg_164">9, 2, 7, 14</column>
 <column name="ko_0_0_reg_153">9, 2, 3, 6</column>
 <column name="l_0_0_reg_175">9, 2, 3, 6</column>
-<column name="output_0_V_d0">15, 3, 40, 120</column>
+<column name="output_0_V_d0">15, 3, 38, 114</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -123,15 +123,15 @@
 <column name="add_ln122_reg_479">7, 0, 7, 0</column>
 <column name="add_ln123_reg_484">9, 0, 9, 0</column>
 <column name="add_ln125_reg_509">3, 0, 3, 0</column>
-<column name="add_ln703_reg_525">40, 0, 40, 0</column>
-<column name="ap_CS_fsm">85, 0, 85, 0</column>
+<column name="add_ln703_reg_525">38, 0, 38, 0</column>
+<column name="ap_CS_fsm">91, 0, 91, 0</column>
 <column name="j_0_0_reg_142">11, 0, 11, 0</column>
 <column name="ki_0_0_reg_164">7, 0, 7, 0</column>
 <column name="ko_0_0_reg_153">3, 0, 3, 0</column>
 <column name="l_0_0_reg_175">3, 0, 3, 0</column>
 <column name="output_0_V_addr_reg_458">11, 0, 11, 0</column>
 <column name="packed_weights_load_reg_501">8, 0, 8, 0</column>
-<column name="sext_ln120_reg_440">72, 0, 72, 0</column>
+<column name="sext_ln1148_reg_440">78, 0, 78, 0</column>
 <column name="shl_ln2_reg_471">3, 0, 9, 6</column>
 <column name="trunc_ln126_reg_514">2, 0, 2, 0</column>
 <column name="zext_ln124_1_reg_496">9, 0, 12, 3</column>
@@ -157,13 +157,13 @@
 <column name="output_0_V_address0">out, 11, ap_memory, output_0_V, array</column>
 <column name="output_0_V_ce0">out, 1, ap_memory, output_0_V, array</column>
 <column name="output_0_V_we0">out, 1, ap_memory, output_0_V, array</column>
-<column name="output_0_V_d0">out, 40, ap_memory, output_0_V, array</column>
-<column name="output_0_V_q0">in, 40, ap_memory, output_0_V, array</column>
-<column name="scales_0_V_read">in, 40, ap_none, scales_0_V_read, scalar</column>
+<column name="output_0_V_d0">out, 38, ap_memory, output_0_V, array</column>
+<column name="output_0_V_q0">in, 38, ap_memory, output_0_V, array</column>
+<column name="scales_0_V_read">in, 38, ap_none, scales_0_V_read, scalar</column>
 <column name="packed_weights_address0">out, 20, ap_memory, packed_weights, array</column>
 <column name="packed_weights_ce0">out, 1, ap_memory, packed_weights, array</column>
 <column name="packed_weights_q0">in, 8, ap_memory, packed_weights, array</column>
-<column name="w_scale_V">in, 22, ap_none, w_scale_V, scalar</column>
+<column name="w_scale_V">in, 26, ap_none, w_scale_V, scalar</column>
 </table>
 </item>
 </section>

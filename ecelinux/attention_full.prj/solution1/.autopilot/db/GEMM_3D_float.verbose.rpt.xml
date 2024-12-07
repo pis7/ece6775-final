@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'GEMM_3D_float'" level="0">
-<item name = "Date">Fri Dec  6 22:01:08 2024
+<item name = "Date">Sat Dec  7 00:53:09 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_full.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.510 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 8.690 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -55,7 +55,7 @@
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 80, -</column>
-<column name="Register">-, -, 269, -, -</column>
+<column name="Register">-, -, 265, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 2, ~0, ~0, 0</specialColumn>
 </table>
@@ -80,10 +80,10 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="mul_ln1192_fu_326_p2">*, 5, 0, 29, 40, 40</column>
+<column name="mul_ln1192_fu_326_p2">*, 5, 0, 27, 38, 38</column>
 <column name="add_ln1116_fu_276_p2">+, 0, 0, 19, 14, 14</column>
 <column name="add_ln1117_fu_307_p2">+, 0, 0, 15, 15, 15</column>
-<column name="add_ln1192_fu_340_p2">+, 0, 0, 63, 56, 56</column>
+<column name="add_ln1192_fu_340_p2">+, 0, 0, 65, 58, 58</column>
 <column name="add_ln203_fu_250_p2">+, 0, 0, 15, 8, 8</column>
 <column name="add_ln238_fu_236_p2">+, 0, 0, 12, 3, 1</column>
 <column name="add_ln240_fu_266_p2">+, 0, 0, 15, 7, 1</column>
@@ -102,7 +102,7 @@
 <column name="i_0_reg_112">9, 2, 5, 10</column>
 <column name="k_0_0_reg_123">9, 2, 3, 6</column>
 <column name="l_0_0_reg_147">9, 2, 7, 14</column>
-<column name="output_0_V_load_reg_134">9, 2, 40, 80</column>
+<column name="output_0_V_load_reg_134">9, 2, 38, 76</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -114,13 +114,13 @@
 <column name="ap_CS_fsm">8, 0, 8, 0</column>
 <column name="i_0_reg_112">5, 0, 5, 0</column>
 <column name="i_reg_358">5, 0, 5, 0</column>
-<column name="input_1_0_V_load_reg_419">40, 0, 40, 0</column>
-<column name="input_2_V_load_reg_424">40, 0, 40, 0</column>
+<column name="input_1_0_V_load_reg_419">38, 0, 38, 0</column>
+<column name="input_2_V_load_reg_424">38, 0, 38, 0</column>
 <column name="k_0_0_reg_123">3, 0, 3, 0</column>
 <column name="l_0_0_reg_147">7, 0, 7, 0</column>
-<column name="mul_ln1192_reg_429">56, 0, 56, 0</column>
+<column name="mul_ln1192_reg_429">58, 0, 58, 0</column>
 <column name="output_0_V_addr_reg_386">7, 0, 7, 0</column>
-<column name="output_0_V_load_reg_134">40, 0, 40, 0</column>
+<column name="output_0_V_load_reg_134">38, 0, 38, 0</column>
 <column name="sext_ln1116_reg_363">9, 0, 14, 5</column>
 <column name="sub_ln203_reg_368">7, 0, 8, 1</column>
 <column name="zext_ln203_14_reg_381">3, 0, 15, 12</column>
@@ -141,14 +141,14 @@
 <column name="ap_ready">out, 1, ap_ctrl_hs, GEMM_3D_float, return value</column>
 <column name="input_1_0_V_address0">out, 11, ap_memory, input_1_0_V, array</column>
 <column name="input_1_0_V_ce0">out, 1, ap_memory, input_1_0_V, array</column>
-<column name="input_1_0_V_q0">in, 40, ap_memory, input_1_0_V, array</column>
+<column name="input_1_0_V_q0">in, 38, ap_memory, input_1_0_V, array</column>
 <column name="input_2_V_address0">out, 14, ap_memory, input_2_V, array</column>
 <column name="input_2_V_ce0">out, 1, ap_memory, input_2_V, array</column>
-<column name="input_2_V_q0">in, 40, ap_memory, input_2_V, array</column>
+<column name="input_2_V_q0">in, 38, ap_memory, input_2_V, array</column>
 <column name="output_0_V_address0">out, 7, ap_memory, output_0_V, array</column>
 <column name="output_0_V_ce0">out, 1, ap_memory, output_0_V, array</column>
 <column name="output_0_V_we0">out, 1, ap_memory, output_0_V, array</column>
-<column name="output_0_V_d0">out, 40, ap_memory, output_0_V, array</column>
+<column name="output_0_V_d0">out, 38, ap_memory, output_0_V, array</column>
 </table>
 </item>
 </section>

@@ -448,10 +448,10 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_1_begin:14  br label %2
 
 <Node id="29" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_75 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
+:2  %empty_70 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 6, i64 6, i64 6)
 
 ]]></Node>
-<StgValue><ssdm name="empty_75"/></StgValue>
+<StgValue><ssdm name="empty_70"/></StgValue>
 </operation>
 
 <operation id="31" st_id="3" stage="1" lat="1">
@@ -654,10 +654,10 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_begin:9  br label %3
 
 <Node id="71" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:0  %empty_78 = call i32 (...)* @_ssdm_op_SpecRegionEnd([31 x i8]* @p_str1819, i32 %tmp)
+TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:0  %empty_73 = call i32 (...)* @_ssdm_op_SpecRegionEnd([31 x i8]* @p_str1819, i32 %tmp)
 
 ]]></Node>
-<StgValue><ssdm name="empty_78"/></StgValue>
+<StgValue><ssdm name="empty_73"/></StgValue>
 </operation>
 
 <operation id="44" st_id="3" stage="1" lat="1">
@@ -718,10 +718,10 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:1  br label %1
 
 <Node id="46" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_76 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 96, i64 96, i64 96)
+:2  %empty_71 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 96, i64 96, i64 96)
 
 ]]></Node>
-<StgValue><ssdm name="empty_76"/></StgValue>
+<StgValue><ssdm name="empty_71"/></StgValue>
 </operation>
 
 <operation id="48" st_id="4" stage="1" lat="1">
@@ -826,9 +826,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:1  br label %1
 </and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="14" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="55" bw="14" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:5  %input_V_addr = getelementptr [9216 x i40]* %input_V, i64 0, i64 %zext_ln203_8
+:5  %input_V_addr = getelementptr [9216 x i38]* %input_V, i64 0, i64 %zext_ln203_8
 
 ]]></Node>
 <StgValue><ssdm name="input_V_addr"/></StgValue>
@@ -938,9 +938,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:1  br label %1
 </and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="40" op_0_bw="14">
+<Node id="64" bw="38" op_0_bw="14">
 <![CDATA[
-:14  %input_V_load = load i40* %input_V_addr, align 8
+:14  %input_V_load = load i38* %input_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_V_load"/></StgValue>
@@ -956,10 +956,10 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_1_end:1  br label %1
 
 <Node id="68" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:0  %empty_77 = call i32 (...)* @_ssdm_op_SpecRegionEnd([31 x i8]* @p_str1820, i32 %tmp_1)
+TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:0  %empty_72 = call i32 (...)* @_ssdm_op_SpecRegionEnd([31 x i8]* @p_str1820, i32 %tmp_1)
 
 ]]></Node>
-<StgValue><ssdm name="empty_77"/></StgValue>
+<StgValue><ssdm name="empty_72"/></StgValue>
 </operation>
 
 <operation id="63" st_id="4" stage="1" lat="1">
@@ -1018,9 +1018,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="63" bw="14" op_0_bw="40" op_1_bw="64" op_2_bw="64">
+<Node id="63" bw="14" op_0_bw="38" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:13  %output_V_addr = getelementptr [9216 x i40]* %output_V, i64 0, i64 %zext_ln203_9
+:13  %output_V_addr = getelementptr [9216 x i38]* %output_V, i64 0, i64 %zext_ln203_9
 
 ]]></Node>
 <StgValue><ssdm name="output_V_addr"/></StgValue>
@@ -1033,9 +1033,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="40" op_0_bw="14">
+<Node id="64" bw="38" op_0_bw="14">
 <![CDATA[
-:14  %input_V_load = load i40* %input_V_addr, align 8
+:14  %input_V_load = load i38* %input_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="input_V_load"/></StgValue>
@@ -1048,9 +1048,9 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="65" bw="0" op_0_bw="40" op_1_bw="14">
+<Node id="65" bw="0" op_0_bw="38" op_1_bw="14">
 <![CDATA[
-:15  store i40 %input_V_load, i40* %output_V_addr, align 8
+:15  store i38 %input_V_load, i38* %output_V_addr, align 8
 
 ]]></Node>
 <StgValue><ssdm name="store_ln218"/></StgValue>
@@ -1196,13 +1196,13 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 </dataflow>
 <dataflow id="140" from="StgValue_139" to="icmp_ln216" fromId="139" toId="29">
 </dataflow>
-<dataflow id="141" from="_ssdm_op_SpecLoopTripCount" to="empty_75" fromId="88" toId="30">
+<dataflow id="141" from="_ssdm_op_SpecLoopTripCount" to="empty_70" fromId="88" toId="30">
 </dataflow>
-<dataflow id="143" from="StgValue_142" to="empty_75" fromId="142" toId="30">
+<dataflow id="143" from="StgValue_142" to="empty_70" fromId="142" toId="30">
 </dataflow>
-<dataflow id="144" from="StgValue_142" to="empty_75" fromId="142" toId="30">
+<dataflow id="144" from="StgValue_142" to="empty_70" fromId="142" toId="30">
 </dataflow>
-<dataflow id="145" from="StgValue_142" to="empty_75" fromId="142" toId="30">
+<dataflow id="145" from="StgValue_142" to="empty_70" fromId="142" toId="30">
 </dataflow>
 <dataflow id="146" from="j_0" to="j" fromId="28" toId="31">
 </dataflow>
@@ -1244,11 +1244,11 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 </dataflow>
 <dataflow id="169" from="p_shl5_cast" to="sub_ln203_2" fromId="40" toId="41">
 </dataflow>
-<dataflow id="171" from="_ssdm_op_SpecRegionEnd" to="empty_78" fromId="170" toId="43">
+<dataflow id="171" from="_ssdm_op_SpecRegionEnd" to="empty_73" fromId="170" toId="43">
 </dataflow>
-<dataflow id="172" from="p_str1819" to="empty_78" fromId="100" toId="43">
+<dataflow id="172" from="p_str1819" to="empty_73" fromId="100" toId="43">
 </dataflow>
-<dataflow id="173" from="tmp" to="empty_78" fromId="13" toId="43">
+<dataflow id="173" from="tmp" to="empty_73" fromId="13" toId="43">
 </dataflow>
 <dataflow id="174" from="StgValue_123" to="k_0" fromId="123" toId="45">
 <condition id="-1">
@@ -1271,13 +1271,13 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 </dataflow>
 <dataflow id="180" from="StgValue_179" to="icmp_ln217" fromId="179" toId="46">
 </dataflow>
-<dataflow id="181" from="_ssdm_op_SpecLoopTripCount" to="empty_76" fromId="88" toId="47">
+<dataflow id="181" from="_ssdm_op_SpecLoopTripCount" to="empty_71" fromId="88" toId="47">
 </dataflow>
-<dataflow id="183" from="StgValue_182" to="empty_76" fromId="182" toId="47">
+<dataflow id="183" from="StgValue_182" to="empty_71" fromId="182" toId="47">
 </dataflow>
-<dataflow id="184" from="StgValue_182" to="empty_76" fromId="182" toId="47">
+<dataflow id="184" from="StgValue_182" to="empty_71" fromId="182" toId="47">
 </dataflow>
-<dataflow id="185" from="StgValue_182" to="empty_76" fromId="182" toId="47">
+<dataflow id="185" from="StgValue_182" to="empty_71" fromId="182" toId="47">
 </dataflow>
 <dataflow id="186" from="k_0" to="k" fromId="45" toId="48">
 </dataflow>
@@ -1329,11 +1329,11 @@ TRANSPOSE_LAST_TWO_DIMS_LOOP_2_end:1  br label %2
 </dataflow>
 <dataflow id="214" from="input_V_addr" to="input_V_load" fromId="54" toId="61">
 </dataflow>
-<dataflow id="215" from="_ssdm_op_SpecRegionEnd" to="empty_77" fromId="170" toId="62">
+<dataflow id="215" from="_ssdm_op_SpecRegionEnd" to="empty_72" fromId="170" toId="62">
 </dataflow>
-<dataflow id="216" from="p_str1820" to="empty_77" fromId="151" toId="62">
+<dataflow id="216" from="p_str1820" to="empty_72" fromId="151" toId="62">
 </dataflow>
-<dataflow id="217" from="tmp_1" to="empty_77" fromId="34" toId="62">
+<dataflow id="217" from="tmp_1" to="empty_72" fromId="34" toId="62">
 </dataflow>
 <dataflow id="218" from="_ssdm_op_SpecLoopName" to="specloopname_ln218" fromId="98" toId="64">
 </dataflow>

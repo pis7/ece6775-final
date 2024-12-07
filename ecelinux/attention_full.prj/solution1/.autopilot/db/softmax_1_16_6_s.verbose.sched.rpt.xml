@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'softmax_1_16_6_s'" level="0">
-<item name = "Date">Fri Dec  6 22:00:58 2024
+<item name = "Date">Sat Dec  7 00:52:59 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_full.prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7057, 7057, 70.570 us, 70.570 us, 7057, 7057, none</column>
+<column name="">7729, 7729, 77.290 us, 77.290 us, 7729, 7729, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,10 +35,10 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- SOFTMAX_LOOP_1">7056, 7056, 441, -, -, 16, no</column>
+<column name="- SOFTMAX_LOOP_1">7728, 7728, 483, -, -, 16, no</column>
 <column name=" + SOFTMAX_LOOP_3">10, 10, 2, -, -, 5, no</column>
-<column name=" + SOFTMAX_LOOP_4">60, 60, 10, -, -, 6, no</column>
-<column name=" + SOFTMAX_LOOP_5">366, 366, 61, -, -, 6, no</column>
+<column name=" + SOFTMAX_LOOP_4">90, 90, 15, -, -, 6, no</column>
+<column name=" + SOFTMAX_LOOP_5">378, 378, 63, -, -, 6, no</column>
 </table>
 </item>
 </section>

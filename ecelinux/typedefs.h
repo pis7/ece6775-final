@@ -10,11 +10,11 @@
 #include <ap_fixed.h>
 
 #ifndef BUS_TOT_W
-#define BUS_TOT_W 40
+#define BUS_TOT_W 38
 #endif
 
 #ifndef BUS_INT_W
-#define BUS_INT_W 24
+#define BUS_INT_W 18
 #endif
 
 typedef ap_uint<4> bit4_t;

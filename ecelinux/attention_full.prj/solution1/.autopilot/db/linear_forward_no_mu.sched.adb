@@ -56,7 +56,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
@@ -84,7 +84,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -140,7 +140,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>22</bitwidth>
+					<bitwidth>26</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -186,7 +186,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>22</bitwidth>
+					<bitwidth>26</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -235,7 +235,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -284,7 +284,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>61</bitwidth>
+					<bitwidth>63</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -305,6 +305,103 @@
 					<Obj>
 						<type>0</type>
 						<id>10</id>
+						<name>sext_ln1118</name>
+						<fileName>./layer.h</fileName>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>134</lineNumber>
+						<contextFuncName>linear_forward_no_mul&amp;lt;1, 1536, 1536&amp;gt;</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>./layer.h</first>
+											<second>linear_forward_no_mul&amp;lt;1, 1536, 1536&amp;gt;</second>
+										</first>
+										<second>134</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>63</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>116</item>
+				</oprand_edges>
+				<opcode>sext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>4</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_10">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>11</id>
+						<name>mul_ln1118</name>
+						<fileName>./layer.h</fileName>
+						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
+						<lineNumber>134</lineNumber>
+						<contextFuncName>linear_forward_no_mul&amp;lt;1, 1536, 1536&amp;gt;</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>./layer.h</first>
+											<second>linear_forward_no_mul&amp;lt;1, 1536, 1536&amp;gt;</second>
+										</first>
+										<second>134</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>63</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>117</item>
+					<item>118</item>
+				</oprand_edges>
+				<opcode>mul</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>8.69</m_delay>
+				<m_topoIndex>5</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_11">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>12</id>
 						<name>sext_ln1148</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
@@ -332,104 +429,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>61</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>116</item>
-				</oprand_edges>
-				<opcode>sext</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>4</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_10">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>11</id>
-						<name>mul_ln1148</name>
-						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>134</lineNumber>
-						<contextFuncName>linear_forward_no_mul&amp;lt;1, 1536, 1536&amp;gt;</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>./layer.h</first>
-											<second>linear_forward_no_mul&amp;lt;1, 1536, 1536&amp;gt;</second>
-										</first>
-										<second>134</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>61</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>117</item>
-					<item>118</item>
-				</oprand_edges>
-				<opcode>mul</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>8.51</m_delay>
-				<m_topoIndex>5</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_11">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>12</id>
-						<name>sext_ln120</name>
-						<fileName>./layer.h</fileName>
-						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
-						<lineNumber>120</lineNumber>
-						<contextFuncName>linear_forward_no_mul&amp;lt;1, 1536, 1536&amp;gt;</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/pis7/ece6775/ece6775-final/ecelinux</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>./layer.h</first>
-											<second>linear_forward_no_mul&amp;lt;1, 1536, 1536&amp;gt;</second>
-										</first>
-										<second>120</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>72</bitwidth>
+					<bitwidth>78</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1484,7 +1484,7 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>tmp_56</name>
+						<name>tmp_51</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>128</lineNumber>
@@ -1582,7 +1582,7 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>tmp_57</name>
+						<name>tmp_52</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>124</lineNumber>
@@ -1680,7 +1680,7 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>tmp_58</name>
+						<name>tmp_53</name>
 						<fileName>./layer.h</fileName>
 						<fileDirectory>/home/pis7/ece6775/ece6775-final/ecelinux</fileDirectory>
 						<lineNumber>124</lineNumber>
@@ -2978,7 +2978,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3126,7 +3126,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>24</bitwidth>
+					<bitwidth>28</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -3176,7 +3176,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3224,7 +3224,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3237,7 +3237,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.87</m_delay>
+				<m_delay>2.79</m_delay>
 				<m_topoIndex>67</m_topoIndex>
 				<m_clusterGroupNumber>2</m_clusterGroupNumber>
 			</item>
@@ -3467,7 +3467,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3515,7 +3515,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>72</bitwidth>
+					<bitwidth>78</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -3565,7 +3565,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3614,7 +3614,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>40</bitwidth>
+					<bitwidth>38</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3866,7 +3866,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>40</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -4234,7 +4234,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>16</bitwidth>
+					<bitwidth>20</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -5688,8 +5688,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>9575425</mMinLatency>
-			<mMaxLatency>9575425</mMaxLatency>
+			<mMinLatency>9584641</mMinLatency>
+			<mMaxLatency>9584641</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5734,8 +5734,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>1536</mMinTripCount>
 			<mMaxTripCount>1536</mMaxTripCount>
-			<mMinLatency>9575424</mMinLatency>
-			<mMaxLatency>9575424</mMaxLatency>
+			<mMinLatency>9584640</mMinLatency>
+			<mMaxLatency>9584640</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5940,8 +5940,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>76</mMinLatency>
-			<mMaxLatency>76</mMaxLatency>
+			<mMinLatency>82</mMinLatency>
+			<mMaxLatency>82</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -6460,27 +6460,27 @@
 			<first>100</first>
 			<second>
 				<first>9</first>
-				<second>75</second>
+				<second>81</second>
 			</second>
 		</item>
 		<item>
 			<first>101</first>
 			<second>
-				<first>84</first>
+				<first>90</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>102</first>
 			<second>
-				<first>84</first>
+				<first>90</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>104</first>
 			<second>
-				<first>84</first>
+				<first>90</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -6576,7 +6576,7 @@
 			<first>105</first>
 			<second>
 				<first>2</first>
-				<second>78</second>
+				<second>84</second>
 			</second>
 		</item>
 		<item>

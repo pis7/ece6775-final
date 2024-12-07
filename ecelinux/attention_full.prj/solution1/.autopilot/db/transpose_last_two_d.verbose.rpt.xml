@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'transpose_last_two_d'" level="0">
-<item name = "Date">Fri Dec  6 22:01:07 2024
+<item name = "Date">Sat Dec  7 00:53:09 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_full.prj</item>
@@ -135,11 +135,11 @@
 <column name="ap_ready">out, 1, ap_ctrl_hs, transpose_last_two_d, return value</column>
 <column name="input_V_address0">out, 14, ap_memory, input_V, array</column>
 <column name="input_V_ce0">out, 1, ap_memory, input_V, array</column>
-<column name="input_V_q0">in, 40, ap_memory, input_V, array</column>
+<column name="input_V_q0">in, 38, ap_memory, input_V, array</column>
 <column name="output_V_address0">out, 14, ap_memory, output_V, array</column>
 <column name="output_V_ce0">out, 1, ap_memory, output_V, array</column>
 <column name="output_V_we0">out, 1, ap_memory, output_V, array</column>
-<column name="output_V_d0">out, 40, ap_memory, output_V, array</column>
+<column name="output_V_d0">out, 38, ap_memory, output_V, array</column>
 </table>
 </item>
 </section>

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'init_2d_mem'
 ================================================================
-* Date:           Fri Dec  6 22:01:06 2024
+* Date:           Sat Dec  7 00:53:07 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_full.prj
@@ -129,6 +129,6 @@
 |mem_0_V_address0  | out |   11|  ap_memory |    mem_0_V   |     array    |
 |mem_0_V_ce0       | out |    1|  ap_memory |    mem_0_V   |     array    |
 |mem_0_V_we0       | out |    1|  ap_memory |    mem_0_V   |     array    |
-|mem_0_V_d0        | out |   40|  ap_memory |    mem_0_V   |     array    |
+|mem_0_V_d0        | out |   38|  ap_memory |    mem_0_V   |     array    |
 +------------------+-----+-----+------------+--------------+--------------+
 

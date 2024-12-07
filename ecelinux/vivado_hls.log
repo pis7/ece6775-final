@@ -7,7 +7,7 @@
 source /opt/xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'pis7' on host 'en-ec-rhel-ecelinux-14.coecis.cornell.edu' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Fri Dec 06 21:58:21 EST 2024
+INFO: [HLS 200-10] For user 'pis7' on host 'en-ec-rhel-ecelinux-14.coecis.cornell.edu' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Sat Dec 07 00:50:24 EST 2024
 INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.10 (Ootpa)"
 INFO: [HLS 200-10] In directory '/home/pis7/ece6775/ece6775-final/ecelinux'
 Sourcing Tcl script 'scripts/run_full.tcl'
@@ -21,23 +21,23 @@ INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 INFO: [HLS 200-10] Analyzing design file 'attention.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:55 ; elapsed = 00:02:05 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 2985 ; free virtual = 9387
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:55 ; elapsed = 00:02:05 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 2985 ; free virtual = 9387
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:56 ; elapsed = 00:02:03 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 5198 ; free virtual = 9001
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:56 ; elapsed = 00:02:03 . Memory (MB): peak = 1168.152 ; gain = 530.125 ; free physical = 5198 ; free virtual = 9001
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:02:04 ; elapsed = 00:02:14 . Memory (MB): peak = 1424.152 ; gain = 786.125 ; free physical = 2676 ; free virtual = 9124
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:02:04 ; elapsed = 00:02:12 . Memory (MB): peak = 1424.152 ; gain = 786.125 ; free physical = 4883 ; free virtual = 8732
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'hls::sqrt<42, 26>' into 'rms_norm<1536>' (./layer.h:50) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sqrt<40, 20>' into 'rms_norm<1536>' (./layer.h:50) automatically.
 INFO: [XFORM 203-602] Inlining function 'attention_abs' into 'quantize_activation<1, 1536>126' (./layer.h:86) automatically.
-INFO: [XFORM 203-602] Inlining function 'attention_max<ap_fixed<40, 24, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'quantize_activation<1, 1536>126' (./layer.h:89) automatically.
+INFO: [XFORM 203-602] Inlining function 'attention_max<ap_fixed<38, 18, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'quantize_activation<1, 1536>126' (./layer.h:89) automatically.
 INFO: [XFORM 203-602] Inlining function 'attention_round' into 'quantize_activation<1, 1536>126' (./layer.h:98) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::exp<40, 24>' into 'softmax<1, 16, 6>' (./layer.h:275) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::exp<38, 18>' into 'softmax<1, 16, 6>' (./layer.h:275) automatically.
 INFO: [XFORM 203-602] Inlining function 'create_causal_mask<1>' into 'attention<5, 1, 1536, 1536, 16, 96>' (attention.cpp:182) automatically.
 WARNING: [SYNCHK 200-23] /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:272: variable-indexed range selection may cause suboptimal QoR.
 WARNING: [SYNCHK 200-120] ./layer.h:47: multiplication is assumed not to overflow by default, otherwise, please add option '-fwrapv'.
 INFO: [SYNCHK 200-10] 0 error(s), 2 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:02:08 ; elapsed = 00:02:18 . Memory (MB): peak = 1488.152 ; gain = 850.125 ; free physical = 2582 ; free virtual = 9048
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'sqrt_fixed<42, 26>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:44:36).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'exp_reduce::exp<40, 24>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41:26).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:02:08 ; elapsed = 00:02:15 . Memory (MB): peak = 1497.184 ; gain = 859.156 ; free physical = 4797 ; free virtual = 8664
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'sqrt_fixed<40, 20>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:44:36).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'exp_reduce::exp<38, 18>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41:30).
 INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (attention.cpp:18) in function 'dut' automatically.
 INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-2' (attention.cpp:50) in function 'dut' automatically.
 INFO: [XFORM 203-502] Unrolling small iteration loop 'RMS_NORM_LOOP_1' (attention.cpp:84) in function 'attention<5, 1, 1536, 1536, 16, 96>' automatically.
@@ -55,12 +55,15 @@ INFO: [XFORM 203-502] Unrolling small iteration loop 'APPLY_ROTARY_POS_EMB_LOOP_
 INFO: [XFORM 203-502] Unrolling small iteration loop 'APPLY_ROTARY_POS_EMB_LOOP_5' (./layer.h:181) in function 'apply_rotary_pos_emb<1, 16, 96>' automatically.
 INFO: [XFORM 203-502] Unrolling small iteration loop 'RESHAPE_2D_TO_3D_LOOP_1' (./layer.h:148) in function 'reshape_2D_to_3D<1, 16, 96>' automatically.
 INFO: [XFORM 203-502] Unrolling small iteration loop 'LINEAR_FORWARD_NO_MUL_LOOP_1' (./layer.h:119) in function 'linear_forward_no_mul<1, 1536, 1536>' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'INIT_2D_MEM_LOOP_1' (./layer.h:25) in function 'init_2d_mem<1, 1536, ap_fixed<40, 24, (ap_q_mode)5, (ap_o_mode)3, 0> >' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'INIT_2D_MEM_LOOP_1' (./layer.h:25) in function 'init_2d_mem<1, 1536, ap_fixed<38, 18, (ap_q_mode)5, (ap_o_mode)3, 0> >' automatically.
 INFO: [XFORM 203-502] Unrolling small iteration loop 'QUANTIZE_ACTIVATION_LOOP_1' (./layer.h:83) in function 'quantize_activation<1, 1536>' automatically.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:267) in function 'sqrt_fixed<42, 26>' completely with a factor of 13.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:295) in function 'sqrt_fixed<42, 26>' completely with a factor of 17.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:277) in function 'exp_reduce::exp<40, 24>' completely with a factor of 19.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:284) in function 'exp_reduce::exp<40, 24>' completely with a factor of 46.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:267) in function 'sqrt_fixed<40, 20>' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:295) in function 'sqrt_fixed<40, 20>' completely with a factor of 21.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:277) in function 'exp_reduce::exp<38, 18>' completely with a factor of 19.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:284) in function 'exp_reduce::exp<38, 18>' completely with a factor of 46.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:455) in function 'exp_reduce::exp<38, 18>' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:461) in function 'exp_reduce::exp<38, 18>' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:464) in function 'exp_reduce::exp<38, 18>' completely with a factor of 40.
 INFO: [HLS 200-489] Unrolling loop 'Loop-1' (attention.cpp:18) in function 'dut' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'Loop-2' (attention.cpp:50) in function 'dut' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'RMS_NORM_LOOP_1' (attention.cpp:84) in function 'attention<5, 1, 1536, 1536, 16, 96>' completely with a factor of 1.
@@ -78,7 +81,7 @@ INFO: [HLS 200-489] Unrolling loop 'APPLY_ROTARY_POS_EMB_LOOP_2' (./layer.h:169)
 INFO: [HLS 200-489] Unrolling loop 'APPLY_ROTARY_POS_EMB_LOOP_5' (./layer.h:181) in function 'apply_rotary_pos_emb<1, 16, 96>' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'RESHAPE_2D_TO_3D_LOOP_1' (./layer.h:148) in function 'reshape_2D_to_3D<1, 16, 96>' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'LINEAR_FORWARD_NO_MUL_LOOP_1' (./layer.h:119) in function 'linear_forward_no_mul<1, 1536, 1536>' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'INIT_2D_MEM_LOOP_1' (./layer.h:25) in function 'init_2d_mem<1, 1536, ap_fixed<40, 24, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'INIT_2D_MEM_LOOP_1' (./layer.h:25) in function 'init_2d_mem<1, 1536, ap_fixed<38, 18, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'QUANTIZE_ACTIVATION_LOOP_1' (./layer.h:83) in function 'quantize_activation<1, 1536>' completely with a factor of 1.
 INFO: [XFORM 203-102] Partitioning array 'rotated_q.V' (./layer.h:166) in dimension 2 automatically.
 INFO: [XFORM 203-102] Partitioning array 'rotated_k.V' (./layer.h:167) in dimension 2 automatically.
@@ -104,25 +107,25 @@ INFO: [XFORM 203-102] Partitioning array 'sin_tab.V' in dimension 1 automaticall
 INFO: [XFORM 203-102] Partitioning array 'cos_tab.V' in dimension 1 automatically.
 INFO: [XFORM 203-102] Partitioning array 'attn_output_2D.V' (attention.cpp:206) in dimension 1 automatically.
 INFO: [XFORM 203-102] Partitioning array 'input.V' (attention.cpp:14) in dimension 1 automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::sqrt<42, 26>' into 'rms_norm<1536>' (./layer.h:50) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sqrt<40, 20>' into 'rms_norm<1536>' (./layer.h:50) automatically.
 INFO: [XFORM 203-602] Inlining function 'attention_abs' into 'quantize_activation<1, 1536>' (./layer.h:86) automatically.
-INFO: [XFORM 203-602] Inlining function 'attention_max<ap_fixed<40, 24, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'quantize_activation<1, 1536>' (./layer.h:89) automatically.
+INFO: [XFORM 203-602] Inlining function 'attention_max<ap_fixed<38, 18, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'quantize_activation<1, 1536>' (./layer.h:89) automatically.
 INFO: [XFORM 203-602] Inlining function 'attention_round' into 'quantize_activation<1, 1536>' (./layer.h:98) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::exp<40, 24>' into 'softmax<1, 16, 6>' (./layer.h:275) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::exp<38, 18>' into 'softmax<1, 16, 6>' (./layer.h:275) automatically.
 INFO: [XFORM 203-602] Inlining function 'create_causal_mask<1>' into 'attention<5, 1, 1536, 1536, 16, 96>' (attention.cpp:182) automatically.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:372:1) in function 'sqrt_fixed<42, 26>'... converting 142 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:372:1) in function 'sqrt_fixed<40, 20>'... converting 164 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./layer.h:97:67) to (./layer.h:97:62) in function 'quantize_activation<1, 1536>'... converting 5 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./layer.h:125:70) to (./layer.h:125:64) in function 'linear_forward_no_mul<1, 1536, 1536>'... converting 5 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41:1) to (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:867:1) in function 'exp_reduce::exp<40, 24>'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41:1) to (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:867:1) in function 'exp_reduce::exp<38, 18>'... converting 5 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./layer.h:204:9) to (./layer.h:203:51) in function 'cache_update<16, 5, 96>'... converting 4 basic blocks.
-INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<40, 24>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41:1)...19 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:02:13 ; elapsed = 00:02:24 . Memory (MB): peak = 1574.262 ; gain = 936.234 ; free physical = 2428 ; free virtual = 8922
+INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<38, 18>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41:1)...23 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:02:13 ; elapsed = 00:02:21 . Memory (MB): peak = 1629.184 ; gain = 991.156 ; free physical = 4646 ; free virtual = 8541
 WARNING: [XFORM 203-631] Renaming function 'transpose_last_two_dims<6, 16, 96>' to 'transpose_last_two_d' (./layer.h:215:62)
 WARNING: [XFORM 203-631] Renaming function 'reshape_2D_to_3D<1, 16, 96>' to 'reshape_2D_to_3D' (./layer.h:148:55)
 WARNING: [XFORM 203-631] Renaming function 'quantize_activation<1, 1536>' to 'quantize_activation' (./layer.h:33:62)
 WARNING: [XFORM 203-631] Renaming function 'linear_forward_no_mul<1, 1536, 1536>' to 'linear_forward_no_mu' (./layer.h:119:64)
-WARNING: [XFORM 203-631] Renaming function 'init_2d_mem<1, 1536, ap_fixed<40, 24, (ap_q_mode)5, (ap_o_mode)3, 0> >' to 'init_2d_mem' (./layer.h:25:48)
-WARNING: [XFORM 203-631] Renaming function 'exp_reduce::exp<40, 24>' to 'exp<40, 24>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41:1)
+WARNING: [XFORM 203-631] Renaming function 'init_2d_mem<1, 1536, ap_fixed<38, 18, (ap_q_mode)5, (ap_o_mode)3, 0> >' to 'init_2d_mem' (./layer.h:25:48)
+WARNING: [XFORM 203-631] Renaming function 'exp_reduce::exp<38, 18>' to 'exp<38, 18>' (/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_exp_apfixed.h:41:1)
 WARNING: [XFORM 203-631] Renaming function 'cache_update<16, 5, 96>' to 'cache_update' (./layer.h:201:51)
 WARNING: [XFORM 203-631] Renaming function 'attention<5, 1, 1536, 1536, 16, 96>' to 'attention' (attention.cpp:85:53)
 WARNING: [XFORM 203-631] Renaming function 'apply_rotary_pos_emb<1, 16, 96>' to 'apply_rotary_pos_emb' (./layer.h:166:59)
@@ -149,311 +152,316 @@ INFO: [HLS 200-472] Inferring partial write operation for 'output_q[0].V' (./lay
 INFO: [HLS 200-472] Inferring partial write operation for 'output_k[0].V' (./layer.h:186:63)
 INFO: [HLS 200-472] Inferring partial write operation for 'output[0].V' (./layer.h:241:30)
 INFO: [HLS 200-472] Inferring partial write operation for 'output[0].V' (./layer.h:241:30)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:18 ; elapsed = 00:02:29 . Memory (MB): peak = 1917.188 ; gain = 1279.160 ; free physical = 2193 ; free virtual = 8696
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:19 ; elapsed = 00:02:27 . Memory (MB): peak = 1917.188 ; gain = 1279.160 ; free physical = 4397 ; free virtual = 8301
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'dut' ...
-WARNING: [SYN 201-103] Legalizing function name 'sqrt_fixed<42, 26>' to 'sqrt_fixed_42_26_s'.
+WARNING: [SYN 201-103] Legalizing function name 'sqrt_fixed<40, 20>' to 'sqrt_fixed_40_20_s'.
 WARNING: [SYN 201-103] Legalizing function name 'rms_norm<1536>' to 'rms_norm_1536_s'.
-WARNING: [SYN 201-103] Legalizing function name 'exp<40, 24>' to 'exp_40_24_s'.
+WARNING: [SYN 201-103] Legalizing function name 'exp<38, 18>' to 'exp_38_18_s'.
 WARNING: [SYN 201-103] Legalizing function name 'softmax<1, 16, 6>' to 'softmax_1_16_6_s'.
 WARNING: [SYN 201-103] Legalizing function name 'GEMM_3D_float.1' to 'GEMM_3D_float_1'.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'sqrt_fixed_42_26_s' 
+INFO: [HLS 200-42] -- Implementing module 'sqrt_fixed_40_20_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining function 'sqrt_fixed<42, 26>'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-61] Pipelining function 'sqrt_fixed<40, 20>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 21.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 149.72 seconds; current allocated memory: 824.208 MB.
+INFO: [HLS 200-111]  Elapsed time: 147.03 seconds; current allocated memory: 824.652 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.22 seconds; current allocated memory: 826.833 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.33 seconds; current allocated memory: 827.518 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'rms_norm_1536_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.42 seconds; current allocated memory: 827.803 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.54 seconds; current allocated memory: 828.527 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 828.289 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 829.095 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'quantize_activation' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 829.034 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 829.929 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 829.503 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 830.430 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'init_2d_mem' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 829.617 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 830.547 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 829.684 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 830.615 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'linear_forward_no_mu' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 830.063 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 831.008 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 830.587 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 831.518 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reshape_2D_to_3D' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 830.730 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 831.698 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 830.884 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 831.853 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'apply_rotary_pos_emb' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 831.216 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 832.180 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 831.618 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 832.585 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'cache_update' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 831.853 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 832.783 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 832.121 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 833.085 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'transpose_last_two_d' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 832.301 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 833.264 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 832.524 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 833.487 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'GEMM_3D_float' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 832.761 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 833.718 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 833.014 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 833.972 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'exp_40_24_s' 
+INFO: [HLS 200-42] -- Implementing module 'exp_38_18_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining function 'exp<40, 24>'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
+INFO: [SCHED 204-61] Pipelining function 'exp<38, 18>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 12.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 833.417 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 834.518 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 833.880 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 835.140 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'softmax_1_16_6_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 834.239 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 835.551 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 834.681 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 836.002 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'GEMM_3D_float_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 834.950 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 836.293 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 835.198 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 836.541 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'attention' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 835.598 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 836.943 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.58 seconds; current allocated memory: 837.879 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.64 seconds; current allocated memory: 839.300 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'dut' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.83 seconds; current allocated memory: 838.691 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.83 seconds; current allocated memory: 840.183 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 839.117 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 840.613 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'sqrt_fixed_42_26_s' 
+INFO: [HLS 200-10] -- Generating RTL for module 'sqrt_fixed_40_20_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'sqrt_fixed_42_26_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.69 seconds; current allocated memory: 844.022 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sqrt_fixed_40_20_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 845.797 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'rms_norm_1536_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'dut_mul_40s_42ns_81_2_1' to 'dut_mul_40s_42ns_bkb' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'dut_udiv_33s_29ns_33_37_seq_1' to 'dut_udiv_33s_29nscud' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'dut_mul_72s_40s_72_5_1' to 'dut_mul_72s_40s_7dEe' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'dut_mul_40s_42ns_bkb': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'dut_mul_72s_40s_7dEe': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'dut_udiv_33s_29nscud': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'dut_udiv_41s_30ns_38_45_seq_1' to 'dut_udiv_41s_30nsbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dut_mul_76s_38s_78_5_1' to 'dut_mul_76s_38s_7cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'dut_mul_76s_38s_7cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dut_udiv_41s_30nsbkb': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'rms_norm_1536_s'.
-INFO: [HLS 200-111]  Elapsed time: 2.06 seconds; current allocated memory: 855.037 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.27 seconds; current allocated memory: 857.800 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'quantize_activation' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'dut_udiv_40ns_40ns_40_44_seq_1' to 'dut_udiv_40ns_40neOg' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'dut_udiv_40ns_40neOg': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'dut_udiv_47s_37ns_38_51_seq_1' to 'dut_udiv_47s_37nsdEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'dut_udiv_47s_37nsdEe': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'quantize_activation'.
-INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 857.320 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 860.396 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'init_2d_mem' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'init_2d_mem'.
-INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 859.015 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 862.150 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'linear_forward_no_mu' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'dut_sdiv_72ns_61s_40_76_seq_1' to 'dut_sdiv_72ns_61sfYi' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'dut_sdiv_72ns_61sfYi': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'dut_sdiv_78ns_63s_38_82_seq_1' to 'dut_sdiv_78ns_63seOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'dut_sdiv_78ns_63seOg': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_forward_no_mu'.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 860.327 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 863.502 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reshape_2D_to_3D' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reshape_2D_to_3D'.
-INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 862.095 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 865.300 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'apply_rotary_pos_emb' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_cos_tab_V_5' to 'apply_rotary_pos_g8j' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_sin_tab_V_5' to 'apply_rotary_pos_hbi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_q_0_V' to 'apply_rotary_pos_ibs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_k_0_V' to 'apply_rotary_pos_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_cos_tab_V_5' to 'apply_rotary_pos_fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_sin_tab_V_5' to 'apply_rotary_pos_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_q_0_V' to 'apply_rotary_pos_hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'apply_rotary_pos_emb_rotated_k_0_V' to 'apply_rotary_pos_ibs' due to the length limit 20
 INFO: [RTGEN 206-100] Finished creating RTL model for 'apply_rotary_pos_emb'.
-INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 863.304 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 866.499 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'cache_update' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'cache_update'.
-INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 865.359 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 868.591 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'transpose_last_two_d' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'transpose_last_two_d'.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 866.696 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 869.900 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'GEMM_3D_float' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'GEMM_3D_float'.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 868.002 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 871.219 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'exp_40_24_s' 
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_38_18_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'exp_40_24_s_f_x_msb_3_table_V' to 'exp_40_24_s_f_x_mkbM' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'exp_40_24_s_f_x_msb_2_table_V' to 'exp_40_24_s_f_x_mlbW' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'exp_40_24_s_exp_x_msb_1_table_V' to 'exp_40_24_s_exp_xmb6' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'dut_mul_50ns_47ns_97_2_1' to 'dut_mul_50ns_47nsncg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'dut_mul_50ns_50ns_100_2_1' to 'dut_mul_50ns_50nsocq' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'dut_mul_50ns_47nsncg': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'dut_mul_50ns_50nsocq': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_40_24_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 869.978 MB.
+INFO: [SYN 201-210] Renamed object name 'exp_38_18_s_f_x_msb_4_h_table_V' to 'exp_38_18_s_f_x_mjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'exp_38_18_s_f_x_msb_4_l_table_V' to 'exp_38_18_s_f_x_mkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'exp_38_18_s_f_x_lsb_table_V' to 'exp_38_18_s_f_x_llbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'exp_38_18_s_f_x_msb_3_table_V' to 'exp_38_18_s_f_x_mmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'exp_38_18_s_f_x_msb_2_table_V' to 'exp_38_18_s_f_x_mncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'exp_38_18_s_exp_x_msb_1_table_V' to 'exp_38_18_s_exp_xocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dut_mul_42ns_44ns_86_3_1' to 'dut_mul_42ns_44nspcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dut_mul_48ns_50ns_98_2_1' to 'dut_mul_48ns_50nsqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dut_mul_50ns_50ns_100_2_1' to 'dut_mul_50ns_50nsrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dut_mac_muladd_3ns_4ns_10ns_10_1_1' to 'dut_mac_muladd_3nsc4' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'dut_mac_muladd_3nsc4': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dut_mul_42ns_44nspcA': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dut_mul_48ns_50nsqcK': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dut_mul_50ns_50nsrcU': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_38_18_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 873.542 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'softmax_1_16_6_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'dut_sdiv_56ns_40s_40_60_seq_1' to 'dut_sdiv_56ns_40spcA' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'dut_sdiv_56ns_40spcA': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'dut_sdiv_58ns_38s_38_62_seq_1' to 'dut_sdiv_58ns_38stde' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'dut_sdiv_58ns_38stde': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'softmax_1_16_6_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 872.747 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.65 seconds; current allocated memory: 877.055 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'GEMM_3D_float_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'GEMM_3D_float_1'.
-INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 874.433 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 878.843 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'attention' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'attention_ln_weight_in_V' to 'attention_ln_weigqcK' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_ln_weight_V' to 'attention_ln_weigrcU' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta' to 'attention_quantizsc4' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_q_proj_re_0_V' to 'attention_q_proj_tde' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_proj_re_0_V' to 'attention_k_proj_udo' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_v_proj_re_0_V' to 'attention_v_proj_vdy' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_q_proj_0_V' to 'attention_q_proj_wdI' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_proj_0_V' to 'attention_k_proj_xdS' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_v_proj_0_V' to 'attention_v_proj_yd2' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_q_embed_0_V' to 'attention_q_embedzec' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_embed_0_V' to 'attention_k_embedAem' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_cache_upd_V' to 'attention_k_cacheBew' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_v_cache_upd_V' to 'attention_v_cacheCeG' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_k_proj_transposed_V' to 'attention_k_proj_DeQ' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_attn_weights_0_V' to 'attention_attn_weEe0' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_attn_output_0' to 'attention_attn_ouFfa' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_attn_output_2D_0_V' to 'attention_attn_ouGfk' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp' to 'attention_quantizHfu' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'dut_mul_58ns_56s_113_3_1' to 'dut_mul_58ns_56s_IfE' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'dut_mul_58ns_56s_IfE': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'attention_ln_weight_in_V' to 'attention_ln_weigudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_ln_weight_V' to 'attention_ln_weigvdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_hidden_sta' to 'attention_quantizwdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_q_proj_re_0_V' to 'attention_q_proj_xdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_proj_re_0_V' to 'attention_k_proj_yd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_v_proj_re_0_V' to 'attention_v_proj_zec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_q_proj_0_V' to 'attention_q_proj_Aem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_proj_0_V' to 'attention_k_proj_Bew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_v_proj_0_V' to 'attention_v_proj_CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_q_embed_0_V' to 'attention_q_embedDeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_embed_0_V' to 'attention_k_embedEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_cache_upd_V' to 'attention_k_cacheFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_v_cache_upd_V' to 'attention_v_cacheGfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_k_proj_transposed_V' to 'attention_k_proj_Hfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_attn_weights_0_V' to 'attention_attn_weIfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_attn_output_0' to 'attention_attn_ouJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_attn_output_2D_0_V' to 'attention_attn_ouKfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'attention_quantized_final_outp' to 'attention_quantizLf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dut_mul_60ns_58s_117_5_1' to 'dut_mul_60ns_58s_Mgi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'dut_mul_60ns_58s_Mgi': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'attention'.
-INFO: [HLS 200-111]  Elapsed time: 0.97 seconds; current allocated memory: 877.439 MB.
+INFO: [HLS 200-111]  Elapsed time: 1 seconds; current allocated memory: 881.776 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'dut' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -461,26 +469,29 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'dut/strm_in_V_V' to 'ap_fi
 INFO: [RTGEN 206-500] Setting interface mode on port 'dut/strm_out_V_V' to 'ap_fifo'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'dut' to 'ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dut'.
-INFO: [HLS 200-111]  Elapsed time: 1.08 seconds; current allocated memory: 880.760 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.18 seconds; current allocated memory: 885.306 MB.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 114.29 MHz
-INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_40s_42ns_bkb_MulnS_0'
-INFO: [RTMG 210-282] Generating pipelined core: 'dut_udiv_33s_29nscud_div'
-INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_72s_40s_7dEe_MulnS_1'
-INFO: [RTMG 210-282] Generating pipelined core: 'dut_udiv_40ns_40neOg_div'
-INFO: [RTMG 210-282] Generating pipelined core: 'dut_sdiv_72ns_61sfYi_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'dut_udiv_41s_30nsbkb_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_76s_38s_7cud_MulnS_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'dut_udiv_47s_37nsdEe_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'dut_sdiv_78ns_63seOg_div'
+INFO: [RTMG 210-279] Implementing memory 'apply_rotary_pos_fYi_rom' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'apply_rotary_pos_g8j_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'apply_rotary_pos_hbi_rom' using auto ROMs.
-INFO: [RTMG 210-278] Implementing memory 'apply_rotary_pos_ibs_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_50ns_47nsncg_MulnS_2'
-INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_50ns_50nsocq_MulnS_3'
-INFO: [RTMG 210-279] Implementing memory 'exp_40_24_s_f_x_mkbM_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'exp_40_24_s_f_x_mlbW_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'exp_40_24_s_exp_xmb6_rom' using auto ROMs.
-INFO: [RTMG 210-282] Generating pipelined core: 'dut_sdiv_56ns_40spcA_div'
-INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_58ns_56s_IfE_MulnS_4'
-WARNING: [RTMG 210-274] Memory 'attention_ln_weigqcK' is read-only, switch it to a ROM.
-INFO: [RTMG 210-279] Implementing memory 'attention_ln_weigqcK_rom' using block ROMs.
+INFO: [RTMG 210-278] Implementing memory 'apply_rotary_pos_hbi_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_42ns_44nspcA_MulnS_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_48ns_50nsqcK_MulnS_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_50ns_50nsrcU_MulnS_3'
+INFO: [RTMG 210-279] Implementing memory 'exp_38_18_s_f_x_mjbC_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'exp_38_18_s_f_x_mkbM_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'exp_38_18_s_f_x_llbW_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'exp_38_18_s_f_x_mmb6_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'exp_38_18_s_f_x_mncg_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'exp_38_18_s_exp_xocq_rom' using auto ROMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'dut_sdiv_58ns_38stde_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'dut_mul_60ns_58s_Mgi_MulnS_4'
+WARNING: [RTMG 210-274] Memory 'attention_ln_weigudo' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'attention_ln_weigudo_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'attention_q_weights' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'attention_q_weights_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'attention_k_weights' is read-only, switch it to a ROM.
@@ -491,16 +502,16 @@ WARNING: [RTMG 210-274] Memory 'attention_k_cache_V' is read-only, switch it to 
 INFO: [RTMG 210-279] Implementing memory 'attention_k_cache_V_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'attention_v_cache_V' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'attention_v_cache_V_rom' using block ROMs.
-WARNING: [RTMG 210-274] Memory 'attention_ln_weigrcU' is read-only, switch it to a ROM.
-INFO: [RTMG 210-279] Implementing memory 'attention_ln_weigrcU_rom' using block ROMs.
+WARNING: [RTMG 210-274] Memory 'attention_ln_weigvdy' is read-only, switch it to a ROM.
+INFO: [RTMG 210-279] Implementing memory 'attention_ln_weigvdy_rom' using block ROMs.
 WARNING: [RTMG 210-274] Memory 'attention_o_weights' is read-only, switch it to a ROM.
 INFO: [RTMG 210-279] Implementing memory 'attention_o_weights_rom' using block ROMs.
-INFO: [RTMG 210-278] Implementing memory 'attention_quantizsc4_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'attention_q_proj_wdI_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'attention_k_cacheBew_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'attention_attn_weEe0_ram (RAM)' using block RAMs.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:03:30 ; elapsed = 00:03:52 . Memory (MB): peak = 2246.656 ; gain = 1608.629 ; free physical = 1453 ; free virtual = 8225
+INFO: [RTMG 210-278] Implementing memory 'attention_quantizwdI_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'attention_q_proj_Aem_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'attention_k_cacheFfa_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'attention_attn_weIfE_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:03:32 ; elapsed = 00:03:50 . Memory (MB): peak = 2246.656 ; gain = 1608.629 ; free physical = 3881 ; free virtual = 8040
 INFO: [VHDL 208-304] Generating VHDL RTL for dut.
 INFO: [VLOG 209-307] Generating Verilog RTL for dut.
-INFO: [HLS 200-112] Total elapsed time: 232.54 seconds; peak allocated memory: 880.760 MB.
-INFO: [Common 17-206] Exiting vivado_hls at Fri Dec  6 22:02:13 2024...
+INFO: [HLS 200-112] Total elapsed time: 229.68 seconds; peak allocated memory: 885.306 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sat Dec  7 00:54:14 2024...

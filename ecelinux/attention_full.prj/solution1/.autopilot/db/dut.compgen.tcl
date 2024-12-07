@@ -11,7 +11,7 @@ set axilite_register_dict [dict create]
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 69 \
+    id 74 \
     name strm_in_V_V \
     type fifo \
     dir I \
@@ -26,7 +26,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 70 \
+    id 75 \
     name strm_out_V_V \
     type fifo \
     dir O \

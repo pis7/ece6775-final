@@ -19,11 +19,11 @@ port (
     ap_ready : OUT STD_LOGIC;
     input_V_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
     input_V_ce0 : OUT STD_LOGIC;
-    input_V_q0 : IN STD_LOGIC_VECTOR (39 downto 0);
+    input_V_q0 : IN STD_LOGIC_VECTOR (37 downto 0);
     output_V_address0 : OUT STD_LOGIC_VECTOR (13 downto 0);
     output_V_ce0 : OUT STD_LOGIC;
     output_V_we0 : OUT STD_LOGIC;
-    output_V_d0 : OUT STD_LOGIC_VECTOR (39 downto 0) );
+    output_V_d0 : OUT STD_LOGIC_VECTOR (37 downto 0) );
 end;
 
 

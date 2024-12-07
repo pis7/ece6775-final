@@ -1,10 +1,10 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 15
-set name dut_sdiv_72ns_61sfYi
+set id 13
+set name dut_sdiv_78ns_63seOg
 set corename simcore_sdiv_seq
 set op sdiv
-set stage_num 76
+set stage_num 82
 set max_latency -1
 set registered_input 1
 set clk_width 1
@@ -14,13 +14,13 @@ set reset_signed 0
 set start_width 1
 set start_signed 0
 set done_width 1
-set in0_width 72
+set in0_width 78
 set in0_signed 0
-set in1_width 61
+set in1_width 63
 set in1_signed 1
 set ce_width 1
 set ce_signed 0
-set out_width 40
+set out_width 38
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_sdiv] == "ap_gen_simcore_sdiv"} {
 eval "ap_gen_simcore_sdiv { \
@@ -105,7 +105,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 17 \
+    id 15 \
     name input_0_V \
     reset_level 1 \
     sync_rst true \
@@ -124,14 +124,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 18 \
+    id 16 \
     name output_0_V \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename output_0_V \
     op interface \
-    ports { output_0_V_address0 { O 11 vector } output_0_V_ce0 { O 1 bit } output_0_V_we0 { O 1 bit } output_0_V_d0 { O 40 vector } output_0_V_q0 { I 40 vector } } \
+    ports { output_0_V_address0 { O 11 vector } output_0_V_ce0 { O 1 bit } output_0_V_we0 { O 1 bit } output_0_V_d0 { O 38 vector } output_0_V_q0 { I 38 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_0_V'"
@@ -143,7 +143,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 20 \
+    id 18 \
     name packed_weights \
     reset_level 1 \
     sync_rst true \
@@ -161,7 +161,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 19 \
+    id 17 \
     name scales_0_V_read \
     type other \
     dir I \
@@ -169,14 +169,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_scales_0_V_read \
     op interface \
-    ports { scales_0_V_read { I 40 vector } } \
+    ports { scales_0_V_read { I 38 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 21 \
+    id 19 \
     name w_scale_V \
     type other \
     dir I \
@@ -184,7 +184,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_w_scale_V \
     op interface \
-    ports { w_scale_V { I 22 vector } } \
+    ports { w_scale_V { I 26 vector } } \
 } "
 }
 

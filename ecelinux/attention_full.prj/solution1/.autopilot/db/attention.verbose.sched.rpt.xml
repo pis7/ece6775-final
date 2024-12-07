@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'attention'" level="0">
-<item name = "Date">Fri Dec  6 22:00:59 2024
+<item name = "Date">Sat Dec  7 00:53:00 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">attention_full.prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">38520190, 38520190, 0.385 sec, 0.385 sec, 38520190, 38520190, none</column>
+<column name="">38557954, 38557954, 0.386 sec, 0.386 sec, 38557954, 38557954, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- SF_LOOP_1">704, 704, 44, -, -, 16, no</column>
-<column name=" + SF_LOOP_3">42, 42, 7, -, -, 6, no</column>
+<column name="- SF_LOOP_1">896, 896, 56, -, -, 16, no</column>
+<column name=" + SF_LOOP_3">54, 54, 9, -, -, 6, no</column>
 <column name="- ATTN_2D_LOOP_2">3104, 3104, 194, -, -, 16, no</column>
 <column name=" + ATTN_2D_LOOP_3">192, 192, 2, -, -, 96, no</column>
 </table>

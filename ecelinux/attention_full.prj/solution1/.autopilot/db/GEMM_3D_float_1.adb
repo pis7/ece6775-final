@@ -28,7 +28,7 @@
               <rtlName/>
               <coreName>RAM</coreName>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>1</if_type>
@@ -56,7 +56,7 @@
               <rtlName/>
               <coreName>RAM</coreName>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>1</if_type>
@@ -84,7 +84,7 @@
               <rtlName/>
               <coreName>RAM</coreName>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>1</if_type>
@@ -336,7 +336,7 @@
             <Obj>
               <type>0</type>
               <id>13</id>
-              <name>tmp_73</name>
+              <name>tmp_67</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>241</lineNumber>
@@ -360,7 +360,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_73_fu_170_p3</rtlName>
+              <rtlName>tmp_67_fu_170_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -434,7 +434,7 @@
             <Obj>
               <type>0</type>
               <id>15</id>
-              <name>tmp_74</name>
+              <name>tmp_68</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>241</lineNumber>
@@ -458,7 +458,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_74_fu_182_p3</rtlName>
+              <rtlName>tmp_68_fu_182_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -484,7 +484,7 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>zext_ln1116_3</name>
+              <name>zext_ln1116_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>241</lineNumber>
@@ -508,7 +508,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln1116_3_fu_190_p1</rtlName>
+              <rtlName>zext_ln1116_2_fu_190_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -629,7 +629,7 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>tmp_75</name>
+              <name>tmp_69</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>239</lineNumber>
@@ -653,7 +653,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_75_fu_204_p3</rtlName>
+              <rtlName>tmp_69_fu_204_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>12</bitwidth>
@@ -679,7 +679,7 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>tmp_76</name>
+              <name>tmp_70</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>239</lineNumber>
@@ -703,7 +703,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_76_fu_212_p3</rtlName>
+              <rtlName>tmp_70_fu_212_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -1391,7 +1391,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <oprand_edges>
             <count>4</count>
@@ -1663,7 +1663,7 @@
             <Obj>
               <type>0</type>
               <id>50</id>
-              <name>zext_ln1116_4</name>
+              <name>zext_ln1116_3</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>241</lineNumber>
@@ -1687,7 +1687,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln1116_4_fu_272_p1</rtlName>
+              <rtlName>zext_ln1116_3_fu_272_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>10</bitwidth>
@@ -1760,7 +1760,7 @@
             <Obj>
               <type>0</type>
               <id>52</id>
-              <name>sext_ln1116_1</name>
+              <name>sext_ln1116_2</name>
               <fileName>./layer.h</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>241</lineNumber>
@@ -1784,7 +1784,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sext_ln1116_1_fu_312_p1</rtlName>
+              <rtlName>sext_ln1116_2_fu_312_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -2229,7 +2229,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -2277,7 +2277,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>56</bitwidth>
+            <bitwidth>58</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -2325,7 +2325,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -2373,7 +2373,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>56</bitwidth>
+            <bitwidth>58</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -2421,7 +2421,7 @@
               <rtlName>mul_ln1192_fu_326_p2</rtlName>
               <coreName/>
             </Obj>
-            <bitwidth>56</bitwidth>
+            <bitwidth>58</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -2434,7 +2434,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>8.51</m_delay>
+          <m_delay>8.69</m_delay>
           <m_topoIndex>51</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2470,7 +2470,7 @@
               <rtlName>shl_ln_fu_332_p3</rtlName>
               <coreName/>
             </Obj>
-            <bitwidth>56</bitwidth>
+            <bitwidth>58</bitwidth>
           </Value>
           <oprand_edges>
             <count>3</count>
@@ -2520,7 +2520,7 @@
               <rtlName>add_ln1192_fu_340_p2</rtlName>
               <coreName/>
             </Obj>
-            <bitwidth>56</bitwidth>
+            <bitwidth>58</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -2533,7 +2533,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.31</m_delay>
+          <m_delay>3.36</m_delay>
           <m_topoIndex>53</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2569,7 +2569,7 @@
               <rtlName>output_0_V_load_reg_134</rtlName>
               <coreName/>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <oprand_edges>
             <count>4</count>
@@ -2985,7 +2985,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>40</bitwidth>
+            <bitwidth>38</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>0</content>
@@ -3077,7 +3077,7 @@
               <rtlName/>
               <coreName/>
             </Obj>
-            <bitwidth>16</bitwidth>
+            <bitwidth>20</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>0</content>
@@ -3103,7 +3103,7 @@
             <bitwidth>32</bitwidth>
           </Value>
           <const_type>0</const_type>
-          <content>16</content>
+          <content>20</content>
         </item>
         <item class_id_reference="16" object_id="_73">
           <Value>
@@ -3126,7 +3126,7 @@
             <bitwidth>32</bitwidth>
           </Value>
           <const_type>0</const_type>
-          <content>55</content>
+          <content>57</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -3300,7 +3300,7 @@
           <Obj>
             <type>3</type>
             <id>70</id>
-            <name>_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.0</name>
+            <name>_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi38ELi18ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.0</name>
             <fileName/>
             <fileDirectory/>
             <lineNumber>0</lineNumber>
@@ -5091,11 +5091,11 @@
             <item_version>0</item_version>
             <item>
               <first>(0P0)</first>
-              <second>56</second>
+              <second>58</second>
             </item>
             <item>
               <first>(1P1)</first>
-              <second>56</second>
+              <second>58</second>
             </item>
             <item>
               <first>FF</first>
@@ -5103,7 +5103,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>63</second>
+              <second>65</second>
             </item>
           </second>
         </item>
@@ -5275,11 +5275,11 @@
             <item_version>0</item_version>
             <item>
               <first>(0P0)</first>
-              <second>40</second>
+              <second>38</second>
             </item>
             <item>
               <first>(1P1)</first>
-              <second>40</second>
+              <second>38</second>
             </item>
             <item>
               <first>DSP48E</first>
@@ -5291,7 +5291,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>29</second>
+              <second>27</second>
             </item>
           </second>
         </item>
@@ -5479,11 +5479,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>40</second>
+              <second>38</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>80</second>
+              <second>76</second>
             </item>
             <item>
               <first>LUT</first>
@@ -5635,7 +5635,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>40</second>
+              <second>38</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5643,7 +5643,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>40</second>
+              <second>38</second>
             </item>
           </second>
         </item>
@@ -5654,7 +5654,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>40</second>
+              <second>38</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5662,7 +5662,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>40</second>
+              <second>38</second>
             </item>
           </second>
         </item>
@@ -5711,7 +5711,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>56</second>
+              <second>58</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5719,7 +5719,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>56</second>
+              <second>58</second>
             </item>
           </second>
         </item>
@@ -5749,7 +5749,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>40</second>
+              <second>38</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5757,7 +5757,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>40</second>
+              <second>38</second>
             </item>
           </second>
         </item>
@@ -6949,7 +6949,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln1116_1_fu_312</first>
+        <first>sext_ln1116_2_fu_312</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7021,7 +7021,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_73_fu_170</first>
+        <first>tmp_67_fu_170</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7029,7 +7029,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_74_fu_182</first>
+        <first>tmp_68_fu_182</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7037,7 +7037,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_75_fu_204</first>
+        <first>tmp_69_fu_204</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7045,7 +7045,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_76_fu_212</first>
+        <first>tmp_70_fu_212</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7069,7 +7069,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln1116_3_fu_190</first>
+        <first>zext_ln1116_2_fu_190</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7077,7 +7077,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln1116_4_fu_272</first>
+        <first>zext_ln1116_3_fu_272</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

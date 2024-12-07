@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'rms_norm_1536_s'
 ================================================================
-* Date:           Fri Dec  6 22:00:53 2024
+* Date:           Sat Dec  7 00:52:54 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        attention_full.prj
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  | 10.00 ns | 8.731 ns |   1.25 ns  |
+    |ap_clk  | 10.00 ns | 8.693 ns |   1.25 ns  |
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
     |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
     +---------+---------+----------+----------+-------+-------+---------+
-    |    20028|    20028| 0.200 ms | 0.200 ms |  20028|  20028|   none  |
+    |    20039|    20039| 0.200 ms | 0.200 ms |  20039|  20039|   none  |
     +---------+---------+----------+----------+-------+-------+---------+
 
     + Detail: 
@@ -71,7 +71,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 72
+* Number of FSM states : 83
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -147,265 +147,311 @@ IsGatedGlobalClock: 0
 69 --> 70 
 70 --> 71 
 71 --> 72 
-72 --> 64 
+72 --> 73 
+73 --> 74 
+74 --> 75 
+75 --> 76 
+76 --> 77 
+77 --> 78 
+78 --> 79 
+79 --> 80 
+80 --> 81 
+81 --> 82 
+82 --> 83 
+83 --> 75 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.76>
-ST_1 : Operation 73 [1/1] (1.76ns)   --->   "br label %1" [./layer.h:46]   --->   Operation 73 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 84 [1/1] (1.76ns)   --->   "br label %1" [./layer.h:46]   --->   Operation 84 'br' <Predicate = true> <Delay = 1.76>
 
-State 2 <SV = 1> <Delay = 6.91>
-ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%p_Val2_s = phi i40 [ 0, %0 ], [ %variance_V, %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i ]"   --->   Operation 74 'phi' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%i_0 = phi i11 [ 0, %0 ], [ %i, %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i ]"   --->   Operation 75 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 76 [1/1] (1.88ns)   --->   "%icmp_ln46 = icmp eq i11 %i_0, -512" [./layer.h:46]   --->   Operation 76 'icmp' 'icmp_ln46' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)"   --->   Operation 77 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 78 [1/1] (1.63ns)   --->   "%i = add i11 %i_0, 1" [./layer.h:46]   --->   Operation 78 'add' 'i' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 79 [1/1] (0.00ns)   --->   "br i1 %icmp_ln46, label %ap_fixed_base.exit, label %_ZN13ap_fixed_baseILi81ELi49ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi40ELi24ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i" [./layer.h:46]   --->   Operation 79 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%zext_ln47 = zext i11 %i_0 to i64" [./layer.h:47]   --->   Operation 80 'zext' 'zext_ln47' <Predicate = (!icmp_ln46)> <Delay = 0.00>
-ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%input_0_V_addr = getelementptr [1536 x i40]* %input_0_V, i64 0, i64 %zext_ln47" [./layer.h:47]   --->   Operation 81 'getelementptr' 'input_0_V_addr' <Predicate = (!icmp_ln46)> <Delay = 0.00>
-ST_2 : Operation 82 [2/2] (3.25ns)   --->   "%input_0_V_load = load i40* %input_0_V_addr, align 8" [./layer.h:47]   --->   Operation 82 'load' 'input_0_V_load' <Predicate = (!icmp_ln46)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 1536> <RAM>
-ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%sext_ln1148 = sext i40 %p_Val2_s to i81" [./layer.h:50]   --->   Operation 83 'sext' 'sext_ln1148' <Predicate = (icmp_ln46)> <Delay = 0.00>
-ST_2 : Operation 84 [2/2] (6.91ns)   --->   "%mul_ln1148 = mul i81 %sext_ln1148, 1466015503702" [./layer.h:50]   --->   Operation 84 'mul' 'mul_ln1148' <Predicate = (icmp_ln46)> <Delay = 6.91> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+State 2 <SV = 1> <Delay = 8.51>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%p_Val2_s = phi i38 [ 0, %0 ], [ %variance_V_1, %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi38ELi18ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i ]"   --->   Operation 85 'phi' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%i_0 = phi i11 [ 0, %0 ], [ %i, %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi38ELi18ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i ]"   --->   Operation 86 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (1.88ns)   --->   "%icmp_ln46 = icmp eq i11 %i_0, -512" [./layer.h:46]   --->   Operation 87 'icmp' 'icmp_ln46' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)"   --->   Operation 88 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (1.63ns)   --->   "%i = add i11 %i_0, 1" [./layer.h:46]   --->   Operation 89 'add' 'i' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "br i1 %icmp_ln46, label %ap_fixed_base.exit, label %_ZN13ap_fixed_baseILi77ELi37ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi38ELi18ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i" [./layer.h:46]   --->   Operation 90 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln47 = zext i11 %i_0 to i64" [./layer.h:47]   --->   Operation 91 'zext' 'zext_ln47' <Predicate = (!icmp_ln46)> <Delay = 0.00>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%input_0_V_addr = getelementptr [1536 x i38]* %input_0_V, i64 0, i64 %zext_ln47" [./layer.h:47]   --->   Operation 92 'getelementptr' 'input_0_V_addr' <Predicate = (!icmp_ln46)> <Delay = 0.00>
+ST_2 : Operation 93 [2/2] (3.25ns)   --->   "%input_0_V_load = load i38* %input_0_V_addr, align 8" [./layer.h:47]   --->   Operation 93 'load' 'input_0_V_load' <Predicate = (!icmp_ln46)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 1536> <RAM>
+ST_2 : Operation 94 [1/1] (0.00ns)   --->   "%sext_ln1148 = sext i38 %p_Val2_s to i77" [./layer.h:50]   --->   Operation 94 'sext' 'sext_ln1148' <Predicate = (icmp_ln46)> <Delay = 0.00>
+ST_2 : Operation 95 [1/1] (8.51ns)   --->   "%mul_ln1148 = mul i77 366503875926, %sext_ln1148" [./layer.h:50]   --->   Operation 95 'mul' 'mul_ln1148' <Predicate = (icmp_ln46)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.69> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%tmp_71 = call i28 @_ssdm_op_PartSelect.i28.i77.i32.i32(i77 %mul_ln1148, i32 49, i32 76)" [./layer.h:50]   --->   Operation 96 'partselect' 'tmp_71' <Predicate = (icmp_ln46)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 3.25>
-ST_3 : Operation 85 [1/2] (3.25ns)   --->   "%input_0_V_load = load i40* %input_0_V_addr, align 8" [./layer.h:47]   --->   Operation 85 'load' 'input_0_V_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 1536> <RAM>
+ST_3 : Operation 97 [1/2] (3.25ns)   --->   "%input_0_V_load = load i38* %input_0_V_addr, align 8" [./layer.h:47]   --->   Operation 97 'load' 'input_0_V_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 1536> <RAM>
 
-State 4 <SV = 3> <Delay = 8.51>
-ST_4 : Operation 86 [1/1] (0.00ns)   --->   "%sext_ln1118_1 = sext i40 %input_0_V_load to i56" [./layer.h:47]   --->   Operation 86 'sext' 'sext_ln1118_1' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 87 [1/1] (8.51ns)   --->   "%mul_ln1192 = mul i56 %sext_ln1118_1, %sext_ln1118_1" [./layer.h:47]   --->   Operation 87 'mul' 'mul_ln1192' <Predicate = true> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+State 4 <SV = 3> <Delay = 8.69>
+ST_4 : Operation 98 [1/1] (0.00ns)   --->   "%sext_ln1118_1 = sext i38 %input_0_V_load to i58" [./layer.h:47]   --->   Operation 98 'sext' 'sext_ln1118_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 99 [1/1] (8.69ns)   --->   "%mul_ln1192 = mul i58 %sext_ln1118_1, %sext_ln1118_1" [./layer.h:47]   --->   Operation 99 'mul' 'mul_ln1192' <Predicate = true> <Delay = 8.69> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.69> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
-State 5 <SV = 4> <Delay = 3.31>
-ST_5 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str) nounwind" [./layer.h:46]   --->   Operation 88 'specloopname' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%lhs_V = call i56 @_ssdm_op_BitConcatenate.i56.i40.i16(i40 %p_Val2_s, i16 0)" [./layer.h:47]   --->   Operation 89 'bitconcatenate' 'lhs_V' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 90 [1/1] (3.31ns)   --->   "%ret_V = add i56 %mul_ln1192, %lhs_V" [./layer.h:47]   --->   Operation 90 'add' 'ret_V' <Predicate = true> <Delay = 3.31> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%variance_V = call i40 @_ssdm_op_PartSelect.i40.i56.i32.i32(i56 %ret_V, i32 16, i32 55)" [./layer.h:47]   --->   Operation 91 'partselect' 'variance_V' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 92 [1/1] (0.00ns)   --->   "br label %1" [./layer.h:46]   --->   Operation 92 'br' <Predicate = true> <Delay = 0.00>
+State 5 <SV = 4> <Delay = 3.36>
+ST_5 : Operation 100 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str) nounwind" [./layer.h:46]   --->   Operation 100 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 101 [1/1] (0.00ns)   --->   "%lhs_V = call i58 @_ssdm_op_BitConcatenate.i58.i38.i20(i38 %p_Val2_s, i20 0)" [./layer.h:47]   --->   Operation 101 'bitconcatenate' 'lhs_V' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 102 [1/1] (3.36ns)   --->   "%ret_V_2 = add i58 %mul_ln1192, %lhs_V" [./layer.h:47]   --->   Operation 102 'add' 'ret_V_2' <Predicate = true> <Delay = 3.36> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 103 [1/1] (0.00ns)   --->   "%variance_V_1 = call i38 @_ssdm_op_PartSelect.i38.i58.i32.i32(i58 %ret_V_2, i32 20, i32 57)" [./layer.h:47]   --->   Operation 103 'partselect' 'variance_V_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 104 [1/1] (0.00ns)   --->   "br label %1" [./layer.h:46]   --->   Operation 104 'br' <Predicate = true> <Delay = 0.00>
 
-State 6 <SV = 2> <Delay = 6.91>
-ST_6 : Operation 93 [1/2] (6.91ns)   --->   "%mul_ln1148 = mul i81 %sext_ln1148, 1466015503702" [./layer.h:50]   --->   Operation 93 'mul' 'mul_ln1148' <Predicate = true> <Delay = 6.91> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 94 [1/1] (0.00ns)   --->   "%tmp_72 = call i30 @_ssdm_op_PartSelect.i30.i81.i32.i32(i81 %mul_ln1148, i32 51, i32 80)" [./layer.h:50]   --->   Operation 94 'partselect' 'tmp_72' <Predicate = true> <Delay = 0.00>
+State 6 <SV = 2> <Delay = 6.32>
+ST_6 : Operation 105 [1/1] (3.89ns)   --->   "%sub_ln1148 = sub i77 0, %mul_ln1148" [./layer.h:50]   --->   Operation 105 'sub' 'sub_ln1148' <Predicate = true> <Delay = 3.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 106 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i38.i32(i38 %p_Val2_s, i32 37)" [./layer.h:50]   --->   Operation 106 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 107 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703)   --->   "%tmp_70 = call i28 @_ssdm_op_PartSelect.i28.i77.i32.i32(i77 %sub_ln1148, i32 49, i32 76)" [./layer.h:50]   --->   Operation 107 'partselect' 'tmp_70' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 108 [1/1] (0.00ns) (grouped into LUT with out node sub_ln703)   --->   "%select_ln1148 = select i1 %tmp, i28 %tmp_70, i28 %tmp_71" [./layer.h:50]   --->   Operation 108 'select' 'select_ln1148' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 109 [1/1] (2.43ns) (out node of the LUT)   --->   "%sub_ln703 = sub i28 0, %select_ln1148" [./layer.h:50]   --->   Operation 109 'sub' 'sub_ln703' <Predicate = true> <Delay = 2.43> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
-State 7 <SV = 3> <Delay = 7.26>
-ST_7 : Operation 95 [1/1] (4.00ns)   --->   "%sub_ln1148 = sub i81 0, %mul_ln1148" [./layer.h:50]   --->   Operation 95 'sub' 'sub_ln1148' <Predicate = true> <Delay = 4.00> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i40.i32(i40 %p_Val2_s, i32 39)" [./layer.h:50]   --->   Operation 96 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 97 [1/1] (0.00ns) (grouped into LUT with out node sub_ln1227)   --->   "%tmp_71 = call i30 @_ssdm_op_PartSelect.i30.i81.i32.i32(i81 %sub_ln1148, i32 51, i32 80)" [./layer.h:50]   --->   Operation 97 'partselect' 'tmp_71' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node sub_ln1227)   --->   "%select_ln1148 = select i1 %tmp, i30 %tmp_71, i30 %tmp_72" [./layer.h:50]   --->   Operation 98 'select' 'select_ln1148' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_7 : Operation 99 [1/1] (2.49ns) (out node of the LUT)   --->   "%sub_ln1227 = sub i30 0, %select_ln1148" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 99 'sub' 'sub_ln1227' <Predicate = true> <Delay = 2.49> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 100 [1/1] (0.76ns)   --->   "%select_ln1148_1 = select i1 %tmp, i30 %sub_ln1227, i30 %tmp_72" [./layer.h:50]   --->   Operation 100 'select' 'select_ln1148_1' <Predicate = true> <Delay = 0.76> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+State 7 <SV = 3> <Delay = 2.43>
+ST_7 : Operation 110 [1/1] (0.00ns) (grouped into LUT with out node ret_V)   --->   "%select_ln1148_1 = select i1 %tmp, i28 %sub_ln703, i28 %tmp_71" [./layer.h:50]   --->   Operation 110 'select' 'select_ln1148_1' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 111 [1/1] (2.43ns) (out node of the LUT)   --->   "%ret_V = add i28 10, %select_ln1148_1" [./layer.h:50]   --->   Operation 111 'add' 'ret_V' <Predicate = true> <Delay = 2.43> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
-State 8 <SV = 4> <Delay = 8.73>
-ST_8 : Operation 101 [19/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 101 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 8 <SV = 4> <Delay = 7.71>
+ST_8 : Operation 112 [22/22] (7.71ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 112 'call' 'agg_result_V_i' <Predicate = true> <Delay = 7.71> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 9 <SV = 5> <Delay = 8.73>
-ST_9 : Operation 102 [18/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 102 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 9 <SV = 5> <Delay = 8.69>
+ST_9 : Operation 113 [21/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 113 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 10 <SV = 6> <Delay = 8.73>
-ST_10 : Operation 103 [17/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 103 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 10 <SV = 6> <Delay = 8.69>
+ST_10 : Operation 114 [20/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 114 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 11 <SV = 7> <Delay = 8.73>
-ST_11 : Operation 104 [16/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 104 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 11 <SV = 7> <Delay = 8.69>
+ST_11 : Operation 115 [19/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 115 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 12 <SV = 8> <Delay = 8.73>
-ST_12 : Operation 105 [15/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 105 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 12 <SV = 8> <Delay = 8.69>
+ST_12 : Operation 116 [18/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 116 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 13 <SV = 9> <Delay = 8.73>
-ST_13 : Operation 106 [14/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 106 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 13 <SV = 9> <Delay = 8.69>
+ST_13 : Operation 117 [17/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 117 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 14 <SV = 10> <Delay = 8.73>
-ST_14 : Operation 107 [13/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 107 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 14 <SV = 10> <Delay = 8.69>
+ST_14 : Operation 118 [16/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 118 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 15 <SV = 11> <Delay = 8.73>
-ST_15 : Operation 108 [12/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 108 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 15 <SV = 11> <Delay = 8.69>
+ST_15 : Operation 119 [15/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 119 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 16 <SV = 12> <Delay = 8.73>
-ST_16 : Operation 109 [11/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 109 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 16 <SV = 12> <Delay = 8.69>
+ST_16 : Operation 120 [14/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 120 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 17 <SV = 13> <Delay = 8.73>
-ST_17 : Operation 110 [10/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 110 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 17 <SV = 13> <Delay = 8.69>
+ST_17 : Operation 121 [13/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 121 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 18 <SV = 14> <Delay = 8.73>
-ST_18 : Operation 111 [9/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 111 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 18 <SV = 14> <Delay = 8.69>
+ST_18 : Operation 122 [12/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 122 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 19 <SV = 15> <Delay = 8.73>
-ST_19 : Operation 112 [8/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 112 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 19 <SV = 15> <Delay = 8.69>
+ST_19 : Operation 123 [11/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 123 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 20 <SV = 16> <Delay = 8.73>
-ST_20 : Operation 113 [7/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 113 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 20 <SV = 16> <Delay = 8.69>
+ST_20 : Operation 124 [10/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 124 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 21 <SV = 17> <Delay = 8.73>
-ST_21 : Operation 114 [6/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 114 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 21 <SV = 17> <Delay = 8.69>
+ST_21 : Operation 125 [9/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 125 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 22 <SV = 18> <Delay = 8.73>
-ST_22 : Operation 115 [5/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 115 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 22 <SV = 18> <Delay = 8.69>
+ST_22 : Operation 126 [8/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 126 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 23 <SV = 19> <Delay = 8.73>
-ST_23 : Operation 116 [4/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 116 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 23 <SV = 19> <Delay = 8.69>
+ST_23 : Operation 127 [7/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 127 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 24 <SV = 20> <Delay = 8.73>
-ST_24 : Operation 117 [3/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 117 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 24 <SV = 20> <Delay = 8.69>
+ST_24 : Operation 128 [6/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 128 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 25 <SV = 21> <Delay = 8.73>
-ST_25 : Operation 118 [2/19] (8.73ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 118 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 25 <SV = 21> <Delay = 8.69>
+ST_25 : Operation 129 [5/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 129 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 26 <SV = 22> <Delay = 7.93>
-ST_26 : Operation 119 [1/19] (7.93ns)   --->   "%agg_result_V_i = call fastcc i29 @"sqrt_fixed<42, 26>"(i30 %select_ln1148_1)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 119 'call' 'agg_result_V_i' <Predicate = true> <Delay = 7.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 26 <SV = 22> <Delay = 8.69>
+ST_26 : Operation 130 [4/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 130 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 27 <SV = 23> <Delay = 4.16>
-ST_27 : Operation 120 [1/1] (0.00ns)   --->   "%zext_ln703 = zext i29 %agg_result_V_i to i33" [./layer.h:50]   --->   Operation 120 'zext' 'zext_ln703' <Predicate = true> <Delay = 0.00>
-ST_27 : Operation 121 [37/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 121 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 27 <SV = 23> <Delay = 8.69>
+ST_27 : Operation 131 [3/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 131 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 28 <SV = 24> <Delay = 4.16>
-ST_28 : Operation 122 [36/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 122 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 28 <SV = 24> <Delay = 8.69>
+ST_28 : Operation 132 [2/22] (8.69ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 132 'call' 'agg_result_V_i' <Predicate = true> <Delay = 8.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 29 <SV = 25> <Delay = 4.16>
-ST_29 : Operation 123 [35/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 123 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 29 <SV = 25> <Delay = 4.67>
+ST_29 : Operation 133 [1/22] (4.67ns)   --->   "%agg_result_V_i = call fastcc i30 @"sqrt_fixed<40, 20>"(i28 %ret_V)" [/opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50]   --->   Operation 133 'call' 'agg_result_V_i' <Predicate = true> <Delay = 4.67> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 30 <SV = 26> <Delay = 4.16>
-ST_30 : Operation 124 [34/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 124 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 30 <SV = 26> <Delay = 4.39>
+ST_30 : Operation 134 [1/1] (0.00ns)   --->   "%zext_ln1148 = zext i30 %agg_result_V_i to i41" [./layer.h:50]   --->   Operation 134 'zext' 'zext_ln1148' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 135 [45/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 135 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 31 <SV = 27> <Delay = 4.16>
-ST_31 : Operation 125 [33/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 125 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 31 <SV = 27> <Delay = 4.39>
+ST_31 : Operation 136 [44/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 136 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 32 <SV = 28> <Delay = 4.16>
-ST_32 : Operation 126 [32/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 126 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 32 <SV = 28> <Delay = 4.39>
+ST_32 : Operation 137 [43/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 137 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 33 <SV = 29> <Delay = 4.16>
-ST_33 : Operation 127 [31/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 127 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 33 <SV = 29> <Delay = 4.39>
+ST_33 : Operation 138 [42/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 138 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 34 <SV = 30> <Delay = 4.16>
-ST_34 : Operation 128 [30/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 128 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 34 <SV = 30> <Delay = 4.39>
+ST_34 : Operation 139 [41/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 139 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 35 <SV = 31> <Delay = 4.16>
-ST_35 : Operation 129 [29/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 129 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 35 <SV = 31> <Delay = 4.39>
+ST_35 : Operation 140 [40/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 140 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 36 <SV = 32> <Delay = 4.16>
-ST_36 : Operation 130 [28/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 130 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 36 <SV = 32> <Delay = 4.39>
+ST_36 : Operation 141 [39/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 141 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 37 <SV = 33> <Delay = 4.16>
-ST_37 : Operation 131 [27/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 131 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 37 <SV = 33> <Delay = 4.39>
+ST_37 : Operation 142 [38/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 142 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 38 <SV = 34> <Delay = 4.16>
-ST_38 : Operation 132 [26/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 132 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 38 <SV = 34> <Delay = 4.39>
+ST_38 : Operation 143 [37/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 143 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 39 <SV = 35> <Delay = 4.16>
-ST_39 : Operation 133 [25/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 133 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 39 <SV = 35> <Delay = 4.39>
+ST_39 : Operation 144 [36/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 144 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 40 <SV = 36> <Delay = 4.16>
-ST_40 : Operation 134 [24/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 134 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 40 <SV = 36> <Delay = 4.39>
+ST_40 : Operation 145 [35/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 145 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 41 <SV = 37> <Delay = 4.16>
-ST_41 : Operation 135 [23/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 135 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 41 <SV = 37> <Delay = 4.39>
+ST_41 : Operation 146 [34/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 146 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 42 <SV = 38> <Delay = 4.16>
-ST_42 : Operation 136 [22/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 136 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 42 <SV = 38> <Delay = 4.39>
+ST_42 : Operation 147 [33/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 147 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 43 <SV = 39> <Delay = 4.16>
-ST_43 : Operation 137 [21/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 137 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 43 <SV = 39> <Delay = 4.39>
+ST_43 : Operation 148 [32/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 148 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 44 <SV = 40> <Delay = 4.16>
-ST_44 : Operation 138 [20/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 138 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 44 <SV = 40> <Delay = 4.39>
+ST_44 : Operation 149 [31/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 149 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 45 <SV = 41> <Delay = 4.16>
-ST_45 : Operation 139 [19/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 139 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 45 <SV = 41> <Delay = 4.39>
+ST_45 : Operation 150 [30/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 150 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 46 <SV = 42> <Delay = 4.16>
-ST_46 : Operation 140 [18/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 140 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 46 <SV = 42> <Delay = 4.39>
+ST_46 : Operation 151 [29/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 151 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 47 <SV = 43> <Delay = 4.16>
-ST_47 : Operation 141 [17/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 141 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 47 <SV = 43> <Delay = 4.39>
+ST_47 : Operation 152 [28/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 152 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 48 <SV = 44> <Delay = 4.16>
-ST_48 : Operation 142 [16/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 142 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 48 <SV = 44> <Delay = 4.39>
+ST_48 : Operation 153 [27/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 153 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 49 <SV = 45> <Delay = 4.16>
-ST_49 : Operation 143 [15/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 143 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 49 <SV = 45> <Delay = 4.39>
+ST_49 : Operation 154 [26/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 154 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 50 <SV = 46> <Delay = 4.16>
-ST_50 : Operation 144 [14/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 144 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 50 <SV = 46> <Delay = 4.39>
+ST_50 : Operation 155 [25/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 155 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 51 <SV = 47> <Delay = 4.16>
-ST_51 : Operation 145 [13/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 145 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 51 <SV = 47> <Delay = 4.39>
+ST_51 : Operation 156 [24/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 156 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 52 <SV = 48> <Delay = 4.16>
-ST_52 : Operation 146 [12/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 146 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 52 <SV = 48> <Delay = 4.39>
+ST_52 : Operation 157 [23/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 157 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 53 <SV = 49> <Delay = 4.16>
-ST_53 : Operation 147 [11/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 147 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 53 <SV = 49> <Delay = 4.39>
+ST_53 : Operation 158 [22/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 158 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 54 <SV = 50> <Delay = 4.16>
-ST_54 : Operation 148 [10/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 148 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 54 <SV = 50> <Delay = 4.39>
+ST_54 : Operation 159 [21/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 159 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 55 <SV = 51> <Delay = 4.16>
-ST_55 : Operation 149 [9/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 149 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 55 <SV = 51> <Delay = 4.39>
+ST_55 : Operation 160 [20/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 160 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 56 <SV = 52> <Delay = 4.16>
-ST_56 : Operation 150 [8/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 150 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 56 <SV = 52> <Delay = 4.39>
+ST_56 : Operation 161 [19/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 161 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 57 <SV = 53> <Delay = 4.16>
-ST_57 : Operation 151 [7/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 151 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 57 <SV = 53> <Delay = 4.39>
+ST_57 : Operation 162 [18/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 162 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 58 <SV = 54> <Delay = 4.16>
-ST_58 : Operation 152 [6/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 152 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 58 <SV = 54> <Delay = 4.39>
+ST_58 : Operation 163 [17/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 163 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 59 <SV = 55> <Delay = 4.16>
-ST_59 : Operation 153 [5/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 153 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 59 <SV = 55> <Delay = 4.39>
+ST_59 : Operation 164 [16/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 164 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 60 <SV = 56> <Delay = 4.16>
-ST_60 : Operation 154 [4/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 154 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 60 <SV = 56> <Delay = 4.39>
+ST_60 : Operation 165 [15/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 165 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 61 <SV = 57> <Delay = 4.16>
-ST_61 : Operation 155 [3/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 155 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 61 <SV = 57> <Delay = 4.39>
+ST_61 : Operation 166 [14/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 166 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 62 <SV = 58> <Delay = 4.16>
-ST_62 : Operation 156 [2/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 156 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 62 <SV = 58> <Delay = 4.39>
+ST_62 : Operation 167 [13/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 167 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 63 <SV = 59> <Delay = 4.16>
-ST_63 : Operation 157 [1/37] (4.16ns)   --->   "%udiv_ln703 = udiv i33 -4294967296, %zext_ln703" [./layer.h:50]   --->   Operation 157 'udiv' 'udiv_ln703' <Predicate = true> <Delay = 4.16> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 36> <II = 33> <Delay = 4.16> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_63 : Operation 158 [1/1] (0.00ns)   --->   "%zext_ln1118 = zext i33 %udiv_ln703 to i72" [./layer.h:52]   --->   Operation 158 'zext' 'zext_ln1118' <Predicate = true> <Delay = 0.00>
-ST_63 : Operation 159 [1/1] (1.76ns)   --->   "br label %2" [./layer.h:51]   --->   Operation 159 'br' <Predicate = true> <Delay = 1.76>
+State 63 <SV = 59> <Delay = 4.39>
+ST_63 : Operation 168 [12/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 168 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 64 <SV = 60> <Delay = 3.25>
-ST_64 : Operation 160 [1/1] (0.00ns)   --->   "%i1_0 = phi i11 [ 0, %ap_fixed_base.exit ], [ %i_1, %_ZN13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit ]"   --->   Operation 160 'phi' 'i1_0' <Predicate = true> <Delay = 0.00>
-ST_64 : Operation 161 [1/1] (1.88ns)   --->   "%icmp_ln51 = icmp eq i11 %i1_0, -512" [./layer.h:51]   --->   Operation 161 'icmp' 'icmp_ln51' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_64 : Operation 162 [1/1] (0.00ns)   --->   "%empty_84 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)"   --->   Operation 162 'speclooptripcount' 'empty_84' <Predicate = true> <Delay = 0.00>
-ST_64 : Operation 163 [1/1] (1.63ns)   --->   "%i_1 = add i11 %i1_0, 1" [./layer.h:51]   --->   Operation 163 'add' 'i_1' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_64 : Operation 164 [1/1] (0.00ns)   --->   "br i1 %icmp_ln51, label %3, label %_ZN13ap_fixed_baseILi40ELi24ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi80ELi48ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit" [./layer.h:51]   --->   Operation 164 'br' <Predicate = true> <Delay = 0.00>
-ST_64 : Operation 165 [1/1] (0.00ns)   --->   "%zext_ln52 = zext i11 %i1_0 to i64" [./layer.h:52]   --->   Operation 165 'zext' 'zext_ln52' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_64 : Operation 166 [1/1] (0.00ns)   --->   "%weight_V_addr = getelementptr [1536 x i40]* %weight_V, i64 0, i64 %zext_ln52" [./layer.h:52]   --->   Operation 166 'getelementptr' 'weight_V_addr' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_64 : Operation 167 [2/2] (3.25ns)   --->   "%weight_V_load = load i40* %weight_V_addr, align 8" [./layer.h:52]   --->   Operation 167 'load' 'weight_V_load' <Predicate = (!icmp_ln51)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 1536> <RAM>
-ST_64 : Operation 168 [1/1] (0.00ns)   --->   "%input_0_V_addr_4 = getelementptr [1536 x i40]* %input_0_V, i64 0, i64 %zext_ln52" [./layer.h:52]   --->   Operation 168 'getelementptr' 'input_0_V_addr_4' <Predicate = (!icmp_ln51)> <Delay = 0.00>
-ST_64 : Operation 169 [1/1] (0.00ns)   --->   "ret void" [./layer.h:53]   --->   Operation 169 'ret' <Predicate = (icmp_ln51)> <Delay = 0.00>
+State 64 <SV = 60> <Delay = 4.39>
+ST_64 : Operation 169 [11/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 169 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 65 <SV = 61> <Delay = 3.25>
-ST_65 : Operation 170 [1/2] (3.25ns)   --->   "%weight_V_load = load i40* %weight_V_addr, align 8" [./layer.h:52]   --->   Operation 170 'load' 'weight_V_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 1536> <RAM>
-ST_65 : Operation 171 [2/2] (3.25ns)   --->   "%input_0_V_load_4 = load i40* %input_0_V_addr_4, align 8" [./layer.h:52]   --->   Operation 171 'load' 'input_0_V_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 1536> <RAM>
+State 65 <SV = 61> <Delay = 4.39>
+ST_65 : Operation 170 [10/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 170 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 66 <SV = 62> <Delay = 8.51>
-ST_66 : Operation 172 [1/1] (0.00ns)   --->   "%sext_ln1118 = sext i40 %weight_V_load to i72" [./layer.h:52]   --->   Operation 172 'sext' 'sext_ln1118' <Predicate = true> <Delay = 0.00>
-ST_66 : Operation 173 [1/1] (8.51ns)   --->   "%mul_ln1118 = mul i72 %sext_ln1118, %zext_ln1118" [./layer.h:52]   --->   Operation 173 'mul' 'mul_ln1118' <Predicate = true> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_66 : Operation 174 [1/2] (3.25ns)   --->   "%input_0_V_load_4 = load i40* %input_0_V_addr_4, align 8" [./layer.h:52]   --->   Operation 174 'load' 'input_0_V_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 1536> <RAM>
+State 66 <SV = 62> <Delay = 4.39>
+ST_66 : Operation 171 [9/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 171 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 67 <SV = 63> <Delay = 6.97>
-ST_67 : Operation 175 [1/1] (0.00ns)   --->   "%sext_ln1116 = sext i40 %input_0_V_load_4 to i72" [./layer.h:52]   --->   Operation 175 'sext' 'sext_ln1116' <Predicate = true> <Delay = 0.00>
-ST_67 : Operation 176 [5/5] (6.97ns)   --->   "%r_V = mul i72 %mul_ln1118, %sext_ln1116" [./layer.h:52]   --->   Operation 176 'mul' 'r_V' <Predicate = true> <Delay = 6.97> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+State 67 <SV = 63> <Delay = 4.39>
+ST_67 : Operation 172 [8/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 172 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 68 <SV = 64> <Delay = 6.97>
-ST_68 : Operation 177 [4/5] (6.97ns)   --->   "%r_V = mul i72 %mul_ln1118, %sext_ln1116" [./layer.h:52]   --->   Operation 177 'mul' 'r_V' <Predicate = true> <Delay = 6.97> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+State 68 <SV = 64> <Delay = 4.39>
+ST_68 : Operation 173 [7/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 173 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 69 <SV = 65> <Delay = 6.97>
-ST_69 : Operation 178 [3/5] (6.97ns)   --->   "%r_V = mul i72 %mul_ln1118, %sext_ln1116" [./layer.h:52]   --->   Operation 178 'mul' 'r_V' <Predicate = true> <Delay = 6.97> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+State 69 <SV = 65> <Delay = 4.39>
+ST_69 : Operation 174 [6/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 174 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 70 <SV = 66> <Delay = 6.97>
-ST_70 : Operation 179 [2/5] (6.97ns)   --->   "%r_V = mul i72 %mul_ln1118, %sext_ln1116" [./layer.h:52]   --->   Operation 179 'mul' 'r_V' <Predicate = true> <Delay = 6.97> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+State 70 <SV = 66> <Delay = 4.39>
+ST_70 : Operation 175 [5/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 175 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 71 <SV = 67> <Delay = 6.97>
-ST_71 : Operation 180 [1/5] (6.97ns)   --->   "%r_V = mul i72 %mul_ln1118, %sext_ln1116" [./layer.h:52]   --->   Operation 180 'mul' 'r_V' <Predicate = true> <Delay = 6.97> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_71 : Operation 181 [1/1] (0.00ns)   --->   "%trunc_ln = call i40 @_ssdm_op_PartSelect.i40.i72.i32.i32(i72 %r_V, i32 32, i32 71)" [./layer.h:52]   --->   Operation 181 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+State 71 <SV = 67> <Delay = 4.39>
+ST_71 : Operation 176 [4/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 176 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 72 <SV = 68> <Delay = 3.25>
-ST_72 : Operation 182 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str24) nounwind" [./layer.h:52]   --->   Operation 182 'specloopname' <Predicate = true> <Delay = 0.00>
-ST_72 : Operation 183 [1/1] (3.25ns)   --->   "store i40 %trunc_ln, i40* %input_0_V_addr_4, align 8" [./layer.h:52]   --->   Operation 183 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 40> <Depth = 1536> <RAM>
-ST_72 : Operation 184 [1/1] (0.00ns)   --->   "br label %2" [./layer.h:51]   --->   Operation 184 'br' <Predicate = true> <Delay = 0.00>
+State 72 <SV = 68> <Delay = 4.39>
+ST_72 : Operation 177 [3/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 177 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 73 <SV = 69> <Delay = 4.39>
+ST_73 : Operation 178 [2/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 178 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 74 <SV = 70> <Delay = 4.39>
+ST_74 : Operation 179 [1/45] (4.39ns)   --->   "%udiv_ln1148 = udiv i41 -1099511627776, %zext_ln1148" [./layer.h:50]   --->   Operation 179 'udiv' 'udiv_ln1148' <Predicate = true> <Delay = 4.39> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 44> <II = 38> <Delay = 4.39> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_74 : Operation 180 [1/1] (0.00ns)   --->   "%variance_V = trunc i41 %udiv_ln1148 to i38" [./layer.h:50]   --->   Operation 180 'trunc' 'variance_V' <Predicate = true> <Delay = 0.00>
+ST_74 : Operation 181 [1/1] (0.00ns)   --->   "%r_V = sext i38 %variance_V to i76" [./layer.h:52]   --->   Operation 181 'sext' 'r_V' <Predicate = true> <Delay = 0.00>
+ST_74 : Operation 182 [1/1] (1.76ns)   --->   "br label %2" [./layer.h:51]   --->   Operation 182 'br' <Predicate = true> <Delay = 1.76>
+
+State 75 <SV = 71> <Delay = 3.25>
+ST_75 : Operation 183 [1/1] (0.00ns)   --->   "%i1_0 = phi i11 [ 0, %ap_fixed_base.exit ], [ %i_1, %_ZN13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit ]"   --->   Operation 183 'phi' 'i1_0' <Predicate = true> <Delay = 0.00>
+ST_75 : Operation 184 [1/1] (1.88ns)   --->   "%icmp_ln51 = icmp eq i11 %i1_0, -512" [./layer.h:51]   --->   Operation 184 'icmp' 'icmp_ln51' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_75 : Operation 185 [1/1] (0.00ns)   --->   "%empty_79 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1536, i64 1536, i64 1536)"   --->   Operation 185 'speclooptripcount' 'empty_79' <Predicate = true> <Delay = 0.00>
+ST_75 : Operation 186 [1/1] (1.63ns)   --->   "%i_1 = add i11 %i1_0, 1" [./layer.h:51]   --->   Operation 186 'add' 'i_1' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_75 : Operation 187 [1/1] (0.00ns)   --->   "br i1 %icmp_ln51, label %3, label %_ZN13ap_fixed_baseILi38ELi18ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEmLILi76ELi36ELb1ELS0_5ELS1_3ELi0EEERS2_RKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit" [./layer.h:51]   --->   Operation 187 'br' <Predicate = true> <Delay = 0.00>
+ST_75 : Operation 188 [1/1] (0.00ns)   --->   "%zext_ln52 = zext i11 %i1_0 to i64" [./layer.h:52]   --->   Operation 188 'zext' 'zext_ln52' <Predicate = (!icmp_ln51)> <Delay = 0.00>
+ST_75 : Operation 189 [1/1] (0.00ns)   --->   "%weight_V_addr = getelementptr [1536 x i38]* %weight_V, i64 0, i64 %zext_ln52" [./layer.h:52]   --->   Operation 189 'getelementptr' 'weight_V_addr' <Predicate = (!icmp_ln51)> <Delay = 0.00>
+ST_75 : Operation 190 [2/2] (3.25ns)   --->   "%weight_V_load = load i38* %weight_V_addr, align 8" [./layer.h:52]   --->   Operation 190 'load' 'weight_V_load' <Predicate = (!icmp_ln51)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 1536> <RAM>
+ST_75 : Operation 191 [1/1] (0.00ns)   --->   "%input_0_V_addr_4 = getelementptr [1536 x i38]* %input_0_V, i64 0, i64 %zext_ln52" [./layer.h:52]   --->   Operation 191 'getelementptr' 'input_0_V_addr_4' <Predicate = (!icmp_ln51)> <Delay = 0.00>
+ST_75 : Operation 192 [1/1] (0.00ns)   --->   "ret void" [./layer.h:53]   --->   Operation 192 'ret' <Predicate = (icmp_ln51)> <Delay = 0.00>
+
+State 76 <SV = 72> <Delay = 3.25>
+ST_76 : Operation 193 [1/2] (3.25ns)   --->   "%weight_V_load = load i38* %weight_V_addr, align 8" [./layer.h:52]   --->   Operation 193 'load' 'weight_V_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 1536> <RAM>
+ST_76 : Operation 194 [2/2] (3.25ns)   --->   "%input_0_V_load_4 = load i38* %input_0_V_addr_4, align 8" [./layer.h:52]   --->   Operation 194 'load' 'input_0_V_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 1536> <RAM>
+
+State 77 <SV = 73> <Delay = 8.69>
+ST_77 : Operation 195 [1/1] (0.00ns)   --->   "%sext_ln1118 = sext i38 %weight_V_load to i76" [./layer.h:52]   --->   Operation 195 'sext' 'sext_ln1118' <Predicate = true> <Delay = 0.00>
+ST_77 : Operation 196 [1/1] (8.69ns)   --->   "%r_V_1 = mul nsw i76 %sext_ln1118, %r_V" [./layer.h:52]   --->   Operation 196 'mul' 'r_V_1' <Predicate = true> <Delay = 8.69> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.69> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_77 : Operation 197 [1/2] (3.25ns)   --->   "%input_0_V_load_4 = load i38* %input_0_V_addr_4, align 8" [./layer.h:52]   --->   Operation 197 'load' 'input_0_V_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 1536> <RAM>
+
+State 78 <SV = 74> <Delay = 6.97>
+ST_78 : Operation 198 [1/1] (0.00ns)   --->   "%sext_ln1116 = sext i38 %input_0_V_load_4 to i78" [./layer.h:52]   --->   Operation 198 'sext' 'sext_ln1116' <Predicate = true> <Delay = 0.00>
+ST_78 : Operation 199 [1/1] (0.00ns)   --->   "%sext_ln1118_2 = sext i76 %r_V_1 to i78" [./layer.h:52]   --->   Operation 199 'sext' 'sext_ln1118_2' <Predicate = true> <Delay = 0.00>
+ST_78 : Operation 200 [5/5] (6.97ns)   --->   "%r_V_3 = mul i78 %sext_ln1118_2, %sext_ln1116" [./layer.h:52]   --->   Operation 200 'mul' 'r_V_3' <Predicate = true> <Delay = 6.97> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 79 <SV = 75> <Delay = 6.97>
+ST_79 : Operation 201 [4/5] (6.97ns)   --->   "%r_V_3 = mul i78 %sext_ln1118_2, %sext_ln1116" [./layer.h:52]   --->   Operation 201 'mul' 'r_V_3' <Predicate = true> <Delay = 6.97> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 80 <SV = 76> <Delay = 6.97>
+ST_80 : Operation 202 [3/5] (6.97ns)   --->   "%r_V_3 = mul i78 %sext_ln1118_2, %sext_ln1116" [./layer.h:52]   --->   Operation 202 'mul' 'r_V_3' <Predicate = true> <Delay = 6.97> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 81 <SV = 77> <Delay = 6.97>
+ST_81 : Operation 203 [2/5] (6.97ns)   --->   "%r_V_3 = mul i78 %sext_ln1118_2, %sext_ln1116" [./layer.h:52]   --->   Operation 203 'mul' 'r_V_3' <Predicate = true> <Delay = 6.97> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 82 <SV = 78> <Delay = 6.97>
+ST_82 : Operation 204 [1/5] (6.97ns)   --->   "%r_V_3 = mul i78 %sext_ln1118_2, %sext_ln1116" [./layer.h:52]   --->   Operation 204 'mul' 'r_V_3' <Predicate = true> <Delay = 6.97> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 4> <II = 1> <Delay = 6.97> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_82 : Operation 205 [1/1] (0.00ns)   --->   "%trunc_ln = call i38 @_ssdm_op_PartSelect.i38.i78.i32.i32(i78 %r_V_3, i32 40, i32 77)" [./layer.h:52]   --->   Operation 205 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+
+State 83 <SV = 79> <Delay = 3.25>
+ST_83 : Operation 206 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str24) nounwind" [./layer.h:52]   --->   Operation 206 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_83 : Operation 207 [1/1] (3.25ns)   --->   "store i38 %trunc_ln, i38* %input_0_V_addr_4, align 8" [./layer.h:52]   --->   Operation 207 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 38> <Depth = 1536> <RAM>
+ST_83 : Operation 208 [1/1] (0.00ns)   --->   "br label %2" [./layer.h:51]   --->   Operation 208 'br' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -417,295 +463,339 @@ Target clock period: 10ns, clock uncertainty: 1.25ns.
 The critical path consists of the following:
 	multiplexor before 'phi' operation ('variance.V') with incoming values : ('variance.V', ./layer.h:47) [5]  (1.77 ns)
 
- <State 2>: 6.91ns
+ <State 2>: 8.51ns
 The critical path consists of the following:
 	'phi' operation ('variance.V') with incoming values : ('variance.V', ./layer.h:47) [5]  (0 ns)
-	'mul' operation ('mul_ln1148', ./layer.h:50) [24]  (6.91 ns)
+	'mul' operation ('mul_ln1148', ./layer.h:50) [24]  (8.51 ns)
 
  <State 3>: 3.25ns
 The critical path consists of the following:
 	'load' operation ('input_0_V_load', ./layer.h:47) on array 'input_0_V' [15]  (3.25 ns)
 
- <State 4>: 8.51ns
+ <State 4>: 8.69ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln1192', ./layer.h:47) [18]  (8.51 ns)
+	'mul' operation ('mul_ln1192', ./layer.h:47) [18]  (8.69 ns)
 
- <State 5>: 3.31ns
+ <State 5>: 3.37ns
 The critical path consists of the following:
-	'add' operation ('ret.V', ./layer.h:47) [19]  (3.31 ns)
+	'add' operation ('ret.V', ./layer.h:47) [19]  (3.37 ns)
 
- <State 6>: 6.91ns
+ <State 6>: 6.33ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln1148', ./layer.h:50) [24]  (6.91 ns)
-
- <State 7>: 7.27ns
-The critical path consists of the following:
-	'sub' operation ('sub_ln1148', ./layer.h:50) [25]  (4.01 ns)
+	'sub' operation ('sub_ln1148', ./layer.h:50) [25]  (3.89 ns)
 	'select' operation ('select_ln1148', ./layer.h:50) [29]  (0 ns)
-	'sub' operation ('sub_ln1227', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) [30]  (2.49 ns)
-	'select' operation ('select_ln1148_1', ./layer.h:50) [31]  (0.768 ns)
+	'sub' operation ('sub_ln703', ./layer.h:50) [30]  (2.43 ns)
 
- <State 8>: 8.73ns
+ <State 7>: 2.43ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'select' operation ('select_ln1148_1', ./layer.h:50) [31]  (0 ns)
+	'add' operation ('ret.V', ./layer.h:50) [32]  (2.43 ns)
 
- <State 9>: 8.73ns
+ <State 8>: 7.71ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (7.71 ns)
 
- <State 10>: 8.73ns
+ <State 9>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 11>: 8.73ns
+ <State 10>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 12>: 8.73ns
+ <State 11>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 13>: 8.73ns
+ <State 12>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 14>: 8.73ns
+ <State 13>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 15>: 8.73ns
+ <State 14>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 16>: 8.73ns
+ <State 15>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 17>: 8.73ns
+ <State 16>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 18>: 8.73ns
+ <State 17>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 19>: 8.73ns
+ <State 18>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 20>: 8.73ns
+ <State 19>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 21>: 8.73ns
+ <State 20>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 22>: 8.73ns
+ <State 21>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 23>: 8.73ns
+ <State 22>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 24>: 8.73ns
+ <State 23>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 25>: 8.73ns
+ <State 24>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (8.73 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 26>: 7.94ns
+ <State 25>: 8.69ns
 The critical path consists of the following:
-	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<42, 26>' [32]  (7.94 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 27>: 4.16ns
+ <State 26>: 8.69ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 28>: 4.16ns
+ <State 27>: 8.69ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 29>: 4.16ns
+ <State 28>: 8.69ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (8.69 ns)
 
- <State 30>: 4.16ns
+ <State 29>: 4.68ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'call' operation ('agg_result_V_i', /opt/xilinx/Vivado/2019.2/common/technology/autopilot/hls_math.h:1227->./layer.h:50) to 'sqrt_fixed<40, 20>' [33]  (4.68 ns)
 
- <State 31>: 4.16ns
+ <State 30>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 32>: 4.16ns
+ <State 31>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 33>: 4.16ns
+ <State 32>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 34>: 4.16ns
+ <State 33>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 35>: 4.16ns
+ <State 34>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 36>: 4.16ns
+ <State 35>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 37>: 4.16ns
+ <State 36>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 38>: 4.16ns
+ <State 37>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 39>: 4.16ns
+ <State 38>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 40>: 4.16ns
+ <State 39>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 41>: 4.16ns
+ <State 40>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 42>: 4.16ns
+ <State 41>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 43>: 4.16ns
+ <State 42>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 44>: 4.16ns
+ <State 43>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 45>: 4.16ns
+ <State 44>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 46>: 4.16ns
+ <State 45>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 47>: 4.16ns
+ <State 46>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 48>: 4.16ns
+ <State 47>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 49>: 4.16ns
+ <State 48>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 50>: 4.16ns
+ <State 49>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 51>: 4.16ns
+ <State 50>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 52>: 4.16ns
+ <State 51>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 53>: 4.16ns
+ <State 52>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 54>: 4.16ns
+ <State 53>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 55>: 4.16ns
+ <State 54>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 56>: 4.16ns
+ <State 55>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 57>: 4.16ns
+ <State 56>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 58>: 4.16ns
+ <State 57>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 59>: 4.16ns
+ <State 58>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 60>: 4.16ns
+ <State 59>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 61>: 4.16ns
+ <State 60>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 62>: 4.16ns
+ <State 61>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 63>: 4.16ns
+ <State 62>: 4.4ns
 The critical path consists of the following:
-	'udiv' operation ('udiv_ln703', ./layer.h:50) [34]  (4.16 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 64>: 3.25ns
+ <State 63>: 4.4ns
 The critical path consists of the following:
-	'phi' operation ('i') with incoming values : ('i', ./layer.h:51) [38]  (0 ns)
-	'getelementptr' operation ('weight_V_addr', ./layer.h:52) [46]  (0 ns)
-	'load' operation ('weight_V_load', ./layer.h:52) on array 'weight_V' [47]  (3.25 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 65>: 3.25ns
+ <State 64>: 4.4ns
 The critical path consists of the following:
-	'load' operation ('weight_V_load', ./layer.h:52) on array 'weight_V' [47]  (3.25 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 66>: 8.51ns
+ <State 65>: 4.4ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln1118', ./layer.h:52) [49]  (8.51 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 67>: 6.98ns
+ <State 66>: 4.4ns
 The critical path consists of the following:
-	'mul' operation ('r.V', ./layer.h:52) [53]  (6.98 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 68>: 6.98ns
+ <State 67>: 4.4ns
 The critical path consists of the following:
-	'mul' operation ('r.V', ./layer.h:52) [53]  (6.98 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 69>: 6.98ns
+ <State 68>: 4.4ns
 The critical path consists of the following:
-	'mul' operation ('r.V', ./layer.h:52) [53]  (6.98 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 70>: 6.98ns
+ <State 69>: 4.4ns
 The critical path consists of the following:
-	'mul' operation ('r.V', ./layer.h:52) [53]  (6.98 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 71>: 6.98ns
+ <State 70>: 4.4ns
 The critical path consists of the following:
-	'mul' operation ('r.V', ./layer.h:52) [53]  (6.98 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
 
- <State 72>: 3.25ns
+ <State 71>: 4.4ns
 The critical path consists of the following:
-	'store' operation ('store_ln52', ./layer.h:52) of variable 'trunc_ln', ./layer.h:52 on array 'input_0_V' [55]  (3.25 ns)
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
+
+ <State 72>: 4.4ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
+
+ <State 73>: 4.4ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
+
+ <State 74>: 4.4ns
+The critical path consists of the following:
+	'udiv' operation ('udiv_ln1148', ./layer.h:50) [35]  (4.4 ns)
+
+ <State 75>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ./layer.h:51) [40]  (0 ns)
+	'getelementptr' operation ('weight_V_addr', ./layer.h:52) [48]  (0 ns)
+	'load' operation ('weight_V_load', ./layer.h:52) on array 'weight_V' [49]  (3.25 ns)
+
+ <State 76>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('weight_V_load', ./layer.h:52) on array 'weight_V' [49]  (3.25 ns)
+
+ <State 77>: 8.69ns
+The critical path consists of the following:
+	'mul' operation ('r.V', ./layer.h:52) [51]  (8.69 ns)
+
+ <State 78>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('r.V', ./layer.h:52) [56]  (6.98 ns)
+
+ <State 79>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('r.V', ./layer.h:52) [56]  (6.98 ns)
+
+ <State 80>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('r.V', ./layer.h:52) [56]  (6.98 ns)
+
+ <State 81>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('r.V', ./layer.h:52) [56]  (6.98 ns)
+
+ <State 82>: 6.98ns
+The critical path consists of the following:
+	'mul' operation ('r.V', ./layer.h:52) [56]  (6.98 ns)
+
+ <State 83>: 3.25ns
+The critical path consists of the following:
+	'store' operation ('store_ln52', ./layer.h:52) of variable 'trunc_ln', ./layer.h:52 on array 'input_0_V' [58]  (3.25 ns)
 
 
 ============================================================
@@ -788,6 +878,17 @@ N/A
 	State 70
 	State 71
 	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+	State 81
+	State 82
+	State 83
 
 
 ============================================================
