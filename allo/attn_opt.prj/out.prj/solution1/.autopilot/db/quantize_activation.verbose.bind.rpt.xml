@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'quantize_activation'" level="0">
-<item name = "Date">Sat Nov 30 20:58:30 2024
+<item name = "Date">Thu Dec  5 02:39:22 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">out.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.510 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 8.685 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">13093, 13093, 0.131 ms, 0.131 ms, 13093, 13093, none</column>
+<column name="">33043, 33043, 0.330 ms, 0.330 ms, 33043, 33043, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,9 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_S_j_0_j">4608, 4608, 3, -, -, 1536, no</column>
-<column name="- l_S_j_1_j1">8448, 8448, 22, -, -, 384, no</column>
-<column name=" + l_S_l_1_l">20, 20, 5, -, -, 4, no</column>
+<column name="- l_S_j_0_j">7680, 7680, 5, -, -, 1536, no</column>
+<column name="- l_S_j_1_j1">25344, 25344, 66, -, -, 384, no</column>
+<column name=" + l_S_l_1_l">64, 64, 16, -, -, 4, no</column>
 </table>
 </item>
 </section>

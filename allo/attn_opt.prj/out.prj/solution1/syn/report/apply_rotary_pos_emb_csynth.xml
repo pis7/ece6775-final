@@ -17,18 +17,18 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>8.510</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.501</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>11653</Best-caseLatency>
-<Average-caseLatency>11653</Average-caseLatency>
-<Worst-caseLatency>11653</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.117 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.117 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.117 ms</Worst-caseRealTimeLatency>
-<Interval-min>11653</Interval-min>
-<Interval-max>11653</Interval-max>
+<Best-caseLatency>23173</Best-caseLatency>
+<Average-caseLatency>23173</Average-caseLatency>
+<Worst-caseLatency>23173</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.232 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.232 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.232 ms</Worst-caseRealTimeLatency>
+<Interval-min>23173</Interval-min>
+<Interval-max>23173</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
@@ -53,12 +53,12 @@
 </Loop2>
 <l_S_h_0_h2>
 <TripCount>16</TripCount>
-<Latency>6176</Latency>
-<IterationLatency>386</IterationLatency>
+<Latency>18464</Latency>
+<IterationLatency>1154</IterationLatency>
 <l_S_d_0_d2>
 <TripCount>96</TripCount>
-<Latency>384</Latency>
-<IterationLatency>4</IterationLatency>
+<Latency>1152</Latency>
+<IterationLatency>12</IterationLatency>
 </l_S_d_0_d2>
 </l_S_h_0_h2>
 </SummaryOfLoopLatency>
@@ -68,8 +68,8 @@
 <Resources>
 <BRAM_18K>8</BRAM_18K>
 <DSP48E>16</DSP48E>
-<FF>864</FF>
-<LUT>1189</LUT>
+<FF>1852</FF>
+<LUT>3067</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -149,8 +149,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v155_V_address0</name>
-<Object>v155_V</Object>
+<name>v162_address0</name>
+<Object>v162</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -160,8 +160,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v155_V_ce0</name>
-<Object>v155_V</Object>
+<name>v162_ce0</name>
+<Object>v162</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -171,8 +171,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v155_V_q0</name>
-<Object>v155_V</Object>
+<name>v162_q0</name>
+<Object>v162</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -182,8 +182,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v156_V_address0</name>
-<Object>v156_V</Object>
+<name>v163_address0</name>
+<Object>v163</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -193,8 +193,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v156_V_ce0</name>
-<Object>v156_V</Object>
+<name>v163_ce0</name>
+<Object>v163</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -204,8 +204,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v156_V_q0</name>
-<Object>v156_V</Object>
+<name>v163_q0</name>
+<Object>v163</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -215,8 +215,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v157_0_V_address0</name>
-<Object>v157_0_V</Object>
+<name>v164_0_address0</name>
+<Object>v164_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -226,8 +226,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v157_0_V_ce0</name>
-<Object>v157_0_V</Object>
+<name>v164_0_ce0</name>
+<Object>v164_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -237,8 +237,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v157_0_V_we0</name>
-<Object>v157_0_V</Object>
+<name>v164_0_we0</name>
+<Object>v164_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -248,8 +248,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v157_0_V_d0</name>
-<Object>v157_0_V</Object>
+<name>v164_0_d0</name>
+<Object>v164_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -259,8 +259,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v158_0_V_address0</name>
-<Object>v158_0_V</Object>
+<name>v165_0_address0</name>
+<Object>v165_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -270,8 +270,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v158_0_V_ce0</name>
-<Object>v158_0_V</Object>
+<name>v165_0_ce0</name>
+<Object>v165_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -281,8 +281,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v158_0_V_we0</name>
-<Object>v158_0_V</Object>
+<name>v165_0_we0</name>
+<Object>v165_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -292,8 +292,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>v158_0_V_d0</name>
-<Object>v158_0_V</Object>
+<name>v165_0_d0</name>
+<Object>v165_0</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -303,8 +303,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>q_proj_V_0_address0</name>
-<Object>q_proj_V_0</Object>
+<name>q_proj_0_address0</name>
+<Object>q_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -314,8 +314,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>q_proj_V_0_ce0</name>
-<Object>q_proj_V_0</Object>
+<name>q_proj_0_ce0</name>
+<Object>q_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -325,8 +325,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>q_proj_V_0_q0</name>
-<Object>q_proj_V_0</Object>
+<name>q_proj_0_q0</name>
+<Object>q_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -336,8 +336,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>q_proj_V_0_address1</name>
-<Object>q_proj_V_0</Object>
+<name>q_proj_0_address1</name>
+<Object>q_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -347,8 +347,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>q_proj_V_0_ce1</name>
-<Object>q_proj_V_0</Object>
+<name>q_proj_0_ce1</name>
+<Object>q_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -358,8 +358,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>q_proj_V_0_q1</name>
-<Object>q_proj_V_0</Object>
+<name>q_proj_0_q1</name>
+<Object>q_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -369,8 +369,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>k_proj_V_0_address0</name>
-<Object>k_proj_V_0</Object>
+<name>k_proj_0_address0</name>
+<Object>k_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -380,8 +380,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>k_proj_V_0_ce0</name>
-<Object>k_proj_V_0</Object>
+<name>k_proj_0_ce0</name>
+<Object>k_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -391,8 +391,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>k_proj_V_0_q0</name>
-<Object>k_proj_V_0</Object>
+<name>k_proj_0_q0</name>
+<Object>k_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -402,8 +402,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>k_proj_V_0_address1</name>
-<Object>k_proj_V_0</Object>
+<name>k_proj_0_address1</name>
+<Object>k_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -413,8 +413,8 @@
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>k_proj_V_0_ce1</name>
-<Object>k_proj_V_0</Object>
+<name>k_proj_0_ce1</name>
+<Object>k_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -424,8 +424,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>k_proj_V_0_q1</name>
-<Object>k_proj_V_0</Object>
+<name>k_proj_0_q1</name>
+<Object>k_proj_0</Object>
 <Type>array</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_memory</IOProtocol>

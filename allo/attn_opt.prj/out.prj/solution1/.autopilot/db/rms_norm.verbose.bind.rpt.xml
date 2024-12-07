@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'rms_norm'" level="0">
-<item name = "Date">Sat Nov 30 20:58:29 2024
+<item name = "Date">Thu Dec  5 02:39:22 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">out.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.664 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 9.386 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,20 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">13861, 13947, 0.139 ms, 0.139 ms, 13861, 13947, none</column>
+<column name="">33854, 33854, 0.339 ms, 0.339 ms, 33854, 33854, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_pow_32_20_s_fu_163">pow_32_20_s, 1, 87, 10.000 ns, 0.870 us, 1, 87, none</column>
+<column name="grp_pow_generic_float_s_fu_137">pow_generic_float_s, 24, 24, 0.240 us, 0.240 us, 1, 1, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- l_S_i_0_i">6144, 6144, 4, -, -, 1536, no</column>
-<column name="- l_S_i_1_i1">7680, 7680, 5, -, -, 1536, no</column>
+<column name="- l_S_i_0_i">16896, 16896, 11, -, -, 1536, no</column>
+<column name="- l_S_i_1_i1">16896, 16896, 11, -, -, 1536, no</column>
 </table>
 </item>
 </section>

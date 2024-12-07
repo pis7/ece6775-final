@@ -1,29 +1,30 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 305
-set name attention_sdiv_44Ee0
-set corename simcore_sdiv_seq
-set op sdiv
-set stage_num 48
+set id 84
+set name attention_faddfsuxdS
+set corename simcore_faddfsub
+set op faddfsub
+set stage_num 5
 set max_latency -1
 set registered_input 1
+set impl_style full_dsp
+set Futype4reduceCEFanout 1
 set clk_width 1
 set clk_signed 0
 set reset_width 1
 set reset_signed 0
-set start_width 1
-set start_signed 0
-set done_width 1
-set in0_width 44
+set in0_width 32
 set in0_signed 0
 set in1_width 32
-set in1_signed 1
+set in1_signed 0
+set opcode_width 2
+set opcode_signed 0
 set ce_width 1
 set ce_signed 0
 set out_width 32
 if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_sdiv] == "ap_gen_simcore_sdiv"} {
-eval "ap_gen_simcore_sdiv { \
+if {[info proc ap_gen_simcore_faddfsub] == "ap_gen_simcore_faddfsub"} {
+eval "ap_gen_simcore_faddfsub { \
     id ${id} \
     name ${name} \
     corename ${corename} \
@@ -33,23 +34,24 @@ eval "ap_gen_simcore_sdiv { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    style ${impl_style} \
+    Futype4reduceCEFanout ${Futype4reduceCEFanout} \
     clk_width ${clk_width} \
     clk_signed ${clk_signed} \
     reset_width ${reset_width} \
     reset_signed ${reset_signed} \
-    start_width ${start_width} \
-    start_signed ${start_signed} \
-    done_width ${done_width} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    opcode_width ${opcode_width} \
+    opcode_signed ${opcode_signed} \
     ce_width ${ce_width} \
     ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_sdiv, check your AutoPilot builtin lib"
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_faddfsub, check your AutoPilot builtin lib"
 }
 }
 
@@ -59,11 +61,11 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-set op sdiv
-set corename DivnS_SEQ
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_div] == "::AESL_LIB_VIRTEX::xil_gen_div"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_div { \
+set op faddfsub
+set corename FAddSub
+if {${::AESL::PGuard_autocg_gen} && (${::AESL::PGuard_autocg_fpip} || ${::AESL::PGuard_autocg_fpv6en} || ${::AESL::PGuard_autocg_hpen})} {
+if {[info proc ::AESL_LIB_XILINX_FPV6::fpv6_gen] == "::AESL_LIB_XILINX_FPV6::fpv6_gen"} {
+eval "::AESL_LIB_XILINX_FPV6::fpv6_gen { \
     id ${id} \
     name ${name} \
     corename ${corename} \
@@ -73,23 +75,24 @@ eval "::AESL_LIB_VIRTEX::xil_gen_div { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    style ${impl_style} \
+    Futype4reduceCEFanout ${Futype4reduceCEFanout} \
     clk_width ${clk_width} \
     clk_signed ${clk_signed} \
     reset_width ${reset_width} \
     reset_signed ${reset_signed} \
-    start_width ${start_width} \
-    start_signed ${start_signed} \
-    done_width ${done_width} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    opcode_width ${opcode_width} \
+    opcode_signed ${opcode_signed} \
     ce_width ${ce_width} \
     ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your platform lib"
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your platform lib"
 }
 }
 
@@ -105,17 +108,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 307 \
-    name v217_0_V \
+    id 88 \
+    name v224_0 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename v217_0_V \
+    corename v224_0 \
     op interface \
-    ports { v217_0_V_address0 { O 7 vector } v217_0_V_ce0 { O 1 bit } v217_0_V_q0 { I 32 vector } } \
+    ports { v224_0_address0 { O 7 vector } v224_0_ce0 { O 1 bit } v224_0_q0 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v217_0_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v224_0'"
 }
 }
 
@@ -124,17 +127,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 308 \
-    name v218_0_V \
+    id 89 \
+    name v225_0 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename v218_0_V \
+    corename v225_0 \
     op interface \
-    ports { v218_0_V_address0 { O 7 vector } v218_0_V_ce0 { O 1 bit } v218_0_V_we0 { O 1 bit } v218_0_V_d0 { O 32 vector } v218_0_V_q0 { I 32 vector } } \
+    ports { v225_0_address0 { O 7 vector } v225_0_ce0 { O 1 bit } v225_0_we0 { O 1 bit } v225_0_d0 { O 32 vector } v225_0_q0 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v218_0_V'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'v225_0'"
 }
 }
 

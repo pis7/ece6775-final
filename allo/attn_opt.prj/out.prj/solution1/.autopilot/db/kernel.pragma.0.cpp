@@ -35909,43 +35909,43 @@ class stream
 
 using namespace std;
 void rms_norm(
-  ap_fixed<32, 20> v0[1][1536],
-  ap_fixed<32, 20> v1[1536],
-  ap_fixed<32, 20> v2,
-  ap_fixed<32, 20> v3[1][1536]
+  float v0[1][1536],
+  float v1[1536],
+  float v2,
+  float v3[1][1536]
 ) {_ssdm_SpecArrayDimSize(v0, 1);_ssdm_SpecArrayDimSize(v1, 1536);_ssdm_SpecArrayDimSize(v3, 1);
   l_S_index_0_index: for (int index = 0; index < 1; index++) {
-    ap_fixed<32, 20> variance;
-    variance = (ap_fixed<32, 20>)0.000000;
+    float variance;
+    variance = (float)0.000000;
     l_S_i_0_i: for (int i = 0; i < 1536; i++) {
-      ap_fixed<32, 20> v7 = v0[index][i];
-      ap_fixed<32, 20> v8 = v7 * v7;
-      ap_fixed<32, 20> v9 = variance;
-      ap_fixed<32, 20> v10 = v9 + v8;
+      float v7 = v0[index][i];
+      float v8 = v7 * v7;
+      float v9 = variance;
+      float v10 = v9 + v8;
       variance = v10;
     }
-    ap_fixed<32, 20> v11 = variance;
-    ap_fixed<32, 20> v12 = v11 / (ap_fixed<32, 20>)1536.000000;
-    ap_fixed<32, 20> v13 = v12 + v2;
-    ap_fixed<32, 20> v14 = hls::pow(v13, (ap_fixed<32, 20>)0.500000);
-    ap_fixed<32, 20> v15 = (ap_fixed<32, 20>)1.000000 / v14;
+    float v11 = variance;
+    float v12 = v11 / (float)1536.000000;
+    float v13 = v12 + v2;
+    float v14 = pow(v13, (float)0.500000);
+    float v15 = (float)1.000000 / v14;
     variance = v15;
     l_S_i_1_i1: for (int i1 = 0; i1 < 1536; i1++) {
-      ap_fixed<32, 20> v17 = v0[index][i1];
-      ap_fixed<32, 20> v18 = v1[i1];
-      ap_fixed<32, 20> v19 = v17 * v18;
-      ap_fixed<32, 20> v20 = variance;
-      ap_fixed<32, 20> v21 = v19 * v20;
+      float v17 = v0[index][i1];
+      float v18 = v1[i1];
+      float v19 = v17 * v18;
+      float v20 = variance;
+      float v21 = v19 * v20;
       v3[index][i1] = v21;
     }
   }
 }
 
 void quantize_activation(
-  ap_fixed<32, 20> v22[1][1536],
+  float v22[1][1536],
   int32_t v23,
   int8_t v24[1][384][4],
-  ap_fixed<32, 20> v25[1]
+  float v25[1]
 ) {_ssdm_SpecArrayDimSize(v22, 1);_ssdm_SpecArrayDimSize(v24, 1);_ssdm_SpecArrayDimSize(v25, 1);
   ap_int<33> v26 = v23;
   ap_int<33> v27 = v26 - 1;
@@ -35960,44 +35960,44 @@ void quantize_activation(
   int32_t Qp;
   Qp = v34;
   l_S_i_0_i2: for (int i2 = 0; i2 < 1; i2++) {
-    ap_fixed<32, 20> max_val;
-    max_val = (ap_fixed<32, 20>)0.000000;
+    float max_val;
+    max_val = (float)0.000000;
     l_S_j_0_j: for (int j = 0; j < 1536; j++) {
-      ap_fixed<32, 20> v39 = v22[i2][j];
-      bool v40 = v39 > (ap_fixed<32, 20>)0.000000;
-      ap_fixed<32, 20> v41 = v39 * (ap_fixed<32, 20>)-1.000000;
-      ap_fixed<32, 20> v42 = v40 ? (ap_fixed<32, 20>)v39 : (ap_fixed<32, 20>)v41;
-      ap_fixed<32, 20> input_abs;
+      float v39 = v22[i2][j];
+      bool v40 = v39 > (float)0.000000;
+      float v41 = v39 * (float)-1.000000;
+      float v42 = v40 ? (float)v39 : (float)v41;
+      float input_abs;
       input_abs = v42;
-      ap_fixed<32, 20> v44 = input_abs;
-      ap_fixed<32, 20> v45 = max_val;
+      float v44 = input_abs;
+      float v45 = max_val;
       bool v46 = v45 < v44;
       if (v46) {
-        ap_fixed<32, 20> v47 = input_abs;
+        float v47 = input_abs;
         max_val = v47;
       }
     }
-    ap_fixed<32, 20> v48 = max_val;
-    ap_fixed<32, 20> v49 = max(v48, (ap_fixed<32, 20>)0.000010);
-    ap_fixed<32, 20> max_v;
+    float v48 = max_val;
+    float v49 = max(v48, (float)0.000010);
+    float max_v;
     max_v = v49;
     int32_t v51 = Qp;
-    ap_fixed<32, 20> v52 = v51;
-    ap_fixed<32, 20> v53 = max_v;
-    ap_fixed<32, 20> v54 = v52 / v53;
-    ap_fixed<32, 20> scale;
+    float v52 = v51;
+    float v53 = max_v;
+    float v54 = v52 / v53;
+    float scale;
     scale = v54;
-    ap_fixed<32, 20> v56 = scale;
+    float v56 = scale;
     v25[i2] = v56;
     l_S_j_1_j1: for (int j1 = 0; j1 < 384; j1++) {
       l_S_l_1_l: for (int l = 0; l < 4; l++) {
-        ap_fixed<32, 20> v59 = v22[i2][((j1 * 4) + l)];
-        ap_fixed<32, 20> v60 = scale;
-        ap_fixed<32, 20> v61 = v59 * v60;
-        bool v62 = v61 > (ap_fixed<32, 20>)0.000000;
-        ap_fixed<32, 20> v63 = v61 + (ap_fixed<32, 20>)0.500000;
-        ap_fixed<32, 20> v64 = v61 - (ap_fixed<32, 20>)0.500000;
-        ap_fixed<32, 20> v65 = v62 ? (ap_fixed<32, 20>)v63 : (ap_fixed<32, 20>)v64;
+        float v59 = v22[i2][((j1 * 4) + l)];
+        float v60 = scale;
+        float v61 = v59 * v60;
+        bool v62 = v61 > (float)0.000000;
+        float v63 = v61 + (float)0.500000;
+        float v64 = v61 - (float)0.500000;
+        float v65 = v62 ? (float)v63 : (float)v64;
         int32_t v66 = v65;
         int32_t quantized_value;
         quantized_value = v66;
@@ -36020,198 +36020,206 @@ void quantize_activation(
 
 void linear_forward_no_mul(
   int8_t v78[1][384][4],
-  ap_fixed<32, 20> v79[1],
+  ap_fixed<32, 12> v79[1],
   uint8_t v80[384][1536],
-  ap_fixed<32, 20> v81,
-  ap_fixed<32, 20> v82[1][1536]
+  ap_fixed<32, 12> v81,
+  float v82[1][1536]
 ) {_ssdm_SpecArrayDimSize(v78, 1);_ssdm_SpecArrayDimSize(v79, 1);_ssdm_SpecArrayDimSize(v80, 384);_ssdm_SpecArrayDimSize(v82, 1);
-#pragma HLS ARRAY_PARTITION variable=&v78 complete dim=3
-#pragma HLS ARRAY_PARTITION variable=&v78 cyclic dim=2 factor=24
-#pragma HLS ARRAY_PARTITION variable=&v80 cyclic dim=1 factor=24
+#pragma HLS array_partition variable=&v78 cyclic dim=2 factor=2
+
+#pragma HLS array_partition variable=&v80 cyclic dim=1 factor=2
+
  l_S_i_0_i3: for (int i3 = 0; i3 < 1; i3++) {
     l_S_j_0_j2: for (int j2 = 0; j2 < 1536; j2++) {
-      ap_fixed<32, 20> local_acum;
-      local_acum = (ap_fixed<32, 20>)0.000000;
-      l_S_k0_0_k0: for (int k0 = 0; k0 < 16; k0++) {
+      ap_fixed<35, 20> v85 = 0;
+      ap_fixed<35, 20> local_acum;
+      local_acum = v85;
+      l_S_k0_0_k0: for (int k0 = 0; k0 < 192; k0++) {
 #pragma HLS pipeline II=1
- l_S_k1_0_k1: for (int k1 = 0; k1 < 24; k1++) {
+ l_S_k1_0_k1: for (int k1 = 0; k1 < 2; k1++) {
 #pragma HLS unroll
- int64_t v88 = k0;
-          int64_t v89 = v88 * 8;
-          ap_int<65> v90 = v89;
-          ap_int<65> v91 = k1;
-          ap_int<65> v92 = v90 + v91;
-          int v93 = v92;
+ int64_t v89 = k0;
+          int64_t v90 = v89 * 2;
+          ap_int<65> v91 = v90;
+          ap_int<65> v92 = k1;
+          ap_int<65> v93 = v91 + v92;
+          int v94 = v93;
           int k;
-          k = v93;
-          int v95 = k;
-          int8_t v96 = v80[v95][j2];
+          k = v94;
+          int v96 = k;
+          int8_t v97 = v80[v96][j2];
           int8_t packed_value;
-          packed_value = v96;
-          ap_fixed<32, 20> temp;
-          temp = (ap_fixed<32, 20>)0.000000;
+          packed_value = v97;
+          ap_fixed<35, 20> v99 = 0;
+          ap_fixed<35, 20> temp;
+          temp = v99;
           l_S_l_0_l1: for (int l1 = 0; l1 < 4; l1++) {
 #pragma HLS unroll
- int v100 = k;
-            int64_t v101 = v100;
-            int64_t v102 = v101 * 4;
-            ap_int<65> v103 = l1;
-            ap_int<65> v104 = v102;
-            ap_int<65> v105 = v103 + v104;
-            bool v106 = v105 < 1536;
-            if (v106) {
-              int64_t v107 = l1;
-              int64_t v108 = v107 * 2;
-              int8_t v109 = v108;
-              int8_t v110 = packed_value;
-              int8_t v111 = v110 >> v109;
-              int32_t v112 = v111;
-              int32_t v113 = v112 & 3;
-              int8_t v114 = v113;
+ int v102 = k;
+            int64_t v103 = v102;
+            int64_t v104 = v103 * 4;
+            ap_int<65> v105 = l1;
+            ap_int<65> v106 = v104;
+            ap_int<65> v107 = v105 + v106;
+            bool v108 = v107 < 1536;
+            if (v108) {
+              int64_t v109 = l1;
+              int64_t v110 = v109 * 2;
+              int8_t v111 = v110;
+              int8_t v112 = packed_value;
+              int8_t v113 = v112 >> v111;
+              int32_t v114 = v113;
+              int32_t v115 = v114 & 3;
+              int8_t v116 = v115;
               int8_t value;
-              value = v114;
+              value = v116;
               int8_t weight_value;
               weight_value = 0;
-              int8_t v117 = value;
-              int32_t v118 = v117;
-              bool v119 = v118 == 1;
-              if (v119) {
+              int8_t v119 = value;
+              int32_t v120 = v119;
+              bool v121 = v120 == 1;
+              if (v121) {
                 weight_value = 1;
               } else {
-                int8_t v120 = value;
-                int32_t v121 = v120;
-                bool v122 = v121 == 2;
-                if (v122) {
+                int8_t v122 = value;
+                int32_t v123 = v122;
+                bool v124 = v123 == 2;
+                if (v124) {
                   weight_value = -1;
                 }
               }
-              int v123 = k;
-              int8_t v124 = v78[i3][v123][l1];
-              int16_t v125 = v124;
-              int8_t v126 = weight_value;
+              int v125 = k;
+              int8_t v126 = v78[i3][v125][l1];
               int16_t v127 = v126;
-              int16_t v128 = v125 * v127;
-              ap_fixed<32, 20> v129 = v128;
-              ap_fixed<32, 20> v130 = temp;
-              ap_fixed<32, 20> v131 = v130 + v129;
-              temp = v131;
+              int8_t v128 = weight_value;
+              int16_t v129 = v128;
+              int16_t v130 = v127 * v129;
+              ap_fixed<35, 20> v131 = v130;
+              ap_fixed<35, 20> v132 = temp;
+              ap_fixed<35, 20> v133 = v132 + v131;
+              temp = v133;
             }
           }
-          ap_fixed<32, 20> v132 = local_acum;
-          ap_fixed<32, 20> v133 = temp;
-          ap_fixed<32, 20> v134 = v132 + v133;
-          local_acum = v134;
+          ap_fixed<35, 20> v134 = local_acum;
+          ap_fixed<35, 20> v135 = temp;
+          ap_fixed<35, 20> v136 = v134 + v135;
+          local_acum = v136;
         }
       }
-      ap_fixed<32, 20> v135 = v79[i3];
-      ap_fixed<32, 20> v136 = v135 * v81;
-      ap_fixed<32, 20> v137 = local_acum;
-      ap_fixed<32, 20> v138 = v137 / v136;
-      v82[i3][j2] = v138;
+      ap_fixed<32, 12> v137 = v79[i3];
+      ap_fixed<64, 24> v138 = v137;
+      ap_fixed<64, 24> v139 = v81;
+      ap_fixed<64, 24> v140 = v138 * v139;
+      ap_fixed<35, 20> v141 = local_acum;
+      ap_fixed<99, 60> v142 = v141;
+      ap_fixed<99, 60> v143 = v140;
+      ap_fixed<99, 60> v144 = v142 / v143;
+      float v145 = v144;
+      v82[i3][j2] = v145;
     }
   }
 }
 
 void reshape_2D_to_3D(
-  ap_fixed<32, 20> v139[1][1536],
-  ap_fixed<32, 20> v140[16][1][96]
-) {_ssdm_SpecArrayDimSize(v139, 1);_ssdm_SpecArrayDimSize(v140, 16);
+  float v146[1][1536],
+  float v147[16][1][96]
+) {_ssdm_SpecArrayDimSize(v146, 1);_ssdm_SpecArrayDimSize(v147, 16);
   l_S_s_0_s: for (int s = 0; s < 1; s++) {
     l_S_h_0_h: for (int h = 0; h < 16; h++) {
       l_S_d_0_d: for (int d = 0; d < 96; d++) {
-        ap_fixed<32, 20> v144 = v139[s][((h * 96) + d)];
-        v140[h][s][d] = v144;
+        float v151 = v146[s][((h * 96) + d)];
+        v147[h][s][d] = v151;
       }
     }
   }
 }
 
 void rotate_half(
-  ap_fixed<32, 20> v145[16][1][96],
-  ap_fixed<32, 20> v146[16][1][96]
-) {_ssdm_SpecArrayDimSize(v145, 16);_ssdm_SpecArrayDimSize(v146, 16);
+  float v152[16][1][96],
+  float v153[16][1][96]
+) {_ssdm_SpecArrayDimSize(v152, 16);_ssdm_SpecArrayDimSize(v153, 16);
   l_S_h_0_h1: for (int h1 = 0; h1 < 16; h1++) {
     l_S_s_0_s1: for (int s1 = 0; s1 < 1; s1++) {
       l_S_d_0_d1: for (int d1 = 0; d1 < 48; d1++) {
-        ap_fixed<32, 20> v150 = v145[h1][s1][(d1 + 48)];
-        ap_fixed<32, 20> v151 = v150 * (ap_fixed<32, 20>)-1.000000;
-        v146[h1][s1][d1] = v151;
-        ap_fixed<32, 20> v152 = v145[h1][s1][d1];
-        v146[h1][s1][(d1 + 48)] = v152;
+        float v157 = v152[h1][s1][(d1 + 48)];
+        float v158 = v157 * (float)-1.000000;
+        v153[h1][s1][d1] = v158;
+        float v159 = v152[h1][s1][d1];
+        v153[h1][s1][(d1 + 48)] = v159;
       }
     }
   }
 }
 
 void apply_rotary_pos_emb(
-  ap_fixed<32, 20> v153[16][1][96],
-  ap_fixed<32, 20> v154[16][1][96],
-  ap_fixed<32, 20> v155[10][96],
-  ap_fixed<32, 20> v156[10][96],
-  ap_fixed<32, 20> v157[16][1][96],
-  ap_fixed<32, 20> v158[16][1][96],
-  int32_t v159
-) {_ssdm_SpecArrayDimSize(v153, 16);_ssdm_SpecArrayDimSize(v154, 16);_ssdm_SpecArrayDimSize(v155, 10);_ssdm_SpecArrayDimSize(v156, 10);_ssdm_SpecArrayDimSize(v157, 16);_ssdm_SpecArrayDimSize(v158, 16);
-  ap_fixed<32, 20> rotated_q[16][1][96];
-  for (int v161 = 0; v161 < 16; v161++) {
-    for (int v162 = 0; v162 < 1; v162++) {
-      for (int v163 = 0; v163 < 96; v163++) {
-        rotated_q[v161][v162][v163] = (ap_fixed<32, 20>)0.000000;
+  float v160[16][1][96],
+  float v161[16][1][96],
+  float v162[10][96],
+  float v163[10][96],
+  float v164[16][1][96],
+  float v165[16][1][96],
+  int32_t v166
+) {_ssdm_SpecArrayDimSize(v160, 16);_ssdm_SpecArrayDimSize(v161, 16);_ssdm_SpecArrayDimSize(v162, 10);_ssdm_SpecArrayDimSize(v163, 10);_ssdm_SpecArrayDimSize(v164, 16);_ssdm_SpecArrayDimSize(v165, 16);
+  float rotated_q[16][1][96];
+  for (int v168 = 0; v168 < 16; v168++) {
+    for (int v169 = 0; v169 < 1; v169++) {
+      for (int v170 = 0; v170 < 96; v170++) {
+        rotated_q[v168][v169][v170] = (float)0.000000;
       }
     }
   }
-  ap_fixed<32, 20> rotated_k[16][1][96];
-  for (int v165 = 0; v165 < 16; v165++) {
-    for (int v166 = 0; v166 < 1; v166++) {
-      for (int v167 = 0; v167 < 96; v167++) {
-        rotated_k[v165][v166][v167] = (ap_fixed<32, 20>)0.000000;
+  float rotated_k[16][1][96];
+  for (int v172 = 0; v172 < 16; v172++) {
+    for (int v173 = 0; v173 < 1; v173++) {
+      for (int v174 = 0; v174 < 96; v174++) {
+        rotated_k[v172][v173][v174] = (float)0.000000;
       }
     }
   }
-  rotate_half(v153, rotated_q);
-  rotate_half(v154, rotated_k);
+  rotate_half(v160, rotated_q);
+  rotate_half(v161, rotated_k);
   l_S_h_0_h2: for (int h2 = 0; h2 < 16; h2++) {
     l_S_s_0_s2: for (int s2 = 0; s2 < 1; s2++) {
       l_S_d_0_d2: for (int d2 = 0; d2 < 96; d2++) {
-        ap_fixed<32, 20> v171 = v153[h2][s2][d2];
-        ap_fixed<32, 20> v172 = v155[5][d2];
-        ap_fixed<32, 20> v173 = v171 * v172;
-        ap_fixed<32, 20> v174 = rotated_q[h2][s2][d2];
-        ap_fixed<32, 20> v175 = v156[5][d2];
-        ap_fixed<32, 20> v176 = v174 * v175;
-        ap_fixed<32, 20> v177 = v173 + v176;
-        v157[h2][s2][d2] = v177;
-        ap_fixed<32, 20> v178 = v154[h2][s2][d2];
-        ap_fixed<32, 20> v179 = v155[5][d2];
-        ap_fixed<32, 20> v180 = v178 * v179;
-        ap_fixed<32, 20> v181 = rotated_k[h2][s2][d2];
-        ap_fixed<32, 20> v182 = v156[5][d2];
-        ap_fixed<32, 20> v183 = v181 * v182;
-        ap_fixed<32, 20> v184 = v180 + v183;
-        v158[h2][s2][d2] = v184;
+        float v178 = v160[h2][s2][d2];
+        float v179 = v162[5][d2];
+        float v180 = v178 * v179;
+        float v181 = rotated_q[h2][s2][d2];
+        float v182 = v163[5][d2];
+        float v183 = v181 * v182;
+        float v184 = v180 + v183;
+        v164[h2][s2][d2] = v184;
+        float v185 = v161[h2][s2][d2];
+        float v186 = v162[5][d2];
+        float v187 = v185 * v186;
+        float v188 = rotated_k[h2][s2][d2];
+        float v189 = v163[5][d2];
+        float v190 = v188 * v189;
+        float v191 = v187 + v190;
+        v165[h2][s2][d2] = v191;
       }
     }
   }
 }
 
 void cache_update(
-  ap_fixed<32, 20> v185[16][5][96],
-  ap_fixed<32, 20> v186[16][1][96],
-  ap_fixed<32, 20> v187[16][6][96]
-) {_ssdm_SpecArrayDimSize(v185, 16);_ssdm_SpecArrayDimSize(v186, 16);_ssdm_SpecArrayDimSize(v187, 16);
+  float v192[16][5][96],
+  float v193[16][1][96],
+  float v194[16][6][96]
+) {_ssdm_SpecArrayDimSize(v192, 16);_ssdm_SpecArrayDimSize(v193, 16);_ssdm_SpecArrayDimSize(v194, 16);
   l_S_i_0_i4: for (int i4 = 0; i4 < 16; i4++) {
     l_S_j_0_j3: for (int j3 = 0; j3 < 6; j3++) {
-      ap_int<33> v190 = j3;
-      bool v191 = v190 != 5;
-      if (v191) {
+      ap_int<33> v197 = j3;
+      bool v198 = v197 != 5;
+      if (v198) {
         l_S_k_0_k1: for (int k1 = 0; k1 < 96; k1++) {
-          ap_fixed<32, 20> v193 = v185[i4][j3][k1];
-          v187[i4][j3][k1] = v193;
+          float v200 = v192[i4][j3][k1];
+          v194[i4][j3][k1] = v200;
         }
       } else {
         l_S_k_1_k2: for (int k2 = 0; k2 < 96; k2++) {
-          ap_fixed<32, 20> v195 = v186[i4][0][k2];
-          v187[i4][j3][k2] = v195;
+          float v202 = v193[i4][0][k2];
+          v194[i4][j3][k2] = v202;
         }
       }
     }
@@ -36219,34 +36227,34 @@ void cache_update(
 }
 
 void transpose_last_two_dims(
-  ap_fixed<32, 20> v196[16][6][96],
-  ap_fixed<32, 20> v197[16][96][6]
-) {_ssdm_SpecArrayDimSize(v196, 16);_ssdm_SpecArrayDimSize(v197, 16);
+  float v203[16][6][96],
+  float v204[16][96][6]
+) {_ssdm_SpecArrayDimSize(v203, 16);_ssdm_SpecArrayDimSize(v204, 16);
   l_S_h_0_h3: for (int h3 = 0; h3 < 16; h3++) {
     l_S_s_0_s3: for (int s3 = 0; s3 < 6; s3++) {
       l_S_d_0_d3: for (int d3 = 0; d3 < 96; d3++) {
-        ap_fixed<32, 20> v201 = v196[h3][s3][d3];
-        v197[h3][d3][s3] = v201;
+        float v208 = v203[h3][s3][d3];
+        v204[h3][d3][s3] = v208;
       }
     }
   }
 }
 
 void GEMM_3D_float(
-  ap_fixed<32, 20> v202[16][1][96],
-  ap_fixed<32, 20> v203[16][96][6],
-  ap_fixed<32, 20> v204[16][1][6]
-) {_ssdm_SpecArrayDimSize(v202, 16);_ssdm_SpecArrayDimSize(v203, 16);_ssdm_SpecArrayDimSize(v204, 16);
+  float v209[16][1][96],
+  float v210[16][96][6],
+  float v211[16][1][6]
+) {_ssdm_SpecArrayDimSize(v209, 16);_ssdm_SpecArrayDimSize(v210, 16);_ssdm_SpecArrayDimSize(v211, 16);
   l_S_h_0_h4: for (int h4 = 0; h4 < 16; h4++) {
     l_S_i_0_i5: for (int i5 = 0; i5 < 1; i5++) {
       l_S_j_0_j4: for (int j4 = 0; j4 < 6; j4++) {
         l_S_k_0_k3: for (int k3 = 0; k3 < 96; k3++) {
-          ap_fixed<32, 20> v209 = v202[h4][i5][k3];
-          ap_fixed<32, 20> v210 = v203[h4][k3][j4];
-          ap_fixed<32, 20> v211 = v209 * v210;
-          ap_fixed<32, 20> v212 = v204[h4][i5][j4];
-          ap_fixed<32, 20> v213 = v212 + v211;
-          v204[h4][i5][j4] = v213;
+          float v216 = v209[h4][i5][k3];
+          float v217 = v210[h4][k3][j4];
+          float v218 = v216 * v217;
+          float v219 = v211[h4][i5][j4];
+          float v220 = v219 + v218;
+          v211[h4][i5][j4] = v220;
         }
       }
     }
@@ -36254,78 +36262,78 @@ void GEMM_3D_float(
 }
 
 void causal_mask(
-  ap_fixed<32, 20> v214[1][1]
-) {_ssdm_SpecArrayDimSize(v214, 1);
+  float v221[1][1]
+) {_ssdm_SpecArrayDimSize(v221, 1);
   l_S_i_0_i6: for (int i6 = 0; i6 < 1; i6++) {
     l_S_j_0_j5: for (int j5 = 0; j5 < 1; j5++) {
-      v214[i6][j5] = (ap_fixed<32, 20>)0.000000;
+      v221[i6][j5] = (float)0.000000;
     }
   }
 }
 
 void softmax(
-  ap_fixed<32, 20> v217[16][1][6],
-  ap_fixed<32, 20> v218[16][1][6]
-) {_ssdm_SpecArrayDimSize(v217, 16);_ssdm_SpecArrayDimSize(v218, 16);
+  float v224[16][1][6],
+  float v225[16][1][6]
+) {_ssdm_SpecArrayDimSize(v224, 16);_ssdm_SpecArrayDimSize(v225, 16);
   l_S_i_0_i7: for (int i7 = 0; i7 < 16; i7++) {
     l_S_j_0_j6: for (int j6 = 0; j6 < 1; j6++) {
       l_S_k_0_k4: for (int k4 = 0; k4 < 6; k4++) {
-        ap_fixed<32, 20> v222 = v217[i7][j6][k4];
-        v218[i7][j6][k4] = v222;
+        float v229 = v224[i7][j6][k4];
+        v225[i7][j6][k4] = v229;
       }
     }
   }
   l_S_i_3_i8: for (int i8 = 0; i8 < 16; i8++) {
     l_S_j_3_j7: for (int j7 = 0; j7 < 1; j7++) {
-      ap_fixed<32, 20> max_val1;
-      max_val1 = (ap_fixed<32, 20>)0.000000;
+      float max_val1;
+      max_val1 = (float)0.000000;
       l_S_k_3_k5: for (int k5 = 0; k5 < 6; k5++) {
-        ap_fixed<32, 20> v227 = v218[i8][j7][k5];
-        ap_fixed<32, 20> v228 = max_val1;
-        bool v229 = v227 > v228;
-        if (v229) {
-          ap_fixed<32, 20> v230 = v218[i8][j7][k5];
-          max_val1 = v230;
+        float v234 = v225[i8][j7][k5];
+        float v235 = max_val1;
+        bool v236 = v234 > v235;
+        if (v236) {
+          float v237 = v225[i8][j7][k5];
+          max_val1 = v237;
         }
       }
-      ap_fixed<32, 20> sum_exp;
-      sum_exp = (ap_fixed<32, 20>)0.000000;
+      float sum_exp;
+      sum_exp = (float)0.000000;
       l_S_k_4_k6: for (int k6 = 0; k6 < 6; k6++) {
-        ap_fixed<32, 20> v233 = v218[i8][j7][k6];
-        ap_fixed<32, 20> v234 = max_val1;
-        ap_fixed<32, 20> v235 = v233 - v234;
-        ap_fixed<32, 20> v236 = hls::pow((ap_fixed<32, 20>)2.718282, v235);
-        v218[i8][j7][k6] = v236;
-        ap_fixed<32, 20> v237 = v218[i8][j7][k6];
-        ap_fixed<32, 20> v238 = sum_exp;
-        ap_fixed<32, 20> v239 = v238 + v237;
-        sum_exp = v239;
+        float v240 = v225[i8][j7][k6];
+        float v241 = max_val1;
+        float v242 = v240 - v241;
+        float v243 = pow((float)2.718282, v242);
+        v225[i8][j7][k6] = v243;
+        float v244 = v225[i8][j7][k6];
+        float v245 = sum_exp;
+        float v246 = v245 + v244;
+        sum_exp = v246;
       }
       l_S_k_5_k7: for (int k7 = 0; k7 < 6; k7++) {
-        ap_fixed<32, 20> v241 = v218[i8][j7][k7];
-        ap_fixed<32, 20> v242 = sum_exp;
-        ap_fixed<32, 20> v243 = v241 / v242;
-        v218[i8][j7][k7] = v243;
+        float v248 = v225[i8][j7][k7];
+        float v249 = sum_exp;
+        float v250 = v248 / v249;
+        v225[i8][j7][k7] = v250;
       }
     }
   }
 }
 
 void GEMM_3D_float2(
-  ap_fixed<32, 20> v244[16][1][6],
-  ap_fixed<32, 20> v245[16][6][96],
-  ap_fixed<32, 20> v246[16][1][96]
-) {_ssdm_SpecArrayDimSize(v244, 16);_ssdm_SpecArrayDimSize(v245, 16);_ssdm_SpecArrayDimSize(v246, 16);
+  float v251[16][1][6],
+  float v252[16][6][96],
+  float v253[16][1][96]
+) {_ssdm_SpecArrayDimSize(v251, 16);_ssdm_SpecArrayDimSize(v252, 16);_ssdm_SpecArrayDimSize(v253, 16);
   l_S_h_0_h5: for (int h5 = 0; h5 < 16; h5++) {
     l_S_i_0_i9: for (int i9 = 0; i9 < 1; i9++) {
       l_S_j_0_j8: for (int j8 = 0; j8 < 96; j8++) {
         l_S_k_0_k8: for (int k8 = 0; k8 < 6; k8++) {
-          ap_fixed<32, 20> v251 = v244[h5][i9][k8];
-          ap_fixed<32, 20> v252 = v245[h5][k8][j8];
-          ap_fixed<32, 20> v253 = v251 * v252;
-          ap_fixed<32, 20> v254 = v246[h5][i9][j8];
-          ap_fixed<32, 20> v255 = v254 + v253;
-          v246[h5][i9][j8] = v255;
+          float v258 = v251[h5][i9][k8];
+          float v259 = v252[h5][k8][j8];
+          float v260 = v258 * v259;
+          float v261 = v253[h5][i9][j8];
+          float v262 = v261 + v260;
+          v253[h5][i9][j8] = v262;
         }
       }
     }
@@ -36333,234 +36341,314 @@ void GEMM_3D_float2(
 }
 
 void attention(
-  ap_fixed<32, 20> v256[1][1536],
-  uint8_t v257[384][1536],
-  ap_fixed<32, 20> v258,
-  uint8_t v259[384][1536],
-  ap_fixed<32, 20> v260,
-  uint8_t v261[384][1536],
-  ap_fixed<32, 20> v262,
-  uint8_t v263[384][1536],
-  ap_fixed<32, 20> v264,
-  ap_fixed<32, 20> v265[10][96],
-  ap_fixed<32, 20> v266[10][96],
-  ap_fixed<32, 20> v267[1536],
-  ap_fixed<32, 20> v268[1536],
-  ap_fixed<32, 20> v269[16][5][96],
-  ap_fixed<32, 20> v270[16][5][96],
-  int32_t v271,
-  ap_fixed<32, 20> v272[1][1536]
-) {_ssdm_SpecArrayDimSize(v256, 1);_ssdm_SpecArrayDimSize(v257, 384);_ssdm_SpecArrayDimSize(v259, 384);_ssdm_SpecArrayDimSize(v261, 384);_ssdm_SpecArrayDimSize(v263, 384);_ssdm_SpecArrayDimSize(v265, 10);_ssdm_SpecArrayDimSize(v266, 10);_ssdm_SpecArrayDimSize(v267, 1536);_ssdm_SpecArrayDimSize(v268, 1536);_ssdm_SpecArrayDimSize(v269, 16);_ssdm_SpecArrayDimSize(v270, 16);_ssdm_SpecArrayDimSize(v272, 1);
-  ap_fixed<32, 20> RMS_NORM_EPS;
-  RMS_NORM_EPS = (ap_fixed<32, 20>)0.000010;
-  ap_fixed<32, 20> rms_hidden_states[1][1536];
-  for (int v275 = 0; v275 < 1; v275++) {
-    for (int v276 = 0; v276 < 1536; v276++) {
-      rms_hidden_states[v275][v276] = (ap_fixed<32, 20>)0.000000;
+  float v263[1][1536],
+  uint8_t v264[384][1536],
+  float v265,
+  uint8_t v266[384][1536],
+  float v267,
+  uint8_t v268[384][1536],
+  float v269,
+  uint8_t v270[384][1536],
+  float v271,
+  float v272[10][96],
+  float v273[10][96],
+  float v274[1536],
+  float v275[1536],
+  float v276[16][5][96],
+  float v277[16][5][96],
+  int32_t v278,
+  float v279[1][1536]
+) {_ssdm_SpecArrayDimSize(v263, 1);_ssdm_SpecArrayDimSize(v264, 384);_ssdm_SpecArrayDimSize(v266, 384);_ssdm_SpecArrayDimSize(v268, 384);_ssdm_SpecArrayDimSize(v270, 384);_ssdm_SpecArrayDimSize(v272, 10);_ssdm_SpecArrayDimSize(v273, 10);_ssdm_SpecArrayDimSize(v274, 1536);_ssdm_SpecArrayDimSize(v275, 1536);_ssdm_SpecArrayDimSize(v276, 16);_ssdm_SpecArrayDimSize(v277, 16);_ssdm_SpecArrayDimSize(v279, 1);
+#pragma HLS array_partition variable=&v264 cyclic dim=1 factor=2
+
+#pragma HLS array_partition variable=&v266 cyclic dim=1 factor=2
+
+#pragma HLS array_partition variable=&v268 cyclic dim=1 factor=2
+
+#pragma HLS array_partition variable=&v270 cyclic dim=1 factor=2
+
+ float RMS_NORM_EPS;
+  RMS_NORM_EPS = (float)0.000010;
+  float rms_hidden_states[1][1536];
+  for (int v282 = 0; v282 < 1; v282++) {
+    for (int v283 = 0; v283 < 1536; v283++) {
+      rms_hidden_states[v282][v283] = (float)0.000000;
     }
   }
-  ap_fixed<32, 20> v277 = RMS_NORM_EPS;
-  rms_norm(v256, v267, v277, rms_hidden_states);
+  float v284 = RMS_NORM_EPS;
+  rms_norm(v263, v274, v284, rms_hidden_states);
   int8_t quantized_hidden_states[1][384][4];
-  for (int v279 = 0; v279 < 1; v279++) {
-    for (int v280 = 0; v280 < 384; v280++) {
-      for (int v281 = 0; v281 < 4; v281++) {
-        quantized_hidden_states[v279][v280][v281] = 0;
+  for (int v286 = 0; v286 < 1; v286++) {
+    for (int v287 = 0; v287 < 384; v287++) {
+      for (int v288 = 0; v288 < 4; v288++) {
+        quantized_hidden_states[v286][v287][v288] = 0;
       }
     }
   }
-  ap_fixed<32, 20> scales[1];
-  for (int v283 = 0; v283 < 1; v283++) {
-    scales[v283] = (ap_fixed<32, 20>)0.000000;
+  float scales[1];
+  for (int v290 = 0; v290 < 1; v290++) {
+    scales[v290] = (float)0.000000;
   }
   quantize_activation(rms_hidden_states, 8, quantized_hidden_states, scales);
-  ap_fixed<32, 20> q_proj_re[1][1536];
-  for (int v285 = 0; v285 < 1; v285++) {
-    for (int v286 = 0; v286 < 1536; v286++) {
-      q_proj_re[v285][v286] = (ap_fixed<32, 20>)0.000000;
+  float q_proj_re[1][1536];
+  for (int v292 = 0; v292 < 1; v292++) {
+    for (int v293 = 0; v293 < 1536; v293++) {
+      q_proj_re[v292][v293] = (float)0.000000;
     }
   }
-  ap_fixed<32, 20> k_proj_re[1][1536];
-  for (int v288 = 0; v288 < 1; v288++) {
-    for (int v289 = 0; v289 < 1536; v289++) {
-      k_proj_re[v288][v289] = (ap_fixed<32, 20>)0.000000;
+  float k_proj_re[1][1536];
+  for (int v295 = 0; v295 < 1; v295++) {
+    for (int v296 = 0; v296 < 1536; v296++) {
+      k_proj_re[v295][v296] = (float)0.000000;
     }
   }
-  ap_fixed<32, 20> v_proj_re[1][1536];
-  for (int v291 = 0; v291 < 1; v291++) {
-    for (int v292 = 0; v292 < 1536; v292++) {
-      v_proj_re[v291][v292] = (ap_fixed<32, 20>)0.000000;
+  float v_proj_re[1][1536];
+  for (int v298 = 0; v298 < 1; v298++) {
+    for (int v299 = 0; v299 < 1536; v299++) {
+      v_proj_re[v298][v299] = (float)0.000000;
     }
   }
-  linear_forward_no_mul(quantized_hidden_states, scales, v257, v258, q_proj_re);
-  linear_forward_no_mul(quantized_hidden_states, scales, v259, v260, k_proj_re);
-  linear_forward_no_mul(quantized_hidden_states, scales, v261, v262, v_proj_re);
-  ap_fixed<32, 20> q_proj[16][1][96];
-  for (int v294 = 0; v294 < 16; v294++) {
-    for (int v295 = 0; v295 < 1; v295++) {
-      for (int v296 = 0; v296 < 96; v296++) {
-        q_proj[v294][v295][v296] = (ap_fixed<32, 20>)0.000000;
+  ap_fixed<32, 12> v300 = v265;
+  ap_fixed<32, 12> q_weights_scale_fixed;
+  q_weights_scale_fixed = v300;
+  ap_fixed<32, 12> v302 = v267;
+  ap_fixed<32, 12> k_weights_scale_fixed;
+  k_weights_scale_fixed = v302;
+  ap_fixed<32, 12> v304 = v269;
+  ap_fixed<32, 12> v_weights_scale_fixed;
+  v_weights_scale_fixed = v304;
+  ap_fixed<32, 12> v306 = v271;
+  ap_fixed<32, 12> o_weights_scale_fixed;
+  o_weights_scale_fixed = v306;
+  ap_fixed<32, 12> v308 = 0;
+  ap_fixed<32, 12> scales_fixed[1];
+  for (int v310 = 0; v310 < 1; v310++) {
+    scales_fixed[v310] = v308;
+  }
+  int8_t quantized_hidden_states_copy[1][384][4];
+#pragma HLS array_partition variable=&quantized_hidden_states_copy cyclic dim=2 factor=2
+
+ for (int v312 = 0; v312 < 1; v312++) {
+    for (int v313 = 0; v313 < 384; v313++) {
+      for (int v314 = 0; v314 < 4; v314++) {
+        quantized_hidden_states_copy[v312][v313][v314] = 0;
       }
     }
   }
-  ap_fixed<32, 20> k_proj[16][1][96];
-  for (int v298 = 0; v298 < 16; v298++) {
-    for (int v299 = 0; v299 < 1; v299++) {
-      for (int v300 = 0; v300 < 96; v300++) {
-        k_proj[v298][v299][v300] = (ap_fixed<32, 20>)0.000000;
+  l_S_i_j_k_0_i10: for (int i10 = 0; i10 < 1; i10++) {
+    l_j9: for (int j9 = 0; j9 < 384; j9++) {
+      l_k9: for (int k9 = 0; k9 < 4; k9++) {
+        int8_t v318 = quantized_hidden_states[i10][j9][k9];
+        quantized_hidden_states_copy[i10][j9][k9] = v318;
       }
     }
   }
-  ap_fixed<32, 20> v_proj[16][1][96];
-  for (int v302 = 0; v302 < 16; v302++) {
-    for (int v303 = 0; v303 < 1; v303++) {
-      for (int v304 = 0; v304 < 96; v304++) {
-        v_proj[v302][v303][v304] = (ap_fixed<32, 20>)0.000000;
+  l_S_i_1_i11: for (int i11 = 0; i11 < 1; i11++) {
+    float v320 = scales[i11];
+    ap_fixed<32, 12> v321 = v320;
+    scales_fixed[i11] = v321;
+  }
+  ap_fixed<32, 12> v322 = q_weights_scale_fixed;
+  linear_forward_no_mul(quantized_hidden_states_copy, scales_fixed, v264, v322, q_proj_re);
+  ap_fixed<32, 12> v323 = k_weights_scale_fixed;
+  linear_forward_no_mul(quantized_hidden_states_copy, scales_fixed, v266, v323, k_proj_re);
+  ap_fixed<32, 12> v324 = v_weights_scale_fixed;
+  linear_forward_no_mul(quantized_hidden_states_copy, scales_fixed, v268, v324, v_proj_re);
+  float q_proj[16][1][96];
+  for (int v326 = 0; v326 < 16; v326++) {
+    for (int v327 = 0; v327 < 1; v327++) {
+      for (int v328 = 0; v328 < 96; v328++) {
+        q_proj[v326][v327][v328] = (float)0.000000;
+      }
+    }
+  }
+  float k_proj[16][1][96];
+  for (int v330 = 0; v330 < 16; v330++) {
+    for (int v331 = 0; v331 < 1; v331++) {
+      for (int v332 = 0; v332 < 96; v332++) {
+        k_proj[v330][v331][v332] = (float)0.000000;
+      }
+    }
+  }
+  float v_proj[16][1][96];
+  for (int v334 = 0; v334 < 16; v334++) {
+    for (int v335 = 0; v335 < 1; v335++) {
+      for (int v336 = 0; v336 < 96; v336++) {
+        v_proj[v334][v335][v336] = (float)0.000000;
       }
     }
   }
   reshape_2D_to_3D(q_proj_re, q_proj);
   reshape_2D_to_3D(k_proj_re, k_proj);
   reshape_2D_to_3D(v_proj_re, v_proj);
-  ap_fixed<32, 20> q_embed[16][1][96];
-  for (int v306 = 0; v306 < 16; v306++) {
-    for (int v307 = 0; v307 < 1; v307++) {
-      for (int v308 = 0; v308 < 96; v308++) {
-        q_embed[v306][v307][v308] = (ap_fixed<32, 20>)0.000000;
+  float q_embed[16][1][96];
+  for (int v338 = 0; v338 < 16; v338++) {
+    for (int v339 = 0; v339 < 1; v339++) {
+      for (int v340 = 0; v340 < 96; v340++) {
+        q_embed[v338][v339][v340] = (float)0.000000;
       }
     }
   }
-  ap_fixed<32, 20> k_embed[16][1][96];
-  for (int v310 = 0; v310 < 16; v310++) {
-    for (int v311 = 0; v311 < 1; v311++) {
-      for (int v312 = 0; v312 < 96; v312++) {
-        k_embed[v310][v311][v312] = (ap_fixed<32, 20>)0.000000;
+  float k_embed[16][1][96];
+  for (int v342 = 0; v342 < 16; v342++) {
+    for (int v343 = 0; v343 < 1; v343++) {
+      for (int v344 = 0; v344 < 96; v344++) {
+        k_embed[v342][v343][v344] = (float)0.000000;
       }
     }
   }
-  apply_rotary_pos_emb(q_proj, k_proj, v265, v266, q_embed, k_embed, v271);
-  ap_fixed<32, 20> updated_k_cache[16][6][96];
-  for (int v314 = 0; v314 < 16; v314++) {
-    for (int v315 = 0; v315 < 6; v315++) {
-      for (int v316 = 0; v316 < 96; v316++) {
-        updated_k_cache[v314][v315][v316] = (ap_fixed<32, 20>)0.000000;
+  apply_rotary_pos_emb(q_proj, k_proj, v272, v273, q_embed, k_embed, v278);
+  float updated_k_cache[16][6][96];
+  for (int v346 = 0; v346 < 16; v346++) {
+    for (int v347 = 0; v347 < 6; v347++) {
+      for (int v348 = 0; v348 < 96; v348++) {
+        updated_k_cache[v346][v347][v348] = (float)0.000000;
       }
     }
   }
-  ap_fixed<32, 20> updated_v_cache[16][6][96];
-  for (int v318 = 0; v318 < 16; v318++) {
-    for (int v319 = 0; v319 < 6; v319++) {
-      for (int v320 = 0; v320 < 96; v320++) {
-        updated_v_cache[v318][v319][v320] = (ap_fixed<32, 20>)0.000000;
+  float updated_v_cache[16][6][96];
+  for (int v350 = 0; v350 < 16; v350++) {
+    for (int v351 = 0; v351 < 6; v351++) {
+      for (int v352 = 0; v352 < 96; v352++) {
+        updated_v_cache[v350][v351][v352] = (float)0.000000;
       }
     }
   }
-  cache_update(v269, k_embed, updated_k_cache);
-  cache_update(v270, v_proj, updated_v_cache);
-  ap_fixed<32, 20> k_proj_transposed[16][96][6];
-  for (int v322 = 0; v322 < 16; v322++) {
-    for (int v323 = 0; v323 < 96; v323++) {
-      for (int v324 = 0; v324 < 6; v324++) {
-        k_proj_transposed[v322][v323][v324] = (ap_fixed<32, 20>)0.000000;
+  cache_update(v276, k_embed, updated_k_cache);
+  cache_update(v277, v_proj, updated_v_cache);
+  float k_proj_transposed[16][96][6];
+  for (int v354 = 0; v354 < 16; v354++) {
+    for (int v355 = 0; v355 < 96; v355++) {
+      for (int v356 = 0; v356 < 6; v356++) {
+        k_proj_transposed[v354][v355][v356] = (float)0.000000;
       }
     }
   }
   transpose_last_two_dims(updated_k_cache, k_proj_transposed);
-  ap_fixed<32, 20> attn_weights[16][1][6];
-  for (int v326 = 0; v326 < 16; v326++) {
-    for (int v327 = 0; v327 < 1; v327++) {
-      for (int v328 = 0; v328 < 6; v328++) {
-        attn_weights[v326][v327][v328] = (ap_fixed<32, 20>)0.000000;
+  float attn_weights[16][1][6];
+  for (int v358 = 0; v358 < 16; v358++) {
+    for (int v359 = 0; v359 < 1; v359++) {
+      for (int v360 = 0; v360 < 6; v360++) {
+        attn_weights[v358][v359][v360] = (float)0.000000;
       }
     }
   }
   GEMM_3D_float(q_embed, k_proj_transposed, attn_weights);
-  ap_fixed<32, 20> scale_factor;
-  scale_factor = (ap_fixed<32, 20>)9.797959;
-  l_S_i_0_i10: for (int i10 = 0; i10 < 16; i10++) {
-    l_S_j_0_j9: for (int j9 = 0; j9 < 1; j9++) {
-      l_S_k_0_k9: for (int k9 = 0; k9 < 6; k9++) {
-        ap_fixed<32, 20> v333 = attn_weights[i10][j9][k9];
-        ap_fixed<32, 20> v334 = scale_factor;
-        ap_fixed<32, 20> v335 = v333 / v334;
-        attn_weights[i10][j9][k9] = v335;
+  float scale_factor;
+  scale_factor = (float)9.797959;
+  l_S_i_2_i12: for (int i12 = 0; i12 < 16; i12++) {
+    l_S_j_2_j10: for (int j10 = 0; j10 < 1; j10++) {
+      l_S_k_2_k10: for (int k10 = 0; k10 < 6; k10++) {
+        float v365 = attn_weights[i12][j10][k10];
+        float v366 = scale_factor;
+        float v367 = v365 / v366;
+        attn_weights[i12][j10][k10] = v367;
       }
     }
   }
-  ap_fixed<32, 20> causal_mask_matrix[1][1];
-  for (int v337 = 0; v337 < 1; v337++) {
-    for (int v338 = 0; v338 < 1; v338++) {
-      causal_mask_matrix[v337][v338] = (ap_fixed<32, 20>)-340282346638528859811704183484516925440.000000;
+  float causal_mask_matrix[1][1];
+  for (int v369 = 0; v369 < 1; v369++) {
+    for (int v370 = 0; v370 < 1; v370++) {
+      causal_mask_matrix[v369][v370] = (float)-340282346638528859811704183484516925440.000000;
     }
   }
   causal_mask(causal_mask_matrix);
-  l_S_h_3_h6: for (int h6 = 0; h6 < 16; h6++) {
-    l_S_i_3_i11: for (int i11 = 0; i11 < 1; i11++) {
-      l_S_j_3_j10: for (int j10 = 0; j10 < 1; j10++) {
-        ap_fixed<32, 20> v342 = causal_mask_matrix[i11][j10];
-        ap_fixed<32, 20> v343 = attn_weights[h6][i11][j10];
-        ap_fixed<32, 20> v344 = v343 + v342;
-        attn_weights[h6][i11][j10] = v344;
+  l_S_h_5_h6: for (int h6 = 0; h6 < 16; h6++) {
+    l_S_i_5_i13: for (int i13 = 0; i13 < 1; i13++) {
+      l_S_j_5_j11: for (int j11 = 0; j11 < 1; j11++) {
+        float v374 = causal_mask_matrix[i13][j11];
+        float v375 = attn_weights[h6][i13][j11];
+        float v376 = v375 + v374;
+        attn_weights[h6][i13][j11] = v376;
       }
     }
   }
-  ap_fixed<32, 20> softmax_attn_weights[16][1][6];
-  for (int v346 = 0; v346 < 16; v346++) {
-    for (int v347 = 0; v347 < 1; v347++) {
-      for (int v348 = 0; v348 < 6; v348++) {
-        softmax_attn_weights[v346][v347][v348] = (ap_fixed<32, 20>)0.000000;
+  float softmax_attn_weights[16][1][6];
+  for (int v378 = 0; v378 < 16; v378++) {
+    for (int v379 = 0; v379 < 1; v379++) {
+      for (int v380 = 0; v380 < 6; v380++) {
+        softmax_attn_weights[v378][v379][v380] = (float)0.000000;
       }
     }
   }
   softmax(attn_weights, softmax_attn_weights);
-  ap_fixed<32, 20> attn_output[16][1][96];
-  for (int v350 = 0; v350 < 16; v350++) {
-    for (int v351 = 0; v351 < 1; v351++) {
-      for (int v352 = 0; v352 < 96; v352++) {
-        attn_output[v350][v351][v352] = (ap_fixed<32, 20>)0.000000;
+  float attn_output[16][1][96];
+  for (int v382 = 0; v382 < 16; v382++) {
+    for (int v383 = 0; v383 < 1; v383++) {
+      for (int v384 = 0; v384 < 96; v384++) {
+        attn_output[v382][v383][v384] = (float)0.000000;
       }
     }
   }
   GEMM_3D_float2(softmax_attn_weights, updated_v_cache, attn_output);
-  ap_fixed<32, 20> attn_output_2D[1][1536];
-  for (int v354 = 0; v354 < 1; v354++) {
-    for (int v355 = 0; v355 < 1536; v355++) {
-      attn_output_2D[v354][v355] = (ap_fixed<32, 20>)0.000000;
+  float attn_output_2D[1][1536];
+  for (int v386 = 0; v386 < 1; v386++) {
+    for (int v387 = 0; v387 < 1536; v387++) {
+      attn_output_2D[v386][v387] = (float)0.000000;
     }
   }
-  l_S_s_6_s4: for (int s4 = 0; s4 < 1; s4++) {
-    l_S_h_6_h7: for (int h7 = 0; h7 < 16; h7++) {
-      l_S_d_6_d4: for (int d4 = 0; d4 < 96; d4++) {
-        ap_fixed<32, 20> v359 = attn_output[h7][s4][d4];
-        attn_output_2D[s4][((h7 * 96) + d4)] = v359;
+  l_S_s_8_s4: for (int s4 = 0; s4 < 1; s4++) {
+    l_S_h_8_h7: for (int h7 = 0; h7 < 16; h7++) {
+      l_S_d_8_d4: for (int d4 = 0; d4 < 96; d4++) {
+        float v391 = attn_output[h7][s4][d4];
+        attn_output_2D[s4][((h7 * 96) + d4)] = v391;
       }
     }
   }
-  ap_fixed<32, 20> rms_attn_output[1][1536];
-  for (int v361 = 0; v361 < 1; v361++) {
-    for (int v362 = 0; v362 < 1536; v362++) {
-      rms_attn_output[v361][v362] = (ap_fixed<32, 20>)0.000000;
+  float rms_attn_output[1][1536];
+  for (int v393 = 0; v393 < 1; v393++) {
+    for (int v394 = 0; v394 < 1536; v394++) {
+      rms_attn_output[v393][v394] = (float)0.000000;
     }
   }
-  ap_fixed<32, 20> v363 = RMS_NORM_EPS;
-  rms_norm(attn_output_2D, v268, v363, rms_attn_output);
+  float v395 = RMS_NORM_EPS;
+  rms_norm(attn_output_2D, v275, v395, rms_attn_output);
   int8_t quantized_final_output[1][384][4];
-  for (int v365 = 0; v365 < 1; v365++) {
-    for (int v366 = 0; v366 < 384; v366++) {
-      for (int v367 = 0; v367 < 4; v367++) {
-        quantized_final_output[v365][v366][v367] = 0;
+  for (int v397 = 0; v397 < 1; v397++) {
+    for (int v398 = 0; v398 < 384; v398++) {
+      for (int v399 = 0; v399 < 4; v399++) {
+        quantized_final_output[v397][v398][v399] = 0;
       }
     }
   }
-  ap_fixed<32, 20> final_scales[1];
-  for (int v369 = 0; v369 < 1; v369++) {
-    final_scales[v369] = (ap_fixed<32, 20>)0.000000;
+  float final_scales[1];
+  for (int v401 = 0; v401 < 1; v401++) {
+    final_scales[v401] = (float)0.000000;
   }
   quantize_activation(rms_attn_output, 8, quantized_final_output, final_scales);
-  for (int v370 = 0; v370 < 1; v370++) {
-    for (int v371 = 0; v371 < 1536; v371++) {
-      v272[v370][v371] = (ap_fixed<32, 20>)0.000000;
+  ap_fixed<32, 12> v402 = 0;
+  ap_fixed<32, 12> final_scales_fixed[1];
+  for (int v404 = 0; v404 < 1; v404++) {
+    final_scales_fixed[v404] = v402;
+  }
+  l_S_i_11_i14: for (int i14 = 0; i14 < 1; i14++) {
+    float v406 = final_scales[i14];
+    ap_fixed<32, 12> v407 = v406;
+    final_scales_fixed[i14] = v407;
+  }
+  int8_t quantized_final_output_copy[1][384][4];
+#pragma HLS array_partition variable=&quantized_final_output_copy cyclic dim=2 factor=2
+
+ for (int v409 = 0; v409 < 1; v409++) {
+    for (int v410 = 0; v410 < 384; v410++) {
+      for (int v411 = 0; v411 < 4; v411++) {
+        quantized_final_output_copy[v409][v410][v411] = 0;
+      }
     }
   }
-  linear_forward_no_mul(quantized_final_output, final_scales, v263, v264, v272);
+  l_S_i_j_k_12_i15: for (int i15 = 0; i15 < 1; i15++) {
+    l_j12: for (int j12 = 0; j12 < 384; j12++) {
+      l_k11: for (int k11 = 0; k11 < 4; k11++) {
+        int8_t v415 = quantized_final_output[i15][j12][k11];
+        quantized_final_output_copy[i15][j12][k11] = v415;
+      }
+    }
+  }
+  for (int v416 = 0; v416 < 1; v416++) {
+    for (int v417 = 0; v417 < 1536; v417++) {
+      v279[v416][v417] = (float)0.000000;
+    }
+  }
+  ap_fixed<32, 12> v418 = o_weights_scale_fixed;
+  linear_forward_no_mul(quantized_final_output_copy, final_scales_fixed, v270, v418, v279);
 }

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'softmax'" level="0">
-<item name = "Date">Sat Nov 30 20:58:47 2024
+<item name = "Date">Thu Dec  5 02:39:25 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">out.prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.625 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 9.386 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">5666, 13922, 56.660 us, 0.139 ms, 5666, 13922, none</column>
+<column name="">5954, 5954, 59.540 us, 59.540 us, 5954, 5954, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -37,10 +37,10 @@
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- l_S_i_0_i7">224, 224, 14, -, -, 16, no</column>
 <column name=" + l_S_k_0_k4">12, 12, 2, -, -, 6, no</column>
-<column name="- l_S_i_3_i8">5440, 13696, 340 ~ 856, -, -, 16, no</column>
-<column name=" + l_S_k_3_k5">12, 12, 2, -, -, 6, no</column>
-<column name=" + l_S_k_4_k6">30, 546, 5 ~ 91, -, -, 6, no</column>
-<column name=" + l_S_k_5_k7">294, 294, 49, -, -, 6, no</column>
+<column name="- l_S_i_3_i8">5728, 5728, 358, -, -, 16, no</column>
+<column name=" + l_S_k_3_k5">18, 18, 3, -, -, 6, no</column>
+<column name=" + l_S_k_4_k6">222, 222, 37, -, -, 6, no</column>
+<column name=" + l_S_k_5_k7">114, 114, 19, -, -, 6, no</column>
 </table>
 </item>
 </section>

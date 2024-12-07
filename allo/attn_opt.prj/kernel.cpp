@@ -14,110 +14,110 @@
 #include <stdint.h>
 using namespace std;
 void rms_norm(
-  ap_fixed<32, 20> v0[1][1536],
-  ap_fixed<32, 20> v1[1536],
-  ap_fixed<32, 20> v2,
-  ap_fixed<32, 20> v3[1][1536]
-) {	// L2
-  l_S_index_0_index: for (int index = 0; index < 1; index++) {	// L3
-    ap_fixed<32, 20> variance;	// L4
-    variance = (ap_fixed<32, 20>)0.000000;	// L6
-    l_S_i_0_i: for (int i = 0; i < 1536; i++) {	// L7
-      ap_fixed<32, 20> v7 = v0[index][i];	// L8
-      ap_fixed<32, 20> v8 = v7 * v7;	// L9
-      ap_fixed<32, 20> v9 = variance;	// L10
-      ap_fixed<32, 20> v10 = v9 + v8;	// L11
-      variance = v10;	// L12
+  float v0[1][1536],
+  float v1[1536],
+  float v2,
+  float v3[1][1536]
+) {	// L4
+  l_S_index_0_index: for (int index = 0; index < 1; index++) {	// L5
+    float variance;	// L6
+    variance = (float)0.000000;	// L8
+    l_S_i_0_i: for (int i = 0; i < 1536; i++) {	// L9
+      float v7 = v0[index][i];	// L10
+      float v8 = v7 * v7;	// L11
+      float v9 = variance;	// L12
+      float v10 = v9 + v8;	// L13
+      variance = v10;	// L14
     }
-    ap_fixed<32, 20> v11 = variance;	// L16
-    ap_fixed<32, 20> v12 = v11 / (ap_fixed<32, 20>)1536.000000;	// L17
-    ap_fixed<32, 20> v13 = v12 + v2;	// L18
-    ap_fixed<32, 20> v14 = hls::pow(v13, (ap_fixed<32, 20>)0.500000);	// L20
-    ap_fixed<32, 20> v15 = (ap_fixed<32, 20>)1.000000 / v14;	// L22
-    variance = v15;	// L23
-    l_S_i_1_i1: for (int i1 = 0; i1 < 1536; i1++) {	// L24
-      ap_fixed<32, 20> v17 = v0[index][i1];	// L25
-      ap_fixed<32, 20> v18 = v1[i1];	// L26
-      ap_fixed<32, 20> v19 = v17 * v18;	// L27
-      ap_fixed<32, 20> v20 = variance;	// L28
-      ap_fixed<32, 20> v21 = v19 * v20;	// L29
-      v3[index][i1] = v21;	// L30
+    float v11 = variance;	// L18
+    float v12 = v11 / (float)1536.000000;	// L19
+    float v13 = v12 + v2;	// L20
+    float v14 = pow(v13, (float)0.500000);	// L22
+    float v15 = (float)1.000000 / v14;	// L24
+    variance = v15;	// L25
+    l_S_i_1_i1: for (int i1 = 0; i1 < 1536; i1++) {	// L26
+      float v17 = v0[index][i1];	// L27
+      float v18 = v1[i1];	// L28
+      float v19 = v17 * v18;	// L29
+      float v20 = variance;	// L30
+      float v21 = v19 * v20;	// L31
+      v3[index][i1] = v21;	// L32
     }
   }
 }
 
 void quantize_activation(
-  ap_fixed<32, 20> v22[1][1536],
+  float v22[1][1536],
   int32_t v23,
   int8_t v24[1][384][4],
-  ap_fixed<32, 20> v25[1]
-) {	// L35
-  ap_int<33> v26 = v23;	// L36
-  ap_int<33> v27 = v26 - 1;	// L39
-  int32_t v28 = v27;	// L40
-  int32_t v29 = 1 << v28;	// L41
-  int32_t v30 = 0 - v29;	// L43
-  int32_t Qn;	// L44
-  Qn = v30;	// L45
-  ap_int<33> v32 = v29;	// L46
-  ap_int<33> v33 = v32 - 1;	// L47
-  int32_t v34 = v33;	// L48
-  int32_t Qp;	// L49
-  Qp = v34;	// L50
-  l_S_i_0_i2: for (int i2 = 0; i2 < 1; i2++) {	// L51
-    ap_fixed<32, 20> max_val;	// L53
-    max_val = (ap_fixed<32, 20>)0.000000;	// L54
-    l_S_j_0_j: for (int j = 0; j < 1536; j++) {	// L55
-      ap_fixed<32, 20> v39 = v22[i2][j];	// L56
-      bool v40 = v39 > (ap_fixed<32, 20>)0.000000;	// L57
-      ap_fixed<32, 20> v41 = v39 * (ap_fixed<32, 20>)-1.000000;	// L60
-      ap_fixed<32, 20> v42 = v40 ? (ap_fixed<32, 20>)v39 : (ap_fixed<32, 20>)v41;	// L61
-      ap_fixed<32, 20> input_abs;	// L62
-      input_abs = v42;	// L63
-      ap_fixed<32, 20> v44 = input_abs;	// L64
-      ap_fixed<32, 20> v45 = max_val;	// L65
-      bool v46 = v45 < v44;	// L66
-      if (v46) {	// L67
-        ap_fixed<32, 20> v47 = input_abs;	// L68
-        max_val = v47;	// L69
+  float v25[1]
+) {	// L37
+  ap_int<33> v26 = v23;	// L38
+  ap_int<33> v27 = v26 - 1;	// L41
+  int32_t v28 = v27;	// L42
+  int32_t v29 = 1 << v28;	// L43
+  int32_t v30 = 0 - v29;	// L45
+  int32_t Qn;	// L46
+  Qn = v30;	// L47
+  ap_int<33> v32 = v29;	// L48
+  ap_int<33> v33 = v32 - 1;	// L49
+  int32_t v34 = v33;	// L50
+  int32_t Qp;	// L51
+  Qp = v34;	// L52
+  l_S_i_0_i2: for (int i2 = 0; i2 < 1; i2++) {	// L53
+    float max_val;	// L55
+    max_val = (float)0.000000;	// L56
+    l_S_j_0_j: for (int j = 0; j < 1536; j++) {	// L57
+      float v39 = v22[i2][j];	// L58
+      bool v40 = v39 > (float)0.000000;	// L59
+      float v41 = v39 * (float)-1.000000;	// L62
+      float v42 = v40 ? (float)v39 : (float)v41;	// L63
+      float input_abs;	// L64
+      input_abs = v42;	// L65
+      float v44 = input_abs;	// L66
+      float v45 = max_val;	// L67
+      bool v46 = v45 < v44;	// L68
+      if (v46) {	// L69
+        float v47 = input_abs;	// L70
+        max_val = v47;	// L71
       }
     }
-    ap_fixed<32, 20> v48 = max_val;	// L72
-    ap_fixed<32, 20> v49 = max(v48, (ap_fixed<32, 20>)0.000010);	// L74
-    ap_fixed<32, 20> max_v;	// L75
-    max_v = v49;	// L76
-    int32_t v51 = Qp;	// L77
-    ap_fixed<32, 20> v52 = v51;	// L78
-    ap_fixed<32, 20> v53 = max_v;	// L79
-    ap_fixed<32, 20> v54 = v52 / v53;	// L80
-    ap_fixed<32, 20> scale;	// L81
-    scale = v54;	// L82
-    ap_fixed<32, 20> v56 = scale;	// L83
-    v25[i2] = v56;	// L84
-    l_S_j_1_j1: for (int j1 = 0; j1 < 384; j1++) {	// L85
-      l_S_l_1_l: for (int l = 0; l < 4; l++) {	// L86
-        ap_fixed<32, 20> v59 = v22[i2][((j1 * 4) + l)];	// L87
-        ap_fixed<32, 20> v60 = scale;	// L88
-        ap_fixed<32, 20> v61 = v59 * v60;	// L89
-        bool v62 = v61 > (ap_fixed<32, 20>)0.000000;	// L90
-        ap_fixed<32, 20> v63 = v61 + (ap_fixed<32, 20>)0.500000;	// L92
-        ap_fixed<32, 20> v64 = v61 - (ap_fixed<32, 20>)0.500000;	// L93
-        ap_fixed<32, 20> v65 = v62 ? (ap_fixed<32, 20>)v63 : (ap_fixed<32, 20>)v64;	// L94
-        int32_t v66 = v65;	// L95
-        int32_t quantized_value;	// L96
-        quantized_value = v66;	// L97
-        int32_t v68 = Qn;	// L98
-        int32_t v69 = quantized_value;	// L99
-        bool v70 = v69 < v68;	// L100
-        int32_t v71 = Qp;	// L101
-        bool v72 = v69 > v71;	// L102
-        int32_t v73 = v72 ? (int32_t)v71 : (int32_t)v69;	// L103
-        int32_t v74 = v70 ? (int32_t)v68 : (int32_t)v73;	// L104
-        int8_t v75 = v74;	// L105
-        int8_t quantized_value_clamped;	// L106
-        quantized_value_clamped = v75;	// L107
-        int8_t v77 = quantized_value_clamped;	// L108
-        v24[i2][j1][l] = v77;	// L109
+    float v48 = max_val;	// L74
+    float v49 = max(v48, (float)0.000010);	// L76
+    float max_v;	// L77
+    max_v = v49;	// L78
+    int32_t v51 = Qp;	// L79
+    float v52 = v51;	// L80
+    float v53 = max_v;	// L81
+    float v54 = v52 / v53;	// L82
+    float scale;	// L83
+    scale = v54;	// L84
+    float v56 = scale;	// L85
+    v25[i2] = v56;	// L86
+    l_S_j_1_j1: for (int j1 = 0; j1 < 384; j1++) {	// L87
+      l_S_l_1_l: for (int l = 0; l < 4; l++) {	// L88
+        float v59 = v22[i2][((j1 * 4) + l)];	// L89
+        float v60 = scale;	// L90
+        float v61 = v59 * v60;	// L91
+        bool v62 = v61 > (float)0.000000;	// L92
+        float v63 = v61 + (float)0.500000;	// L94
+        float v64 = v61 - (float)0.500000;	// L95
+        float v65 = v62 ? (float)v63 : (float)v64;	// L96
+        int32_t v66 = v65;	// L97
+        int32_t quantized_value;	// L98
+        quantized_value = v66;	// L99
+        int32_t v68 = Qn;	// L100
+        int32_t v69 = quantized_value;	// L101
+        bool v70 = v69 < v68;	// L102
+        int32_t v71 = Qp;	// L103
+        bool v72 = v69 > v71;	// L104
+        int32_t v73 = v72 ? (int32_t)v71 : (int32_t)v69;	// L105
+        int32_t v74 = v70 ? (int32_t)v68 : (int32_t)v73;	// L106
+        int8_t v75 = v74;	// L107
+        int8_t quantized_value_clamped;	// L108
+        quantized_value_clamped = v75;	// L109
+        int8_t v77 = quantized_value_clamped;	// L110
+        v24[i2][j1][l] = v77;	// L111
       }
     }
   }
@@ -125,198 +125,206 @@ void quantize_activation(
 
 void linear_forward_no_mul(
   int8_t v78[1][384][4],
-  ap_fixed<32, 20> v79[1],
+  ap_fixed<32, 12> v79[1],
   uint8_t v80[384][1536],
-  ap_fixed<32, 20> v81,
-  ap_fixed<32, 20> v82[1][1536]
-) {	// L115
-#pragma HLS ARRAY_PARTITION variable=v78 complete dim=3
-#pragma HLS ARRAY_PARTITION variable=v78 cyclic dim=2 factor=24
-#pragma HLS ARRAY_PARTITION variable=v80 cyclic dim=1 factor=24
-  l_S_i_0_i3: for (int i3 = 0; i3 < 1; i3++) {	// L116
-    l_S_j_0_j2: for (int j2 = 0; j2 < 1536; j2++) {	// L117
-      ap_fixed<32, 20> local_acum;	// L120
-      local_acum = (ap_fixed<32, 20>)0.000000;	// L121
-      l_S_k0_0_k0: for (int k0 = 0; k0 < 16; k0++) {	// L122
+  ap_fixed<32, 12> v81,
+  float v82[1][1536]
+) {	// L117
+  #pragma HLS array_partition variable=v78 cyclic dim=2 factor=2
+
+  #pragma HLS array_partition variable=v80 cyclic dim=1 factor=2
+
+  l_S_i_0_i3: for (int i3 = 0; i3 < 1; i3++) {	// L118
+    l_S_j_0_j2: for (int j2 = 0; j2 < 1536; j2++) {	// L119
+      ap_fixed<35, 20> v85 = 0;	// L121
+      ap_fixed<35, 20> local_acum;	// L122
+      local_acum = v85;	// L123
+      l_S_k0_0_k0: for (int k0 = 0; k0 < 192; k0++) {	// L124
       #pragma HLS pipeline II=1
-        l_S_k1_0_k1: for (int k1 = 0; k1 < 24; k1++) {	// L123
+        l_S_k1_0_k1: for (int k1 = 0; k1 < 2; k1++) {	// L125
         #pragma HLS unroll
-          int64_t v88 = k0;	// L124
-          int64_t v89 = v88 * 8;	// L127
-          ap_int<65> v90 = v89;	// L128
-          ap_int<65> v91 = k1;	// L129
-          ap_int<65> v92 = v90 + v91;	// L130
-          int v93 = v92;	// L131
-          int k;	// L132
-          k = v93;	// L133
-          int v95 = k;	// L134
-          int8_t v96 = v80[v95][j2];	// L135
-          int8_t packed_value;	// L136
-          packed_value = v96;	// L137
-          ap_fixed<32, 20> temp;	// L138
-          temp = (ap_fixed<32, 20>)0.000000;	// L139
-          l_S_l_0_l1: for (int l1 = 0; l1 < 4; l1++) {	// L140
+          int64_t v89 = k0;	// L126
+          int64_t v90 = v89 * 2;	// L129
+          ap_int<65> v91 = v90;	// L130
+          ap_int<65> v92 = k1;	// L131
+          ap_int<65> v93 = v91 + v92;	// L132
+          int v94 = v93;	// L133
+          int k;	// L134
+          k = v94;	// L135
+          int v96 = k;	// L136
+          int8_t v97 = v80[v96][j2];	// L137
+          int8_t packed_value;	// L138
+          packed_value = v97;	// L139
+          ap_fixed<35, 20> v99 = 0;	// L140
+          ap_fixed<35, 20> temp;	// L141
+          temp = v99;	// L142
+          l_S_l_0_l1: for (int l1 = 0; l1 < 4; l1++) {	// L143
           #pragma HLS unroll
-            int v100 = k;	// L143
-            int64_t v101 = v100;	// L144
-            int64_t v102 = v101 * 4;	// L145
-            ap_int<65> v103 = l1;	// L146
-            ap_int<65> v104 = v102;	// L147
-            ap_int<65> v105 = v103 + v104;	// L148
-            bool v106 = v105 < 1536;	// L151
-            if (v106) {	// L152
-              int64_t v107 = l1;	// L155
-              int64_t v108 = v107 * 2;	// L156
-              int8_t v109 = v108;	// L157
-              int8_t v110 = packed_value;	// L158
-              int8_t v111 = v110 >> v109;	// L159
-              int32_t v112 = v111;	// L160
-              int32_t v113 = v112 & 3;	// L162
-              int8_t v114 = v113;	// L163
-              int8_t value;	// L164
-              value = v114;	// L165
-              int8_t weight_value;	// L167
-              weight_value = 0;	// L168
-              int8_t v117 = value;	// L169
-              int32_t v118 = v117;	// L170
-              bool v119 = v118 == 1;	// L172
-              if (v119) {	// L173
-                weight_value = 1;	// L175
+            int v102 = k;	// L146
+            int64_t v103 = v102;	// L147
+            int64_t v104 = v103 * 4;	// L148
+            ap_int<65> v105 = l1;	// L149
+            ap_int<65> v106 = v104;	// L150
+            ap_int<65> v107 = v105 + v106;	// L151
+            bool v108 = v107 < 1536;	// L154
+            if (v108) {	// L155
+              int64_t v109 = l1;	// L156
+              int64_t v110 = v109 * 2;	// L157
+              int8_t v111 = v110;	// L158
+              int8_t v112 = packed_value;	// L159
+              int8_t v113 = v112 >> v111;	// L160
+              int32_t v114 = v113;	// L161
+              int32_t v115 = v114 & 3;	// L163
+              int8_t v116 = v115;	// L164
+              int8_t value;	// L165
+              value = v116;	// L166
+              int8_t weight_value;	// L168
+              weight_value = 0;	// L169
+              int8_t v119 = value;	// L170
+              int32_t v120 = v119;	// L171
+              bool v121 = v120 == 1;	// L173
+              if (v121) {	// L174
+                weight_value = 1;	// L176
               } else {
-                int8_t v120 = value;	// L177
-                int32_t v121 = v120;	// L178
-                bool v122 = v121 == 2;	// L179
-                if (v122) {	// L180
-                  weight_value = -1;	// L183
+                int8_t v122 = value;	// L178
+                int32_t v123 = v122;	// L179
+                bool v124 = v123 == 2;	// L180
+                if (v124) {	// L181
+                  weight_value = -1;	// L184
                 }
               }
-              int v123 = k;	// L186
-              int8_t v124 = v78[i3][v123][l1];	// L187
-              int16_t v125 = v124;	// L188
-              int8_t v126 = weight_value;	// L189
-              int16_t v127 = v126;	// L190
-              int16_t v128 = v125 * v127;	// L191
-              ap_fixed<32, 20> v129 = v128;	// L192
-              ap_fixed<32, 20> v130 = temp;	// L193
-              ap_fixed<32, 20> v131 = v130 + v129;	// L194
-              temp = v131;	// L195
+              int v125 = k;	// L187
+              int8_t v126 = v78[i3][v125][l1];	// L188
+              int16_t v127 = v126;	// L189
+              int8_t v128 = weight_value;	// L190
+              int16_t v129 = v128;	// L191
+              int16_t v130 = v127 * v129;	// L192
+              ap_fixed<35, 20> v131 = v130;	// L193
+              ap_fixed<35, 20> v132 = temp;	// L194
+              ap_fixed<35, 20> v133 = v132 + v131;	// L195
+              temp = v133;	// L196
             }
           }
-          ap_fixed<32, 20> v132 = local_acum;	// L198
-          ap_fixed<32, 20> v133 = temp;	// L199
-          ap_fixed<32, 20> v134 = v132 + v133;	// L200
-          local_acum = v134;	// L201
+          ap_fixed<35, 20> v134 = local_acum;	// L199
+          ap_fixed<35, 20> v135 = temp;	// L200
+          ap_fixed<35, 20> v136 = v134 + v135;	// L201
+          local_acum = v136;	// L202
         }
       }
-      ap_fixed<32, 20> v135 = v79[i3];	// L204
-      ap_fixed<32, 20> v136 = v135 * v81;	// L205
-      ap_fixed<32, 20> v137 = local_acum;	// L206
-      ap_fixed<32, 20> v138 = v137 / v136;	// L207
-      v82[i3][j2] = v138;	// L208
+      ap_fixed<32, 12> v137 = v79[i3];	// L205
+      ap_fixed<64, 24> v138 = v137;	// L206
+      ap_fixed<64, 24> v139 = v81;	// L207
+      ap_fixed<64, 24> v140 = v138 * v139;	// L208
+      ap_fixed<35, 20> v141 = local_acum;	// L209
+      ap_fixed<99, 60> v142 = v141;	// L210
+      ap_fixed<99, 60> v143 = v140;	// L211
+      ap_fixed<99, 60> v144 = v142 / v143;	// L212
+      float v145 = v144;	// L213
+      v82[i3][j2] = v145;	// L214
     }
   }
 }
 
 void reshape_2D_to_3D(
-  ap_fixed<32, 20> v139[1][1536],
-  ap_fixed<32, 20> v140[16][1][96]
-) {	// L213
-  l_S_s_0_s: for (int s = 0; s < 1; s++) {	// L214
-    l_S_h_0_h: for (int h = 0; h < 16; h++) {	// L215
-      l_S_d_0_d: for (int d = 0; d < 96; d++) {	// L216
-        ap_fixed<32, 20> v144 = v139[s][((h * 96) + d)];	// L217
-        v140[h][s][d] = v144;	// L218
+  float v146[1][1536],
+  float v147[16][1][96]
+) {	// L219
+  l_S_s_0_s: for (int s = 0; s < 1; s++) {	// L220
+    l_S_h_0_h: for (int h = 0; h < 16; h++) {	// L221
+      l_S_d_0_d: for (int d = 0; d < 96; d++) {	// L222
+        float v151 = v146[s][((h * 96) + d)];	// L223
+        v147[h][s][d] = v151;	// L224
       }
     }
   }
 }
 
 void rotate_half(
-  ap_fixed<32, 20> v145[16][1][96],
-  ap_fixed<32, 20> v146[16][1][96]
-) {	// L224
-  l_S_h_0_h1: for (int h1 = 0; h1 < 16; h1++) {	// L225
-    l_S_s_0_s1: for (int s1 = 0; s1 < 1; s1++) {	// L226
-      l_S_d_0_d1: for (int d1 = 0; d1 < 48; d1++) {	// L227
-        ap_fixed<32, 20> v150 = v145[h1][s1][(d1 + 48)];	// L231
-        ap_fixed<32, 20> v151 = v150 * (ap_fixed<32, 20>)-1.000000;	// L233
-        v146[h1][s1][d1] = v151;	// L234
-        ap_fixed<32, 20> v152 = v145[h1][s1][d1];	// L235
-        v146[h1][s1][(d1 + 48)] = v152;	// L236
+  float v152[16][1][96],
+  float v153[16][1][96]
+) {	// L230
+  l_S_h_0_h1: for (int h1 = 0; h1 < 16; h1++) {	// L231
+    l_S_s_0_s1: for (int s1 = 0; s1 < 1; s1++) {	// L232
+      l_S_d_0_d1: for (int d1 = 0; d1 < 48; d1++) {	// L233
+        float v157 = v152[h1][s1][(d1 + 48)];	// L237
+        float v158 = v157 * (float)-1.000000;	// L239
+        v153[h1][s1][d1] = v158;	// L240
+        float v159 = v152[h1][s1][d1];	// L241
+        v153[h1][s1][(d1 + 48)] = v159;	// L242
       }
     }
   }
 }
 
 void apply_rotary_pos_emb(
-  ap_fixed<32, 20> v153[16][1][96],
-  ap_fixed<32, 20> v154[16][1][96],
-  ap_fixed<32, 20> v155[10][96],
-  ap_fixed<32, 20> v156[10][96],
-  ap_fixed<32, 20> v157[16][1][96],
-  ap_fixed<32, 20> v158[16][1][96],
-  int32_t v159
-) {	// L242
-  ap_fixed<32, 20> rotated_q[16][1][96];	// L245
-  for (int v161 = 0; v161 < 16; v161++) {	// L246
-    for (int v162 = 0; v162 < 1; v162++) {	// L246
-      for (int v163 = 0; v163 < 96; v163++) {	// L246
-        rotated_q[v161][v162][v163] = (ap_fixed<32, 20>)0.000000;	// L246
+  float v160[16][1][96],
+  float v161[16][1][96],
+  float v162[10][96],
+  float v163[10][96],
+  float v164[16][1][96],
+  float v165[16][1][96],
+  int32_t v166
+) {	// L248
+  float rotated_q[16][1][96];	// L251
+  for (int v168 = 0; v168 < 16; v168++) {	// L252
+    for (int v169 = 0; v169 < 1; v169++) {	// L252
+      for (int v170 = 0; v170 < 96; v170++) {	// L252
+        rotated_q[v168][v169][v170] = (float)0.000000;	// L252
       }
     }
   }
-  ap_fixed<32, 20> rotated_k[16][1][96];	// L247
-  for (int v165 = 0; v165 < 16; v165++) {	// L248
-    for (int v166 = 0; v166 < 1; v166++) {	// L248
-      for (int v167 = 0; v167 < 96; v167++) {	// L248
-        rotated_k[v165][v166][v167] = (ap_fixed<32, 20>)0.000000;	// L248
+  float rotated_k[16][1][96];	// L253
+  for (int v172 = 0; v172 < 16; v172++) {	// L254
+    for (int v173 = 0; v173 < 1; v173++) {	// L254
+      for (int v174 = 0; v174 < 96; v174++) {	// L254
+        rotated_k[v172][v173][v174] = (float)0.000000;	// L254
       }
     }
   }
-  rotate_half(v153, rotated_q);	// L249
-  rotate_half(v154, rotated_k);	// L250
-  l_S_h_0_h2: for (int h2 = 0; h2 < 16; h2++) {	// L251
-    l_S_s_0_s2: for (int s2 = 0; s2 < 1; s2++) {	// L252
-      l_S_d_0_d2: for (int d2 = 0; d2 < 96; d2++) {	// L253
-        ap_fixed<32, 20> v171 = v153[h2][s2][d2];	// L254
-        ap_fixed<32, 20> v172 = v155[5][d2];	// L255
-        ap_fixed<32, 20> v173 = v171 * v172;	// L256
-        ap_fixed<32, 20> v174 = rotated_q[h2][s2][d2];	// L257
-        ap_fixed<32, 20> v175 = v156[5][d2];	// L258
-        ap_fixed<32, 20> v176 = v174 * v175;	// L259
-        ap_fixed<32, 20> v177 = v173 + v176;	// L260
-        v157[h2][s2][d2] = v177;	// L261
-        ap_fixed<32, 20> v178 = v154[h2][s2][d2];	// L262
-        ap_fixed<32, 20> v179 = v155[5][d2];	// L263
-        ap_fixed<32, 20> v180 = v178 * v179;	// L264
-        ap_fixed<32, 20> v181 = rotated_k[h2][s2][d2];	// L265
-        ap_fixed<32, 20> v182 = v156[5][d2];	// L266
-        ap_fixed<32, 20> v183 = v181 * v182;	// L267
-        ap_fixed<32, 20> v184 = v180 + v183;	// L268
-        v158[h2][s2][d2] = v184;	// L269
+  rotate_half(v160, rotated_q);	// L255
+  rotate_half(v161, rotated_k);	// L256
+  l_S_h_0_h2: for (int h2 = 0; h2 < 16; h2++) {	// L257
+    l_S_s_0_s2: for (int s2 = 0; s2 < 1; s2++) {	// L258
+      l_S_d_0_d2: for (int d2 = 0; d2 < 96; d2++) {	// L259
+        float v178 = v160[h2][s2][d2];	// L260
+        float v179 = v162[5][d2];	// L261
+        float v180 = v178 * v179;	// L262
+        float v181 = rotated_q[h2][s2][d2];	// L263
+        float v182 = v163[5][d2];	// L264
+        float v183 = v181 * v182;	// L265
+        float v184 = v180 + v183;	// L266
+        v164[h2][s2][d2] = v184;	// L267
+        float v185 = v161[h2][s2][d2];	// L268
+        float v186 = v162[5][d2];	// L269
+        float v187 = v185 * v186;	// L270
+        float v188 = rotated_k[h2][s2][d2];	// L271
+        float v189 = v163[5][d2];	// L272
+        float v190 = v188 * v189;	// L273
+        float v191 = v187 + v190;	// L274
+        v165[h2][s2][d2] = v191;	// L275
       }
     }
   }
 }
 
 void cache_update(
-  ap_fixed<32, 20> v185[16][5][96],
-  ap_fixed<32, 20> v186[16][1][96],
-  ap_fixed<32, 20> v187[16][6][96]
-) {	// L275
-  l_S_i_0_i4: for (int i4 = 0; i4 < 16; i4++) {	// L276
-    l_S_j_0_j3: for (int j3 = 0; j3 < 6; j3++) {	// L277
-      ap_int<33> v190 = j3;	// L278
-      bool v191 = v190 != 5;	// L281
-      if (v191) {	// L282
-        l_S_k_0_k1: for (int k1 = 0; k1 < 96; k1++) {	// L283
-          ap_fixed<32, 20> v193 = v185[i4][j3][k1];	// L284
-          v187[i4][j3][k1] = v193;	// L285
+  float v192[16][5][96],
+  float v193[16][1][96],
+  float v194[16][6][96]
+) {	// L281
+  l_S_i_0_i4: for (int i4 = 0; i4 < 16; i4++) {	// L282
+    l_S_j_0_j3: for (int j3 = 0; j3 < 6; j3++) {	// L283
+      ap_int<33> v197 = j3;	// L284
+      bool v198 = v197 != 5;	// L287
+      if (v198) {	// L288
+        l_S_k_0_k1: for (int k1 = 0; k1 < 96; k1++) {	// L289
+          float v200 = v192[i4][j3][k1];	// L290
+          v194[i4][j3][k1] = v200;	// L291
         }
       } else {
-        l_S_k_1_k2: for (int k2 = 0; k2 < 96; k2++) {	// L288
-          ap_fixed<32, 20> v195 = v186[i4][0][k2];	// L289
-          v187[i4][j3][k2] = v195;	// L290
+        l_S_k_1_k2: for (int k2 = 0; k2 < 96; k2++) {	// L294
+          float v202 = v193[i4][0][k2];	// L295
+          v194[i4][j3][k2] = v202;	// L296
         }
       }
     }
@@ -324,34 +332,34 @@ void cache_update(
 }
 
 void transpose_last_two_dims(
-  ap_fixed<32, 20> v196[16][6][96],
-  ap_fixed<32, 20> v197[16][96][6]
-) {	// L297
-  l_S_h_0_h3: for (int h3 = 0; h3 < 16; h3++) {	// L298
-    l_S_s_0_s3: for (int s3 = 0; s3 < 6; s3++) {	// L299
-      l_S_d_0_d3: for (int d3 = 0; d3 < 96; d3++) {	// L300
-        ap_fixed<32, 20> v201 = v196[h3][s3][d3];	// L301
-        v197[h3][d3][s3] = v201;	// L302
+  float v203[16][6][96],
+  float v204[16][96][6]
+) {	// L303
+  l_S_h_0_h3: for (int h3 = 0; h3 < 16; h3++) {	// L304
+    l_S_s_0_s3: for (int s3 = 0; s3 < 6; s3++) {	// L305
+      l_S_d_0_d3: for (int d3 = 0; d3 < 96; d3++) {	// L306
+        float v208 = v203[h3][s3][d3];	// L307
+        v204[h3][d3][s3] = v208;	// L308
       }
     }
   }
 }
 
 void GEMM_3D_float(
-  ap_fixed<32, 20> v202[16][1][96],
-  ap_fixed<32, 20> v203[16][96][6],
-  ap_fixed<32, 20> v204[16][1][6]
-) {	// L308
-  l_S_h_0_h4: for (int h4 = 0; h4 < 16; h4++) {	// L309
-    l_S_i_0_i5: for (int i5 = 0; i5 < 1; i5++) {	// L310
-      l_S_j_0_j4: for (int j4 = 0; j4 < 6; j4++) {	// L311
-        l_S_k_0_k3: for (int k3 = 0; k3 < 96; k3++) {	// L312
-          ap_fixed<32, 20> v209 = v202[h4][i5][k3];	// L313
-          ap_fixed<32, 20> v210 = v203[h4][k3][j4];	// L314
-          ap_fixed<32, 20> v211 = v209 * v210;	// L315
-          ap_fixed<32, 20> v212 = v204[h4][i5][j4];	// L316
-          ap_fixed<32, 20> v213 = v212 + v211;	// L317
-          v204[h4][i5][j4] = v213;	// L318
+  float v209[16][1][96],
+  float v210[16][96][6],
+  float v211[16][1][6]
+) {	// L314
+  l_S_h_0_h4: for (int h4 = 0; h4 < 16; h4++) {	// L315
+    l_S_i_0_i5: for (int i5 = 0; i5 < 1; i5++) {	// L316
+      l_S_j_0_j4: for (int j4 = 0; j4 < 6; j4++) {	// L317
+        l_S_k_0_k3: for (int k3 = 0; k3 < 96; k3++) {	// L318
+          float v216 = v209[h4][i5][k3];	// L319
+          float v217 = v210[h4][k3][j4];	// L320
+          float v218 = v216 * v217;	// L321
+          float v219 = v211[h4][i5][j4];	// L322
+          float v220 = v219 + v218;	// L323
+          v211[h4][i5][j4] = v220;	// L324
         }
       }
     }
@@ -359,78 +367,78 @@ void GEMM_3D_float(
 }
 
 void causal_mask(
-  ap_fixed<32, 20> v214[1][1]
-) {	// L325
-  l_S_i_0_i6: for (int i6 = 0; i6 < 1; i6++) {	// L326
-    l_S_j_0_j5: for (int j5 = 0; j5 < 1; j5++) {	// L327
-      v214[i6][j5] = (ap_fixed<32, 20>)0.000000;	// L329
+  float v221[1][1]
+) {	// L331
+  l_S_i_0_i6: for (int i6 = 0; i6 < 1; i6++) {	// L332
+    l_S_j_0_j5: for (int j5 = 0; j5 < 1; j5++) {	// L333
+      v221[i6][j5] = (float)0.000000;	// L335
     }
   }
 }
 
 void softmax(
-  ap_fixed<32, 20> v217[16][1][6],
-  ap_fixed<32, 20> v218[16][1][6]
-) {	// L334
-  l_S_i_0_i7: for (int i7 = 0; i7 < 16; i7++) {	// L335
-    l_S_j_0_j6: for (int j6 = 0; j6 < 1; j6++) {	// L336
-      l_S_k_0_k4: for (int k4 = 0; k4 < 6; k4++) {	// L337
-        ap_fixed<32, 20> v222 = v217[i7][j6][k4];	// L338
-        v218[i7][j6][k4] = v222;	// L339
+  float v224[16][1][6],
+  float v225[16][1][6]
+) {	// L340
+  l_S_i_0_i7: for (int i7 = 0; i7 < 16; i7++) {	// L341
+    l_S_j_0_j6: for (int j6 = 0; j6 < 1; j6++) {	// L342
+      l_S_k_0_k4: for (int k4 = 0; k4 < 6; k4++) {	// L343
+        float v229 = v224[i7][j6][k4];	// L344
+        v225[i7][j6][k4] = v229;	// L345
       }
     }
   }
-  l_S_i_3_i8: for (int i8 = 0; i8 < 16; i8++) {	// L343
-    l_S_j_3_j7: for (int j7 = 0; j7 < 1; j7++) {	// L344
-      ap_fixed<32, 20> max_val1;	// L347
-      max_val1 = (ap_fixed<32, 20>)0.000000;	// L348
-      l_S_k_3_k5: for (int k5 = 0; k5 < 6; k5++) {	// L349
-        ap_fixed<32, 20> v227 = v218[i8][j7][k5];	// L350
-        ap_fixed<32, 20> v228 = max_val1;	// L351
-        bool v229 = v227 > v228;	// L352
-        if (v229) {	// L353
-          ap_fixed<32, 20> v230 = v218[i8][j7][k5];	// L354
-          max_val1 = v230;	// L355
+  l_S_i_3_i8: for (int i8 = 0; i8 < 16; i8++) {	// L349
+    l_S_j_3_j7: for (int j7 = 0; j7 < 1; j7++) {	// L350
+      float max_val1;	// L353
+      max_val1 = (float)0.000000;	// L354
+      l_S_k_3_k5: for (int k5 = 0; k5 < 6; k5++) {	// L355
+        float v234 = v225[i8][j7][k5];	// L356
+        float v235 = max_val1;	// L357
+        bool v236 = v234 > v235;	// L358
+        if (v236) {	// L359
+          float v237 = v225[i8][j7][k5];	// L360
+          max_val1 = v237;	// L361
         }
       }
-      ap_fixed<32, 20> sum_exp;	// L358
-      sum_exp = (ap_fixed<32, 20>)0.000000;	// L360
-      l_S_k_4_k6: for (int k6 = 0; k6 < 6; k6++) {	// L361
-        ap_fixed<32, 20> v233 = v218[i8][j7][k6];	// L362
-        ap_fixed<32, 20> v234 = max_val1;	// L363
-        ap_fixed<32, 20> v235 = v233 - v234;	// L364
-        ap_fixed<32, 20> v236 = hls::pow((ap_fixed<32, 20>)2.718282, v235);	// L366
-        v218[i8][j7][k6] = v236;	// L367
-        ap_fixed<32, 20> v237 = v218[i8][j7][k6];	// L368
-        ap_fixed<32, 20> v238 = sum_exp;	// L369
-        ap_fixed<32, 20> v239 = v238 + v237;	// L370
-        sum_exp = v239;	// L371
+      float sum_exp;	// L364
+      sum_exp = (float)0.000000;	// L366
+      l_S_k_4_k6: for (int k6 = 0; k6 < 6; k6++) {	// L367
+        float v240 = v225[i8][j7][k6];	// L368
+        float v241 = max_val1;	// L369
+        float v242 = v240 - v241;	// L370
+        float v243 = pow((float)2.718282, v242);	// L372
+        v225[i8][j7][k6] = v243;	// L373
+        float v244 = v225[i8][j7][k6];	// L374
+        float v245 = sum_exp;	// L375
+        float v246 = v245 + v244;	// L376
+        sum_exp = v246;	// L377
       }
-      l_S_k_5_k7: for (int k7 = 0; k7 < 6; k7++) {	// L373
-        ap_fixed<32, 20> v241 = v218[i8][j7][k7];	// L374
-        ap_fixed<32, 20> v242 = sum_exp;	// L375
-        ap_fixed<32, 20> v243 = v241 / v242;	// L376
-        v218[i8][j7][k7] = v243;	// L377
+      l_S_k_5_k7: for (int k7 = 0; k7 < 6; k7++) {	// L379
+        float v248 = v225[i8][j7][k7];	// L380
+        float v249 = sum_exp;	// L381
+        float v250 = v248 / v249;	// L382
+        v225[i8][j7][k7] = v250;	// L383
       }
     }
   }
 }
 
 void GEMM_3D_float2(
-  ap_fixed<32, 20> v244[16][1][6],
-  ap_fixed<32, 20> v245[16][6][96],
-  ap_fixed<32, 20> v246[16][1][96]
-) {	// L383
-  l_S_h_0_h5: for (int h5 = 0; h5 < 16; h5++) {	// L384
-    l_S_i_0_i9: for (int i9 = 0; i9 < 1; i9++) {	// L385
-      l_S_j_0_j8: for (int j8 = 0; j8 < 96; j8++) {	// L386
-        l_S_k_0_k8: for (int k8 = 0; k8 < 6; k8++) {	// L387
-          ap_fixed<32, 20> v251 = v244[h5][i9][k8];	// L388
-          ap_fixed<32, 20> v252 = v245[h5][k8][j8];	// L389
-          ap_fixed<32, 20> v253 = v251 * v252;	// L390
-          ap_fixed<32, 20> v254 = v246[h5][i9][j8];	// L391
-          ap_fixed<32, 20> v255 = v254 + v253;	// L392
-          v246[h5][i9][j8] = v255;	// L393
+  float v251[16][1][6],
+  float v252[16][6][96],
+  float v253[16][1][96]
+) {	// L389
+  l_S_h_0_h5: for (int h5 = 0; h5 < 16; h5++) {	// L390
+    l_S_i_0_i9: for (int i9 = 0; i9 < 1; i9++) {	// L391
+      l_S_j_0_j8: for (int j8 = 0; j8 < 96; j8++) {	// L392
+        l_S_k_0_k8: for (int k8 = 0; k8 < 6; k8++) {	// L393
+          float v258 = v251[h5][i9][k8];	// L394
+          float v259 = v252[h5][k8][j8];	// L395
+          float v260 = v258 * v259;	// L396
+          float v261 = v253[h5][i9][j8];	// L397
+          float v262 = v261 + v260;	// L398
+          v253[h5][i9][j8] = v262;	// L399
         }
       }
     }
@@ -438,235 +446,315 @@ void GEMM_3D_float2(
 }
 
 void attention(
-  ap_fixed<32, 20> v256[1][1536],
-  uint8_t v257[384][1536],
-  ap_fixed<32, 20> v258,
-  uint8_t v259[384][1536],
-  ap_fixed<32, 20> v260,
-  uint8_t v261[384][1536],
-  ap_fixed<32, 20> v262,
-  uint8_t v263[384][1536],
-  ap_fixed<32, 20> v264,
-  ap_fixed<32, 20> v265[10][96],
-  ap_fixed<32, 20> v266[10][96],
-  ap_fixed<32, 20> v267[1536],
-  ap_fixed<32, 20> v268[1536],
-  ap_fixed<32, 20> v269[16][5][96],
-  ap_fixed<32, 20> v270[16][5][96],
-  int32_t v271,
-  ap_fixed<32, 20> v272[1][1536]
-) {	// L400
-  ap_fixed<32, 20> RMS_NORM_EPS;	// L401
-  RMS_NORM_EPS = (ap_fixed<32, 20>)0.000010;	// L403
-  ap_fixed<32, 20> rms_hidden_states[1][1536];	// L406
-  for (int v275 = 0; v275 < 1; v275++) {	// L407
-    for (int v276 = 0; v276 < 1536; v276++) {	// L407
-      rms_hidden_states[v275][v276] = (ap_fixed<32, 20>)0.000000;	// L407
+  float v263[1][1536],
+  uint8_t v264[384][1536],
+  float v265,
+  uint8_t v266[384][1536],
+  float v267,
+  uint8_t v268[384][1536],
+  float v269,
+  uint8_t v270[384][1536],
+  float v271,
+  float v272[10][96],
+  float v273[10][96],
+  float v274[1536],
+  float v275[1536],
+  float v276[16][5][96],
+  float v277[16][5][96],
+  int32_t v278,
+  float v279[1][1536]
+) {	// L406
+  #pragma HLS array_partition variable=v264 cyclic dim=1 factor=2
+
+  #pragma HLS array_partition variable=v266 cyclic dim=1 factor=2
+
+  #pragma HLS array_partition variable=v268 cyclic dim=1 factor=2
+
+  #pragma HLS array_partition variable=v270 cyclic dim=1 factor=2
+
+  float RMS_NORM_EPS;	// L407
+  RMS_NORM_EPS = (float)0.000010;	// L409
+  float rms_hidden_states[1][1536];	// L412
+  for (int v282 = 0; v282 < 1; v282++) {	// L413
+    for (int v283 = 0; v283 < 1536; v283++) {	// L413
+      rms_hidden_states[v282][v283] = (float)0.000000;	// L413
     }
   }
-  ap_fixed<32, 20> v277 = RMS_NORM_EPS;	// L408
-  rms_norm(v256, v267, v277, rms_hidden_states);	// L409
-  int8_t quantized_hidden_states[1][384][4];	// L411
-  for (int v279 = 0; v279 < 1; v279++) {	// L412
-    for (int v280 = 0; v280 < 384; v280++) {	// L412
-      for (int v281 = 0; v281 < 4; v281++) {	// L412
-        quantized_hidden_states[v279][v280][v281] = 0;	// L412
+  float v284 = RMS_NORM_EPS;	// L414
+  rms_norm(v263, v274, v284, rms_hidden_states);	// L415
+  int8_t quantized_hidden_states[1][384][4];	// L417
+  for (int v286 = 0; v286 < 1; v286++) {	// L418
+    for (int v287 = 0; v287 < 384; v287++) {	// L418
+      for (int v288 = 0; v288 < 4; v288++) {	// L418
+        quantized_hidden_states[v286][v287][v288] = 0;	// L418
       }
     }
   }
-  ap_fixed<32, 20> scales[1];	// L413
-  for (int v283 = 0; v283 < 1; v283++) {	// L414
-    scales[v283] = (ap_fixed<32, 20>)0.000000;	// L414
+  float scales[1];	// L419
+  for (int v290 = 0; v290 < 1; v290++) {	// L420
+    scales[v290] = (float)0.000000;	// L420
   }
-  quantize_activation(rms_hidden_states, 8, quantized_hidden_states, scales);	// L416
-  ap_fixed<32, 20> q_proj_re[1][1536];	// L417
-  for (int v285 = 0; v285 < 1; v285++) {	// L418
-    for (int v286 = 0; v286 < 1536; v286++) {	// L418
-      q_proj_re[v285][v286] = (ap_fixed<32, 20>)0.000000;	// L418
+  quantize_activation(rms_hidden_states, 8, quantized_hidden_states, scales);	// L422
+  float q_proj_re[1][1536];	// L423
+  for (int v292 = 0; v292 < 1; v292++) {	// L424
+    for (int v293 = 0; v293 < 1536; v293++) {	// L424
+      q_proj_re[v292][v293] = (float)0.000000;	// L424
     }
   }
-  ap_fixed<32, 20> k_proj_re[1][1536];	// L419
-  for (int v288 = 0; v288 < 1; v288++) {	// L420
-    for (int v289 = 0; v289 < 1536; v289++) {	// L420
-      k_proj_re[v288][v289] = (ap_fixed<32, 20>)0.000000;	// L420
+  float k_proj_re[1][1536];	// L425
+  for (int v295 = 0; v295 < 1; v295++) {	// L426
+    for (int v296 = 0; v296 < 1536; v296++) {	// L426
+      k_proj_re[v295][v296] = (float)0.000000;	// L426
     }
   }
-  ap_fixed<32, 20> v_proj_re[1][1536];	// L421
-  for (int v291 = 0; v291 < 1; v291++) {	// L422
-    for (int v292 = 0; v292 < 1536; v292++) {	// L422
-      v_proj_re[v291][v292] = (ap_fixed<32, 20>)0.000000;	// L422
+  float v_proj_re[1][1536];	// L427
+  for (int v298 = 0; v298 < 1; v298++) {	// L428
+    for (int v299 = 0; v299 < 1536; v299++) {	// L428
+      v_proj_re[v298][v299] = (float)0.000000;	// L428
     }
   }
-  linear_forward_no_mul(quantized_hidden_states, scales, v257, v258, q_proj_re);	// L423
-  linear_forward_no_mul(quantized_hidden_states, scales, v259, v260, k_proj_re);	// L424
-  linear_forward_no_mul(quantized_hidden_states, scales, v261, v262, v_proj_re);	// L425
-  ap_fixed<32, 20> q_proj[16][1][96];	// L426
-  for (int v294 = 0; v294 < 16; v294++) {	// L427
-    for (int v295 = 0; v295 < 1; v295++) {	// L427
-      for (int v296 = 0; v296 < 96; v296++) {	// L427
-        q_proj[v294][v295][v296] = (ap_fixed<32, 20>)0.000000;	// L427
+  ap_fixed<32, 12> v300 = v265;	// L429
+  ap_fixed<32, 12> q_weights_scale_fixed;	// L430
+  q_weights_scale_fixed = v300;	// L431
+  ap_fixed<32, 12> v302 = v267;	// L432
+  ap_fixed<32, 12> k_weights_scale_fixed;	// L433
+  k_weights_scale_fixed = v302;	// L434
+  ap_fixed<32, 12> v304 = v269;	// L435
+  ap_fixed<32, 12> v_weights_scale_fixed;	// L436
+  v_weights_scale_fixed = v304;	// L437
+  ap_fixed<32, 12> v306 = v271;	// L438
+  ap_fixed<32, 12> o_weights_scale_fixed;	// L439
+  o_weights_scale_fixed = v306;	// L440
+  ap_fixed<32, 12> v308 = 0;	// L441
+  ap_fixed<32, 12> scales_fixed[1];	// L442
+  for (int v310 = 0; v310 < 1; v310++) {	// L443
+    scales_fixed[v310] = v308;	// L443
+  }
+  int8_t quantized_hidden_states_copy[1][384][4];	// L444
+  #pragma HLS array_partition variable=quantized_hidden_states_copy cyclic dim=2 factor=2
+
+  for (int v312 = 0; v312 < 1; v312++) {	// L445
+    for (int v313 = 0; v313 < 384; v313++) {	// L445
+      for (int v314 = 0; v314 < 4; v314++) {	// L445
+        quantized_hidden_states_copy[v312][v313][v314] = 0;	// L445
       }
     }
   }
-  ap_fixed<32, 20> k_proj[16][1][96];	// L428
-  for (int v298 = 0; v298 < 16; v298++) {	// L429
-    for (int v299 = 0; v299 < 1; v299++) {	// L429
-      for (int v300 = 0; v300 < 96; v300++) {	// L429
-        k_proj[v298][v299][v300] = (ap_fixed<32, 20>)0.000000;	// L429
+  l_S_i_j_k_0_i10: for (int i10 = 0; i10 < 1; i10++) {	// L446
+    l_j9: for (int j9 = 0; j9 < 384; j9++) {	// L447
+      l_k9: for (int k9 = 0; k9 < 4; k9++) {	// L448
+        int8_t v318 = quantized_hidden_states[i10][j9][k9];	// L449
+        quantized_hidden_states_copy[i10][j9][k9] = v318;	// L450
       }
     }
   }
-  ap_fixed<32, 20> v_proj[16][1][96];	// L430
-  for (int v302 = 0; v302 < 16; v302++) {	// L431
-    for (int v303 = 0; v303 < 1; v303++) {	// L431
-      for (int v304 = 0; v304 < 96; v304++) {	// L431
-        v_proj[v302][v303][v304] = (ap_fixed<32, 20>)0.000000;	// L431
+  l_S_i_1_i11: for (int i11 = 0; i11 < 1; i11++) {	// L454
+    float v320 = scales[i11];	// L455
+    ap_fixed<32, 12> v321 = v320;	// L456
+    scales_fixed[i11] = v321;	// L457
+  }
+  ap_fixed<32, 12> v322 = q_weights_scale_fixed;	// L459
+  linear_forward_no_mul(quantized_hidden_states_copy, scales_fixed, v264, v322, q_proj_re);	// L460
+  ap_fixed<32, 12> v323 = k_weights_scale_fixed;	// L461
+  linear_forward_no_mul(quantized_hidden_states_copy, scales_fixed, v266, v323, k_proj_re);	// L462
+  ap_fixed<32, 12> v324 = v_weights_scale_fixed;	// L463
+  linear_forward_no_mul(quantized_hidden_states_copy, scales_fixed, v268, v324, v_proj_re);	// L464
+  float q_proj[16][1][96];	// L465
+  for (int v326 = 0; v326 < 16; v326++) {	// L466
+    for (int v327 = 0; v327 < 1; v327++) {	// L466
+      for (int v328 = 0; v328 < 96; v328++) {	// L466
+        q_proj[v326][v327][v328] = (float)0.000000;	// L466
       }
     }
   }
-  reshape_2D_to_3D(q_proj_re, q_proj);	// L432
-  reshape_2D_to_3D(k_proj_re, k_proj);	// L433
-  reshape_2D_to_3D(v_proj_re, v_proj);	// L434
-  ap_fixed<32, 20> q_embed[16][1][96];	// L435
-  for (int v306 = 0; v306 < 16; v306++) {	// L436
-    for (int v307 = 0; v307 < 1; v307++) {	// L436
-      for (int v308 = 0; v308 < 96; v308++) {	// L436
-        q_embed[v306][v307][v308] = (ap_fixed<32, 20>)0.000000;	// L436
+  float k_proj[16][1][96];	// L467
+  for (int v330 = 0; v330 < 16; v330++) {	// L468
+    for (int v331 = 0; v331 < 1; v331++) {	// L468
+      for (int v332 = 0; v332 < 96; v332++) {	// L468
+        k_proj[v330][v331][v332] = (float)0.000000;	// L468
       }
     }
   }
-  ap_fixed<32, 20> k_embed[16][1][96];	// L437
-  for (int v310 = 0; v310 < 16; v310++) {	// L438
-    for (int v311 = 0; v311 < 1; v311++) {	// L438
-      for (int v312 = 0; v312 < 96; v312++) {	// L438
-        k_embed[v310][v311][v312] = (ap_fixed<32, 20>)0.000000;	// L438
+  float v_proj[16][1][96];	// L469
+  for (int v334 = 0; v334 < 16; v334++) {	// L470
+    for (int v335 = 0; v335 < 1; v335++) {	// L470
+      for (int v336 = 0; v336 < 96; v336++) {	// L470
+        v_proj[v334][v335][v336] = (float)0.000000;	// L470
       }
     }
   }
-  apply_rotary_pos_emb(q_proj, k_proj, v265, v266, q_embed, k_embed, v271);	// L439
-  ap_fixed<32, 20> updated_k_cache[16][6][96];	// L440
-  for (int v314 = 0; v314 < 16; v314++) {	// L441
-    for (int v315 = 0; v315 < 6; v315++) {	// L441
-      for (int v316 = 0; v316 < 96; v316++) {	// L441
-        updated_k_cache[v314][v315][v316] = (ap_fixed<32, 20>)0.000000;	// L441
+  reshape_2D_to_3D(q_proj_re, q_proj);	// L471
+  reshape_2D_to_3D(k_proj_re, k_proj);	// L472
+  reshape_2D_to_3D(v_proj_re, v_proj);	// L473
+  float q_embed[16][1][96];	// L474
+  for (int v338 = 0; v338 < 16; v338++) {	// L475
+    for (int v339 = 0; v339 < 1; v339++) {	// L475
+      for (int v340 = 0; v340 < 96; v340++) {	// L475
+        q_embed[v338][v339][v340] = (float)0.000000;	// L475
       }
     }
   }
-  ap_fixed<32, 20> updated_v_cache[16][6][96];	// L442
-  for (int v318 = 0; v318 < 16; v318++) {	// L443
-    for (int v319 = 0; v319 < 6; v319++) {	// L443
-      for (int v320 = 0; v320 < 96; v320++) {	// L443
-        updated_v_cache[v318][v319][v320] = (ap_fixed<32, 20>)0.000000;	// L443
+  float k_embed[16][1][96];	// L476
+  for (int v342 = 0; v342 < 16; v342++) {	// L477
+    for (int v343 = 0; v343 < 1; v343++) {	// L477
+      for (int v344 = 0; v344 < 96; v344++) {	// L477
+        k_embed[v342][v343][v344] = (float)0.000000;	// L477
       }
     }
   }
-  cache_update(v269, k_embed, updated_k_cache);	// L444
-  cache_update(v270, v_proj, updated_v_cache);	// L445
-  ap_fixed<32, 20> k_proj_transposed[16][96][6];	// L446
-  for (int v322 = 0; v322 < 16; v322++) {	// L447
-    for (int v323 = 0; v323 < 96; v323++) {	// L447
-      for (int v324 = 0; v324 < 6; v324++) {	// L447
-        k_proj_transposed[v322][v323][v324] = (ap_fixed<32, 20>)0.000000;	// L447
+  apply_rotary_pos_emb(q_proj, k_proj, v272, v273, q_embed, k_embed, v278);	// L478
+  float updated_k_cache[16][6][96];	// L479
+  for (int v346 = 0; v346 < 16; v346++) {	// L480
+    for (int v347 = 0; v347 < 6; v347++) {	// L480
+      for (int v348 = 0; v348 < 96; v348++) {	// L480
+        updated_k_cache[v346][v347][v348] = (float)0.000000;	// L480
       }
     }
   }
-  transpose_last_two_dims(updated_k_cache, k_proj_transposed);	// L448
-  ap_fixed<32, 20> attn_weights[16][1][6];	// L449
-  for (int v326 = 0; v326 < 16; v326++) {	// L450
-    for (int v327 = 0; v327 < 1; v327++) {	// L450
-      for (int v328 = 0; v328 < 6; v328++) {	// L450
-        attn_weights[v326][v327][v328] = (ap_fixed<32, 20>)0.000000;	// L450
+  float updated_v_cache[16][6][96];	// L481
+  for (int v350 = 0; v350 < 16; v350++) {	// L482
+    for (int v351 = 0; v351 < 6; v351++) {	// L482
+      for (int v352 = 0; v352 < 96; v352++) {	// L482
+        updated_v_cache[v350][v351][v352] = (float)0.000000;	// L482
       }
     }
   }
-  GEMM_3D_float(q_embed, k_proj_transposed, attn_weights);	// L451
-  ap_fixed<32, 20> scale_factor;	// L456
-  scale_factor = (ap_fixed<32, 20>)9.797959;	// L457
-  l_S_i_0_i10: for (int i10 = 0; i10 < 16; i10++) {	// L458
-    l_S_j_0_j9: for (int j9 = 0; j9 < 1; j9++) {	// L459
-      l_S_k_0_k9: for (int k9 = 0; k9 < 6; k9++) {	// L460
-        ap_fixed<32, 20> v333 = attn_weights[i10][j9][k9];	// L461
-        ap_fixed<32, 20> v334 = scale_factor;	// L462
-        ap_fixed<32, 20> v335 = v333 / v334;	// L463
-        attn_weights[i10][j9][k9] = v335;	// L464
+  cache_update(v276, k_embed, updated_k_cache);	// L483
+  cache_update(v277, v_proj, updated_v_cache);	// L484
+  float k_proj_transposed[16][96][6];	// L485
+  for (int v354 = 0; v354 < 16; v354++) {	// L486
+    for (int v355 = 0; v355 < 96; v355++) {	// L486
+      for (int v356 = 0; v356 < 6; v356++) {	// L486
+        k_proj_transposed[v354][v355][v356] = (float)0.000000;	// L486
       }
     }
   }
-  ap_fixed<32, 20> causal_mask_matrix[1][1];	// L470
-  for (int v337 = 0; v337 < 1; v337++) {	// L471
-    for (int v338 = 0; v338 < 1; v338++) {	// L471
-      causal_mask_matrix[v337][v338] = (ap_fixed<32, 20>)-340282346638528859811704183484516925440.000000;	// L471
-    }
-  }
-  causal_mask(causal_mask_matrix);	// L472
-  l_S_h_3_h6: for (int h6 = 0; h6 < 16; h6++) {	// L473
-    l_S_i_3_i11: for (int i11 = 0; i11 < 1; i11++) {	// L474
-      l_S_j_3_j10: for (int j10 = 0; j10 < 1; j10++) {	// L475
-        ap_fixed<32, 20> v342 = causal_mask_matrix[i11][j10];	// L476
-        ap_fixed<32, 20> v343 = attn_weights[h6][i11][j10];	// L477
-        ap_fixed<32, 20> v344 = v343 + v342;	// L478
-        attn_weights[h6][i11][j10] = v344;	// L479
+  transpose_last_two_dims(updated_k_cache, k_proj_transposed);	// L487
+  float attn_weights[16][1][6];	// L488
+  for (int v358 = 0; v358 < 16; v358++) {	// L489
+    for (int v359 = 0; v359 < 1; v359++) {	// L489
+      for (int v360 = 0; v360 < 6; v360++) {	// L489
+        attn_weights[v358][v359][v360] = (float)0.000000;	// L489
       }
     }
   }
-  ap_fixed<32, 20> softmax_attn_weights[16][1][6];	// L483
-  for (int v346 = 0; v346 < 16; v346++) {	// L484
-    for (int v347 = 0; v347 < 1; v347++) {	// L484
-      for (int v348 = 0; v348 < 6; v348++) {	// L484
-        softmax_attn_weights[v346][v347][v348] = (ap_fixed<32, 20>)0.000000;	// L484
+  GEMM_3D_float(q_embed, k_proj_transposed, attn_weights);	// L490
+  float scale_factor;	// L495
+  scale_factor = (float)9.797959;	// L496
+  l_S_i_2_i12: for (int i12 = 0; i12 < 16; i12++) {	// L497
+    l_S_j_2_j10: for (int j10 = 0; j10 < 1; j10++) {	// L498
+      l_S_k_2_k10: for (int k10 = 0; k10 < 6; k10++) {	// L499
+        float v365 = attn_weights[i12][j10][k10];	// L500
+        float v366 = scale_factor;	// L501
+        float v367 = v365 / v366;	// L502
+        attn_weights[i12][j10][k10] = v367;	// L503
       }
     }
   }
-  softmax(attn_weights, softmax_attn_weights);	// L485
-  ap_fixed<32, 20> attn_output[16][1][96];	// L486
-  for (int v350 = 0; v350 < 16; v350++) {	// L487
-    for (int v351 = 0; v351 < 1; v351++) {	// L487
-      for (int v352 = 0; v352 < 96; v352++) {	// L487
-        attn_output[v350][v351][v352] = (ap_fixed<32, 20>)0.000000;	// L487
+  float causal_mask_matrix[1][1];	// L509
+  for (int v369 = 0; v369 < 1; v369++) {	// L510
+    for (int v370 = 0; v370 < 1; v370++) {	// L510
+      causal_mask_matrix[v369][v370] = (float)-340282346638528859811704183484516925440.000000;	// L510
+    }
+  }
+  causal_mask(causal_mask_matrix);	// L511
+  l_S_h_5_h6: for (int h6 = 0; h6 < 16; h6++) {	// L512
+    l_S_i_5_i13: for (int i13 = 0; i13 < 1; i13++) {	// L513
+      l_S_j_5_j11: for (int j11 = 0; j11 < 1; j11++) {	// L514
+        float v374 = causal_mask_matrix[i13][j11];	// L515
+        float v375 = attn_weights[h6][i13][j11];	// L516
+        float v376 = v375 + v374;	// L517
+        attn_weights[h6][i13][j11] = v376;	// L518
       }
     }
   }
-  GEMM_3D_float2(softmax_attn_weights, updated_v_cache, attn_output);	// L488
-  ap_fixed<32, 20> attn_output_2D[1][1536];	// L489
-  for (int v354 = 0; v354 < 1; v354++) {	// L490
-    for (int v355 = 0; v355 < 1536; v355++) {	// L490
-      attn_output_2D[v354][v355] = (ap_fixed<32, 20>)0.000000;	// L490
-    }
-  }
-  l_S_s_6_s4: for (int s4 = 0; s4 < 1; s4++) {	// L491
-    l_S_h_6_h7: for (int h7 = 0; h7 < 16; h7++) {	// L492
-      l_S_d_6_d4: for (int d4 = 0; d4 < 96; d4++) {	// L493
-        ap_fixed<32, 20> v359 = attn_output[h7][s4][d4];	// L494
-        attn_output_2D[s4][((h7 * 96) + d4)] = v359;	// L495
+  float softmax_attn_weights[16][1][6];	// L522
+  for (int v378 = 0; v378 < 16; v378++) {	// L523
+    for (int v379 = 0; v379 < 1; v379++) {	// L523
+      for (int v380 = 0; v380 < 6; v380++) {	// L523
+        softmax_attn_weights[v378][v379][v380] = (float)0.000000;	// L523
       }
     }
   }
-  ap_fixed<32, 20> rms_attn_output[1][1536];	// L499
-  for (int v361 = 0; v361 < 1; v361++) {	// L500
-    for (int v362 = 0; v362 < 1536; v362++) {	// L500
-      rms_attn_output[v361][v362] = (ap_fixed<32, 20>)0.000000;	// L500
-    }
-  }
-  ap_fixed<32, 20> v363 = RMS_NORM_EPS;	// L501
-  rms_norm(attn_output_2D, v268, v363, rms_attn_output);	// L502
-  int8_t quantized_final_output[1][384][4];	// L503
-  for (int v365 = 0; v365 < 1; v365++) {	// L504
-    for (int v366 = 0; v366 < 384; v366++) {	// L504
-      for (int v367 = 0; v367 < 4; v367++) {	// L504
-        quantized_final_output[v365][v366][v367] = 0;	// L504
+  softmax(attn_weights, softmax_attn_weights);	// L524
+  float attn_output[16][1][96];	// L525
+  for (int v382 = 0; v382 < 16; v382++) {	// L526
+    for (int v383 = 0; v383 < 1; v383++) {	// L526
+      for (int v384 = 0; v384 < 96; v384++) {	// L526
+        attn_output[v382][v383][v384] = (float)0.000000;	// L526
       }
     }
   }
-  ap_fixed<32, 20> final_scales[1];	// L505
-  for (int v369 = 0; v369 < 1; v369++) {	// L506
-    final_scales[v369] = (ap_fixed<32, 20>)0.000000;	// L506
-  }
-  quantize_activation(rms_attn_output, 8, quantized_final_output, final_scales);	// L507
-  for (int v370 = 0; v370 < 1; v370++) {	// L509
-    for (int v371 = 0; v371 < 1536; v371++) {	// L509
-      v272[v370][v371] = (ap_fixed<32, 20>)0.000000;	// L509
+  GEMM_3D_float2(softmax_attn_weights, updated_v_cache, attn_output);	// L527
+  float attn_output_2D[1][1536];	// L528
+  for (int v386 = 0; v386 < 1; v386++) {	// L529
+    for (int v387 = 0; v387 < 1536; v387++) {	// L529
+      attn_output_2D[v386][v387] = (float)0.000000;	// L529
     }
   }
-  linear_forward_no_mul(quantized_final_output, final_scales, v263, v264, v272);	// L510
+  l_S_s_8_s4: for (int s4 = 0; s4 < 1; s4++) {	// L530
+    l_S_h_8_h7: for (int h7 = 0; h7 < 16; h7++) {	// L531
+      l_S_d_8_d4: for (int d4 = 0; d4 < 96; d4++) {	// L532
+        float v391 = attn_output[h7][s4][d4];	// L533
+        attn_output_2D[s4][((h7 * 96) + d4)] = v391;	// L534
+      }
+    }
+  }
+  float rms_attn_output[1][1536];	// L538
+  for (int v393 = 0; v393 < 1; v393++) {	// L539
+    for (int v394 = 0; v394 < 1536; v394++) {	// L539
+      rms_attn_output[v393][v394] = (float)0.000000;	// L539
+    }
+  }
+  float v395 = RMS_NORM_EPS;	// L540
+  rms_norm(attn_output_2D, v275, v395, rms_attn_output);	// L541
+  int8_t quantized_final_output[1][384][4];	// L542
+  for (int v397 = 0; v397 < 1; v397++) {	// L543
+    for (int v398 = 0; v398 < 384; v398++) {	// L543
+      for (int v399 = 0; v399 < 4; v399++) {	// L543
+        quantized_final_output[v397][v398][v399] = 0;	// L543
+      }
+    }
+  }
+  float final_scales[1];	// L544
+  for (int v401 = 0; v401 < 1; v401++) {	// L545
+    final_scales[v401] = (float)0.000000;	// L545
+  }
+  quantize_activation(rms_attn_output, 8, quantized_final_output, final_scales);	// L546
+  ap_fixed<32, 12> v402 = 0;	// L547
+  ap_fixed<32, 12> final_scales_fixed[1];	// L548
+  for (int v404 = 0; v404 < 1; v404++) {	// L549
+    final_scales_fixed[v404] = v402;	// L549
+  }
+  l_S_i_11_i14: for (int i14 = 0; i14 < 1; i14++) {	// L550
+    float v406 = final_scales[i14];	// L551
+    ap_fixed<32, 12> v407 = v406;	// L552
+    final_scales_fixed[i14] = v407;	// L553
+  }
+  int8_t quantized_final_output_copy[1][384][4];	// L555
+  #pragma HLS array_partition variable=quantized_final_output_copy cyclic dim=2 factor=2
+
+  for (int v409 = 0; v409 < 1; v409++) {	// L556
+    for (int v410 = 0; v410 < 384; v410++) {	// L556
+      for (int v411 = 0; v411 < 4; v411++) {	// L556
+        quantized_final_output_copy[v409][v410][v411] = 0;	// L556
+      }
+    }
+  }
+  l_S_i_j_k_12_i15: for (int i15 = 0; i15 < 1; i15++) {	// L557
+    l_j12: for (int j12 = 0; j12 < 384; j12++) {	// L558
+      l_k11: for (int k11 = 0; k11 < 4; k11++) {	// L559
+        int8_t v415 = quantized_final_output[i15][j12][k11];	// L560
+        quantized_final_output_copy[i15][j12][k11] = v415;	// L561
+      }
+    }
+  }
+  for (int v416 = 0; v416 < 1; v416++) {	// L566
+    for (int v417 = 0; v417 < 1536; v417++) {	// L566
+      v279[v416][v417] = (float)0.000000;	// L566
+    }
+  }
+  ap_fixed<32, 12> v418 = o_weights_scale_fixed;	// L567
+  linear_forward_no_mul(quantized_final_output_copy, final_scales_fixed, v270, v418, v279);	// L568
 }
 

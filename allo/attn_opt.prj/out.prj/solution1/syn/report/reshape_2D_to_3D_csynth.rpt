@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'reshape_2D_to_3D'
 ================================================================
-* Date:           Sat Nov 30 20:59:11 2024
+* Date:           Thu Dec  5 02:39:34 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        out.prj
@@ -86,14 +86,14 @@
     +----------------------+----------+-------+---+----+------------+------------+
     |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------+----------+-------+---+----+------------+------------+
-    |add_ln203_fu_195_p2   |     +    |      0|  0|  12|          12|          12|
-    |add_ln225_fu_99_p2    |     +    |      0|  0|  15|           5|           1|
-    |add_ln226_fu_175_p2   |     +    |      0|  0|  15|           7|           1|
-    |add_ln227_fu_181_p2   |     +    |      0|  0|  12|          12|          12|
-    |sub_ln203_fu_159_p2   |     -    |      0|  0|  12|          12|          12|
-    |sub_ln227_fu_133_p2   |     -    |      0|  0|  12|          12|          12|
-    |icmp_ln225_fu_93_p2   |   icmp   |      0|  0|  11|           5|           6|
-    |icmp_ln226_fu_169_p2  |   icmp   |      0|  0|  11|           7|           7|
+    |add_ln233_fu_99_p2    |     +    |      0|  0|  15|           5|           1|
+    |add_ln234_fu_175_p2   |     +    |      0|  0|  15|           7|           1|
+    |add_ln235_fu_181_p2   |     +    |      0|  0|  12|          12|          12|
+    |add_ln236_fu_195_p2   |     +    |      0|  0|  12|          12|          12|
+    |sub_ln235_fu_133_p2   |     -    |      0|  0|  12|          12|          12|
+    |sub_ln236_fu_159_p2   |     -    |      0|  0|  12|          12|          12|
+    |icmp_ln233_fu_93_p2   |   icmp   |      0|  0|  11|           5|           6|
+    |icmp_ln234_fu_169_p2  |   icmp   |      0|  0|  11|           7|           7|
     +----------------------+----------+-------+---+----+------------+------------+
     |Total                 |          |      0|  0| 100|          72|          63|
     +----------------------+----------+-------+---+----+------------+------------+
@@ -113,14 +113,14 @@
     +-------------------+----+----+-----+-----------+
     |        Name       | FF | LUT| Bits| Const Bits|
     +-------------------+----+----+-----+-----------+
-    |add_ln203_reg_235  |  12|   0|   12|          0|
-    |add_ln225_reg_207  |   5|   0|    5|          0|
-    |add_ln226_reg_225  |   7|   0|    7|          0|
+    |add_ln233_reg_207  |   5|   0|    5|          0|
+    |add_ln234_reg_225  |   7|   0|    7|          0|
+    |add_ln236_reg_235  |  12|   0|   12|          0|
     |ap_CS_fsm          |   4|   0|    4|          0|
     |d_0_0_reg_82       |   7|   0|    7|          0|
     |h_0_0_reg_71       |   5|   0|    5|          0|
-    |sub_ln203_reg_217  |   7|   0|   12|          5|
-    |sub_ln227_reg_212  |   7|   0|   12|          5|
+    |sub_ln235_reg_212  |   7|   0|   12|          5|
+    |sub_ln236_reg_217  |   7|   0|   12|          5|
     +-------------------+----+----+-----+-----------+
     |Total              |  54|   0|   64|         10|
     +-------------------+----+----+-----+-----------+
@@ -131,21 +131,21 @@
 == Interface
 ================================================================
 * Summary: 
-+-------------------+-----+-----+------------+------------------+--------------+
-|     RTL Ports     | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
-+-------------------+-----+-----+------------+------------------+--------------+
-|ap_clk             |  in |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
-|ap_rst             |  in |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
-|ap_start           |  in |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
-|ap_done            | out |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
-|ap_idle            | out |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
-|ap_ready           | out |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
-|v139_V_address0    | out |   11|  ap_memory |      v139_V      |     array    |
-|v139_V_ce0         | out |    1|  ap_memory |      v139_V      |     array    |
-|v139_V_q0          |  in |   32|  ap_memory |      v139_V      |     array    |
-|v140_0_V_address0  | out |   11|  ap_memory |     v140_0_V     |     array    |
-|v140_0_V_ce0       | out |    1|  ap_memory |     v140_0_V     |     array    |
-|v140_0_V_we0       | out |    1|  ap_memory |     v140_0_V     |     array    |
-|v140_0_V_d0        | out |   32|  ap_memory |     v140_0_V     |     array    |
-+-------------------+-----+-----+------------+------------------+--------------+
++-----------------+-----+-----+------------+------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++-----------------+-----+-----+------------+------------------+--------------+
+|ap_clk           |  in |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
+|ap_rst           |  in |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
+|ap_start         |  in |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
+|ap_done          | out |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
+|ap_idle          | out |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
+|ap_ready         | out |    1| ap_ctrl_hs | reshape_2D_to_3D | return value |
+|v146_address0    | out |   11|  ap_memory |       v146       |     array    |
+|v146_ce0         | out |    1|  ap_memory |       v146       |     array    |
+|v146_q0          |  in |   32|  ap_memory |       v146       |     array    |
+|v147_0_address0  | out |   11|  ap_memory |      v147_0      |     array    |
+|v147_0_ce0       | out |    1|  ap_memory |      v147_0      |     array    |
+|v147_0_we0       | out |    1|  ap_memory |      v147_0      |     array    |
+|v147_0_d0        | out |   32|  ap_memory |      v147_0      |     array    |
++-----------------+-----+-----+------------+------------------+--------------+
 

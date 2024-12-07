@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'transpose_last_two_d'" level="0">
-<item name = "Date">Sat Nov 30 20:59:15 2024
+<item name = "Date">Thu Dec  5 02:39:36 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">out.prj</item>
@@ -80,20 +80,20 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln203_1_fu_314_p2">+, 0, 0, 15, 15, 15</column>
-<column name="add_ln203_fu_283_p2">+, 0, 0, 19, 14, 14</column>
-<column name="add_ln333_1_fu_273_p2">+, 0, 0, 21, 15, 15</column>
-<column name="add_ln333_fu_222_p2">+, 0, 0, 14, 10, 10</column>
+<column name="add_ln341_1_fu_273_p2">+, 0, 0, 21, 15, 15</column>
+<column name="add_ln341_fu_222_p2">+, 0, 0, 14, 10, 10</column>
+<column name="add_ln342_1_fu_314_p2">+, 0, 0, 15, 15, 15</column>
+<column name="add_ln342_fu_283_p2">+, 0, 0, 19, 14, 14</column>
 <column name="d3_fu_259_p2">+, 0, 0, 15, 7, 1</column>
 <column name="h3_fu_128_p2">+, 0, 0, 15, 5, 1</column>
 <column name="s3_fu_208_p2">+, 0, 0, 12, 3, 1</column>
-<column name="sub_ln203_1_fu_308_p2">-, 0, 0, 15, 15, 15</column>
-<column name="sub_ln203_fu_192_p2">-, 0, 0, 17, 13, 13</column>
-<column name="sub_ln333_1_fu_247_p2">-, 0, 0, 21, 15, 15</column>
-<column name="sub_ln333_fu_158_p2">-, 0, 0, 15, 9, 9</column>
-<column name="icmp_ln330_fu_122_p2">icmp, 0, 0, 11, 5, 6</column>
-<column name="icmp_ln331_fu_202_p2">icmp, 0, 0, 9, 3, 3</column>
-<column name="icmp_ln332_fu_253_p2">icmp, 0, 0, 11, 7, 7</column>
+<column name="sub_ln341_1_fu_247_p2">-, 0, 0, 21, 15, 15</column>
+<column name="sub_ln341_fu_158_p2">-, 0, 0, 15, 9, 9</column>
+<column name="sub_ln342_1_fu_308_p2">-, 0, 0, 15, 15, 15</column>
+<column name="sub_ln342_fu_192_p2">-, 0, 0, 17, 13, 13</column>
+<column name="icmp_ln338_fu_122_p2">icmp, 0, 0, 11, 5, 6</column>
+<column name="icmp_ln339_fu_202_p2">icmp, 0, 0, 9, 3, 3</column>
+<column name="icmp_ln340_fu_253_p2">icmp, 0, 0, 11, 7, 7</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -106,7 +106,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln203_1_reg_372">15, 0, 15, 0</column>
+<column name="add_ln342_1_reg_372">15, 0, 15, 0</column>
 <column name="ap_CS_fsm">5, 0, 5, 0</column>
 <column name="d3_0_reg_111">7, 0, 7, 0</column>
 <column name="d3_reg_362">7, 0, 7, 0</column>
@@ -114,10 +114,10 @@
 <column name="h3_reg_326">5, 0, 5, 0</column>
 <column name="s3_0_reg_100">3, 0, 3, 0</column>
 <column name="s3_reg_344">3, 0, 3, 0</column>
-<column name="sext_ln203_reg_336">9, 0, 14, 5</column>
-<column name="sext_ln333_reg_331">9, 0, 10, 1</column>
-<column name="sub_ln333_1_reg_354">10, 0, 15, 5</column>
-<column name="zext_ln333_2_reg_349">3, 0, 15, 12</column>
+<column name="sext_ln341_reg_331">9, 0, 10, 1</column>
+<column name="sext_ln342_reg_336">9, 0, 14, 5</column>
+<column name="sub_ln341_1_reg_354">10, 0, 15, 5</column>
+<column name="zext_ln341_2_reg_349">3, 0, 15, 12</column>
 </table>
 </item>
 </section>
@@ -133,13 +133,13 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, transpose_last_two_d, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, transpose_last_two_d, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, transpose_last_two_d, return value</column>
-<column name="v196_V_address0">out, 14, ap_memory, v196_V, array</column>
-<column name="v196_V_ce0">out, 1, ap_memory, v196_V, array</column>
-<column name="v196_V_q0">in, 32, ap_memory, v196_V, array</column>
-<column name="v197_V_address0">out, 14, ap_memory, v197_V, array</column>
-<column name="v197_V_ce0">out, 1, ap_memory, v197_V, array</column>
-<column name="v197_V_we0">out, 1, ap_memory, v197_V, array</column>
-<column name="v197_V_d0">out, 32, ap_memory, v197_V, array</column>
+<column name="v203_address0">out, 14, ap_memory, v203, array</column>
+<column name="v203_ce0">out, 1, ap_memory, v203, array</column>
+<column name="v203_q0">in, 32, ap_memory, v203, array</column>
+<column name="v204_address0">out, 14, ap_memory, v204, array</column>
+<column name="v204_ce0">out, 1, ap_memory, v204, array</column>
+<column name="v204_we0">out, 1, ap_memory, v204, array</column>
+<column name="v204_d0">out, 32, ap_memory, v204, array</column>
 </table>
 </item>
 </section>
