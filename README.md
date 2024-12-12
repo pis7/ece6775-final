@@ -13,6 +13,9 @@ Create and Activate Conda Environment <br>
 Set up the backend LLVM compiler:
 - `source /work/shared/common/allo/setup-llvm19.sh`
 
+Set up Vivado:
+- `source /opt/xilinx/Vivado/2019.2/settings64.sh`
+
 Install Python requirements:
 - `pip install -r requirements.txt`
 
