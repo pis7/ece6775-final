@@ -2,6 +2,42 @@
 - https://github.com/pis7/ece6775-final
 
 # Allo
+- MUST BE IN THE `Allo` subdirectory and on a `zhang` server for all of the below
+- Follow the setup instructions below before running
+
+## Setup Instructions
+Create and Activate Conda Environment <br>
+- `conda create -n allo python=3.12`
+- `conda activate allo`
+
+Set up the backend LLVM compiler:
+- `source /work/shared/common/allo/setup-llvm19.sh`
+
+Install Python requirements:
+- `pip install -r requirements.txt`
+
+## Running and Verifying Attention Using Allo Software
+Run the unoptimized implementation:
+- `python3 attention.py --target sw --imp unopt`
+
+Run the area limited optimized implementation:
+- `python3 attention.py --target sw --imp opt-area`
+
+Run the agressive optimized implementation:
+- `python3 attention.py --target sw --imp opt-agressive`
+
+## Synthesizing Attention Using Vivado
+Synthesize the unoptimized implementation:
+- `python3 attention.py --target vivado --imp unopt`
+- Results will be in `attention_unopt.prj`
+
+Synthesize the area limited optimized implementation:
+- `python3 attention.py --target vivado --imp opt-area`
+- Results will be in `attention_opt-area.prj`
+
+Synthesize the agressive optimized implementation:
+- `python3 attention.py --target vivado --imp opt-agressive`
+- Results will be in `attention_opt-agressive.prj`
 
 # Catapult
 
