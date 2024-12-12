@@ -4,13 +4,18 @@ import numpy as np
 import argparse
 from kaixin_data import *
 
-def attention_test(target):
+def attention_test(target, imp):
     CACHE_SIZE_INIT = 5
     SEQ_LEN = 1
     HS_COLS = 1536
     NUM_HEADS = 16
     HEAD_DIM = 96
     SIN_LEN = 10
+
+    # Determine loop tiling factor based on implementation
+    loop_tiling_factor = 1
+    if imp == "opt-area": loop_tiling_factor = 2
+    elif imp == "opt-agressive": loop_tiling_factor = 24
 
     def softmax(
         tensor: float32[NUM_HEADS, SEQ_LEN, CACHE_SIZE_INIT + 1],
@@ -135,9 +140,9 @@ def attention_test(target):
         for i in allo.grid(SEQ_LEN):
             for j in allo.grid(HS_COLS):
                 local_acum: Fixed(35, 15) = 0
-                for k0 in allo.grid(HS_COLS // 4 / 2):
-                    for k1 in allo.grid(2):
-                        k: index = k0 * 2 + k1
+                for k0 in allo.grid(HS_COLS // 4 / loop_tiling_factor):
+                    for k1 in allo.grid(loop_tiling_factor):
+                        k: index = k0 * loop_tiling_factor + k1
                         packed_value: uint8 = weights_packed_data[k, j]
                         temp: Fixed(35, 15) = 0
                         for l in allo.grid(4):
@@ -334,22 +339,23 @@ def attention_test(target):
         )
         return final_output
 
-    # linear forward no mul directives
-    s_lfnm = allo.customize(linear_forward_no_mul)
-    s_lfnm.unroll("l")
-    s_lfnm.unroll("k1")
-    s_lfnm.pipeline("k0")
-    s_lfnm.partition(s_lfnm.input, dim=3)
-    # s_lfnm.partition(s_lfnm.input, partition_type=2, dim=2, factor=2)
-    s_lfnm.partition(s_lfnm.weights_packed_data, partition_type=2, factor=2, dim=1)
-
     s = allo.customize(attention)
-    s.compose(s_lfnm)
+
+    if imp != "unopt":
+        # linear forward no mul directives
+        s_lfnm = allo.customize(linear_forward_no_mul)
+        s_lfnm.unroll("l")
+        s_lfnm.unroll("k1")
+        s_lfnm.pipeline("k0")
+        # s_lfnm.input automatically completetely partitions across dimension 3
+        s_lfnm.partition(s_lfnm.input, partition_type=2, dim=2, factor=loop_tiling_factor)
+        s_lfnm.partition(s_lfnm.weights_packed_data, partition_type=2, factor=loop_tiling_factor, dim=1)
+        s.compose(s_lfnm)
 
     if target == "sw":
         f = s.build()
     else:
-        f = s.build(target="vivado_hls", mode="csyn", project="attn_opt.prj")
+        f = s.build(target="vivado_hls", mode="csyn", project=f"{imp}.prj")
 
     outs = f(
         np.array(hidden_states, dtype=np.float32),
@@ -383,12 +389,21 @@ def main():
         default="sw",
         help="Specify the target as either 'sw' or 'vivado'."
     )
+
+    # Add a implementation argument
+    parser.add_argument(
+        "--imp",
+        type=str,
+        choices=["unopt", "opt-area", "opt-agressive"],
+        default="opt-area",
+        help="Specify the implementation as either 'unopt', 'opt-area', or 'opt-agressive'."
+    )
     
     # Parse arguments
     args = parser.parse_args()
 
     # Run attention kernel
-    attention_test(args.target)
+    attention_test(args.target, args.imp)
 
 if __name__ == "__main__":
     main()
