@@ -21,25 +21,25 @@ Install Python requirements:
 
 ## Running and Verifying Attention Using Allo Software
 Run the unoptimized implementation:
-- `python3 attention.py --target sw --imp unopt`
+- `python3 main.py --target sw --imp unopt`
 
 Run the area limited optimized implementation:
-- `python3 attention.py --target sw --imp opt-area`
+- `python3 main.py --target sw --imp opt-area`
 
 Run the agressive optimized implementation:
-- `python3 attention.py --target sw --imp opt-agressive`
+- `python3 main.py --target sw --imp opt-agressive`
 
 ## Synthesizing Attention Using Vivado
 Synthesize the unoptimized implementation:
-- `python3 attention.py --target vivado --imp unopt`
+- `python3 main.py --target vivado --imp unopt`
 - Results will be in `attention_unopt.prj`
 
 Synthesize the area limited optimized implementation:
-- `python3 attention.py --target vivado --imp opt-area`
+- `python3 main.py --target vivado --imp opt-area`
 - Results will be in `attention_opt-area.prj`
 
 Synthesize the agressive optimized implementation:
-- `python3 attention.py --target vivado --imp opt-agressive`
+- `python3 main.py --target vivado --imp opt-agressive`
 - Results will be in `attention_opt-agressive.prj`
 
 # Catapult
