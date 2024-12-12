@@ -26,8 +26,8 @@ Run the unoptimized implementation:
 Run the area limited optimized implementation:
 - `python3 main.py --target sw --imp opt-area`
 
-Run the agressive optimized implementation:
-- `python3 main.py --target sw --imp opt-agressive`
+Run the aggressive optimized implementation:
+- `python3 main.py --target sw --imp opt-aggressive`
 
 ## Synthesizing Attention Using Vivado
 Synthesize the unoptimized implementation:
@@ -38,9 +38,9 @@ Synthesize the area limited optimized implementation:
 - `python3 main.py --target vivado --imp opt-area`
 - Results will be in `attention_opt-area.prj`
 
-Synthesize the agressive optimized implementation:
-- `python3 main.py --target vivado --imp opt-agressive`
-- Results will be in `attention_opt-agressive.prj`
+Synthesize the aggressive optimized implementation:
+- `python3 main.py --target vivado --imp opt-aggressive`
+- Results will be in `attention_opt-aggressive.prj`
 
 # Catapult
 

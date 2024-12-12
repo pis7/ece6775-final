@@ -354,7 +354,7 @@ def attention_opt_test(target, imp):
     # Determine loop tiling factor based on implementation
     loop_tiling_factor = 1
     if imp == "opt-area": loop_tiling_factor = 2
-    elif imp == "opt-agressive": loop_tiling_factor = 24
+    elif imp == "opt-aggressive": loop_tiling_factor = 24
 
     def softmax(
         tensor: float32[NUM_HEADS, SEQ_LEN, CACHE_SIZE_INIT + 1],

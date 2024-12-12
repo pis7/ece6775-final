@@ -17,9 +17,9 @@ def main():
     parser.add_argument(
         "--imp",
         type=str,
-        choices=["unopt", "opt-area", "opt-agressive"],
+        choices=["unopt", "opt-area", "opt-aggressive"],
         default="opt-area",
-        help="Specify the implementation as either 'unopt', 'opt-area', or 'opt-agressive'."
+        help="Specify the implementation as either 'unopt', 'opt-area', or 'opt-aggressive'."
     )
     
     # Parse arguments
