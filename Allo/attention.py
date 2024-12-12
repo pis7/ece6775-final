@@ -1,10 +1,10 @@
 import allo
 from allo.ir.types import float32, int32, int8, uint8, index, Fixed
 import numpy as np
+import argparse
 from kaixin_data import *
 
-
-def attention_test():
+def attention_test(target):
     CACHE_SIZE_INIT = 5
     SEQ_LEN = 1
     HS_COLS = 1536
@@ -20,19 +20,16 @@ def attention_test():
             for j in allo.grid(SEQ_LEN):
                 for k in allo.grid(CACHE_SIZE_INIT + 1):
                     output[i, j, k] = tensor[i, j, k]
-
         for i in allo.grid(NUM_HEADS):
             for j in allo.grid(SEQ_LEN):
                 max_val: float32 = 0
                 for k in allo.grid(CACHE_SIZE_INIT + 1):
                     if output[i, j, k] > max_val:
                         max_val = output[i, j, k]
-
                 sum_exp: float32 = 0.0
                 for k in allo.grid(CACHE_SIZE_INIT + 1):
                     output[i, j, k] = 2.71828182846 ** (output[i, j, k] - max_val)
                     sum_exp += output[i, j, k]
-
                 for k in allo.grid(CACHE_SIZE_INIT + 1):
                     output[i, j, k] /= sum_exp
 
@@ -107,10 +104,8 @@ def attention_test():
     ):
         rotated_q: float32[NUM_HEADS, SEQ_LEN, HEAD_DIM] = 0
         rotated_k: float32[NUM_HEADS, SEQ_LEN, HEAD_DIM] = 0
-
         rotate_half(q, rotated_q)
         rotate_half(k, rotated_k)
-
         for h in allo.grid(NUM_HEADS):
             for s in allo.grid(SEQ_LEN):
                 for d in allo.grid(HEAD_DIM):
@@ -153,11 +148,8 @@ def attention_test():
                                     weight_value = 1
                                 elif value == 0b10:
                                     weight_value = -1
-
                                 temp += input[i, k, l] * weight_value
-
                         local_acum += temp
-
                 q_proj_re[i, j] = local_acum / (scales[i] * weights_scale)
 
     def quantize_activation(
@@ -202,7 +194,6 @@ def attention_test():
             variance: float32 = 0.0
             for i in allo.grid(HS_COLS):
                 variance += hidden_states[index, i] * hidden_states[index, i]
-
             variance = 1.0 / (variance / HS_COLS + epsilon) ** 0.5
             for i in allo.grid(HS_COLS):
                 output[index, i] = hidden_states[index, i] * weight[i] * variance
@@ -249,14 +240,20 @@ def attention_test():
 
         quantized_hidden_states_copy: int8[SEQ_LEN, HS_COLS // 4, 4] = 0
 
-        for i, j, k in allo.grid(SEQ_LEN, HS_COLS //4, 4):
+        for i, j, k in allo.grid(SEQ_LEN, HS_COLS // 4, 4):
             quantized_hidden_states_copy[i, j, k] = quantized_hidden_states[i, j, k]
 
         for i in allo.grid(SEQ_LEN):
             scales_fixed[i] = scales[i]
-        linear_forward_no_mul(quantized_hidden_states_copy, scales_fixed, q_weights_packed_data, q_weights_scale_fixed, q_proj_re)
-        linear_forward_no_mul(quantized_hidden_states_copy, scales_fixed, k_weights_packed_data, k_weights_scale_fixed, k_proj_re)
-        linear_forward_no_mul(quantized_hidden_states_copy, scales_fixed, v_weights_packed_data, v_weights_scale_fixed, v_proj_re)
+        linear_forward_no_mul(
+            quantized_hidden_states_copy, scales_fixed, q_weights_packed_data, q_weights_scale_fixed, q_proj_re
+        )
+        linear_forward_no_mul(
+            quantized_hidden_states_copy, scales_fixed, k_weights_packed_data, k_weights_scale_fixed, k_proj_re
+        )
+        linear_forward_no_mul(
+            quantized_hidden_states_copy, scales_fixed, v_weights_packed_data, v_weights_scale_fixed, v_proj_re
+        )
 
         # Reshape Q, K, V for attention calculation
         q_proj: float32[NUM_HEADS, SEQ_LEN, HEAD_DIM] = 0
@@ -328,11 +325,13 @@ def attention_test():
 
         quantized_final_output_copy: int8[SEQ_LEN, HS_COLS // 4, 4] = 0
 
-        for i, j, k in allo.grid(SEQ_LEN, HS_COLS //4, 4):
+        for i, j, k in allo.grid(SEQ_LEN, HS_COLS // 4, 4):
             quantized_final_output_copy[i, j, k] = quantized_final_output[i, j, k]
 
         final_output: float32[SEQ_LEN, HS_COLS] = 0
-        linear_forward_no_mul(quantized_final_output_copy, final_scales_fixed, o_weights_packed_data, o_weights_scale_fixed, final_output)
+        linear_forward_no_mul(
+            quantized_final_output_copy, final_scales_fixed, o_weights_packed_data, o_weights_scale_fixed, final_output
+        )
         return final_output
 
     # linear forward no mul directives
@@ -340,12 +339,17 @@ def attention_test():
     s_lfnm.unroll("l")
     s_lfnm.unroll("k1")
     s_lfnm.pipeline("k0")
-    s_lfnm.partition(s_lfnm.input, partition_type=2, dim=2, factor= 2)
+    s_lfnm.partition(s_lfnm.input, dim=3)
+    # s_lfnm.partition(s_lfnm.input, partition_type=2, dim=2, factor=2)
     s_lfnm.partition(s_lfnm.weights_packed_data, partition_type=2, factor=2, dim=1)
 
     s = allo.customize(attention)
     s.compose(s_lfnm)
-    f = s.build(target="vivado_hls", mode="csyn", project="attn_opt.prj")
+
+    if target == "sw":
+        f = s.build()
+    else:
+        f = s.build(target="vivado_hls", mode="csyn", project="attn_opt.prj")
 
     outs = f(
         np.array(hidden_states, dtype=np.float32),
@@ -368,5 +372,23 @@ def attention_test():
 
     np.testing.assert_allclose(outs, np.array(final_output), atol=1e-3)
 
+def main():
+    parser = argparse.ArgumentParser()
+    
+    # Add a target argument
+    parser.add_argument(
+        "--target",
+        type=str,
+        choices=["sw", "vivado"],
+        default="sw",
+        help="Specify the target as either 'sw' or 'vivado'."
+    )
+    
+    # Parse arguments
+    args = parser.parse_args()
 
-attention_test()
+    # Run attention kernel
+    attention_test(args.target)
+
+if __name__ == "__main__":
+    main()
