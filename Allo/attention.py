@@ -161,7 +161,7 @@ def attention_test(target, imp):
         input: float32[SEQ_LEN, HS_COLS],
         num_bits: int32,
         quantized_input: int8[SEQ_LEN, HS_COLS // 4, 4],
-        scales: float32[SEQ_LEN],
+        scales: Fixed(32, 20)[SEQ_LEN],
     ):
         Qn: int32 = -(1 << (num_bits - 1))
         Qp: int32 = (1 << (num_bits - 1)) - 1
@@ -229,7 +229,7 @@ def attention_test(target, imp):
 
         # Step 2: Quantize the input activations for Q, K, V projections
         quantized_hidden_states: int8[SEQ_LEN, HS_COLS // 4, 4] = 0
-        scales: float32[SEQ_LEN] = 0
+        scales: Fixed(32, 20)[SEQ_LEN] = 0
         quantize_activation(rms_hidden_states, 8, quantized_hidden_states, scales)
 
         # Step 3: Linear projections for Q, K, V using quantized GEMM (forward_no_mul)
@@ -237,27 +237,27 @@ def attention_test(target, imp):
         k_proj_re: float32[SEQ_LEN, HS_COLS] = 0
         v_proj_re: float32[SEQ_LEN, HS_COLS] = 0
 
+        # Transform float32 to fixed for linear_forward_no_mul
         q_weights_scale_fixed: Fixed(32, 20) = q_weights_scale
         k_weights_scale_fixed: Fixed(32, 20) = k_weights_scale
         v_weights_scale_fixed: Fixed(32, 20) = v_weights_scale
         o_weights_scale_fixed: Fixed(32, 20) = o_weights_scale
-        scales_fixed: Fixed(32, 20)[SEQ_LEN] = 0
 
+        # Copy quantized_hidden_states so that it can be partitioned in linear_forward_no_mul
+        # Not copying would result in error since it is being passed to multiple functions
+        # See Pitfall 2 on Page 6 in the Allo paper https://arxiv.org/pdf/2404.04815
         quantized_hidden_states_copy: int8[SEQ_LEN, HS_COLS // 4, 4] = 0
-
         for i, j, k in allo.grid(SEQ_LEN, HS_COLS // 4, 4):
             quantized_hidden_states_copy[i, j, k] = quantized_hidden_states[i, j, k]
 
-        for i in allo.grid(SEQ_LEN):
-            scales_fixed[i] = scales[i]
         linear_forward_no_mul(
-            quantized_hidden_states_copy, scales_fixed, q_weights_packed_data, q_weights_scale_fixed, q_proj_re
+            quantized_hidden_states_copy, scales, q_weights_packed_data, q_weights_scale_fixed, q_proj_re
         )
         linear_forward_no_mul(
-            quantized_hidden_states_copy, scales_fixed, k_weights_packed_data, k_weights_scale_fixed, k_proj_re
+            quantized_hidden_states_copy, scales, k_weights_packed_data, k_weights_scale_fixed, k_proj_re
         )
         linear_forward_no_mul(
-            quantized_hidden_states_copy, scales_fixed, v_weights_packed_data, v_weights_scale_fixed, v_proj_re
+            quantized_hidden_states_copy, scales, v_weights_packed_data, v_weights_scale_fixed, v_proj_re
         )
 
         # Reshape Q, K, V for attention calculation
@@ -322,20 +322,20 @@ def attention_test(target, imp):
 
         # Step 10: Final output projection using quantized GEMM (forward_no_mul)
         quantized_final_output: int8[SEQ_LEN, HS_COLS // 4, 4] = 0
-        final_scales: float32[SEQ_LEN] = 0
+        
+        final_scales: Fixed(32, 20)[SEQ_LEN] = 0
         quantize_activation(rms_attn_output, 8, quantized_final_output, final_scales)
-        final_scales_fixed: Fixed(32, 20)[SEQ_LEN] = 0
-        for i in allo.grid(SEQ_LEN):
-            final_scales_fixed[i] = final_scales[i]
-
+        
+        # Copy quantized_hidden_states so that it can be partitioned in linear_forward_no_mul
+        # Not copying would result in error since it is being passed to multiple functions
+        # See Pitfall 2 on Page 6 in the Allo paper https://arxiv.org/pdf/2404.04815
         quantized_final_output_copy: int8[SEQ_LEN, HS_COLS // 4, 4] = 0
-
         for i, j, k in allo.grid(SEQ_LEN, HS_COLS // 4, 4):
             quantized_final_output_copy[i, j, k] = quantized_final_output[i, j, k]
 
         final_output: float32[SEQ_LEN, HS_COLS] = 0
         linear_forward_no_mul(
-            quantized_final_output_copy, final_scales_fixed, o_weights_packed_data, o_weights_scale_fixed, final_output
+            quantized_final_output_copy, final_scales, o_weights_packed_data, o_weights_scale_fixed, final_output
         )
         return final_output
 
