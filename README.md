@@ -44,7 +44,10 @@ Synthesize the aggressive optimized implementation:
 
 # Catapult
 
+- MUST BE IN THE `Catapult` subdirectory for all of the below
+  
 ## Setup Instructions
+
 Set up Catapult:
 `module load siemens/catapult`
 
@@ -69,7 +72,9 @@ All the tcl files can be run on the GUI by running do file run.tcl in the consol
 
 For simulation checks, it is recommended to use the GUI. or it can be run with 
 - `g++ -I $MGC_HOME/shared/include <design file name>.cpp`
-We can also run using the make files generated in the project files. 
+We can also run using the make files generated in the project files. <br>
+
+The current run files have been set to run -DFOURTH, but they can be changed to run for larger data for different platforms. <br>
 
 # Vivado
 - MUST BE IN THE `Vivado` subdirectory for all of the below
