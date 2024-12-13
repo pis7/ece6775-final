@@ -120,7 +120,7 @@ The current run files have been set to run -DFOURTH, but they can be changed to 
 ## Collecting Results for Our Implementation
 
 ### Execution Times and Latencies
-- FPGA execution times have been manually tabulated in `ecelinux/result/exec_times_fpga.csv`, reference model execution times have been manually tabulated in `ecelinux/result/exec_times_ref.csv`, and latencies have been manually tabulated in `ecelinux/latency_synth.csv` - YOU SHOULD NOT NEED TO MODIFY THESE
+- FPGA execution times have been manually tabulated in `ecelinux/result/exec_times_fpga.csv`, reference model execution times have been manually tabulated in `ecelinux/result/exec_times_ref.csv`, and latencies have been manually tabulated in `ecelinux/result/latency_synth.csv` - YOU SHOULD NOT NEED TO MODIFY THESE
 - In `ecelinux/`, run `python scripts/plot_execs_latency.py` to generate the plot `result/execs_latency_vivado.png`
 
 ### Accuracy Sweep across Bit Widths
