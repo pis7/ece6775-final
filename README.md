@@ -44,6 +44,33 @@ Synthesize the aggressive optimized implementation:
 
 # Catapult
 
+## Setup Instructions
+Set up Catapult:
+`module load siemens/catapult`
+
+Set up Questasim:
+`module load siemens/questasim`
+
+Set up Vivado: - For FPGA Synthesis
+`source /opt/xilinx/Vivado/2019.2/settings64.sh`
+
+Set up Vivado: - For ASIC Nangate 45nm
+`module load synopsys/synopsys-dc`
+
+## Running and Verifying Attention Using Catapult
+To generate the project run 
+`make <platform_opttype>` <br>
+Where make options are platform: asic, fpga and opttype: unoptimized, resource managed, optimized. 
+- Project Files directory: catapult_files
+- Latency and Area results can be found in the rtl.rpt/cycle.rpt in the project file directory.
+- When Synthesized Resource Utilization and timing report results will be in catapult_files/attention_layer_<PLATFORM>_<opt_type>/\<solution\>/vivado_v/
+
+All the tcl files can be run on the GUI by running do file run.tcl in the console or selecting the run script option in the task bar. 
+
+For simulation checks, it is recommended to use the GUI. or it can be run with 
+- `g++ -I $MGC_HOME/shared/include <design file name>.cpp`
+We can also run using the make files generated in the project files. 
+
 # Vivado
 - MUST BE IN THE `Vivado` subdirectory for all of the below
 

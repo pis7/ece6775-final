@@ -1,0 +1,858 @@
+
+# Messages from "go new"
+
+Creating project directory '/home/dr655/ece6775-final/Catapult/catapult_files/attention_layer_asic_opt/'. (PRJ-1)
+Moving session transcript to file "/home/dr655/ece6775-final/Catapult/catapult_files/catapult.log"
+# Info: Branching solution 'attention_layer.v1' at state 'initial' (PRJ-2)
+
+# Messages from "go analyze"
+
+attention_layer.v1
+solution options defaults
+solution options set Output/OutputVerilog true
+true
+solution options set Input/SearchPath "$WORKING_DIR" -append
+/home/dr655/ece6775-final/Catapult
+solution options set Input/CompilerFlags {-DFOURTH}
+-DFOURTH
+solution file add "$WORKING_DIR/attention.cpp" -type C++ 
+/INPUTFILES/1
+solution file add "$WORKING_DIR/attention_test.cpp" -type C++ -exclude true
+/INPUTFILES/2
+go new
+solution design set dut -top
+solution design set dut -top (HC-8)
+directive set -SCHED_USE_MULTICYCLE true
+/SCHED_USE_MULTICYCLE true
+directive set -CLOCKS {clk {
+    -CLOCK_PERIOD 10.0
+    -CLOCK_EDGE rising
+    -CLOCK_HIGH_TIME 5.0
+    -CLOCK_OFFSET 0.000000
+    -CLOCK_UNCERTAINTY 0.0
+    -RESET_KIND sync
+    -RESET_SYNC_NAME rst
+    -RESET_SYNC_ACTIVE high
+    -RESET_ASYNC_NAME arst_n
+    -RESET_ASYNC_ACTIVE low
+    -ENABLE_NAME en
+    -ENABLE_ACTIVE high
+}}
+/CLOCKS {clk {
+    -CLOCK_PERIOD 10.0
+    -CLOCK_EDGE rising
+    -CLOCK_HIGH_TIME 5.0
+    -CLOCK_OFFSET 0.000000
+    -CLOCK_UNCERTAINTY 0.0
+    -RESET_KIND sync
+    -RESET_SYNC_NAME rst
+    -RESET_SYNC_ACTIVE high
+    -RESET_ASYNC_NAME arst_n
+    -RESET_ASYNC_ACTIVE low
+    -ENABLE_NAME en
+    -ENABLE_ACTIVE high
+}}
+go analyze
+# Info: Starting transformation 'analyze' on solution 'attention_layer.v1' (SOL-8)
+Front End called with arguments: -I/home/dr655/ece6775-final/Catapult -- /home/dr655/ece6775-final/Catapult/attention.cpp (CIN-69)
+Edison Design Group C++/C Front End - Version 6.3 (CIN-1)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: last line of file ends without a newline (CRD-1)
+Pragma 'hls_design<>' detected on routine 'ac::fx_div<8>' (CIN-6)
+Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'attention_layer.v1': elapsed time 4.58 seconds, memory usage 1727120kB, peak memory usage 1727120kB (SOL-9)
+
+# Messages from "go compile"
+
+solution design set dut -top
+solution design set dut -top (HC-8)
+go compile
+# Info: Starting transformation 'compile' on solution 'attention_layer.v1' (SOL-8)
+Generating synthesis internal form... (CIN-3)
+Found design routine 'ac::fx_div<8>' specified by directive (CIN-52)
+Found top design routine 'dut' specified by directive (CIN-52)
+Synthesizing routine 'dut' (CIN-13)
+# Warning: Instantiating global variable 'q_weights' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'q_scale' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'k_weights' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'k_scale' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'v_weights' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'v_scale' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'o_weights' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'o_scale' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'k_cache' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'v_cache' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'ln_weight_in' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'ln_weight' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'NORM_EPSILON' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'HEAD_DIM_BASIC_SQRT' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'sin_tab' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'cos_tab' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'FIXED32_MIN' which may be accessed outside this scope (CIN-18)
+Inlining routine 'dut' (CIN-14)
+Inlining routine 'attention<5, 1, 384, 384, 8, 48>' (CIN-14)
+Inlining routine 'rms_norm<384>' (CIN-14)
+Inlining routine 'operator/<40, 24, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'attention_sqrt' (CIN-14)
+Inlining routine 'attention_abs' (CIN-14)
+Inlining routine 'operator>><40, 24, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator/<40, 24, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><41, 25, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'quantize_activation<1, 384>' (CIN-14)
+Inlining routine 'operator-<8, true>' (CIN-14)
+Inlining routine 'operator<<<33, true>' (CIN-14)
+Inlining routine 'operator-<8, true>' (CIN-14)
+Inlining routine 'operator<<<33, true>' (CIN-14)
+Inlining routine 'operator-<32, true>' (CIN-14)
+Inlining routine 'attention_abs' (CIN-14)
+Inlining routine 'attention_abs' (CIN-14)
+Inlining routine 'attention_abs' (CIN-14)
+Inlining routine 'attention_max<attn_fixed_t>' (CIN-14)
+Inlining routine 'attention_round' (CIN-14)
+# Warning: ignoring 'std::cout<<' statement and all side effects of parameters for synthesis, additional encounters also ignored (CIN-263)
+Inlining routine 'operator<<<32, true>' (CIN-14)
+Inlining routine 'init_2d_mem<1, 384, attn_fixed_t>' (CIN-14)
+Inlining routine 'init_2d_mem<1, 384, attn_fixed_t>' (CIN-14)
+Inlining routine 'init_2d_mem<1, 384, attn_fixed_t>' (CIN-14)
+Inlining routine 'linear_forward_no_mul<1, 384, 384>' (CIN-14)
+Inlining routine 'operator+=<40, 24, true, AC_TRN, AC_WRAP, 8, true>' (CIN-14)
+Inlining routine 'linear_forward_no_mul<1, 384, 384>' (CIN-14)
+Inlining routine 'operator+=<40, 24, true, AC_TRN, AC_WRAP, 8, true>' (CIN-14)
+Inlining routine 'linear_forward_no_mul<1, 384, 384>' (CIN-14)
+Inlining routine 'operator+=<40, 24, true, AC_TRN, AC_WRAP, 8, true>' (CIN-14)
+Inlining routine 'reshape_2D_to_3D<1, 8, 48>' (CIN-14)
+Inlining routine 'reshape_2D_to_3D<1, 8, 48>' (CIN-14)
+Inlining routine 'reshape_2D_to_3D<1, 8, 48>' (CIN-14)
+Inlining routine 'apply_rotary_pos_emb<1, 8, 48>' (CIN-14)
+Inlining routine 'cache_update<8, 5, 48>' (CIN-14)
+Inlining routine 'cache_update<8, 5, 48>' (CIN-14)
+Inlining routine 'transpose_last_two_dims<6, 8, 48>' (CIN-14)
+Inlining routine 'GEMM_3D_float<8, 1, 48, 8, 48, 6>' (CIN-14)
+Inlining routine 'create_causal_mask<1>' (CIN-14)
+Inlining routine 'softmax<1, 8, 6>' (CIN-14)
+Inlining routine 'operator><40, 24, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<40, 24, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'attention_exp' (CIN-14)
+Inlining routine 'operator>><40, 24, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator+<40, 24, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><80, 48, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><120, 72, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><160, 96, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><200, 120, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'GEMM_3D_float<8, 1, 6, 8, 6, 48>' (CIN-14)
+Inlining routine 'rms_norm<384>' (CIN-14)
+Inlining routine 'operator/<40, 24, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'attention_sqrt' (CIN-14)
+Inlining routine 'attention_abs' (CIN-14)
+Inlining routine 'operator>><40, 24, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator/<40, 24, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><41, 25, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'quantize_activation<1, 384>' (CIN-14)
+Inlining routine 'operator-<8, true>' (CIN-14)
+Inlining routine 'operator<<<33, true>' (CIN-14)
+Inlining routine 'operator-<8, true>' (CIN-14)
+Inlining routine 'operator<<<33, true>' (CIN-14)
+Inlining routine 'operator-<32, true>' (CIN-14)
+Inlining routine 'attention_abs' (CIN-14)
+Inlining routine 'attention_abs' (CIN-14)
+Inlining routine 'attention_abs' (CIN-14)
+Inlining routine 'attention_max<attn_fixed_t>' (CIN-14)
+Inlining routine 'attention_round' (CIN-14)
+Inlining routine 'operator<<<32, true>' (CIN-14)
+Inlining routine 'init_2d_mem<1, 384, attn_fixed_t>' (CIN-14)
+Inlining routine 'linear_forward_no_mul<1, 384, 384>' (CIN-14)
+Inlining routine 'operator+=<40, 24, true, AC_TRN, AC_WRAP, 8, true>' (CIN-14)
+Optimizing block '/dut' ... (CIN-4)
+INOUT port 'strm_in' is only used as an input. (OPT-10)
+INOUT port 'strm_out' is only used as an output. (OPT-11)
+Loop '/dut/core/for:for' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/for' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/RMS_NORM_LOOP_1#1' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/attention_sqrt:for' iterated at most 20 times. (LOOP-2)
+Loop '/dut/core/RMS_NORM_LOOP_2' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/RMS_NORM_LOOP_1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_2' iterated at most 383 times. (LOOP-2)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_5' iterated at most 4 times. (LOOP-2)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_4' iterated at most 16 times. (LOOP-2)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_3' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/INIT_2D_MEM_LOOP_2' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/INIT_2D_MEM_LOOP_1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/INIT_2D_MEM_LOOP_2#1' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/INIT_2D_MEM_LOOP_1#1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/INIT_2D_MEM_LOOP_2#2' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/INIT_2D_MEM_LOOP_1#2' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_5' iterated at most 4 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_4' iterated at most 16 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_5#1' iterated at most 4 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_4#1' iterated at most 16 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#1' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2#1' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_1#1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_5#2' iterated at most 4 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_4#2' iterated at most 16 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#2' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2#2' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_1#2' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_3' iterated at most 48 times. (LOOP-2)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_2' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_3#1' iterated at most 48 times. (LOOP-2)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_2#1' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_1#1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_3#2' iterated at most 48 times. (LOOP-2)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_2#2' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_1#2' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_3' iterated at most 24 times. (LOOP-2)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_2' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_1' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_6' iterated at most 48 times. (LOOP-2)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_5' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_4' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/CACHE_UPDATE_LOOP_3' iterated at most 48 times. (LOOP-2)
+Loop '/dut/core/CACHE_UPDATE_LOOP_2' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/CACHE_UPDATE_LOOP_1' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/CACHE_UPDATE_LOOP_3#1' iterated at most 48 times. (LOOP-2)
+Loop '/dut/core/CACHE_UPDATE_LOOP_2#1' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/CACHE_UPDATE_LOOP_1#1' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/TRANSPOSE_LAST_TWO_DIMS_LOOP_3' iterated at most 48 times. (LOOP-2)
+Loop '/dut/core/TRANSPOSE_LAST_TWO_DIMS_LOOP_2' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/TRANSPOSE_LAST_TWO_DIMS_LOOP_1' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_4' iterated at most 48 times. (LOOP-2)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_3' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_2' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_1' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/SF_LOOP_3' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/SF_LOOP_2' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/SF_LOOP_1' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/CREATE_CAUSAL_MASK_LOOP_2' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/CREATE_CAUSAL_MASK_LOOP_1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/CM_LOOP_3' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/CM_LOOP_2' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/CM_LOOP_1' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/SOFTMAX_LOOP_3' iterated at most 5 times. (LOOP-2)
+Loop '/dut/core/SOFTMAX_LOOP_4' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/SOFTMAX_LOOP_5' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/SOFTMAX_LOOP_2' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/SOFTMAX_LOOP_1' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_4#1' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_3#1' iterated at most 48 times. (LOOP-2)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_2#1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_1#1' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/ATTN_2D_LOOP_3' iterated at most 48 times. (LOOP-2)
+Loop '/dut/core/ATTN_2D_LOOP_2' iterated at most 8 times. (LOOP-2)
+Loop '/dut/core/ATTN_2D_LOOP_1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/RMS_NORM_LOOP_1#2' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/attention_sqrt#1:for' iterated at most 20 times. (LOOP-2)
+Loop '/dut/core/RMS_NORM_LOOP_2#2' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/RMS_NORM_LOOP_2#1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_2#1' iterated at most 383 times. (LOOP-2)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_5#1' iterated at most 4 times. (LOOP-2)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_4#1' iterated at most 16 times. (LOOP-2)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_3#1' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_1#1' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/INIT_2D_MEM_LOOP_2#3' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/INIT_2D_MEM_LOOP_1#3' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_5#3' iterated at most 4 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_4#3' iterated at most 16 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#3' iterated at most 6 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2#3' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_1#3' iterated at most 1 times. (LOOP-2)
+Loop '/dut/core/for#1:for' iterated at most 384 times. (LOOP-2)
+Loop '/dut/core/for#1' iterated at most 1 times. (LOOP-2)
+Detected constant initialization of array 'attention<5,1,384,384,8,48>:q_proj_re', optimizing loop 'INIT_2D_MEM_LOOP_2' (LOOP-12)
+Detected constant initialization of array 'attention<5,1,384,384,8,48>:k_proj_re', optimizing loop 'INIT_2D_MEM_LOOP_2#1' (LOOP-12)
+Detected constant initialization of array 'attention<5,1,384,384,8,48>:v_proj_re', optimizing loop 'INIT_2D_MEM_LOOP_2#2' (LOOP-12)
+Detected constant initialization of array 'output', optimizing loop 'INIT_2D_MEM_LOOP_2#3' (LOOP-12)
+# Warning: Reducing the number of bits used to represent array elements of 'ln_weight_in.rom', from '40' bits to '12' bits. (MEM-87)
+# Warning: To disable array compaction optimization, please use 'directive set -DA_DISABLE_RESIZE_MEM true'. Disabling the optimization can have QofR implications. (MEM-99)
+# Warning: If the array is transformed at later stages using WORD_WIDTH, BLOCK_SIZE, INTERLEAVE directive, the new array dimensions will be used. Please review the applicable constraint settings to get the desired RAM/ROM layout. (MEM-100)
+# Warning: Reducing the number of bits used to represent array elements of 'ln_weight.rom', from '40' bits to '13' bits. (MEM-87)
+# Warning: To disable array compaction optimization, please use 'directive set -DA_DISABLE_RESIZE_MEM true'. Disabling the optimization can have QofR implications. (MEM-99)
+# Warning: If the array is transformed at later stages using WORD_WIDTH, BLOCK_SIZE, INTERLEAVE directive, the new array dimensions will be used. Please review the applicable constraint settings to get the desired RAM/ROM layout. (MEM-100)
+# Warning: Reducing the number of bits used to represent array elements of 'sin_tab.rom', from '40' bits to '17' bits. (MEM-87)
+# Warning: To disable array compaction optimization, please use 'directive set -DA_DISABLE_RESIZE_MEM true'. Disabling the optimization can have QofR implications. (MEM-99)
+# Warning: If the array is transformed at later stages using WORD_WIDTH, BLOCK_SIZE, INTERLEAVE directive, the new array dimensions will be used. Please review the applicable constraint settings to get the desired RAM/ROM layout. (MEM-100)
+# Warning: Reducing the number of bits used to represent array elements of 'cos_tab.rom', from '40' bits to '17' bits. (MEM-87)
+# Warning: To disable array compaction optimization, please use 'directive set -DA_DISABLE_RESIZE_MEM true'. Disabling the optimization can have QofR implications. (MEM-99)
+# Warning: If the array is transformed at later stages using WORD_WIDTH, BLOCK_SIZE, INTERLEAVE directive, the new array dimensions will be used. Please review the applicable constraint settings to get the desired RAM/ROM layout. (MEM-100)
+Design 'dut' was read (SOL-1)
+# Info: CDesignChecker Shell script written to '/home/dr655/ece6775-final/Catapult/catapult_files/attention_layer_asic_opt/attention_layer.v1/CDesignChecker/design_checker.sh'
+# Info: Completed transformation 'compile' on solution 'attention_layer.v1': elapsed time 20.96 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'compile': Total ops = 2259, Real ops = 390, Vars = 176 (SOL-21)
+
+# Messages from "go libraries"
+
+project save
+solution library add nangate-45nm_beh -- -rtlsyntool DesignCompiler -vendor Nangate -technology 045nm
+solution library add ram_nangate-45nm_pipe_beh
+solution library add ram_nangate-45nm-dualport_beh
+solution library add ram_nangate-45nm-separate_beh
+solution library add ram_nangate-45nm-singleport_beh
+solution library add ram_nangate-45nm-register-file_beh
+solution library add rom_nangate-45nm_beh
+solution library add rom_nangate-45nm-sync_regin_beh
+solution library add rom_nangate-45nm-sync_regout_beh
+solution library add ccs_sample_mem
+solution library add ccs_sample_rom
+solution library add amba
+solution library add ML_amba
+go libraries
+# Info: Starting transformation 'libraries' on solution 'attention_layer.v1' (SOL-8)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/stdops.lib' [STDOPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/fpops.lib' [FPOPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_dw_ops.lib' [CCS_DW_OPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_ioport.lib' [ccs_ioport]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_ops.lib' [ASSERT_OPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_mods.lib' [assert_mods]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_connections.lib' [ccs_connections]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/nangate-45nm_beh.lib' [nangate-45nm_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/ram_nangate-45nm_pipe_beh.lib' [ram_nangate-45nm_pipe_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/ram_nangate-45nm-dualport_beh.lib' [ram_nangate-45nm-dualport_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/ram_nangate-45nm-separate_beh.lib' [ram_nangate-45nm-separate_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/ram_nangate-45nm-singleport_beh.lib' [ram_nangate-45nm-singleport_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/ram_nangate-45nm-register-file_beh.lib' [ram_nangate-45nm-register-file_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/rom_nangate-45nm_beh.lib' [rom_nangate-45nm_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/rom_nangate-45nm-sync_regin_beh.lib' [rom_nangate-45nm-sync_regin_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/rom_nangate-45nm-sync_regout_beh.lib' [rom_nangate-45nm-sync_regout_beh]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_sample_mem.lib' [ccs_sample_mem]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_sample_rom.lib' [ccs_sample_rom]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/ccs_libs/interfaces/amba/amba.lib' [amba]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/ccs_libs/interfaces/amba/ML_amba.lib' [ML_amba]... (LIB-49)
+# Info: Completed transformation 'libraries' on solution 'attention_layer.v1': elapsed time 1.30 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'libraries': Total ops = 2259, Real ops = 390, Vars = 176 (SOL-21)
+
+# Messages from "go assembly"
+
+directive set /dut/core/QUANTIZE_ACTIVATION_LOOP_5 -UNROLL yes
+/dut/core/QUANTIZE_ACTIVATION_LOOP_5/UNROLL yes
+directive set /dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3 -PIPELINE_INIT_INTERVAL 3
+/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3/PIPELINE_INIT_INTERVAL 3
+directive set /dut/core/GEMM_3D_FLOAT_LOOP_4 -UNROLL yes
+/dut/core/GEMM_3D_FLOAT_LOOP_4/UNROLL yes
+directive set /dut/core/GEMM_3D_FLOAT_LOOP_4#1 -UNROLL yes
+/dut/core/GEMM_3D_FLOAT_LOOP_4#1/UNROLL yes
+directive set /dut/core/QUANTIZE_ACTIVATION_LOOP_5#1 -UNROLL yes
+/dut/core/QUANTIZE_ACTIVATION_LOOP_5#1/UNROLL yes
+directive set /dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#3 -PIPELINE_INIT_INTERVAL 2
+/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#3/PIPELINE_INIT_INTERVAL 2
+go architect
+# Info: Starting transformation 'assembly' on solution 'attention_layer.v1' (SOL-8)
+# Info: Completed transformation 'assembly' on solution 'attention_layer.v1': elapsed time 2.69 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'assembly': Total ops = 2485, Real ops = 455, Vars = 179 (SOL-21)
+
+# Messages from "go architect"
+
+# Info: Starting transformation 'loops' on solution 'attention_layer.v1' (SOL-8)
+Loop '/dut/core/for:for' is left rolled. (LOOP-4)
+Loop '/dut/core/RMS_NORM_LOOP_1#1' is left rolled. (LOOP-4)
+Loop '/dut/core/attention_sqrt:for' is left rolled. (LOOP-4)
+Loop '/dut/core/RMS_NORM_LOOP_2' is left rolled. (LOOP-4)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_2' is left rolled. (LOOP-4)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_5' is being fully unrolled (4 times). (LOOP-7)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_5' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_4' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_5#1' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_4#1' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#1' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2#1' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_5#2' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_4#2' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#2' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2#2' is left rolled. (LOOP-4)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_3' is left rolled. (LOOP-4)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_2' is left rolled. (LOOP-4)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_3#1' is left rolled. (LOOP-4)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_2#1' is left rolled. (LOOP-4)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_3#2' is left rolled. (LOOP-4)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_2#2' is left rolled. (LOOP-4)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_3' is left rolled. (LOOP-4)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_1' is left rolled. (LOOP-4)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_6' is left rolled. (LOOP-4)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_4' is left rolled. (LOOP-4)
+Loop '/dut/core/CACHE_UPDATE_LOOP_3' is left rolled. (LOOP-4)
+Loop '/dut/core/CACHE_UPDATE_LOOP_2' is left rolled. (LOOP-4)
+Loop '/dut/core/CACHE_UPDATE_LOOP_1' is left rolled. (LOOP-4)
+Loop '/dut/core/CACHE_UPDATE_LOOP_3#1' is left rolled. (LOOP-4)
+Loop '/dut/core/CACHE_UPDATE_LOOP_2#1' is left rolled. (LOOP-4)
+Loop '/dut/core/CACHE_UPDATE_LOOP_1#1' is left rolled. (LOOP-4)
+Loop '/dut/core/TRANSPOSE_LAST_TWO_DIMS_LOOP_3' is left rolled. (LOOP-4)
+Loop '/dut/core/TRANSPOSE_LAST_TWO_DIMS_LOOP_2' is left rolled. (LOOP-4)
+Loop '/dut/core/TRANSPOSE_LAST_TWO_DIMS_LOOP_1' is left rolled. (LOOP-4)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_4' is being fully unrolled (48 times). (LOOP-7)
+Loop '/dut/core/SF_LOOP_3' is left rolled. (LOOP-4)
+Loop '/dut/core/SF_LOOP_1' is left rolled. (LOOP-4)
+Loop '/dut/core/CM_LOOP_1' is left rolled. (LOOP-4)
+Loop '/dut/core/SOFTMAX_LOOP_3' is left rolled. (LOOP-4)
+Loop '/dut/core/SOFTMAX_LOOP_4' is left rolled. (LOOP-4)
+Loop '/dut/core/SOFTMAX_LOOP_5' is left rolled. (LOOP-4)
+Loop '/dut/core/SOFTMAX_LOOP_1' is left rolled. (LOOP-4)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_4#1' is being fully unrolled (6 times). (LOOP-7)
+Loop '/dut/core/ATTN_2D_LOOP_3' is left rolled. (LOOP-4)
+Loop '/dut/core/ATTN_2D_LOOP_2' is left rolled. (LOOP-4)
+Loop '/dut/core/RMS_NORM_LOOP_1#2' is left rolled. (LOOP-4)
+Loop '/dut/core/attention_sqrt#1:for' is left rolled. (LOOP-4)
+Loop '/dut/core/RMS_NORM_LOOP_2#2' is left rolled. (LOOP-4)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_2#1' is left rolled. (LOOP-4)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_5#1' is being fully unrolled (4 times). (LOOP-7)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_5#3' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_4#3' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#3' is left rolled. (LOOP-4)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2#3' is left rolled. (LOOP-4)
+Loop '/dut/core/for#1:for' is left rolled. (LOOP-4)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_4' is left rolled. (LOOP-4)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_3' is left rolled. (LOOP-4)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_3' is left rolled. (LOOP-4)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_1' is left rolled. (LOOP-4)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_3#1' is left rolled. (LOOP-4)
+Loop '/dut/core/GEMM_3D_FLOAT_LOOP_1#1' is left rolled. (LOOP-4)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_4#1' is left rolled. (LOOP-4)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_3#1' is left rolled. (LOOP-4)
+Loop '/dut/core/main' is left rolled. (LOOP-4)
+Loop '/dut/core/RMS_NORM_LOOP_1#1' is merged and folded into Loop 'for:for' (LOOP-9)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2#1' is merged and folded into Loop 'LINEAR_FORWARD_NO_MUL_LOOP_2' (LOOP-9)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_2#1' is merged and folded into Loop 'RESHAPE_2D_TO_3D_LOOP_2' (LOOP-9)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_1' is merged and folded into Loop 'RESHAPE_2D_TO_3D_LOOP_2#2' (LOOP-9)
+Loop '/dut/core/CACHE_UPDATE_LOOP_1#1' is merged and folded into Loop 'CACHE_UPDATE_LOOP_1' (LOOP-9)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#1' is merged and folded into Loop 'LINEAR_FORWARD_NO_MUL_LOOP_3' - uses pipelining constraint from 'LINEAR_FORWARD_NO_MUL_LOOP_3', II='3' (LOOP-10)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2#2' is merged and folded into Loop 'LINEAR_FORWARD_NO_MUL_LOOP_2' (LOOP-9)
+Loop '/dut/core/RESHAPE_2D_TO_3D_LOOP_3#1' is merged and folded into Loop 'RESHAPE_2D_TO_3D_LOOP_3' (LOOP-9)
+Loop '/dut/core/CACHE_UPDATE_LOOP_2#1' is merged and folded into Loop 'CACHE_UPDATE_LOOP_2' (LOOP-9)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_4#1' is merged and folded into Loop 'LINEAR_FORWARD_NO_MUL_LOOP_4' (LOOP-9)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#2' is merged and folded into Loop 'LINEAR_FORWARD_NO_MUL_LOOP_3' - uses pipelining constraint from 'LINEAR_FORWARD_NO_MUL_LOOP_3', II='3' (LOOP-10)
+Loop '/dut/core/CACHE_UPDATE_LOOP_3#1' is merged and folded into Loop 'CACHE_UPDATE_LOOP_3' (LOOP-9)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_5#1' is merged and folded into Loop 'LINEAR_FORWARD_NO_MUL_LOOP_5' (LOOP-9)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_4#2' is merged and folded into Loop 'LINEAR_FORWARD_NO_MUL_LOOP_4' (LOOP-9)
+Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_5#2' is merged and folded into Loop 'LINEAR_FORWARD_NO_MUL_LOOP_5' (LOOP-9)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_2' is merged and folded into Loop 'RMS_NORM_LOOP_2' (LOOP-9)
+Loop '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_3' is merged and folded into Loop 'RESHAPE_2D_TO_3D_LOOP_3#2' (LOOP-9)
+Loop '/dut/core/QUANTIZE_ACTIVATION_LOOP_2#1' is merged and folded into Loop 'RMS_NORM_LOOP_2#2' (LOOP-9)
+# Info: Merged 'RMS_NORM_LOOP_2:select#3' at $PROJECT_HOME/../layer.h(113) to 'RMS_NORM_LOOP_2:select#1' at $PROJECT_HOME/../layer.h(113). (OPT-16)
+# Info: Merged 'RMS_NORM_LOOP_2#2:select#3' at $PROJECT_HOME/../layer.h(113) to 'RMS_NORM_LOOP_2#2:select#1' at $PROJECT_HOME/../layer.h(113). (OPT-16)
+# Info: Running transformation 'loops' on solution 'attention_layer.v1': elapsed time 29.91 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-15)
+# Info: Completed transformation 'loops' on solution 'attention_layer.v1': elapsed time 33.94 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'loops': Total ops = 3120, Real ops = 573, Vars = 214 (SOL-21)
+# Info: Starting transformation 'memories' on solution 'attention_layer.v1' (SOL-8)
+Memory Resource '/dut/core/input:rsc' (from var: input) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/output:rsc' (from var: output) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:quantized_hidden_states:rsc' (from var: attention<5,1,384,384,8,48>:quantized_hidden_states) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 8). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:q_proj_re:rsc' (from var: attention<5,1,384,384,8,48>:q_proj_re) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:k_proj_re:rsc' (from var: attention<5,1,384,384,8,48>:k_proj_re) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:v_proj_re:rsc' (from var: attention<5,1,384,384,8,48>:v_proj_re) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:q_proj:rsc' (from var: attention<5,1,384,384,8,48>:q_proj) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:k_proj:rsc' (from var: attention<5,1,384,384,8,48>:k_proj) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:v_proj:rsc' (from var: attention<5,1,384,384,8,48>:v_proj) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:q_embed:rsc' (from var: attention<5,1,384,384,8,48>:q_embed) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:k_embed:rsc' (from var: attention<5,1,384,384,8,48>:k_embed) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:k_cache_upd:rsc' (from var: attention<5,1,384,384,8,48>:k_cache_upd) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 2304 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:v_cache_upd:rsc' (from var: attention<5,1,384,384,8,48>:v_cache_upd) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 2304 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:k_proj_transposed:rsc' (from var: attention<5,1,384,384,8,48>:k_proj_transposed) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 2304 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:attn_weights:rsc' (from var: attention<5,1,384,384,8,48>:attn_weights) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 48 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:attn_output:rsc' (from var: attention<5,1,384,384,8,48>:attn_output) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:attn_output_2D:rsc' (from var: attention<5,1,384,384,8,48>:attn_output_2D) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/attention<5,1,384,384,8,48>:quantized_final_output:rsc' (from var: attention<5,1,384,384,8,48>:quantized_final_output) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 8). (MEM-4)
+Memory Resource '/dut/core/apply_rotary_pos_emb<1,8,48>:rotated_q:rsc' (from var: apply_rotary_pos_emb<1,8,48>:rotated_q) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+Memory Resource '/dut/core/apply_rotary_pos_emb<1,8,48>:rotated_k:rsc' (from var: apply_rotary_pos_emb<1,8,48>:rotated_k) mapped to 'ram_nangate-45nm-dualport_beh.RAM_dualRW' (size: 384 x 40). (MEM-4)
+ROM Resource '/dut/k_cache.rom:rsc' (from var: k_cache.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 1920 x 40). (MEM-10)
+ROM Resource '/dut/v_cache.rom:rsc' (from var: v_cache.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 1920 x 40). (MEM-10)
+ROM Resource '/dut/q_weights.rom:rsc' (from var: q_weights.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 36864 x 8). (MEM-10)
+ROM Resource '/dut/k_weights.rom:rsc' (from var: k_weights.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 36864 x 8). (MEM-10)
+ROM Resource '/dut/v_weights.rom:rsc' (from var: v_weights.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 36864 x 8). (MEM-10)
+ROM Resource '/dut/o_weights.rom:rsc' (from var: o_weights.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 36864 x 8). (MEM-10)
+ROM Resource '/dut/ln_weight_in.rom:rsc' (from var: ln_weight_in.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 384 x 12). (MEM-10)
+ROM Resource '/dut/ln_weight.rom:rsc' (from var: ln_weight.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 384 x 13). (MEM-10)
+ROM Resource '/dut/sin_tab.rom:rsc' (from var: sin_tab.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 960 x 17). (MEM-10)
+ROM Resource '/dut/cos_tab.rom:rsc' (from var: cos_tab.rom) mapped to 'rom_nangate-45nm_beh.mgc_rom' (size: 960 x 17). (MEM-10)
+Loop '/dut/core/attention<5,1,384,384,8,48>:k_proj_re:vinit' is merged and folded into Loop 'attention<5,1,384,384,8,48>:q_proj_re:vinit' (LOOP-9)
+Loop '/dut/core/attention<5,1,384,384,8,48>:v_proj_re:vinit' is merged and folded into Loop 'attention<5,1,384,384,8,48>:q_proj_re:vinit' (LOOP-9)
+# Info: Completed transformation 'memories' on solution 'attention_layer.v1': elapsed time 19.61 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'memories': Total ops = 3230, Real ops = 610, Vars = 228 (SOL-21)
+# Info: Starting transformation 'cluster' on solution 'attention_layer.v1' (SOL-8)
+# Info: Completed transformation 'cluster' on solution 'attention_layer.v1': elapsed time 0.57 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'cluster': Total ops = 3230, Real ops = 610, Vars = 228 (SOL-21)
+# Info: Starting transformation 'architect' on solution 'attention_layer.v1' (SOL-8)
+Design 'dut' contains '1067' real operations. (SOL-11)
+# Warning: Extrapolation detected. Script '/home/dr655/ece6775-final/Catapult/catapult_files/attention_layer_asic_opt/attention_layer.v1/adjust_char_library.tcl' generated. (LIB-142)
+# Info: Completed transformation 'architect' on solution 'attention_layer.v1': elapsed time 14.47 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'architect': Total ops = 4594, Real ops = 1067, Vars = 419 (SOL-21)
+
+# Messages from "go allocate"
+
+go assembly
+go extract
+# Info: Starting transformation 'allocate' on solution 'attention_layer.v1' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/dut/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+Prescheduled LOOP '/dut/core/TRANSPOSE_LAST_TWO_DIMS_LOOP_3' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/CACHE_UPDATE_LOOP_3' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#3' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/QUANTIZE_ACTIVATION_LOOP_4#1' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/ATTN_2D_LOOP_3' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/GEMM_3D_FLOAT_LOOP_3#1' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/SOFTMAX_LOOP_5' (5 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/SOFTMAX_LOOP_4' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/SOFTMAX_LOOP_3' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/SF_LOOP_3' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/GEMM_3D_FLOAT_LOOP_3' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/TRANSPOSE_LAST_TWO_DIMS_LOOP_2' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/CACHE_UPDATE_LOOP_2' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_6' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/RESHAPE_2D_TO_3D_LOOP_3#2' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/RESHAPE_2D_TO_3D_LOOP_3' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/QUANTIZE_ACTIVATION_LOOP_4' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/for#1:for' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2#3' (6 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/output:vinit' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/QUANTIZE_ACTIVATION_LOOP_3#1' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/RMS_NORM_LOOP_2#2' (4 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/attention_sqrt#1:for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/RMS_NORM_LOOP_1#2' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/ATTN_2D_LOOP_2' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/GEMM_3D_FLOAT_LOOP_1#1' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/SOFTMAX_LOOP_1' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/SF_LOOP_1' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/GEMM_3D_FLOAT_LOOP_1' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/TRANSPOSE_LAST_TWO_DIMS_LOOP_1' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/CACHE_UPDATE_LOOP_1' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/APPLY_ROTARY_POS_EMB_LOOP_4' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/RESHAPE_2D_TO_3D_LOOP_2#2' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/RESHAPE_2D_TO_3D_LOOP_2' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_2' (6 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/attention<5,1,384,384,8,48>:q_proj_re:vinit' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/QUANTIZE_ACTIVATION_LOOP_3' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/RMS_NORM_LOOP_2' (4 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/attention_sqrt:for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/for:for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/main' (13 c-steps) (SCHD-7)
+Prescheduled LOOP '/dut/core/core:rlp' (0 c-steps) (SCHD-7)
+Prescheduled SEQUENTIAL '/dut/core' (total length 917849 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL '/dut/core': Latency = 773223, Area (Datapath, Register, Total) = 4113750.93, 9965.42, 4123716.35 (CRAAS-11)
+At least one feasible schedule exists. (CRAAS-9)
+# Info: Final schedule of SEQUENTIAL '/dut/core': Latency = 807112, Area (Datapath, Register, Total) = 2389549.07, 13042.51, 2402591.58 (CRAAS-12)
+Resource allocation and scheduling done. (CRAAS-2)
+Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'attention_layer.v1': elapsed time 19.70 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'allocate': Total ops = 4594, Real ops = 1067, Vars = 419 (SOL-21)
+
+# Messages from "go schedule"
+
+# Info: Starting transformation 'schedule' on solution 'attention_layer.v1' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/dut/core' (CRAAS-1)
+Global signal 'strm_in:rsc.rdy' added to design 'dut' for component 'strm_in:rsci' (LIB-3)
+Global signal 'strm_in:rsc.vld' added to design 'dut' for component 'strm_in:rsci' (LIB-3)
+Global signal 'strm_in:rsc.dat' added to design 'dut' for component 'strm_in:rsci' (LIB-3)
+# Info: Creating buffer for wait controller for component 'strm_in:rsc' (SCHD-46)
+Global signal 'strm_out:rsc.rdy' added to design 'dut' for component 'strm_out:rsci' (LIB-3)
+Global signal 'strm_out:rsc.vld' added to design 'dut' for component 'strm_out:rsci' (LIB-3)
+Global signal 'strm_out:rsc.dat' added to design 'dut' for component 'strm_out:rsci' (LIB-3)
+Global signal 'input:rsc.en' added to design 'dut' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.data_out' added to design 'dut' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.we' added to design 'dut' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.re' added to design 'dut' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.addr' added to design 'dut' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.data_in' added to design 'dut' for component 'input:rsci' (LIB-3)
+Global signal 'output:rsc.en' added to design 'dut' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.data_out' added to design 'dut' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.we' added to design 'dut' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.re' added to design 'dut' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.addr' added to design 'dut' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.data_in' added to design 'dut' for component 'output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_hidden_states:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj_re:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj_re:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj_re:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj_re:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj_re:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj_re:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_re:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_re:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_re:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_re:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_re:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_re:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj_re:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj_re:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj_re:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj_re:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj_re:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj_re:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj_re:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_proj:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_proj:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_proj:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_embed:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_embed:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_embed:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_embed:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_embed:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:q_embed:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:q_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_embed:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_embed:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_embed:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_embed:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_embed:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_embed:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_embed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_cache_upd:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_cache_upd:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_cache_upd:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_cache_upd:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_cache_upd:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_cache_upd:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_cache_upd:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_cache_upd:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_cache_upd:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_cache_upd:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_cache_upd:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:v_cache_upd:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:v_cache_upd:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_transposed:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_transposed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_transposed:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_transposed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_transposed:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_transposed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_transposed:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_transposed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_transposed:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_transposed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:k_proj_transposed:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:k_proj_transposed:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_weights:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_weights:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_weights:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_weights:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_weights:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_weights:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_weights:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_weights:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_weights:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_weights:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_weights:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_weights:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output_2D:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output_2D:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output_2D:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output_2D:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output_2D:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output_2D:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output_2D:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output_2D:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output_2D:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output_2D:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:attn_output_2D:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:attn_output_2D:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_final_output:rsc.en' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_final_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_final_output:rsc.data_out' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_final_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_final_output:rsc.we' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_final_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_final_output:rsc.re' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_final_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_final_output:rsc.addr' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_final_output:rsci' (LIB-3)
+Global signal 'attention<5,1,384,384,8,48>:quantized_final_output:rsc.data_in' added to design 'dut' for component 'attention<5,1,384,384,8,48>:quantized_final_output:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsc.en' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsc.data_out' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsc.we' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsc.re' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsc.addr' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsc.data_in' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_q:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsc.en' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsc.data_out' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsc.we' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsc.re' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsc.addr' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsci' (LIB-3)
+Global signal 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsc.data_in' added to design 'dut' for component 'apply_rotary_pos_emb<1,8,48>:rotated_k:rsci' (LIB-3)
+# Info: Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3' is pipelined with initiation interval 3 and no flushing (SCHD-43)
+# Info: Loop '/dut/core/LINEAR_FORWARD_NO_MUL_LOOP_3#3' is pipelined with initiation interval 2 and no flushing (SCHD-43)
+# Info: Running transformation 'schedule' on solution 'attention_layer.v1': elapsed time 29.92 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-15)
+Report written to file 'cycle.rpt'
+# Info: Running transformation 'schedule' on solution 'attention_layer.v1': elapsed time 56.87 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-15)
+# Info: Completed transformation 'schedule' on solution 'attention_layer.v1': elapsed time 57.55 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'schedule': Total ops = 42770, Real ops = 1076, Vars = 953 (SOL-21)
+
+# Messages from "go dpfsm"
+
+# Info: Starting transformation 'dpfsm' on solution 'attention_layer.v1' (SOL-8)
+Performing FSM extraction... (FSM-1)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_1#1:i(3:0).sva(2:0)' for variables 'GEMM_3D_FLOAT_LOOP_1#1:i(3:0).sva(2:0), GEMM_3D_FLOAT_LOOP_1:i(3:0).sva(2:0), SOFTMAX_LOOP_1:i(3:0).sva(2:0), TRANSPOSE_LAST_TWO_DIMS_LOOP_1:i(3:0).sva(2:0), RESHAPE_2D_TO_3D_LOOP_2#1:i(3:0).sva(2:0), RESHAPE_2D_TO_3D_LOOP_2#2:i(3:0).sva(2:0), SF_LOOP_1:h(3:0).sva(2:0), CACHE_UPDATE_LOOP_1#1:i(3:0).sva(2:0)' (7 registers deleted). (FSM-3)
+Creating shared register 'LINEAR_FORWARD_NO_MUL_LOOP_3#1:ko(2:0).sva' for variables 'LINEAR_FORWARD_NO_MUL_LOOP_3#1:ko(2:0).sva, LINEAR_FORWARD_NO_MUL_LOOP_3#3:ko(2:0).sva, CACHE_UPDATE_LOOP_2:j(2:0).sva, QUANTIZE_ACTIVATION_LOOP_3#1:jo(2:0).sva, QUANTIZE_ACTIVATION_LOOP_3:jo(2:0).sva, SOFTMAX_LOOP_4:k(2:0).sva, TRANSPOSE_LAST_TWO_DIMS_LOOP_2:j(2:0).sva, GEMM_3D_FLOAT_LOOP_4:acc.cse.sva' (7 registers deleted). (FSM-3)
+Creating shared register 'APPLY_ROTARY_POS_EMB_LOOP_1:i(3:0).sva(2:0)' for variables 'APPLY_ROTARY_POS_EMB_LOOP_1:i(3:0).sva(2:0), APPLY_ROTARY_POS_EMB_LOOP_4:i(3:0).sva(2:0), ATTN_2D_LOOP_2:h(3:0).sva(2:0), CACHE_UPDATE_LOOP_1:i(3:0).sva(2:0), RESHAPE_2D_TO_3D_LOOP_2:i(3:0).sva(2:0), GEMM_3D_FLOAT_LOOP_3:k(2:0).sva#1, LINEAR_FORWARD_NO_MUL_LOOP_3:ko(2:0).sva, LINEAR_FORWARD_NO_MUL_LOOP_5#3:l(2:0).sva#1, SF_LOOP_3:acc#85.psp, SOFTMAX_LOOP_4:k(2:0).sva#1, SOFTMAX_LOOP_5:k(2:0).sva#1, operator_<40,24,true,AC_TRN,AC_WRAP>#2:acc#3.psp.sva' (11 registers deleted). (FSM-3)
+Creating shared register 'CACHE_UPDATE_LOOP_2#1:j(2:0).sva' for variables 'CACHE_UPDATE_LOOP_2#1:j(2:0).sva, GEMM_3D_FLOAT_LOOP_3:k(2:0).sva, LINEAR_FORWARD_NO_MUL_LOOP_3#2:ko(2:0).sva, SF_LOOP_3:d(2:0).sva, SOFTMAX_LOOP_5:k(2:0).sva, SOFTMAX_LOOP_3:k(2:0).sva, SOFTMAX_LOOP_3:k(2:0).sva#1, APPLY_ROTARY_POS_EMB_LOOP_3:acc#30.psp.sva' (7 registers deleted). (FSM-3)
+Creating shared register 'CACHE_UPDATE_LOOP_3#1:qif:acc#3.ncse(2:0)' for variables 'CACHE_UPDATE_LOOP_3#1:qif:acc#3.ncse(2:0), GEMM_3D_FLOAT_LOOP_4:acc#15.cse.sva, LINEAR_FORWARD_NO_MUL_LOOP_4:mux#2.itm, SF_LOOP_3:d(2:0).sva#1' (3 registers deleted). (FSM-3)
+Creating shared register 'CACHE_UPDATE_LOOP_3:qif:acc#3.ncse(2:0)' for variables 'CACHE_UPDATE_LOOP_3:qif:acc#3.ncse(2:0), GEMM_3D_FLOAT_LOOP_4:acc#179.sdt, LINEAR_FORWARD_NO_MUL_LOOP_4:mux#3.itm' (2 registers deleted). (FSM-3)
+Creating shared register 'attention_sqrt#1:for:i(4:0).sva' for variables 'attention_sqrt#1:for:i(4:0).sva, attention_sqrt:for:i(4:0).sva, attention_sqrt#1:for:i(4:0).sva#1, attention_sqrt:for:i(4:0).sva#1, APPLY_ROTARY_POS_EMB_LOOP_3:k(4:0).sva' (4 registers deleted). (FSM-3)
+Creating shared register 'APPLY_ROTARY_POS_EMB_LOOP_3:acc#36.cse.sva' for variables 'APPLY_ROTARY_POS_EMB_LOOP_3:acc#36.cse.sva, CACHE_UPDATE_LOOP_3#1:acc#16.sdt, GEMM_3D_FLOAT_LOOP_4#1:acc#33.sdt, GEMM_3D_FLOAT_LOOP_4:acc#181.sdt, QUANTIZE_ACTIVATION_LOOP_4#1:ji(4:0).sva#1, QUANTIZE_ACTIVATION_LOOP_4:ji(4:0).sva#1' (5 registers deleted). (FSM-3)
+Creating shared register 'APPLY_ROTARY_POS_EMB_LOOP_3:acc#37.cse.sva' for variables 'APPLY_ROTARY_POS_EMB_LOOP_3:acc#37.cse.sva, CACHE_UPDATE_LOOP_3:acc#16.sdt, GEMM_3D_FLOAT_LOOP_4#1:mul.sdt#1.sva, GEMM_3D_FLOAT_LOOP_4:acc#53.cse.sva' (3 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4#1:acc#32.sdt' for variables 'GEMM_3D_FLOAT_LOOP_4#1:acc#32.sdt, GEMM_3D_FLOAT_LOOP_4:acc#128.cse.sva, LINEAR_FORWARD_NO_MUL_LOOP_4:mux#11.itm(3:0)' (2 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4#1:acc#23.cse.sva' for variables 'GEMM_3D_FLOAT_LOOP_4#1:acc#23.cse.sva, GEMM_3D_FLOAT_LOOP_4:acc#240.psp, LINEAR_FORWARD_NO_MUL_LOOP_4:ki(4:0).sva(3:0), RESHAPE_2D_TO_3D_LOOP_3:acc#10.sdt' (3 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4#1:acc#28.cse.sva' for variables 'GEMM_3D_FLOAT_LOOP_4#1:acc#28.cse.sva, GEMM_3D_FLOAT_LOOP_4:acc#241.psp, LINEAR_FORWARD_NO_MUL_LOOP_4:mux#10.itm(3:0), RESHAPE_2D_TO_3D_LOOP_3:acc#11.psp' (3 registers deleted). (FSM-3)
+Creating shared register 'APPLY_ROTARY_POS_EMB_LOOP_6:acc#28.sdt' for variables 'APPLY_ROTARY_POS_EMB_LOOP_6:acc#28.sdt, ATTN_2D_LOOP_3:acc#12.sdt, CACHE_UPDATE_LOOP_3#1:acc#17.psp, GEMM_3D_FLOAT_LOOP_3#1:acc#6.sdt, GEMM_3D_FLOAT_LOOP_3:acc#6.sdt, LINEAR_FORWARD_NO_MUL_LOOP_4#1:ki(4:0).sva(3:0), LINEAR_FORWARD_NO_MUL_LOOP_4#3:ki(4:0).sva(3:0), QUANTIZE_ACTIVATION_LOOP_4#1:ji(4:0).sva(3:0), QUANTIZE_ACTIVATION_LOOP_4:ji(4:0).sva(3:0), RESHAPE_2D_TO_3D_LOOP_3#1:acc#10.sdt, RESHAPE_2D_TO_3D_LOOP_3#2:acc#10.sdt, SF_LOOP_3:acc#58.psp, SOFTMAX_LOOP_4:x:acc#4.sdt, SOFTMAX_LOOP_5:acc#5.sdt, TRANSPOSE_LAST_TWO_DIMS_LOOP_3:acc#22.psp, operator_<40,24,true,AC_TRN,AC_WRAP>#2:acc#25.itm' (15 registers deleted). (FSM-3)
+Creating shared register 'APPLY_ROTARY_POS_EMB_LOOP_6:acc#29.psp' for variables 'APPLY_ROTARY_POS_EMB_LOOP_6:acc#29.psp, ATTN_2D_LOOP_3:acc#13.psp, CACHE_UPDATE_LOOP_3:acc#17.psp, GEMM_3D_FLOAT_LOOP_3#1:acc#7.psp, GEMM_3D_FLOAT_LOOP_3:acc#7.psp, LINEAR_FORWARD_NO_MUL_LOOP_4#2:ki(4:0).sva(3:0), RESHAPE_2D_TO_3D_LOOP_3#1:acc#11.psp, RESHAPE_2D_TO_3D_LOOP_3#2:acc#11.psp, SF_LOOP_3:acc#9.sdt, SOFTMAX_LOOP_4:x:acc.psp, SOFTMAX_LOOP_5:acc#6.psp' (10 registers deleted). (FSM-3)
+Creating shared register 'APPLY_ROTARY_POS_EMB_LOOP_6:k(5:0).sva' for variables 'APPLY_ROTARY_POS_EMB_LOOP_6:k(5:0).sva, ATTN_2D_LOOP_3:d(5:0).sva, CACHE_UPDATE_LOOP_3#1:k(5:0).sva, RESHAPE_2D_TO_3D_LOOP_3#2:k(5:0).sva, RESHAPE_2D_TO_3D_LOOP_3:k(5:0).sva, TRANSPOSE_LAST_TWO_DIMS_LOOP_3:k(5:0).sva, TRANSPOSE_LAST_TWO_DIMS_LOOP_3:k(5:0).sva#1, GEMM_3D_FLOAT_LOOP_3#1:k(5:0).sva#1, operator_<40,24,true,AC_TRN,AC_WRAP>#2:acc.psp.sva' (8 registers deleted). (FSM-3)
+Creating shared register 'CACHE_UPDATE_LOOP_3:k(5:0).sva' for variables 'CACHE_UPDATE_LOOP_3:k(5:0).sva, GEMM_3D_FLOAT_LOOP_3#1:k(5:0).sva, RESHAPE_2D_TO_3D_LOOP_3#1:k(5:0).sva, RESHAPE_2D_TO_3D_LOOP_3#2:k(5:0).sva#1' (3 registers deleted). (FSM-3)
+Creating shared register 'APPLY_ROTARY_POS_EMB_LOOP_6:k(5:0).sva#1' for variables 'APPLY_ROTARY_POS_EMB_LOOP_6:k(5:0).sva#1, ATTN_2D_LOOP_3:d(5:0).sva#1, CACHE_UPDATE_LOOP_3#1:k(5:0).sva#1, GEMM_3D_FLOAT_LOOP_4#1:acc#36.sdt, GEMM_3D_FLOAT_LOOP_4:acc#34.cse.sva, RESHAPE_2D_TO_3D_LOOP_3#1:k(5:0).sva#1' (5 registers deleted). (FSM-3)
+Creating shared register 'APPLY_ROTARY_POS_EMB_LOOP_6:slc(APPLY_ROTARY_POS_EMB_LOOP_6:acc)(2).itm' for variables 'APPLY_ROTARY_POS_EMB_LOOP_6:slc(APPLY_ROTARY_POS_EMB_LOOP_6:acc)(2).itm, ATTN_2D_LOOP_3:slc(ATTN_2D_LOOP_3:acc)(2).itm, GEMM_3D_FLOAT_LOOP_3#1:slc(GEMM_3D_FLOAT_LOOP_3#1:acc)(2).itm, GEMM_3D_FLOAT_LOOP_3:slc(GEMM_3D_FLOAT_LOOP_3:acc)(2).itm, LINEAR_FORWARD_NO_MUL_LOOP_2#3:slc(LINEAR_FORWARD_NO_MUL_LOOP_2#3:acc)(2).itm, RMS_NORM_LOOP_1#2:slc(RMS_NORM_LOOP_1#2:acc)(2).itm, SF_LOOP_3:slc(SF_LOOP_3:acc)(2).itm, SOFTMAX_LOOP_3:slc(SOFTMAX_LOOP_3:acc)(2).itm, SOFTMAX_LOOP_4:slc(SOFTMAX_LOOP_4:acc)(2).itm, SOFTMAX_LOOP_5:slc(SOFTMAX_LOOP_5:acc)(2).itm, TRANSPOSE_LAST_TWO_DIMS_LOOP_3:slc(TRANSPOSE_LAST_TWO_DIMS_LOOP_3:acc)(2).itm, attention_sqrt#1:for:slc(attention_sqrt#1:for:acc)(3).itm, attention_sqrt:for:slc(attention_sqrt:for:acc)(3).itm, for#1:for:slc(for#1:for:acc)(2).itm, operator_<40,24,true,AC_TRN,AC_WRAP>#2:or.itm' (14 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4:acc#209.itm' for variables 'GEMM_3D_FLOAT_LOOP_4:acc#209.itm, GEMM_3D_FLOAT_LOOP_4:acc#211.itm, GEMM_3D_FLOAT_LOOP_4:acc#213.itm, GEMM_3D_FLOAT_LOOP_4:acc#215.itm, GEMM_3D_FLOAT_LOOP_4:acc#217.itm, GEMM_3D_FLOAT_LOOP_4:acc#219.itm, GEMM_3D_FLOAT_LOOP_4:acc#221.itm, GEMM_3D_FLOAT_LOOP_4:acc#223.itm, GEMM_3D_FLOAT_LOOP_4#1:acc#37.itm' (8 registers deleted). (FSM-3)
+Creating shared register 'QUANTIZE_ACTIVATION_LOOP_1#1:scale.sva' for variables 'QUANTIZE_ACTIVATION_LOOP_1#1:scale.sva, QUANTIZE_ACTIVATION_LOOP_1:scale.sva, GEMM_3D_FLOAT_LOOP_4:acc#237.itm, softmax<1,8,6>:max_val.sva, softmax<1,8,6>:max_val.sva.dfm' (4 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4-17:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm' for variables 'GEMM_3D_FLOAT_LOOP_4-17:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4:acc#208.itm, GEMM_3D_FLOAT_LOOP_4:acc#226.itm, GEMM_3D_FLOAT_LOOP_4:acc#234.itm, GEMM_3D_FLOAT_LOOP_4#1:slc(attention<5,1,384,384,8,48>:attn_weights:rsci.data_out_d)(39-0)#4.itm, softmax<1,8,6>:sum.sva, softmax<1,8,6>:sum.sva#1, rms_norm<384>#1:variance#1.sva, rms_norm<384>:variance#1.sva, rms_norm<384>:variance#1.sva#1, rms_norm<384>#1:variance#1.sva#1, rms_norm<384>#1:variance.sva, rms_norm<384>:variance.sva, CACHE_UPDATE_LOOP_3:_qr.sva#1, LINEAR_FORWARD_NO_MUL_LOOP_2#2:slc(attention<5,1,384,384,8,48>:v_proj_re:rsci.data_out_d)(39-0).psp' (14 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4:acc#225.itm' for variables 'GEMM_3D_FLOAT_LOOP_4:acc#225.itm, GEMM_3D_FLOAT_LOOP_4:acc#227.itm, GEMM_3D_FLOAT_LOOP_4:acc#229.itm, GEMM_3D_FLOAT_LOOP_4:acc#231.itm, GEMM_3D_FLOAT_LOOP_4#1:slc(attention<5,1,384,384,8,48>:v_cache_upd:rsci.data_out_d)(39-0)#4.itm' (4 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4:acc#193.itm' for variables 'GEMM_3D_FLOAT_LOOP_4:acc#193.itm, GEMM_3D_FLOAT_LOOP_4:acc#195.itm, GEMM_3D_FLOAT_LOOP_4:acc#197.itm, GEMM_3D_FLOAT_LOOP_4:acc#199.itm, GEMM_3D_FLOAT_LOOP_4:acc#201.itm, GEMM_3D_FLOAT_LOOP_4:acc#203.itm, GEMM_3D_FLOAT_LOOP_4:acc#205.itm, GEMM_3D_FLOAT_LOOP_4#1-2:slc(GEMM_3D_FLOAT_LOOP_4#1:GEMM_3D_FLOAT_LOOP_4#1:mul)(55-16).itm, LINEAR_FORWARD_NO_MUL_LOOP_2:slc(attention<5,1,384,384,8,48>:q_proj_re:rsci.data_out_d)(39-0).itm, attention_abs#3:_qr.sva, attention_abs#7:_qr.sva' (10 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4#1-4:slc(GEMM_3D_FLOAT_LOOP_4#1:GEMM_3D_FLOAT_LOOP_4#1:mul)(55-16).itm' for variables 'GEMM_3D_FLOAT_LOOP_4#1-4:slc(GEMM_3D_FLOAT_LOOP_4#1:GEMM_3D_FLOAT_LOOP_4#1:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4#1-6:slc(GEMM_3D_FLOAT_LOOP_4#1:GEMM_3D_FLOAT_LOOP_4#1:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-16:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-20:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-22:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-14:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-12:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-10:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-24:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-26:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-28:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-2:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-30:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-32:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-34:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-36:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-6:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-8:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-4:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-48:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-46:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-44:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-42:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-40:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4-38:slc(GEMM_3D_FLOAT_LOOP_4:GEMM_3D_FLOAT_LOOP_4:mul)(55-16).itm, GEMM_3D_FLOAT_LOOP_4:acc#207.itm, CACHE_UPDATE_LOOP_3#1:_qr.sva#1, LINEAR_FORWARD_NO_MUL_LOOP_2#1:slc(attention<5,1,384,384,8,48>:k_proj_re:rsci.data_out_d)(39-0).psp, LINEAR_FORWARD_NO_MUL_LOOP_2#3:slc(output:rsci.data_out_d)(39-0).psp, RMS_NORM_LOOP_2#2:RMS_NORM_LOOP_2#2:slc()(71-32)#1.ncse.sva, RMS_NORM_LOOP_2:slc(RMS_NORM_LOOP_2:mul)(67-28).ncse.sva, SF_LOOP_3:slc(attention<5,1,384,384,8,48>:attn_weights,*40)(39-0).psp.sva, SOFTMAX_LOOP_5:slc(attention<5,1,384,384,8,48>:attn_weights:rsci.data_out_d)(39-0).psp, attention_max<attn_fixed_t>#1:conc.psp, attention_max<attn_fixed_t>:attention_max<attn_fixed_t>:and.mut, attention_round:a#1.sva, attention_round:a.sva, attention_sqrt#1:guess.sva#1, attention_sqrt:guess.sva#1, drf(output).sdt#1.sva, drf(output).sdt#2.sva.1' (40 registers deleted). (FSM-3)
+Creating shared register 'LINEAR_FORWARD_NO_MUL_LOOP_5:and#1.mdf.sva' for variables 'LINEAR_FORWARD_NO_MUL_LOOP_5:and#1.mdf.sva, exitL:exit:LINEAR_FORWARD_NO_MUL_LOOP_5.lpi#2, exitL:exit:LINEAR_FORWARD_NO_MUL_LOOP_5.lpi#3' (2 registers deleted). (FSM-3)
+Creating shared register 'LINEAR_FORWARD_NO_MUL_LOOP_3.stage_0.2' for variables 'LINEAR_FORWARD_NO_MUL_LOOP_3.stage_0.2, exit:LINEAR_FORWARD_NO_MUL_LOOP_3.lpi#3.dfm, exit:APPLY_ROTARY_POS_EMB_LOOP_3.sva.dfm, exit:QUANTIZE_ACTIVATION_LOOP_2#1.sva.dfm, exit:QUANTIZE_ACTIVATION_LOOP_2.sva.dfm' (4 registers deleted). (FSM-3)
+Creating shared register 'QUANTIZE_ACTIVATION_LOOP_2#1:slc()(40)#1.svs' for variables 'QUANTIZE_ACTIVATION_LOOP_2#1:slc()(40)#1.svs, QUANTIZE_ACTIVATION_LOOP_2:slc()(40)#1.svs, lfst:exit:LINEAR_FORWARD_NO_MUL_LOOP_4#3.sva, lfst:exit:LINEAR_FORWARD_NO_MUL_LOOP_4.sva' (3 registers deleted). (FSM-3)
+Creating shared register 'LINEAR_FORWARD_NO_MUL_LOOP_3#3.stage_0.1' for variables 'LINEAR_FORWARD_NO_MUL_LOOP_3#3.stage_0.1, LINEAR_FORWARD_NO_MUL_LOOP_3.stage_0.1, RMS_NORM_LOOP_2#2:unequal.tmp, RMS_NORM_LOOP_2:unequal.tmp, exit:APPLY_ROTARY_POS_EMB_LOOP_3.sva' (4 registers deleted). (FSM-3)
+Creating shared register 'CACHE_UPDATE_LOOP_3:CACHE_UPDATE_LOOP_3:nor.itm' for variables 'CACHE_UPDATE_LOOP_3:CACHE_UPDATE_LOOP_3:nor.itm, INIT_2D_MEM_LOOP_2:and#1.itm, LINEAR_FORWARD_NO_MUL_LOOP_2:LINEAR_FORWARD_NO_MUL_LOOP_2:nor.itm, LINEAR_FORWARD_NO_MUL_LOOP_3#3.stage_0, LINEAR_FORWARD_NO_MUL_LOOP_3.stage_0, QUANTIZE_ACTIVATION_LOOP_5#1-4:attention_round#1:slc()(40).svs.st, QUANTIZE_ACTIVATION_LOOP_5-4:attention_round:slc()(40).svs.st, RESHAPE_2D_TO_3D_LOOP_3#2:not.itm, RESHAPE_2D_TO_3D_LOOP_3:RESHAPE_2D_TO_3D_LOOP_3:nor.itm, RMS_NORM_LOOP_2#2:not.itm, RMS_NORM_LOOP_2:not.itm, for:for:for:for:nor.itm' (11 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4#1:acc#20.itm' for variables 'GEMM_3D_FLOAT_LOOP_4#1:acc#20.itm, GEMM_3D_FLOAT_LOOP_4:acc#183.sdt, LINEAR_FORWARD_NO_MUL_LOOP_5#1:weight_val:lshift.itm' (2 registers deleted). (FSM-3)
+Creating shared register 'LINEAR_FORWARD_NO_MUL_LOOP_5#1:l(2:0).lpi#3(1:0)' for variables 'LINEAR_FORWARD_NO_MUL_LOOP_5#1:l(2:0).lpi#3(1:0), LINEAR_FORWARD_NO_MUL_LOOP_5#3:l(2:0).lpi#3(1:0), GEMM_3D_FLOAT_LOOP_4:acc#17.cse.sva' (2 registers deleted). (FSM-3)
+Creating shared register 'LINEAR_FORWARD_NO_MUL_LOOP_5#1:weight_val:div.svs' for variables 'LINEAR_FORWARD_NO_MUL_LOOP_5#1:weight_val:div.svs, LINEAR_FORWARD_NO_MUL_LOOP_5#2:weight_val:div.svs.1, LINEAR_FORWARD_NO_MUL_LOOP_5#3:weight_val:div.svs, LINEAR_FORWARD_NO_MUL_LOOP_5:weight_val:div.svs' (3 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4:acc#22.cse.sva' for variables 'GEMM_3D_FLOAT_LOOP_4:acc#22.cse.sva, LINEAR_FORWARD_NO_MUL_LOOP_5#1:l(2:0).lpi#3.dfm(1:0), operator_<40,24,true,AC_TRN,AC_WRAP>#2:acc#4.psp.sva' (2 registers deleted). (FSM-3)
+Creating shared register 'LINEAR_FORWARD_NO_MUL_LOOP_4#1:packed_val.lpi#3' for variables 'LINEAR_FORWARD_NO_MUL_LOOP_4#1:packed_val.lpi#3, LINEAR_FORWARD_NO_MUL_LOOP_4#3:packed_val.lpi#3, GEMM_3D_FLOAT_LOOP_4:acc#188.sdt, QUANTIZE_ACTIVATION_LOOP_5#1:quantized_value_clamped:mux1h#3.itm, QUANTIZE_ACTIVATION_LOOP_5:quantized_value_clamped:mux1h#3.itm' (4 registers deleted). (FSM-3)
+Creating shared register 'GEMM_3D_FLOAT_LOOP_4:acc#190.sdt' for variables 'GEMM_3D_FLOAT_LOOP_4:acc#190.sdt, LINEAR_FORWARD_NO_MUL_LOOP_4#1:packed_val.lpi#3.dfm, QUANTIZE_ACTIVATION_LOOP_5#1:quantized_value_clamped:mux1h#2.itm, QUANTIZE_ACTIVATION_LOOP_5:quantized_value_clamped:mux1h#2.itm, operator_<40,24,true,AC_TRN,AC_WRAP>#2:acc#28.itm' (4 registers deleted). (FSM-3)
+Creating shared register 'INIT_2D_MEM_LOOP_2#1:acc.itm' for variables 'INIT_2D_MEM_LOOP_2#1:acc.itm, attention<5,1,384,384,8,48>:k_proj_re:vinit.ndx.sva, LINEAR_FORWARD_NO_MUL_LOOP_2#3:j(8:0).sva, LINEAR_FORWARD_NO_MUL_LOOP_2:j(8:0).sva, RMS_NORM_LOOP_2#2:i(8:0).sva, RMS_NORM_LOOP_2:i(8:0).sva, for#1:for:j(8:0).sva, for#1:for:j(8:0).sva#1, RMS_NORM_LOOP_1#1:i(8:0).sva, RMS_NORM_LOOP_1#2:i(8:0).sva, RMS_NORM_LOOP_1#1:i(8:0).sva#1, RMS_NORM_LOOP_1#2:i(8:0).sva#1, TRANSPOSE_LAST_TWO_DIMS_LOOP_3:acc#17.sdt' (12 registers deleted). (FSM-3)
+Creating shared register 'INIT_2D_MEM_LOOP_2#2:acc.itm' for variables 'INIT_2D_MEM_LOOP_2#2:acc.itm, attention<5,1,384,384,8,48>:v_proj_re:vinit.ndx.sva, LINEAR_FORWARD_NO_MUL_LOOP_2#2:j(8:0).sva, for:for:j(8:0).sva, for:for:j(8:0).sva#1, QUANTIZE_ACTIVATION_LOOP_2#1:j(8:0).sva, QUANTIZE_ACTIVATION_LOOP_2:j(8:0).sva, RMS_NORM_LOOP_2#2:mux#4.itm, RMS_NORM_LOOP_2:mux#4.itm' (8 registers deleted). (FSM-3)
+Creating shared register 'LINEAR_FORWARD_NO_MUL_LOOP_2#1:j(8:0).sva' for variables 'LINEAR_FORWARD_NO_MUL_LOOP_2#1:j(8:0).sva, LINEAR_FORWARD_NO_MUL_LOOP_2#3:j(8:0).sva#1, attention<5,1,384,384,8,48>:q_proj_re:vinit.ndx.sva, output:vinit.ndx.sva, INIT_2D_MEM_LOOP_2#3:acc.itm, INIT_2D_MEM_LOOP_2:acc.itm, RMS_NORM_LOOP_2#2:acc#3.itm, RMS_NORM_LOOP_2:acc#3.itm' (7 registers deleted). (FSM-3)
+Creating shared register 'RMS_NORM_LOOP_2#2:i(8:0).sva#1' for variables 'RMS_NORM_LOOP_2#2:i(8:0).sva#1, RMS_NORM_LOOP_2:i(8:0).sva#1, LINEAR_FORWARD_NO_MUL_LOOP_2#1:j(8:0).sva#1' (2 registers deleted). (FSM-3)
+Creating shared register 'LINEAR_FORWARD_NO_MUL_LOOP_2#3:acc#8.sdt' for variables 'LINEAR_FORWARD_NO_MUL_LOOP_2#3:acc#8.sdt, LINEAR_FORWARD_NO_MUL_LOOP_2:acc#12.sdt, RMS_NORM_LOOP_2#2:mul#1.itm' (2 registers deleted). (FSM-3)
+Creating shared register 'RMS_NORM_LOOP_2#2.dfr.sva' for variables 'RMS_NORM_LOOP_2#2.dfr.sva, RMS_NORM_LOOP_2.dfr.sva, attention_sqrt#1:guess.sva(39:30), attention_sqrt:guess.sva(39:30)' (3 registers deleted). (FSM-3)
+Creating shared register 'attention_abs#4:qif:acc:pmx.lpi#1.dfm' for variables 'attention_abs#4:qif:acc:pmx.lpi#1.dfm, attention_abs:qif:acc:pmx.lpi#1.dfm, operator_<40,24,true,AC_TRN,AC_WRAP>#2:acc#52.itm' (2 registers deleted). (FSM-3)
+Creating shared register 'attention_sqrt#1:guess.sva(29:0)' for variables 'attention_sqrt#1:guess.sva(29:0), attention_sqrt:guess.sva(29:0), attention_exp:exp_half:slc(operator+<40,24,true,AC_TRN,AC_WRAP>:acc)(77-48).psp.sva' (2 registers deleted). (FSM-3)
+Creating shared register 'attention_round#1:_qr(39:16)#3.lpi#3.dfm' for variables 'attention_round#1:_qr(39:16)#3.lpi#3.dfm, attention_round#1:_qr(39:16).sva#1, attention_round:_qr(39:16)#3.lpi#3.dfm, attention_round:_qr(39:16).sva#1' (3 registers deleted). (FSM-3)
+Creating shared register 'operator_<40,24,true,AC_TRN,AC_WRAP>#1:slc(operator_<40,24,true,AC_TRN,AC_WRAP>#1:div:cmp.z)(17-0).itm' for variables 'operator_<40,24,true,AC_TRN,AC_WRAP>#1:slc(operator_<40,24,true,AC_TRN,AC_WRAP>#1:div:cmp.z)(17-0).itm, operator_<40,24,true,AC_TRN,AC_WRAP>#3:slc(operator_<40,24,true,AC_TRN,AC_WRAP>#1:div:cmp.z)(17-0).itm, operator_<40,24,true,AC_TRN,AC_WRAP>#2:acc#39.itm' (2 registers deleted). (FSM-3)
+Creating shared register 'APPLY_ROTARY_POS_EMB_LOOP_6:k(5:0).sva' for variables 'APPLY_ROTARY_POS_EMB_LOOP_6:k(5:0).sva, ATTN_2D_LOOP_3:d(5:0).sva, CACHE_UPDATE_LOOP_3#1:k(5:0).sva, RESHAPE_2D_TO_3D_LOOP_3#2:k(5:0).sva, RESHAPE_2D_TO_3D_LOOP_3:k(5:0).sva, TRANSPOSE_LAST_TWO_DIMS_LOOP_3:k(5:0).sva, TRANSPOSE_LAST_TWO_DIMS_LOOP_3:k(5:0).sva#1, GEMM_3D_FLOAT_LOOP_3#1:k(5:0).sva#1, operator_<40,24,true,AC_TRN,AC_WRAP>#2:acc.psp.sva, GEMM_3D_FLOAT_LOOP_4:acc#242.psp, LINEAR_FORWARD_NO_MUL_LOOP_5#2:l(2:0).lpi#3.dfm(1:0)' (2 registers deleted). (FSM-3)
+Creating shared register 'SF_LOOP_3:acc#38.itm' for variables 'SF_LOOP_3:acc#38.itm, operator_<40,24,true,AC_TRN,AC_WRAP>:acc#40.itm, operator_<40,24,true,AC_TRN,AC_WRAP>#1:slc(operator_<40,24,true,AC_TRN,AC_WRAP>#1:div:cmp.z)(17-0).itm, operator_<40,24,true,AC_TRN,AC_WRAP>#3:slc(operator_<40,24,true,AC_TRN,AC_WRAP>#1:div:cmp.z)(17-0).itm, operator_<40,24,true,AC_TRN,AC_WRAP>#2:acc#39.itm, APPLY_ROTARY_POS_EMB_LOOP_6:sinval:slc(sin_tab,*40)(39-0).psp.sva, INIT_2D_MEM_LOOP_2#2:acc.itm, attention<5,1,384,384,8,48>:v_proj_re:vinit.ndx.sva, LINEAR_FORWARD_NO_MUL_LOOP_2#2:j(8:0).sva, for:for:j(8:0).sva, for:for:j(8:0).sva#1, QUANTIZE_ACTIVATION_LOOP_2#1:j(8:0).sva, QUANTIZE_ACTIVATION_LOOP_2:j(8:0).sva, RMS_NORM_LOOP_2#2:mux#4.itm, RMS_NORM_LOOP_2:mux#4.itm' (3 registers deleted). (FSM-3)
+Creating shared register 'attention_round#1:_qr(39:16)#3.lpi#3.dfm' for variables 'attention_round#1:_qr(39:16)#3.lpi#3.dfm, attention_round#1:_qr(39:16).sva#1, attention_round:_qr(39:16)#3.lpi#3.dfm, attention_round:_qr(39:16).sva#1, APPLY_ROTARY_POS_EMB_LOOP_6:cosval:slc(cos_tab,*40)(39-0).psp.sva, SF_LOOP_3:acc#47.itm, SOFTMAX_LOOP_4:x.lpi#3.dfm#1(20:1), INIT_2D_MEM_LOOP_2#1:acc.itm, attention<5,1,384,384,8,48>:k_proj_re:vinit.ndx.sva, LINEAR_FORWARD_NO_MUL_LOOP_2#3:j(8:0).sva, LINEAR_FORWARD_NO_MUL_LOOP_2:j(8:0).sva, RMS_NORM_LOOP_2#2:i(8:0).sva, RMS_NORM_LOOP_2:i(8:0).sva, for#1:for:j(8:0).sva, for#1:for:j(8:0).sva#1, RMS_NORM_LOOP_1#1:i(8:0).sva, RMS_NORM_LOOP_1#2:i(8:0).sva, RMS_NORM_LOOP_1#1:i(8:0).sva#1, RMS_NORM_LOOP_1#2:i(8:0).sva#1, TRANSPOSE_LAST_TWO_DIMS_LOOP_3:acc#17.sdt, operator_<40,24,true,AC_TRN,AC_WRAP>:acc#33.itm' (4 registers deleted). (FSM-3)
+Creating shared register 'SF_LOOP_3:acc#5.psp.sva' for variables 'SF_LOOP_3:acc#5.psp.sva, LINEAR_FORWARD_NO_MUL_LOOP_2#2:j(8:0).sva#1, RMS_NORM_LOOP_2#2.dfr.sva, RMS_NORM_LOOP_2.dfr.sva, attention_sqrt#1:guess.sva(39:30), attention_sqrt:guess.sva(39:30)' (2 registers deleted). (FSM-3)
+Creating shared register 'LINEAR_FORWARD_NO_MUL_LOOP_2#3:acc#12.sdt' for variables 'LINEAR_FORWARD_NO_MUL_LOOP_2#3:acc#12.sdt, operator+<40,24,true,AC_TRN,AC_WRAP>:acc#7.psp, LINEAR_FORWARD_NO_MUL_LOOP_2#1:acc#14.psp, GEMM_3D_FLOAT_LOOP_4:acc#225.itm, GEMM_3D_FLOAT_LOOP_4:acc#227.itm, GEMM_3D_FLOAT_LOOP_4:acc#229.itm, GEMM_3D_FLOAT_LOOP_4:acc#231.itm, GEMM_3D_FLOAT_LOOP_4#1:slc(attention<5,1,384,384,8,48>:v_cache_upd:rsci.data_out_d)(39-0)#4.itm' (2 registers deleted). (FSM-3)
+Creating shared register 'operator+<40,24,true,AC_TRN,AC_WRAP>:acc#8.psp' for variables 'operator+<40,24,true,AC_TRN,AC_WRAP>:acc#8.psp, attention_exp:exp_half:mul#4.cse.sva, LINEAR_FORWARD_NO_MUL_LOOP_2#1:acc#11.sdt' (2 registers deleted). (FSM-3)
+# Info: Completed transformation 'dpfsm' on solution 'attention_layer.v1': elapsed time 27.30 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'dpfsm': Total ops = 10610, Real ops = 4041, Vars = 1356 (SOL-21)
+
+# Messages from "go extract"
+
+# Info: Starting transformation 'instance' on solution 'attention_layer.v1' (SOL-8)
+# Info: Running transformation 'instance' on solution 'attention_layer.v1': elapsed time 29.94 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-15)
+Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Completed transformation 'instance' on solution 'attention_layer.v1': elapsed time 33.68 seconds, memory usage 1727120kB, peak memory usage 1792656kB (SOL-9)
+# Info: Design complexity at end of 'instance': Total ops = 12203, Real ops = 4601, Vars = 11142 (SOL-21)
+# Info: Starting transformation 'extract' on solution 'attention_layer.v1' (SOL-8)
+Loop '/dut/mgc_div_8_7_0_4/b0_line_26/divmod6448_2_loop951' is being fully unrolled (8 times). (LOOP-7)
+Report written to file 'rtl.rpt'
+ROM component 'mgc_rom(33,1920,40,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(34,960,17,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(35,960,17,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(36,1920,40,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(37,384,13,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(38,384,12,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(39,36864,8,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(40,36864,8,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(41,36864,8,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(42,36864,8,1,60)' initialization mode: inline. (MEM-76)
+Netlist written to file 'rtl.vhdl' (NET-4)
+generate concat
+order file name is: rtl.vhdl_order.txt
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/hls_pkgs/src/funcs.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_comps.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/mgc_shift_comps_v5.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.vhd
+Add dependent file: ./rtl_dutmgc_rom_33_1920_40_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_34_960_17_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_35_960_17_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_36_1920_40_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_37_384_13_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_38_384_12_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_39_36864_8_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_40_36864_8_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_41_36864_8_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_42_36864_8_1_60.vhdl
+Add dependent file: ./rtl.vhdl
+Finished writing concatenated file: /home/dr655/ece6775-final/Catapult/catapult_files/attention_layer_asic_opt/attention_layer.v1/concat_rtl.vhdl
+order file name is: rtl.vhdl_order_sim.txt
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/hls_pkgs/src/funcs.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_comps.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/mgc_shift_comps_v5.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.vhd
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.vhd
+Add dependent file: ./rtl_dutmgc_rom_33_1920_40_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_34_960_17_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_35_960_17_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_36_1920_40_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_37_384_13_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_38_384_12_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_39_36864_8_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_40_36864_8_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_41_36864_8_1_60.vhdl
+Add dependent file: ./rtl_dutmgc_rom_42_36864_8_1_60.vhdl
+Add dependent file: ./rtl.vhdl
+Finished writing concatenated simulation file: /home/dr655/ece6775-final/Catapult/catapult_files/attention_layer_asic_opt/attention_layer.v1/concat_sim_rtl.vhdl
+# Info: Running transformation 'extract' on solution 'attention_layer.v1': elapsed time 26.73 seconds, memory usage 1923728kB, peak memory usage 1923728kB (SOL-15)
+ROM component 'mgc_rom(33,1920,40,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(34,960,17,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(35,960,17,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(36,1920,40,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(37,384,13,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(38,384,12,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(39,36864,8,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(40,36864,8,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(41,36864,8,1,60)' initialization mode: inline. (MEM-76)
+ROM component 'mgc_rom(42,36864,8,1,60)' initialization mode: inline. (MEM-76)
+Netlist written to file 'rtl.v' (NET-4)
+generate concat
+order file name is: rtl.v_order.txt
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.v
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.v
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.v
+Add dependent file: ./rtl_dutmgc_rom_33_1920_40_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_34_960_17_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_35_960_17_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_36_1920_40_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_37_384_13_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_38_384_12_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_39_36864_8_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_40_36864_8_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_41_36864_8_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_42_36864_8_1_60.v
+Add dependent file: ./rtl.v
+Finished writing concatenated file: /home/dr655/ece6775-final/Catapult/catapult_files/attention_layer_asic_opt/attention_layer.v1/concat_rtl.v
+order file name is: rtl.v_order_sim.txt
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.v
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.v
+Add dependent file: /opt/siemens/catapult/2024.1_2-1117371/Mgc_home/pkgs/siflibs/ram_sync_dualRW_be_generic.v
+Add dependent file: ./rtl_dutmgc_rom_33_1920_40_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_34_960_17_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_35_960_17_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_36_1920_40_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_37_384_13_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_38_384_12_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_39_36864_8_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_40_36864_8_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_41_36864_8_1_60.v
+Add dependent file: ./rtl_dutmgc_rom_42_36864_8_1_60.v
+Add dependent file: ./rtl.v
+Finished writing concatenated simulation file: /home/dr655/ece6775-final/Catapult/catapult_files/attention_layer_asic_opt/attention_layer.v1/concat_sim_rtl.v
+# Info: Completed transformation 'extract' on solution 'attention_layer.v1': elapsed time 35.30 seconds, memory usage 1923728kB, peak memory usage 1923728kB (SOL-9)
+# Info: Design complexity at end of 'extract': Total ops = 12292, Real ops = 4771, Vars = 1562 (SOL-21)
