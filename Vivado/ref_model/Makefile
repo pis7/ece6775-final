@@ -18,18 +18,22 @@ inference/inference: $(INF_FILES)
 	$(CXX) $(CXXFLAGS) -o $@ $(INF_FILES)
 
 build/attention_test_full: $(ATTN_FILES)
+	mkdir -p layer0_paras/
 	mkdir -p build
 	$(CXX) $(CXXFLAGS) -DFULL -o $@ $(ATTN_FILES)
 
 build/attention_test_4th: $(ATTN_FILES)
+	mkdir -p layer0_paras/
 	mkdir -p build
 	$(CXX) $(CXXFLAGS) -DFOURTH -o $@ $(ATTN_FILES)
 
 build/attention_test_16th: $(ATTN_FILES)
+	mkdir -p layer0_paras/
 	mkdir -p build
 	$(CXX) $(CXXFLAGS) -DSIXTEENTH -o $@ $(ATTN_FILES)
 
 build/attention_test_64th: $(ATTN_FILES)
+	mkdir -p layer0_paras/
 	mkdir -p build
 	$(CXX) $(CXXFLAGS) -DSIXTYFOURTH -o $@ $(ATTN_FILES)
 
